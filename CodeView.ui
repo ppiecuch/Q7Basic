@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CodeView</class>
+ <widget class="QWidget" name="CodeView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>868</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CodeView</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="Q7BCodeView" name="Q7BCodeBox" native="true"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1">
+        <widget class="QLabel" name="lLine">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Line........</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QToolButton" name="tbShiftLeft">
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/Icons/Resources/ti_shiftleft.png</normaloff>:/Icons/Resources/ti_shiftleft.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbShiftRight">
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/Icons/Resources/ti_shiftright.png</normaloff>:/Icons/Resources/ti_shiftright.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbComment">
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/Icons/Resources/ti_comment.png</normaloff>:/Icons/Resources/ti_comment.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbUncomment">
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/Icons/Resources/ti_uncomment.png</normaloff>:/Icons/Resources/ti_uncomment.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="Line" name="line_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="Line" name="line_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QToolButton" name="tbOutlets">
+           <property name="text">
+            <string>   Outlets  </string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonIconOnly</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+           <property name="arrowType">
+            <enum>Qt::NoArrow</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbSignals">
+           <property name="text">
+            <string>   Signals  </string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbEvents">
+           <property name="text">
+            <string>   Events  </string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbActions">
+           <property name="text">
+            <string>   Actions  </string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QToolButton" name="tbSyncOutlets">
+           <property name="text">
+            <string>All Outlets</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbSyncSignals">
+           <property name="text">
+            <string>All Signals</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbSyncEvents">
+           <property name="text">
+            <string>All Events</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbSyncActions">
+           <property name="text">
+            <string>All Actions</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="Line" name="line_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QToolButton" name="tbDefinitions">
+           <property name="text">
+            <string>Definition</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbConditions">
+           <property name="text">
+            <string>Condition</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbLoops">
+           <property name="text">
+            <string>Loops</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="8">
+        <widget class="QLabel" name="lInsertMessage">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Literals</string>
+        </attribute>
+        <widget class="QToolButton" name="toolButton_6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Float</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>10.00</string>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_7">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Decimal</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>10.00D</string>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_8">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>0</y>
+           <width>31</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>True</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_9">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>0</y>
+           <width>31</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>False</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_10">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Null</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_5">
+        <attribute name="title">
+         <string>Operators</string>
+        </attribute>
+        <widget class="QToolButton" name="toolButton_11">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>'</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_12">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&quot;</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_13">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&amp;&amp;</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_14">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Not</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_15">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>/</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_16">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>*</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_17">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>\</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_18">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>(</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_19">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>)</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_20">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_21">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_22">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>=</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_23">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Or</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_24">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>0</y>
+           <width>31</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>And</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_25">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AndAlso</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_26">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>0</y>
+           <width>41</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OrElse</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_6">
+        <attribute name="title">
+         <string>Constants</string>
+        </attribute>
+        <widget class="QToolButton" name="tbCaseSensitive">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>92</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CaseSensitive</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="tbCaseInsensitive">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>0</y>
+           <width>98</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CaseInsensitive</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>Escape Codes</string>
+        </attribute>
+        <widget class="QToolButton" name="toolButton_29">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>\n</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_30">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>\&quot;</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_31">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>0</y>
+           <width>21</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>\\</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Misc.</string>
+        </attribute>
+        <widget class="QToolButton" name="toolButton_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>2</x>
+           <y>0</y>
+           <width>49</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>List</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Group" stdset="0">
+          <string>InputHelp</string>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>Dim l As List</string>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_3">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>52</x>
+           <y>0</y>
+           <width>71</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Dictionary</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Group" stdset="0">
+          <string>InputHelp</string>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>Dim d As Dictionary</string>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>122</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Integer</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Group" stdset="0">
+          <string>InputHelp</string>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>Dim i As Integer</string>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>182</x>
+           <y>0</y>
+           <width>51</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>String</string>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="Group" stdset="0">
+          <string>InputHelp</string>
+         </property>
+         <property name="Insert" stdset="0">
+          <string>Dim s As String</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+<customwidgets>
+<customwidget>
+<class>Q7BCodeView</class>
+<extends>QWidget</extends>
+<header>Q7BCodeView.h</header>
+</customwidget>
+</customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
