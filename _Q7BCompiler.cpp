@@ -1660,7 +1660,7 @@ bool Parser::build()
       
 
       s = make->p.readAllStandardError().trimmed();
-//QString sk9s = make->p.readAllStandardOutput();
+      //QString sk9s = make->p.readAllStandardOutput();
 
 
     if (!s.isEmpty()){
@@ -1904,7 +1904,7 @@ bool Parser::isFileSuperClassValid(QString s)
 
 
 
-#define ___ ;l<<Parser::SubFunction
+#define  ___ ;l<<Parser::SubFunction
 #define As ;sType=
 #define Alias ;lAlias<<
 
@@ -1952,18 +1952,18 @@ void Parser::CreateListOfClasses()
       Property "ObjectName" As "String";    COMMENT = "";
       Property "Parent" As "QObject";    COMMENT = "";
 
-      Function "Sender"___("") As "QObject";  COMMENT = "";
-      Function "Child"___("ObjectName As String") As "QObject";  COMMENT = "";
-      Function "Children"___("") As "List";  COMMENT = "";
-      Function "Inherits"___("ClassName As String") As "Boolean";  COMMENT = "";
-      Function "isWidgetType"___("") As "Boolean";  COMMENT = "";
+      Function "Sender" ___("") As "QObject";  COMMENT = "";
+      Function "Child" ___("ObjectName As String") As "QObject";  COMMENT = "";
+      Function "Children" ___("") As "List";  COMMENT = "";
+      Function "Inherits" ___("ClassName As String") As "Boolean";  COMMENT = "";
+      Function "isWidgetType" ___("") As "Boolean";  COMMENT = "";
 
-      Sub "killTimer"___("theId As Integer");  COMMENT = "";
-      Function "startTimer"___("interval As Integer") As "Integer";  COMMENT = "";
-      Event "timerEvent"___("e As QTimerEvent") Declare "void	timerEvent(QTimerEvent * e)"   COMMENT = "";
+      Sub "killTimer" ___("theId As Integer");  COMMENT = "";
+      Function "startTimer" ___("interval As Integer") As "Integer";  COMMENT = "";
+      Event "timerEvent" ___("e As QTimerEvent") Declare "void	timerEvent(QTimerEvent * e)"   COMMENT = "";
        
-      Event "Init"___("") Declare ""   COMMENT = "";
-      Event "Finalize"___("") Declare ""   COMMENT = "";
+      Event "Init" ___("") Declare ""   COMMENT = "";
+      Event "Finalize" ___("") Declare ""   COMMENT = "";
 
     End_Class
 
@@ -1979,11 +1979,11 @@ void Parser::CreateListOfClasses()
       Property "Tag" As "String";    COMMENT = "";
       Property "Icon" As "QIcon";    COMMENT = "";
 
-      Sub      "SetNextState"___("");  COMMENT = "";
-      Sub      "Highlight"___("Argument As Boolean");  COMMENT = "Marks the button to be lit.";
+      Sub      "SetNextState" ___("");  COMMENT = "";
+      Sub      "Highlight" ___("Argument As Boolean");  COMMENT = "Marks the button to be lit.";
 
-      Signal "triggered"___("Checked As Boolean") Declare "void triggered(bool Checked)"   COMMENT = "";
-      Signal "triggeredAction"___("Action As QAction") Declare "void triggered(QAction *Action)"   COMMENT = "";
+      Signal "triggered" ___("Checked As Boolean") Declare "void triggered(bool Checked)"   COMMENT = "";
+      Signal "triggeredAction" ___("Action As QAction") Declare "void triggered(QAction *Action)"   COMMENT = "";
 
     End_Class
 
@@ -1991,16 +1991,16 @@ void Parser::CreateListOfClasses()
 
     Class "Dictionary"
   
-      Function "Contains"___("Key As String") As "Boolean";  COMMENT = "";
-      Function "Length"___("") As "Integer";  COMMENT = "";
-      Sub      "RemoveAll"___("");  COMMENT = "";
-      Function "Keys"___("") As "List";  COMMENT = "";
-      Function "Values"___("") As "List";  COMMENT = "";
+      Function "Contains" ___("Key As String") As "Boolean";  COMMENT = "";
+      Function "Length" ___("") As "Integer";  COMMENT = "";
+      Sub      "RemoveAll" ___("");  COMMENT = "";
+      Function "Keys" ___("") As "List";  COMMENT = "";
+      Function "Values" ___("") As "List";  COMMENT = "";
 
-      Sub      "Remove"___("Key As String");  COMMENT = "";
-      Function "Object"___("Key As String") As "id";  COMMENT = "";
+      Sub      "Remove" ___("Key As String");  COMMENT = "";
+      Function "Object" ___("Key As String") As "id";  COMMENT = "";
  
-      Sub      "SetObject"___("Key As String, Argument As id");  COMMENT = ""; 
+      Sub      "SetObject" ___("Key As String, Argument As id");  COMMENT = "";
  
     End_Class
 
@@ -2017,23 +2017,23 @@ void Parser::CreateListOfClasses()
       Property "WindowFlags" As "Integer";    COMMENT = "";
       Property "ContextMenuPolicy" As "Integer";    COMMENT = "";
 
-      Function "Widget"___("ObjectName As String") As "QWidget";  COMMENT = "";
+      Function "Widget" ___("ObjectName As String") As "QWidget";  COMMENT = "";
 
-      Function "Actions"___("") As "List";  COMMENT = "Returns actions which are owned by this widget.";
-      Sub      "ShowFullScreen"___("");  COMMENT = "";
-      Sub      "ShowMaximized"___("");  COMMENT = "";
-      Sub      "ShowMinimized"___("");  COMMENT = "";
-      Sub      "ShowNormal"___("");  COMMENT = "";
-      Sub      "Show"___("");  COMMENT = "";
-      Sub      "Hide"___("");  COMMENT = "";
-      Sub      "ToggleVisible"___("");  COMMENT = "";
-      Sub      "SetAttribute"___("Attribute As Integer, On As Boolean");  COMMENT = "";
-      Sub      "SetParent"___("w As QWidget");  COMMENT = "";
+      Function "Actions" ___("") As "List";  COMMENT = "Returns actions which are owned by this widget.";
+      Sub      "ShowFullScreen" ___("");  COMMENT = "";
+      Sub      "ShowMaximized" ___("");  COMMENT = "";
+      Sub      "ShowMinimized" ___("");  COMMENT = "";
+      Sub      "ShowNormal" ___("");  COMMENT = "";
+      Sub      "Show" ___("");  COMMENT = "";
+      Sub      "Hide" ___("");  COMMENT = "";
+      Sub      "ToggleVisible" ___("");  COMMENT = "";
+      Sub      "SetAttribute" ___("Attribute As Integer, On As Boolean");  COMMENT = "";
+      Sub      "SetParent" ___("w As QWidget");  COMMENT = "";
 
-      Event "CloseEvent"___("e As QCloseEvent") Declare "void closeEvent(QCloseEvent *e)"   COMMENT = "";
-      Event "FocusInEvent"___("e As QFocusInEvent") Declare "void focusInEvent(QCloseEvent *e)"   COMMENT = "";
-      Event "ResizeEvent"___("e As QResizeEvent") Declare "void resizeEvent(QResizeEvent *e)"   COMMENT = "";
-      Event "PaintEvent"___("e As QResizeEvent") Declare "void paintEvent(QPaintEvent *e)"   COMMENT = "";
+      Event "CloseEvent" ___("e As QCloseEvent") Declare "void closeEvent(QCloseEvent *e)"   COMMENT = "";
+      Event "FocusInEvent" ___("e As QFocusInEvent") Declare "void focusInEvent(QCloseEvent *e)"   COMMENT = "";
+      Event "ResizeEvent" ___("e As QResizeEvent") Declare "void resizeEvent(QResizeEvent *e)"   COMMENT = "";
+      Event "PaintEvent" ___("e As QResizeEvent") Declare "void paintEvent(QPaintEvent *e)"   COMMENT = "";
 
     End_Class
 
@@ -2041,17 +2041,17 @@ void Parser::CreateListOfClasses()
 
     Class "List"
       
-      Function "toQStringList"___("") As "QStringList";  COMMENT = "";
-      Sub "fromQStringList"___("");  COMMENT = "";
+      Function "toQStringList" ___("") As "QStringList";  COMMENT = "";
+      Sub "fromQStringList" ___("");  COMMENT = "";
 
-      Function "Length"___("") As "Integer";  COMMENT = "";
-      Sub      "RemoveAll"___("");  COMMENT = "";
+      Function "Length" ___("") As "Integer";  COMMENT = "";
+      Sub      "RemoveAll" ___("");  COMMENT = "";
 
-      Sub      "Append"___("Argument As id");  COMMENT = "";
-      Function "Object"___("Index As Integer") As "id";  COMMENT = "";
-      Sub      "Remove"___("Index As Integer");  COMMENT = "";
-      Sub      "Insert"___("Index As Integer, Argument As id");  COMMENT = "";
-      Sub      "SetObject"___("Index As Integer, Argument As id");  COMMENT = "";
+      Sub      "Append" ___("Argument As id");  COMMENT = "";
+      Function "Object" ___("Index As Integer") As "id";  COMMENT = "";
+      Sub      "Remove" ___("Index As Integer");  COMMENT = "";
+      Sub      "Insert" ___("Index As Integer, Argument As id");  COMMENT = "";
+      Sub      "SetObject" ___("Index As Integer, Argument As id");  COMMENT = "";
  
     End_Class     
 
@@ -2065,14 +2065,14 @@ void Parser::CreateListOfClasses()
 
     Class "QMenu" SuperClass "QWidget"
   
-      Sub      "Clear"___("");  COMMENT = "";
-      Function "AddSeparator"___("") As "QAction";  COMMENT = "";
-      Function "AddAction"___("Text As String") As "QAction";  COMMENT = "";
-      Sub      "AddAction2"___("theAction As QAction")  COMMENT = "";
-      Function "AddMenu"___("Text As String") As "QMenu";  COMMENT = "";
+      Sub      "Clear" ___("");  COMMENT = "";
+      Function "AddSeparator" ___("") As "QAction";  COMMENT = "";
+      Function "AddAction" ___("Text As String") As "QAction";  COMMENT = "";
+      Sub      "AddAction2" ___("theAction As QAction")  COMMENT = "";
+      Function "AddMenu" ___("Text As String") As "QMenu";  COMMENT = "";
   
-      Signal "aboutToShow"___("") Declare "void aboutToShow()"   COMMENT = "";
-      Signal "triggered"___("Action As QAction") Declare "void triggered(QAction *Action)"   COMMENT = "";
+      Signal "aboutToShow" ___("") Declare "void aboutToShow()"   COMMENT = "";
+      Signal "triggered" ___("Action As QAction") Declare "void triggered(QAction *Action)"   COMMENT = "";
 
     End_Class
 
@@ -2080,8 +2080,8 @@ void Parser::CreateListOfClasses()
 
     Class "QMenuBar" SuperClass "QWidget"
 
-      Signal "hovered"___("action As QAction") Declare "void hovered(QAction *action)"   COMMENT = "";
-      Signal "triggered"___("action As QAction") Declare "void triggered(QAction *action)"   COMMENT = "";
+      Signal "hovered" ___("action As QAction") Declare "void hovered(QAction *action)"   COMMENT = "";
+      Signal "triggered" ___("action As QAction") Declare "void triggered(QAction *action)"   COMMENT = "";
   
     End_Class
 
@@ -2099,17 +2099,17 @@ void Parser::CreateListOfClasses()
 	    Property "source" As "QUrl";	COMMENT = "";
 	    Property "status" As "QDeclarativeView::Status";	COMMENT = "";
 
-	    Function "initialSize"___("") As "QSize";	COMMENT = "";
-	    Function "resizeMode"___("") As "QDeclarativeView::ResizeMode";	COMMENT = "";
-	    Function "rootContext"___("") As "QDeclarativeContext";	COMMENT = "";
-	    Function "rootObject"___("") As "QGraphicsObject";	COMMENT = "";
-	    Sub "setResizeMode"___("Mode As QDeclarativeView::ResizeMode");	COMMENT = "";
-	    Sub "setSource"___("Url As QUrl");	COMMENT = "";
-	    Function "source"___("") As "QUrl";	COMMENT = "";
-	    Function "status"___("") As "QDeclarativeView::Status";	COMMENT = "";
+	    Function "initialSize" ___("") As "QSize";	COMMENT = "";
+	    Function "resizeMode" ___("") As "QDeclarativeView::ResizeMode";	COMMENT = "";
+	    Function "rootContext" ___("") As "QDeclarativeContext";	COMMENT = "";
+	    Function "rootObject" ___("") As "QGraphicsObject";	COMMENT = "";
+	    Sub "setResizeMode" ___("Mode As QDeclarativeView::ResizeMode");	COMMENT = "";
+	    Sub "setSource" ___("Url As QUrl");	COMMENT = "";
+	    Function "source" ___("") As "QUrl";	COMMENT = "";
+	    Function "status" ___("") As "QDeclarativeView::Status";	COMMENT = "";
 
-	    Signal "sceneResized"___("Size As QSize") Declare "void sceneResized(QSize size)"	COMMENT = "";
-	    Signal "statusChanged"___("Status As QDeclarativeView::Status") Declare "void statusChanged(QDeclarativeView::Status status)"	COMMENT = "";
+	    Signal "sceneResized" ___("Size As QSize") Declare "void sceneResized(QSize size)"	COMMENT = "";
+	    Signal "statusChanged" ___("Status As QDeclarativeView::Status") Declare "void statusChanged(QDeclarativeView::Status status)"	COMMENT = "";
 
     End_Class
 
@@ -2117,12 +2117,12 @@ void Parser::CreateListOfClasses()
 
     Class "QDeclarativeContext" //SuperClass "QObject"
   
-	    Function "baseUrl"___("") As "QUrl";	COMMENT = "";
-	    Function "contextObject"___("") As "QObject";	COMMENT = "";
-	    Function "contextProperty"___("Name As String") As "QVariant";	COMMENT = "";
-	    Function "isValid"___("") As "Boolean";	COMMENT = "";
-	    Function "parentContext"___("") As "QDeclarativeContext ";	COMMENT = "";
-	    Function "resolvedUrl"___("Src As QUrl") As "QUrl";	COMMENT = "";
+	    Function "baseUrl" ___("") As "QUrl";	COMMENT = "";
+	    Function "contextObject" ___("") As "QObject";	COMMENT = "";
+	    Function "contextProperty" ___("Name As String") As "QVariant";	COMMENT = "";
+	    Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	    Function "parentContext" ___("") As "QDeclarativeContext ";	COMMENT = "";
+	    Function "resolvedUrl" ___("Src As QUrl") As "QUrl";	COMMENT = "";
 
     End_Class
 
@@ -2130,14 +2130,14 @@ void Parser::CreateListOfClasses()
 
     Class "QPrinterInfo"
   
-	    Function "isDefault"___("") As "Boolean";	COMMENT = "";
-	    Function "isNull"___("") As "Boolean";	COMMENT = "";
-	    Function "printerName"___("") As "String";	COMMENT = "";
-	    //Function "supportedPaperSizes"___("") As "List";	COMMENT = "";
+	    Function "isDefault" ___("") As "Boolean";	COMMENT = "";
+	    Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	    Function "printerName" ___("") As "String";	COMMENT = "";
+	    //Function "supportedPaperSizes" ___("") As "List";	COMMENT = "";
 
       
-	    Function "availablePrinters"___("") As "List";	COMMENT = "";
-	    Function "defaultPrinter"___("") As "QPrinterInfo";	COMMENT = "";
+	    Function "availablePrinters" ___("") As "List";	COMMENT = "";
+	    Function "defaultPrinter" ___("") As "QPrinterInfo";	COMMENT = "";
 
     End_Class
 
@@ -2145,11 +2145,11 @@ void Parser::CreateListOfClasses()
 
     Class "QWebView" SuperClass "QWidget"
   
-      Sub      "Load"___("URL As String");  COMMENT = "";
-      Sub      "SetHtml"___("Html As String");  COMMENT = "";
+      Sub      "Load" ___("URL As String");  COMMENT = "";
+      Sub      "SetHtml" ___("Html As String");  COMMENT = "";
   
-      Signal "loadFinished"___("Ok As Boolean") Declare "void loadFinished(bool Ok)"   COMMENT = "";
-      Signal "urlChangedAsString"___("URL As String") Declare "void urlChanged(const QUrl & URL)" Cast "Q7B_ID(URL.toString())"  COMMENT = "";
+      Signal "loadFinished" ___("Ok As Boolean") Declare "void loadFinished(bool Ok)"   COMMENT = "";
+      Signal "urlChangedAsString" ___("URL As String") Declare "void urlChanged(const QUrl & URL)" Cast "Q7B_ID(URL.toString())"  COMMENT = "";
   
     End_Class
 
@@ -2189,8 +2189,8 @@ void Parser::CreateListOfClasses()
 
 	  Property "CurrentIndex" As "Integer";    COMMENT = "";
 
-      Function "Count"___("") As "Integer";  COMMENT = "";
-      Function "Widget"___("Index As Integer") As "QWidget";  COMMENT = "";
+      Function "Count" ___("") As "Integer";  COMMENT = "";
+      Function "Widget" ___("Index As Integer") As "QWidget";  COMMENT = "";
 
     End_Class
 
@@ -2198,7 +2198,7 @@ void Parser::CreateListOfClasses()
 
     Class "QTableView" SuperClass "QAbstractItemView"
   
-      Sub      "SetColumnWidth"___("Column As Integer, Width As Integer");  COMMENT = "";
+      Sub      "SetColumnWidth" ___("Column As Integer, Width As Integer");  COMMENT = "";
 
     End_Class
 
@@ -2209,26 +2209,26 @@ void Parser::CreateListOfClasses()
       Property "RowCount" As "Integer";    COMMENT = "";
       Property "ColumnCount" As "Integer";    COMMENT = "";
 
-      Sub      "ClearContents"___("");  COMMENT = "";
-      Sub      "SetHorizontalHeaderAutoResize"___("");  COMMENT = "";
+      Sub      "ClearContents" ___("");  COMMENT = "";
+      Sub      "SetHorizontalHeaderAutoResize" ___("");  COMMENT = "";
 
-      Function "CurrentRow"___("") As "Integer";  COMMENT = "";
-      Sub      "SortItems"___("Column As Integer");  COMMENT = "";
-      Sub      "RemoveRow"___("Row As Integer");  COMMENT = "";
-      Sub      "SetCurrentCell"___("Row As Integer, Column As Integer");  COMMENT = "";
-      Function "ItemText"___("Row As Integer, Column As Integer") As "String";  COMMENT = "";
-      Function "ItemSelected"___("Row As Integer, Column As Integer") As "Boolean";  COMMENT = "";
-      Function "ItemCheckState"___("Row As Integer, Column As Integer") As "Integer";  COMMENT = "";
-      Sub      "SetItemFontBold"___("Row As Integer, Column As Integer, Yes As Boolean");  COMMENT = "";
-      Sub      "SetItemsText"___("Row As Integer, Column As Integer, TextItems As List");  COMMENT = "";
+      Function "CurrentRow" ___("") As "Integer";  COMMENT = "";
+      Sub      "SortItems" ___("Column As Integer");  COMMENT = "";
+      Sub      "RemoveRow" ___("Row As Integer");  COMMENT = "";
+      Sub      "SetCurrentCell" ___("Row As Integer, Column As Integer");  COMMENT = "";
+      Function "ItemText" ___("Row As Integer, Column As Integer") As "String";  COMMENT = "";
+      Function "ItemSelected" ___("Row As Integer, Column As Integer") As "Boolean";  COMMENT = "";
+      Function "ItemCheckState" ___("Row As Integer, Column As Integer") As "Integer";  COMMENT = "";
+      Sub      "SetItemFontBold" ___("Row As Integer, Column As Integer, Yes As Boolean");  COMMENT = "";
+      Sub      "SetItemsText" ___("Row As Integer, Column As Integer, TextItems As List");  COMMENT = "";
   
-      Sub      "SetItemText"___("Row As Integer, Column As Integer, Text As String");  COMMENT = "";
-      Sub      "SetItemFlags"___("Row As Integer, Column As Integer, Flags As Integer");  COMMENT = "";
-      Sub      "SetItemSelected"___("Row As Integer, Column As Integer, Yes As Boolean");  COMMENT = "";
-      Sub      "SetItemCheckState"___("Row As Integer, Column As Integer, CheckState As Integer");  COMMENT = "";
+      Sub      "SetItemText" ___("Row As Integer, Column As Integer, Text As String");  COMMENT = "";
+      Sub      "SetItemFlags" ___("Row As Integer, Column As Integer, Flags As Integer");  COMMENT = "";
+      Sub      "SetItemSelected" ___("Row As Integer, Column As Integer, Yes As Boolean");  COMMENT = "";
+      Sub      "SetItemCheckState" ___("Row As Integer, Column As Integer, CheckState As Integer");  COMMENT = "";
 
-      Function "FindItemInColumn"___("Text As String, Column As Integer, StartRow As Integer = 0, MatchFlags As Integer = QTableWidget.MatchExactly") As "Integer";  COMMENT = "";
-      Function "FindItemInRow"___("Text As String, Row As Integer, StartColumn As Integer = 0, MatchFlags As Integer = QTableWidget.MatchExactly") As "Integer";  COMMENT = "";
+      Function "FindItemInColumn" ___("Text As String, Column As Integer, StartRow As Integer = 0, MatchFlags As Integer = QTableWidget.MatchExactly") As "Integer";  COMMENT = "";
+      Function "FindItemInRow" ___("Text As String, Row As Integer, StartColumn As Integer = 0, MatchFlags As Integer = QTableWidget.MatchExactly") As "Integer";  COMMENT = "";
 
     End_Class
 
@@ -2265,15 +2265,15 @@ void Parser::CreateListOfClasses()
     Class "QTextEdit" SuperClass "QAbstractScrollArea"
   
       Property "Html" As "String";    COMMENT = "";
-      Sub      "Print"___("");  COMMENT = "";
-      Sub      "PrintToPDF"___("FileName As String");  COMMENT = "";      
+      Sub      "Print" ___("");  COMMENT = "";
+      Sub      "PrintToPDF" ___("FileName As String");  COMMENT = "";
 
-      Signal "cursorPositionChanged"___("") Declare "void cursorPositionChanged()"   COMMENT = "";
-      Signal "textChanged"___("") Declare "void textChanged()"   COMMENT = "";
-      Signal "copyAvailable"___("Yes As Boolean") Declare "void copyAvailable(bool yes)"   COMMENT = "";
-      Signal "redoAvailable"___("Yes As Boolean") Declare "void redoAvailable(bool yes)"   COMMENT = "";
-      Signal "undoAvailable"___("Yes As Boolean") Declare "void undoAvailable(bool yes)"   COMMENT = "";
-      Signal "selectionChanged"___("") Declare "void selectionChanged()"   COMMENT = "";
+      Signal "cursorPositionChanged" ___("") Declare "void cursorPositionChanged()"   COMMENT = "";
+      Signal "textChanged" ___("") Declare "void textChanged()"   COMMENT = "";
+      Signal "copyAvailable" ___("Yes As Boolean") Declare "void copyAvailable(bool yes)"   COMMENT = "";
+      Signal "redoAvailable" ___("Yes As Boolean") Declare "void redoAvailable(bool yes)"   COMMENT = "";
+      Signal "undoAvailable" ___("Yes As Boolean") Declare "void undoAvailable(bool yes)"   COMMENT = "";
+      Signal "selectionChanged" ___("") Declare "void selectionChanged()"   COMMENT = "";
   
     End_Class
 
@@ -2284,15 +2284,15 @@ void Parser::CreateListOfClasses()
       Property "PlainText" As "String";    COMMENT = "";
       Property "ReadOnly" As "Boolean";    COMMENT = "";
 
-      Sub      "AppendPlainText"___("Text As String")   COMMENT = "";
-      Sub      "Print"___("");  COMMENT = "";
-      Sub      "PrintToPDF"___("FileName As String");  COMMENT = "";      
+      Sub      "AppendPlainText" ___("Text As String")   COMMENT = "";
+      Sub      "Print" ___("");  COMMENT = "";
+      Sub      "PrintToPDF" ___("FileName As String");  COMMENT = "";
 
-      Signal "selectionChanged"___("") Declare "void selectionChanged()"   COMMENT = "";
-      Signal "redoAvailable"___("Yes As Boolean") Declare "void redoAvailable(bool yes)"   COMMENT = "";
-      Signal "undoAvailable"___("Yes As Boolean") Declare "void undoAvailable(bool yes)"   COMMENT = "";
-      Signal "modificationChanged"___("Yes As Boolean") Declare "void modificationChanged(bool yes)"   COMMENT = "";
-      Signal "blockCountChanged"___("newBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"   COMMENT = "";
+      Signal "selectionChanged" ___("") Declare "void selectionChanged()"   COMMENT = "";
+      Signal "redoAvailable" ___("Yes As Boolean") Declare "void redoAvailable(bool yes)"   COMMENT = "";
+      Signal "undoAvailable" ___("Yes As Boolean") Declare "void undoAvailable(bool yes)"   COMMENT = "";
+      Signal "modificationChanged" ___("Yes As Boolean") Declare "void modificationChanged(bool yes)"   COMMENT = "";
+      Signal "blockCountChanged" ___("newBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"   COMMENT = "";
 
     End_Class
 
@@ -2302,7 +2302,7 @@ void Parser::CreateListOfClasses()
   
       Property "WindowTitle" As "String";    COMMENT = "";
 
-      Function "Widget"___("") As "QWidget";   COMMENT = "";
+      Function "Widget" ___("") As "QWidget";   COMMENT = "";
 
     End_Class
 
@@ -2332,15 +2332,15 @@ void Parser::CreateListOfClasses()
       Property "Maximum" As "Integer";    COMMENT = "";
       Property "Completer" As "List";    COMMENT = "";
 
-      Function "IsValid"___("") As "Boolean";   COMMENT = "";
-      Sub      "SelectAll"___("");   COMMENT = "";
+      Function "IsValid" ___("") As "Boolean";   COMMENT = "";
+      Sub      "SelectAll" ___("");   COMMENT = "";
 
-      Signal "selectionChanged"___("") Declare "void selectionChanged()"   COMMENT = "";
-      Signal "editingFinished"___("") Declare "void editingFinished()"   COMMENT = "";
-      Signal "returnPressed"___("") Declare "void returnPressed()"   COMMENT = "";
-      Signal "cursorPositionChanged"___("OldPosition As Integer, NewPosition As Integer") Declare "void cursorPositionChanged(int OldPosition, int NewPosition)"   COMMENT = "";
-      Signal "textChanged"___("Text As String") Declare "void textChanged(const QString & Text)"   COMMENT = "";
-      Signal "textEdited"___("Text As String") Declare "void textEdited(const QString & Text)"   COMMENT = "";
+      Signal "selectionChanged" ___("") Declare "void selectionChanged()"   COMMENT = "";
+      Signal "editingFinished" ___("") Declare "void editingFinished()"   COMMENT = "";
+      Signal "returnPressed" ___("") Declare "void returnPressed()"   COMMENT = "";
+      Signal "cursorPositionChanged" ___("OldPosition As Integer, NewPosition As Integer") Declare "void cursorPositionChanged(int OldPosition, int NewPosition)"   COMMENT = "";
+      Signal "textChanged" ___("Text As String") Declare "void textChanged(const QString & Text)"   COMMENT = "";
+      Signal "textEdited" ___("Text As String") Declare "void textEdited(const QString & Text)"   COMMENT = "";
 
     End_Class
 
@@ -2370,7 +2370,7 @@ void Parser::CreateListOfClasses()
 
     Class "PhononVideoPlayer" SuperClass "QWidget"
   
-      Sub      "Play"___("FileName As String");   COMMENT = "";
+      Sub      "Play" ___("FileName As String");   COMMENT = "";
 
     End_Class
 
@@ -2419,7 +2419,7 @@ void Parser::CreateListOfClasses()
       Property "Alignment" As "Integer";    COMMENT = "";
       Property "TextInteractionFlags" As "Integer";    COMMENT = "";
 
-     // Sub      "testit"___("");   COMMENT = "";
+     // Sub      "testit" ___("");   COMMENT = "";
       
     End_Class
 
@@ -2440,9 +2440,9 @@ void Parser::CreateListOfClasses()
   
       Property "ViewMode" As "Integer";    COMMENT = "";
 
-      Sub      "AddSubWindow"___("Widget As QWidget");   COMMENT = "";
+      Sub      "AddSubWindow" ___("Widget As QWidget");   COMMENT = "";
       
-      Signal "GotFocusMDI"___("theWidget As QWidget") Declare "void subWindowActivated(QMdiSubWindow * window)" Cast "window ? Q7B_ID(window->widget()) : Q7B_IDNIL()"  COMMENT = "";
+      Signal "GotFocusMDI" ___("theWidget As QWidget") Declare "void subWindowActivated(QMdiSubWindow * window)" Cast "window ? Q7B_ID(window->widget()) : Q7B_IDNIL()"  COMMENT = "";
 
     End_Class
 
@@ -2456,7 +2456,7 @@ void Parser::CreateListOfClasses()
 
     Class "QStatusTipEvent" SuperClass "QEvent"
 
-	    Function "tip"___("") As "String";	COMMENT = "";
+	    Function "tip" ___("") As "String";	COMMENT = "";
 
     End_Class
 
@@ -2464,7 +2464,7 @@ void Parser::CreateListOfClasses()
 
     Class "QTimerEvent" SuperClass "QEvent"
 
-    	Function "timerId"___("") As "Integer";	COMMENT = "";
+    	Function "timerId" ___("") As "Integer";	COMMENT = "";
 
     End_Class
 
@@ -2472,7 +2472,7 @@ void Parser::CreateListOfClasses()
 
     Class "QWhatsThisClickedEvent" SuperClass "QEvent"
 
-    	Function "href"___("") As "String";	COMMENT = "";
+    	Function "href" ___("") As "String";	COMMENT = "";
 
     End_Class
 
@@ -2480,7 +2480,7 @@ void Parser::CreateListOfClasses()
 
     Class "QWindowStateChangeEvent" SuperClass "QEvent"
 
-    	Function "oldState"___("") As "Qt::WindowStates";	COMMENT = "";
+    	Function "oldState" ___("") As "Qt::WindowStates";	COMMENT = "";
 
     End_Class
 
@@ -2488,63 +2488,63 @@ void Parser::CreateListOfClasses()
 
     Class "QByteArray" 
 
-	    Function "append"___("Ba As QByteArray") As "QByteArray";	COMMENT = "";
-	    Function "append2"___("Str As String") As "QByteArray";	COMMENT = "";
-	    Function "at"___("I As Integer") As "String";	COMMENT = "";
-	    Function "capacity"___("") As "Integer";	COMMENT = "";
-	    Sub "chop"___("N As Integer");	COMMENT = "";
-	    Sub "clear"___("");	COMMENT = "";
-	    Function "contains"___("Ba As QByteArray") As "Boolean";	COMMENT = "";
-	    Function "contains2"___("Str As String") As "Boolean";	COMMENT = "";
-	    Function "count"___("Ba As QByteArray") As "Integer";	COMMENT = "";
-	    Function "count2"___("Str As String") As "Integer";	COMMENT = "";
-	    Function "count3"___("") As "Integer";	COMMENT = "";
-	    Function "data"___("") As "String";	COMMENT = "";
-	    Function "endsWith"___("Ba As QByteArray") As "Boolean";	COMMENT = "";
-	    Function "endsWith2"___("Str As String") As "Boolean";	COMMENT = "";
-	    Function "fill"___("Ch As String, Size As Integer") As "QByteArray";	COMMENT = "";
-	    Function "indexOf"___("Str As String, From As Integer") As "Integer";	COMMENT = "";
-	    Function "insert"___("I As Integer, Ba As QByteArray") As "QByteArray";	COMMENT = "";
-	    Function "insert2"___("I As Integer, Str As String") As "QByteArray";	COMMENT = "";
-	    Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	    Function "isNull"___("") As "Boolean";	COMMENT = "";
-	    Function "lastIndexOf"___("Ba As QByteArray, From As Integer") As "Integer";	COMMENT = "";
-	    Function "lastIndexOf2"___("Str As String, From As Integer") As "Integer";	COMMENT = "";
-	    Function "left"___("Len As Integer") As "QByteArray";	COMMENT = "";
-	    Function "leftJustified"___("Width As Integer, Fill As String, Truncate As Boolean") As "QByteArray";	COMMENT = "";
-	    Function "length"___("") As "Integer";	COMMENT = "";
-	    Function "mid"___("Pos As Integer, Len As Integer") As "QByteArray";	COMMENT = "";
-	    Function "prepend"___("Ba As QByteArray") As "QByteArray";	COMMENT = "";
-	    Function "prepend2"___("Str As String") As "QByteArray";	COMMENT = "";
-	    Sub "push_back"___("Other As QByteArray");	COMMENT = "";
-	    Sub "push_back2"___("Str As String");	COMMENT = "";
-	    Sub "push_front"___("Other As QByteArray");	COMMENT = "";
-	    Sub "push_front2"___("Str As String");	COMMENT = "";
-	    Function "replace"___("Pos As Integer, Len As Integer, After As QByteArray") As "QByteArray";	COMMENT = "";
-	    Function "replace2"___("Pos As Integer, Len As Integer, After As String, Alen As Integer") As "QByteArray";	COMMENT = "";
-	    Function "replace3"___("Before As QByteArray, After As QByteArray") As "QByteArray";	COMMENT = "";
-	    Sub "reserve"___("Size As Integer");	COMMENT = "";
-	    Sub "resize"___("Size As Integer");	COMMENT = "";
-	    Function "right"___("Len As Integer") As "QByteArray";	COMMENT = "";
-	    Function "rightJustified"___("Width As Integer, Fill As String, Truncate As Boolean") As "QByteArray";	COMMENT = "";
-	    Function "setNum"___("N As Integer, Base As Integer") As "QByteArray";	COMMENT = "";
-	    Function "setNum2"___("N As Float, Base As Integer") As "QByteArray";	COMMENT = "";
-	    Function "simplified"___("") As "QByteArray";	COMMENT = "";
-	    Function "size"___("") As "Integer";	COMMENT = "";
-	    //Function "split"___("Sep As String") As "List";	COMMENT = "";
-	    Sub "squeeze"___("");	COMMENT = "";
-	    Function "startsWith"___("Ba As QByteArray") As "Boolean";	COMMENT = "";
-	    Function "startsWith2"___("Str As String") As "Boolean";	COMMENT = "";
-	    Sub "swap"___("Other As QByteArray");	COMMENT = "";
-	    Function "toBase64"___("") As "QByteArray";	COMMENT = "";
-	    Function "toFloat"___("Ok As Boolean") As "Float";	COMMENT = "";
-	    Function "toHex"___("") As "QByteArray";	COMMENT = "";
-	    Function "toInt"___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
-	    Function "toLower"___("") As "QByteArray";	COMMENT = "";
-	    Function "toPercentEncoding"___("Exclude As QByteArray, Include As QByteArray, Percent As String") As "QByteArray";	COMMENT = "";
-	    Function "toUpper"___("") As "QByteArray";	COMMENT = "";
-	    Function "trimmed"___("") As "QByteArray";	COMMENT = "";
-	    Sub "truncate"___("Pos As Integer");	COMMENT = "";
+	    Function "append" ___("Ba As QByteArray") As "QByteArray";	COMMENT = "";
+	    Function "append2" ___("Str As String") As "QByteArray";	COMMENT = "";
+	    Function "at" ___("I As Integer") As "String";	COMMENT = "";
+	    Function "capacity" ___("") As "Integer";	COMMENT = "";
+	    Sub "chop" ___("N As Integer");	COMMENT = "";
+	    Sub "clear" ___("");	COMMENT = "";
+	    Function "contains" ___("Ba As QByteArray") As "Boolean";	COMMENT = "";
+	    Function "contains2" ___("Str As String") As "Boolean";	COMMENT = "";
+	    Function "count" ___("Ba As QByteArray") As "Integer";	COMMENT = "";
+	    Function "count2" ___("Str As String") As "Integer";	COMMENT = "";
+	    Function "count3" ___("") As "Integer";	COMMENT = "";
+	    Function "data" ___("") As "String";	COMMENT = "";
+	    Function "endsWith" ___("Ba As QByteArray") As "Boolean";	COMMENT = "";
+	    Function "endsWith2" ___("Str As String") As "Boolean";	COMMENT = "";
+	    Function "fill" ___("Ch As String, Size As Integer") As "QByteArray";	COMMENT = "";
+	    Function "indexOf" ___("Str As String, From As Integer") As "Integer";	COMMENT = "";
+	    Function "insert" ___("I As Integer, Ba As QByteArray") As "QByteArray";	COMMENT = "";
+	    Function "insert2" ___("I As Integer, Str As String") As "QByteArray";	COMMENT = "";
+	    Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	    Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	    Function "lastIndexOf" ___("Ba As QByteArray, From As Integer") As "Integer";	COMMENT = "";
+	    Function "lastIndexOf2" ___("Str As String, From As Integer") As "Integer";	COMMENT = "";
+	    Function "left" ___("Len As Integer") As "QByteArray";	COMMENT = "";
+	    Function "leftJustified" ___("Width As Integer, Fill As String, Truncate As Boolean") As "QByteArray";	COMMENT = "";
+	    Function "length" ___("") As "Integer";	COMMENT = "";
+	    Function "mid" ___("Pos As Integer, Len As Integer") As "QByteArray";	COMMENT = "";
+	    Function "prepend" ___("Ba As QByteArray") As "QByteArray";	COMMENT = "";
+	    Function "prepend2" ___("Str As String") As "QByteArray";	COMMENT = "";
+	    Sub "push_back" ___("Other As QByteArray");	COMMENT = "";
+	    Sub "push_back2" ___("Str As String");	COMMENT = "";
+	    Sub "push_front" ___("Other As QByteArray");	COMMENT = "";
+	    Sub "push_front2" ___("Str As String");	COMMENT = "";
+	    Function "replace" ___("Pos As Integer, Len As Integer, After As QByteArray") As "QByteArray";	COMMENT = "";
+	    Function "replace2" ___("Pos As Integer, Len As Integer, After As String, Alen As Integer") As "QByteArray";	COMMENT = "";
+	    Function "replace3" ___("Before As QByteArray, After As QByteArray") As "QByteArray";	COMMENT = "";
+	    Sub "reserve" ___("Size As Integer");	COMMENT = "";
+	    Sub "resize" ___("Size As Integer");	COMMENT = "";
+	    Function "right" ___("Len As Integer") As "QByteArray";	COMMENT = "";
+	    Function "rightJustified" ___("Width As Integer, Fill As String, Truncate As Boolean") As "QByteArray";	COMMENT = "";
+	    Function "setNum" ___("N As Integer, Base As Integer") As "QByteArray";	COMMENT = "";
+	    Function "setNum2" ___("N As Float, Base As Integer") As "QByteArray";	COMMENT = "";
+	    Function "simplified" ___("") As "QByteArray";	COMMENT = "";
+	    Function "size" ___("") As "Integer";	COMMENT = "";
+	    //Function "split" ___("Sep As String") As "List";	COMMENT = "";
+	    Sub "squeeze" ___("");	COMMENT = "";
+	    Function "startsWith" ___("Ba As QByteArray") As "Boolean";	COMMENT = "";
+	    Function "startsWith2" ___("Str As String") As "Boolean";	COMMENT = "";
+	    Sub "swap" ___("Other As QByteArray");	COMMENT = "";
+	    Function "toBase64" ___("") As "QByteArray";	COMMENT = "";
+	    Function "toFloat" ___("Ok As Boolean") As "Float";	COMMENT = "";
+	    Function "toHex" ___("") As "QByteArray";	COMMENT = "";
+	    Function "toInt" ___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
+	    Function "toLower" ___("") As "QByteArray";	COMMENT = "";
+	    Function "toPercentEncoding" ___("Exclude As QByteArray, Include As QByteArray, Percent As String") As "QByteArray";	COMMENT = "";
+	    Function "toUpper" ___("") As "QByteArray";	COMMENT = "";
+	    Function "trimmed" ___("") As "QByteArray";	COMMENT = "";
+	    Sub "truncate" ___("Pos As Integer");	COMMENT = "";
 
     End_Class
 
@@ -2552,9 +2552,9 @@ void Parser::CreateListOfClasses()
 
     Class "QShortcutEvent" SuperClass "QEvent"
 
-	    Function "isAmbiguous"___("") As "Boolean";	COMMENT = "";
-	    Function "key"___("") As "QKeySequence ";	COMMENT = "";
-	    Function "shortcutId"___("") As "Integer";	COMMENT = "";
+	    Function "isAmbiguous" ___("") As "Boolean";	COMMENT = "";
+	    Function "key" ___("") As "QKeySequence ";	COMMENT = "";
+	    Function "shortcutId" ___("") As "Integer";	COMMENT = "";
       
     End_Class
 
@@ -2562,8 +2562,8 @@ void Parser::CreateListOfClasses()
 
     Class "QResizeEvent" SuperClass "QEvent"
 
-	    Function "oldSize"___("") As "QSize";	COMMENT = "";
-	    Function "size"___("") As "QSize";	COMMENT = "";
+	    Function "oldSize" ___("") As "QSize";	COMMENT = "";
+	    Function "size" ___("") As "QSize";	COMMENT = "";
   
     End_Class
 
@@ -2571,31 +2571,31 @@ void Parser::CreateListOfClasses()
 
     Class "QTextBlockFormat" SuperClass "QTextFormat"
 
-	    Function "alignment"___("") As "Qt::Alignment";	COMMENT = "";
-	    Function "bottomMargin"___("") As "Float";	COMMENT = "";
-	    Function "indent"___("") As "Integer";	COMMENT = "";
-	    Function "isValid"___("") As "Boolean";	COMMENT = "";
-	    Function "leftMargin"___("") As "Float";	COMMENT = "";
-	    Function "lineHeight"___("ScriptLineHeight As Float, Scaling As Float") As "Float";	COMMENT = "";
-	    Function "lineHeight"___("") As "Float";	COMMENT = "";
-	    Function "lineHeightType"___("") As "Integer";	COMMENT = "";
-	    Function "nonBreakableLines"___("") As "Boolean";	COMMENT = "";
-	    Function "pageBreakPolicy"___("") As "QTextBlockFormat::PageBreakFlags";	COMMENT = "";
-	    Function "rightMargin"___("") As "Float";	COMMENT = "";
-	    Sub "setAlignment"___("Alignment As Qt::Alignment");	COMMENT = "";
-	    Sub "setBottomMargin"___("Margin As Float");	COMMENT = "";
-	    Sub "setIndent"___("Indentation As Integer");	COMMENT = "";
-	    Sub "setLeftMargin"___("Margin As Float");	COMMENT = "";
-	    Sub "setLineHeight"___("Height As Float, HeightType As Integer");	COMMENT = "";
-	    Sub "setNonBreakableLines"___("B As Boolean");	COMMENT = "";
-	    Sub "setPageBreakPolicy"___("Policy As QTextBlockFormat::PageBreakFlags");	COMMENT = "";
-	    Sub "setRightMargin"___("Margin As Float");	COMMENT = "";
-	    //Sub "setTabPositions"___("Tabs As List");	COMMENT = "";
-	    Sub "setTextIndent"___("Indent As Float");	COMMENT = "";
-	    Sub "setTopMargin"___("Margin As Float");	COMMENT = "";
-	    //Function "tabPositions"___("") As "List";	COMMENT = "";
-	    Function "textIndent"___("") As "Float";	COMMENT = "";
-	    Function "topMargin"___("") As "Float";	COMMENT = "";
+	    Function "alignment" ___("") As "Qt::Alignment";	COMMENT = "";
+	    Function "bottomMargin" ___("") As "Float";	COMMENT = "";
+	    Function "indent" ___("") As "Integer";	COMMENT = "";
+	    Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	    Function "leftMargin" ___("") As "Float";	COMMENT = "";
+	    Function "lineHeight" ___("ScriptLineHeight As Float, Scaling As Float") As "Float";	COMMENT = "";
+	    Function "lineHeight" ___("") As "Float";	COMMENT = "";
+	    Function "lineHeightType" ___("") As "Integer";	COMMENT = "";
+	    Function "nonBreakableLines" ___("") As "Boolean";	COMMENT = "";
+	    Function "pageBreakPolicy" ___("") As "QTextBlockFormat::PageBreakFlags";	COMMENT = "";
+	    Function "rightMargin" ___("") As "Float";	COMMENT = "";
+	    Sub "setAlignment" ___("Alignment As Qt::Alignment");	COMMENT = "";
+	    Sub "setBottomMargin" ___("Margin As Float");	COMMENT = "";
+	    Sub "setIndent" ___("Indentation As Integer");	COMMENT = "";
+	    Sub "setLeftMargin" ___("Margin As Float");	COMMENT = "";
+	    Sub "setLineHeight" ___("Height As Float, HeightType As Integer");	COMMENT = "";
+	    Sub "setNonBreakableLines" ___("B As Boolean");	COMMENT = "";
+	    Sub "setPageBreakPolicy" ___("Policy As QTextBlockFormat::PageBreakFlags");	COMMENT = "";
+	    Sub "setRightMargin" ___("Margin As Float");	COMMENT = "";
+	    //Sub "setTabPositions" ___("Tabs As List");	COMMENT = "";
+	    Sub "setTextIndent" ___("Indent As Float");	COMMENT = "";
+	    Sub "setTopMargin" ___("Margin As Float");	COMMENT = "";
+	    //Function "tabPositions" ___("") As "List";	COMMENT = "";
+	    Function "textIndent" ___("") As "Float";	COMMENT = "";
+	    Function "topMargin" ___("") As "Float";	COMMENT = "";
   
     End_Class
 
@@ -2603,53 +2603,53 @@ void Parser::CreateListOfClasses()
 
     Class "QTextCharFormat" SuperClass "QTextFormat"
  
-	    Function "anchorHref"___("") As "String";	COMMENT = "";
-	    Function "anchorNames"___("") As "QStringList";	COMMENT = "";
-	    Function "font"___("") As "QFont";	COMMENT = "";
-	    Function "fontCapitalization"___("") As "QFont::Capitalization";	COMMENT = "";
-	    Function "fontFamily"___("") As "String";	COMMENT = "";
-	    Function "fontFixedPitch"___("") As "Boolean";	COMMENT = "";
-	    Function "fontHintingPreference"___("") As "QFont::HintingPreference";	COMMENT = "";
-	    Function "fontItalic"___("") As "Boolean";	COMMENT = "";
-	    Function "fontLetterSpacing"___("") As "Float";	COMMENT = "";
-	    Function "fontOverline"___("") As "Boolean";	COMMENT = "";
-	    Function "fontPointSize"___("") As "Float";	COMMENT = "";
-	    Function "fontStrikeOut"___("") As "Boolean";	COMMENT = "";
-	    Function "fontStyleHint"___("") As "QFont::StyleHint";	COMMENT = "";
-	    Function "fontStyleStrategy"___("") As "QFont::StyleStrategy";	COMMENT = "";
-	    Function "fontUnderline"___("") As "Boolean";	COMMENT = "";
-	    Function "fontWeight"___("") As "Integer";	COMMENT = "";
-	    Function "fontWordSpacing"___("") As "Float";	COMMENT = "";
-	    Function "isAnchor"___("") As "Boolean";	COMMENT = "";
-	    Function "isValid"___("") As "Boolean";	COMMENT = "";
-	    Sub "setAnchor"___("Anchor As Boolean");	COMMENT = "";
-	    Sub "setAnchorHref"___("Value As String");	COMMENT = "";
-	    Sub "setAnchorNames"___("Names As QStringList");	COMMENT = "";
-	    Sub "setFont"___("Font As QFont");	COMMENT = "";
-	    Sub "setFontCapitalization"___("Capitalization As QFont::Capitalization");	COMMENT = "";
-	    Sub "setFontFamily"___("Family As String");	COMMENT = "";
-	    Sub "setFontFixedPitch"___("FixedPitch As Boolean");	COMMENT = "";
-	    Sub "setFontHintingPreference"___("HintingPreference As QFont::HintingPreference");	COMMENT = "";
-	    Sub "setFontItalic"___("Italic As Boolean");	COMMENT = "";
-	    Sub "setFontLetterSpacing"___("Spacing As Float");	COMMENT = "";
-	    Sub "setFontOverline"___("Overline As Boolean");	COMMENT = "";
-	    Sub "setFontPointSize"___("Size As Float");	COMMENT = "";
-	    Sub "setFontStrikeOut"___("StrikeOut As Boolean");	COMMENT = "";
-	    Sub "setFontStyleHint"___("Hint As QFont::StyleHint, Strategy As QFont::StyleStrategy");	COMMENT = "";
-	    Sub "setFontStyleStrategy"___("Strategy As QFont::StyleStrategy");	COMMENT = "";
-	    Sub "setFontUnderline"___("UnderLine As Boolean");	COMMENT = "";
-	    Sub "setFontWeight"___("Weight As Integer");	COMMENT = "";
-	    Sub "setFontWordSpacing"___("Spacing As Float");	COMMENT = "";
-	    Sub "setTextOutline"___("Pen As QPen");	COMMENT = "";
-	    Sub "setToolTip"___("Text As String");	COMMENT = "";
-	    Sub "setUnderlineColor"___("Color As QColor");	COMMENT = "";
-	    Sub "setUnderlineStyle"___("Style As QTextCharFormat::UnderlineStyle");	COMMENT = "";
-	    Sub "setVerticalAlignment"___("Alignment As QTextCharFormat::VerticalAlignment");	COMMENT = "";
-	    Function "textOutline"___("") As "QPen";	COMMENT = "";
-	    Function "toolTip"___("") As "String";	COMMENT = "";
-	    Function "underlineColor"___("") As "QColor";	COMMENT = "";
-	    Function "underlineStyle"___("") As "QTextCharFormat::UnderlineStyle";	COMMENT = "";
-	    Function "verticalAlignment"___("") As "QTextCharFormat::VerticalAlignment";	COMMENT = "";
+	    Function "anchorHref" ___("") As "String";	COMMENT = "";
+	    Function "anchorNames" ___("") As "QStringList";	COMMENT = "";
+	    Function "font" ___("") As "QFont";	COMMENT = "";
+	    Function "fontCapitalization" ___("") As "QFont::Capitalization";	COMMENT = "";
+	    Function "fontFamily" ___("") As "String";	COMMENT = "";
+	    Function "fontFixedPitch" ___("") As "Boolean";	COMMENT = "";
+	    Function "fontHintingPreference" ___("") As "QFont::HintingPreference";	COMMENT = "";
+	    Function "fontItalic" ___("") As "Boolean";	COMMENT = "";
+	    Function "fontLetterSpacing" ___("") As "Float";	COMMENT = "";
+	    Function "fontOverline" ___("") As "Boolean";	COMMENT = "";
+	    Function "fontPointSize" ___("") As "Float";	COMMENT = "";
+	    Function "fontStrikeOut" ___("") As "Boolean";	COMMENT = "";
+	    Function "fontStyleHint" ___("") As "QFont::StyleHint";	COMMENT = "";
+	    Function "fontStyleStrategy" ___("") As "QFont::StyleStrategy";	COMMENT = "";
+	    Function "fontUnderline" ___("") As "Boolean";	COMMENT = "";
+	    Function "fontWeight" ___("") As "Integer";	COMMENT = "";
+	    Function "fontWordSpacing" ___("") As "Float";	COMMENT = "";
+	    Function "isAnchor" ___("") As "Boolean";	COMMENT = "";
+	    Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	    Sub "setAnchor" ___("Anchor As Boolean");	COMMENT = "";
+	    Sub "setAnchorHref" ___("Value As String");	COMMENT = "";
+	    Sub "setAnchorNames" ___("Names As QStringList");	COMMENT = "";
+	    Sub "setFont" ___("Font As QFont");	COMMENT = "";
+	    Sub "setFontCapitalization" ___("Capitalization As QFont::Capitalization");	COMMENT = "";
+	    Sub "setFontFamily" ___("Family As String");	COMMENT = "";
+	    Sub "setFontFixedPitch" ___("FixedPitch As Boolean");	COMMENT = "";
+	    Sub "setFontHintingPreference" ___("HintingPreference As QFont::HintingPreference");	COMMENT = "";
+	    Sub "setFontItalic" ___("Italic As Boolean");	COMMENT = "";
+	    Sub "setFontLetterSpacing" ___("Spacing As Float");	COMMENT = "";
+	    Sub "setFontOverline" ___("Overline As Boolean");	COMMENT = "";
+	    Sub "setFontPointSize" ___("Size As Float");	COMMENT = "";
+	    Sub "setFontStrikeOut" ___("StrikeOut As Boolean");	COMMENT = "";
+	    Sub "setFontStyleHint" ___("Hint As QFont::StyleHint, Strategy As QFont::StyleStrategy");	COMMENT = "";
+	    Sub "setFontStyleStrategy" ___("Strategy As QFont::StyleStrategy");	COMMENT = "";
+	    Sub "setFontUnderline" ___("UnderLine As Boolean");	COMMENT = "";
+	    Sub "setFontWeight" ___("Weight As Integer");	COMMENT = "";
+	    Sub "setFontWordSpacing" ___("Spacing As Float");	COMMENT = "";
+	    Sub "setTextOutline" ___("Pen As QPen");	COMMENT = "";
+	    Sub "setToolTip" ___("Text As String");	COMMENT = "";
+	    Sub "setUnderlineColor" ___("Color As QColor");	COMMENT = "";
+	    Sub "setUnderlineStyle" ___("Style As QTextCharFormat::UnderlineStyle");	COMMENT = "";
+	    Sub "setVerticalAlignment" ___("Alignment As QTextCharFormat::VerticalAlignment");	COMMENT = "";
+	    Function "textOutline" ___("") As "QPen";	COMMENT = "";
+	    Function "toolTip" ___("") As "String";	COMMENT = "";
+	    Function "underlineColor" ___("") As "QColor";	COMMENT = "";
+	    Function "underlineStyle" ___("") As "QTextCharFormat::UnderlineStyle";	COMMENT = "";
+	    Function "verticalAlignment" ___("") As "QTextCharFormat::VerticalAlignment";	COMMENT = "";
 
     End_Class
 
@@ -2657,30 +2657,30 @@ void Parser::CreateListOfClasses()
 
     Class "QItemSelectionModel" SuperClass "QObject"
 
-	    Function "columnIntersectsSelection"___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	    Function "currentIndex"___("") As "QModelIndex";	COMMENT = "";
-	    Function "hasSelection"___("") As "Boolean";	COMMENT = "";
-	    Function "isColumnSelected"___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	    Function "isRowSelected"___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	    Function "isSelected"___("Index As QModelIndex") As "Boolean";	COMMENT = "";
-	    Function "model"___("") As "QAbstractItemModel";	COMMENT = "";
-	    //Function "rowIntersectsSelection"___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	    //Function "selectedColumns"___("Row As Integer") As "QModelIndexList";	COMMENT = "";
-	    //Function "selectedIndexes"___("") As "QModelIndexList";	COMMENT = "";
-	    //Function "selectedRows"___("Column As Integer") As "QModelIndexList";	COMMENT = "";
-	   // Function "selection"___("") As "QItemSelection";	COMMENT = "";
+	    Function "columnIntersectsSelection" ___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	    Function "currentIndex" ___("") As "QModelIndex";	COMMENT = "";
+	    Function "hasSelection" ___("") As "Boolean";	COMMENT = "";
+	    Function "isColumnSelected" ___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	    Function "isRowSelected" ___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	    Function "isSelected" ___("Index As QModelIndex") As "Boolean";	COMMENT = "";
+	    Function "model" ___("") As "QAbstractItemModel";	COMMENT = "";
+	    //Function "rowIntersectsSelection" ___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	    //Function "selectedColumns" ___("Row As Integer") As "QModelIndexList";	COMMENT = "";
+	    //Function "selectedIndexes" ___("") As "QModelIndexList";	COMMENT = "";
+	    //Function "selectedRows" ___("Column As Integer") As "QModelIndexList";	COMMENT = "";
+	   // Function "selection" ___("") As "QItemSelection";	COMMENT = "";
 
-	    Slot "clear"___("");	COMMENT = "";
-	    Slot "clearSelection"___("");	COMMENT = "";
-	    Slot "reset"___("");	COMMENT = "";
-	    Slot "select"___("Index As QModelIndex, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
-	    //Slot "select"___("Selection As QItemSelection, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
-	    Slot "setCurrentIndex"___("Index As QModelIndex, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
+	    Slot "clear" ___("");	COMMENT = "";
+	    Slot "clearSelection" ___("");	COMMENT = "";
+	    Slot "reset" ___("");	COMMENT = "";
+	    Slot "select" ___("Index As QModelIndex, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
+	    //Slot "select" ___("Selection As QItemSelection, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
+	    Slot "setCurrentIndex" ___("Index As QModelIndex, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
 
-	    Signal "currentChanged"___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
-	    Signal "currentColumnChanged"___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentColumnChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
-	    Signal "currentRowChanged"___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentRowChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
-	    Signal "selectionChanged"___("Selected As QItemSelection, Deselected As QItemSelection") Declare "void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected)"	COMMENT = "";
+	    Signal "currentChanged" ___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
+	    Signal "currentColumnChanged" ___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentColumnChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
+	    Signal "currentRowChanged" ___("Current As QModelIndex, Previous As QModelIndex") Declare "void currentRowChanged(const QModelIndex & current, const QModelIndex & previous)"	COMMENT = "";
+	    Signal "selectionChanged" ___("Selected As QItemSelection, Deselected As QItemSelection") Declare "void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected)"	COMMENT = "";
   
     End_Class
 
@@ -2688,7 +2688,7 @@ void Parser::CreateListOfClasses()
 
     Class "QGraphicsSceneEvent" SuperClass "QEvent"
   	  
-      Function "widget"___("") As "QWidget";	COMMENT = "";
+      Function "widget" ___("") As "QWidget";	COMMENT = "";
 
     End_Class
 
@@ -2696,12 +2696,12 @@ void Parser::CreateListOfClasses()
 
     Class "QHelpEvent" SuperClass "QEvent"
 
-      Function "globalPos"___("") As "QPoint";	COMMENT = "";
-	    Function "globalX"___("") As "Integer";	COMMENT = "";
-	    Function "globalY"___("") As "Integer";	COMMENT = "";
-	    Function "pos"___("") As "QPoint";	COMMENT = "";
-	    Function "x"___("") As "Integer";	COMMENT = "";
-	    Function "y"___("") As "Integer";	COMMENT = "";
+      Function "globalPos" ___("") As "QPoint";	COMMENT = "";
+	    Function "globalX" ___("") As "Integer";	COMMENT = "";
+	    Function "globalY" ___("") As "Integer";	COMMENT = "";
+	    Function "pos" ___("") As "QPoint";	COMMENT = "";
+	    Function "x" ___("") As "Integer";	COMMENT = "";
+	    Function "y" ___("") As "Integer";	COMMENT = "";
 
     End_Class
      
@@ -2709,8 +2709,8 @@ void Parser::CreateListOfClasses()
 
     Class "QMoveEvent" SuperClass "QEvent"
   
-	    Function "oldPos"___("") As "QPoint ";	COMMENT = "";
-	    Function "pos"___("") As "QPoint";	COMMENT = "";
+	    Function "oldPos" ___("") As "QPoint ";	COMMENT = "";
+	    Function "pos" ___("") As "QPoint";	COMMENT = "";
 
     End_Class
 
@@ -2718,12 +2718,12 @@ void Parser::CreateListOfClasses()
 
     Class "QInputMethodEvent" SuperClass "QEvent"
   
-	    //Function "attributes"___("") As "List";	COMMENT = "";
-	    Function "commitString"___("") As "String";	COMMENT = "";
-	    Function "preeditString"___("") As "String";	COMMENT = "";
-	    Function "replacementLength"___("") As "Integer";	COMMENT = "";
-	    Function "replacementStart"___("") As "Integer";	COMMENT = "";
-	    Sub "setCommitString"___("CommitString As String, ReplaceFrom As Integer, ReplaceLength As Integer");	COMMENT = "";
+	    //Function "attributes" ___("") As "List";	COMMENT = "";
+	    Function "commitString" ___("") As "String";	COMMENT = "";
+	    Function "preeditString" ___("") As "String";	COMMENT = "";
+	    Function "replacementLength" ___("") As "Integer";	COMMENT = "";
+	    Function "replacementStart" ___("") As "Integer";	COMMENT = "";
+	    Sub "setCommitString" ___("CommitString As String, ReplaceFrom As Integer, ReplaceLength As Integer");	COMMENT = "";
 
 
     End_Class
@@ -2732,7 +2732,7 @@ void Parser::CreateListOfClasses()
 
     Class "QInputEvent" SuperClass "QEvent"
   
-	    Function "modifiers"___("") As "Qt::KeyboardModifiers";	COMMENT = "";
+	    Function "modifiers" ___("") As "Qt::KeyboardModifiers";	COMMENT = "";
 
     End_Class
 
@@ -2752,8 +2752,8 @@ void Parser::CreateListOfClasses()
 
     Class "QHoverEvent" SuperClass "QEvent"
 
-	    Function "oldPos"___("") As "QPoint";	COMMENT = "";
-	    Function "pos"___("") As "QPoint";	COMMENT = "";
+	    Function "oldPos" ___("") As "QPoint";	COMMENT = "";
+	    Function "pos" ___("") As "QPoint";	COMMENT = "";
   
     End_Class
 
@@ -2761,8 +2761,8 @@ void Parser::CreateListOfClasses()
 
     Class "QPaintEvent" SuperClass "QEvent"
 	
-      Function "rect"___("") As "QRect";	COMMENT = "";
-	    Function "region"___("") As "QRegion";	COMMENT = "";
+      Function "rect" ___("") As "QRect";	COMMENT = "";
+	    Function "region" ___("") As "QRegion";	COMMENT = "";
   
     End_Class
 
@@ -2770,9 +2770,9 @@ void Parser::CreateListOfClasses()
 
     Class "QFocusEvent" SuperClass "QEvent"
 
-      Function "gotFocus"___("") As "Boolean";	COMMENT = "";
-	    Function "lostFocus"___("") As "Boolean";	COMMENT = "";
-	    Function "reason"___("") As "Qt::FocusReason";	COMMENT = "";
+      Function "gotFocus" ___("") As "Boolean";	COMMENT = "";
+	    Function "lostFocus" ___("") As "Boolean";	COMMENT = "";
+	    Function "reason" ___("") As "Qt::FocusReason";	COMMENT = "";
 
     End_Class
 
@@ -2786,9 +2786,9 @@ void Parser::CreateListOfClasses()
 
     Class "QFileOpenEvent" SuperClass "QEvent"
   
-	    Function "file"___("") As "String";	COMMENT = "";
-	   // Function "openFile"___("File As QFile, Flags As QIODevice::OpenMode") As "Boolean";	COMMENT = "";
-	    Function "url"___("") As "QUrl";	COMMENT = "";
+	    Function "file" ___("") As "String";	COMMENT = "";
+	   // Function "openFile" ___("File As QFile, Flags As QIODevice::OpenMode") As "Boolean";	COMMENT = "";
+	    Function "url" ___("") As "QUrl";	COMMENT = "";
 
     End_Class
 
@@ -2796,7 +2796,7 @@ void Parser::CreateListOfClasses()
 
     Class "QDynamicPropertyChangeEvent" SuperClass "QEvent"
   	
-      Function "propertyName"___("") As "QByteArray";	COMMENT = "";
+      Function "propertyName" ___("") As "QByteArray";	COMMENT = "";
 
     End_Class
 
@@ -2810,16 +2810,16 @@ void Parser::CreateListOfClasses()
 
     Class "QDropEvent" SuperClass "QEvent"
   
-	    Sub "acceptProposedAction"___("");	COMMENT = "";
-	    Function "dropAction"___("") As "Qt::DropAction";	COMMENT = "";
-	    Function "keyboardModifiers"___("") As "Qt::KeyboardModifiers";	COMMENT = "";
-	    Function "mimeData"___("") As "QMimeData";	COMMENT = "";
-	    Function "mouseButtons"___("") As "Qt::MouseButtons";	COMMENT = "";
-	    Function "pos"___("") As "QPoint";	COMMENT = "";
-	    Function "possibleActions"___("") As "Qt::DropActions";	COMMENT = "";
-	    Function "proposedAction"___("") As "Qt::DropAction";	COMMENT = "";
-	    Sub "setDropAction"___("Action As Qt::DropAction");	COMMENT = "";
-	    Function "source"___("") As "QWidget";	COMMENT = "";
+	    Sub "acceptProposedAction" ___("");	COMMENT = "";
+	    Function "dropAction" ___("") As "Qt::DropAction";	COMMENT = "";
+	    Function "keyboardModifiers" ___("") As "Qt::KeyboardModifiers";	COMMENT = "";
+	    Function "mimeData" ___("") As "QMimeData";	COMMENT = "";
+	    Function "mouseButtons" ___("") As "Qt::MouseButtons";	COMMENT = "";
+	    Function "pos" ___("") As "QPoint";	COMMENT = "";
+	    Function "possibleActions" ___("") As "Qt::DropActions";	COMMENT = "";
+	    Function "proposedAction" ___("") As "Qt::DropAction";	COMMENT = "";
+	    Sub "setDropAction" ___("Action As Qt::DropAction");	COMMENT = "";
+	    Function "source" ___("") As "QWidget";	COMMENT = "";
 
     End_Class
 
@@ -2827,7 +2827,7 @@ void Parser::CreateListOfClasses()
 
     Class "QPainter"
 
-      Sub      "DrawLine"___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");   COMMENT = "";
+      Sub      "DrawLine" ___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");   COMMENT = "";
 
     End_Class
 
@@ -2860,8 +2860,8 @@ void Parser::CreateListOfClasses()
 
     Class "QDialog" SuperClass "QWidget"
 
-      Sub      "Accept"___("");   COMMENT = "";
-      Sub      "Reject"___("");   COMMENT = "";
+      Sub      "Accept" ___("");   COMMENT = "";
+      Sub      "Reject" ___("");   COMMENT = "";
 
     End_Class
 
@@ -2869,42 +2869,42 @@ void Parser::CreateListOfClasses()
 
     Class "QListWidget" SuperClass "QListView"
   
-      Function "Length"___("") As "Integer";   COMMENT = "";
-      Sub      "RemoveAll"___("");   COMMENT = "";
-      Function "Selected"___("") As "Integer";   COMMENT = "";
-      Function "SelectedText"___("") As "String";   COMMENT = "";
-      Sub      "Sort"___("Descending As Boolean");   COMMENT = "";
-      Sub      "Append"___("Text As String");   COMMENT = "";
-      Sub      "Remove"___("Index As Integer");   COMMENT = "";
-      Sub      "Select"___("Index As Integer");   COMMENT = "";
-      Sub      "SelectText"___("Text As String");   COMMENT = "";
-      Function "Text"___("Index As Integer") As "String";   COMMENT = "";
-      Function "Data"___("Index As Integer") As "id";   COMMENT = "";
-      Function "Icon"___("Index As Integer") As "QIcon";   COMMENT = "";
-      Function "CheckState"___("Index As Integer") As "Integer";   COMMENT = "";
-      Function "Flags"___("Index As Integer") As "Integer";   COMMENT = "";
-      Function "IsHidden"___("Index As Integer") As "Boolean";   COMMENT = "";
-      Function "IsSelected"___("Index As Integer") As "Boolean";   COMMENT = "";
-      Function "StatusTip"___("Index As Integer") As "String";   COMMENT = "";
-      Function "WhatsThis"___("Index As Integer") As "String";   COMMENT = "";
-      Function "ToolTip"___("Index As Integer") As "String";   COMMENT = "";
-      Function "TextAlignment"___("Index As Integer") As "Integer";   COMMENT = "";
-      Sub      "SetText"___("Index As Integer, Text As String");   COMMENT = "";
-      Sub      "SetIcon"___("Index As Integer, Icon As QIcon");   COMMENT = "";
-      Sub      "SetData"___("Index As Integer, id");   COMMENT = "";
-      Sub      "SetCheckState"___("Index As Integer, CheckState As Integer");   COMMENT = "";
-      Sub      "SetFlags"___("Index As Integer, Flag As Integer");   COMMENT = "";
-      Sub      "SetHidden"___("Index As Integer, IsHidden As Boolean");   COMMENT = "";
-      Sub      "SetSelected"___("Index As Integer, IsSelected As Boolean");   COMMENT = "";
-      Sub      "SetStatusTip"___("Index As Integer, StatusTip As String");   COMMENT = "";
-      Sub      "SetWhatsThis"___("Index As Integer, WhatsThis As String");   COMMENT = "";
-      Sub      "SetToolTip"___("Index As Integer, ToolTip As String");   COMMENT = "";
-      Sub      "SetTextAlignment"___("Index As Integer, TextAlignment As Integer");   COMMENT = "";
-      Sub      "Insert"___("Index As Integer, Text As String");   COMMENT = "";
-      Sub      "Append2"___("Icon As QIcon, Text As String");   COMMENT = "";
-      Sub      "Insert2"___("Index As Integer, Icon As QIcon, Text As String");   COMMENT = "";
+      Function "Length" ___("") As "Integer";   COMMENT = "";
+      Sub      "RemoveAll" ___("");   COMMENT = "";
+      Function "Selected" ___("") As "Integer";   COMMENT = "";
+      Function "SelectedText" ___("") As "String";   COMMENT = "";
+      Sub      "Sort" ___("Descending As Boolean");   COMMENT = "";
+      Sub      "Append" ___("Text As String");   COMMENT = "";
+      Sub      "Remove" ___("Index As Integer");   COMMENT = "";
+      Sub      "Select" ___("Index As Integer");   COMMENT = "";
+      Sub      "SelectText" ___("Text As String");   COMMENT = "";
+      Function "Text" ___("Index As Integer") As "String";   COMMENT = "";
+      Function "Data" ___("Index As Integer") As "id";   COMMENT = "";
+      Function "Icon" ___("Index As Integer") As "QIcon";   COMMENT = "";
+      Function "CheckState" ___("Index As Integer") As "Integer";   COMMENT = "";
+      Function "Flags" ___("Index As Integer") As "Integer";   COMMENT = "";
+      Function "IsHidden" ___("Index As Integer") As "Boolean";   COMMENT = "";
+      Function "IsSelected" ___("Index As Integer") As "Boolean";   COMMENT = "";
+      Function "StatusTip" ___("Index As Integer") As "String";   COMMENT = "";
+      Function "WhatsThis" ___("Index As Integer") As "String";   COMMENT = "";
+      Function "ToolTip" ___("Index As Integer") As "String";   COMMENT = "";
+      Function "TextAlignment" ___("Index As Integer") As "Integer";   COMMENT = "";
+      Sub      "SetText" ___("Index As Integer, Text As String");   COMMENT = "";
+      Sub      "SetIcon" ___("Index As Integer, Icon As QIcon");   COMMENT = "";
+      Sub      "SetData" ___("Index As Integer, id");   COMMENT = "";
+      Sub      "SetCheckState" ___("Index As Integer, CheckState As Integer");   COMMENT = "";
+      Sub      "SetFlags" ___("Index As Integer, Flag As Integer");   COMMENT = "";
+      Sub      "SetHidden" ___("Index As Integer, IsHidden As Boolean");   COMMENT = "";
+      Sub      "SetSelected" ___("Index As Integer, IsSelected As Boolean");   COMMENT = "";
+      Sub      "SetStatusTip" ___("Index As Integer, StatusTip As String");   COMMENT = "";
+      Sub      "SetWhatsThis" ___("Index As Integer, WhatsThis As String");   COMMENT = "";
+      Sub      "SetToolTip" ___("Index As Integer, ToolTip As String");   COMMENT = "";
+      Sub      "SetTextAlignment" ___("Index As Integer, TextAlignment As Integer");   COMMENT = "";
+      Sub      "Insert" ___("Index As Integer, Text As String");   COMMENT = "";
+      Sub      "Append2" ___("Icon As QIcon, Text As String");   COMMENT = "";
+      Sub      "Insert2" ___("Index As Integer, Icon As QIcon, Text As String");   COMMENT = "";
 
-      Signal "currentRowChanged"___("Index As Integer") Declare "void currentRowChanged(int Index)"   COMMENT = "";
+      Signal "currentRowChanged" ___("Index As Integer") Declare "void currentRowChanged(int Index)"   COMMENT = "";
 
     End_Class
 
@@ -2912,92 +2912,92 @@ void Parser::CreateListOfClasses()
 
     Class "QTreeWidget" SuperClass "QTreeView"
   
-      Function "ColumnCount"___("") As "Integer";   COMMENT = "";
-      Function "CurrentColumn"___("") As "Integer";   COMMENT = "";
-      Function "CurrentItem"___("") As "Integer";   COMMENT = "";
-      Function "HeaderItem"___("") As "Integer";   COMMENT = "";
-      Function "InvisibleRootItem"___("") As "Integer";   COMMENT = "";
-      Function "SelectedItems"___("") As "List";   COMMENT = "";
-      Function "SortColumn"___("") As "Integer";   COMMENT = "";
-      Function "TopLevelItemCount"___("") As "Integer";   COMMENT = "";
-      Function "CollapseAll"___("") As "Boolean";   COMMENT = "";
-      Function "ExpandAll"___("") As "Boolean";   COMMENT = "";
-      Function "SelectAll"___("") As "Boolean";   COMMENT = "";
-      Sub      "ScrollToBottom"___("");   COMMENT = "";
-      Sub      "ScrollToTop"___("");   COMMENT = "";
-      Function "AppendChild"___("Text As String") As "Integer";   COMMENT = "";
-      Function "ChildCount"___("ItemId As Integer") As "Integer";   COMMENT = "";
-      Function "IsExpanded"___("ItemId As Integer") As "Boolean";   COMMENT = "";
-      Function "IsHidden"___("ItemId As Integer") As "Boolean";   COMMENT = "";
-      Function "ColumnCount2"___("ItemId As Integer") As "Integer";   COMMENT = "";
-      Function "Append"___("Text As String") As "Integer";   COMMENT = "";
-      Function "IndexOfTopLevelItem"___("ItemId As Integer") As "Integer";   COMMENT = "";
-      Sub      "SetColumnCount"___("Count As Integer");   COMMENT = "";
-      Sub      "SetCurrentItem"___("ItemId As Integer");   COMMENT = "";
-      Sub      "SetHeaderLabel"___("Text As String");   COMMENT = "";
-      Sub      "RemoveTopLevelItem"___("Index As Integer");   COMMENT = "";
-      Function "TopLevelItem"___("Index As Integer") As "Integer";   COMMENT = "";
-      Function "IsColumnHidden"___("Column As Integer") As "Boolean";   COMMENT = "";
-      Function "ColumnWidth"___("Column As Integer") As "Integer";   COMMENT = "";
-      Sub      "ShowColumn"___("Column As Integer");   COMMENT = "";
-      Sub      "CollapseItem"___("ItemId As Integer");   COMMENT = "";
-      Sub      "ExpandItem"___("ItemId As Integer");   COMMENT = "";
-      Sub      "ScrollToItem"___("ItemId As Integer");   COMMENT = "";
-      Function "Flags"___("ItemId As Integer") As "Integer";   COMMENT = "";
-      Function "AppendChild2"___("Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
-      Function "AppendChildToId"___("ItemId As Integer, Text As String") As "Integer";   COMMENT = "";
+      Function "ColumnCount" ___("") As "Integer";   COMMENT = "";
+      Function "CurrentColumn" ___("") As "Integer";   COMMENT = "";
+      Function "CurrentItem" ___("") As "Integer";   COMMENT = "";
+      Function "HeaderItem" ___("") As "Integer";   COMMENT = "";
+      Function "InvisibleRootItem" ___("") As "Integer";   COMMENT = "";
+      Function "SelectedItems" ___("") As "List";   COMMENT = "";
+      Function "SortColumn" ___("") As "Integer";   COMMENT = "";
+      Function "TopLevelItemCount" ___("") As "Integer";   COMMENT = "";
+      Function "CollapseAll" ___("") As "Boolean";   COMMENT = "";
+      Function "ExpandAll" ___("") As "Boolean";   COMMENT = "";
+      Function "SelectAll" ___("") As "Boolean";   COMMENT = "";
+      Sub      "ScrollToBottom" ___("");   COMMENT = "";
+      Sub      "ScrollToTop" ___("");   COMMENT = "";
+      Function "AppendChild" ___("Text As String") As "Integer";   COMMENT = "";
+      Function "ChildCount" ___("ItemId As Integer") As "Integer";   COMMENT = "";
+      Function "IsExpanded" ___("ItemId As Integer") As "Boolean";   COMMENT = "";
+      Function "IsHidden" ___("ItemId As Integer") As "Boolean";   COMMENT = "";
+      Function "ColumnCount2" ___("ItemId As Integer") As "Integer";   COMMENT = "";
+      Function "Append" ___("Text As String") As "Integer";   COMMENT = "";
+      Function "IndexOfTopLevelItem" ___("ItemId As Integer") As "Integer";   COMMENT = "";
+      Sub      "SetColumnCount" ___("Count As Integer");   COMMENT = "";
+      Sub      "SetCurrentItem" ___("ItemId As Integer");   COMMENT = "";
+      Sub      "SetHeaderLabel" ___("Text As String");   COMMENT = "";
+      Sub      "RemoveTopLevelItem" ___("Index As Integer");   COMMENT = "";
+      Function "TopLevelItem" ___("Index As Integer") As "Integer";   COMMENT = "";
+      Function "IsColumnHidden" ___("Column As Integer") As "Boolean";   COMMENT = "";
+      Function "ColumnWidth" ___("Column As Integer") As "Integer";   COMMENT = "";
+      Sub      "ShowColumn" ___("Column As Integer");   COMMENT = "";
+      Sub      "CollapseItem" ___("ItemId As Integer");   COMMENT = "";
+      Sub      "ExpandItem" ___("ItemId As Integer");   COMMENT = "";
+      Sub      "ScrollToItem" ___("ItemId As Integer");   COMMENT = "";
+      Function "Flags" ___("ItemId As Integer") As "Integer";   COMMENT = "";
+      Function "AppendChild2" ___("Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
+      Function "AppendChildToId" ___("ItemId As Integer, Text As String") As "Integer";   COMMENT = "";
 
-      Function "Child"___("ItemId As Integer, Index As Integer") As "Integer";   COMMENT = "";
-      Function "CheckState"___("ItemId As Integer, Column As Integer") As "Integer";   COMMENT = "";
-      Function "Data"___("ItemId As Integer, Column As Integer") As "id";   COMMENT = "";
-      Sub      "SetFlags"___("ItemId As Integer, Flags As Integer");   COMMENT = "";
-      Function "Text"___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
-      Function "Icon"___("ItemId As Integer, Column As Integer") As "QIcon";   COMMENT = "";
-      Function "IndexOfChild"___("ItemId As Integer, ChildItemId As Integer") As "Integer";   COMMENT = "";
-      Sub      "SetDisabled"___("ItemId As Integer, IsDisabled As Boolean");   COMMENT = "";
-      Sub      "SetExpanded"___("ItemId As Integer, IsExpanded As Boolean");   COMMENT = "";
-      Sub      "SetHidden"___("ItemId As Integer, IsHidden As Boolean");   COMMENT = "";
-      Sub      "SetSelected"___("ItemId As Integer, IsSelected As Boolean");   COMMENT = "";
-      Function "StatusTip"___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
-      Function "WhatsThis"___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
-      Function "ToolTip"___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
-      Sub      "RemoveChild"___("ItemId As Integer, Index As Integer");   COMMENT = "";
-      Function "TextAlignment"___("ItemId As Integer, Column As Integer") As "Integer";   COMMENT = "";
-      Function "Append2"___("Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
-      Function "Insert2"___("Index As Integer, Text As String") As "Integer";   COMMENT = "";
-      Function "ItemAt"___("X As Integer, Y As Integer") As "Integer";   COMMENT = "";
-      Sub      "SetCurrentItem2"___("ItemId As Integer, Column As Integer");   COMMENT = "";
-      Sub      "SetHeaderLabel2"___("Column As Integer, Text As String");   COMMENT = "";
-      Sub      "SortItems"___("Column As Integer, Descending As Boolean");   COMMENT = "";
-      Sub      "SetColumnHidden"___("Column As Integer, IsColumnHidden As Boolean");   COMMENT = "";
-      Sub      "SetColumnWidth"___("Column As Integer, Width As Integer");   COMMENT = "";
-      Sub      "ClosePersistentEditor"___("ItemId As Integer, Column As Integer");   COMMENT = "";
-      Sub      "OpenPersistentEditor"___("ItemId As Integer, Column As Integer");   COMMENT = "";
-      Sub      "EditItem"___("ItemId As Integer, Column As Integer");   COMMENT = "";
+      Function "Child" ___("ItemId As Integer, Index As Integer") As "Integer";   COMMENT = "";
+      Function "CheckState" ___("ItemId As Integer, Column As Integer") As "Integer";   COMMENT = "";
+      Function "Data" ___("ItemId As Integer, Column As Integer") As "id";   COMMENT = "";
+      Sub      "SetFlags" ___("ItemId As Integer, Flags As Integer");   COMMENT = "";
+      Function "Text" ___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
+      Function "Icon" ___("ItemId As Integer, Column As Integer") As "QIcon";   COMMENT = "";
+      Function "IndexOfChild" ___("ItemId As Integer, ChildItemId As Integer") As "Integer";   COMMENT = "";
+      Sub      "SetDisabled" ___("ItemId As Integer, IsDisabled As Boolean");   COMMENT = "";
+      Sub      "SetExpanded" ___("ItemId As Integer, IsExpanded As Boolean");   COMMENT = "";
+      Sub      "SetHidden" ___("ItemId As Integer, IsHidden As Boolean");   COMMENT = "";
+      Sub      "SetSelected" ___("ItemId As Integer, IsSelected As Boolean");   COMMENT = "";
+      Function "StatusTip" ___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
+      Function "WhatsThis" ___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
+      Function "ToolTip" ___("ItemId As Integer, Column As Integer") As "String";   COMMENT = "";
+      Sub      "RemoveChild" ___("ItemId As Integer, Index As Integer");   COMMENT = "";
+      Function "TextAlignment" ___("ItemId As Integer, Column As Integer") As "Integer";   COMMENT = "";
+      Function "Append2" ___("Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
+      Function "Insert2" ___("Index As Integer, Text As String") As "Integer";   COMMENT = "";
+      Function "ItemAt" ___("X As Integer, Y As Integer") As "Integer";   COMMENT = "";
+      Sub      "SetCurrentItem2" ___("ItemId As Integer, Column As Integer");   COMMENT = "";
+      Sub      "SetHeaderLabel2" ___("Column As Integer, Text As String");   COMMENT = "";
+      Sub      "SortItems" ___("Column As Integer, Descending As Boolean");   COMMENT = "";
+      Sub      "SetColumnHidden" ___("Column As Integer, IsColumnHidden As Boolean");   COMMENT = "";
+      Sub      "SetColumnWidth" ___("Column As Integer, Width As Integer");   COMMENT = "";
+      Sub      "ClosePersistentEditor" ___("ItemId As Integer, Column As Integer");   COMMENT = "";
+      Sub      "OpenPersistentEditor" ___("ItemId As Integer, Column As Integer");   COMMENT = "";
+      Sub      "EditItem" ___("ItemId As Integer, Column As Integer");   COMMENT = "";
 
-      Function "AppendChildToId2"___("ItemId As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
-      Sub      "SetCheckState"___("ItemId As Integer, Column As Integer, CheckState As Integer");   COMMENT = "";
-      Sub      "SetText"___("ItemId As Integer, Column As Integer, Text As String");   COMMENT = "";
-      Sub      "SetIcon"___("ItemId As Integer, Column As Integer, Icon As QIcon");   COMMENT = "";
-      Function "InsertChild"___("ItemId As Integer, Index As Integer, Text As String") As "Integer";   COMMENT = "";
-      Sub      "SetStatusTip"___("ItemId As Integer, Column As Integer, StatusTip As String");   COMMENT = "";
-      Sub      "SetWhatsThis"___("ItemId As Integer, Column As Integer, WhatsThis As String");   COMMENT = "";
-      Sub      "SetToolTip"___("ItemId As Integer, Column As Integer, ToolTip As String");   COMMENT = "";
-      Sub      "SetTextAlignment"___("ItemId As Integer, Column As Integer, TextAlignment As Integer");   COMMENT = "";
-      Function "Insert3"___("Index As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
-      Function "InsertChild2"___("ItemId As Integer, Index As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
+      Function "AppendChildToId2" ___("ItemId As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
+      Sub      "SetCheckState" ___("ItemId As Integer, Column As Integer, CheckState As Integer");   COMMENT = "";
+      Sub      "SetText" ___("ItemId As Integer, Column As Integer, Text As String");   COMMENT = "";
+      Sub      "SetIcon" ___("ItemId As Integer, Column As Integer, Icon As QIcon");   COMMENT = "";
+      Function "InsertChild" ___("ItemId As Integer, Index As Integer, Text As String") As "Integer";   COMMENT = "";
+      Sub      "SetStatusTip" ___("ItemId As Integer, Column As Integer, StatusTip As String");   COMMENT = "";
+      Sub      "SetWhatsThis" ___("ItemId As Integer, Column As Integer, WhatsThis As String");   COMMENT = "";
+      Sub      "SetToolTip" ___("ItemId As Integer, Column As Integer, ToolTip As String");   COMMENT = "";
+      Sub      "SetTextAlignment" ___("ItemId As Integer, Column As Integer, TextAlignment As Integer");   COMMENT = "";
+      Function "Insert3" ___("Index As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
+      Function "InsertChild2" ___("ItemId As Integer, Index As Integer, Icon As QIcon, Text As String") As "Integer";   COMMENT = "";
 
-      Signal "selectionChanged"___("") Declare "void selectionChanged()"   COMMENT = "";
-      Signal "currentItemChanged"___("CurrentItemId As Integer, PreviousItemId As Integer") Declare "void currentItemChanged(QTreeWidgetItem *CurrentItemId, QTreeWidgetItem *PreviousItemId)" Cast "Q7B_ID((qint64) CurrentItemId), Q7B_ID((qint64) PreviousItemId)"  COMMENT = "";
-      Signal "itemActivated"___("ItemId As Integer, Column As Integer") Declare "void itemActivated(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemChanged"___("ItemId As Integer, Column As Integer") Declare "void itemChanged(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemClicked"___("ItemId As Integer, Column As Integer") Declare "void itemClicked(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemCollapsed"___("ItemId As Integer, Column As Integer") Declare "void itemCollapsed(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemDoubleClicked"___("ItemId As Integer, Column As Integer") Declare "void itemDoubleClicked(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemEntered"___("ItemId As Integer, Column As Integer") Declare "void itemEntered(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemExpanded"___("ItemId As Integer, Column As Integer") Declare "void itemExpanded(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemPressed"___("ItemId As Integer, Column As Integer") Declare "void itemPressed(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
-      Signal "itemActivated"___("ItemId As Integer, Column As Integer") Declare "void itemActivated(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "selectionChanged" ___("") Declare "void selectionChanged()"   COMMENT = "";
+      Signal "currentItemChanged" ___("CurrentItemId As Integer, PreviousItemId As Integer") Declare "void currentItemChanged(QTreeWidgetItem *CurrentItemId, QTreeWidgetItem *PreviousItemId)" Cast "Q7B_ID((qint64) CurrentItemId), Q7B_ID((qint64) PreviousItemId)"  COMMENT = "";
+      Signal "itemActivated" ___("ItemId As Integer, Column As Integer") Declare "void itemActivated(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemChanged" ___("ItemId As Integer, Column As Integer") Declare "void itemChanged(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemClicked" ___("ItemId As Integer, Column As Integer") Declare "void itemClicked(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemCollapsed" ___("ItemId As Integer, Column As Integer") Declare "void itemCollapsed(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemDoubleClicked" ___("ItemId As Integer, Column As Integer") Declare "void itemDoubleClicked(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemEntered" ___("ItemId As Integer, Column As Integer") Declare "void itemEntered(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemExpanded" ___("ItemId As Integer, Column As Integer") Declare "void itemExpanded(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemPressed" ___("ItemId As Integer, Column As Integer") Declare "void itemPressed(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
+      Signal "itemActivated" ___("ItemId As Integer, Column As Integer") Declare "void itemActivated(QTreeWidgetItem *ItemId, int Column)" Cast "Q7B_ID((qint64) ItemId), Q7B_ID(Column)"  COMMENT = "";
 
     End_Class
 
@@ -3007,15 +3007,15 @@ void Parser::CreateListOfClasses()
   
       Property "CurrentIndex" As "Integer";    COMMENT = "";
 
-      Function "Length"___("") As "Integer";   COMMENT = "";
-      Function "Text"___("") As "String";   COMMENT = "";
-      Sub      "RemoveAll"___("");   COMMENT = "";
-      Sub      "SetNoCompleter"___("");   COMMENT = "";
-      Function "Object"___("Index As Integer") As "String";   COMMENT = "";
-      Sub      "Append"___("Text As String");   COMMENT = "";
-      Sub      "Append2"___("Icon As QIcon, Text As String");   COMMENT = "";
+      Function "Length" ___("") As "Integer";   COMMENT = "";
+      Function "Text" ___("") As "String";   COMMENT = "";
+      Sub      "RemoveAll" ___("");   COMMENT = "";
+      Sub      "SetNoCompleter" ___("");   COMMENT = "";
+      Function "Object" ___("Index As Integer") As "String";   COMMENT = "";
+      Sub      "Append" ___("Text As String");   COMMENT = "";
+      Sub      "Append2" ___("Icon As QIcon, Text As String");   COMMENT = "";
 
-      Signal "activated"___("Text As String") Declare "void activated(const QString & Text)"   COMMENT = "";
+      Signal "activated" ___("Text As String") Declare "void activated(const QString & Text)"   COMMENT = "";
 
     End_Class            
 
@@ -3030,8 +3030,8 @@ void Parser::CreateListOfClasses()
       Property "Checkable" As "Boolean";    COMMENT = "";
       Property "Key" As "String";    COMMENT = "";
 
-      Signal "clicked"___("Checked As Boolean") Declare "void clicked(bool checked = false)"   COMMENT = "";
-      Signal "toggled"___("Checked As Boolean") Declare "void toggled(bool checked = false)"   COMMENT = "";
+      Signal "clicked" ___("Checked As Boolean") Declare "void clicked(bool checked = false)"   COMMENT = "";
+      Signal "toggled" ___("Checked As Boolean") Declare "void toggled(bool checked = false)"   COMMENT = "";
 
     End_Class
 
@@ -3041,11 +3041,11 @@ void Parser::CreateListOfClasses()
   
       Property "Exclusive" As "Boolean";    COMMENT = "";
 
-      Sub      "AddButton"___("theButton As QAbstractButton");   COMMENT = "";
+      Sub      "AddButton" ___("theButton As QAbstractButton");   COMMENT = "";
 
-      Signal "buttonClicked"___("theButton As QAbstractButton") Declare "void buttonClicked(QAbstractButton *theButton)"   COMMENT = "";
-      Signal "buttonPressed"___("theButton As QAbstractButton") Declare "void buttonPressed(QAbstractButton *theButton)"   COMMENT = "";
-      Signal "buttonReleased"___("theButton As QAbstractButton") Declare "void buttonReleased(QAbstractButton *theButton)"   COMMENT = "";
+      Signal "buttonClicked" ___("theButton As QAbstractButton") Declare "void buttonClicked(QAbstractButton *theButton)"   COMMENT = "";
+      Signal "buttonPressed" ___("theButton As QAbstractButton") Declare "void buttonPressed(QAbstractButton *theButton)"   COMMENT = "";
+      Signal "buttonReleased" ___("theButton As QAbstractButton") Declare "void buttonReleased(QAbstractButton *theButton)"   COMMENT = "";
 
     End_Class
 
@@ -3053,12 +3053,12 @@ void Parser::CreateListOfClasses()
 
     Class "QIntValidator" SuperClass "QValidator"
   
-      Function "bottom"___("") As "Integer";   COMMENT = "";
-      Function "top"___("") As "Integer";   COMMENT = "";
+      Function "bottom" ___("") As "Integer";   COMMENT = "";
+      Function "top" ___("") As "Integer";   COMMENT = "";
 
-      Sub      "setBottom"___("v As Integer");   COMMENT = "";
-      Sub      "setTop"___("v As Integer");   COMMENT = "";
-      Sub      "setRange"___("bottom As Integer, top As Integer");   COMMENT = "";
+      Sub      "setBottom" ___("v As Integer");   COMMENT = "";
+      Sub      "setTop" ___("v As Integer");   COMMENT = "";
+      Sub      "setRange" ___("bottom As Integer, top As Integer");   COMMENT = "";
 
     End_Class    
 
@@ -3078,11 +3078,11 @@ void Parser::CreateListOfClasses()
   
     Class "QPrintDialog" SuperClass "QAbstractPrintDialog"
   
-      Function "options"___("") As "QAbstractPrintDialog::PrintDialogOption";   COMMENT = "";
-      Function "printer"___("") As "QPrinter";   COMMENT = "";
+      Function "options" ___("") As "QAbstractPrintDialog::PrintDialogOption";   COMMENT = "";
+      Function "printer" ___("") As "QPrinter";   COMMENT = "";
 
-      Sub      "setOption"___("option As QAbstractPrintDialog::PrintDialogOption, on As Boolean");   COMMENT = "";
-      Function "testOption"___("option As QAbstractPrintDialog::PrintDialogOption") As "Boolean";   COMMENT = "";
+      Sub      "setOption" ___("option As QAbstractPrintDialog::PrintDialogOption, on As Boolean");   COMMENT = "";
+      Function "testOption" ___("option As QAbstractPrintDialog::PrintDialogOption") As "Boolean";   COMMENT = "";
 
     End_Class    
 
@@ -3104,11 +3104,11 @@ void Parser::CreateListOfClasses()
 
     Class "QKeySequence" //SuperClass "QObject"  
 
-	    Function "count"___("") As "Integer";	COMMENT = "";
-	    Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	    Function "matches"___("Other As QKeySequence") As "QKeySequence::SequenceMatch";	COMMENT = "";
-	    Sub "swap"___("Other As QKeySequence");	COMMENT = "";
-	    Function "toString"___("Format As QKeySequence::SequenceFormat") As "String";	COMMENT = "";
+	    Function "count" ___("") As "Integer";	COMMENT = "";
+	    Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	    Function "matches" ___("Other As QKeySequence") As "QKeySequence::SequenceMatch";	COMMENT = "";
+	    Sub "swap" ___("Other As QKeySequence");	COMMENT = "";
+	    Function "toString" ___("Format As QKeySequence::SequenceFormat") As "String";	COMMENT = "";
   
     End_Class
 
@@ -3116,10 +3116,10 @@ void Parser::CreateListOfClasses()
 
     Class "QPrintPreviewDialog" SuperClass "QDialog"
 
-	  //  Sub "open"___("Printer As QPrinter, Parent As QWidget, Flags As Qt::WindowFlags");	COMMENT = "";
-	    Function "printer"___("") As "QPrinter";	COMMENT = "";
+	  //  Sub "open" ___("Printer As QPrinter, Parent As QWidget, Flags As Qt::WindowFlags");	COMMENT = "";
+	    Function "printer" ___("") As "QPrinter";	COMMENT = "";
 
-	    Signal "paintRequested"___("Printer As QPrinter") Declare "void paintRequested(QPrinter * printer)"	COMMENT = "";
+	    Signal "paintRequested" ___("Printer As QPrinter") Declare "void paintRequested(QPrinter * printer)"	COMMENT = "";
 
     End_Class
 
@@ -3134,9 +3134,9 @@ void Parser::CreateListOfClasses()
     
     Class "QListQStringList" //SuperClass "QObject"
   
-	    Function "count"___("") As "Integer";	COMMENT = "";
-	    Function "at"___("Index As Integer") As "QStringList";	COMMENT = "";
-	    Sub "append"___("l As QStringList");	COMMENT = "";
+	    Function "count" ___("") As "Integer";	COMMENT = "";
+	    Function "at" ___("Index As Integer") As "QStringList";	COMMENT = "";
+	    Sub "append" ___("l As QStringList");	COMMENT = "";
 
     End_Class
 
@@ -3144,65 +3144,65 @@ void Parser::CreateListOfClasses()
 
     Class "QRect" //SuperClass "QObject"
   
-	    Sub "adjust"___("Dx1 As Integer, Dy1 As Integer, Dx2 As Integer, Dy2 As Integer");	COMMENT = "";
-	    Function "adjusted"___("Dx1 As Integer, Dy1 As Integer, Dx2 As Integer, Dy2 As Integer") As "QRect";	COMMENT = "";
-	    Function "bottom"___("") As "Integer";	COMMENT = "";
-	    Function "bottomLeft"___("") As "QPoint";	COMMENT = "";
-	    Function "bottomRight"___("") As "QPoint";	COMMENT = "";
-	    Function "center"___("") As "QPoint";	COMMENT = "";
-	    Function "contains"___("Point As QPoint, Proper As Boolean") As "Boolean";	COMMENT = "";
-	    Function "contains"___("X As Integer, Y As Integer, Proper As Boolean") As "Boolean";	COMMENT = "";
-	    Function "contains"___("X As Integer, Y As Integer") As "Boolean";	COMMENT = "";
-	    Function "contains"___("Rectangle As QRect, Proper As Boolean") As "Boolean";	COMMENT = "";
-	    //Sub "getCoords"___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
-	    //Sub "getRect"___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
-	    Function "height"___("") As "Integer";	COMMENT = "";
-	    Function "intersected"___("Rectangle As QRect") As "QRect";	COMMENT = "";
-	    Function "intersects"___("Rectangle As QRect") As "Boolean";	COMMENT = "";
-	    Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	    Function "isNull"___("") As "Boolean";	COMMENT = "";
-	    Function "isValid"___("") As "Boolean";	COMMENT = "";
-	    Function "left"___("") As "Integer";	COMMENT = "";
-	    Sub "moveBottom"___("Y As Integer");	COMMENT = "";
-	    Sub "moveBottomLeft"___("Position As QPoint");	COMMENT = "";
-	    Sub "moveBottomRight"___("Position As QPoint");	COMMENT = "";
-	    Sub "moveCenter"___("Position As QPoint");	COMMENT = "";
-	    Sub "moveLeft"___("X As Integer");	COMMENT = "";
-	    Sub "moveRight"___("X As Integer");	COMMENT = "";
-	    Sub "moveTo"___("X As Integer, Y As Integer");	COMMENT = "";
-	    Sub "moveTo"___("Position As QPoint");	COMMENT = "";
-	    Sub "moveTop"___("Y As Integer");	COMMENT = "";
-	    Sub "moveTopLeft"___("Position As QPoint");	COMMENT = "";
-	    Sub "moveTopRight"___("Position As QPoint");	COMMENT = "";
-	    Function "normalized"___("") As "QRect";	COMMENT = "";
-	    Function "right"___("") As "Integer";	COMMENT = "";
-	    Sub "setBottom"___("Y As Integer");	COMMENT = "";
-	    Sub "setBottomLeft"___("Position As QPoint");	COMMENT = "";
-	    Sub "setBottomRight"___("Position As QPoint");	COMMENT = "";
-	    Sub "setCoords"___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
-	    Sub "setHeight"___("Height As Integer");	COMMENT = "";
-	    Sub "setLeft"___("X As Integer");	COMMENT = "";
-	    Sub "setRect"___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
-	    Sub "setRight"___("X As Integer");	COMMENT = "";
-	    Sub "setSize"___("Size As QSize");	COMMENT = "";
-	    Sub "setTop"___("Y As Integer");	COMMENT = "";
-	    Sub "setTopLeft"___("Position As QPoint");	COMMENT = "";
-	    Sub "setTopRight"___("Position As QPoint");	COMMENT = "";
-	    Sub "setWidth"___("Width As Integer");	COMMENT = "";
-	    Sub "setX"___("X As Integer");	COMMENT = "";
-	    Sub "setY"___("Y As Integer");	COMMENT = "";
-	    Function "size"___("") As "QSize";	COMMENT = "";
-	    Function "top"___("") As "Integer";	COMMENT = "";
-	    Function "topLeft"___("") As "QPoint";	COMMENT = "";
-	    Function "topRight"___("") As "QPoint";	COMMENT = "";
-	    Sub "translate"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	    Sub "translate"___("Offset As QPoint");	COMMENT = "";
-	    Function "translated"___("Dx As Integer, Dy As Integer") As "QRect";	COMMENT = "";
-	    Function "translated"___("Offset As QPoint") As "QRect";	COMMENT = "";
-	    Function "united"___("Rectangle As QRect") As "QRect";	COMMENT = "";
-	    Function "width"___("") As "Integer";	COMMENT = "";
-	    Function "x"___("") As "Integer";	COMMENT = "";
-	    Function "y"___("") As "Integer";	COMMENT = "";
+	    Sub "adjust" ___("Dx1 As Integer, Dy1 As Integer, Dx2 As Integer, Dy2 As Integer");	COMMENT = "";
+	    Function "adjusted" ___("Dx1 As Integer, Dy1 As Integer, Dx2 As Integer, Dy2 As Integer") As "QRect";	COMMENT = "";
+	    Function "bottom" ___("") As "Integer";	COMMENT = "";
+	    Function "bottomLeft" ___("") As "QPoint";	COMMENT = "";
+	    Function "bottomRight" ___("") As "QPoint";	COMMENT = "";
+	    Function "center" ___("") As "QPoint";	COMMENT = "";
+	    Function "contains" ___("Point As QPoint, Proper As Boolean") As "Boolean";	COMMENT = "";
+	    Function "contains" ___("X As Integer, Y As Integer, Proper As Boolean") As "Boolean";	COMMENT = "";
+	    Function "contains" ___("X As Integer, Y As Integer") As "Boolean";	COMMENT = "";
+	    Function "contains" ___("Rectangle As QRect, Proper As Boolean") As "Boolean";	COMMENT = "";
+	    //Sub "getCoords" ___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
+	    //Sub "getRect" ___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
+	    Function "height" ___("") As "Integer";	COMMENT = "";
+	    Function "intersected" ___("Rectangle As QRect") As "QRect";	COMMENT = "";
+	    Function "intersects" ___("Rectangle As QRect") As "Boolean";	COMMENT = "";
+	    Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	    Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	    Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	    Function "left" ___("") As "Integer";	COMMENT = "";
+	    Sub "moveBottom" ___("Y As Integer");	COMMENT = "";
+	    Sub "moveBottomLeft" ___("Position As QPoint");	COMMENT = "";
+	    Sub "moveBottomRight" ___("Position As QPoint");	COMMENT = "";
+	    Sub "moveCenter" ___("Position As QPoint");	COMMENT = "";
+	    Sub "moveLeft" ___("X As Integer");	COMMENT = "";
+	    Sub "moveRight" ___("X As Integer");	COMMENT = "";
+	    Sub "moveTo" ___("X As Integer, Y As Integer");	COMMENT = "";
+	    Sub "moveTo" ___("Position As QPoint");	COMMENT = "";
+	    Sub "moveTop" ___("Y As Integer");	COMMENT = "";
+	    Sub "moveTopLeft" ___("Position As QPoint");	COMMENT = "";
+	    Sub "moveTopRight" ___("Position As QPoint");	COMMENT = "";
+	    Function "normalized" ___("") As "QRect";	COMMENT = "";
+	    Function "right" ___("") As "Integer";	COMMENT = "";
+	    Sub "setBottom" ___("Y As Integer");	COMMENT = "";
+	    Sub "setBottomLeft" ___("Position As QPoint");	COMMENT = "";
+	    Sub "setBottomRight" ___("Position As QPoint");	COMMENT = "";
+	    Sub "setCoords" ___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
+	    Sub "setHeight" ___("Height As Integer");	COMMENT = "";
+	    Sub "setLeft" ___("X As Integer");	COMMENT = "";
+	    Sub "setRect" ___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
+	    Sub "setRight" ___("X As Integer");	COMMENT = "";
+	    Sub "setSize" ___("Size As QSize");	COMMENT = "";
+	    Sub "setTop" ___("Y As Integer");	COMMENT = "";
+	    Sub "setTopLeft" ___("Position As QPoint");	COMMENT = "";
+	    Sub "setTopRight" ___("Position As QPoint");	COMMENT = "";
+	    Sub "setWidth" ___("Width As Integer");	COMMENT = "";
+	    Sub "setX" ___("X As Integer");	COMMENT = "";
+	    Sub "setY" ___("Y As Integer");	COMMENT = "";
+	    Function "size" ___("") As "QSize";	COMMENT = "";
+	    Function "top" ___("") As "Integer";	COMMENT = "";
+	    Function "topLeft" ___("") As "QPoint";	COMMENT = "";
+	    Function "topRight" ___("") As "QPoint";	COMMENT = "";
+	    Sub "translate" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	    Sub "translate" ___("Offset As QPoint");	COMMENT = "";
+	    Function "translated" ___("Dx As Integer, Dy As Integer") As "QRect";	COMMENT = "";
+	    Function "translated" ___("Offset As QPoint") As "QRect";	COMMENT = "";
+	    Function "united" ___("Rectangle As QRect") As "QRect";	COMMENT = "";
+	    Function "width" ___("") As "Integer";	COMMENT = "";
+	    Function "x" ___("") As "Integer";	COMMENT = "";
+	    Function "y" ___("") As "Integer";	COMMENT = "";
 
     End_Class
 
@@ -3246,14 +3246,14 @@ void Parser::CreateListOfClasses()
 
     Class "QPoint" //SuperClass "QObject"
   
-	    Function "isNull"___("") As "Boolean";	COMMENT = "";
-	    Function "manhattanLength"___("") As "Integer";	COMMENT = "";
-	    Function "rx"___("") As "Integer";	COMMENT = "";
-	    Function "ry"___("") As "Integer";	COMMENT = "";
-	    Sub "setX"___("X As Integer");	COMMENT = "";
-	    Sub "setY"___("Y As Integer");	COMMENT = "";
-	    Function "x"___("") As "Integer";	COMMENT = "";
-	    Function "y"___("") As "Integer";	COMMENT = "";
+	    Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	    Function "manhattanLength" ___("") As "Integer";	COMMENT = "";
+	    Function "rx" ___("") As "Integer";	COMMENT = "";
+	    Function "ry" ___("") As "Integer";	COMMENT = "";
+	    Sub "setX" ___("X As Integer");	COMMENT = "";
+	    Sub "setY" ___("Y As Integer");	COMMENT = "";
+	    Function "x" ___("") As "Integer";	COMMENT = "";
+	    Function "y" ___("") As "Integer";	COMMENT = "";
 
     End_Class  
 
@@ -3269,12 +3269,12 @@ void Parser::CreateListOfClasses()
 
 	    Property "accepted" As "Boolean";	COMMENT = "";
 
-	    Sub "accept"___("");	COMMENT = "";
-	    Sub "ignore"___("");	COMMENT = "";
-	    Function "isAccepted"___("") As "Boolean";	COMMENT = "";
-	    Sub "setAccepted"___("Accepted As Boolean");	COMMENT = "";
-	    Function "spontaneous"___("") As "Boolean";	COMMENT = "";
-	    Function "type"___("") As "QEvent::Type";	COMMENT = "";	
+	    Sub "accept" ___("");	COMMENT = "";
+	    Sub "ignore" ___("");	COMMENT = "";
+	    Function "isAccepted" ___("") As "Boolean";	COMMENT = "";
+	    Sub "setAccepted" ___("Accepted As Boolean");	COMMENT = "";
+	    Function "spontaneous" ___("") As "Boolean";	COMMENT = "";
+	    Function "type" ___("") As "QEvent::Type";	COMMENT = "";
 
     End_Class  
 
@@ -3282,9 +3282,9 @@ void Parser::CreateListOfClasses()
     
     Class "QAccessibleEvent" SuperClass "QEvent"
 
-	    Function "child"___("") As "Integer";	COMMENT = "";
-	    Sub "setValue"___("Text As String");	COMMENT = "";
-	    Function "value"___("") As "String";	COMMENT = "";
+	    Function "child" ___("") As "Integer";	COMMENT = "";
+	    Sub "setValue" ___("Text As String");	COMMENT = "";
+	    Function "value" ___("") As "String";	COMMENT = "";
 
     End_Class        
 
@@ -3292,8 +3292,8 @@ void Parser::CreateListOfClasses()
 
     Class "QActionEvent" SuperClass "QEvent"
 	
-      Function "action"___("") As "QAction";	COMMENT = "";
-	    Function "before"___("") As "QAction";	COMMENT = "";
+      Function "action" ___("") As "QAction";	COMMENT = "";
+	    Function "before" ___("") As "QAction";	COMMENT = "";
   
     End_Class  
 
@@ -3301,10 +3301,10 @@ void Parser::CreateListOfClasses()
 
     Class "QChildEvent" SuperClass "QEvent"
 	
-	    Function "added"___("") As "Boolean";	COMMENT = "";
-	    Function "child"___("") As "QObject";	COMMENT = "";
-	    Function "polished"___("") As "Boolean";	COMMENT = "";
-	    Function "removed"___("") As "Boolean";	COMMENT = "";
+	    Function "added" ___("") As "Boolean";	COMMENT = "";
+	    Function "child" ___("") As "QObject";	COMMENT = "";
+	    Function "polished" ___("") As "Boolean";	COMMENT = "";
+	    Function "removed" ___("") As "Boolean";	COMMENT = "";
       
     End_Class  
 
@@ -3378,20 +3378,20 @@ void Parser::CreateListOfClasses()
 
     Class "QPolygon" //SuperClass "QVector<QPoint>"
   
-	    Function "boundingRect"___("") As "QRect";	COMMENT = "";
-	    Function "containsPoint"___("Point As QPoint, FillRule As Qt::FillRule") As "Boolean";	COMMENT = "";
-	    Function "intersected"___("R As QPolygon") As "QPolygon";	COMMENT = "";
-	    Function "point"___("Index As Integer") As "QPoint";	COMMENT = "";
-	    Sub "putPoints"___("Index As Integer, NPoints As Integer, FromPolygon As QPolygon, FromIndex As Integer");	COMMENT = "";
-	    Sub "setPoint"___("Index As Integer, X As Integer, Y As Integer");	COMMENT = "";
-	    Sub "setPoint"___("Index As Integer, Point As QPoint");	COMMENT = "";
-	    //Function "subtracted"___("") As "QPolygon";	COMMENT = "";
-	    Sub "swap"___("Other As QPolygon");	COMMENT = "";
-	    Sub "translate"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	    Sub "translate"___("Offset As QPoint");	COMMENT = "";
-	    Function "translated"___("Dx As Integer, Dy As Integer") As "QPolygon";	COMMENT = "";
-	    Function "translated"___("Offset As Integer") As "QPolygon";	COMMENT = "QPolygon";
-	    Function "united"___("R As QPolygon") As "QPolygon";	COMMENT = "";
+	    Function "boundingRect" ___("") As "QRect";	COMMENT = "";
+	    Function "containsPoint" ___("Point As QPoint, FillRule As Qt::FillRule") As "Boolean";	COMMENT = "";
+	    Function "intersected" ___("R As QPolygon") As "QPolygon";	COMMENT = "";
+	    Function "point" ___("Index As Integer") As "QPoint";	COMMENT = "";
+	    Sub "putPoints" ___("Index As Integer, NPoints As Integer, FromPolygon As QPolygon, FromIndex As Integer");	COMMENT = "";
+	    Sub "setPoint" ___("Index As Integer, X As Integer, Y As Integer");	COMMENT = "";
+	    Sub "setPoint" ___("Index As Integer, Point As QPoint");	COMMENT = "";
+	    //Function "subtracted" ___("") As "QPolygon";	COMMENT = "";
+	    Sub "swap" ___("Other As QPolygon");	COMMENT = "";
+	    Sub "translate" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	    Sub "translate" ___("Offset As QPoint");	COMMENT = "";
+	    Function "translated" ___("Dx As Integer, Dy As Integer") As "QPolygon";	COMMENT = "";
+	    Function "translated" ___("Offset As Integer") As "QPolygon";	COMMENT = "QPolygon";
+	    Function "united" ___("R As QPolygon") As "QPolygon";	COMMENT = "";
 
     End_Class  
    
@@ -3399,10 +3399,10 @@ void Parser::CreateListOfClasses()
 
     Class "QTextDocumentFragment" //SuperClass "QObject"
  
-      //Function "isEmpty"___("Encoding As QByteArray") As "Boolean";	COMMENT = "";
-	    Function "toHtml"___("") As "String";	COMMENT = "";
-	    Function "toHtml"___("") As "String";	COMMENT = "";
-	    Function "toPlainText"___("") As "String";	COMMENT = "";
+      //Function "isEmpty" ___("Encoding As QByteArray") As "Boolean";	COMMENT = "";
+	    Function "toHtml" ___("") As "String";	COMMENT = "";
+	    Function "toHtml" ___("") As "String";	COMMENT = "";
+	    Function "toPlainText" ___("") As "String";	COMMENT = "";
 
     End_Class  
 
@@ -3453,29 +3453,29 @@ Class "QLayout" SuperClass "QLayoutItem"
 	Property "sizeConstraint" As "QLayout::SizeConstraint";	COMMENT = "";
 	Property "spacing" As "Integer";	COMMENT = "";
 
-	Function "activate"___("") As "Boolean";	COMMENT = "";
-	Sub "addItem"___("Item As QLayoutItem");	COMMENT = "";
-	Sub "addWidget"___("W As QWidget");	COMMENT = "";
-	//Sub "getContentsMargins"___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
-	Function "contentsRect"___("") As "QRect";	COMMENT = "";
-	Function "indexOf"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Function "isEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "itemAt"___("Index As Integer") As "QLayoutItem";	COMMENT = "";
-	Function "menuBar"___("") As "QWidget";	COMMENT = "";
-	Function "parentWidget"___("") As "QWidget";	COMMENT = "";
-	Sub "removeItem"___("Item As QLayoutItem");	COMMENT = "";
-	Sub "removeWidget"___("Widget As QWidget");	COMMENT = "";
-	//Function "setAlignment"___("W As QWidget, Alignment As Qt::Alignment") As "Boolean";	COMMENT = "";
-	//Sub "setAlignment"___("Alignment As Qt::Alignment");	COMMENT = "";
-//	Function "setAlignment2"___("L As QLayout, Alignment As Qt::Alignment") As "Boolean";	COMMENT = "";
-	Sub "setContentsMargins"___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
-	Sub "setEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setMenuBar"___("Widget As QWidget");	COMMENT = "";
-	Sub "setSizeConstraint"___("Constraint As QLayout::SizeConstraint");	COMMENT = "";
-	Sub "setSpacing"___("Spacing As Integer");	COMMENT = "";
-	Function "sizeConstraint"___("") As "QLayout::SizeConstraint";	COMMENT = "";
-	Function "spacing"___("") As "Integer";	COMMENT = "";
-	Sub "update"___("");	COMMENT = "";
+	Function "activate" ___("") As "Boolean";	COMMENT = "";
+	Sub "addItem" ___("Item As QLayoutItem");	COMMENT = "";
+	Sub "addWidget" ___("W As QWidget");	COMMENT = "";
+	//Sub "getContentsMargins" ___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
+	Function "contentsRect" ___("") As "QRect";	COMMENT = "";
+	Function "indexOf" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Function "isEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "itemAt" ___("Index As Integer") As "QLayoutItem";	COMMENT = "";
+	Function "menuBar" ___("") As "QWidget";	COMMENT = "";
+	Function "parentWidget" ___("") As "QWidget";	COMMENT = "";
+	Sub "removeItem" ___("Item As QLayoutItem");	COMMENT = "";
+	Sub "removeWidget" ___("Widget As QWidget");	COMMENT = "";
+	//Function "setAlignment" ___("W As QWidget, Alignment As Qt::Alignment") As "Boolean";	COMMENT = "";
+	//Sub "setAlignment" ___("Alignment As Qt::Alignment");	COMMENT = "";
+//	Function "setAlignment2" ___("L As QLayout, Alignment As Qt::Alignment") As "Boolean";	COMMENT = "";
+	Sub "setContentsMargins" ___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
+	Sub "setEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setMenuBar" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setSizeConstraint" ___("Constraint As QLayout::SizeConstraint");	COMMENT = "";
+	Sub "setSpacing" ___("Spacing As Integer");	COMMENT = "";
+	Function "sizeConstraint" ___("") As "QLayout::SizeConstraint";	COMMENT = "";
+	Function "spacing" ___("") As "Integer";	COMMENT = "";
+	Sub "update" ___("");	COMMENT = "";
 
 End_Class
 
@@ -3490,8 +3490,8 @@ Class "QFrame" SuperClass "QWidget"
 	Property "lineWidth" As "Integer";	COMMENT = "";
 	Property "midLineWidth" As "Integer";	COMMENT = "";
 
-	Function "frameStyle"___("") As "Integer";	COMMENT = "";
-	Sub "setFrameStyle"___("Style As Integer");	COMMENT = "";
+	Function "frameStyle" ___("") As "Integer";	COMMENT = "";
+	Sub "setFrameStyle" ___("Style As Integer");	COMMENT = "";
 
 End_Class
 
@@ -3502,20 +3502,20 @@ Class "QAbstractScrollArea" SuperClass "QFrame"
 	Property "horizontalScrollBarPolicy" As "Qt::ScrollBarPolicy";	COMMENT = "";
 	Property "verticalScrollBarPolicy" As "Qt::ScrollBarPolicy";	COMMENT = "";
 
-	//Sub "addScrollBarWidget"___("Widget As QWidget, Alignment As Qt::Alignment");	COMMENT = "";
-	Function "cornerWidget"___("") As "QWidget";	COMMENT = "";
-	Function "horizontalScrollBar"___("") As "QScrollBar";	COMMENT = "";
-	Function "horizontalScrollBarPolicy"___("") As "Qt::ScrollBarPolicy";	COMMENT = "";
-	Function "maximumViewportSize"___("") As "QSize";	COMMENT = "";
-	Sub "setCornerWidget"___("Widget As QWidget");	COMMENT = "";
-	Sub "setHorizontalScrollBar"___("ScrollBar As QScrollBar");	COMMENT = "";
-	Sub "setHorizontalScrollBarPolicy"___("Policy As Qt::ScrollBarPolicy");	COMMENT = "";
-	Sub "setVerticalScrollBar"___("ScrollBar As QScrollBar");	COMMENT = "";
-	Sub "setVerticalScrollBarPolicy"___("Policy As Qt::ScrollBarPolicy");	COMMENT = "";
-	Sub "setViewport"___("Widget As QWidget");	COMMENT = "";
-	Function "verticalScrollBar"___("") As "QScrollBar";	COMMENT = "";
-	Function "verticalScrollBarPolicy"___("") As "Qt::ScrollBarPolicy";	COMMENT = "";
-	Function "viewport"___("") As "QWidget";	COMMENT = "";
+	//Sub "addScrollBarWidget" ___("Widget As QWidget, Alignment As Qt::Alignment");	COMMENT = "";
+	Function "cornerWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "horizontalScrollBar" ___("") As "QScrollBar";	COMMENT = "";
+	Function "horizontalScrollBarPolicy" ___("") As "Qt::ScrollBarPolicy";	COMMENT = "";
+	Function "maximumViewportSize" ___("") As "QSize";	COMMENT = "";
+	Sub "setCornerWidget" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setHorizontalScrollBar" ___("ScrollBar As QScrollBar");	COMMENT = "";
+	Sub "setHorizontalScrollBarPolicy" ___("Policy As Qt::ScrollBarPolicy");	COMMENT = "";
+	Sub "setVerticalScrollBar" ___("ScrollBar As QScrollBar");	COMMENT = "";
+	Sub "setVerticalScrollBarPolicy" ___("Policy As Qt::ScrollBarPolicy");	COMMENT = "";
+	Sub "setViewport" ___("Widget As QWidget");	COMMENT = "";
+	Function "verticalScrollBar" ___("") As "QScrollBar";	COMMENT = "";
+	Function "verticalScrollBarPolicy" ___("") As "Qt::ScrollBarPolicy";	COMMENT = "";
+	Function "viewport" ___("") As "QWidget";	COMMENT = "";
 
 End_Class
 
@@ -3523,109 +3523,109 @@ End_Class
 
 Class "QPainter"
 
-	Function "background"___("") As "QBrush";	COMMENT = "";
-	Function "backgroundMode"___("") As "Qt::BGMode";	COMMENT = "";
-	Function "begin"___("Device As QWidget") As "Boolean";	COMMENT = "";
-	Sub "beginNativePainting"___("");	COMMENT = "";
-	Function "boundingRect"___("Rectangle As QRect, Flags As Integer, Text As String") As "QRect";	COMMENT = "";
-	Function "brush"___("") As "QBrush";	COMMENT = "";
-	Function "brushOrigin"___("") As "QPoint";	COMMENT = "";
-	//Function "clipPath"___("") As "QPainterPath";	COMMENT = "";
-	Function "clipRegion"___("") As "QRegion";	COMMENT = "";
-	Function "combinedTransform"___("") As "QTransform";	COMMENT = "";
-	Function "compositionMode"___("") As "QPainter::CompositionMode";	COMMENT = "";
-	//Function "device"___("") As "QWidget";	COMMENT = "";
-	Function "deviceTransform"___("") As "QTransform";	COMMENT = "";
-	Sub "drawArc"___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
-	Sub "drawChord"___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
-	Sub "drawConvexPolygon"___("Points As QPolygon");	COMMENT = "";
-	Sub "drawEllipse"___("Rectangle As QRect");	COMMENT = "";
-	Sub "drawEllipse2"___("Center As QPoint, Rx As Integer, Ry As Integer");	COMMENT = "";
-	Sub "drawImage"___("Target As QRect, Image As QImage, Source As QRect, Flags As Qt::ImageConversionFlags");	COMMENT = "";
-	Sub "drawImage2"___("Point As QPoint, Image As QImage");	COMMENT = "";
-	Sub "drawImage"___("Rectangle As QRect, Image As QImage");	COMMENT = "";
-	Sub "drawLine"___("Line As QLine");	COMMENT = "";
-	Sub "drawLine2"___("P1 As QPoint, P2 As QPoint");	COMMENT = "";
-	//Sub "drawPath"___("Path As QPainterPath");	COMMENT = "";
-	Sub "drawPicture"___("X As Integer, Y As Integer, Picture As QPicture");	COMMENT = "";
-	Sub "drawPicture2"___("Point As QPoint, Picture As QPicture");	COMMENT = "";
-	Sub "drawPie"___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
-	Sub "drawPixmap"___("X As Integer, Y As Integer, Pixmap As QPixmap");	COMMENT = "";
-	Sub "drawPixmap2"___("Target As QRect, Pixmap As QPixmap, Source As QRect");	COMMENT = "";	
-	Sub "drawPixmap3"___("Point As QPoint, Pixmap As QPixmap, Source As QRect");	COMMENT = "";
-	Sub "drawPixmap4"___("Rectangle As QRect, Pixmap As QPixmap");	COMMENT = "";
-	Sub "drawPoint"___("X As Integer, Y As Integer");	COMMENT = "";
-	Sub "drawPoint2"___("Position As QPoint");	COMMENT = "";
-	Sub "drawPoints"___("Points As QPolygon");	COMMENT = "";
-	Sub "drawPolygon"___("Polygon As QPolygon, FillRule As Qt::FillRule");	COMMENT = "";
-	Sub "drawPolyline"___("Points As QPolygon");	COMMENT = "";
-	Sub "drawRect"___("Rectangle As QRect");	COMMENT = "";
-	Sub "drawRoundedRect"___("Rectangle As QRect, XRadius As Float, YRadius As Float, Mode As Qt::SizeMode");	COMMENT = "";
-	//Sub "drawStaticText"___("TopLeftPosition As QPoint, StaticText As QStaticText");	COMMENT = "";
-	//Sub "drawStaticText"___("Left As Integer, Top As Integer, StaticText As QStaticText");	COMMENT = "";
-	Sub "drawText"___("X As Integer, Y As Integer, Text As String");	COMMENT = "";
-	Sub "drawText2"___("Position As QPoint, Text As String");	COMMENT = "";
-	//Sub "drawText3"___("Rectangle As QRect, Flags As Integer, Text As String, BoundingRect As QRect");	COMMENT = "";
-	Sub "drawTiledPixmap"___("Rectangle As QRect, Pixmap As QPixmap, Position As QPoint");	COMMENT = "";
-	Function "end"___("") As "Boolean";	COMMENT = "";
-	Sub "endNativePainting"___("");	COMMENT = "";
-	Sub "eraseRect"___("Rectangle As QRect");	COMMENT = "";
-	//Sub "fillPath"___("Path As QPainterPath, Brush As QBrush");	COMMENT = "";
-	Sub "fillRect"___("Rectangle As QRect, Style As Qt::BrushStyle");	COMMENT = "";
-	Sub "fillRect2"___("Rectangle As QRect, Brush As QBrush");	COMMENT = "";
-	Sub "fillRect3"___("Rectangle As QRect, Color As QColor");	COMMENT = "";
-	Sub "fillRect4"___("Rectangle As QRect, Color As Qt::GlobalColor");	COMMENT = "";
-	Function "font"___("") As "QFont";	COMMENT = "";
-	Function "fontInfo"___("") As "QFontInfo";	COMMENT = "";
-	Function "fontMetrics"___("") As "QFontMetrics";	COMMENT = "";
-	Function "hasClipping"___("") As "Boolean";	COMMENT = "";
-	Sub "initFrom"___("Widget As QWidget");	COMMENT = "";
-	Function "isActive"___("") As "Boolean";	COMMENT = "";
-	Function "layoutDirection"___("") As "Qt::LayoutDirection";	COMMENT = "";
-	Function "opacity"___("") As "Float";	COMMENT = "";
-	Function "paintEngine"___("") As "QPaintEngine";	COMMENT = "";
-	Function "pen"___("") As "QPen";	COMMENT = "";
-	Function "renderHints"___("") As "QPainter::RenderHints";	COMMENT = "";
-	Sub "resetTransform"___("");	COMMENT = "";
-	Sub "restore"___("");	COMMENT = "";
-	Sub "rotate"___("Angle As Float");	COMMENT = "";
-	Sub "save"___("");	COMMENT = "";
-	Sub "scale"___("Sx As Float, Sy As Float");	COMMENT = "";
-	Sub "setBackground"___("Brush As QBrush");	COMMENT = "";
-	Sub "setBackgroundMode"___("Mode As Qt::BGMode");	COMMENT = "";
-	Sub "setBrush"___("Brush As QBrush");	COMMENT = "";
-	Sub "setBrush2"___("Style As Qt::BrushStyle");	COMMENT = "";
-	Sub "setBrushOrigin"___("X As Integer, Y As Integer");	COMMENT = "";
-	Sub "setBrushOrigin2"___("Position As QPoint");	COMMENT = "";
-	//Sub "setClipPath"___("Path As QPainterPath, Operation As Qt::ClipOperation");	COMMENT = "";
-	Sub "setClipRect"___("Rectangle As QRect, Operation As Qt::ClipOperation");	COMMENT = "";
-	Sub "setClipRegion"___("Region As QRegion, Operation As Qt::ClipOperation");	COMMENT = "";
-	Sub "setClipping"___("Enable As Boolean");	COMMENT = "";
-	Sub "setCompositionMode"___("Mode As QPainter::CompositionMode");	COMMENT = "";
-	Sub "setFont"___("Font As QFont");	COMMENT = "";
-	Sub "setLayoutDirection"___("Direction As Qt::LayoutDirection");	COMMENT = "";
-	Sub "setOpacity"___("Opacity As Float");	COMMENT = "";
-	Sub "setPen"___("Pen As QPen");	COMMENT = "";
-	Sub "setPen2"___("Color As QColor");	COMMENT = "";
-	Sub "setPen3"___("Style As Qt::PenStyle");	COMMENT = "";
-	Sub "setRenderHint"___("Hint As QPainter::RenderHint");	COMMENT = "";
-	Sub "setRenderHints"___("Hints As QPainter::RenderHints");	COMMENT = "";
-	Sub "setTransform"___("Transform As QTransform, Combine As Boolean");	COMMENT = "";
-	Sub "setViewTransformEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setViewport"___("Rectangle As QRect");	COMMENT = "";
-	Sub "setWindow"___("Rectangle As QRect");	COMMENT = "";
-	Sub "setWorldMatrixEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setWorldTransform"___("Matrix As QTransform, Combine As Boolean");	COMMENT = "";
-	//Sub "strokePath"___("Path As QPainterPath, Pen As QPen");	COMMENT = "";
-	Function "testRenderHint"___("Hint As QPainter::RenderHint") As "Boolean";	COMMENT = "";
-	Function "transform"___("") As "QTransform";	COMMENT = "";
-	Sub "translate"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	Sub "translate2"___("Offset As QPoint");	COMMENT = "";
-	Function "viewTransformEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "viewport"___("") As "QRect";	COMMENT = "";
-	Function "window"___("") As "QRect";	COMMENT = "";
-	Function "worldMatrixEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "worldTransform"___("") As "QTransform";	COMMENT = "";
+	Function "background" ___("") As "QBrush";	COMMENT = "";
+	Function "backgroundMode" ___("") As "Qt::BGMode";	COMMENT = "";
+	Function "begin" ___("Device As QWidget") As "Boolean";	COMMENT = "";
+	Sub "beginNativePainting" ___("");	COMMENT = "";
+	Function "boundingRect" ___("Rectangle As QRect, Flags As Integer, Text As String") As "QRect";	COMMENT = "";
+	Function "brush" ___("") As "QBrush";	COMMENT = "";
+	Function "brushOrigin" ___("") As "QPoint";	COMMENT = "";
+	//Function "clipPath" ___("") As "QPainterPath";	COMMENT = "";
+	Function "clipRegion" ___("") As "QRegion";	COMMENT = "";
+	Function "combinedTransform" ___("") As "QTransform";	COMMENT = "";
+	Function "compositionMode" ___("") As "QPainter::CompositionMode";	COMMENT = "";
+	//Function "device" ___("") As "QWidget";	COMMENT = "";
+	Function "deviceTransform" ___("") As "QTransform";	COMMENT = "";
+	Sub "drawArc" ___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
+	Sub "drawChord" ___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
+	Sub "drawConvexPolygon" ___("Points As QPolygon");	COMMENT = "";
+	Sub "drawEllipse" ___("Rectangle As QRect");	COMMENT = "";
+	Sub "drawEllipse2" ___("Center As QPoint, Rx As Integer, Ry As Integer");	COMMENT = "";
+	Sub "drawImage" ___("Target As QRect, Image As QImage, Source As QRect, Flags As Qt::ImageConversionFlags");	COMMENT = "";
+	Sub "drawImage2" ___("Point As QPoint, Image As QImage");	COMMENT = "";
+	Sub "drawImage" ___("Rectangle As QRect, Image As QImage");	COMMENT = "";
+	Sub "drawLine" ___("Line As QLine");	COMMENT = "";
+	Sub "drawLine2" ___("P1 As QPoint, P2 As QPoint");	COMMENT = "";
+	//Sub "drawPath" ___("Path As QPainterPath");	COMMENT = "";
+	Sub "drawPicture" ___("X As Integer, Y As Integer, Picture As QPicture");	COMMENT = "";
+	Sub "drawPicture2" ___("Point As QPoint, Picture As QPicture");	COMMENT = "";
+	Sub "drawPie" ___("Rectangle As QRect, StartAngle As Integer, SpanAngle As Integer");	COMMENT = "";
+	Sub "drawPixmap" ___("X As Integer, Y As Integer, Pixmap As QPixmap");	COMMENT = "";
+	Sub "drawPixmap2" ___("Target As QRect, Pixmap As QPixmap, Source As QRect");	COMMENT = "";
+	Sub "drawPixmap3" ___("Point As QPoint, Pixmap As QPixmap, Source As QRect");	COMMENT = "";
+	Sub "drawPixmap4" ___("Rectangle As QRect, Pixmap As QPixmap");	COMMENT = "";
+	Sub "drawPoint" ___("X As Integer, Y As Integer");	COMMENT = "";
+	Sub "drawPoint2" ___("Position As QPoint");	COMMENT = "";
+	Sub "drawPoints" ___("Points As QPolygon");	COMMENT = "";
+	Sub "drawPolygon" ___("Polygon As QPolygon, FillRule As Qt::FillRule");	COMMENT = "";
+	Sub "drawPolyline" ___("Points As QPolygon");	COMMENT = "";
+	Sub "drawRect" ___("Rectangle As QRect");	COMMENT = "";
+	Sub "drawRoundedRect" ___("Rectangle As QRect, XRadius As Float, YRadius As Float, Mode As Qt::SizeMode");	COMMENT = "";
+	//Sub "drawStaticText" ___("TopLeftPosition As QPoint, StaticText As QStaticText");	COMMENT = "";
+	//Sub "drawStaticText" ___("Left As Integer, Top As Integer, StaticText As QStaticText");	COMMENT = "";
+	Sub "drawText" ___("X As Integer, Y As Integer, Text As String");	COMMENT = "";
+	Sub "drawText2" ___("Position As QPoint, Text As String");	COMMENT = "";
+	//Sub "drawText3" ___("Rectangle As QRect, Flags As Integer, Text As String, BoundingRect As QRect");	COMMENT = "";
+	Sub "drawTiledPixmap" ___("Rectangle As QRect, Pixmap As QPixmap, Position As QPoint");	COMMENT = "";
+	Function "end" ___("") As "Boolean";	COMMENT = "";
+	Sub "endNativePainting" ___("");	COMMENT = "";
+	Sub "eraseRect" ___("Rectangle As QRect");	COMMENT = "";
+	//Sub "fillPath" ___("Path As QPainterPath, Brush As QBrush");	COMMENT = "";
+	Sub "fillRect" ___("Rectangle As QRect, Style As Qt::BrushStyle");	COMMENT = "";
+	Sub "fillRect2" ___("Rectangle As QRect, Brush As QBrush");	COMMENT = "";
+	Sub "fillRect3" ___("Rectangle As QRect, Color As QColor");	COMMENT = "";
+	Sub "fillRect4" ___("Rectangle As QRect, Color As Qt::GlobalColor");	COMMENT = "";
+	Function "font" ___("") As "QFont";	COMMENT = "";
+	Function "fontInfo" ___("") As "QFontInfo";	COMMENT = "";
+	Function "fontMetrics" ___("") As "QFontMetrics";	COMMENT = "";
+	Function "hasClipping" ___("") As "Boolean";	COMMENT = "";
+	Sub "initFrom" ___("Widget As QWidget");	COMMENT = "";
+	Function "isActive" ___("") As "Boolean";	COMMENT = "";
+	Function "layoutDirection" ___("") As "Qt::LayoutDirection";	COMMENT = "";
+	Function "opacity" ___("") As "Float";	COMMENT = "";
+	Function "paintEngine" ___("") As "QPaintEngine";	COMMENT = "";
+	Function "pen" ___("") As "QPen";	COMMENT = "";
+	Function "renderHints" ___("") As "QPainter::RenderHints";	COMMENT = "";
+	Sub "resetTransform" ___("");	COMMENT = "";
+	Sub "restore" ___("");	COMMENT = "";
+	Sub "rotate" ___("Angle As Float");	COMMENT = "";
+	Sub "save" ___("");	COMMENT = "";
+	Sub "scale" ___("Sx As Float, Sy As Float");	COMMENT = "";
+	Sub "setBackground" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setBackgroundMode" ___("Mode As Qt::BGMode");	COMMENT = "";
+	Sub "setBrush" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setBrush2" ___("Style As Qt::BrushStyle");	COMMENT = "";
+	Sub "setBrushOrigin" ___("X As Integer, Y As Integer");	COMMENT = "";
+	Sub "setBrushOrigin2" ___("Position As QPoint");	COMMENT = "";
+	//Sub "setClipPath" ___("Path As QPainterPath, Operation As Qt::ClipOperation");	COMMENT = "";
+	Sub "setClipRect" ___("Rectangle As QRect, Operation As Qt::ClipOperation");	COMMENT = "";
+	Sub "setClipRegion" ___("Region As QRegion, Operation As Qt::ClipOperation");	COMMENT = "";
+	Sub "setClipping" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setCompositionMode" ___("Mode As QPainter::CompositionMode");	COMMENT = "";
+	Sub "setFont" ___("Font As QFont");	COMMENT = "";
+	Sub "setLayoutDirection" ___("Direction As Qt::LayoutDirection");	COMMENT = "";
+	Sub "setOpacity" ___("Opacity As Float");	COMMENT = "";
+	Sub "setPen" ___("Pen As QPen");	COMMENT = "";
+	Sub "setPen2" ___("Color As QColor");	COMMENT = "";
+	Sub "setPen3" ___("Style As Qt::PenStyle");	COMMENT = "";
+	Sub "setRenderHint" ___("Hint As QPainter::RenderHint");	COMMENT = "";
+	Sub "setRenderHints" ___("Hints As QPainter::RenderHints");	COMMENT = "";
+	Sub "setTransform" ___("Transform As QTransform, Combine As Boolean");	COMMENT = "";
+	Sub "setViewTransformEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setViewport" ___("Rectangle As QRect");	COMMENT = "";
+	Sub "setWindow" ___("Rectangle As QRect");	COMMENT = "";
+	Sub "setWorldMatrixEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setWorldTransform" ___("Matrix As QTransform, Combine As Boolean");	COMMENT = "";
+	//Sub "strokePath" ___("Path As QPainterPath, Pen As QPen");	COMMENT = "";
+	Function "testRenderHint" ___("Hint As QPainter::RenderHint") As "Boolean";	COMMENT = "";
+	Function "transform" ___("") As "QTransform";	COMMENT = "";
+	Sub "translate" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	Sub "translate2" ___("Offset As QPoint");	COMMENT = "";
+	Function "viewTransformEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "viewport" ___("") As "QRect";	COMMENT = "";
+	Function "window" ___("") As "QRect";	COMMENT = "";
+	Function "worldMatrixEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "worldTransform" ___("") As "QTransform";	COMMENT = "";
 
 End_Class
 
@@ -3633,23 +3633,23 @@ End_Class
 
 Class "QLine"
 
-	Function "p1"___("") As "QPoint";	COMMENT = "";
-	Function "p2"___("") As "QPoint";	COMMENT = "";
-	Function "x1"___("") As "Integer";	COMMENT = "";
-	Function "x2"___("") As "Integer";	COMMENT = "";
-	Function "y1"___("") As "Integer";	COMMENT = "";
-	Function "y2"___("") As "Integer";	COMMENT = "";
-	Function "dx"___("") As "Integer";	COMMENT = "";
-	Function "dy"___("") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Sub "setP1"___("P1 As QPoint");	COMMENT = "";
-	Sub "setP2"___("P2 As QPoint");	COMMENT = "";
-	Sub "setLine"___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
-	Sub "setPoints"___("P1 As QPoint, P2 As QPoint");	COMMENT = "";
-	Sub "translate"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	Sub "translate2"___("Offset As QPoint");	COMMENT = "";
-	Function "translated"___("Dx As Integer, Dy As Integer") As "QLine";	COMMENT = "";
-	Function "translated2"___("Offset As QPoint") As "QLine";	COMMENT = "";
+	Function "p1" ___("") As "QPoint";	COMMENT = "";
+	Function "p2" ___("") As "QPoint";	COMMENT = "";
+	Function "x1" ___("") As "Integer";	COMMENT = "";
+	Function "x2" ___("") As "Integer";	COMMENT = "";
+	Function "y1" ___("") As "Integer";	COMMENT = "";
+	Function "y2" ___("") As "Integer";	COMMENT = "";
+	Function "dx" ___("") As "Integer";	COMMENT = "";
+	Function "dy" ___("") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Sub "setP1" ___("P1 As QPoint");	COMMENT = "";
+	Sub "setP2" ___("P2 As QPoint");	COMMENT = "";
+	Sub "setLine" ___("X1 As Integer, Y1 As Integer, X2 As Integer, Y2 As Integer");	COMMENT = "";
+	Sub "setPoints" ___("P1 As QPoint, P2 As QPoint");	COMMENT = "";
+	Sub "translate" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	Sub "translate2" ___("Offset As QPoint");	COMMENT = "";
+	Function "translated" ___("Dx As Integer, Dy As Integer") As "QLine";	COMMENT = "";
+	Function "translated2" ___("Offset As QPoint") As "QLine";	COMMENT = "";
 
 End_Class
 
@@ -3657,20 +3657,20 @@ End_Class
 
 Class "QSize"
 
-	Function "boundedTo"___("OtherSize As QSize") As "QSize";	COMMENT = "";
-	Function "expandedTo"___("OtherSize As QSize") As "QSize";	COMMENT = "";
-	Function "height"___("") As "Integer";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "rheight"___("") As "Integer";	COMMENT = "";
-	Function "rwidth"___("") As "Integer";	COMMENT = "";
-	Sub "scale"___("Width As Integer, Height As Integer, Mode As Qt::AspectRatioMode");	COMMENT = "";
-	Sub "scale2"___("Size As QSize, Mode As Qt::AspectRatioMode");	COMMENT = "";
-	Sub "setHeight"___("Height As Integer");	COMMENT = "";
-	Sub "setWidth"___("Width As Integer");	COMMENT = "";
-	Sub "transpose"___("");	COMMENT = "";
-	Function "width"___("") As "Integer";	COMMENT = "";
+	Function "boundedTo" ___("OtherSize As QSize") As "QSize";	COMMENT = "";
+	Function "expandedTo" ___("OtherSize As QSize") As "QSize";	COMMENT = "";
+	Function "height" ___("") As "Integer";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "rheight" ___("") As "Integer";	COMMENT = "";
+	Function "rwidth" ___("") As "Integer";	COMMENT = "";
+	Sub "scale" ___("Width As Integer, Height As Integer, Mode As Qt::AspectRatioMode");	COMMENT = "";
+	Sub "scale2" ___("Size As QSize, Mode As Qt::AspectRatioMode");	COMMENT = "";
+	Sub "setHeight" ___("Height As Integer");	COMMENT = "";
+	Sub "setWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "transpose" ___("");	COMMENT = "";
+	Function "width" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -3678,24 +3678,24 @@ End_Class
 
 Class "QRegion"
 
-	Function "boundingRect"___("") As "QRect";	COMMENT = "";
-	Function "contains"___("P As QPoint") As "Boolean";	COMMENT = "";
-	Function "contains"___("R As QRect") As "Boolean";	COMMENT = "";
-	Function "intersected"___("R As QRegion") As "QRegion";	COMMENT = "";
-	Function "intersected2"___("Rect As QRect") As "QRegion";	COMMENT = "";
-	Function "intersects"___("Region As QRegion") As "Boolean";	COMMENT = "";
-	Function "intersects2"___("Rect As QRect") As "Boolean";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "rectCount"___("") As "Integer";	COMMENT = "";
-	Function "subtracted"___("R As QRegion") As "QRegion";	COMMENT = "";
-	Sub "swap"___("Other As QRegion");	COMMENT = "";
-	Sub "translate"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	Sub "translate2"___("Point As QPoint");	COMMENT = "";
-	Function "translated"___("Dx As Integer, Dy As Integer") As "QRegion";	COMMENT = "";
-	Function "translated2"___("Point As QPoint") As "QRegion";	COMMENT = "";
-	Function "united"___("R As QRegion") As "QRegion";	COMMENT = "";
-	Function "united2"___("Rect As QRect") As "QRegion";	COMMENT = "";
-	Function "xored"___("R As QRegion") As "QRegion";	COMMENT = "";
+	Function "boundingRect" ___("") As "QRect";	COMMENT = "";
+	Function "contains" ___("P As QPoint") As "Boolean";	COMMENT = "";
+	Function "contains" ___("R As QRect") As "Boolean";	COMMENT = "";
+	Function "intersected" ___("R As QRegion") As "QRegion";	COMMENT = "";
+	Function "intersected2" ___("Rect As QRect") As "QRegion";	COMMENT = "";
+	Function "intersects" ___("Region As QRegion") As "Boolean";	COMMENT = "";
+	Function "intersects2" ___("Rect As QRect") As "Boolean";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "rectCount" ___("") As "Integer";	COMMENT = "";
+	Function "subtracted" ___("R As QRegion") As "QRegion";	COMMENT = "";
+	Sub "swap" ___("Other As QRegion");	COMMENT = "";
+	Sub "translate" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	Sub "translate2" ___("Point As QPoint");	COMMENT = "";
+	Function "translated" ___("Dx As Integer, Dy As Integer") As "QRegion";	COMMENT = "";
+	Function "translated2" ___("Point As QPoint") As "QRegion";	COMMENT = "";
+	Function "united" ___("R As QRegion") As "QRegion";	COMMENT = "";
+	Function "united2" ___("Rect As QRect") As "QRegion";	COMMENT = "";
+	Function "xored" ___("R As QRegion") As "QRegion";	COMMENT = "";
 
 End_Class
 
@@ -3703,20 +3703,20 @@ End_Class
 
 Class "QDrag" SuperClass "QObject"
 
-	Function "exec"___("SupportedActions As Qt::DropActions") As "Qt::DropAction";	COMMENT = "";
-	Function "exec2"___("SupportedActions As Qt::DropActions, DefaultDropAction As Qt::DropAction") As "Qt::DropAction";	COMMENT = "";
-	Function "hotSpot"___("") As "QPoint";	COMMENT = "";
-	Function "mimeData"___("") As "QMimeData";	COMMENT = "";
-	Function "pixmap"___("") As "QPixmap";	COMMENT = "";
-	Sub "setDragCursor"___("Cursor As QPixmap, Action As Qt::DropAction");	COMMENT = "";
-	Sub "setHotSpot"___("Hotspot As QPoint");	COMMENT = "";
-	Sub "setMimeData"___("Data As QMimeData");	COMMENT = "";
-	Sub "setPixmap"___("Pixmap As QPixmap");	COMMENT = "";	
-	Function "source"___("") As "QWidget";	COMMENT = "";
-	Function "target"___("") As "QWidget";	COMMENT = "";
+	Function "exec" ___("SupportedActions As Qt::DropActions") As "Qt::DropAction";	COMMENT = "";
+	Function "exec2" ___("SupportedActions As Qt::DropActions, DefaultDropAction As Qt::DropAction") As "Qt::DropAction";	COMMENT = "";
+	Function "hotSpot" ___("") As "QPoint";	COMMENT = "";
+	Function "mimeData" ___("") As "QMimeData";	COMMENT = "";
+	Function "pixmap" ___("") As "QPixmap";	COMMENT = "";
+	Sub "setDragCursor" ___("Cursor As QPixmap, Action As Qt::DropAction");	COMMENT = "";
+	Sub "setHotSpot" ___("Hotspot As QPoint");	COMMENT = "";
+	Sub "setMimeData" ___("Data As QMimeData");	COMMENT = "";
+	Sub "setPixmap" ___("Pixmap As QPixmap");	COMMENT = "";
+	Function "source" ___("") As "QWidget";	COMMENT = "";
+	Function "target" ___("") As "QWidget";	COMMENT = "";
 
-	Signal "actionChanged"___("Action As Qt::DropAction") Declare "void actionChanged(Qt::DropAction action)"	COMMENT = "";
-	Signal "targetChanged"___("NewTarget As QWidget") Declare "void targetChanged(QWidget * newTarget)"	COMMENT = "";
+	Signal "actionChanged" ___("Action As Qt::DropAction") Declare "void actionChanged(Qt::DropAction action)"	COMMENT = "";
+	Signal "targetChanged" ___("NewTarget As QWidget") Declare "void targetChanged(QWidget * newTarget)"	COMMENT = "";
 
 End_Class
 
@@ -3724,28 +3724,28 @@ End_Class
 
 Class "QFontMetrics"
 
-	Function "ascent"___("") As "Integer";	COMMENT = "";
-	Function "averageCharWidth"___("") As "Integer";	COMMENT = "";
-	Function "boundingRect"___("Text As String") As "QRect";	COMMENT = "";
-	Function "descent"___("") As "Integer";	COMMENT = "";
-	Function "elidedText"___("Text As String, Mode As Qt::TextElideMode, Width As Integer, Flags As Integer") As "String";	COMMENT = "";
-	Function "height"___("") As "Integer";	COMMENT = "";
-	Function "inFont"___("Ch As String") As "Boolean";	COMMENT = "";
-	Function "leading"___("") As "Integer";	COMMENT = "";
-	Function "leftBearing"___("Ch As String") As "Integer";	COMMENT = "";
-	Function "lineSpacing"___("") As "Integer";	COMMENT = "";
-	Function "lineWidth"___("") As "Integer";	COMMENT = "";
-	Function "maxWidth"___("") As "Integer";	COMMENT = "";
-	Function "minLeftBearing"___("") As "Integer";	COMMENT = "";
-	Function "minRightBearing"___("") As "Integer";	COMMENT = "";
-	Function "overlinePos"___("") As "Integer";	COMMENT = "";
-	Function "rightBearing"___("Ch As String") As "Integer";	COMMENT = "";
-	Function "strikeOutPos"___("") As "Integer";	COMMENT = "";
-	Function "tightBoundingRect"___("Text As String") As "QRect";	COMMENT = "";
-	Function "underlinePos"___("") As "Integer";	COMMENT = "";
-	Function "width"___("Text As String, Len As Integer") As "Integer";	COMMENT = "";
-	Function "width2"___("Ch As String") As "Integer";	COMMENT = "";
-	Function "xHeight"___("") As "Integer";	COMMENT = "";
+	Function "ascent" ___("") As "Integer";	COMMENT = "";
+	Function "averageCharWidth" ___("") As "Integer";	COMMENT = "";
+	Function "boundingRect" ___("Text As String") As "QRect";	COMMENT = "";
+	Function "descent" ___("") As "Integer";	COMMENT = "";
+	Function "elidedText" ___("Text As String, Mode As Qt::TextElideMode, Width As Integer, Flags As Integer") As "String";	COMMENT = "";
+	Function "height" ___("") As "Integer";	COMMENT = "";
+	Function "inFont" ___("Ch As String") As "Boolean";	COMMENT = "";
+	Function "leading" ___("") As "Integer";	COMMENT = "";
+	Function "leftBearing" ___("Ch As String") As "Integer";	COMMENT = "";
+	Function "lineSpacing" ___("") As "Integer";	COMMENT = "";
+	Function "lineWidth" ___("") As "Integer";	COMMENT = "";
+	Function "maxWidth" ___("") As "Integer";	COMMENT = "";
+	Function "minLeftBearing" ___("") As "Integer";	COMMENT = "";
+	Function "minRightBearing" ___("") As "Integer";	COMMENT = "";
+	Function "overlinePos" ___("") As "Integer";	COMMENT = "";
+	Function "rightBearing" ___("Ch As String") As "Integer";	COMMENT = "";
+	Function "strikeOutPos" ___("") As "Integer";	COMMENT = "";
+	Function "tightBoundingRect" ___("Text As String") As "QRect";	COMMENT = "";
+	Function "underlinePos" ___("") As "Integer";	COMMENT = "";
+	Function "width" ___("Text As String, Len As Integer") As "Integer";	COMMENT = "";
+	Function "width2" ___("Ch As String") As "Integer";	COMMENT = "";
+	Function "xHeight" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -3753,43 +3753,43 @@ End_Class
 
 Class "QFtp" SuperClass "QObject"
 
-	Function "bytesAvailable"___("") As "Integer";	COMMENT = "";
-	Function "cd"___("Dir As String") As "Integer";	COMMENT = "";
-	Sub "clearPendingCommands"___("");	COMMENT = "";
-	Function "close"___("") As "Integer";	COMMENT = "";
-	Function "connectToHost"___("Host As String, Port As Integer") As "Integer";	COMMENT = "";
-	Function "currentCommand"___("") As "QFtp::Command";	COMMENT = "";
-	Function "currentDevice"___("") As "QIODevice";	COMMENT = "";
-	Function "currentId"___("") As "Integer";	COMMENT = "";
-	Function "error"___("") As "QFtp::Error";	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-//	Function "get"___("File As String, Dev As QIODevice, Type As  QFtp::TransferType") As "Integer";	COMMENT = "";
-	Function "hasPendingCommands"___("") As "Boolean";	COMMENT = "";
-	Function "list"___("Dir As String") As "Integer";	COMMENT = "";
-	Function "login"___("User As String, Password As String") As "Integer";	COMMENT = "";
-	Function "mkdir"___("Dir As String") As "Integer";	COMMENT = "";
-	Function "put"___("Data As QByteArray, File As String, Type As QFtp::TransferType") As "Integer";	COMMENT = "";
-//	Function "put2"___("Dev As QIODevice, File As String, Type As QFtp::TransferType") As "Integer";	COMMENT = "";
-	Function "rawCommand"___("Command As String") As "Integer";	COMMENT = "";
-	//Function "read"___("Data As String, MaxLen As Integer") As "Integer";	COMMENT = "";
-	Function "readAll"___("") As "QByteArray";	COMMENT = "";
-	Function "remove"___("File As QString") As "Integer";	COMMENT = "";
-	Function "rename"___("OldName As String, NewName As String") As "Integer";	COMMENT = "";
-	Function "rmdir"___("Dir As String") As "Integer";	COMMENT = "";
-	Function "setProxy"___("Host As String, Port As Integer") As "Integer";	COMMENT = "";
-	Function "setTransferMode"___("Mode As QFtp::TransferMode") As "Integer";	COMMENT = "";
-	Function "state"___("") As "QFtp::State";	COMMENT = "";
+	Function "bytesAvailable" ___("") As "Integer";	COMMENT = "";
+	Function "cd" ___("Dir As String") As "Integer";	COMMENT = "";
+	Sub "clearPendingCommands" ___("");	COMMENT = "";
+	Function "close" ___("") As "Integer";	COMMENT = "";
+	Function "connectToHost" ___("Host As String, Port As Integer") As "Integer";	COMMENT = "";
+	Function "currentCommand" ___("") As "QFtp::Command";	COMMENT = "";
+	Function "currentDevice" ___("") As "QIODevice";	COMMENT = "";
+	Function "currentId" ___("") As "Integer";	COMMENT = "";
+	Function "error" ___("") As "QFtp::Error";	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+//	Function "get" ___("File As String, Dev As QIODevice, Type As  QFtp::TransferType") As "Integer";	COMMENT = "";
+	Function "hasPendingCommands" ___("") As "Boolean";	COMMENT = "";
+	Function "list" ___("Dir As String") As "Integer";	COMMENT = "";
+	Function "login" ___("User As String, Password As String") As "Integer";	COMMENT = "";
+	Function "mkdir" ___("Dir As String") As "Integer";	COMMENT = "";
+	Function "put" ___("Data As QByteArray, File As String, Type As QFtp::TransferType") As "Integer";	COMMENT = "";
+//	Function "put2" ___("Dev As QIODevice, File As String, Type As QFtp::TransferType") As "Integer";	COMMENT = "";
+	Function "rawCommand" ___("Command As String") As "Integer";	COMMENT = "";
+	//Function "read" ___("Data As String, MaxLen As Integer") As "Integer";	COMMENT = "";
+	Function "readAll" ___("") As "QByteArray";	COMMENT = "";
+	Function "remove" ___("File As QString") As "Integer";	COMMENT = "";
+	Function "rename" ___("OldName As String, NewName As String") As "Integer";	COMMENT = "";
+	Function "rmdir" ___("Dir As String") As "Integer";	COMMENT = "";
+	Function "setProxy" ___("Host As String, Port As Integer") As "Integer";	COMMENT = "";
+	Function "setTransferMode" ___("Mode As QFtp::TransferMode") As "Integer";	COMMENT = "";
+	Function "state" ___("") As "QFtp::State";	COMMENT = "";
 
-	Slot "abort"___("");	COMMENT = "";
+	Slot "abort" ___("");	COMMENT = "";
 
-	Signal "commandFinished"___("Id As Integer, Error As Boolean") Declare "void commandFinished(int id, bool error)"	COMMENT = "";
-	Signal "commandStarted"___("Id As Integer") Declare "void commandStarted(int id)"	COMMENT = "";
-	Signal "dataTransferProgress"___("Done As Integer, Total As Integer") Declare "void dataTransferProgress(qint64 done, qint64 total)"	COMMENT = "";
-	Signal "done"___("Error As Boolean") Declare "void done(bool error)"	COMMENT = "";
-	Signal "listInfo"___("I As QUrlInfo") Declare "void listInfo(const QUrlInfo & i)"	COMMENT = "";
-	Signal "rawCommandReply"___("RepyCode As Integer, Detail As String") Declare "void rawCommandReply(int replyCode, const QString & detail)"	COMMENT = "";
-	Signal "readyRead"___("") Declare ""	COMMENT = "";
-	Signal "stateChanged"___("State As Integer") Declare "void stateChanged(int state)"	COMMENT = "";
+	Signal "commandFinished" ___("Id As Integer, Error As Boolean") Declare "void commandFinished(int id, bool error)"	COMMENT = "";
+	Signal "commandStarted" ___("Id As Integer") Declare "void commandStarted(int id)"	COMMENT = "";
+	Signal "dataTransferProgress" ___("Done As Integer, Total As Integer") Declare "void dataTransferProgress(qint64 done, qint64 total)"	COMMENT = "";
+	Signal "done" ___("Error As Boolean") Declare "void done(bool error)"	COMMENT = "";
+	Signal "listInfo" ___("I As QUrlInfo") Declare "void listInfo(const QUrlInfo & i)"	COMMENT = "";
+	Signal "rawCommandReply" ___("RepyCode As Integer, Detail As String") Declare "void rawCommandReply(int replyCode, const QString & detail)"	COMMENT = "";
+	Signal "readyRead" ___("") Declare ""	COMMENT = "";
+	Signal "stateChanged" ___("State As Integer") Declare "void stateChanged(int state)"	COMMENT = "";
 
 End_Class
 
@@ -3797,14 +3797,14 @@ End_Class
 
 Class "QHostAddress"
 
-	Sub "clear"___("");	COMMENT = "";
-	Function "isInSubnet"___("SubNet As QHostAddress, NetMask As Integer") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "protocol"___("") As "QAbstractSocket::NetworkLayerProtocol";	COMMENT = "";
-	Function "scopeId"___("") As "String";	COMMENT = "";
-	Sub "setAddress"___("Address As String");	COMMENT = "";
-	Sub "setScopeId"___("Id As String");	COMMENT = "";
-	Function "toString"___("") As "String";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "isInSubnet" ___("SubNet As QHostAddress, NetMask As Integer") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "protocol" ___("") As "QAbstractSocket::NetworkLayerProtocol";	COMMENT = "";
+	Function "scopeId" ___("") As "String";	COMMENT = "";
+	Sub "setAddress" ___("Address As String");	COMMENT = "";
+	Sub "setScopeId" ___("Id As String");	COMMENT = "";
+	Function "toString" ___("") As "String";	COMMENT = "";
 
 End_Class
 
@@ -3812,18 +3812,18 @@ End_Class
 
 Class "QLocalServer" SuperClass "QObject"
 
-	Sub "close"___("");	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-	Function "fullServerName"___("") As "String";	COMMENT = "";
-	Function "hasPendingConnections"___("") As "Boolean";	COMMENT = "";
-	Function "isListening"___("") As "Boolean";	COMMENT = "";
-	Function "listen"___("Name As String") As "Boolean";	COMMENT = "";
-	Function "maxPendingConnections"___("") As "Integer";	COMMENT = "";
-	Function "nextPendingConnection"___("") As "QLocalSocket";	COMMENT = "";
-	Function "serverError"___("") As "QAbstractSocket::SocketError";	COMMENT = "";
-	Function "serverName"___("") As "String";	COMMENT = "";
-	Sub "setMaxPendingConnections"___("NumConnections As Integer");	COMMENT = "";
-	Function "waitForNewConnection"___("MSec As Integer, TimedOut As Boolean") As "Boolean";	COMMENT = "";
+	Sub "close" ___("");	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+	Function "fullServerName" ___("") As "String";	COMMENT = "";
+	Function "hasPendingConnections" ___("") As "Boolean";	COMMENT = "";
+	Function "isListening" ___("") As "Boolean";	COMMENT = "";
+	Function "listen" ___("Name As String") As "Boolean";	COMMENT = "";
+	Function "maxPendingConnections" ___("") As "Integer";	COMMENT = "";
+	Function "nextPendingConnection" ___("") As "QLocalSocket";	COMMENT = "";
+	Function "serverError" ___("") As "QAbstractSocket::SocketError";	COMMENT = "";
+	Function "serverName" ___("") As "String";	COMMENT = "";
+	Sub "setMaxPendingConnections" ___("NumConnections As Integer");	COMMENT = "";
+	Function "waitForNewConnection" ___("MSec As Integer, TimedOut As Boolean") As "Boolean";	COMMENT = "";
 
 End_Class
 
@@ -3831,26 +3831,26 @@ End_Class
 
 Class "QLocalSocket" SuperClass "QIODevice"
 
-	Sub "abort"___("");	COMMENT = "";
-	Sub "connectToServer"___("Name As String, OpenMode As QLocalSocket::OpenMode");	COMMENT = "";
-	Sub "disconnectFromServer"___("");	COMMENT = "";
-	Function "error"___("") As "QLocalSocket::LocalSocketError";	COMMENT = "";
-	Function "flush"___("") As "Boolean";	COMMENT = "";
-	Function "fullServerName"___("") As "String";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "readBufferSize"___("") As "Integer";	COMMENT = "";
-	Function "serverName"___("") As "String";	COMMENT = "";
-	Sub "setReadBufferSize"___("Size As Integer");	COMMENT = "";
-	Function "setSocketDescriptor"___("SocketDescriptor As Integer, SocketState As QLocalSocket::LocalSocketState, OpenMode As QLocalSocket::OpenMode") As "Boolean";	COMMENT = "";
-	Function "socketDescriptor"___("") As "Integer";	COMMENT = "";
-	Function "state"___("") As "QLocalSocket::LocalSocketState";	COMMENT = "";
-	Function "waitForConnected"___("MSecs As Integer") As "Boolean";	COMMENT = "";
-	Function "waitForDisconnected"___("MSecs As Integer") As "Boolean";	COMMENT = "";
+	Sub "abort" ___("");	COMMENT = "";
+	Sub "connectToServer" ___("Name As String, OpenMode As QLocalSocket::OpenMode");	COMMENT = "";
+	Sub "disconnectFromServer" ___("");	COMMENT = "";
+	Function "error" ___("") As "QLocalSocket::LocalSocketError";	COMMENT = "";
+	Function "flush" ___("") As "Boolean";	COMMENT = "";
+	Function "fullServerName" ___("") As "String";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "readBufferSize" ___("") As "Integer";	COMMENT = "";
+	Function "serverName" ___("") As "String";	COMMENT = "";
+	Sub "setReadBufferSize" ___("Size As Integer");	COMMENT = "";
+	Function "setSocketDescriptor" ___("SocketDescriptor As Integer, SocketState As QLocalSocket::LocalSocketState, OpenMode As QLocalSocket::OpenMode") As "Boolean";	COMMENT = "";
+	Function "socketDescriptor" ___("") As "Integer";	COMMENT = "";
+	Function "state" ___("") As "QLocalSocket::LocalSocketState";	COMMENT = "";
+	Function "waitForConnected" ___("MSecs As Integer") As "Boolean";	COMMENT = "";
+	Function "waitForDisconnected" ___("MSecs As Integer") As "Boolean";	COMMENT = "";
 
-	Signal "connected"___("") Declare "void connected()"	COMMENT = "";
-	Signal "disconnected"___("") Declare "void disconnected()"	COMMENT = "";
-	Signal "error"___("SocketError As QLocalSocket::LocalSocketError") Declare "void error(QLocalSocket::LocalSocketError socketError)"	COMMENT = "";
-	Signal "stateChanged"___("SocketState As QLocalSocket::LocalSocketState") Declare "void stateChanged(QLocalSocket::LocalSocketState socketState)"	COMMENT = "";
+	Signal "connected" ___("") Declare "void connected()"	COMMENT = "";
+	Signal "disconnected" ___("") Declare "void disconnected()"	COMMENT = "";
+	Signal "error" ___("SocketError As QLocalSocket::LocalSocketError") Declare "void error(QLocalSocket::LocalSocketError socketError)"	COMMENT = "";
+	Signal "stateChanged" ___("SocketState As QLocalSocket::LocalSocketState") Declare "void stateChanged(QLocalSocket::LocalSocketState socketState)"	COMMENT = "";
 
 End_Class
 
@@ -3858,33 +3858,33 @@ End_Class
 
 Class "QNetworkSession" SuperClass "QObject"
 
-	Function "activeTime"___("") As "Integer";	COMMENT = "";
-	Function "bytesReceived"___("") As "Integer";	COMMENT = "";
-	Function "bytesWritten"___("") As "Integer";	COMMENT = "";
-	//Function "configuration"___("") As "QNetworkConfiguration";	COMMENT = "";
-	Function "error"___("") As "QNetworkSession::SessionError";	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-	//Function "interface"___("") As "QNetworkInterface";	COMMENT = "";
-	Function "isOpen"___("") As "Boolean";	COMMENT = "";
-	Function "sessionProperty"___("Key As String") As "QVariant";	COMMENT = "";
-	Sub "setSessionProperty"___("Key As String, Value As QVariant");	COMMENT = "";
-	Function "state"___("") As "QNetworkSession::State";	COMMENT = "";
-	Function "waitForOpened"___("MSecs As Integer") As "Boolean";	COMMENT = "";
+	Function "activeTime" ___("") As "Integer";	COMMENT = "";
+	Function "bytesReceived" ___("") As "Integer";	COMMENT = "";
+	Function "bytesWritten" ___("") As "Integer";	COMMENT = "";
+	//Function "configuration" ___("") As "QNetworkConfiguration";	COMMENT = "";
+	Function "error" ___("") As "QNetworkSession::SessionError";	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+	//Function "interface" ___("") As "QNetworkInterface";	COMMENT = "";
+	Function "isOpen" ___("") As "Boolean";	COMMENT = "";
+	Function "sessionProperty" ___("Key As String") As "QVariant";	COMMENT = "";
+	Sub "setSessionProperty" ___("Key As String, Value As QVariant");	COMMENT = "";
+	Function "state" ___("") As "QNetworkSession::State";	COMMENT = "";
+	Function "waitForOpened" ___("MSecs As Integer") As "Boolean";	COMMENT = "";
 
-	Slot "accept"___("");	COMMENT = "";
-	Slot "close"___("");	COMMENT = "";
-	Slot "ignore"___("");	COMMENT = "";
-	Slot "migrate"___("");	COMMENT = "";
-	Slot "open"___("");	COMMENT = "";
-	Slot "reject"___("");	COMMENT = "";
-	Slot "stop"___("");	COMMENT = "";
+	Slot "accept" ___("");	COMMENT = "";
+	Slot "close" ___("");	COMMENT = "";
+	Slot "ignore" ___("");	COMMENT = "";
+	Slot "migrate" ___("");	COMMENT = "";
+	Slot "open" ___("");	COMMENT = "";
+	Slot "reject" ___("");	COMMENT = "";
+	Slot "stop" ___("");	COMMENT = "";
 
-	Signal "closed"___("") Declare "void closed()"	COMMENT = "";
-	Signal "error"___("Error As QNetworkSession::SessionError") Declare "void error(QNetworkSession::SessionError error)"	COMMENT = "";
-	Signal "newConfigurationActivated"___("") Declare "void newConfigurationActivated()"	COMMENT = "";
-	Signal "opened"___("") Declare "void opened()"	COMMENT = "";
-	Signal "preferredConfigurationChanged"___("Config As QNetworkConfiguration, IsSeamless As Boolean") Declare "void preferredConfigurationChanged(const QNetworkConfiguration & config, bool isSeamless)"	COMMENT = "";
-	Signal "stateChanged"___("State As QNetworkSession::State") Declare "void stateChanged(QNetworkSession::State state)"	COMMENT = "";
+	Signal "closed" ___("") Declare "void closed()"	COMMENT = "";
+	Signal "error" ___("Error As QNetworkSession::SessionError") Declare "void error(QNetworkSession::SessionError error)"	COMMENT = "";
+	Signal "newConfigurationActivated" ___("") Declare "void newConfigurationActivated()"	COMMENT = "";
+	Signal "opened" ___("") Declare "void opened()"	COMMENT = "";
+	Signal "preferredConfigurationChanged" ___("Config As QNetworkConfiguration, IsSeamless As Boolean") Declare "void preferredConfigurationChanged(const QNetworkConfiguration & config, bool isSeamless)"	COMMENT = "";
+	Signal "stateChanged" ___("State As QNetworkSession::State") Declare "void stateChanged(QNetworkSession::State state)"	COMMENT = "";
 
 End_Class
 
@@ -3892,13 +3892,13 @@ End_Class
 
 Class "QResource"
 
-	Function "fileName"___("") As "String";	COMMENT = "";
-	Function "isCompressed"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "locale"___("") As "QLocale";	COMMENT = "";
-	Sub "setFileName"___("File As String");	COMMENT = "";
-	Sub "setLocale"___("Locale As QLocale");	COMMENT = "";
-	Function "size"___("") As "Integer";	COMMENT = "";
+	Function "fileName" ___("") As "String";	COMMENT = "";
+	Function "isCompressed" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "locale" ___("") As "QLocale";	COMMENT = "";
+	Sub "setFileName" ___("File As String");	COMMENT = "";
+	Sub "setLocale" ___("Locale As QLocale");	COMMENT = "";
+	Function "size" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -3906,12 +3906,12 @@ End_Class
 
 Class "QRubberBand" SuperClass "QWidget"
 
-	Sub "move"___("X As Integer, Y As Integer");	COMMENT = "";
-	Sub "move2"___("P As QPoint");	COMMENT = "";
-	Sub "resize"___("Width As Integer, Height As Integer");	COMMENT = "";
-	Sub "resize2"___("Size As QSize");	COMMENT = "";
-	Sub "setGeometry"___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
-	Function "shape"___("") As "QRubberBand::Shape";	COMMENT = "";
+	Sub "move" ___("X As Integer, Y As Integer");	COMMENT = "";
+	Sub "move2" ___("P As QPoint");	COMMENT = "";
+	Sub "resize" ___("Width As Integer, Height As Integer");	COMMENT = "";
+	Sub "resize2" ___("Size As QSize");	COMMENT = "";
+	Sub "setGeometry" ___("X As Integer, Y As Integer, Width As Integer, Height As Integer");	COMMENT = "";
+	Function "shape" ___("") As "QRubberBand::Shape";	COMMENT = "";
 
 End_Class
 
@@ -3919,8 +3919,8 @@ End_Class
 
 Class "QSystemLocale"
 
-	Function "fallbackLocale"___("") As "QLocale";	COMMENT = "";
-	Function "query"___("Type As QSystemLocale::QueryType, in As QVariant") As "QVariant";	COMMENT = "";
+	Function "fallbackLocale" ___("") As "QLocale";	COMMENT = "";
+	Function "query" ___("Type As QSystemLocale::QueryType, in As QVariant") As "QVariant";	COMMENT = "";
 
 End_Class
 
@@ -3935,27 +3935,27 @@ Class "QTimeLine" SuperClass "QObject"
 	Property "loopCount" As "Integer";	COMMENT = "";
 	Property "updateInterval" As "Integer";	COMMENT = "";
 
-	Function "currentFrame"___("") As "Integer";	COMMENT = "";
-	Function "currentTime"___("") As "Integer";	COMMENT = "";
-	Function "currentValue"___("") As "Float";	COMMENT = "";
-	Function "curveShape"___("") As "QTimeLine::CurveShape";	COMMENT = "";
-	Function "direction"___("") As "QTimeLine::Direction";	COMMENT = "";
-	Function "duration"___("") As "Integer";	COMMENT = "";
-	Function "endFrame"___("") As "Integer";	COMMENT = "";
-	Function "frameForTime"___("Msec As Integer") As "Integer";	COMMENT = "";
-	Function "loopCount"___("") As "Integer";	COMMENT = "";
-	Sub "setCurveShape"___("Shape As QTimeLine::CurveShape");	COMMENT = "";
-	Sub "setDirection"___("Direction As QTimeLine::Direction");	COMMENT = "";
-	Sub "setDuration"___("Duration As Integer");	COMMENT = "";
-	Sub "setEndFrame"___("Frame As Integer");	COMMENT = "";
-	Sub "setFrameRange"___("StartFrame As Integer, EndFrame As Integer");	COMMENT = "";
-	Sub "setLoopCount"___("Count As Integer");	COMMENT = "";
-	Sub "setStartFrame"___("Frame As Integer");	COMMENT = "";
-	Sub "setUpdateInterval"___("Interval As Integer");	COMMENT = "";
-	Function "startFrame"___("") As "Integer";	COMMENT = "";
-	Function "state"___("") As "QTimeLine::State";	COMMENT = "";
-	Function "updateInterval"___("") As "Integer";	COMMENT = "";
-	Function "valueForTime"___("Msec As Integer") As "Float";	COMMENT = "";
+	Function "currentFrame" ___("") As "Integer";	COMMENT = "";
+	Function "currentTime" ___("") As "Integer";	COMMENT = "";
+	Function "currentValue" ___("") As "Float";	COMMENT = "";
+	Function "curveShape" ___("") As "QTimeLine::CurveShape";	COMMENT = "";
+	Function "direction" ___("") As "QTimeLine::Direction";	COMMENT = "";
+	Function "duration" ___("") As "Integer";	COMMENT = "";
+	Function "endFrame" ___("") As "Integer";	COMMENT = "";
+	Function "frameForTime" ___("Msec As Integer") As "Integer";	COMMENT = "";
+	Function "loopCount" ___("") As "Integer";	COMMENT = "";
+	Sub "setCurveShape" ___("Shape As QTimeLine::CurveShape");	COMMENT = "";
+	Sub "setDirection" ___("Direction As QTimeLine::Direction");	COMMENT = "";
+	Sub "setDuration" ___("Duration As Integer");	COMMENT = "";
+	Sub "setEndFrame" ___("Frame As Integer");	COMMENT = "";
+	Sub "setFrameRange" ___("StartFrame As Integer, EndFrame As Integer");	COMMENT = "";
+	Sub "setLoopCount" ___("Count As Integer");	COMMENT = "";
+	Sub "setStartFrame" ___("Frame As Integer");	COMMENT = "";
+	Sub "setUpdateInterval" ___("Interval As Integer");	COMMENT = "";
+	Function "startFrame" ___("") As "Integer";	COMMENT = "";
+	Function "state" ___("") As "QTimeLine::State";	COMMENT = "";
+	Function "updateInterval" ___("") As "Integer";	COMMENT = "";
+	Function "valueForTime" ___("Msec As Integer") As "Float";	COMMENT = "";
 
 End_Class
 
@@ -3963,22 +3963,22 @@ End_Class
 
 Class "QSessionManager" SuperClass "QObject"
 
-	Function "allowsErrorInteraction"___("") As "Boolean";	COMMENT = "";
-	Function "allowsInteraction"___("") As "Boolean";	COMMENT = "";
-	Sub "cancel"___("");	COMMENT = "";
-	Function "discardCommand"___("") As "QStringList";	COMMENT = "";
-	Function "isPhase2"___("") As "Boolean";	COMMENT = "";
-	Sub "release"___("");	COMMENT = "";
-	Sub "requestPhase2"___("");	COMMENT = "";
-	Function "restartCommand"___("") As "QStringList";	COMMENT = "";
-	Function "restartHint"___("") As "QSessionManager::RestartHint";	COMMENT = "";
-	Function "sessionId"___("") As "String";	COMMENT = "";
-	Function "sessionKey"___("") As "String";	COMMENT = "";
-	Sub "setDiscardCommand"___("List As QStringList");	COMMENT = "";
-	Sub "setManagerProperty"___("Name As String, Value As QStringList");	COMMENT = "";
-	Sub "setManagerProperty"___("Name As String, Value As String");	COMMENT = "";
-	Sub "setRestartCommand"___("Command As QStringList");	COMMENT = "";
-	Sub "setRestartHint"___("Hint As QSessionManager::RestartHint");	COMMENT = "";
+	Function "allowsErrorInteraction" ___("") As "Boolean";	COMMENT = "";
+	Function "allowsInteraction" ___("") As "Boolean";	COMMENT = "";
+	Sub "cancel" ___("");	COMMENT = "";
+	Function "discardCommand" ___("") As "QStringList";	COMMENT = "";
+	Function "isPhase2" ___("") As "Boolean";	COMMENT = "";
+	Sub "release" ___("");	COMMENT = "";
+	Sub "requestPhase2" ___("");	COMMENT = "";
+	Function "restartCommand" ___("") As "QStringList";	COMMENT = "";
+	Function "restartHint" ___("") As "QSessionManager::RestartHint";	COMMENT = "";
+	Function "sessionId" ___("") As "String";	COMMENT = "";
+	Function "sessionKey" ___("") As "String";	COMMENT = "";
+	Sub "setDiscardCommand" ___("List As QStringList");	COMMENT = "";
+	Sub "setManagerProperty" ___("Name As String, Value As QStringList");	COMMENT = "";
+	Sub "setManagerProperty" ___("Name As String, Value As String");	COMMENT = "";
+	Sub "setRestartCommand" ___("Command As QStringList");	COMMENT = "";
+	Sub "setRestartHint" ___("Hint As QSessionManager::RestartHint");	COMMENT = "";
 
 End_Class
 
@@ -3986,22 +3986,22 @@ End_Class
 
 Class "QBrush"
 
-	Function "color"___("") As "QColor";	COMMENT = "";
-	Function "gradient"___("") As "QGradient";	COMMENT = "";
-	Function "isOpaque"___("") As "Boolean";	COMMENT = "";
-	Function "matrix"___("") As "QMatrix";	COMMENT = "";
-	Sub "setColor"___("Color As QColor");	COMMENT = "";
-	Sub "setColor2"___("Color As Qt::GlobalColor");	COMMENT = "";
-	Sub "setMatrix"___("Matrix As QMatrix");	COMMENT = "";
-	Sub "setStyle"___("Style As Qt::BrushStyle");	COMMENT = "";
-	Sub "setTexture"___("Pixmap As QPixmap");	COMMENT = "";
-	Sub "setTextureImage"___("Image As QImage");	COMMENT = "";
-	Sub "setTransform"___("Matrix As QTransform");	COMMENT = "";
-	Function "style"___("") As "Qt::BrushStyle";	COMMENT = "";
-	Sub "swap"___("Other As QBrush");	COMMENT = "";
-	Function "texture"___("") As "QPixmap";	COMMENT = "";
-	Function "textureImage"___("") As "QImage";	COMMENT = "";
-	Function "transform"___("") As "QTransform";	COMMENT = "";
+	Function "color" ___("") As "QColor";	COMMENT = "";
+	Function "gradient" ___("") As "QGradient";	COMMENT = "";
+	Function "isOpaque" ___("") As "Boolean";	COMMENT = "";
+	Function "matrix" ___("") As "QMatrix";	COMMENT = "";
+	Sub "setColor" ___("Color As QColor");	COMMENT = "";
+	Sub "setColor2" ___("Color As Qt::GlobalColor");	COMMENT = "";
+	Sub "setMatrix" ___("Matrix As QMatrix");	COMMENT = "";
+	Sub "setStyle" ___("Style As Qt::BrushStyle");	COMMENT = "";
+	Sub "setTexture" ___("Pixmap As QPixmap");	COMMENT = "";
+	Sub "setTextureImage" ___("Image As QImage");	COMMENT = "";
+	Sub "setTransform" ___("Matrix As QTransform");	COMMENT = "";
+	Function "style" ___("") As "Qt::BrushStyle";	COMMENT = "";
+	Sub "swap" ___("Other As QBrush");	COMMENT = "";
+	Function "texture" ___("") As "QPixmap";	COMMENT = "";
+	Function "textureImage" ___("") As "QImage";	COMMENT = "";
+	Function "transform" ___("") As "QTransform";	COMMENT = "";
 
 End_Class
 
@@ -4009,26 +4009,26 @@ End_Class
 
 Class "QClipboard" SuperClass "QObject"  // :-)
 
-	Sub "clear"___("Mode As QClipboard::Mode");	COMMENT = "";
-	Function "image"___("Mode As QClipboard::Mode") As "QImage";	COMMENT = "";
-	Function "mimeData"___("Mode As QClipboard::Mode") As "QMimeData";	COMMENT = "";
-	Function "ownsClipboard"___("") As "Boolean";	COMMENT = "";
-	Function "ownsFindBuffer"___("") As "Boolean";	COMMENT = "";
-	Function "ownsSelection"___("") As "Boolean";	COMMENT = "";
-	Function "pixmap"___("Mode As QClipboard::Mode") As "QPixmap";	COMMENT = "";
-	Sub "setImage"___("Image As QImage, Mode As QClipboard::Mode");	COMMENT = "";
-	Sub "setMimeData"___("Src As QMimeData, Mode As QClipboard::Mode");	COMMENT = "";
-	Sub "setPixmap"___("Pixmap As QPixmap, QClipboard::Mode");	COMMENT = "";
-	Sub "setText"___("Text As String, QClipboard::Mode");	COMMENT = "";
-	Function "supportsFindBuffer"___("") As "Boolean";	COMMENT = "";
-	//Function "supportsFindBuffer"___("") As "Boolean";	COMMENT = "";
-	Function "text"___("Mode As QClipboard::Mode") As "String";	COMMENT = "";
-	Function "text2"___("SubType As String, Mode As QClipboard::Mode") As "String";	COMMENT = "";
+	Sub "clear" ___("Mode As QClipboard::Mode");	COMMENT = "";
+	Function "image" ___("Mode As QClipboard::Mode") As "QImage";	COMMENT = "";
+	Function "mimeData" ___("Mode As QClipboard::Mode") As "QMimeData";	COMMENT = "";
+	Function "ownsClipboard" ___("") As "Boolean";	COMMENT = "";
+	Function "ownsFindBuffer" ___("") As "Boolean";	COMMENT = "";
+	Function "ownsSelection" ___("") As "Boolean";	COMMENT = "";
+	Function "pixmap" ___("Mode As QClipboard::Mode") As "QPixmap";	COMMENT = "";
+	Sub "setImage" ___("Image As QImage, Mode As QClipboard::Mode");	COMMENT = "";
+	Sub "setMimeData" ___("Src As QMimeData, Mode As QClipboard::Mode");	COMMENT = "";
+	Sub "setPixmap" ___("Pixmap As QPixmap, QClipboard::Mode");	COMMENT = "";
+	Sub "setText" ___("Text As String, QClipboard::Mode");	COMMENT = "";
+	Function "supportsFindBuffer" ___("") As "Boolean";	COMMENT = "";
+	//Function "supportsFindBuffer" ___("") As "Boolean";	COMMENT = "";
+	Function "text" ___("Mode As QClipboard::Mode") As "String";	COMMENT = "";
+	Function "text2" ___("SubType As String, Mode As QClipboard::Mode") As "String";	COMMENT = "";
 
-	Signal "changed"___("Mode As QClipboard::Mode") Declare "void changed(QClipboard::Mode mode)"	COMMENT = "";
-	Signal "dataChanged"___("") Declare "void dataChanged()"	COMMENT = "";
-	Signal "findBufferChanged"___("") Declare "void findBufferChanged()"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "changed" ___("Mode As QClipboard::Mode") Declare "void changed(QClipboard::Mode mode)"	COMMENT = "";
+	Signal "dataChanged" ___("") Declare "void dataChanged()"	COMMENT = "";
+	Signal "findBufferChanged" ___("") Declare "void findBufferChanged()"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
 
 End_Class
 
@@ -4036,8 +4036,8 @@ End_Class
 
 Class "QSizeGrip" SuperClass "QWidget"
 
-	Sub "setVisible"___("Visible As Boolean");	COMMENT = "";
-	Function "sizeHint"___("") As "QSize";	COMMENT = "";
+	Sub "setVisible" ___("Visible As Boolean");	COMMENT = "";
+	Function "sizeHint" ___("") As "QSize";	COMMENT = "";
 
 End_Class
 	
@@ -4045,22 +4045,22 @@ End_Class
 
 Class "QSizePolicy"
 
-	Function "controlType"___("") As "ControlType";	COMMENT = "";
-	Function "expandingDirections"___("") As "Qt::Orientations";	COMMENT = "";
-	Function "hasHeightForWidth"___("") As "Boolean";	COMMENT = "";
-	Function "hasWidthForHeight"___("") As "Boolean";	COMMENT = "";
-	Function "horizontalPolicy"___("") As "QSizePolicy::Policy";	COMMENT = "";
-	Function "horizontalStretch"___("") As "Integer";	COMMENT = "";
-	Sub "setControlType"___("Type As QSizePolicy::ControlType");	COMMENT = "";
-	Sub "setHeightForWidth"___("Dependent As Boolean");	COMMENT = "";
-	Sub "setHorizontalPolicy"___("Policy As QSizePolicy::Policy");	COMMENT = "";
-	Sub "setHorizontalStretch"___("StretchFactor As Integer");	COMMENT = "";
-	Sub "setVerticalPolicy"___("Policy As QSizePolicy::Policy");	COMMENT = "";
-	Sub "setVerticalStretch"___("StretchFactor As Integer");	COMMENT = "";
-	Sub "setWidthForHeight"___("Dependent As Boolean");	COMMENT = "";
-	Sub "transpose"___("");	COMMENT = "";
-	Function "verticalPolicy"___("") As "Policy As QSizePolicy::Policy";	COMMENT = "";
-	Function "verticalStretch"___("") As "Integer";	COMMENT = "";
+	Function "controlType" ___("") As "ControlType";	COMMENT = "";
+	Function "expandingDirections" ___("") As "Qt::Orientations";	COMMENT = "";
+	Function "hasHeightForWidth" ___("") As "Boolean";	COMMENT = "";
+	Function "hasWidthForHeight" ___("") As "Boolean";	COMMENT = "";
+	Function "horizontalPolicy" ___("") As "QSizePolicy::Policy";	COMMENT = "";
+	Function "horizontalStretch" ___("") As "Integer";	COMMENT = "";
+	Sub "setControlType" ___("Type As QSizePolicy::ControlType");	COMMENT = "";
+	Sub "setHeightForWidth" ___("Dependent As Boolean");	COMMENT = "";
+	Sub "setHorizontalPolicy" ___("Policy As QSizePolicy::Policy");	COMMENT = "";
+	Sub "setHorizontalStretch" ___("StretchFactor As Integer");	COMMENT = "";
+	Sub "setVerticalPolicy" ___("Policy As QSizePolicy::Policy");	COMMENT = "";
+	Sub "setVerticalStretch" ___("StretchFactor As Integer");	COMMENT = "";
+	Sub "setWidthForHeight" ___("Dependent As Boolean");	COMMENT = "";
+	Sub "transpose" ___("");	COMMENT = "";
+	Function "verticalPolicy" ___("") As "Policy As QSizePolicy::Policy";	COMMENT = "";
+	Function "verticalStretch" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -4068,9 +4068,9 @@ End_Class
 
 Class "QBitmap" SuperClass "QPixmap"
 
-	Sub "clear"___("");	COMMENT = "";
-	Sub "swap"___("Other As QBitmap");	COMMENT = "";
-	Function "transformed"___("Matrix As QTransform") As "QBitmap";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Sub "swap" ___("Other As QBitmap");	COMMENT = "";
+	Function "transformed" ___("Matrix As QTransform") As "QBitmap";	COMMENT = "";
 
 End_Class
 
@@ -4078,28 +4078,28 @@ End_Class
 
 Class "QPen"
 
-	Function "brush"___("") As "QBrush";	COMMENT = "";
-	Function "capStyle"___("") As "Qt::PenCapStyle";	COMMENT = "";
-	Function "color"___("") As "QColor";	COMMENT = "";
-	Function "dashOffset"___("") As "Float";	COMMENT = "";
-	Function "isCosmetic"___("") As "Boolean";	COMMENT = "";
-	Function "isSolid"___("") As "Boolean";	COMMENT = "";
-	Function "joinStyle"___("") As "Qt::PenJoinStyle";	COMMENT = "";
-	Function "miterLimit"___("") As "Float";	COMMENT = "";
-	Sub "setBrush"___("Brush As QBrush");	COMMENT = "";
-	Sub "setCapStyle"___("Style As Qt::PenCapStyle");	COMMENT = "";
-	Sub "setColor"___("Color As QColor");	COMMENT = "";
-	Sub "setCosmetic"___("Cosmetic As Boolean");	COMMENT = "";
-	Sub "setDashOffset"___("Offset As Float");	COMMENT = "";
-	Sub "setJoinStyle"___("Style As Qt::PenJoinStyle");	COMMENT = "";
-	Sub "setMiterLimit"___("Limit As Float");	COMMENT = "";
-	Sub "setStyle"___("Style As Qt::PenStyle");	COMMENT = "";
-	Sub "setWidth"___("Width As Integer");	COMMENT = "";
-	Sub "setWidthF"___("Width As Float");	COMMENT = "";
-	Function "style"___("") As "Qt::PenStyle";	COMMENT = "";
-	Sub "swap"___("Other As QPen");	COMMENT = "";
-	Function "width"___("") As "Integer";	COMMENT = "";
-	Function "widthF"___("") As "Float";	COMMENT = "";
+	Function "brush" ___("") As "QBrush";	COMMENT = "";
+	Function "capStyle" ___("") As "Qt::PenCapStyle";	COMMENT = "";
+	Function "color" ___("") As "QColor";	COMMENT = "";
+	Function "dashOffset" ___("") As "Float";	COMMENT = "";
+	Function "isCosmetic" ___("") As "Boolean";	COMMENT = "";
+	Function "isSolid" ___("") As "Boolean";	COMMENT = "";
+	Function "joinStyle" ___("") As "Qt::PenJoinStyle";	COMMENT = "";
+	Function "miterLimit" ___("") As "Float";	COMMENT = "";
+	Sub "setBrush" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setCapStyle" ___("Style As Qt::PenCapStyle");	COMMENT = "";
+	Sub "setColor" ___("Color As QColor");	COMMENT = "";
+	Sub "setCosmetic" ___("Cosmetic As Boolean");	COMMENT = "";
+	Sub "setDashOffset" ___("Offset As Float");	COMMENT = "";
+	Sub "setJoinStyle" ___("Style As Qt::PenJoinStyle");	COMMENT = "";
+	Sub "setMiterLimit" ___("Limit As Float");	COMMENT = "";
+	Sub "setStyle" ___("Style As Qt::PenStyle");	COMMENT = "";
+	Sub "setWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "setWidthF" ___("Width As Float");	COMMENT = "";
+	Function "style" ___("") As "Qt::PenStyle";	COMMENT = "";
+	Sub "swap" ___("Other As QPen");	COMMENT = "";
+	Function "width" ___("") As "Integer";	COMMENT = "";
+	Function "widthF" ___("") As "Float";	COMMENT = "";
 
 End_Class
 
@@ -4111,13 +4111,13 @@ Class "QStackedLayout" SuperClass "QLayout"
 	Property "currentIndex" As "Integer";	COMMENT = "";
 	Property "stackingMode" As "QStackedLayout::StackingMode";	COMMENT = "";
 
-	Function "addWidget"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Function "currentIndex"___("") As "Integer";	COMMENT = "";
-	Function "currentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "insertWidget"___("Index As Integer, Widget As QWidget") As "Integer";	COMMENT = "";
-	Sub "setStackingMode"___("StackingMode As QStackedLayout::StackingMode");	COMMENT = "";
-	Function "stackingMode"___("") As "QStackedLayout::StackingMode";	COMMENT = "";
-	Function "widget"___("Index As Integer") As "QWidget";	COMMENT = "";
+	Function "addWidget" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Function "currentIndex" ___("") As "Integer";	COMMENT = "";
+	Function "currentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "insertWidget" ___("Index As Integer, Widget As QWidget") As "Integer";	COMMENT = "";
+	Sub "setStackingMode" ___("StackingMode As QStackedLayout::StackingMode");	COMMENT = "";
+	Function "stackingMode" ___("") As "QStackedLayout::StackingMode";	COMMENT = "";
+	Function "widget" ___("Index As Integer") As "QWidget";	COMMENT = "";
 
 End_Class
 
@@ -4125,22 +4125,22 @@ End_Class
 
 Class "QFontDatabase"
 
-	Function "bold"___("Family As String, Style As String") As "Boolean";	COMMENT = "";
-	Function "families"___("WritingSystem As QFontDatabase::WritingSystem") As "QStringList";	COMMENT = "";
-	Function "font"___("Family As String, Style As String, PointSize As Integer") As "QFont";	COMMENT = "";
-	Function "isBitmapScalable"___("Family As String, Style As String") As "Boolean";	COMMENT = "";
-	Function "isFixedPitch"___("Family As String, Style As String") As "Boolean";	COMMENT = "";
-	Function "isScalable"___("Family As String, Style As String") As "Boolean";	COMMENT = "";
-	Function "isSmoothlyScalable"___("Family As String, Style As String") As "Boolean";	COMMENT = "";
-	Function "italic"___("Family As String, Style As String") As "Boolean";	COMMENT = "Boolean";
-	//Function "pointSizes"___("Family As String, Style As String") As "List";	COMMENT = "";
-	//Function "smoothSizes"___("Family As String, Style As String") As "List";	COMMENT = "";
-	Function "styleString"___("Font As QFont") As "String";	COMMENT = "";
-	Function "styleString2"___("FontInfo As QFontInfo") As "String";	COMMENT = "";
-	Function "styles"___("Family As String") As "QStringList";	COMMENT = "";
-	Function "weight"___("Family As String, Style As String") As "Integer";	COMMENT = "";
-	//Function "writingSystems"___("") As "List";	COMMENT = "";
-	//Function "writingSystems2"___("Family As String") As "List";	COMMENT = "";
+	Function "bold" ___("Family As String, Style As String") As "Boolean";	COMMENT = "";
+	Function "families" ___("WritingSystem As QFontDatabase::WritingSystem") As "QStringList";	COMMENT = "";
+	Function "font" ___("Family As String, Style As String, PointSize As Integer") As "QFont";	COMMENT = "";
+	Function "isBitmapScalable" ___("Family As String, Style As String") As "Boolean";	COMMENT = "";
+	Function "isFixedPitch" ___("Family As String, Style As String") As "Boolean";	COMMENT = "";
+	Function "isScalable" ___("Family As String, Style As String") As "Boolean";	COMMENT = "";
+	Function "isSmoothlyScalable" ___("Family As String, Style As String") As "Boolean";	COMMENT = "";
+	Function "italic" ___("Family As String, Style As String") As "Boolean";	COMMENT = "Boolean";
+	//Function "pointSizes" ___("Family As String, Style As String") As "List";	COMMENT = "";
+	//Function "smoothSizes" ___("Family As String, Style As String") As "List";	COMMENT = "";
+	Function "styleString" ___("Font As QFont") As "String";	COMMENT = "";
+	Function "styleString2" ___("FontInfo As QFontInfo") As "String";	COMMENT = "";
+	Function "styles" ___("Family As String") As "QStringList";	COMMENT = "";
+	Function "weight" ___("Family As String, Style As String") As "Integer";	COMMENT = "";
+	//Function "writingSystems" ___("") As "List";	COMMENT = "";
+	//Function "writingSystems2" ___("Family As String") As "List";	COMMENT = "";
 
 End_Class
 
@@ -4148,19 +4148,19 @@ End_Class
 
 Class "QFontInfo"
 
-	Function "bold"___("") As "Boolean";	COMMENT = "";
-	Function "exactMatch"___("") As "Boolean";	COMMENT = "";
-	Function "family"___("") As "String";	COMMENT = "";
-	Function "fixedPitch"___("") As "Boolean";	COMMENT = "";
-	Function "italic"___("") As "Boolean";	COMMENT = "";
-	Function "pixelSize"___("") As "Integer";	COMMENT = "";
-	Function "pointSize"___("") As "Integer";	COMMENT = "";
-	Function "pointSizeF"___("") As "Float";	COMMENT = "";
-	Function "rawMode"___("") As "Boolean";	COMMENT = "";
-	Function "style"___("") As "QFont::Style";	COMMENT = "";
-	Function "styleHint"___("") As "QFont::StyleHint";	COMMENT = "";
-	Function "styleName"___("") As "String";	COMMENT = "";
-	Function "weight"___("") As "Integer";	COMMENT = "";
+	Function "bold" ___("") As "Boolean";	COMMENT = "";
+	Function "exactMatch" ___("") As "Boolean";	COMMENT = "";
+	Function "family" ___("") As "String";	COMMENT = "";
+	Function "fixedPitch" ___("") As "Boolean";	COMMENT = "";
+	Function "italic" ___("") As "Boolean";	COMMENT = "";
+	Function "pixelSize" ___("") As "Integer";	COMMENT = "";
+	Function "pointSize" ___("") As "Integer";	COMMENT = "";
+	Function "pointSizeF" ___("") As "Float";	COMMENT = "";
+	Function "rawMode" ___("") As "Boolean";	COMMENT = "";
+	Function "style" ___("") As "QFont::Style";	COMMENT = "";
+	Function "styleHint" ___("") As "QFont::StyleHint";	COMMENT = "";
+	Function "styleName" ___("") As "String";	COMMENT = "";
+	Function "weight" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -4168,14 +4168,14 @@ End_Class
 
 Class "QSound" SuperClass "QObject"
 
-	Function "fileName"___("") As "String";	COMMENT = "";
-	Function "isFinished"___("") As "Boolean";	COMMENT = "";
-	Function "loops"___("") As "Integer";	COMMENT = "";
-	Function "loopsRemaining"___("") As "Integer";	COMMENT = "";
-	Sub "setLoops"___("Number As Integer");	COMMENT = "";
+	Function "fileName" ___("") As "String";	COMMENT = "";
+	Function "isFinished" ___("") As "Boolean";	COMMENT = "";
+	Function "loops" ___("") As "Integer";	COMMENT = "";
+	Function "loopsRemaining" ___("") As "Integer";	COMMENT = "";
+	Sub "setLoops" ___("Number As Integer");	COMMENT = "";
 
-	Slot "play"___("");	COMMENT = "";
-	Slot "stop"___("");	COMMENT = "";
+	Slot "play" ___("");	COMMENT = "";
+	Slot "stop" ___("");	COMMENT = "";
 
 End_Class
 
@@ -4183,27 +4183,27 @@ End_Class
 
 Class "QMimeData" SuperClass "QObject"
 
-	Sub "clear"___("");	COMMENT = "";
-	Function "colorData"___("") As "QVariant";	COMMENT = "";
-	Function "data"___("MimeType As String") As "QByteArray";	COMMENT = "";
-	Function "formats"___("") As "QStringList";	COMMENT = "";
-	Function "hasColor"___("") As "Boolean";	COMMENT = "";
-	Function "hasFormat"___("MimeType As String") As "Boolean";	COMMENT = "";
-	Function "hasHtml"___("") As "Boolean";	COMMENT = "";
-	Function "hasImage"___("") As "Boolean";	COMMENT = "";
-	Function "hasText"___("") As "Boolean";	COMMENT = "";
-	Function "hasUrls"___("") As "Boolean";	COMMENT = "";
-	Function "hasHtml"___("") As "String";	COMMENT = "";
-	Function "imageData"___("") As "QVariant";	COMMENT = "";
-	Sub "removeFormat"___("MimeType As String");	COMMENT = "";
-	Sub "setColorData"___("Color As QVariant");	COMMENT = "";
-	Sub "setData"___("MimeType As String, Data As QByteArray");	COMMENT = "";
-	Sub "setHtml"___("Html As String");	COMMENT = "";
-	Sub "setImageData"___("Image As QVariant");	COMMENT = "";
-	Sub "setText"___("Text As String");	COMMENT = "";
-	//Sub "setUrls"___("Urls As List");	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
-	//Function "urls"___("") As "List";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "colorData" ___("") As "QVariant";	COMMENT = "";
+	Function "data" ___("MimeType As String") As "QByteArray";	COMMENT = "";
+	Function "formats" ___("") As "QStringList";	COMMENT = "";
+	Function "hasColor" ___("") As "Boolean";	COMMENT = "";
+	Function "hasFormat" ___("MimeType As String") As "Boolean";	COMMENT = "";
+	Function "hasHtml" ___("") As "Boolean";	COMMENT = "";
+	Function "hasImage" ___("") As "Boolean";	COMMENT = "";
+	Function "hasText" ___("") As "Boolean";	COMMENT = "";
+	Function "hasUrls" ___("") As "Boolean";	COMMENT = "";
+	Function "hasHtml" ___("") As "String";	COMMENT = "";
+	Function "imageData" ___("") As "QVariant";	COMMENT = "";
+	Sub "removeFormat" ___("MimeType As String");	COMMENT = "";
+	Sub "setColorData" ___("Color As QVariant");	COMMENT = "";
+	Sub "setData" ___("MimeType As String, Data As QByteArray");	COMMENT = "";
+	Sub "setHtml" ___("Html As String");	COMMENT = "";
+	Sub "setImageData" ___("Image As QVariant");	COMMENT = "";
+	Sub "setText" ___("Text As String");	COMMENT = "";
+	//Sub "setUrls" ___("Urls As List");	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
+	//Function "urls" ___("") As "List";	COMMENT = "";
 
 End_Class
 
@@ -4211,18 +4211,18 @@ End_Class
 
 Class "QIcon"
 
-	Function "actualSize"___("Size As QSize, Mode As QIcon::Mode") As "QSize";	COMMENT = "";
-	Sub "addFile"___("FileName As String, Size As QSize, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
-	Sub "addPixmap"___("Pixmap As QPixmap, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
-	//Function "availableSizes"___("Mode As QIcon::Mode, State As QIcon::State") As "List";	COMMENT = "";
-	Function "cacheKey"___("") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "name"___("") As "String";	COMMENT = "";
-	Sub "paint"___("Painter As QPainter, X As Integer, Y As Integer, W As Integer, H As Integer, Alignment As Qt::Alignment, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
-	Function "pixmap"___("X As Integer, Y As Integer, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
-	Function "pixmap2"___("Size As QSize, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
-	Function "pixmap3"___("Extent As Integer, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
-	Sub "swap"___("Other As QIcon");	COMMENT = "";
+	Function "actualSize" ___("Size As QSize, Mode As QIcon::Mode") As "QSize";	COMMENT = "";
+	Sub "addFile" ___("FileName As String, Size As QSize, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
+	Sub "addPixmap" ___("Pixmap As QPixmap, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
+	//Function "availableSizes" ___("Mode As QIcon::Mode, State As QIcon::State") As "List";	COMMENT = "";
+	Function "cacheKey" ___("") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "name" ___("") As "String";	COMMENT = "";
+	Sub "paint" ___("Painter As QPainter, X As Integer, Y As Integer, W As Integer, H As Integer, Alignment As Qt::Alignment, Mode As QIcon::Mode, State As QIcon::State");	COMMENT = "";
+	Function "pixmap" ___("X As Integer, Y As Integer, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
+	Function "pixmap2" ___("Size As QSize, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
+	Function "pixmap3" ___("Extent As Integer, Mode As QIcon::Mode, State As QIcon::State") As "QPixmap";	COMMENT = "";
+	Sub "swap" ___("Other As QIcon");	COMMENT = "";
 
 End_Class
 
@@ -4247,72 +4247,72 @@ Class "QAbstractItemView" SuperClass "QAbstractScrollArea"
 	Property "textElideMode" As "Qt::TextElideMode";	COMMENT = "";
 	Property "verticalScrollMode" As "QAbstractItemView::ScrollMode";	COMMENT = "";
 	
-	Function "alternatingRowColors"___("") As "Boolean"	COMMENT = "";
-	Function "autoScrollMargin"___("") As "Integer";	COMMENT = "";
-	Sub "closePersistentEditor"___("Index As QModelIndex");	COMMENT = "";
-	Function "currentIndex"___("") As "QModelIndex";	COMMENT = "";
-	Function "defaultDropAction"___("") As "Qt::DropAction";	COMMENT = "";
-	Function "dragDropMode"___("") As "QAbstractItemView::DragDropMode";	COMMENT = "";
-	Function "dragDropOverwriteMode"___("") As "Boolean";	COMMENT = "";
-	Function "dragEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "editTriggers"___("") As "QAbstractItemView::EditTriggers";	COMMENT = "";
-	Function "hasAutoScroll"___("") As "Boolean";	COMMENT = "";
-	Function "horizontalScrollMode"___("") As "QAbstractItemView::ScrollMode";	COMMENT = "";
-	Function "iconSize"___("") As "QSize";	COMMENT = "";
-	Function "indexAt "___("Point As QPoint") As "QModelIndex";	COMMENT = "";
-	Function "indexWidget "___("Index As QModelIndex") As "QWidget";	COMMENT = "";
-	Sub "keyboardSearch"___("Search As String");	COMMENT = "";
-	Function "model"___("") As "QAbstractItemModel";	COMMENT = "";
-	Sub "openPersistentEditor"___("Index As QModelIndex");	COMMENT = "";
-	Function "rootIndex"___("") As "QModelIndex";	COMMENT = "";
-	Sub "scrollTo"___("Index As QModelIndex, Hint As QAbstractItemView::ScrollHint");	COMMENT = "";
-	Function "selectionBehavior"___("") As "QAbstractItemView::SelectionBehavior";	COMMENT = "";
-	Function "selectionMode"___("") As "QAbstractItemView::SelectionMode";	COMMENT = "";
-	Function "selectionModel"___("") As "QItemSelectionModel";	COMMENT = "";
-	Sub "setAlternatingRowColors"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAutoScroll"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAutoScrollMargin"___("Margin As Integer");	COMMENT = "";
-	Sub "setDefaultDropAction"___("DropAction As Qt::DropAction");	COMMENT = "";
-	Sub "setDragDropMode"___("Behavior As QAbstractItemView::DragDropMode");	COMMENT = "";
-	Sub "setDragDropOverwriteMode"___("Overwrite As Boolean");	COMMENT = "";
-	Sub "setDragEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setDropIndicatorShown"___("Enable As Boolean");	COMMENT = "";
-	Sub "setEditTriggers"___("Triggers As QAbstractItemView::EditTriggers");	COMMENT = "";
-	Sub "setHorizontalScrollMode"___("Mode As QAbstractItemView::ScrollMode");	COMMENT = "";
-	Sub "setIconSize"___("Size As QSize");	COMMENT = "";
-	Sub "setIndexWidget"___("Index As QModelIndex, Widget As QWidget");	COMMENT = "";
-	Sub "setModel"___("Model As QAbstractItemModel");	COMMENT = "";
-	Sub "setSelectionBehavior"___("Behavior As QAbstractItemView::SelectionBehavior");	COMMENT = "";
-	Sub "setSelectionMode"___("Mode As QAbstractItemView::SelectionMode");	COMMENT = "";
-	Sub "setSelectionModel"___("SelectionModel As QItemSelectionModel");	COMMENT = "";
-	Sub "setTabKeyNavigation"___("Enable As Boolean");	COMMENT = "";
-	Sub "setTextElideMode"___("Mode As  Qt::TextElideMode");	COMMENT = "";
-	Sub "setVerticalScrollMode"___("Mode As QAbstractItemView::ScrollMode");	COMMENT = "";
-	Function "showDropIndicator"___("") As "Boolean";	COMMENT = "";
-	Function "sizeHintForColumn"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "sizeHintForIndex"___("Index As QModelIndex") As "QSize";	COMMENT = "";
-	Function "sizeHintForRow"___("Row As Integer") As "Integer";	COMMENT = "";
-	Function "tabKeyNavigation"___("") As "Boolean";	COMMENT = "";
-	Function "textElideMode"___("") As "Qt::TextElideMode";	COMMENT = "";
-	Function "verticalScrollMode"___("") As "QAbstractItemView::ScrollMode";	COMMENT = "";
-	Function "visualRect"___("Index As QModelIndex") As "QRect";	COMMENT = "";
+	Function "alternatingRowColors" ___("") As "Boolean"	COMMENT = "";
+	Function "autoScrollMargin" ___("") As "Integer";	COMMENT = "";
+	Sub "closePersistentEditor" ___("Index As QModelIndex");	COMMENT = "";
+	Function "currentIndex" ___("") As "QModelIndex";	COMMENT = "";
+	Function "defaultDropAction" ___("") As "Qt::DropAction";	COMMENT = "";
+	Function "dragDropMode" ___("") As "QAbstractItemView::DragDropMode";	COMMENT = "";
+	Function "dragDropOverwriteMode" ___("") As "Boolean";	COMMENT = "";
+	Function "dragEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "editTriggers" ___("") As "QAbstractItemView::EditTriggers";	COMMENT = "";
+	Function "hasAutoScroll" ___("") As "Boolean";	COMMENT = "";
+	Function "horizontalScrollMode" ___("") As "QAbstractItemView::ScrollMode";	COMMENT = "";
+	Function "iconSize" ___("") As "QSize";	COMMENT = "";
+	Function "indexAt " ___("Point As QPoint") As "QModelIndex";	COMMENT = "";
+	Function "indexWidget " ___("Index As QModelIndex") As "QWidget";	COMMENT = "";
+	Sub "keyboardSearch" ___("Search As String");	COMMENT = "";
+	Function "model" ___("") As "QAbstractItemModel";	COMMENT = "";
+	Sub "openPersistentEditor" ___("Index As QModelIndex");	COMMENT = "";
+	Function "rootIndex" ___("") As "QModelIndex";	COMMENT = "";
+	Sub "scrollTo" ___("Index As QModelIndex, Hint As QAbstractItemView::ScrollHint");	COMMENT = "";
+	Function "selectionBehavior" ___("") As "QAbstractItemView::SelectionBehavior";	COMMENT = "";
+	Function "selectionMode" ___("") As "QAbstractItemView::SelectionMode";	COMMENT = "";
+	Function "selectionModel" ___("") As "QItemSelectionModel";	COMMENT = "";
+	Sub "setAlternatingRowColors" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAutoScroll" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAutoScrollMargin" ___("Margin As Integer");	COMMENT = "";
+	Sub "setDefaultDropAction" ___("DropAction As Qt::DropAction");	COMMENT = "";
+	Sub "setDragDropMode" ___("Behavior As QAbstractItemView::DragDropMode");	COMMENT = "";
+	Sub "setDragDropOverwriteMode" ___("Overwrite As Boolean");	COMMENT = "";
+	Sub "setDragEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setDropIndicatorShown" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setEditTriggers" ___("Triggers As QAbstractItemView::EditTriggers");	COMMENT = "";
+	Sub "setHorizontalScrollMode" ___("Mode As QAbstractItemView::ScrollMode");	COMMENT = "";
+	Sub "setIconSize" ___("Size As QSize");	COMMENT = "";
+	Sub "setIndexWidget" ___("Index As QModelIndex, Widget As QWidget");	COMMENT = "";
+	Sub "setModel" ___("Model As QAbstractItemModel");	COMMENT = "";
+	Sub "setSelectionBehavior" ___("Behavior As QAbstractItemView::SelectionBehavior");	COMMENT = "";
+	Sub "setSelectionMode" ___("Mode As QAbstractItemView::SelectionMode");	COMMENT = "";
+	Sub "setSelectionModel" ___("SelectionModel As QItemSelectionModel");	COMMENT = "";
+	Sub "setTabKeyNavigation" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setTextElideMode" ___("Mode As  Qt::TextElideMode");	COMMENT = "";
+	Sub "setVerticalScrollMode" ___("Mode As QAbstractItemView::ScrollMode");	COMMENT = "";
+	Function "showDropIndicator" ___("") As "Boolean";	COMMENT = "";
+	Function "sizeHintForColumn" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "sizeHintForIndex" ___("Index As QModelIndex") As "QSize";	COMMENT = "";
+	Function "sizeHintForRow" ___("Row As Integer") As "Integer";	COMMENT = "";
+	Function "tabKeyNavigation" ___("") As "Boolean";	COMMENT = "";
+	Function "textElideMode" ___("") As "Qt::TextElideMode";	COMMENT = "";
+	Function "verticalScrollMode" ___("") As "QAbstractItemView::ScrollMode";	COMMENT = "";
+	Function "visualRect" ___("Index As QModelIndex") As "QRect";	COMMENT = "";
 
-	Slot "clearSelection"___("");	COMMENT = "";
-	Slot "edit"___("Index As QModelIndex");	COMMENT = "";
-	Slot "reset"___("");	COMMENT = "";
-	Slot "scrollToBottom"___("");	COMMENT = "";
-	Slot "scrollToTop"___("");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	Slot "setCurrentIndex"___("Index As QModelIndex");	COMMENT = "";
-	Slot "setRootIndex"___("Index As QModelIndex");	COMMENT = "";
-	Slot "update"___("Index As QModelIndex");	COMMENT = "";
+	Slot "clearSelection" ___("");	COMMENT = "";
+	Slot "edit" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "reset" ___("");	COMMENT = "";
+	Slot "scrollToBottom" ___("");	COMMENT = "";
+	Slot "scrollToTop" ___("");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "setRootIndex" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "update" ___("Index As QModelIndex");	COMMENT = "";
 
-	Signal "activated"___("Index As QModelIndex") Declare "void activated(const QModelIndex & index)"	COMMENT = "";
-	Signal "clicked"___("Index As QModelIndex") Declare "void clicked(const QModelIndex & index)"	COMMENT = "";
-	Signal "doubleClicked"___("Index As QModelIndex") Declare "void doubleClicked(const QModelIndex & index)"	COMMENT = "";
-	Signal "entered"___("Index As QModelIndex") Declare "void entered(const QModelIndex & index)"	COMMENT = "";
-	Signal "pressed"___("Index As QModelIndex") Declare "void pressed(const QModelIndex & index)"	COMMENT = "";
-	Signal "viewportEntered"___("") Declare "void viewportEntered()"	COMMENT = "";
+	Signal "activated" ___("Index As QModelIndex") Declare "void activated(const QModelIndex & index)"	COMMENT = "";
+	Signal "clicked" ___("Index As QModelIndex") Declare "void clicked(const QModelIndex & index)"	COMMENT = "";
+	Signal "doubleClicked" ___("Index As QModelIndex") Declare "void doubleClicked(const QModelIndex & index)"	COMMENT = "";
+	Signal "entered" ___("Index As QModelIndex") Declare "void entered(const QModelIndex & index)"	COMMENT = "";
+	Signal "pressed" ___("Index As QModelIndex") Declare "void pressed(const QModelIndex & index)"	COMMENT = "";
+	Signal "viewportEntered" ___("") Declare "void viewportEntered()"	COMMENT = "";
 
 End_Class
 
@@ -4320,51 +4320,51 @@ End_Class
 
 Class "QAbstractItemModel" SuperClass "QObject"
 
-	Function "buddy"___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
-	Function "canFetchMore"___("Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "columnCount"___("Parent As QModelIndex") As "Integer";	COMMENT = "";
-	Function "data"___("Index As QModelIndex, Role As Integer") As "QVariant";	COMMENT = "";
-//	Function "dropMimeData"___("Data As QMimeData, Action As Qt::DropAction, Row As Integer, Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Sub "fetchMore"___("Parent As QModelIndex");	COMMENT = "";
-	Function "flags"___("Index As QModelIndex") As "Qt::ItemFlags";	COMMENT = "";
-	Function "hasChildren"___("Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "hasIndex"___("Row As Integer, Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "headerData"___("Section As Integer, Orientation As Qt::Orientation, Role As Integer") As "QVariant";	COMMENT = "";
-	Function "index"___("Row As Integer, Column As Integer, Parent As QModelIndex") As "QModelIndex";	COMMENT = "";
-	Function "insertColumn"___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "insertColumns"___("Column As Integer, Count As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "removeRow"___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "removeRows"___("Row As Integer, Count As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "rowCount"___("Parent As QModelIndex") As "Integer";	COMMENT = "";
-	//Function "setData"___("Index As QModelIndex, Value As QVariant, Role As Qt::EditRole") As "Boolean";	COMMENT = "";
-	//Function "setHeaderData"___("Section As Integer, Orientation As Qt::Orientation, Value As QVariant, Role As Qt::EditRole") As "Boolean";	COMMENT = "";
-	Sub "setSupportedDragActions"___("Actions As Qt::DropActions");	COMMENT = "";
-	Function "sibling"___("Row As Integer, Column As Integer, Index As QModelIndex") As "QModelIndex";	COMMENT = "";
-	Sub "sort"___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
-	Function "span"___("Index As QModelIndex") As "QSize";	COMMENT = "";
-	Function "supportedDragActions"___("") As "Qt::DropActions";	COMMENT = "";
+	Function "buddy" ___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
+	Function "canFetchMore" ___("Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "columnCount" ___("Parent As QModelIndex") As "Integer";	COMMENT = "";
+	Function "data" ___("Index As QModelIndex, Role As Integer") As "QVariant";	COMMENT = "";
+//	Function "dropMimeData" ___("Data As QMimeData, Action As Qt::DropAction, Row As Integer, Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Sub "fetchMore" ___("Parent As QModelIndex");	COMMENT = "";
+	Function "flags" ___("Index As QModelIndex") As "Qt::ItemFlags";	COMMENT = "";
+	Function "hasChildren" ___("Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "hasIndex" ___("Row As Integer, Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "headerData" ___("Section As Integer, Orientation As Qt::Orientation, Role As Integer") As "QVariant";	COMMENT = "";
+	Function "index" ___("Row As Integer, Column As Integer, Parent As QModelIndex") As "QModelIndex";	COMMENT = "";
+	Function "insertColumn" ___("Column As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "insertColumns" ___("Column As Integer, Count As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "removeRow" ___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "removeRows" ___("Row As Integer, Count As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "rowCount" ___("Parent As QModelIndex") As "Integer";	COMMENT = "";
+	//Function "setData" ___("Index As QModelIndex, Value As QVariant, Role As Qt::EditRole") As "Boolean";	COMMENT = "";
+	//Function "setHeaderData" ___("Section As Integer, Orientation As Qt::Orientation, Value As QVariant, Role As Qt::EditRole") As "Boolean";	COMMENT = "";
+	Sub "setSupportedDragActions" ___("Actions As Qt::DropActions");	COMMENT = "";
+	Function "sibling" ___("Row As Integer, Column As Integer, Index As QModelIndex") As "QModelIndex";	COMMENT = "";
+	Sub "sort" ___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
+	Function "span" ___("Index As QModelIndex") As "QSize";	COMMENT = "";
+	Function "supportedDragActions" ___("") As "Qt::DropActions";	COMMENT = "";
 
-	Slot "revert"___("");	COMMENT = "";
-	Slot "submit"___("");	COMMENT = "";
+	Slot "revert" ___("");	COMMENT = "";
+	Slot "submit" ___("");	COMMENT = "";
 
-	Signal "columnsAboutToBeInserted"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsAboutToBeInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "columnsAboutToBeMoved"___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationColumn As Integer") Declare "void columnsAboutToBeMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationColumn)"	COMMENT = "";
-	Signal "columnsAboutToBeRemoved"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsAboutToBeRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "columnsInserted"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "columnsMoved"___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationColumn As Integer") Declare "void columnsMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationColumn)"	COMMENT = "";
-	Signal "columnsRemoved"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "dataChanged"___("TopLeft As QModelIndex, BottomRight As QModelIndex") Declare "void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight)"	COMMENT = "";
-	Signal "headerDataChanged"___("Orientation As Qt::Orientation, First As Integer, Last As Integer") Declare "void headerDataChanged(Qt::Orientation orientation, int first, int last)"	COMMENT = "";
-	Signal "layoutAboutToBeChanged"___("") Declare "void layoutAboutToBeChanged()"	COMMENT = "";
-	Signal "layoutChanged"___("") Declare "void layoutChanged()"	COMMENT = "";
-	Signal "modelAboutToBeReset"___("") Declare "void modelAboutToBeReset()"	COMMENT = "";
-	Signal "modelReset"___("") Declare "void modelReset()"	COMMENT = "";
-	Signal "rowsAboutToBeInserted"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsAboutToBeInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "rowsAboutToBeMoved"___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationRow As Integer") Declare "void rowsAboutToBeMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationRow)"	COMMENT = "";
-	Signal "rowsAboutToBeRemoved"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "rowsInserted"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
-	Signal "rowsMoved"___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationRow As Integer") Declare "void rowsMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationRow)"	COMMENT = "";
-	Signal "rowsRemoved"___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "columnsAboutToBeInserted" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsAboutToBeInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "columnsAboutToBeMoved" ___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationColumn As Integer") Declare "void columnsAboutToBeMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationColumn)"	COMMENT = "";
+	Signal "columnsAboutToBeRemoved" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsAboutToBeRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "columnsInserted" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "columnsMoved" ___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationColumn As Integer") Declare "void columnsMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationColumn)"	COMMENT = "";
+	Signal "columnsRemoved" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void columnsRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "dataChanged" ___("TopLeft As QModelIndex, BottomRight As QModelIndex") Declare "void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight)"	COMMENT = "";
+	Signal "headerDataChanged" ___("Orientation As Qt::Orientation, First As Integer, Last As Integer") Declare "void headerDataChanged(Qt::Orientation orientation, int first, int last)"	COMMENT = "";
+	Signal "layoutAboutToBeChanged" ___("") Declare "void layoutAboutToBeChanged()"	COMMENT = "";
+	Signal "layoutChanged" ___("") Declare "void layoutChanged()"	COMMENT = "";
+	Signal "modelAboutToBeReset" ___("") Declare "void modelAboutToBeReset()"	COMMENT = "";
+	Signal "modelReset" ___("") Declare "void modelReset()"	COMMENT = "";
+	Signal "rowsAboutToBeInserted" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsAboutToBeInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "rowsAboutToBeMoved" ___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationRow As Integer") Declare "void rowsAboutToBeMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationRow)"	COMMENT = "";
+	Signal "rowsAboutToBeRemoved" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "rowsInserted" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsInserted(const QModelIndex & parent, int start, int end)"	COMMENT = "";
+	Signal "rowsMoved" ___("SourceParent As QModelIndex, SourceStart As Integer, SourceEnd As Integer, DestinationParent As QModelIndex, DestinationRow As Integer") Declare "void rowsMoved(const QModelIndex & sourceParent, int sourceStart, int sourceEnd, const QModelIndex & destinationParent, int destinationRow)"	COMMENT = "";
+	Signal "rowsRemoved" ___("Parent As QModelIndex, Start As Integer, End As Integer") Declare "void rowsRemoved(const QModelIndex & parent, int start, int end)"	COMMENT = "";
 
 End_Class
 
@@ -4372,70 +4372,70 @@ End_Class
 
 Class "QTextCursor"
 
-	Function "anchor"___("") As "Integer";	COMMENT = "";
-	Function "atBlockEnd"___("") As "Boolean";	COMMENT = "";
-	Function "atBlockStart"___("") As "Boolean";	COMMENT = "";
-	Function "atEnd"___("") As "Boolean";	COMMENT = "";
-	Function "atStart"___("") As "Boolean";	COMMENT = "";
-	Sub "beginEditBlock"___("");	COMMENT = "";
-	Function "block"___("") As "QTextBlock";	COMMENT = "";
-	Function "blockCharFormat"___("") As "QTextCharFormat";	COMMENT = "";
-	Function "blockFormat"___("") As "QTextBlockFormat";	COMMENT = "";
-	Function "blockNumber"___("") As "Integer";	COMMENT = "";
-	Function "charFormat"___("") As "QTextCharFormat";	COMMENT = "";
-	Sub "clearSelection"___("");	COMMENT = "";
-	Function "columnNumber"___("") As "Integer";	COMMENT = "";
-	Function "createList"___("Format As QTextListFormat") As "QTextList";	COMMENT = "";
-	Function "createList2"___("Style As QTextListFormat::Style") As "QTextList";	COMMENT = "";
-	Function "currentFrame"___("") As "QTextFrame";	COMMENT = "";
-	Function "currentList"___("") As "QTextList";	COMMENT = "";
-	Function "currentTable"___("") As "QTextTable";	COMMENT = "";
-	Sub "deleteChar"___("");	COMMENT = "";
-	Sub "deletePreviousChar"___("");	COMMENT = "";
-	Function "document"___("") As "QTextDocument";	COMMENT = "";
-	Sub "endEditBlock"___("");	COMMENT = "";
-	Function "hasComplexSelection"___("") As "Boolean";	COMMENT = "";
-	Function "hasSelection"___("") As "Boolean";	COMMENT = "";
-	Sub "insertBlock"___("");	COMMENT = "";
-	Sub "insertBlock2"___("Format As QTextBlockFormat");	COMMENT = "";
-	Sub "insertBlock3"___("Format As QTextBlockFormat, CharFormat As QTextCharFormat");	COMMENT = "";
-	Sub "insertFragment"___("Fragment As QTextDocumentFragment");	COMMENT = "";
-	Function "insertFrame"___("Format As QTextFrameFormat") As "QTextFrame";	COMMENT = "";
-	Sub "insertHtml"___("Html As String");	COMMENT = "";
-	Sub "insertImage"___("Name As String");	COMMENT = "";
-	Sub "insertImage2"___("Image As QImage, Name As String");	COMMENT = "";
-	Function "insertList"___("Format As QTextListFormat") As "QTextList";	COMMENT = "";
-	Function "insertList2"___("Style As QTextListFormat::Style") As "QTextList";	COMMENT = "";
-	Function "insertTable"___("Rows As Integer, Columns As Integer, Format As QTextCharFormat") As "QTextTable";	COMMENT = "";
-	Function "insertTable2"___("Rows As Integer, Columns As Integer") As "QTextTable";	COMMENT = "";
-	Sub "insertText"___("Text As String");	COMMENT = "";
-	//Sub "insertText2"___("Text As String, Format As QTextFrameFormat");	COMMENT = "";
-	Function "isCopyOf"___("Other As QTextCursor") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Sub "joinPreviousEditBlock"___("");	COMMENT = "";
-	Function "keepPositionOnInsert"___("") As "Boolean";	COMMENT = "";
-	Sub "mergeBlockCharFormat"___("Modifier As QTextCharFormat");	COMMENT = "";
-	Sub "mergeBlockFormat"___("Modifier As QTextBlockFormat");	COMMENT = "";
-	Sub "mergeCharFormat"___("Modifier As QTextCharFormat");	COMMENT = "";
-	Function "movePosition"___("Operation As QTextCursor::MoveOperation, Move As QTextCursor::MoveMode") As "Boolean";	COMMENT = "";
-	Function "position"___("") As "Integer";	COMMENT = "";
-	Function "positionInBlock"___("") As "Integer";	COMMENT = "";
-	Sub "removeSelectedText"___("");	COMMENT = "";
-	Sub "select"___("Selection As QTextCursor::SelectionType");	COMMENT = "";
-	//Sub "selectedTableCells"___("FirstRow As Integer, NumRows As Integer, FirstColumn As Integer, NumColumns As Integer");	COMMENT = "";
-	Function "selectedText"___("") As "String";	COMMENT = "";
-	Function "selection"___("") As "QTextDocumentFragment";	COMMENT = "";
-	Function "selectionEnd"___("") As "Integer";	COMMENT = "";
-	Function "selectionStart"___("") As "Integer";	COMMENT = "";
-	Sub "setBlockCharFormat"___("Format As QTextCharFormat");	COMMENT = "";
-	Sub "setBlockFormat"___("Format As QTextBlockFormat");	COMMENT = "";
-	Sub "setCharFormat"___("Format As QTextCharFormat");	COMMENT = "";
-	Sub "setKeepPositionOnInsert"___("B As Boolean");	COMMENT = "";
-	Sub "setPosition"___("Pos As Integer, M As QTextCursor::MoveMode");	COMMENT = "";
-	Sub "setVerticalMovementX"___("X As Integer");	COMMENT = "";
-	Sub "setVisualNavigation"___("B As Boolean");	COMMENT = "";
-	Function "verticalMovementX"___("") As "Integer";	COMMENT = "";
-	Function "visualNavigation"___("") As "Boolean";	COMMENT = "";
+	Function "anchor" ___("") As "Integer";	COMMENT = "";
+	Function "atBlockEnd" ___("") As "Boolean";	COMMENT = "";
+	Function "atBlockStart" ___("") As "Boolean";	COMMENT = "";
+	Function "atEnd" ___("") As "Boolean";	COMMENT = "";
+	Function "atStart" ___("") As "Boolean";	COMMENT = "";
+	Sub "beginEditBlock" ___("");	COMMENT = "";
+	Function "block" ___("") As "QTextBlock";	COMMENT = "";
+	Function "blockCharFormat" ___("") As "QTextCharFormat";	COMMENT = "";
+	Function "blockFormat" ___("") As "QTextBlockFormat";	COMMENT = "";
+	Function "blockNumber" ___("") As "Integer";	COMMENT = "";
+	Function "charFormat" ___("") As "QTextCharFormat";	COMMENT = "";
+	Sub "clearSelection" ___("");	COMMENT = "";
+	Function "columnNumber" ___("") As "Integer";	COMMENT = "";
+	Function "createList" ___("Format As QTextListFormat") As "QTextList";	COMMENT = "";
+	Function "createList2" ___("Style As QTextListFormat::Style") As "QTextList";	COMMENT = "";
+	Function "currentFrame" ___("") As "QTextFrame";	COMMENT = "";
+	Function "currentList" ___("") As "QTextList";	COMMENT = "";
+	Function "currentTable" ___("") As "QTextTable";	COMMENT = "";
+	Sub "deleteChar" ___("");	COMMENT = "";
+	Sub "deletePreviousChar" ___("");	COMMENT = "";
+	Function "document" ___("") As "QTextDocument";	COMMENT = "";
+	Sub "endEditBlock" ___("");	COMMENT = "";
+	Function "hasComplexSelection" ___("") As "Boolean";	COMMENT = "";
+	Function "hasSelection" ___("") As "Boolean";	COMMENT = "";
+	Sub "insertBlock" ___("");	COMMENT = "";
+	Sub "insertBlock2" ___("Format As QTextBlockFormat");	COMMENT = "";
+	Sub "insertBlock3" ___("Format As QTextBlockFormat, CharFormat As QTextCharFormat");	COMMENT = "";
+	Sub "insertFragment" ___("Fragment As QTextDocumentFragment");	COMMENT = "";
+	Function "insertFrame" ___("Format As QTextFrameFormat") As "QTextFrame";	COMMENT = "";
+	Sub "insertHtml" ___("Html As String");	COMMENT = "";
+	Sub "insertImage" ___("Name As String");	COMMENT = "";
+	Sub "insertImage2" ___("Image As QImage, Name As String");	COMMENT = "";
+	Function "insertList" ___("Format As QTextListFormat") As "QTextList";	COMMENT = "";
+	Function "insertList2" ___("Style As QTextListFormat::Style") As "QTextList";	COMMENT = "";
+	Function "insertTable" ___("Rows As Integer, Columns As Integer, Format As QTextCharFormat") As "QTextTable";	COMMENT = "";
+	Function "insertTable2" ___("Rows As Integer, Columns As Integer") As "QTextTable";	COMMENT = "";
+	Sub "insertText" ___("Text As String");	COMMENT = "";
+	//Sub "insertText2" ___("Text As String, Format As QTextFrameFormat");	COMMENT = "";
+	Function "isCopyOf" ___("Other As QTextCursor") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Sub "joinPreviousEditBlock" ___("");	COMMENT = "";
+	Function "keepPositionOnInsert" ___("") As "Boolean";	COMMENT = "";
+	Sub "mergeBlockCharFormat" ___("Modifier As QTextCharFormat");	COMMENT = "";
+	Sub "mergeBlockFormat" ___("Modifier As QTextBlockFormat");	COMMENT = "";
+	Sub "mergeCharFormat" ___("Modifier As QTextCharFormat");	COMMENT = "";
+	Function "movePosition" ___("Operation As QTextCursor::MoveOperation, Move As QTextCursor::MoveMode") As "Boolean";	COMMENT = "";
+	Function "position" ___("") As "Integer";	COMMENT = "";
+	Function "positionInBlock" ___("") As "Integer";	COMMENT = "";
+	Sub "removeSelectedText" ___("");	COMMENT = "";
+	Sub "select" ___("Selection As QTextCursor::SelectionType");	COMMENT = "";
+	//Sub "selectedTableCells" ___("FirstRow As Integer, NumRows As Integer, FirstColumn As Integer, NumColumns As Integer");	COMMENT = "";
+	Function "selectedText" ___("") As "String";	COMMENT = "";
+	Function "selection" ___("") As "QTextDocumentFragment";	COMMENT = "";
+	Function "selectionEnd" ___("") As "Integer";	COMMENT = "";
+	Function "selectionStart" ___("") As "Integer";	COMMENT = "";
+	Sub "setBlockCharFormat" ___("Format As QTextCharFormat");	COMMENT = "";
+	Sub "setBlockFormat" ___("Format As QTextBlockFormat");	COMMENT = "";
+	Sub "setCharFormat" ___("Format As QTextCharFormat");	COMMENT = "";
+	Sub "setKeepPositionOnInsert" ___("B As Boolean");	COMMENT = "";
+	Sub "setPosition" ___("Pos As Integer, M As QTextCursor::MoveMode");	COMMENT = "";
+	Sub "setVerticalMovementX" ___("X As Integer");	COMMENT = "";
+	Sub "setVisualNavigation" ___("B As Boolean");	COMMENT = "";
+	Function "verticalMovementX" ___("") As "Integer";	COMMENT = "";
+	Function "visualNavigation" ___("") As "Boolean";	COMMENT = "";
 
 End_Class
 
@@ -4443,43 +4443,43 @@ End_Class
 
 Class "QVariant" //SuperClass "QDBusVariant"
 
-  Function "fromBoolean"___("v As Boolean") As "QVariant";	COMMENT = "";
-  Function "fromInteger"___("v As Integer") As "QVariant";	COMMENT = "";
-  Function "fromFloat"___("v As Float") As "QVariant";	COMMENT = "";
-  Function "fromString"___("v As String") As "QVariant";	COMMENT = "";
-  Function "fromQStringList"___("v As QStringList") As "QVariant";	COMMENT = "";
-  Function "fromDateTime"___("v As DateTime") As "QVariant";	COMMENT = "";
+  Function "fromBoolean" ___("v As Boolean") As "QVariant";	COMMENT = "";
+  Function "fromInteger" ___("v As Integer") As "QVariant";	COMMENT = "";
+  Function "fromFloat" ___("v As Float") As "QVariant";	COMMENT = "";
+  Function "fromString" ___("v As String") As "QVariant";	COMMENT = "";
+  Function "fromQStringList" ___("v As QStringList") As "QVariant";	COMMENT = "";
+  Function "fromDateTime" ___("v As DateTime") As "QVariant";	COMMENT = "";
 
-	Function "canConvert"___("T As QVariant::Type") As "Boolean";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "convert"___("T As QVariant::Type") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Sub "swap"___("Other As QVariant");	COMMENT = "";
-	Function "toBitArray"___("") As "QBitArray";	COMMENT = "";
-	Function "toBool"___("") As "Boolean";	COMMENT = "";
-	Function "toByteArray"___("") As "QByteArray";	COMMENT = "";
-	Function "toChar"___("") As "QChar";	COMMENT = "";
-	Function "toDate"___("") As "QDate";	COMMENT = "";
-	Function "toDateTime"___("") As "QDateTime";	COMMENT = "";
-	Function "toDouble"___("Ok As Boolean") As "Float";	COMMENT = "";
-	Function "toInt"___("Ok As Boolean") As "Integer";	COMMENT = "";
-	Function "toLine"___("") As "QLine";	COMMENT = "";
-	Function "toLineF"___("") As "QLineF";	COMMENT = "";
-	Function "toList"___("") As "List";	COMMENT = "";
-	Function "toLocale"___("") As "QLocale";	COMMENT = "";
-	Function "toPoint"___("") As "QPoint";	COMMENT = "";
-	Function "toPointF"___("") As "QPointF";	COMMENT = "";
-	Function "toRect"___("") As "QRect";	COMMENT = "";
-	Function "toRectF"___("") As "QRectF";	COMMENT = "";
-	Function "toRegExp"___("") As "QRegExp";	COMMENT = "";
-	Function "toSize"___("") As "QSize";	COMMENT = "";
-	Function "toSizeF"___("") As "QSizeF";	COMMENT = "";
-	Function "toString"___("") As "String";	COMMENT = "";
-	Function "toStringList"___("") As "QStringList";	COMMENT = "";
-	Function "toTime"___("") As "QTime";	COMMENT = "";
-	Function "toUrl"___("") As "QUrl";	COMMENT = "";
-	Function "type"___("") As "QVariant::Type";	COMMENT = "";
+	Function "canConvert" ___("T As QVariant::Type") As "Boolean";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "convert" ___("T As QVariant::Type") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Sub "swap" ___("Other As QVariant");	COMMENT = "";
+	Function "toBitArray" ___("") As "QBitArray";	COMMENT = "";
+	Function "toBool" ___("") As "Boolean";	COMMENT = "";
+	Function "toByteArray" ___("") As "QByteArray";	COMMENT = "";
+	Function "toChar" ___("") As "QChar";	COMMENT = "";
+	Function "toDate" ___("") As "QDate";	COMMENT = "";
+	Function "toDateTime" ___("") As "QDateTime";	COMMENT = "";
+	Function "toDouble" ___("Ok As Boolean") As "Float";	COMMENT = "";
+	Function "toInt" ___("Ok As Boolean") As "Integer";	COMMENT = "";
+	Function "toLine" ___("") As "QLine";	COMMENT = "";
+	Function "toLineF" ___("") As "QLineF";	COMMENT = "";
+	Function "toList" ___("") As "List";	COMMENT = "";
+	Function "toLocale" ___("") As "QLocale";	COMMENT = "";
+	Function "toPoint" ___("") As "QPoint";	COMMENT = "";
+	Function "toPointF" ___("") As "QPointF";	COMMENT = "";
+	Function "toRect" ___("") As "QRect";	COMMENT = "";
+	Function "toRectF" ___("") As "QRectF";	COMMENT = "";
+	Function "toRegExp" ___("") As "QRegExp";	COMMENT = "";
+	Function "toSize" ___("") As "QSize";	COMMENT = "";
+	Function "toSizeF" ___("") As "QSizeF";	COMMENT = "";
+	Function "toString" ___("") As "String";	COMMENT = "";
+	Function "toStringList" ___("") As "QStringList";	COMMENT = "";
+	Function "toTime" ___("") As "QTime";	COMMENT = "";
+	Function "toUrl" ___("") As "QUrl";	COMMENT = "";
+	Function "type" ___("") As "QVariant::Type";	COMMENT = "";
 
 End_Class
 
@@ -4487,15 +4487,15 @@ End_Class
 
 Class "QModelIndex"
 
-	Function "child"___("Row As Integer, Column As Integer") As "QModelIndex";	COMMENT = "";
-	Function "data"___("Role As Qt::DisplayRole") As "QVariant";	COMMENT = "";
-	Function "flags"___("") As "Qt::ItemFlags";	COMMENT = "";
-	Function "internalId"___("") As "Integer";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "model"___("") As "QAbstractItemModel";	COMMENT = "";
-	Function "parent"___("") As "QModelIndex";	COMMENT = "";
-	Function "row"___("") As "Integer";	COMMENT = "";
-	Function "sibling"___("Row As Integer, Column As Integer") As "QModelIndex";	COMMENT = "";
+	Function "child" ___("Row As Integer, Column As Integer") As "QModelIndex";	COMMENT = "";
+	Function "data" ___("Role As Qt::DisplayRole") As "QVariant";	COMMENT = "";
+	Function "flags" ___("") As "Qt::ItemFlags";	COMMENT = "";
+	Function "internalId" ___("") As "Integer";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "model" ___("") As "QAbstractItemModel";	COMMENT = "";
+	Function "parent" ___("") As "QModelIndex";	COMMENT = "";
+	Function "row" ___("") As "Integer";	COMMENT = "";
+	Function "sibling" ___("Row As Integer, Column As Integer") As "QModelIndex";	COMMENT = "";
 
 End_Class
 
@@ -4503,29 +4503,29 @@ End_Class
 
 Class "QPrintPreviewWidget" SuperClass "QWidget"
 
-	Function "currentPage"___("") As "Integer";	COMMENT = "";
-	Function "orientation"___("") As "QPrinter::Orientation";	COMMENT = "";
-	Function "pageCount"___("") As "Integer";	COMMENT = "";
-	Function "viewMode"___("") As "QPrintPreviewWidget::ViewMode";	COMMENT = "";
-	Function "zoomFactor"___("") As "Float";	COMMENT = "";
-	Function "zoomMode"___("") As "QPrintPreviewWidget::ZoomMode";	COMMENT = "";
+	Function "currentPage" ___("") As "Integer";	COMMENT = "";
+	Function "orientation" ___("") As "QPrinter::Orientation";	COMMENT = "";
+	Function "pageCount" ___("") As "Integer";	COMMENT = "";
+	Function "viewMode" ___("") As "QPrintPreviewWidget::ViewMode";	COMMENT = "";
+	Function "zoomFactor" ___("") As "Float";	COMMENT = "";
+	Function "zoomMode" ___("") As "QPrintPreviewWidget::ZoomMode";	COMMENT = "";
 
-	Slot "fitInView"___("");	COMMENT = "";
-	Slot "fitToWidth"___("");	COMMENT = "";
-	Slot "print"___("");	COMMENT = "";
-	Slot "setAllPagesViewMode"___("");	COMMENT = "";
-	Slot "setCurrentPage"___("Page As Integer");	COMMENT = "";
-	Slot "setFacingPagesViewMode"___("");	COMMENT = "";
-	Slot "setLandscapeOrientation"___("");	COMMENT = "";
-	Slot "setOrientation"___("Orientation As QPrinter::Orientation");	COMMENT = "";
-	Slot "setPortraitOrientation"___("");	COMMENT = "";
-	Slot "setSinglePageViewMode"___("");	COMMENT = "";
-	Slot "setViewMode"___("Mode As QPrintPreviewWidget::ViewMode");	COMMENT = "";
-	Slot "setZoomFactor"___("Factor As Float");	COMMENT = "";
-	Slot "setZoomMode"___("ZoomMode As QPrintPreviewWidget::ZoomMode");	COMMENT = "";
-	Slot "updatePreview"___("");	COMMENT = "";
-	Slot "zoomIn"___("Factor As Float");	COMMENT = "";
-	Slot "zoomOut"___("Factor As Float");	COMMENT = "";
+	Slot "fitInView" ___("");	COMMENT = "";
+	Slot "fitToWidth" ___("");	COMMENT = "";
+	Slot "print" ___("");	COMMENT = "";
+	Slot "setAllPagesViewMode" ___("");	COMMENT = "";
+	Slot "setCurrentPage" ___("Page As Integer");	COMMENT = "";
+	Slot "setFacingPagesViewMode" ___("");	COMMENT = "";
+	Slot "setLandscapeOrientation" ___("");	COMMENT = "";
+	Slot "setOrientation" ___("Orientation As QPrinter::Orientation");	COMMENT = "";
+	Slot "setPortraitOrientation" ___("");	COMMENT = "";
+	Slot "setSinglePageViewMode" ___("");	COMMENT = "";
+	Slot "setViewMode" ___("Mode As QPrintPreviewWidget::ViewMode");	COMMENT = "";
+	Slot "setZoomFactor" ___("Factor As Float");	COMMENT = "";
+	Slot "setZoomMode" ___("ZoomMode As QPrintPreviewWidget::ZoomMode");	COMMENT = "";
+	Slot "updatePreview" ___("");	COMMENT = "";
+	Slot "zoomIn" ___("Factor As Float");	COMMENT = "";
+	Slot "zoomOut" ___("Factor As Float");	COMMENT = "";
 
 End_Class
 
@@ -4552,61 +4552,61 @@ Class "QAction" SuperClass "QObject"
 	Property "visible" As "Boolean";	COMMENT = "";
 	Property "whatsThis" As "String";	COMMENT = "";
 
-	Sub "activate"___("Event As QAction::ActionEvent");	COMMENT = "";
-	Function "autoRepeat"___("") As "Boolean";	COMMENT = "";
-	Function "data"___("") As "QVariant";	COMMENT = "";
-	Function "font"___("") As "QFont";	COMMENT = "";
-	Function "icon"___("") As "QIcon";	COMMENT = "";
-	Function "iconText"___("") As "String";	COMMENT = "";
-	Function "isCheckable"___("") As "Boolean";	COMMENT = "";
-	Function "isChecked"___("") As "Boolean";	COMMENT = "";
-	Function "isEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "isIconVisibleInMenu"___("") As "Boolean";	COMMENT = "";
-	Function "isSeparator"___("") As "Boolean";	COMMENT = "";
-	Function "isVisible"___("") As "Boolean";	COMMENT = "";
-	Function "menu"___("") As "QMenu";	COMMENT = "";
-	Function "menuRole"___("") As "QAction::MenuRole";	COMMENT = "";
-	Function "parentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "priority"___("") As "QAction::Priority";	COMMENT = "";
-	Sub "setAutoRepeat"___("Enable As Boolean");	COMMENT = "";
-	Sub "setCheckable"___("Checkable As Boolean");	COMMENT = "";
-	Sub "setData"___("UserData As QVariant");	COMMENT = "";
-	Sub "setFont"___("Font As QFont");	COMMENT = "";
-	Sub "setIcon"___("Icon As QIcon");	COMMENT = "";
-	Sub "setIconText"___("Text As String");	COMMENT = "";
-	Sub "setIconVisibleInMenu"___("Visible As Boolean");	COMMENT = "";
-	Sub "setMenu"___("Menu As QMenu");	COMMENT = "";
-	Sub "setMenuRole"___("MenuRole As QAction::MenuRole");	COMMENT = "";
-	Sub "setPriority"___("Priority As QAction::Priority");	COMMENT = "";
-	Sub "setSeparator"___("B As Boolean");	COMMENT = "";
-	Sub "setShortcut"___("Shorcut As QKeySequence");	COMMENT = "";
-	Sub "setShortcutContext"___("Context As Qt::ShortcutContext");	COMMENT = "";
-	Sub "setSoftKeyRole"___("SoftKeyRole As QAction::SoftKeyRole");	COMMENT = "";
-	Sub "setStatusTip"___("StatusTip As String");	COMMENT = "";
-	Sub "setText"___("Text As String");	COMMENT = "";
-	Sub "setToolTip"___("Tip As String");	COMMENT = "";
-	Sub "setWhatsThis"___("What As String");	COMMENT = "";
-	Function "shortcut"___("") As "QKeySequence";	COMMENT = "";
-	Function "shortcutContext"___("") As "Qt::ShortcutContext";	COMMENT = "";
-	Function "showStatusText"___("") As "Boolean";	COMMENT = "";
-	Function "softKeyRole"___("") As "QAction::SoftKeyRole";	COMMENT = "";
-	Function "statusTip"___("") As "String";	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
-	Function "toolTip"___("") As "String";	COMMENT = "";
-	Function "whatsThis"___("") As "String";	COMMENT = "";
+	Sub "activate" ___("Event As QAction::ActionEvent");	COMMENT = "";
+	Function "autoRepeat" ___("") As "Boolean";	COMMENT = "";
+	Function "data" ___("") As "QVariant";	COMMENT = "";
+	Function "font" ___("") As "QFont";	COMMENT = "";
+	Function "icon" ___("") As "QIcon";	COMMENT = "";
+	Function "iconText" ___("") As "String";	COMMENT = "";
+	Function "isCheckable" ___("") As "Boolean";	COMMENT = "";
+	Function "isChecked" ___("") As "Boolean";	COMMENT = "";
+	Function "isEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "isIconVisibleInMenu" ___("") As "Boolean";	COMMENT = "";
+	Function "isSeparator" ___("") As "Boolean";	COMMENT = "";
+	Function "isVisible" ___("") As "Boolean";	COMMENT = "";
+	Function "menu" ___("") As "QMenu";	COMMENT = "";
+	Function "menuRole" ___("") As "QAction::MenuRole";	COMMENT = "";
+	Function "parentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "priority" ___("") As "QAction::Priority";	COMMENT = "";
+	Sub "setAutoRepeat" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setCheckable" ___("Checkable As Boolean");	COMMENT = "";
+	Sub "setData" ___("UserData As QVariant");	COMMENT = "";
+	Sub "setFont" ___("Font As QFont");	COMMENT = "";
+	Sub "setIcon" ___("Icon As QIcon");	COMMENT = "";
+	Sub "setIconText" ___("Text As String");	COMMENT = "";
+	Sub "setIconVisibleInMenu" ___("Visible As Boolean");	COMMENT = "";
+	Sub "setMenu" ___("Menu As QMenu");	COMMENT = "";
+	Sub "setMenuRole" ___("MenuRole As QAction::MenuRole");	COMMENT = "";
+	Sub "setPriority" ___("Priority As QAction::Priority");	COMMENT = "";
+	Sub "setSeparator" ___("B As Boolean");	COMMENT = "";
+	Sub "setShortcut" ___("Shorcut As QKeySequence");	COMMENT = "";
+	Sub "setShortcutContext" ___("Context As Qt::ShortcutContext");	COMMENT = "";
+	Sub "setSoftKeyRole" ___("SoftKeyRole As QAction::SoftKeyRole");	COMMENT = "";
+	Sub "setStatusTip" ___("StatusTip As String");	COMMENT = "";
+	Sub "setText" ___("Text As String");	COMMENT = "";
+	Sub "setToolTip" ___("Tip As String");	COMMENT = "";
+	Sub "setWhatsThis" ___("What As String");	COMMENT = "";
+	Function "shortcut" ___("") As "QKeySequence";	COMMENT = "";
+	Function "shortcutContext" ___("") As "Qt::ShortcutContext";	COMMENT = "";
+	Function "showStatusText" ___("") As "Boolean";	COMMENT = "";
+	Function "softKeyRole" ___("") As "QAction::SoftKeyRole";	COMMENT = "";
+	Function "statusTip" ___("") As "String";	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
+	Function "toolTip" ___("") As "String";	COMMENT = "";
+	Function "whatsThis" ___("") As "String";	COMMENT = "";
 
-	Slot "hover"___("");	COMMENT = "";
-	Slot "setChecked"___("b As Boolean");	COMMENT = "";
-	Slot "setDisabled"___("b As Boolean");	COMMENT = "";
-	Slot "setEnabled"___("b As Boolean");	COMMENT = "";
-	Slot "setVisible"___("b As Boolean");	COMMENT = "";
-	Slot "toggle"___("");	COMMENT = "";
-	Slot "trigger"___("");	COMMENT = "";
+	Slot "hover" ___("");	COMMENT = "";
+	Slot "setChecked" ___("b As Boolean");	COMMENT = "";
+	Slot "setDisabled" ___("b As Boolean");	COMMENT = "";
+	Slot "setEnabled" ___("b As Boolean");	COMMENT = "";
+	Slot "setVisible" ___("b As Boolean");	COMMENT = "";
+	Slot "toggle" ___("");	COMMENT = "";
+	Slot "trigger" ___("");	COMMENT = "";
 	
-	Signal "changed"___("");	COMMENT = "";
-	Signal "hovered"___("");	COMMENT = "";
-	Signal "toggled"___("Checked As Boolean");	COMMENT = "";
-	Signal "triggered"___("Checked As Boolean");	COMMENT = "";
+	Signal "changed" ___("");	COMMENT = "";
+	Signal "hovered" ___("");	COMMENT = "";
+	Signal "toggled" ___("Checked As Boolean");	COMMENT = "";
+	Signal "triggered" ___("Checked As Boolean");	COMMENT = "";
 
 End_Class
 
@@ -4614,69 +4614,69 @@ End_Class
 
 Class "QUrl"
 	
-	Sub "addEncodedQueryItem"___("Key As QByteArray, Value As QByteArray");	COMMENT = "";
-	Sub "addQueryItem"___("Key As QByteArray, Value As QByteArray");	COMMENT = "";
-	//Function "allEncodedQueryItemValues"___("Key As QByteArray, Value As QByteArray") As "List";	COMMENT = "";
-	Function "allQueryItemValues"___("Key As QByteArray") As "QStringList";	COMMENT = "";
-	Function "authority"___("") As "String";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "encodedFragment"___("") As "QByteArray";	COMMENT = "";
-	Function "encodedHost"___("") As "QByteArray";	COMMENT = "";
-	Function "encodedPassword"___("") As "QByteArray";	COMMENT = "";
-	Function "encodedPath"___("") As "QByteArray";	COMMENT = "";
-	Function "encodedQuery"___("") As "QByteArray";	COMMENT = "";
-	Function "encodedQueryItemValue"___("Key As QByteArray") As "QByteArray";	COMMENT = "";
-	Function "encodedUserName"___("") As "QByteArray";	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-	Function "fragment"___("") As "String";	COMMENT = "";
-	Function "hasEncodedQueryItem"___("Key As QByteArray") As "Boolean";	COMMENT = "";
-	Function "hasFragment"___("") As "Boolean";	COMMENT = "";
-	Function "hasQuery"___("") As "Boolean";	COMMENT = "";
-	Function "hasQueryItem"___("Key As String") As "Boolean";	COMMENT = "";
-	Function "host"___("") As "String";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "isLocalFile"___("") As "Boolean";	COMMENT = "";
-	Function "isParentOf"___("ChildUrl As QUrl") As "Boolean";	COMMENT = "";
-	Function "isRelative"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "password"___("") As "String";	COMMENT = "";
-	Function "path"___("") As "String";	COMMENT = "";
-	Function "port"___("") As "Integer";	COMMENT = "";
-	Function "queryItemValue"___("Key As String") As "String";	COMMENT = "";
-	Function "queryPairDelimiter"___("") As "String";	COMMENT = "";
-	Function "queryValueDelimiter"___("") As "String";	COMMENT = "";
-	Sub "removeAllEncodedQueryItems"___("Key As QByteArray");	COMMENT = "";
-	Sub "removeAllQueryItems"___("Key As String");	COMMENT = "";
-	Sub "removeEncodedQueryItem "___("Key As QByteArray");	COMMENT = "";
-	Sub "removeQueryItem"___("Key As String");	COMMENT = "";
-	Function "resolved"___("Relative As QUrl") As "QUrl";	COMMENT = "";
-	Function "scheme"___("") As "String";	COMMENT = "";
-	Sub "setAuthority"___("Authority As String");	COMMENT = "";
-	Sub "setEncodedHost"___("Host As QByteArray");	COMMENT = "";
-	Sub "setEncodedPassword"___("Password As QByteArray");	COMMENT = "";
-	Sub "setEncodedPath"___("Path As QByteArray");	COMMENT = "";
-	Sub "setEncodedQuery"___("Query As QByteArray");	COMMENT = "";
-	//Sub "setEncodedUrl"___("EncodedUrl As QByteArray ");	COMMENT = "";
-	Sub "setEncodedUserName"___("UserName As QByteArray");	COMMENT = "";
-	Sub "setHost"___("Host As String");	COMMENT = "";
-	Sub "setPassword"___("Password As String");	COMMENT = "";
-	Sub "setPath"___("Path As String");	COMMENT = "";
-	Sub "setPort"___("Port As Integer");	COMMENT = "";
-	Sub "setQueryDelimiters"___("ValueDelimiter As String, PairDelimeter As String");	COMMENT = "";
-	Sub "setScheme"___("Scheme As String");	COMMENT = "";
-	Sub "setUrl"___("Url As String");	COMMENT = "";
-	Sub "setUserInfo"___("UserInfo As String");	COMMENT = "";
-	Sub "setUserName"___("UserName As String");	COMMENT = "";
-	Sub "swap"___("Other As QUrl");	COMMENT = "";
-	Function "toEncoded"___("Option As QUrl::FormattingOptions") As "QByteArray";	COMMENT = "";
-	Function "toLocalFile"___("") As "String";	COMMENT = "";
-	Function "toString"___("Option As QUrl::FormattingOptions") As "String";	COMMENT = "";
-	Function "topLevelDomain"___("") As "String";	COMMENT = "";
-	Function "userInfo"___("") As "String";	COMMENT = "";
-	Function "userName"___("") As "String";	COMMENT = "";
+	Sub "addEncodedQueryItem" ___("Key As QByteArray, Value As QByteArray");	COMMENT = "";
+	Sub "addQueryItem" ___("Key As QByteArray, Value As QByteArray");	COMMENT = "";
+	//Function "allEncodedQueryItemValues" ___("Key As QByteArray, Value As QByteArray") As "List";	COMMENT = "";
+	Function "allQueryItemValues" ___("Key As QByteArray") As "QStringList";	COMMENT = "";
+	Function "authority" ___("") As "String";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "encodedFragment" ___("") As "QByteArray";	COMMENT = "";
+	Function "encodedHost" ___("") As "QByteArray";	COMMENT = "";
+	Function "encodedPassword" ___("") As "QByteArray";	COMMENT = "";
+	Function "encodedPath" ___("") As "QByteArray";	COMMENT = "";
+	Function "encodedQuery" ___("") As "QByteArray";	COMMENT = "";
+	Function "encodedQueryItemValue" ___("Key As QByteArray") As "QByteArray";	COMMENT = "";
+	Function "encodedUserName" ___("") As "QByteArray";	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+	Function "fragment" ___("") As "String";	COMMENT = "";
+	Function "hasEncodedQueryItem" ___("Key As QByteArray") As "Boolean";	COMMENT = "";
+	Function "hasFragment" ___("") As "Boolean";	COMMENT = "";
+	Function "hasQuery" ___("") As "Boolean";	COMMENT = "";
+	Function "hasQueryItem" ___("Key As String") As "Boolean";	COMMENT = "";
+	Function "host" ___("") As "String";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "isLocalFile" ___("") As "Boolean";	COMMENT = "";
+	Function "isParentOf" ___("ChildUrl As QUrl") As "Boolean";	COMMENT = "";
+	Function "isRelative" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "password" ___("") As "String";	COMMENT = "";
+	Function "path" ___("") As "String";	COMMENT = "";
+	Function "port" ___("") As "Integer";	COMMENT = "";
+	Function "queryItemValue" ___("Key As String") As "String";	COMMENT = "";
+	Function "queryPairDelimiter" ___("") As "String";	COMMENT = "";
+	Function "queryValueDelimiter" ___("") As "String";	COMMENT = "";
+	Sub "removeAllEncodedQueryItems" ___("Key As QByteArray");	COMMENT = "";
+	Sub "removeAllQueryItems" ___("Key As String");	COMMENT = "";
+	Sub "removeEncodedQueryItem " ___("Key As QByteArray");	COMMENT = "";
+	Sub "removeQueryItem" ___("Key As String");	COMMENT = "";
+	Function "resolved" ___("Relative As QUrl") As "QUrl";	COMMENT = "";
+	Function "scheme" ___("") As "String";	COMMENT = "";
+	Sub "setAuthority" ___("Authority As String");	COMMENT = "";
+	Sub "setEncodedHost" ___("Host As QByteArray");	COMMENT = "";
+	Sub "setEncodedPassword" ___("Password As QByteArray");	COMMENT = "";
+	Sub "setEncodedPath" ___("Path As QByteArray");	COMMENT = "";
+	Sub "setEncodedQuery" ___("Query As QByteArray");	COMMENT = "";
+	//Sub "setEncodedUrl" ___("EncodedUrl As QByteArray ");	COMMENT = "";
+	Sub "setEncodedUserName" ___("UserName As QByteArray");	COMMENT = "";
+	Sub "setHost" ___("Host As String");	COMMENT = "";
+	Sub "setPassword" ___("Password As String");	COMMENT = "";
+	Sub "setPath" ___("Path As String");	COMMENT = "";
+	Sub "setPort" ___("Port As Integer");	COMMENT = "";
+	Sub "setQueryDelimiters" ___("ValueDelimiter As String, PairDelimeter As String");	COMMENT = "";
+	Sub "setScheme" ___("Scheme As String");	COMMENT = "";
+	Sub "setUrl" ___("Url As String");	COMMENT = "";
+	Sub "setUserInfo" ___("UserInfo As String");	COMMENT = "";
+	Sub "setUserName" ___("UserName As String");	COMMENT = "";
+	Sub "swap" ___("Other As QUrl");	COMMENT = "";
+	Function "toEncoded" ___("Option As QUrl::FormattingOptions") As "QByteArray";	COMMENT = "";
+	Function "toLocalFile" ___("") As "String";	COMMENT = "";
+	Function "toString" ___("Option As QUrl::FormattingOptions") As "String";	COMMENT = "";
+	Function "topLevelDomain" ___("") As "String";	COMMENT = "";
+	Function "userInfo" ___("") As "String";	COMMENT = "";
+	Function "userName" ___("") As "String";	COMMENT = "";
 
   
-  Function "fromLocalFile"___("localFile As String") As "QUrl";	COMMENT = "";
+  Function "fromLocalFile" ___("localFile As String") As "QUrl";	COMMENT = "";
 
 End_Class
 
@@ -4684,32 +4684,32 @@ End_Class
 
 Class "QUrlInfo"
 	
-	Function "group"___("") As "String";	COMMENT = "";
-	Function "isDir"___("") As "Boolean";	COMMENT = "";
-	Function "isExecutable"___("") As "Boolean";	COMMENT = "";
-	Function "isFile"___("") As "Boolean";	COMMENT = "";
-	Function "isReadable"___("") As "Boolean";	COMMENT = "";
-	Function "isSymLink"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "isWritable"___("") As "Boolean";	COMMENT = "";
-	Function "lastModified"___("") As "QDateTime";	COMMENT = "";
-	Function "lastRead"___("") As "QDateTime";	COMMENT = "";
-	Function "name"___("") As "String";	COMMENT = "";
-	Function "owner"___("") As "String";	COMMENT = "";
-	Function "permissions"___("") As "Integer";	COMMENT = "";
-	Sub "setDir"___("B As Boolean");	COMMENT = "";
-	Sub "setFile"___("B As Boolean");	COMMENT = "";
-	Sub "setGroup"___("S As String");	COMMENT = "";
-	Sub "setLastModified"___("Dt As QDateTime");	COMMENT = "";
-	Sub "setLastRead"___("Dt As QDateTime");	COMMENT = "";
-	Sub "setName"___("Name As String");	COMMENT = "";
-	Sub "setOwner"___("S As String");	COMMENT = "";
-	Sub "setPermissions"___("P As Integer");	COMMENT = "";
-	Sub "setReadable"___("B As Boolean");	COMMENT = "";
-	Sub "setSize"___("Size As Integer");	COMMENT = "";
-	Sub "setSymLink"___("B As Boolean");	COMMENT = "";
-	Sub "setWritable"___("B As Boolean");	COMMENT = "";
-	Function "size"___("") As "Integer";	COMMENT = "";
+	Function "group" ___("") As "String";	COMMENT = "";
+	Function "isDir" ___("") As "Boolean";	COMMENT = "";
+	Function "isExecutable" ___("") As "Boolean";	COMMENT = "";
+	Function "isFile" ___("") As "Boolean";	COMMENT = "";
+	Function "isReadable" ___("") As "Boolean";	COMMENT = "";
+	Function "isSymLink" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "isWritable" ___("") As "Boolean";	COMMENT = "";
+	Function "lastModified" ___("") As "QDateTime";	COMMENT = "";
+	Function "lastRead" ___("") As "QDateTime";	COMMENT = "";
+	Function "name" ___("") As "String";	COMMENT = "";
+	Function "owner" ___("") As "String";	COMMENT = "";
+	Function "permissions" ___("") As "Integer";	COMMENT = "";
+	Sub "setDir" ___("B As Boolean");	COMMENT = "";
+	Sub "setFile" ___("B As Boolean");	COMMENT = "";
+	Sub "setGroup" ___("S As String");	COMMENT = "";
+	Sub "setLastModified" ___("Dt As QDateTime");	COMMENT = "";
+	Sub "setLastRead" ___("Dt As QDateTime");	COMMENT = "";
+	Sub "setName" ___("Name As String");	COMMENT = "";
+	Sub "setOwner" ___("S As String");	COMMENT = "";
+	Sub "setPermissions" ___("P As Integer");	COMMENT = "";
+	Sub "setReadable" ___("B As Boolean");	COMMENT = "";
+	Sub "setSize" ___("Size As Integer");	COMMENT = "";
+	Sub "setSymLink" ___("B As Boolean");	COMMENT = "";
+	Sub "setWritable" ___("B As Boolean");	COMMENT = "";
+	Function "size" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -4726,39 +4726,39 @@ Class "QCompleter" SuperClass "QObject"
 	Property "modelSorting" As "QCompleter::ModelSorting";	COMMENT = "";
 	Property "wrapAround" As "Boolean";	COMMENT = "";
 
-	Function "caseSensitivity"___("") As "Qt::CaseSensitivity";	COMMENT = "";
-	Function "completionColumn"___("") As "Integer";	COMMENT = "";
-	Function "completionCount"___("") As "Integer";	COMMENT = "";
-	Function "completionMode"___("") As "QCompleter::CompletionMode";	COMMENT = "";
-	Function "completionPrefix"___("") As "String";	COMMENT = "";
-	Function "completionRole"___("") As "String";	COMMENT = "";
-	Function "currentCompletion"___("") As "String";	COMMENT = "";
-	Function "currentIndex"___("") As "QModelIndex";	COMMENT = "";
-	Function "currentRow"___("") As "Integer";	COMMENT = "";
-	Function "maxVisibleItems"___("") As "Integer";	COMMENT = "";
-	Function "modelSorting"___("") As "QCompleter::ModelSorting";	COMMENT = "";
-	Function "popup"___("") As "QAbstractItemView";	COMMENT = "";
-	Sub "setCaseSensitivity"___("CaseSensitivity As Qt::CaseSensitivity");	COMMENT = "";
-	Sub "setCompletionColumn"___("Column As Integer");	COMMENT = "";
-	Sub "setCompletionMode"___("Mode As QCompleter::CompletionMode");	COMMENT = "";
-	Sub "setCompletionRole"___("Role As Integer");	COMMENT = "";
-	Function "setCurrentRow"___("Row As Integer") As "Boolean";	COMMENT = "";
-	Sub "setMaxVisibleItems"___("MaxItems As Integer");	COMMENT = "";
-	Sub "setModel"___("Model As QAbstractItemModel");	COMMENT = "";
-	Sub "setModelSorting"___("Sorting As QCompleter::ModelSorting");	COMMENT = "";
-	Sub "setPopup"___("Popup As QAbstractItemView");	COMMENT = "";
-	Sub "setWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "widget"___("") As "Boolean";	COMMENT = "";
-	Function "wrapAround"___("") As "Boolean";	COMMENT = "";
+	Function "caseSensitivity" ___("") As "Qt::CaseSensitivity";	COMMENT = "";
+	Function "completionColumn" ___("") As "Integer";	COMMENT = "";
+	Function "completionCount" ___("") As "Integer";	COMMENT = "";
+	Function "completionMode" ___("") As "QCompleter::CompletionMode";	COMMENT = "";
+	Function "completionPrefix" ___("") As "String";	COMMENT = "";
+	Function "completionRole" ___("") As "String";	COMMENT = "";
+	Function "currentCompletion" ___("") As "String";	COMMENT = "";
+	Function "currentIndex" ___("") As "QModelIndex";	COMMENT = "";
+	Function "currentRow" ___("") As "Integer";	COMMENT = "";
+	Function "maxVisibleItems" ___("") As "Integer";	COMMENT = "";
+	Function "modelSorting" ___("") As "QCompleter::ModelSorting";	COMMENT = "";
+	Function "popup" ___("") As "QAbstractItemView";	COMMENT = "";
+	Sub "setCaseSensitivity" ___("CaseSensitivity As Qt::CaseSensitivity");	COMMENT = "";
+	Sub "setCompletionColumn" ___("Column As Integer");	COMMENT = "";
+	Sub "setCompletionMode" ___("Mode As QCompleter::CompletionMode");	COMMENT = "";
+	Sub "setCompletionRole" ___("Role As Integer");	COMMENT = "";
+	Function "setCurrentRow" ___("Row As Integer") As "Boolean";	COMMENT = "";
+	Sub "setMaxVisibleItems" ___("MaxItems As Integer");	COMMENT = "";
+	Sub "setModel" ___("Model As QAbstractItemModel");	COMMENT = "";
+	Sub "setModelSorting" ___("Sorting As QCompleter::ModelSorting");	COMMENT = "";
+	Sub "setPopup" ___("Popup As QAbstractItemView");	COMMENT = "";
+	Sub "setWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "widget" ___("") As "Boolean";	COMMENT = "";
+	Function "wrapAround" ___("") As "Boolean";	COMMENT = "";
 
-	Slot "complete"___("Rect As QRect");	COMMENT = "";
-	Slot "setCompletionPrefix"___("Prefix As String");	COMMENT = "";
-	Slot "setWrapAround"___("Wrap As Boolean");	COMMENT = "";
+	Slot "complete" ___("Rect As QRect");	COMMENT = "";
+	Slot "setCompletionPrefix" ___("Prefix As String");	COMMENT = "";
+	Slot "setWrapAround" ___("Wrap As Boolean");	COMMENT = "";
 
-	Signal "activated"___("Text As String") Declare "void activated(const QString & text)"	COMMENT = "";
-	Signal "activated2"___("Index As QModelIndex") Declare "void activated(const QModelIndex & index)"	COMMENT = "";
-	Signal "highlighted"___("Text As String") Declare "void highlighted(const QString & text)"	COMMENT = "";
-	Signal "highlighted2"___("Index As QModelIndex") Declare "void highlighted(const QModelIndex & index)"	COMMENT = "";
+	Signal "activated" ___("Text As String") Declare "void activated(const QString & text)"	COMMENT = "";
+	Signal "activated2" ___("Index As QModelIndex") Declare "void activated(const QModelIndex & index)"	COMMENT = "";
+	Signal "highlighted" ___("Text As String") Declare "void highlighted(const QString & text)"	COMMENT = "";
+	Signal "highlighted2" ___("Index As QModelIndex") Declare "void highlighted(const QModelIndex & index)"	COMMENT = "";
 
 End_Class	
 
@@ -4771,11 +4771,11 @@ Class "QCoreApplication" SuperClass "QObject"
 	Property "organizationDomain" As "String";	COMMENT = "";
 	Property "organizationName" As "String";	COMMENT = "";
 
-	Function "setEventFilter"___("Filter As QCoreApplication::EventFilter") As "QCoreApplication::EventFilter";	COMMENT = "";
+	Function "setEventFilter" ___("Filter As QCoreApplication::EventFilter") As "QCoreApplication::EventFilter";	COMMENT = "";
 	
-	Slot "quit"___("");	COMMENT = "";
+	Slot "quit" ___("");	COMMENT = "";
 
-	Signal "aboutToQuit"___("") Declare "void aboutToQuit()"	COMMENT = "";
+	Signal "aboutToQuit" ___("") Declare "void aboutToQuit()"	COMMENT = "";
 
 End_Class
 
@@ -4783,12 +4783,12 @@ End_Class
 
 Class "QCursor"
 
-	Function "bitmap"___("") As "QBitmap";	COMMENT = "";
-	Function "hotSpot"___("") As "QPoint";	COMMENT = "";
-	Function "mask"___("") As "QBitmap";	COMMENT = "";
-	Function "pixmap"___("") As "QPixmap";	COMMENT = "";
-	Sub "setShape"___("Shape As Qt::CursorShape");	COMMENT = "";
-	Function "shape"___("") As "Qt::CursorShape";	COMMENT = "";
+	Function "bitmap" ___("") As "QBitmap";	COMMENT = "";
+	Function "hotSpot" ___("") As "QPoint";	COMMENT = "";
+	Function "mask" ___("") As "QBitmap";	COMMENT = "";
+	Function "pixmap" ___("") As "QPixmap";	COMMENT = "";
+	Sub "setShape" ___("Shape As Qt::CursorShape");	COMMENT = "";
+	Function "shape" ___("") As "Qt::CursorShape";	COMMENT = "";
 
 End_Class
 
@@ -4810,28 +4810,28 @@ Class "QApplication" SuperClass "QCoreApplication"
 	Property "wheelScrollLines" As "Integer";	COMMENT = "";
 	Property "windowIcon" As "QIcon";	COMMENT = "";
 
-	Function "inputContext"___("") As "QInputContext";	COMMENT = "";
-	Function "isSessionRestored"___("") As "Boolean";	COMMENT = "";
-	Function "sessionId"___("") As "String";	COMMENT = "";
-	Function "sessionKey"___("") As "String";	COMMENT = "";
-	//Sub "setInputContext"___("InputContext AS QInputContext");	COMMENT = "";
-	Function "styleSheet"___("") As "String";	COMMENT = "";
+	Function "inputContext" ___("") As "QInputContext";	COMMENT = "";
+	Function "isSessionRestored" ___("") As "Boolean";	COMMENT = "";
+	Function "sessionId" ___("") As "String";	COMMENT = "";
+	Function "sessionKey" ___("") As "String";	COMMENT = "";
+	//Sub "setInputContext" ___("InputContext AS QInputContext");	COMMENT = "";
+	Function "styleSheet" ___("") As "String";	COMMENT = "";
 
-	Slot "aboutQt"___("");	COMMENT = "";
-	//Slot "autoMaximizeThreshold"___("") As "Integer"; 	COMMENT = "";
-	//Slot "autoSipEnabled"___("") As "Boolean";	COMMENT = "";
-	Slot "closeAllWindows"___("");	COMMENT = "";
-	//Slot "setAutoMaximizeThreshold"___("Threshold As Integer");	COMMENT = "";
-	//Slot "setAutoSipEnabled"___("Enabled As Boolean");	COMMENT = "";
-	Slot "setStyleSheet"___("Sheet As String");	COMMENT = "";
+	Slot "aboutQt" ___("");	COMMENT = "";
+	//Slot "autoMaximizeThreshold" ___("") As "Integer"; 	COMMENT = "";
+	//Slot "autoSipEnabled" ___("") As "Boolean";	COMMENT = "";
+	Slot "closeAllWindows" ___("");	COMMENT = "";
+	//Slot "setAutoMaximizeThreshold" ___("Threshold As Integer");	COMMENT = "";
+	//Slot "setAutoSipEnabled" ___("Enabled As Boolean");	COMMENT = "";
+	Slot "setStyleSheet" ___("Sheet As String");	COMMENT = "";
 
-	//Signal "aboutToReleaseGpuResources"___(""); Declare "void aboutToReleaseGpuResources()"	COMMENT = "";
-	//Signal "aboutToUseGpuResources"___(""); Declare "void aboutToUseGpuResources()"	COMMENT = "";
-	Signal "commitDataRequest"___(""); Declare "void commitDataRequest(QSessionManager & manager)"	COMMENT = "";
-	Signal "focusChanged"___("OldOne As QWidget, NewOne As QWidget"); Declare "void focusChanged(QWidget * old, QWidget * now)"	COMMENT = "";
-	Signal "fontDatabaseChanged"___(""); Declare "void fontDatabaseChanged()"	COMMENT = "";
-	Signal "lastWindowClosed"___(""); Declare "void lastWindowClosed()"	COMMENT = "";
-	Signal "saveStateRequest"___("Manager As QSessionManager"); Declare "void saveStateRequest(QSessionManager & manager)"	COMMENT = "";
+	//Signal "aboutToReleaseGpuResources" ___(""); Declare "void aboutToReleaseGpuResources()"	COMMENT = "";
+	//Signal "aboutToUseGpuResources" ___(""); Declare "void aboutToUseGpuResources()"	COMMENT = "";
+	Signal "commitDataRequest" ___(""); Declare "void commitDataRequest(QSessionManager & manager)"	COMMENT = "";
+	Signal "focusChanged" ___("OldOne As QWidget, NewOne As QWidget"); Declare "void focusChanged(QWidget * old, QWidget * now)"	COMMENT = "";
+	Signal "fontDatabaseChanged" ___(""); Declare "void fontDatabaseChanged()"	COMMENT = "";
+	Signal "lastWindowClosed" ___(""); Declare "void lastWindowClosed()"	COMMENT = "";
+	Signal "saveStateRequest" ___("Manager As QSessionManager"); Declare "void saveStateRequest(QSessionManager & manager)"	COMMENT = "";
 
 End_Class
 
@@ -4843,23 +4843,23 @@ Class "QActionGroup" SuperClass "QObject"
 	Property "exclusive" As "Boolean";	COMMENT = "";
 	Property "visible" As "Boolean";	COMMENT = "";
 
-	Function "actions"___("") As "List";	COMMENT = "";
-	Function "addAction"___("Action As QAction") As "QAction";	COMMENT = "";
-	Function "addAction"___("Text As String") As "QAction";	COMMENT = "";
-	Function "addAction"___("Icon As QIcon, Text As String") As "QAction";	COMMENT = "";
-	Function "checkedAction"___("") As "QAction";	COMMENT = "";
-	Function "isEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "isExclusive"___("") As "Boolean";	COMMENT = "";
-	Function "isVisible"___("") As "Boolean";	COMMENT = "";
-	Sub "removeAction"___("Action As QAction");	COMMENT = "";
+	Function "actions" ___("") As "List";	COMMENT = "";
+	Function "addAction" ___("Action As QAction") As "QAction";	COMMENT = "";
+	Function "addAction" ___("Text As String") As "QAction";	COMMENT = "";
+	Function "addAction" ___("Icon As QIcon, Text As String") As "QAction";	COMMENT = "";
+	Function "checkedAction" ___("") As "QAction";	COMMENT = "";
+	Function "isEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "isExclusive" ___("") As "Boolean";	COMMENT = "";
+	Function "isVisible" ___("") As "Boolean";	COMMENT = "";
+	Sub "removeAction" ___("Action As QAction");	COMMENT = "";
 
-	Slot "setDisabled"___("B As Boolean");	COMMENT = "";
-	Slot "setEnabled"___("Enabled As Boolean");	COMMENT = "";
-	Slot "setExclusive"___("E As Boolean");	COMMENT = "";
-	Slot "setVisible"___("Visible As Boolean");	COMMENT = "";
+	Slot "setDisabled" ___("B As Boolean");	COMMENT = "";
+	Slot "setEnabled" ___("Enabled As Boolean");	COMMENT = "";
+	Slot "setExclusive" ___("E As Boolean");	COMMENT = "";
+	Slot "setVisible" ___("Visible As Boolean");	COMMENT = "";
 	
-	Signal "hovered"___("Action As QAction"); Declare "void hovered(QAction * action)"	COMMENT = "";
-	Signal "triggered"___("Action As QAction"); Declare "void triggered(QAction * action)"	COMMENT = "";
+	Signal "hovered" ___("Action As QAction"); Declare "void hovered(QAction * action)"	COMMENT = "";
+	Signal "triggered" ___("Action As QAction"); Declare "void triggered(QAction * action)"	COMMENT = "";
 
 End_Class
 
@@ -4881,38 +4881,38 @@ Class "QListView" SuperClass "QAbstractItemView"
 	Property "viewMode" As "QListView::ViewMode";	COMMENT = "";
 	Property "wordWrap" As "Boolean";	COMMENT = "";
 
-	Function "batchSize"___("") As "Integer";	COMMENT = "";
-	Sub "clearPropertyFlags"___("");	COMMENT = "";
-	Function "flow"___("") As "QListView::Flow";	COMMENT = "";
-	Function "gridSize"___("") As "QSize";	COMMENT = "";
-	Function "isRowHidden"___("Row As Integer") As "Boolean";	COMMENT = "";
-	Function "isSelectionRectVisible"___("") As "Boolean";	COMMENT = "";
-	Function "isWrapping"___("") As "Boolean";	COMMENT = "";
-	Function "layoutMode"___("") As "QListView::LayoutMode";	COMMENT = "";
-	Function "modelColumn"___("") As "Integer";	COMMENT = "";
-	Function "movement"___("") As "QListView::Movement";	COMMENT = "";
-	Function "resizeMode"___("") As "QListView::ResizeMode";	COMMENT = "";
+	Function "batchSize" ___("") As "Integer";	COMMENT = "";
+	Sub "clearPropertyFlags" ___("");	COMMENT = "";
+	Function "flow" ___("") As "QListView::Flow";	COMMENT = "";
+	Function "gridSize" ___("") As "QSize";	COMMENT = "";
+	Function "isRowHidden" ___("Row As Integer") As "Boolean";	COMMENT = "";
+	Function "isSelectionRectVisible" ___("") As "Boolean";	COMMENT = "";
+	Function "isWrapping" ___("") As "Boolean";	COMMENT = "";
+	Function "layoutMode" ___("") As "QListView::LayoutMode";	COMMENT = "";
+	Function "modelColumn" ___("") As "Integer";	COMMENT = "";
+	Function "movement" ___("") As "QListView::Movement";	COMMENT = "";
+	Function "resizeMode" ___("") As "QListView::ResizeMode";	COMMENT = "";
 
-	Sub "setBatchSize"___("BatchSize As Integer");	COMMENT = "";
-	Sub "setFlow"___("Flow As QListView::Flow");	COMMENT = "";
-	Sub "setGridSize"___("Size As QSize");	COMMENT = "";
-	Sub "setLayoutMode"___("Mode As QListView::LayoutMode");	COMMENT = "";
-	Sub "setModelColumn"___("Column As Integer");	COMMENT = "";
-	Sub "setMovement"___("Movement As QListView::Movement");	COMMENT = "";
-	Sub "setResizeMode"___("Mode As QListView::ResizeMode");	COMMENT = "";
-	Sub "setRowHidden"___("Row As Integer, Hide As Boolean");	COMMENT = "";
-	Sub "setSelectionRectVisible"___("Show As Boolean");	COMMENT = "";
-	Sub "setSpacing"___("Space As Integer");	COMMENT = "";
-	Sub "setUniformItemSizes"___("Enable As Boolean");	COMMENT = "";
-	Sub "setViewMode"___("Mode As QListView::ViewMode");	COMMENT = "";
-	Sub "setWordWrap"___("On As Boolean");	COMMENT = "";
-	Sub "setWrapping"___("Enable As Boolean");	COMMENT = "";
-	Function "spacing"___("") As "Integer";	COMMENT = "";
-	Function "uniformItemSizes"___("") As "Boolean";	COMMENT = "";
-	Function "viewMode"___("") As "QListView::ViewMode";	COMMENT = "";
-	Function "wordWrap"___("") As "Boolean";	COMMENT = "";
+	Sub "setBatchSize" ___("BatchSize As Integer");	COMMENT = "";
+	Sub "setFlow" ___("Flow As QListView::Flow");	COMMENT = "";
+	Sub "setGridSize" ___("Size As QSize");	COMMENT = "";
+	Sub "setLayoutMode" ___("Mode As QListView::LayoutMode");	COMMENT = "";
+	Sub "setModelColumn" ___("Column As Integer");	COMMENT = "";
+	Sub "setMovement" ___("Movement As QListView::Movement");	COMMENT = "";
+	Sub "setResizeMode" ___("Mode As QListView::ResizeMode");	COMMENT = "";
+	Sub "setRowHidden" ___("Row As Integer, Hide As Boolean");	COMMENT = "";
+	Sub "setSelectionRectVisible" ___("Show As Boolean");	COMMENT = "";
+	Sub "setSpacing" ___("Space As Integer");	COMMENT = "";
+	Sub "setUniformItemSizes" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setViewMode" ___("Mode As QListView::ViewMode");	COMMENT = "";
+	Sub "setWordWrap" ___("On As Boolean");	COMMENT = "";
+	Sub "setWrapping" ___("Enable As Boolean");	COMMENT = "";
+	Function "spacing" ___("") As "Integer";	COMMENT = "";
+	Function "uniformItemSizes" ___("") As "Boolean";	COMMENT = "";
+	Function "viewMode" ___("") As "QListView::ViewMode";	COMMENT = "";
+	Function "wordWrap" ___("") As "Boolean";	COMMENT = "";
 
-	//Signal "indexesMoved"___("Indexes As QModelIndexList"); Declare "void indexesMoved(const QModelIndexList & indexes)"	COMMENT = "";
+	//Signal "indexesMoved" ___("Indexes As QModelIndexList"); Declare "void indexesMoved(const QModelIndexList & indexes)"	COMMENT = "";
 
 End_Class
 
@@ -4932,57 +4932,57 @@ Class "QTreeView" SuperClass "QAbstractItemView"
 	Property "uniformRowHeights" As "Boolean";	COMMENT = "";	
 	Property "wordWrap" As "Boolean";	COMMENT = "";	
 
-	Function "allColumnsShowFocus"___("") As "Boolean";	COMMENT = "";
-	Function "autoExpandDelay"___("") As "Integer";	COMMENT = "";
-	Function "columnAt"___("X As Integer") As "Integer";	COMMENT = "";
-	Function "columnViewportPosition"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "columnWidth"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "expandsOnDoubleClick"___("") As "Boolean";	COMMENT = "";
-	Function "header"___("") As "QHeaderView";	COMMENT = "";
-	Function "indentation"___("") As "Integer";	COMMENT = "";
-	Function "indexAbove"___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
-	Function "indexBelow"___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
-	Function "isAnimated"___("") As "Boolean";	COMMENT = "";
-	Function "isColumnHidden"___("Column As Integer") As "Boolean";	COMMENT = "";
-	Function "isExpanded"___("Index As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "isFirstColumnSpanned"___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "isHeaderHidden"___("") As "Boolean";	COMMENT = "";
-	Function "isRowHidden"___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
-	Function "isSortingEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "itemsExpandable"___("") As "Boolean";	COMMENT = "";
-	Function "rootIsDecorated"___("") As "Boolean";	COMMENT = "";
-	Sub "setAllColumnsShowFocus"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAnimated"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAutoExpandDelay"___("Delay As Integer");	COMMENT = "";
-	Sub "setColumnHidden"___("Column As Integer, Hide As Boolean");	COMMENT = "";
-	Sub "setColumnWidth"___("Column As Integer, Width As Integer");	COMMENT = "";
-	Sub "setExpanded"___("Index As QModelIndex, Expanded As Boolean");	COMMENT = "";
-	Sub "setExpandsOnDoubleClick"___("Enable As Boolean");	COMMENT = "";
-	Sub "setFirstColumnSpanned"___("Row As Integer, Parent As QModelIndex, Span As Boolean");	COMMENT = "";
-	Sub "setHeader"___("Header As QHeaderView");	COMMENT = "";
-	Sub "setHeaderHidden"___("Hide As Boolean");	COMMENT = "";
-	Sub "setIndentation"___("I As Integer");	COMMENT = "";
-	Sub "setItemsExpandable"___("Enable As Boolean");	COMMENT = "";
-	Sub "setRootIsDecorated"___("Show As Boolean");	COMMENT = "";
-	Sub "setRowHidden"___("Row As Integer, Parent As QModelIndex, Hide As Boolean");	COMMENT = "";
-	Sub "setSortingEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setUniformRowHeights"___("Uniform As Boolean");	COMMENT = "";
-	Sub "setWordWrap"___("On As Boolean");	COMMENT = "";
-	Sub "sortByColumn"___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
-	Function "uniformRowHeights"___("") As "Boolean";	COMMENT = "";
-	Function "wordWrap"___("") As "Boolean";	COMMENT = "";
+	Function "allColumnsShowFocus" ___("") As "Boolean";	COMMENT = "";
+	Function "autoExpandDelay" ___("") As "Integer";	COMMENT = "";
+	Function "columnAt" ___("X As Integer") As "Integer";	COMMENT = "";
+	Function "columnViewportPosition" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "columnWidth" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "expandsOnDoubleClick" ___("") As "Boolean";	COMMENT = "";
+	Function "header" ___("") As "QHeaderView";	COMMENT = "";
+	Function "indentation" ___("") As "Integer";	COMMENT = "";
+	Function "indexAbove" ___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
+	Function "indexBelow" ___("Index As QModelIndex") As "QModelIndex";	COMMENT = "";
+	Function "isAnimated" ___("") As "Boolean";	COMMENT = "";
+	Function "isColumnHidden" ___("Column As Integer") As "Boolean";	COMMENT = "";
+	Function "isExpanded" ___("Index As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "isFirstColumnSpanned" ___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "isHeaderHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "isRowHidden" ___("Row As Integer, Parent As QModelIndex") As "Boolean";	COMMENT = "";
+	Function "isSortingEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "itemsExpandable" ___("") As "Boolean";	COMMENT = "";
+	Function "rootIsDecorated" ___("") As "Boolean";	COMMENT = "";
+	Sub "setAllColumnsShowFocus" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAnimated" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAutoExpandDelay" ___("Delay As Integer");	COMMENT = "";
+	Sub "setColumnHidden" ___("Column As Integer, Hide As Boolean");	COMMENT = "";
+	Sub "setColumnWidth" ___("Column As Integer, Width As Integer");	COMMENT = "";
+	Sub "setExpanded" ___("Index As QModelIndex, Expanded As Boolean");	COMMENT = "";
+	Sub "setExpandsOnDoubleClick" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setFirstColumnSpanned" ___("Row As Integer, Parent As QModelIndex, Span As Boolean");	COMMENT = "";
+	Sub "setHeader" ___("Header As QHeaderView");	COMMENT = "";
+	Sub "setHeaderHidden" ___("Hide As Boolean");	COMMENT = "";
+	Sub "setIndentation" ___("I As Integer");	COMMENT = "";
+	Sub "setItemsExpandable" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setRootIsDecorated" ___("Show As Boolean");	COMMENT = "";
+	Sub "setRowHidden" ___("Row As Integer, Parent As QModelIndex, Hide As Boolean");	COMMENT = "";
+	Sub "setSortingEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setUniformRowHeights" ___("Uniform As Boolean");	COMMENT = "";
+	Sub "setWordWrap" ___("On As Boolean");	COMMENT = "";
+	Sub "sortByColumn" ___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
+	Function "uniformRowHeights" ___("") As "Boolean";	COMMENT = "";
+	Function "wordWrap" ___("") As "Boolean";	COMMENT = "";
 
-	Slot "collapse"___("Index As QModelIndex");	COMMENT = "";
-	Slot "collapseAll"___("");	COMMENT = "";
-	Slot "expand"___("Index As QModelIndex");	COMMENT = "";
-	Slot "expandAll"___("");	COMMENT = "";
-	Slot "expandToDepth"___("Depth As Integer");	COMMENT = "";
-	Slot "hideColumn"___("Column As Integer");	COMMENT = "";
-	Slot "resizeColumnToContents"___("Column As Integer");	COMMENT = "";
-	Slot "showColumn"___("Column As Integer");	COMMENT = "";
+	Slot "collapse" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "collapseAll" ___("");	COMMENT = "";
+	Slot "expand" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "expandAll" ___("");	COMMENT = "";
+	Slot "expandToDepth" ___("Depth As Integer");	COMMENT = "";
+	Slot "hideColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "resizeColumnToContents" ___("Column As Integer");	COMMENT = "";
+	Slot "showColumn" ___("Column As Integer");	COMMENT = "";
 
-	Signal "collapsed"___("Index As QModelIndex"); Declare "void collapsed(const QModelIndex & index)"	COMMENT = "";
-	Signal "expanded"___("Index As QModelIndex"); Declare "void expanded(const QModelIndex & index)"	COMMENT = "";
+	Signal "collapsed" ___("Index As QModelIndex"); Declare "void collapsed(const QModelIndex & index)"	COMMENT = "";
+	Signal "expanded" ___("Index As QModelIndex"); Declare "void expanded(const QModelIndex & index)"	COMMENT = "";
 
 End_Class
 
@@ -4998,74 +4998,74 @@ Class "QHeaderView" SuperClass "QAbstractItemView"
 	Property "showSortIndicator" As "Boolean";	COMMENT = "";	
 	Property "stretchLastSection" As "Boolean";	COMMENT = "";
 	
-	Function "cascadingSectionResizes"___("") As "Boolean";	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";
-	Function "defaultAlignment"___("") As "Qt::Alignment";	COMMENT = "";
-	Function "defaultSectionSize"___("") As "Integer";	COMMENT = "";
-	Function "hiddenSectionCount"___("") As "Integer";	COMMENT = "";
-	Sub "hideSection"___("LogicalIndex As Integer");	COMMENT = "";
-	Function "highlightSections"___("") As "Boolean";	COMMENT = "";
-	Function "isClickable"___("") As "Boolean";	COMMENT = "";
-	Function "isMovable"___("") As "Boolean";	COMMENT = "";
-	Function "isSectionHidden"___("LogicalIndex As Integer") As "Boolean";	COMMENT = "";
-	Function "isSortIndicatorShown"___("") As "Boolean";	COMMENT = "";
-	Function "length"___("") As "Integer";	COMMENT = "";
-	Function "logicalIndex"___("VisualIndex As Integer") As "Integer";	COMMENT = "";
-	Function "logicalIndexAt"___("Position As Integer") As "Integer";	COMMENT = "";
-	Function "logicalIndexAt"___("X As Integer, Y As Integer") As "Integer";	COMMENT = "";
-	Function "minimumSectionSize"___("") As "Integer";	COMMENT = "";
-	Sub "moveSection"___("From As Integer, To As Integer");	COMMENT = "";
-	Function "offset"___("") As "Integer";	COMMENT = "";
-	Function "orientation"___("") As "Qt::Orientation";	COMMENT = "";
-	Function "resizeMode"___("LogicalIndex As Integer") As "QHeaderView::ResizeMode";	COMMENT = "";
-	Sub "resizeSection"___("LogicalIndex As Integer, Size As Integer");	COMMENT = "";
-	Sub "resizeSections"___("Mode As QHeaderView::ResizeMode");	COMMENT = "";
-	Function "restoreState"___("State As QByteArray") As "Boolean";	COMMENT = "";
-	Function "saveState"___("") As "QByteArray";	COMMENT = "";
-	Function "sectionPosition"___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
-	Function "sectionSize"___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
-	Function "sectionSizeHint"___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
-	Function "sectionViewportPosition"___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
-	Function "sectionsHidden"___("") As "Boolean";	COMMENT = "";
-	Function "sectionsMoved"___("") As "Boolean";	COMMENT = "";
-	Sub "setCascadingSectionResizes"___("Enable As Boolean");	COMMENT = "";
-	Sub "setClickable"___("Clickable As Boolean");	COMMENT = "";
-	Sub "setDefaultAlignment"___("Alignment As Qt::Alignment");	COMMENT = "";
-	Sub "setDefaultSectionSize"___("Size As Integer");	COMMENT = "";
-	Sub "setHighlightSections"___("HighLight As Boolean");	COMMENT = "";
-	Sub "setMinimumSectionSize"___("Size As Integer");	COMMENT = "";
-	Sub "setMovable"___("Movable As Boolean");	COMMENT = "";
-	Sub "setResizeMode"___("Mode As QHeaderView::ResizeMode");	COMMENT = "";
-	Sub "setResizeMode"___("LogicalIndex As Integer, Mode As QHeaderView::ResizeMode");	COMMENT = "";
-	Sub "setSectionHidden"___("LogicalIndex As Integer, Hide As Boolean");	COMMENT = "";
-	Sub "setSortIndicator"___("LogicalIndex As Integer, Order As Qt::SortOrder");	COMMENT = "";
-	Sub "setSortIndicatorShown"___("Show As Boolean");	COMMENT = "";
-	Sub "setStretchLastSection"___("Stretch As Boolean");	COMMENT = "";
-	Sub "showSection"___("LogicalIndex As Integer");	COMMENT = "";
-	Function "sortIndicatorOrder"___("") As "Qt::SortOrder";	COMMENT = "";
-	Function "sortIndicatorSection"___("") As "Integer";	COMMENT = "";
-	Function "stretchLastSection"___("") As "Boolean";	COMMENT = "";
-	Function "stretchSectionCount"___("") As "Integer";	COMMENT = "";
-	Sub "swapSections"___("First As Integer, Second As Integer");	COMMENT = "";
-	Function "visualIndex"___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
-	Function "visualIndexAt"___("Position As Integer") As "Integer";	COMMENT = "";
+	Function "cascadingSectionResizes" ___("") As "Boolean";	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	Function "defaultAlignment" ___("") As "Qt::Alignment";	COMMENT = "";
+	Function "defaultSectionSize" ___("") As "Integer";	COMMENT = "";
+	Function "hiddenSectionCount" ___("") As "Integer";	COMMENT = "";
+	Sub "hideSection" ___("LogicalIndex As Integer");	COMMENT = "";
+	Function "highlightSections" ___("") As "Boolean";	COMMENT = "";
+	Function "isClickable" ___("") As "Boolean";	COMMENT = "";
+	Function "isMovable" ___("") As "Boolean";	COMMENT = "";
+	Function "isSectionHidden" ___("LogicalIndex As Integer") As "Boolean";	COMMENT = "";
+	Function "isSortIndicatorShown" ___("") As "Boolean";	COMMENT = "";
+	Function "length" ___("") As "Integer";	COMMENT = "";
+	Function "logicalIndex" ___("VisualIndex As Integer") As "Integer";	COMMENT = "";
+	Function "logicalIndexAt" ___("Position As Integer") As "Integer";	COMMENT = "";
+	Function "logicalIndexAt" ___("X As Integer, Y As Integer") As "Integer";	COMMENT = "";
+	Function "minimumSectionSize" ___("") As "Integer";	COMMENT = "";
+	Sub "moveSection" ___("From As Integer, To As Integer");	COMMENT = "";
+	Function "offset" ___("") As "Integer";	COMMENT = "";
+	Function "orientation" ___("") As "Qt::Orientation";	COMMENT = "";
+	Function "resizeMode" ___("LogicalIndex As Integer") As "QHeaderView::ResizeMode";	COMMENT = "";
+	Sub "resizeSection" ___("LogicalIndex As Integer, Size As Integer");	COMMENT = "";
+	Sub "resizeSections" ___("Mode As QHeaderView::ResizeMode");	COMMENT = "";
+	Function "restoreState" ___("State As QByteArray") As "Boolean";	COMMENT = "";
+	Function "saveState" ___("") As "QByteArray";	COMMENT = "";
+	Function "sectionPosition" ___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
+	Function "sectionSize" ___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
+	Function "sectionSizeHint" ___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
+	Function "sectionViewportPosition" ___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
+	Function "sectionsHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "sectionsMoved" ___("") As "Boolean";	COMMENT = "";
+	Sub "setCascadingSectionResizes" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setClickable" ___("Clickable As Boolean");	COMMENT = "";
+	Sub "setDefaultAlignment" ___("Alignment As Qt::Alignment");	COMMENT = "";
+	Sub "setDefaultSectionSize" ___("Size As Integer");	COMMENT = "";
+	Sub "setHighlightSections" ___("HighLight As Boolean");	COMMENT = "";
+	Sub "setMinimumSectionSize" ___("Size As Integer");	COMMENT = "";
+	Sub "setMovable" ___("Movable As Boolean");	COMMENT = "";
+	Sub "setResizeMode" ___("Mode As QHeaderView::ResizeMode");	COMMENT = "";
+	Sub "setResizeMode" ___("LogicalIndex As Integer, Mode As QHeaderView::ResizeMode");	COMMENT = "";
+	Sub "setSectionHidden" ___("LogicalIndex As Integer, Hide As Boolean");	COMMENT = "";
+	Sub "setSortIndicator" ___("LogicalIndex As Integer, Order As Qt::SortOrder");	COMMENT = "";
+	Sub "setSortIndicatorShown" ___("Show As Boolean");	COMMENT = "";
+	Sub "setStretchLastSection" ___("Stretch As Boolean");	COMMENT = "";
+	Sub "showSection" ___("LogicalIndex As Integer");	COMMENT = "";
+	Function "sortIndicatorOrder" ___("") As "Qt::SortOrder";	COMMENT = "";
+	Function "sortIndicatorSection" ___("") As "Integer";	COMMENT = "";
+	Function "stretchLastSection" ___("") As "Boolean";	COMMENT = "";
+	Function "stretchSectionCount" ___("") As "Integer";	COMMENT = "";
+	Sub "swapSections" ___("First As Integer, Second As Integer");	COMMENT = "";
+	Function "visualIndex" ___("LogicalIndex As Integer") As "Integer";	COMMENT = "";
+	Function "visualIndexAt" ___("Position As Integer") As "Integer";	COMMENT = "";
 
-	Slot "headerDataChanged"___("Orientation As Qt::Orientation, LogicalFirst As Integer, LogicalLast As Integer");	COMMENT = "";
-	Slot "setOffset"___("Offset As Integer");	COMMENT = "";
-	Slot "setOffsetToLastSection"___("");	COMMENT = "";
-	Slot "setOffsetToSectionPosition"___("VisualIndex As Integer");	COMMENT = "";
+	Slot "headerDataChanged" ___("Orientation As Qt::Orientation, LogicalFirst As Integer, LogicalLast As Integer");	COMMENT = "";
+	Slot "setOffset" ___("Offset As Integer");	COMMENT = "";
+	Slot "setOffsetToLastSection" ___("");	COMMENT = "";
+	Slot "setOffsetToSectionPosition" ___("VisualIndex As Integer");	COMMENT = "";
 
-	Signal "geometriesChanged"___(""); Declare "void geometriesChanged()"	COMMENT = "";
-	Signal "sectionAutoResize"___("LogicalIndex As Integer, Mode As QHeaderView::ResizeMode"); Declare "void sectionAutoResize(int logicalIndex, QHeaderView::ResizeMode mode)"	COMMENT = "";
-	Signal "sectionClicked"___("LogicalIndex As Integer"); Declare "void sectionClicked(int logicalIndex)"	COMMENT = "";
-	Signal "sectionCountChanged"___("OldCount As Integer, NewCount As Integer"); Declare "void sectionCountChanged(int oldCount, int newCount)"	COMMENT = "";
-	Signal "sectionDoubleClicked"___("LogicalIndex As Integer"); Declare "void sectionDoubleClicked(int logicalIndex)"	COMMENT = "";
-	Signal "sectionEntered"___("LogicalIndex As Integer"); Declare "void sectionEntered(int logicalIndex)"	COMMENT = "";
-	Signal "sectionHandleDoubleClicked"___("LogicalIndex As Integer"); Declare "void sectionHandleDoubleClicked(int logicalIndex)"	COMMENT = "";
-	Signal "sectionMoved"___("LogicalIndex As Integer, OldVisualIndex As Integer, NewVisualIndex As Integer"); Declare "void sectionMoved(int logicalIndex, int oldVisualIndex, int newVisualIndex)"	COMMENT = "";
-	Signal "sectionPressed"___("LogicalIndex As Integer"); Declare "void sectionPressed(int logicalIndex)"	COMMENT = "";
-	Signal "sectionResized"___("LogicalIndex As Integer, OldSize As Integer, NewSize As Integer"); Declare "void sectionResized(int logicalIndex, int oldSize, int newSize)"	COMMENT = "";
-	Signal "sortIndicatorChanged"___("LogicalIndex As Integer, Order As Qt::SortOrder"); Declare "void sortIndicatorChanged(int logicalIndex, Qt::SortOrder order)"	COMMENT = "";
+	Signal "geometriesChanged" ___(""); Declare "void geometriesChanged()"	COMMENT = "";
+	Signal "sectionAutoResize" ___("LogicalIndex As Integer, Mode As QHeaderView::ResizeMode"); Declare "void sectionAutoResize(int logicalIndex, QHeaderView::ResizeMode mode)"	COMMENT = "";
+	Signal "sectionClicked" ___("LogicalIndex As Integer"); Declare "void sectionClicked(int logicalIndex)"	COMMENT = "";
+	Signal "sectionCountChanged" ___("OldCount As Integer, NewCount As Integer"); Declare "void sectionCountChanged(int oldCount, int newCount)"	COMMENT = "";
+	Signal "sectionDoubleClicked" ___("LogicalIndex As Integer"); Declare "void sectionDoubleClicked(int logicalIndex)"	COMMENT = "";
+	Signal "sectionEntered" ___("LogicalIndex As Integer"); Declare "void sectionEntered(int logicalIndex)"	COMMENT = "";
+	Signal "sectionHandleDoubleClicked" ___("LogicalIndex As Integer"); Declare "void sectionHandleDoubleClicked(int logicalIndex)"	COMMENT = "";
+	Signal "sectionMoved" ___("LogicalIndex As Integer, OldVisualIndex As Integer, NewVisualIndex As Integer"); Declare "void sectionMoved(int logicalIndex, int oldVisualIndex, int newVisualIndex)"	COMMENT = "";
+	Signal "sectionPressed" ___("LogicalIndex As Integer"); Declare "void sectionPressed(int logicalIndex)"	COMMENT = "";
+	Signal "sectionResized" ___("LogicalIndex As Integer, OldSize As Integer, NewSize As Integer"); Declare "void sectionResized(int logicalIndex, int oldSize, int newSize)"	COMMENT = "";
+	Signal "sortIndicatorChanged" ___("LogicalIndex As Integer, Order As Qt::SortOrder"); Declare "void sortIndicatorChanged(int logicalIndex, Qt::SortOrder order)"	COMMENT = "";
 
 End_Class
 
@@ -5079,48 +5079,48 @@ Class "QTableView" SuperClass "QAbstractItemView"
 	Property "sortingEnabled" As "Boolean";	COMMENT = "";
 	Property "wordWrap" As "Boolean";	COMMENT = "";
 
-	Sub "clearSpans"___("");	COMMENT = "";
-	Function "columnAt"___("X As Integer") As "Integer";	COMMENT = "";
-	Function "columnSpan"___("Row As Integer, Column As Integer") As "Integer";	COMMENT = "";
-	Function "columnViewportPosition"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "columnWidth"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "gridStyle"___("") As "Qt::PenStyle";	COMMENT = "";
-	Function "horizontalHeader"___("") As "QHeaderView";	COMMENT = "";
-	Function "isColumnHidden"___("Column As Integer") As "Boolean";	COMMENT = "";
-	Function "isCornerButtonEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "isRowHidden"___("Row As Integer") As "Boolean";	COMMENT = "";
-	Function "isSortingEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "rowAt"___("Y As Integer") As "Integer";	COMMENT = "";
-	Function "rowHeight"___("Row As Integer") As "Integer";	COMMENT = "";
-	Function "rowSpan"___("Row As Integer, Column As Integer") As "Integer";	COMMENT = "";
-	Function "rowViewportPosition"___("Row As Integer") As "Integer";	COMMENT = "";
-	Sub "setColumnHidden"___("Column As Integer, Hide As Boolean");	COMMENT = "";
-	Sub "setColumnWidth"___("Column As Integer, Width As Integer");	COMMENT = "";
-	Sub "setCornerButtonEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setGridStyle"___("Style As Qt::PenStyle");	COMMENT = "";
-	Sub "setHorizontalHeader"___("Header As QHeaderView");	COMMENT = "";
-	Sub "setRowHeight"___("Row As Integer, Height As Integer");	COMMENT = "";
-	Sub "setRowHidden"___("Row As Integer, Hide As Boolean");	COMMENT = "";
-	Sub "setSortingEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setSpan"___("Row As Integer, Column As Integer, RowSpanCount As Integer, ColumnSpanCount As Integer");	COMMENT = "";
-	Sub "setVerticalHeader"___("Header As QHeaderView");	COMMENT = "";
-	Sub "setWordWrap"___("On As Boolean");	COMMENT = "";
-	Function "showGrid"___("") As "Boolean";	COMMENT = "";
-	Sub "sortByColumn"___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
-	Function "verticalHeader"___("") As "QHeaderView";	COMMENT = "";
-	Function "wordWrap"___("") As "Boolean";	COMMENT = "";
+	Sub "clearSpans" ___("");	COMMENT = "";
+	Function "columnAt" ___("X As Integer") As "Integer";	COMMENT = "";
+	Function "columnSpan" ___("Row As Integer, Column As Integer") As "Integer";	COMMENT = "";
+	Function "columnViewportPosition" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "columnWidth" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "gridStyle" ___("") As "Qt::PenStyle";	COMMENT = "";
+	Function "horizontalHeader" ___("") As "QHeaderView";	COMMENT = "";
+	Function "isColumnHidden" ___("Column As Integer") As "Boolean";	COMMENT = "";
+	Function "isCornerButtonEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "isRowHidden" ___("Row As Integer") As "Boolean";	COMMENT = "";
+	Function "isSortingEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "rowAt" ___("Y As Integer") As "Integer";	COMMENT = "";
+	Function "rowHeight" ___("Row As Integer") As "Integer";	COMMENT = "";
+	Function "rowSpan" ___("Row As Integer, Column As Integer") As "Integer";	COMMENT = "";
+	Function "rowViewportPosition" ___("Row As Integer") As "Integer";	COMMENT = "";
+	Sub "setColumnHidden" ___("Column As Integer, Hide As Boolean");	COMMENT = "";
+	Sub "setColumnWidth" ___("Column As Integer, Width As Integer");	COMMENT = "";
+	Sub "setCornerButtonEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setGridStyle" ___("Style As Qt::PenStyle");	COMMENT = "";
+	Sub "setHorizontalHeader" ___("Header As QHeaderView");	COMMENT = "";
+	Sub "setRowHeight" ___("Row As Integer, Height As Integer");	COMMENT = "";
+	Sub "setRowHidden" ___("Row As Integer, Hide As Boolean");	COMMENT = "";
+	Sub "setSortingEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setSpan" ___("Row As Integer, Column As Integer, RowSpanCount As Integer, ColumnSpanCount As Integer");	COMMENT = "";
+	Sub "setVerticalHeader" ___("Header As QHeaderView");	COMMENT = "";
+	Sub "setWordWrap" ___("On As Boolean");	COMMENT = "";
+	Function "showGrid" ___("") As "Boolean";	COMMENT = "";
+	Sub "sortByColumn" ___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
+	Function "verticalHeader" ___("") As "QHeaderView";	COMMENT = "";
+	Function "wordWrap" ___("") As "Boolean";	COMMENT = "";
 
-	Slot "hideColumn"___("Column As Integer");	COMMENT = "";
-	Slot "hideRow"___("Row As Integer");	COMMENT = "";
-	Slot "resizeColumnToContents"___("Column As Integer");	COMMENT = "";
-	Slot "resizeColumnsToContents"___("");	COMMENT = "";
-	Slot "resizeRowToContents"___("Row As Integer");	COMMENT = "";
-	Slot "resizeRowsToContents"___("");	COMMENT = "";
-	Slot "selectColumn"___("Column As Integer");	COMMENT = "";
-	Slot "selectRow"___("Row As Integer");	COMMENT = "";
-	Slot "setShowGrid"___("Show As Boolean");	COMMENT = "";
-	Slot "showColumn"___("Column As Integer");	COMMENT = "";
-	Slot "showRow"___("Row As Integer");	COMMENT = "";
+	Slot "hideColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "hideRow" ___("Row As Integer");	COMMENT = "";
+	Slot "resizeColumnToContents" ___("Column As Integer");	COMMENT = "";
+	Slot "resizeColumnsToContents" ___("");	COMMENT = "";
+	Slot "resizeRowToContents" ___("Row As Integer");	COMMENT = "";
+	Slot "resizeRowsToContents" ___("");	COMMENT = "";
+	Slot "selectColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "selectRow" ___("Row As Integer");	COMMENT = "";
+	Slot "setShowGrid" ___("Show As Boolean");	COMMENT = "";
+	Slot "showColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "showRow" ___("Row As Integer");	COMMENT = "";
 
 End_Class
 
@@ -5146,48 +5146,48 @@ Class "QInputDialog" SuperClass "QDialog"
 	Property "textEchoMode" As "QLineEdit::EchoMode";	COMMENT = "";
 	Property "textValue" As "String";	COMMENT = "";
 
-	Function "cancelButtonText"___("") As "String";	COMMENT = "";
-	Function "comboBoxItems"___("") As "QStringList";	COMMENT = "";
-	Function "doubleDecimals"___("") As "Integer";	COMMENT = "";
-	Function "doubleMaximum"___("") As "Float";	COMMENT = "";
-	Function "doubleMinimum"___("") As "Float";	COMMENT = "";
-	Function "doubleValue"___("") As "Float";	COMMENT = "";
-	Function "inputMode"___("") As "QInputDialog::InputMode";	COMMENT = "";
-	Function "intMaximum"___("") As "Integer";	COMMENT = "";
-	Function "intMinimum"___("") As "Integer";	COMMENT = "";
-	Function "intStep"___("") As "Integer";	COMMENT = "";
-	Function "intValue"___("") As "Integer";	COMMENT = "";
-	Function "isComboBoxEditable"___("") As "Boolean";	COMMENT = "";
-	Function "labelText"___("") As "String";	COMMENT = "";
-	Function "okButtonText"___("") As "String";	COMMENT = "";
-	Function "options"___("") As "QInputDialog::InputDialogOptions";	COMMENT = "";
+	Function "cancelButtonText" ___("") As "String";	COMMENT = "";
+	Function "comboBoxItems" ___("") As "QStringList";	COMMENT = "";
+	Function "doubleDecimals" ___("") As "Integer";	COMMENT = "";
+	Function "doubleMaximum" ___("") As "Float";	COMMENT = "";
+	Function "doubleMinimum" ___("") As "Float";	COMMENT = "";
+	Function "doubleValue" ___("") As "Float";	COMMENT = "";
+	Function "inputMode" ___("") As "QInputDialog::InputMode";	COMMENT = "";
+	Function "intMaximum" ___("") As "Integer";	COMMENT = "";
+	Function "intMinimum" ___("") As "Integer";	COMMENT = "";
+	Function "intStep" ___("") As "Integer";	COMMENT = "";
+	Function "intValue" ___("") As "Integer";	COMMENT = "";
+	Function "isComboBoxEditable" ___("") As "Boolean";	COMMENT = "";
+	Function "labelText" ___("") As "String";	COMMENT = "";
+	Function "okButtonText" ___("") As "String";	COMMENT = "";
+	Function "options" ___("") As "QInputDialog::InputDialogOptions";	COMMENT = "";
 
-	Sub "setCancelButtonText"___("Text As String");	COMMENT = "";
-	Sub "setComboBoxEditable"___("Editable As Boolean");	COMMENT = "";
-	Sub "setComboBoxItems"___("Items As QStringList");	COMMENT = "";
-	Sub "setDoubleDecimals"___("Decimals As Integer");	COMMENT = "";
-	Sub "setDoubleMaximum"___("Max As Float");	COMMENT = "";
-	Sub "setDoubleMinimum"___("Min As Float");	COMMENT = "";
-	Sub "setDoubleValue"___("Value As Float");	COMMENT = "";
-	Sub "setInputMode"___("InputMode As QInputDialog::InputMode");	COMMENT = "";
-	Sub "setIntMaximum"___("Max As Integer");	COMMENT = "";
-	Sub "setIntMinimum"___("Min As Integer");	COMMENT = "";
-	Sub "setIntStep"___("Step As Integer");	COMMENT = "";
-	Sub "setIntValue"___("Value As Integer");	COMMENT = "";
-	Sub "setLabelText"___("Text As String");	COMMENT = "";
-	Sub "setOkButtonText"___("Text As String");	COMMENT = "";
-	Sub "setOption"___("Option As QInputDialog::InputDialogOption, On As Boolean");	COMMENT = "";
-	Sub "setTextEchoMode"___("Mode As QLineEdit::EchoMode");	COMMENT = "";
-	Sub "setTextValue"___("Text As String");	COMMENT = "";
-	Function "textEchoMode"___("") As "QLineEdit::EchoMode";	COMMENT = "";
-	Function "textValue"___("") As "String";	COMMENT = "";
+	Sub "setCancelButtonText" ___("Text As String");	COMMENT = "";
+	Sub "setComboBoxEditable" ___("Editable As Boolean");	COMMENT = "";
+	Sub "setComboBoxItems" ___("Items As QStringList");	COMMENT = "";
+	Sub "setDoubleDecimals" ___("Decimals As Integer");	COMMENT = "";
+	Sub "setDoubleMaximum" ___("Max As Float");	COMMENT = "";
+	Sub "setDoubleMinimum" ___("Min As Float");	COMMENT = "";
+	Sub "setDoubleValue" ___("Value As Float");	COMMENT = "";
+	Sub "setInputMode" ___("InputMode As QInputDialog::InputMode");	COMMENT = "";
+	Sub "setIntMaximum" ___("Max As Integer");	COMMENT = "";
+	Sub "setIntMinimum" ___("Min As Integer");	COMMENT = "";
+	Sub "setIntStep" ___("Step As Integer");	COMMENT = "";
+	Sub "setIntValue" ___("Value As Integer");	COMMENT = "";
+	Sub "setLabelText" ___("Text As String");	COMMENT = "";
+	Sub "setOkButtonText" ___("Text As String");	COMMENT = "";
+	Sub "setOption" ___("Option As QInputDialog::InputDialogOption, On As Boolean");	COMMENT = "";
+	Sub "setTextEchoMode" ___("Mode As QLineEdit::EchoMode");	COMMENT = "";
+	Sub "setTextValue" ___("Text As String");	COMMENT = "";
+	Function "textEchoMode" ___("") As "QLineEdit::EchoMode";	COMMENT = "";
+	Function "textValue" ___("") As "String";	COMMENT = "";
 
-	Signal "doubleValueChanged"___("Value As Double") Declare "void doubleValueChanged(double value)"	COMMENT = "";
-	Signal "doubleValueSelected"___("Value As Double") Declare "void doubleValueSelected(double value)"	COMMENT = "";
-	Signal "intValueChanged"___("Value As Integer") Declare "void intValueChanged(int value)"	COMMENT = "";
-	Signal "intValueSelected"___("Value As Integer") Declare "void intValueSelected(int value)"	COMMENT = "";
-	Signal "textValueChanged"___("Text As String") Declare "void textValueChanged(const QString & text)"	COMMENT = "";
-	Signal "textValueSelected"___("Text As String") Declare "void textValueSelected(const QString & text)"	COMMENT = "";
+	Signal "doubleValueChanged" ___("Value As Double") Declare "void doubleValueChanged(double value)"	COMMENT = "";
+	Signal "doubleValueSelected" ___("Value As Double") Declare "void doubleValueSelected(double value)"	COMMENT = "";
+	Signal "intValueChanged" ___("Value As Integer") Declare "void intValueChanged(int value)"	COMMENT = "";
+	Signal "intValueSelected" ___("Value As Integer") Declare "void intValueSelected(int value)"	COMMENT = "";
+	Signal "textValueChanged" ___("Text As String") Declare "void textValueChanged(const QString & text)"	COMMENT = "";
+	Signal "textValueSelected" ___("Text As String") Declare "void textValueSelected(const QString & text)"	COMMENT = "";
 
 End_Class
 
@@ -5197,14 +5197,14 @@ Class "QColumnView" SuperClass "QAbstractItemView"
 
 	Property "resizeGripsVisible" As "Boolean";	COMMENT = "";
 
-	//Function "columnWidths"___("") As "List";	COMMENT = "";
-	Function "previewWidget"___("") As "QWidget";	COMMENT = "";
-	Function "resizeGripsVisible"___("") As "Boolean";	COMMENT = "";
-	//Sub "setColumnWidths"___("Widths As List");	COMMENT = "";
-	Sub "setPreviewWidget"___("Widget As QWidget");	COMMENT = "";
-	Sub "setResizeGripsVisible"___("Visible As Boolean");	COMMENT = "";
+	//Function "columnWidths" ___("") As "List";	COMMENT = "";
+	Function "previewWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "resizeGripsVisible" ___("") As "Boolean";	COMMENT = "";
+	//Sub "setColumnWidths" ___("Widths As List");	COMMENT = "";
+	Sub "setPreviewWidget" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setResizeGripsVisible" ___("Visible As Boolean");	COMMENT = "";
 
-	Signal "updatePreviewWidget"___("Index As QModelIndex") Declare "void updatePreviewWidget(const QModelIndex & index)"	COMMENT = "";
+	Signal "updatePreviewWidget" ___("Index As QModelIndex") Declare "void updatePreviewWidget(const QModelIndex & index)"	COMMENT = "";
 
 End_Class
 
@@ -5212,10 +5212,10 @@ End_Class
 
 Class "QValidator" SuperClass "QObject"
 
-	Sub "fixup"___("Input As String");	COMMENT = "";
-	Function "locale"___("") As "QLocale";	COMMENT = "";
-	Sub "setLocale"___("Locale As QLocale");	COMMENT = "";
-	Function "validate"___("Input As String, Pos As Integer") As "QValidator::State";	COMMENT = "";
+	Sub "fixup" ___("Input As String");	COMMENT = "";
+	Function "locale" ___("") As "QLocale";	COMMENT = "";
+	Sub "setLocale" ___("Locale As QLocale");	COMMENT = "";
+	Function "validate" ___("Input As String, Pos As Integer") As "QValidator::State";	COMMENT = "";
 
 End_Class
 
@@ -5225,8 +5225,8 @@ Class "QRegExpValidator" SuperClass "QValidator"
 
 	Property "regExp" As "QRegExp";	COMMENT = "";
 
-	Function "regExp"___("") As "QRegExp";	COMMENT = "";
-	Sub "setRegExp"___("Rx As QRegExp");	COMMENT = "";
+	Function "regExp" ___("") As "QRegExp";	COMMENT = "";
+	Sub "setRegExp" ___("Rx As QRegExp");	COMMENT = "";
 
 End_Class
 
@@ -5234,47 +5234,47 @@ End_Class
 
 Class "QFont"
 
-	Function "bold"___("") As "Boolean";	COMMENT = "";
-	Function "defaultFamily"___("") As "String";	COMMENT = "";
-	Function "exactMatch"___("") As "Boolean";	COMMENT = "";
-	Function "family"___("") As "String";	COMMENT = "";
-	Function "fixedPitch"___("") As "Boolean";	COMMENT = "";
-	Function "fromString"___("Descrip As String") As "Boolean";	COMMENT = "";
-	Function "italic"___("") As "Boolean";	COMMENT = "";
-	Function "lastResortFamily"___("") As "String";	COMMENT = "";
-	Function "lastResortFont"___("") As "String";	COMMENT = "";
-	Function "letterSpacing"___("") As "Float";	COMMENT = "";
-	Function "letterSpacingType"___("") As "QFont::SpacingType";	COMMENT = "";
-	Function "overline"___("") As "Boolean";	COMMENT = "";
-	Function "pixelSize"___("") As "Integer";	COMMENT = "";
-	Function "pointSize"___("") As "Integer";	COMMENT = "";
-	Function "pointSizeF"___("") As "Float";	COMMENT = "";
-	Function "resolve"___("Other As QFont") As "QFont";	COMMENT = "";
-	Sub "setBold"___("Enable As Boolean");	COMMENT = "";
-	Sub "setCapitalization"___("Caps As QFont::Capitalization");	COMMENT = "";
-	Sub "setFamily"___("Family As String");	COMMENT = "";
-	Sub "setFixedPitch"___("Enable As Boolean");	COMMENT = "";
-	Sub "setItalic"___("Enable As Boolean");	COMMENT = "";
-	Sub "setLetterSpacing"___("Type As QFont::SpacingType, Spacing As Float");	COMMENT = "";
-	Sub "setOverline"___("Enable As Boolean");	COMMENT = "";
-	Sub "setPixelSize"___("PixelSize As Integer");	COMMENT = "";
-	Sub "setPointSize"___("PointSize As Integer");	COMMENT = "";
-	Sub "setPointSizeF"___("PointSize As Float");	COMMENT = "";
-	Sub "setStretch"___("Factor As Integer");	COMMENT = "";
-	Sub "setStrikeOut"___("Enable As Boolean");	COMMENT = "";
-	Sub "setStyle"___("Style As QFont::Style");	COMMENT = "";
-	Sub "setStyleStrategy"___("S As QFont::StyleStrategy");	COMMENT = "";
-	Sub "setUnderline"___("Enable As Boolean");	COMMENT = "";
-	Sub "setWeight"___("Weight As Integer");	COMMENT = "";
-	Sub "setWordSpacing"___("Spacing As Float");	COMMENT = "";
-	Function "stretch"___("") As "Integer";	COMMENT = "";
-	Function "strikeOut"___("") As "Boolean";	COMMENT = "";
-	Function "style"___("") As "QFont::Style";	COMMENT = "";
-	Function "styleStrategy"___("") As "QFont::StyleStrategy";	COMMENT = "";
-	Function "toString"___("") As "String";	COMMENT = "";
-	Function "underline"___("") As "Boolean";	COMMENT = "";
-	Function "weight"___("") As "Integer";	COMMENT = "";
-	Function "wordSpacing"___("") As "Float";	COMMENT = "";
+	Function "bold" ___("") As "Boolean";	COMMENT = "";
+	Function "defaultFamily" ___("") As "String";	COMMENT = "";
+	Function "exactMatch" ___("") As "Boolean";	COMMENT = "";
+	Function "family" ___("") As "String";	COMMENT = "";
+	Function "fixedPitch" ___("") As "Boolean";	COMMENT = "";
+	Function "fromString" ___("Descrip As String") As "Boolean";	COMMENT = "";
+	Function "italic" ___("") As "Boolean";	COMMENT = "";
+	Function "lastResortFamily" ___("") As "String";	COMMENT = "";
+	Function "lastResortFont" ___("") As "String";	COMMENT = "";
+	Function "letterSpacing" ___("") As "Float";	COMMENT = "";
+	Function "letterSpacingType" ___("") As "QFont::SpacingType";	COMMENT = "";
+	Function "overline" ___("") As "Boolean";	COMMENT = "";
+	Function "pixelSize" ___("") As "Integer";	COMMENT = "";
+	Function "pointSize" ___("") As "Integer";	COMMENT = "";
+	Function "pointSizeF" ___("") As "Float";	COMMENT = "";
+	Function "resolve" ___("Other As QFont") As "QFont";	COMMENT = "";
+	Sub "setBold" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setCapitalization" ___("Caps As QFont::Capitalization");	COMMENT = "";
+	Sub "setFamily" ___("Family As String");	COMMENT = "";
+	Sub "setFixedPitch" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setItalic" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setLetterSpacing" ___("Type As QFont::SpacingType, Spacing As Float");	COMMENT = "";
+	Sub "setOverline" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setPixelSize" ___("PixelSize As Integer");	COMMENT = "";
+	Sub "setPointSize" ___("PointSize As Integer");	COMMENT = "";
+	Sub "setPointSizeF" ___("PointSize As Float");	COMMENT = "";
+	Sub "setStretch" ___("Factor As Integer");	COMMENT = "";
+	Sub "setStrikeOut" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setStyle" ___("Style As QFont::Style");	COMMENT = "";
+	Sub "setStyleStrategy" ___("S As QFont::StyleStrategy");	COMMENT = "";
+	Sub "setUnderline" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setWeight" ___("Weight As Integer");	COMMENT = "";
+	Sub "setWordSpacing" ___("Spacing As Float");	COMMENT = "";
+	Function "stretch" ___("") As "Integer";	COMMENT = "";
+	Function "strikeOut" ___("") As "Boolean";	COMMENT = "";
+	Function "style" ___("") As "QFont::Style";	COMMENT = "";
+	Function "styleStrategy" ___("") As "QFont::StyleStrategy";	COMMENT = "";
+	Function "toString" ___("") As "String";	COMMENT = "";
+	Function "underline" ___("") As "Boolean";	COMMENT = "";
+	Function "weight" ___("") As "Integer";	COMMENT = "";
+	Function "wordSpacing" ___("") As "Float";	COMMENT = "";
 
 End_Class
 
@@ -5282,74 +5282,74 @@ End_Class
 
 Class "QColor"
 
-	Function "alpha"___("") As "Integer";	COMMENT = "";
-	Function "alphaF"___("") As "Float";	COMMENT = "";
-	Function "black"___("") As "Integer";	COMMENT = "";
-	Function "blackF"___("") As "Float";	COMMENT = "";
-	Function "blue"___("") As "Integer";	COMMENT = "";
-	Function "blueF"___("") As "Float";	COMMENT = "";
-	Function "convertTo"___("ColorSpec As QColor::Spec") As "QColor";	COMMENT = "";
-	Function "cyan"___("") As "Integer";	COMMENT = "";
-	Function "cyanF"___("") As "Float";	COMMENT = "";
-	Function "darker"___("Factor As Integer") As "QColor";	COMMENT = "";
-	//Sub "getCmyk"___("C As Integer, M As Integer, Y As Integer, K As Integer, A As Integer");	COMMENT = "";
-	//Sub "getCmykF"___("C As Float, M As Float, Y As Float, K As Float, A As Float");	COMMENT = "";
-	//Sub "getHsl"___("H As Integer, S As Integer, L As Integer, A As Integer");	COMMENT = "";
-	//Sub "getHslF"___("H As Float, S As Float, L As Float, A As Float");	COMMENT = "";
-	//Sub "getHsv"___("H As Integer, S As Integer, V As Integer, A As Integer");	COMMENT = "";
-	//Sub "getHsvF"___("H As Float, S As Float, V As Float, A As Float");	COMMENT = "";
-	//Sub "getRgb"___("R As Integer, G As Integer, B As Integer, A As Integer");	COMMENT = "";
-	//Sub "getRgbF"___("R As Float, G As Float, B As Float, A As Float");	COMMENT = "";
-	Function "green"___("") As "Integer";	COMMENT = "";
-	Function "greenF"___("") As "Float";	COMMENT = "";
-	Function "hslHue"___("") As "Integer";	COMMENT = "";
-	Function "hslHueF"___("") As "Float";	COMMENT = "";
-	Function "hslSaturation"___("") As "Integer";	COMMENT = "";
-	Function "hslSaturationF"___("") As "Float";	COMMENT = "";
-	Function "hsvHue"___("") As "Integer";	COMMENT = "";
-	Function "hsvHueF"___("") As "Float";	COMMENT = "";
-	Function "hsvSaturation"___("") As "Integer";	COMMENT = "";
-	Function "hsvSaturationF"___("") As "Float";	COMMENT = "";
-	Function "hue"___("") As "Integer";	COMMENT = "";
-	Function "hueF"___("") As "Float";	COMMENT = "";
-	Function "lighter"___("Factor As Integer") As "QColor";	COMMENT = "";
-	Function "lightness"___("") As "Integer";	COMMENT = "";
-	Function "lightnessF"___("") As "Float";	COMMENT = "";
-	Function "magenta"___("") As "Integer";	COMMENT = "";
-	Function "magentaF"___("") As "Float";	COMMENT = "";
-	Function "name"___("") As "String";	COMMENT = "";
-	Function "red"___("") As "Integer";	COMMENT = "";
-	Function "redF"___("") As "Float";	COMMENT = "";
-	Function "rgb"___("") As "QRgb";	COMMENT = "";
-	Function "rgba"___("") As "QRgb";	COMMENT = "";
-	Function "saturation"___("") As "Integer";	COMMENT = "";
-	Function "saturationF"___("") As "Float";	COMMENT = "";
-	Sub"setAlpha"___("Alpha As Integer");	COMMENT = "";
-	Sub "setAlphaF"___("Alpha As Float");	COMMENT = "";
-	Sub "setBlue"___("Blue As Integer");	COMMENT = "";
-	Sub "setBlueF"___("Blue As Float");	COMMENT = "";
-	Sub "setCmyk"___("C As Integer, M As Integer, Y As Integer, K As Integer, A As Integer");	COMMENT = "";
-	Sub "setCmykF"___("C As Float, M As Float, Y As Float, K As Float, A As Float");	COMMENT = "";
-	Sub "setGreen"___("Green As Integer");	COMMENT = "";
-	Sub "setGreenF"___("Green As Float");	COMMENT = "";
-	Sub "setHsl"___("H As Integer, S As Integer, L As Integer, A As Integer");	COMMENT = "";
-	Sub "setHslF"___("H As Float, S As Float, L As Float, A As Float");	COMMENT = "";
-	Sub "setHsv"___("H As Integer, S As Integer, V As Integer, A As Integer");	COMMENT = "";
-	Sub "setHsvF"___("H As Float, S As Float, V As Float, A As Float");	COMMENT = "";
-	Sub "setNamedColor"___("Name As String");	COMMENT = "";
-	Sub "setRed"___("Red As Integer");	COMMENT = "";
-	Sub "setRedF"___("Red As Float");	COMMENT = "";
-	Sub "setRgb"___("R As Integer, G As Integer, B As Integer, A As Integer");	COMMENT = "";
-	Sub "setRgbF"___("R As Float, G As Float, B As Float, A As Float");	COMMENT = "";
-	Function "spec"___("") As "QColor::Spec";	COMMENT = "";
-	Function "toCmyk"___("") As "QColor";	COMMENT = "";
-	Function "toHsl"___("") As "QColor";	COMMENT = "";
-	Function "toHsv"___("") As "QColor";	COMMENT = "";
-	Function "toRgb"___("") As "QColor";	COMMENT = "";
-	Function "value"___("") As "Integer";	COMMENT = "";
-	Function "valueF"___("") As "Float";	COMMENT = "";
-	Function "yellow"___("") As "Integer";	COMMENT = "";
-	Function "yellowF"___("") As "Float";	COMMENT = "";
+	Function "alpha" ___("") As "Integer";	COMMENT = "";
+	Function "alphaF" ___("") As "Float";	COMMENT = "";
+	Function "black" ___("") As "Integer";	COMMENT = "";
+	Function "blackF" ___("") As "Float";	COMMENT = "";
+	Function "blue" ___("") As "Integer";	COMMENT = "";
+	Function "blueF" ___("") As "Float";	COMMENT = "";
+	Function "convertTo" ___("ColorSpec As QColor::Spec") As "QColor";	COMMENT = "";
+	Function "cyan" ___("") As "Integer";	COMMENT = "";
+	Function "cyanF" ___("") As "Float";	COMMENT = "";
+	Function "darker" ___("Factor As Integer") As "QColor";	COMMENT = "";
+	//Sub "getCmyk" ___("C As Integer, M As Integer, Y As Integer, K As Integer, A As Integer");	COMMENT = "";
+	//Sub "getCmykF" ___("C As Float, M As Float, Y As Float, K As Float, A As Float");	COMMENT = "";
+	//Sub "getHsl" ___("H As Integer, S As Integer, L As Integer, A As Integer");	COMMENT = "";
+	//Sub "getHslF" ___("H As Float, S As Float, L As Float, A As Float");	COMMENT = "";
+	//Sub "getHsv" ___("H As Integer, S As Integer, V As Integer, A As Integer");	COMMENT = "";
+	//Sub "getHsvF" ___("H As Float, S As Float, V As Float, A As Float");	COMMENT = "";
+	//Sub "getRgb" ___("R As Integer, G As Integer, B As Integer, A As Integer");	COMMENT = "";
+	//Sub "getRgbF" ___("R As Float, G As Float, B As Float, A As Float");	COMMENT = "";
+	Function "green" ___("") As "Integer";	COMMENT = "";
+	Function "greenF" ___("") As "Float";	COMMENT = "";
+	Function "hslHue" ___("") As "Integer";	COMMENT = "";
+	Function "hslHueF" ___("") As "Float";	COMMENT = "";
+	Function "hslSaturation" ___("") As "Integer";	COMMENT = "";
+	Function "hslSaturationF" ___("") As "Float";	COMMENT = "";
+	Function "hsvHue" ___("") As "Integer";	COMMENT = "";
+	Function "hsvHueF" ___("") As "Float";	COMMENT = "";
+	Function "hsvSaturation" ___("") As "Integer";	COMMENT = "";
+	Function "hsvSaturationF" ___("") As "Float";	COMMENT = "";
+	Function "hue" ___("") As "Integer";	COMMENT = "";
+	Function "hueF" ___("") As "Float";	COMMENT = "";
+	Function "lighter" ___("Factor As Integer") As "QColor";	COMMENT = "";
+	Function "lightness" ___("") As "Integer";	COMMENT = "";
+	Function "lightnessF" ___("") As "Float";	COMMENT = "";
+	Function "magenta" ___("") As "Integer";	COMMENT = "";
+	Function "magentaF" ___("") As "Float";	COMMENT = "";
+	Function "name" ___("") As "String";	COMMENT = "";
+	Function "red" ___("") As "Integer";	COMMENT = "";
+	Function "redF" ___("") As "Float";	COMMENT = "";
+	Function "rgb" ___("") As "QRgb";	COMMENT = "";
+	Function "rgba" ___("") As "QRgb";	COMMENT = "";
+	Function "saturation" ___("") As "Integer";	COMMENT = "";
+	Function "saturationF" ___("") As "Float";	COMMENT = "";
+	Sub"setAlpha" ___("Alpha As Integer");	COMMENT = "";
+	Sub "setAlphaF" ___("Alpha As Float");	COMMENT = "";
+	Sub "setBlue" ___("Blue As Integer");	COMMENT = "";
+	Sub "setBlueF" ___("Blue As Float");	COMMENT = "";
+	Sub "setCmyk" ___("C As Integer, M As Integer, Y As Integer, K As Integer, A As Integer");	COMMENT = "";
+	Sub "setCmykF" ___("C As Float, M As Float, Y As Float, K As Float, A As Float");	COMMENT = "";
+	Sub "setGreen" ___("Green As Integer");	COMMENT = "";
+	Sub "setGreenF" ___("Green As Float");	COMMENT = "";
+	Sub "setHsl" ___("H As Integer, S As Integer, L As Integer, A As Integer");	COMMENT = "";
+	Sub "setHslF" ___("H As Float, S As Float, L As Float, A As Float");	COMMENT = "";
+	Sub "setHsv" ___("H As Integer, S As Integer, V As Integer, A As Integer");	COMMENT = "";
+	Sub "setHsvF" ___("H As Float, S As Float, V As Float, A As Float");	COMMENT = "";
+	Sub "setNamedColor" ___("Name As String");	COMMENT = "";
+	Sub "setRed" ___("Red As Integer");	COMMENT = "";
+	Sub "setRedF" ___("Red As Float");	COMMENT = "";
+	Sub "setRgb" ___("R As Integer, G As Integer, B As Integer, A As Integer");	COMMENT = "";
+	Sub "setRgbF" ___("R As Float, G As Float, B As Float, A As Float");	COMMENT = "";
+	Function "spec" ___("") As "QColor::Spec";	COMMENT = "";
+	Function "toCmyk" ___("") As "QColor";	COMMENT = "";
+	Function "toHsl" ___("") As "QColor";	COMMENT = "";
+	Function "toHsv" ___("") As "QColor";	COMMENT = "";
+	Function "toRgb" ___("") As "QColor";	COMMENT = "";
+	Function "value" ___("") As "Integer";	COMMENT = "";
+	Function "valueF" ___("") As "Float";	COMMENT = "";
+	Function "yellow" ___("") As "Integer";	COMMENT = "";
+	Function "yellowF" ___("") As "Float";	COMMENT = "";
 
 End_Class
 
@@ -5357,38 +5357,38 @@ End_Class
 
 Class "QTableWidgetItem"
 
-	Function "background"___("") As "QBrush";	COMMENT = "";
-	Function "checkState"___("") As "Qt::CheckState";	COMMENT = "";
-	Function "column"___("") As "Integer";	COMMENT = "";
-	Function "flags"___("") As "Qt::ItemFlags";	COMMENT = "";
-	Function "font"___("") As "QFont";	COMMENT = "";
-	Function "foreground"___("") As "QBrush";	COMMENT = "";
-	Function "icon"___("") As "QIcon";	COMMENT = "";
-	Function "isSelected"___("") As "Boolean";	COMMENT = "";
-	//Sub "read"___("In As QDataStream");	COMMENT = "";
-	Function "row"___("") As "Integer";	COMMENT = "";
-	Sub "setBackground"___("Brush As QBrush");	COMMENT = "";
-	Sub "setCheckState"___("State As Qt::CheckState");	COMMENT = "";
-	Sub "setFlags"___("Flags As Qt::ItemFlags");	COMMENT = "";
-	Sub "setFont"___("Font As QFont");	COMMENT = "";
-	Sub "setForeground"___("Brush As QBrush");	COMMENT = "";
-	Sub "setIcon"___("Icon As QIcon");	COMMENT = "";
-	Sub "setSelected"___("Select As Boolean");	COMMENT = "";
-	Sub "setSizeHint"___("Size As QSize");	COMMENT = "";
-	Sub "setStatusTip"___("StatusTip As String");	COMMENT = "";
-	Sub "setText"___("Text As String");	COMMENT = "";
-	Sub "setTextAlignment"___("Alignment As Integer");	COMMENT = "";
-	Sub "setToolTip"___("ToolTip As String");	COMMENT = "";
-	Sub "setWhatsThis"___("WhatsThis As String");	COMMENT = "";
-	Function "sizeHint"___("") As "QSize";	COMMENT = "";
-	Function "statusTip"___("") As "String";	COMMENT = "";
-	Function "tableWidget"___("") As "QTableWidget";	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
-	Function "textAlignment"___("") As "Integer";	COMMENT = "";
-	Function "toolTip"___("") As "String";	COMMENT = "";
-	Function "type"___("") As "Integer";	COMMENT = "";
-	Function "whatsThis"___("") As "String";	COMMENT = "";
-	//Sub "write"___("Out As QDataStream");	COMMENT = "";
+	Function "background" ___("") As "QBrush";	COMMENT = "";
+	Function "checkState" ___("") As "Qt::CheckState";	COMMENT = "";
+	Function "column" ___("") As "Integer";	COMMENT = "";
+	Function "flags" ___("") As "Qt::ItemFlags";	COMMENT = "";
+	Function "font" ___("") As "QFont";	COMMENT = "";
+	Function "foreground" ___("") As "QBrush";	COMMENT = "";
+	Function "icon" ___("") As "QIcon";	COMMENT = "";
+	Function "isSelected" ___("") As "Boolean";	COMMENT = "";
+	//Sub "read" ___("In As QDataStream");	COMMENT = "";
+	Function "row" ___("") As "Integer";	COMMENT = "";
+	Sub "setBackground" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setCheckState" ___("State As Qt::CheckState");	COMMENT = "";
+	Sub "setFlags" ___("Flags As Qt::ItemFlags");	COMMENT = "";
+	Sub "setFont" ___("Font As QFont");	COMMENT = "";
+	Sub "setForeground" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setIcon" ___("Icon As QIcon");	COMMENT = "";
+	Sub "setSelected" ___("Select As Boolean");	COMMENT = "";
+	Sub "setSizeHint" ___("Size As QSize");	COMMENT = "";
+	Sub "setStatusTip" ___("StatusTip As String");	COMMENT = "";
+	Sub "setText" ___("Text As String");	COMMENT = "";
+	Sub "setTextAlignment" ___("Alignment As Integer");	COMMENT = "";
+	Sub "setToolTip" ___("ToolTip As String");	COMMENT = "";
+	Sub "setWhatsThis" ___("WhatsThis As String");	COMMENT = "";
+	Function "sizeHint" ___("") As "QSize";	COMMENT = "";
+	Function "statusTip" ___("") As "String";	COMMENT = "";
+	Function "tableWidget" ___("") As "QTableWidget";	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
+	Function "textAlignment" ___("") As "Integer";	COMMENT = "";
+	Function "toolTip" ___("") As "String";	COMMENT = "";
+	Function "type" ___("") As "Integer";	COMMENT = "";
+	Function "whatsThis" ___("") As "String";	COMMENT = "";
+	//Sub "write" ___("Out As QDataStream");	COMMENT = "";
 
 End_Class  
 
@@ -5400,13 +5400,13 @@ Class "QFontComboBox" SuperClass "QComboBox"
 	//Property "fontFilters" As "QFontComboBox::FontFilters";	COMMENT = "";
 	Property "writingSystem" As "QFontDatabase::WritingSystem";	COMMENT = "";
 
-	Function "currentFont"___("") As "QFont";	COMMENT = "";
-	Function "fontFilters"___("") As "QFontComboBox::FontFilters";	COMMENT = "";
-	Sub "setFontFilters"___("Filters As QFontComboBox::FontFilters");	COMMENT = "";
+	Function "currentFont" ___("") As "QFont";	COMMENT = "";
+	Function "fontFilters" ___("") As "QFontComboBox::FontFilters";	COMMENT = "";
+	Sub "setFontFilters" ___("Filters As QFontComboBox::FontFilters");	COMMENT = "";
 
-	Slot "setCurrentFont"___("Font As QFont");	COMMENT = "";
+	Slot "setCurrentFont" ___("Font As QFont");	COMMENT = "";
 
-	Signal "currentFontChanged"___("Font As QFont") Declare "void currentFontChanged(const QFont & font)"	COMMENT = "";
+	Signal "currentFontChanged" ___("Font As QFont") Declare "void currentFontChanged(const QFont & font)"	COMMENT = "";
 
 End_Class  
 
@@ -5427,34 +5427,34 @@ Class "QAbstractSpinBox" SuperClass "QWidget"
 	Property "text" As "String";	COMMENT = "";
 	Property "wrapping" As "Boolean";	COMMENT = "";
 
-	Function "alignment"___("") As "Qt::Alignment";	COMMENT = "";
-	Function "buttonSymbols"___("") As "QAbstractSpinBox::ButtonSymbols";	COMMENT = "";
-	Function "correctionMode"___("") As "QAbstractSpinBox::CorrectionMode";	COMMENT = "";
-	Function "hasAcceptableInput"___("") As "Boolean";	COMMENT = "";
-	Function "hasFrame"___("") As "Boolean";	COMMENT = "";
-	Sub "interpretText"___("");	COMMENT = "";
-	Function "isAccelerated"___("") As "Boolean";	COMMENT = "";
-	Function "isReadOnly"___("") As "Boolean";	COMMENT = "";
-	Function "keyboardTracking"___("") As "Boolean";	COMMENT = "";
-	Sub "setAccelerated"___("On As Boolean");	COMMENT = "";
-	Sub "setAlignment"___("Flag As Qt::Alignment");	COMMENT = "";
-	Sub "setButtonSymbols"___("Bs As QAbstractSpinBox::ButtonSymbols");	COMMENT = "";
-	Sub "setCorrectionMode"___("Cm As QAbstractSpinBox::CorrectionMode");	COMMENT = "";
-	Sub "setFrame"___("Frame As Boolean");	COMMENT = "";
-	Sub "setKeyboardTracking"___("Kt As Boolean");	COMMENT = "";
-	Sub "setReadOnly"___("R As Boolean");	COMMENT = "";
-	Sub "setSpecialValueText"___("Txt As String");	COMMENT = "";
-	Sub "setWrapping"___("W As Boolean");	COMMENT = "";
-	Function "specialValueText"___("") As "String";	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
-	Function "wrapping"___("") As "Boolean";	COMMENT = "";
+	Function "alignment" ___("") As "Qt::Alignment";	COMMENT = "";
+	Function "buttonSymbols" ___("") As "QAbstractSpinBox::ButtonSymbols";	COMMENT = "";
+	Function "correctionMode" ___("") As "QAbstractSpinBox::CorrectionMode";	COMMENT = "";
+	Function "hasAcceptableInput" ___("") As "Boolean";	COMMENT = "";
+	Function "hasFrame" ___("") As "Boolean";	COMMENT = "";
+	Sub "interpretText" ___("");	COMMENT = "";
+	Function "isAccelerated" ___("") As "Boolean";	COMMENT = "";
+	Function "isReadOnly" ___("") As "Boolean";	COMMENT = "";
+	Function "keyboardTracking" ___("") As "Boolean";	COMMENT = "";
+	Sub "setAccelerated" ___("On As Boolean");	COMMENT = "";
+	Sub "setAlignment" ___("Flag As Qt::Alignment");	COMMENT = "";
+	Sub "setButtonSymbols" ___("Bs As QAbstractSpinBox::ButtonSymbols");	COMMENT = "";
+	Sub "setCorrectionMode" ___("Cm As QAbstractSpinBox::CorrectionMode");	COMMENT = "";
+	Sub "setFrame" ___("Frame As Boolean");	COMMENT = "";
+	Sub "setKeyboardTracking" ___("Kt As Boolean");	COMMENT = "";
+	Sub "setReadOnly" ___("R As Boolean");	COMMENT = "";
+	Sub "setSpecialValueText" ___("Txt As String");	COMMENT = "";
+	Sub "setWrapping" ___("W As Boolean");	COMMENT = "";
+	Function "specialValueText" ___("") As "String";	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
+	Function "wrapping" ___("") As "Boolean";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	Slot "stepDown"___("");	COMMENT = "";
-	Slot "stepUp"___("");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	Slot "stepDown" ___("");	COMMENT = "";
+	Slot "stepUp" ___("");	COMMENT = "";
 
-	Signal "editingFinished"___("") Declare "void editingFinished()"	COMMENT = "";
+	Signal "editingFinished" ___("") Declare "void editingFinished()"	COMMENT = "";
 
 End_Class  
 
@@ -5462,26 +5462,26 @@ End_Class
 
 Class "QRegExp"
 
-	Function "cap"___("Nth As Integer") As "String";	COMMENT = "";
-	Function "captureCount"___("") As "Integer";	COMMENT = "";
-	Function "capturedTexts"___("") As "String";	COMMENT = "";
-	Function "caseSensitivity"___("") As "Qt::CaseSensitivity";	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-	Function "exactMatch"___("Str As String") As "Boolean";	COMMENT = "";
-	Function "indexIn"___("Str As String, Offset As Integer, CaretMode As QRegExp::CaretMode") As "Integer";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "isMinimal"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "lastIndexIn"___("Str As String, Offset As Integer, CaretMode As QRegExp::CaretMode") As "Integer";	COMMENT = "";
-	Function "matchedLength"___("") As "Integer";	COMMENT = "";
-	Function "pattern"___("") As "String";	COMMENT = "";
-	Function "patternSyntax"___("") As "QRegExp::PatternSyntax";	COMMENT = "";
-	Function "pos"___("Nth As Integer") As "Integer";	COMMENT = "";
-	Sub "setCaseSensitivity"___("Cs As Qt::CaseSensitivity");	COMMENT = "";
-	Sub "setMinimal"___("Minimal As Boolean");	COMMENT = "";
-	Sub "setPattern"___("Pattern As String");	COMMENT = "";
-	Sub "setPatternSyntax"___("Syntax As QRegExp::PatternSyntax");	COMMENT = "";
-	Sub "swap"___("Other As QRegExp");	COMMENT = "";
+	Function "cap" ___("Nth As Integer") As "String";	COMMENT = "";
+	Function "captureCount" ___("") As "Integer";	COMMENT = "";
+	Function "capturedTexts" ___("") As "String";	COMMENT = "";
+	Function "caseSensitivity" ___("") As "Qt::CaseSensitivity";	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+	Function "exactMatch" ___("Str As String") As "Boolean";	COMMENT = "";
+	Function "indexIn" ___("Str As String, Offset As Integer, CaretMode As QRegExp::CaretMode") As "Integer";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "isMinimal" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "lastIndexIn" ___("Str As String, Offset As Integer, CaretMode As QRegExp::CaretMode") As "Integer";	COMMENT = "";
+	Function "matchedLength" ___("") As "Integer";	COMMENT = "";
+	Function "pattern" ___("") As "String";	COMMENT = "";
+	Function "patternSyntax" ___("") As "QRegExp::PatternSyntax";	COMMENT = "";
+	Function "pos" ___("Nth As Integer") As "Integer";	COMMENT = "";
+	Sub "setCaseSensitivity" ___("Cs As Qt::CaseSensitivity");	COMMENT = "";
+	Sub "setMinimal" ___("Minimal As Boolean");	COMMENT = "";
+	Sub "setPattern" ___("Pattern As String");	COMMENT = "";
+	Sub "setPatternSyntax" ___("Syntax As QRegExp::PatternSyntax");	COMMENT = "";
+	Sub "swap" ___("Other As QRegExp");	COMMENT = "";
 
 End_Class  
 
@@ -5489,40 +5489,40 @@ End_Class
 
 Class "QPixmap" //SuperClass "QPaintDevice"
 
-	Function "cacheKey"___("") As "Integer";	COMMENT = "";
-	Function "convertFromImage"___("Image As QImage, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
-	Function "copy"___("Rectangle As QRect") As "QPixmap";	COMMENT = "";
-	Function "copy"___("X As Integer, Y As Integer, Width As Integer, Height As Integer") As "QPixmap";	COMMENT = "";
-	Function "createMaskFromColor"___("MaskColor As QColor, Mode As Qt::MaskMode") As "QBitmap";	COMMENT = "";
-	Function "createMaskFromColor2"___("MaskColor As QColor") As "QBitmap";	COMMENT = "";
-	Function "depth"___("") As "Integer";	COMMENT = "";
-	Sub "detach"___("");	COMMENT = "";
-	Sub "fill"___("Color As QColor");	COMMENT = "";
-	Sub "fill"___("Widget As QWidget, X As Integer, Y As Integer");	COMMENT = "";
-	Function "hasAlpha"___("") As "Boolean";	COMMENT = "";
-	Function "hasAlphaChannel"___("") As "Boolean";	COMMENT = "";
-	Function "height"___("") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isQBitmap"___("") As "Boolean";	COMMENT = "";
-	Function "load"___("FileName As String, Format As String, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
-	Function "loadFromData"___("Data As QByteArray, Format As String, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
-	Function "mask"___("") As "QBitmap";	COMMENT = "";
-	Function "rect"___("") As "QRect";	COMMENT = "";
-	Function "save"___("FileName As String, Format As String, Quality As Integer") As "Boolean";	COMMENT = "";
-	Function "scaled"___("Width As Integer, Height As Integer, AspectRatioMode As Qt::AspectRatioMode, TransformMode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
+	Function "cacheKey" ___("") As "Integer";	COMMENT = "";
+	Function "convertFromImage" ___("Image As QImage, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
+	Function "copy" ___("Rectangle As QRect") As "QPixmap";	COMMENT = "";
+	Function "copy" ___("X As Integer, Y As Integer, Width As Integer, Height As Integer") As "QPixmap";	COMMENT = "";
+	Function "createMaskFromColor" ___("MaskColor As QColor, Mode As Qt::MaskMode") As "QBitmap";	COMMENT = "";
+	Function "createMaskFromColor2" ___("MaskColor As QColor") As "QBitmap";	COMMENT = "";
+	Function "depth" ___("") As "Integer";	COMMENT = "";
+	Sub "detach" ___("");	COMMENT = "";
+	Sub "fill" ___("Color As QColor");	COMMENT = "";
+	Sub "fill" ___("Widget As QWidget, X As Integer, Y As Integer");	COMMENT = "";
+	Function "hasAlpha" ___("") As "Boolean";	COMMENT = "";
+	Function "hasAlphaChannel" ___("") As "Boolean";	COMMENT = "";
+	Function "height" ___("") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isQBitmap" ___("") As "Boolean";	COMMENT = "";
+	Function "load" ___("FileName As String, Format As String, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
+	Function "loadFromData" ___("Data As QByteArray, Format As String, Flags As Qt::ImageConversionFlags") As "Boolean";	COMMENT = "";
+	Function "mask" ___("") As "QBitmap";	COMMENT = "";
+	Function "rect" ___("") As "QRect";	COMMENT = "";
+	Function "save" ___("FileName As String, Format As String, Quality As Integer") As "Boolean";	COMMENT = "";
+	Function "scaled" ___("Width As Integer, Height As Integer, AspectRatioMode As Qt::AspectRatioMode, TransformMode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
 
-	Function "scaledToHeight"___("Height As Integer, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
-	Function "scaledToWidth"___("Width As Integer, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
-	Sub "scroll"___("Dx As Integer, Dy As Integer, X As Integer, Y As Integer, Width As Integer, Height As Integer, Exposed As QRegion");	COMMENT = "";
-	Sub "scroll2"___("Dx As Integer, Dy As Integer, Rect As QRect, Exposed As QRegion");	COMMENT = "";
-	Sub "setMask"___("Mask As QBitmap");	COMMENT = "";
-	Function "size"___("") As "QSize";	COMMENT = "";
-	Sub "swap"___("Other As QPixmap");	COMMENT = "";
-	Function "toImage"___("") As "QImage";	COMMENT = "";
-	Function "toIcon"___("") As "QIcon";	COMMENT = "";
-	Function "transformed"___("Transform As QTransform, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
-	Function "transformed2"___("Matrix As QMatrix, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
-	Function "width"___("") As "Integer";	COMMENT = "";
+	Function "scaledToHeight" ___("Height As Integer, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
+	Function "scaledToWidth" ___("Width As Integer, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
+	Sub "scroll" ___("Dx As Integer, Dy As Integer, X As Integer, Y As Integer, Width As Integer, Height As Integer, Exposed As QRegion");	COMMENT = "";
+	Sub "scroll2" ___("Dx As Integer, Dy As Integer, Rect As QRect, Exposed As QRegion");	COMMENT = "";
+	Sub "setMask" ___("Mask As QBitmap");	COMMENT = "";
+	Function "size" ___("") As "QSize";	COMMENT = "";
+	Sub "swap" ___("Other As QPixmap");	COMMENT = "";
+	Function "toImage" ___("") As "QImage";	COMMENT = "";
+	Function "toIcon" ___("") As "QIcon";	COMMENT = "";
+	Function "transformed" ___("Transform As QTransform, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
+	Function "transformed2" ___("Matrix As QMatrix, Mode As Qt::TransformationMode") As "QPixmap";	COMMENT = "";
+	Function "width" ___("") As "Integer";	COMMENT = "";
 
 End_Class  
 
@@ -5533,21 +5533,21 @@ Class "QDialog" SuperClass "QWidget"
 	Property "modal" As "Boolean";
 	Property "sizeGripEnabled" As "Boolean";
 
-	Function "isSizeGripEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "result"___("") As "Integer";	COMMENT = "";
-	Sub "setModal"___("Modal As Boolean");	COMMENT = "";
-	Sub "setResult"___("I As Integer");	COMMENT = "";
-	Sub "setSizeGripEnabled"___("Enabled As Boolean");	COMMENT = "";
+	Function "isSizeGripEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "result" ___("") As "Integer";	COMMENT = "";
+	Sub "setModal" ___("Modal As Boolean");	COMMENT = "";
+	Sub "setResult" ___("I As Integer");	COMMENT = "";
+	Sub "setSizeGripEnabled" ___("Enabled As Boolean");	COMMENT = "";
 
-	Slot "accept"___("");	COMMENT = "";
-	Slot "done"___("R As Integer");	COMMENT = "";
-	Slot "exec"___("");	COMMENT = "";
-	Slot "open"___("");	COMMENT = "";
-	Slot "reject"___("");	COMMENT = "";
+	Slot "accept" ___("");	COMMENT = "";
+	Slot "done" ___("R As Integer");	COMMENT = "";
+	Slot "exec" ___("");	COMMENT = "";
+	Slot "open" ___("");	COMMENT = "";
+	Slot "reject" ___("");	COMMENT = "";
 
-	Signal "accepted"___("") Declare "void accepted()"	COMMENT = "";
-	Signal "finished"___("Result As Integer") Declare "void finished(int result)"	COMMENT = "";
-	Signal "rejected"___("") Declare "void rejected()"	COMMENT = "";
+	Signal "accepted" ___("") Declare "void accepted()"	COMMENT = "";
+	Signal "finished" ___("Result As Integer") Declare "void finished(int result)"	COMMENT = "";
+	Signal "rejected" ___("") Declare "void rejected()"	COMMENT = "";
 
 End_Class  
 
@@ -5559,27 +5559,27 @@ Class "QDialogButtonBox" SuperClass "QWidget"
 	Property "orientation" As "Qt::Orientation";	COMMENT = "";
 	Property "standardButtons" As "Qt::StandardButtons";	COMMENT = "";
 
-	Sub "addButton"___("Button As QAbstractButton, Role As QDialogButtonBox::ButtonRole");	COMMENT = "";
-	Function "addButton"___("Text As String, Role As QDialogButtonBox::ButtonRole") As "QPushButton";	COMMENT = "";
-	Function "addButton2"___("Button As QDialogButtonBox::StandardButton") As "QPushButton";	COMMENT = "";
-	Function "button"___("Which As QDialogButtonBox::StandardButton") As "QDialogButtonBox::ButtonRole";	COMMENT = "";
-	Function "buttonRole"___("button As QAbstractButton") As "QDialogButtonBox::ButtonRole";	COMMENT = "";
+	Sub "addButton" ___("Button As QAbstractButton, Role As QDialogButtonBox::ButtonRole");	COMMENT = "";
+	Function "addButton" ___("Text As String, Role As QDialogButtonBox::ButtonRole") As "QPushButton";	COMMENT = "";
+	Function "addButton2" ___("Button As QDialogButtonBox::StandardButton") As "QPushButton";	COMMENT = "";
+	Function "button" ___("Which As QDialogButtonBox::StandardButton") As "QDialogButtonBox::ButtonRole";	COMMENT = "";
+	Function "buttonRole" ___("button As QAbstractButton") As "QDialogButtonBox::ButtonRole";	COMMENT = "";
 
-	//Function "buttons"___("") As "List";	COMMENT = "";
-	Function "centerButtons"___("") As "Boolean";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "orientation"___("") As "Qt::Orientation";	COMMENT = "";
-	Sub "removeButton"___("Button As QAbstractButton");	COMMENT = "";
-	Sub "setCenterButtons"___("Center As Boolean");	COMMENT = "";
-	Sub "setOrientation"___("Orientation As Qt::Orientation");	COMMENT = "";
-	Sub "setStandardButtons"___("Buttons As QDialogButtonBox::StandardButtons");	COMMENT = "";
-	//Function "standardButton"___("") As "QDialogButtonBox::StandardButton";	COMMENT = "";
-	Function "standardButtons"___("") As "QDialogButtonBox::StandardButtons";	COMMENT = "";
+	//Function "buttons" ___("") As "List";	COMMENT = "";
+	Function "centerButtons" ___("") As "Boolean";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "orientation" ___("") As "Qt::Orientation";	COMMENT = "";
+	Sub "removeButton" ___("Button As QAbstractButton");	COMMENT = "";
+	Sub "setCenterButtons" ___("Center As Boolean");	COMMENT = "";
+	Sub "setOrientation" ___("Orientation As Qt::Orientation");	COMMENT = "";
+	Sub "setStandardButtons" ___("Buttons As QDialogButtonBox::StandardButtons");	COMMENT = "";
+	//Function "standardButton" ___("") As "QDialogButtonBox::StandardButton";	COMMENT = "";
+	Function "standardButtons" ___("") As "QDialogButtonBox::StandardButtons";	COMMENT = "";
 
-	Signal "accepted"___("") Declare "void accepted()"	COMMENT = "";
-	Signal "clicked"___("Button As QAbstractButton") Declare "void clicked(QAbstractButton *button)"	COMMENT = "";
-	Signal "helpRequested"___("") Declare "void helpRequested()"	COMMENT = "";
-	Signal "rejected"___("") Declare "void rejected()"	COMMENT = "";
+	Signal "accepted" ___("") Declare "void accepted()"	COMMENT = "";
+	Signal "clicked" ___("Button As QAbstractButton") Declare "void clicked(QAbstractButton *button)"	COMMENT = "";
+	Signal "helpRequested" ___("") Declare "void helpRequested()"	COMMENT = "";
+	Signal "rejected" ___("") Declare "void rejected()"	COMMENT = "";
 
 End_Class  
 
@@ -5587,39 +5587,39 @@ End_Class
 
 Class "QDir"
 
-	Function "absoluteFilePath"___("FileName As String") As "String";	COMMENT = "";
-	Function "absolutePath"___("") As "String";	COMMENT = "";
-	Function "canonicalPath"___("") As "String";	COMMENT = "";
-	Function "cd"___("DirName As String") As "Boolean";	COMMENT = "";
-	Function "cdUp"___("") As "Boolean";	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";	
-	Function "dirName"___("") As "String";	COMMENT = "";
-	Function "entryInfoList"___("NameFilters As QStringList, Filters As QDir::Filters, Sort As QDir::SortFlags") As "List";	COMMENT = "";
-	Function "entryList"___("NameFilters As QStringList, Filters As QDir::Filters, Sort As QDir::SortFlags") As "QStringList";	COMMENT = "";
-	Function "exists"___("FileName As String") As "Boolean";	COMMENT = "";
-	Function "exists"___("") As "Boolean";	COMMENT = "";
-	Function "filePath"___("FileName As String") As "String";	COMMENT = "";
-	Function "filter"___("") As "QDir::Filters";	COMMENT = "";
-	Function "isAbsolute"___("") As "Boolean";	COMMENT = "";
-	Function "isReadable"___("") As "Boolean";	COMMENT = "";
-	Function "isRelative"___("") As "Boolean";	COMMENT = "";
-	Function "isRoot"___("") As "Boolean";	COMMENT = "";
-	Function "makeAbsolute"___("") As "Boolean";	COMMENT = "";
-	Function "mkdir"___("DirName As String") As "Boolean";	COMMENT = "";
-	Function "mkpath"___("DirPath As String") As "Boolean";	COMMENT = "";
-	Function "nameFilters"___("") As "QStringList";	COMMENT = "";
-	Function "path"___("") As "String";	COMMENT = "";
-	Sub "refresh"___("");	COMMENT = "";
-	Function "relativeFilePath"___("FileName As String") As "String";	COMMENT = "";
-	Function "remove"___("FileName As String") As "Boolean";	COMMENT = "";
-	Function "rename"___("OldName As String, NewName As String") As "Boolean";	COMMENT = "";
-	Function "rmdir"___("DirName As String") As "Boolean";	COMMENT = "";
-	//Function "rmPath"___("DirPath As String") As "Boolean";	COMMENT = "";
-	Sub "setFilter"___("Filters As QDir::Filters");	COMMENT = "";
-	Sub "setNameFilters"___("NameFilters As QStringList");	COMMENT = "";
-	Sub "setPath"___("Path As String");	COMMENT = "";
-	Sub "setSorting"___("Sort As QDir::SortFlags");	COMMENT = "";
-	Function "sorting"___("") As "QDir::SortFlags";	COMMENT = "";
+	Function "absoluteFilePath" ___("FileName As String") As "String";	COMMENT = "";
+	Function "absolutePath" ___("") As "String";	COMMENT = "";
+	Function "canonicalPath" ___("") As "String";	COMMENT = "";
+	Function "cd" ___("DirName As String") As "Boolean";	COMMENT = "";
+	Function "cdUp" ___("") As "Boolean";	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	Function "dirName" ___("") As "String";	COMMENT = "";
+	Function "entryInfoList" ___("NameFilters As QStringList, Filters As QDir::Filters, Sort As QDir::SortFlags") As "List";	COMMENT = "";
+	Function "entryList" ___("NameFilters As QStringList, Filters As QDir::Filters, Sort As QDir::SortFlags") As "QStringList";	COMMENT = "";
+	Function "exists" ___("FileName As String") As "Boolean";	COMMENT = "";
+	Function "exists" ___("") As "Boolean";	COMMENT = "";
+	Function "filePath" ___("FileName As String") As "String";	COMMENT = "";
+	Function "filter" ___("") As "QDir::Filters";	COMMENT = "";
+	Function "isAbsolute" ___("") As "Boolean";	COMMENT = "";
+	Function "isReadable" ___("") As "Boolean";	COMMENT = "";
+	Function "isRelative" ___("") As "Boolean";	COMMENT = "";
+	Function "isRoot" ___("") As "Boolean";	COMMENT = "";
+	Function "makeAbsolute" ___("") As "Boolean";	COMMENT = "";
+	Function "mkdir" ___("DirName As String") As "Boolean";	COMMENT = "";
+	Function "mkpath" ___("DirPath As String") As "Boolean";	COMMENT = "";
+	Function "nameFilters" ___("") As "QStringList";	COMMENT = "";
+	Function "path" ___("") As "String";	COMMENT = "";
+	Sub "refresh" ___("");	COMMENT = "";
+	Function "relativeFilePath" ___("FileName As String") As "String";	COMMENT = "";
+	Function "remove" ___("FileName As String") As "Boolean";	COMMENT = "";
+	Function "rename" ___("OldName As String, NewName As String") As "Boolean";	COMMENT = "";
+	Function "rmdir" ___("DirName As String") As "Boolean";	COMMENT = "";
+	//Function "rmPath" ___("DirPath As String") As "Boolean";	COMMENT = "";
+	Sub "setFilter" ___("Filters As QDir::Filters");	COMMENT = "";
+	Sub "setNameFilters" ___("NameFilters As QStringList");	COMMENT = "";
+	Sub "setPath" ___("Path As String");	COMMENT = "";
+	Sub "setSorting" ___("Sort As QDir::SortFlags");	COMMENT = "";
+	Function "sorting" ___("") As "QDir::SortFlags";	COMMENT = "";
 
 End_Class  
 
@@ -5635,34 +5635,34 @@ Class "QTextBrowser" SuperClass "QTextEdit"
 	Property "source" As "QUrl";	COMMENT = "";
 	Property "undoRedoEnabled" As "Boolean";	COMMENT = "";
 
-	Function "backwardHistoryCount"___("") As "Integer";	COMMENT = "";
-	Sub "clearHistory"___("");	COMMENT = "";
-	Function "forwardHistoryCount"___("") As "Integer";	COMMENT = "";
-	Function "historyTitle"___("I As Integer") As "String";	COMMENT = "";
-	Function "historyUrl"___("I As Integer") As "QUrl";	COMMENT = "";
-	Function "isBackwardAvailable"___("") As "Boolean";	COMMENT = "";
-	Function "isForwardAvailable"___("") As "Boolean";	COMMENT = "";
-	Function "openExternalLinks"___("") As "Boolean";	COMMENT = "";
-	Function "openLinks"___("") As "Boolean";	COMMENT = "";
-	Function "searchPaths"___("") As "QStringList";	COMMENT = "";
-	Sub "setOpenExternalLinks"___("Open As Boolean");	COMMENT = "";
-	Sub "setOpenLinks"___("Open As Boolean");	COMMENT = "";
-	Sub "setSearchPaths"___("Paths As QStringList");	COMMENT = "";
-	Function "source"___("") As "QUrl";	COMMENT = "";
+	Function "backwardHistoryCount" ___("") As "Integer";	COMMENT = "";
+	Sub "clearHistory" ___("");	COMMENT = "";
+	Function "forwardHistoryCount" ___("") As "Integer";	COMMENT = "";
+	Function "historyTitle" ___("I As Integer") As "String";	COMMENT = "";
+	Function "historyUrl" ___("I As Integer") As "QUrl";	COMMENT = "";
+	Function "isBackwardAvailable" ___("") As "Boolean";	COMMENT = "";
+	Function "isForwardAvailable" ___("") As "Boolean";	COMMENT = "";
+	Function "openExternalLinks" ___("") As "Boolean";	COMMENT = "";
+	Function "openLinks" ___("") As "Boolean";	COMMENT = "";
+	Function "searchPaths" ___("") As "QStringList";	COMMENT = "";
+	Sub "setOpenExternalLinks" ___("Open As Boolean");	COMMENT = "";
+	Sub "setOpenLinks" ___("Open As Boolean");	COMMENT = "";
+	Sub "setSearchPaths" ___("Paths As QStringList");	COMMENT = "";
+	Function "source" ___("") As "QUrl";	COMMENT = "";
 
-	Slot "backward"___("");	COMMENT = "";
-	Slot "forward"___("");	COMMENT = "";
-	Slot "home"___("");	COMMENT = "";
-	Slot "reload"___("");	COMMENT = "";
-	Slot "setSource"___("Name As QUrl");	COMMENT = "";
+	Slot "backward" ___("");	COMMENT = "";
+	Slot "forward" ___("");	COMMENT = "";
+	Slot "home" ___("");	COMMENT = "";
+	Slot "reload" ___("");	COMMENT = "";
+	Slot "setSource" ___("Name As QUrl");	COMMENT = "";
 
-	Signal "anchorClicked"___("Link As QUrl") Declare "void anchorClicked(const QUrl & link)"	COMMENT = "";
-	Signal "backwardAvailable"___("Available As Boolean") Declare "void backwardAvailable(bool available)"	COMMENT = "";
-	Signal "forwardAvailable"___("Available As Boolean") Declare "void forwardAvailable(bool available)"	COMMENT = "";
-	Signal "highlighted"___("Link As String") Declare "void highlighted(const QString & link)"	COMMENT = "";
-	Signal "highlighted2"___("Link As QUrl") Declare "void highlighted(const QUrl & link)"	COMMENT = "";
-	Signal "historyChanged"___("") Declare "void historyChanged()"	COMMENT = "";
-	Signal "sourceChanged"___("Src As QUrl") Declare "void sourceChanged(const QUrl & src)"	COMMENT = "";
+	Signal "anchorClicked" ___("Link As QUrl") Declare "void anchorClicked(const QUrl & link)"	COMMENT = "";
+	Signal "backwardAvailable" ___("Available As Boolean") Declare "void backwardAvailable(bool available)"	COMMENT = "";
+	Signal "forwardAvailable" ___("Available As Boolean") Declare "void forwardAvailable(bool available)"	COMMENT = "";
+	Signal "highlighted" ___("Link As String") Declare "void highlighted(const QString & link)"	COMMENT = "";
+	Signal "highlighted2" ___("Link As QUrl") Declare "void highlighted(const QUrl & link)"	COMMENT = "";
+	Signal "historyChanged" ___("") Declare "void historyChanged()"	COMMENT = "";
+	Signal "sourceChanged" ___("Src As QUrl") Declare "void sourceChanged(const QUrl & src)"	COMMENT = "";
 
 End_Class  
 
@@ -5670,16 +5670,16 @@ End_Class
 
 Class "QPicture" //SuperClass "QPaintDevice"
 
-	Function "boundingRect"___("") As "QRect";	COMMENT = "";
-	Function "data"___("") As "String";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "load"___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
-	Function "play"___("Painter As QPainter") As "Boolean";	COMMENT = "";
-	Function "save"___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
-	Sub "setBoundingRect"___("R As QRect");	COMMENT = "";
-	Sub "setData"___("Data As String, Size As Integer");	COMMENT = "";
-	Function "size"___("") As "Integer";	COMMENT = "";
-	Sub "swap"___("Other As QPicture");	COMMENT = "";
+	Function "boundingRect" ___("") As "QRect";	COMMENT = "";
+	Function "data" ___("") As "String";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "load" ___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
+	Function "play" ___("Painter As QPainter") As "Boolean";	COMMENT = "";
+	Function "save" ___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
+	Sub "setBoundingRect" ___("R As QRect");	COMMENT = "";
+	Sub "setData" ___("Data As String, Size As Integer");	COMMENT = "";
+	Function "size" ___("") As "Integer";	COMMENT = "";
+	Sub "swap" ___("Other As QPicture");	COMMENT = "";
 
 End_Class  
 
@@ -5687,10 +5687,10 @@ End_Class
 
 Class "QSplitterHandle" SuperClass "QWidget"
 	
-	Function "opaqueResize"___("") As "Boolean";	COMMENT = "";
-	Function "orientation"___("") As "Qt::Orientation";	COMMENT = "";
-	Sub "setOrientation"___("Orientation As Qt::Orientation");	COMMENT = "";
-	Function "splitter"___("") As "QSplitter";	COMMENT = "";
+	Function "opaqueResize" ___("") As "Boolean";	COMMENT = "";
+	Function "orientation" ___("") As "Qt::Orientation";	COMMENT = "";
+	Sub "setOrientation" ___("Orientation As Qt::Orientation");	COMMENT = "";
+	Function "splitter" ___("") As "QSplitter";	COMMENT = "";
 
 End_Class  
 
@@ -5714,68 +5714,68 @@ Class "QPlainTextEdit" SuperClass "QAbstractScrollArea"
 	Property "undoRedoEnabled" As "Boolean";	COMMENT = "";
 	Property "wordWrapMode" As "QTextOption::WrapMode";	COMMENT = "";
 
-	Function "anchorAt"___("Pos As QPoint") As "String";	COMMENT = "";
-	Function "backgroundVisible"___("") As "Boolean";	COMMENT = "";
-	Function "blockCount"___("") As "Integer";	COMMENT = "";
-	Function "canPaste"___("") As "Boolean";	COMMENT = "";
-	Function "centerOnScroll"___("") As "Boolean";	COMMENT = "";
-	Function "createStandardContextMenu"___("") As "QMenu";	COMMENT = "";
-	Function "cursorForPosition"___("Pos As QPoint") As "QTextCursor";	COMMENT = "";
-	Function "cursorWidth"___("") As "Integer";	COMMENT = "";
-	Function "document"___("") As "QTextDocument";	COMMENT = "";
-	Function "documentTitle"___("") As "String";	COMMENT = "";
-	Sub "ensureCursorVisible"___("");	COMMENT = "";
-	Function "find"___("Exp As String, Options As QTextDocument::FindFlags") As "Boolean";	COMMENT = "";
-	Function "isReadOnly"___("") As "Boolean";	COMMENT = "";
-	Function "isUndoRedoEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "lineWrapMode"___("") As "QPlainTextEdit::LineWrapMode";	COMMENT = "";
-	Function "maximumBlockCount"___("") As "Integer";	COMMENT = "";
-	Sub "moveCursor"___("Operation As QTextCursor::MoveOperation, Mode As QTextCursor::MoveMode");	COMMENT = "";
-	Function "overwriteMode"___("") As "Boolean";	COMMENT = "";
-	Sub "print"___("Printer As QPrinter");	COMMENT = "";
-	Sub "setBackgroundVisible"___("Visible As Boolean");	COMMENT = "";
-	Sub "setCenterOnScroll"___("Enabled As Boolean");	COMMENT = "";
-	Sub "setCursorWidth"___("Width As Integer");	COMMENT = "";
-	Sub "setDocument"___("Document As QTextDocument");	COMMENT = "";
-	Sub "setDocumentTitle"___("Title As String");	COMMENT = "";
-	Sub "setLineWrapMode"___("Mode As QPlainTextEdit::LineWrapMode");	COMMENT = "";
-	Sub "setMaximumBlockCount"___("Maximum As Integer");	COMMENT = "";
-	Sub "setOverwriteMode"___("Overwrite As Boolean");	COMMENT = "";
-	Sub "setReadOnly"___("Ro As Boolean");	COMMENT = "";
-	Sub "setTabChangesFocus"___("B As Boolean");	COMMENT = "";
-	Sub "setTabStopWidth"___("Width As Integer");	COMMENT = "";
-	Sub "setTextCursor"___("Cursor As QTextCursor");	COMMENT = "";
-	Sub "setTextInteractionFlags"___("Flags As Qt::TextInteractionFlags");	COMMENT = "";
-	Sub "setUndoRedoEnabled"___("Enable As Boolean");	COMMENT = "";
-	Function "tabChangesFocus"___("") As "Boolean";	COMMENT = "";
-	Function "tabStopWidth"___("") As "Integer";	COMMENT = "";
-	Function "textCursor"___("") As "QTextCursor";	COMMENT = "";
-	Function "textInteractionFlags"___("") As "Qt::TextInteractionFlags";	COMMENT = "";
-	Function "toPlainText"___("") As "String";	COMMENT = "";
-	Function "wordWrapMode"___("") As "QTextOption::WrapMode";	COMMENT = "";
+	Function "anchorAt" ___("Pos As QPoint") As "String";	COMMENT = "";
+	Function "backgroundVisible" ___("") As "Boolean";	COMMENT = "";
+	Function "blockCount" ___("") As "Integer";	COMMENT = "";
+	Function "canPaste" ___("") As "Boolean";	COMMENT = "";
+	Function "centerOnScroll" ___("") As "Boolean";	COMMENT = "";
+	Function "createStandardContextMenu" ___("") As "QMenu";	COMMENT = "";
+	Function "cursorForPosition" ___("Pos As QPoint") As "QTextCursor";	COMMENT = "";
+	Function "cursorWidth" ___("") As "Integer";	COMMENT = "";
+	Function "document" ___("") As "QTextDocument";	COMMENT = "";
+	Function "documentTitle" ___("") As "String";	COMMENT = "";
+	Sub "ensureCursorVisible" ___("");	COMMENT = "";
+	Function "find" ___("Exp As String, Options As QTextDocument::FindFlags") As "Boolean";	COMMENT = "";
+	Function "isReadOnly" ___("") As "Boolean";	COMMENT = "";
+	Function "isUndoRedoEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "lineWrapMode" ___("") As "QPlainTextEdit::LineWrapMode";	COMMENT = "";
+	Function "maximumBlockCount" ___("") As "Integer";	COMMENT = "";
+	Sub "moveCursor" ___("Operation As QTextCursor::MoveOperation, Mode As QTextCursor::MoveMode");	COMMENT = "";
+	Function "overwriteMode" ___("") As "Boolean";	COMMENT = "";
+	Sub "print" ___("Printer As QPrinter");	COMMENT = "";
+	Sub "setBackgroundVisible" ___("Visible As Boolean");	COMMENT = "";
+	Sub "setCenterOnScroll" ___("Enabled As Boolean");	COMMENT = "";
+	Sub "setCursorWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "setDocument" ___("Document As QTextDocument");	COMMENT = "";
+	Sub "setDocumentTitle" ___("Title As String");	COMMENT = "";
+	Sub "setLineWrapMode" ___("Mode As QPlainTextEdit::LineWrapMode");	COMMENT = "";
+	Sub "setMaximumBlockCount" ___("Maximum As Integer");	COMMENT = "";
+	Sub "setOverwriteMode" ___("Overwrite As Boolean");	COMMENT = "";
+	Sub "setReadOnly" ___("Ro As Boolean");	COMMENT = "";
+	Sub "setTabChangesFocus" ___("B As Boolean");	COMMENT = "";
+	Sub "setTabStopWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "setTextCursor" ___("Cursor As QTextCursor");	COMMENT = "";
+	Sub "setTextInteractionFlags" ___("Flags As Qt::TextInteractionFlags");	COMMENT = "";
+	Sub "setUndoRedoEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Function "tabChangesFocus" ___("") As "Boolean";	COMMENT = "";
+	Function "tabStopWidth" ___("") As "Integer";	COMMENT = "";
+	Function "textCursor" ___("") As "QTextCursor";	COMMENT = "";
+	Function "textInteractionFlags" ___("") As "Qt::TextInteractionFlags";	COMMENT = "";
+	Function "toPlainText" ___("") As "String";	COMMENT = "";
+	Function "wordWrapMode" ___("") As "QTextOption::WrapMode";	COMMENT = "";
 
-	Slot "appendHtml"___("Html As String");	COMMENT = "";
-	Slot "appendPlainText"___("Text As String");	COMMENT = "";
-	Slot "centerCursor"___("");	COMMENT = "";
-	Slot "clear"___("");	COMMENT = "";
-	Slot "copy"___("");	COMMENT = "";
-	Slot "cut"___("");	COMMENT = "";
-	Slot "insertPlainText"___("Text As String");	COMMENT = "";
-	Slot "paste"___("");	COMMENT = "";
-	Slot "redo"___("");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	Slot "setPlainText"___("Text As String");	COMMENT = "";
-	Slot "undo"___("");	COMMENT = "";
+	Slot "appendHtml" ___("Html As String");	COMMENT = "";
+	Slot "appendPlainText" ___("Text As String");	COMMENT = "";
+	Slot "centerCursor" ___("");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "copy" ___("");	COMMENT = "";
+	Slot "cut" ___("");	COMMENT = "";
+	Slot "insertPlainText" ___("Text As String");	COMMENT = "";
+	Slot "paste" ___("");	COMMENT = "";
+	Slot "redo" ___("");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	Slot "setPlainText" ___("Text As String");	COMMENT = "";
+	Slot "undo" ___("");	COMMENT = "";
 
-	Signal "blockCountChanged"___("NewBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"	COMMENT = "";
-	Signal "copyAvailable"___("Yes As Boolean") Declare "void copyAvailable(bool yes)"	COMMENT = "";
-	Signal "cursorPositionChanged"___("") Declare "void cursorPositionChanged()"	COMMENT = "";
-	Signal "modificationChanged"___("Changed As Boolean") Declare "void modificationChanged(bool changed)"	COMMENT = "";
-	Signal "redoAvailable"___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
-	Signal "textChanged"___("") Declare "void textChanged()"	COMMENT = "";
-	Signal "undoAvailable"___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";	
-	Signal "updateRequest"___("Rect As QRect, Dy As Integer") Declare "void updateRequest(const QRect & rect, int dy)"	COMMENT = "";
+	Signal "blockCountChanged" ___("NewBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"	COMMENT = "";
+	Signal "copyAvailable" ___("Yes As Boolean") Declare "void copyAvailable(bool yes)"	COMMENT = "";
+	Signal "cursorPositionChanged" ___("") Declare "void cursorPositionChanged()"	COMMENT = "";
+	Signal "modificationChanged" ___("Changed As Boolean") Declare "void modificationChanged(bool changed)"	COMMENT = "";
+	Signal "redoAvailable" ___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "textChanged" ___("") Declare "void textChanged()"	COMMENT = "";
+	Signal "undoAvailable" ___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";
+	Signal "updateRequest" ___("Rect As QRect, Dy As Integer") Declare "void updateRequest(const QRect & rect, int dy)"	COMMENT = "";
 
 End_Class
 
@@ -5802,120 +5802,120 @@ Class "QTableWidget" SuperClass "QTableView"
 	Property "textElideMode" As "Qt::TextElideMode";	COMMENT = "";
 	Property "verticalScrollMode" As "QTableWidget::ScrollMode";	COMMENT = "";
 
-	Function "alternatingRowColors"___("") As "Boolean";	COMMENT = "";
-	Function "autoScrollMargin"___("") As "Integer";	COMMENT = "";
-	Function "cellWidget"___("Row As Integer, Column As Integer") As "QWidget";	COMMENT = "";
-	Sub "closePersistentEditor"___("Item As QTableWidgetItem");	COMMENT = "";
-	Function "colorCount"___("") As "Integer";	COMMENT = "";
-	Function "column"___("Item As QTableWidgetItem") As "Integer";	COMMENT = "";
-	Function "columnCount"___("") As "Integer";	COMMENT = "";
-	Function "currentColumn"___("") As "Integer";	COMMENT = "";
-	//Function "currentIndex"___("") As "QModelIndex";	COMMENT = "";
-	Function "currentItem"___("") As "QTableWidgetItem";	COMMENT = "";
-	Function "currentRow"___("") As "Integer";	COMMENT = "";
-	Function "defaultDropAction"___("") As "Qt::DropAction";	COMMENT = "";
-	Function "depth"___("") As "Integer";	COMMENT = "";
-	Function "dragDropMode"___("") As "QTableWidget::DragDropMode";	COMMENT = "";
-	Function "dragDropOverwriteMode"___("") As "Boolean";	COMMENT = "";
-	Function "dragEnabled"___("") As "Boolean";	COMMENT = "";
-	Sub "editItem"___("Item As QTableWidgetItem");	COMMENT = "";
-	Function "editTriggers"___("") As "QTableWidget::EditTriggers";	COMMENT = "";
-	Function "findItems"___("Text As String, Flags As Qt::MatchFlags") As "List";	COMMENT = "";
-	Function "hasAutoScroll"___("") As "Boolean";	COMMENT = "";
-	Function "height"___("") As "Integer";	COMMENT = "";
-	Function "heightMM"___("") As "Integer";	COMMENT = "";
-	Function "horizontalHeaderItem"___("Column As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "horizontalScrollMode"___("") As "QTableWidget::ScrollMode";	COMMENT = "";
-	Function "iconSize"___("") As "QSize";	COMMENT = "";
-	//Function "itemAt"___("Point As QPoint") As "QModelIndex";	COMMENT = "";
-	//Function "indexWidget"___("Index As QModelIndex") As "QWidget";	COMMENT = "";
-	Function "item"___("Row As Integer, Column As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "itemAt"___("Point As QPoint") As "QTableWidgetItem";	COMMENT = "";
-	Function "itemAt"___("Ax As Integer, Ay As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Sub "removeCellWidget"___("Row As Integer, Column As Integer");	COMMENT = "";
-	Function "row"___("Item As QTableWidgetItem") As "Integer";	COMMENT = "";
-	Function "rowCount"___("") As "Integer";	COMMENT = "";
-	Sub "scrollToItem"___("Item As QTableWidgetItem, Hint As QTableWidget::ScrollHint");	COMMENT = "";
-	//Sub "scrollTo"___("Index As QModelIndex, Hint As QTableWidget::ScrollHint");	COMMENT = "";
-	Function "selectedItems"___("") As "List";	COMMENT = "";
-	//Function "selectedRanges"___("") As "List";	COMMENT = "";
-	Function "selectionBehavior"___("") As "QAbstractItemView::SelectionBehavior";	COMMENT = "";
-	Function "selectionMode"___("") As "QAbstractItemView::SelectionMode";	COMMENT = "";
-	Function "selectionModel"___("") As "QItemSelectionModel";	COMMENT = "";
-	Sub "setAlternatingRowColors"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAutoScroll"___("Enable As Boolean");	COMMENT = "";
-	Sub "setAutoScrollMargin"___("Margin As Integer");	COMMENT = "";
-	Sub "setCellWidget"___("Row As Integer, Column As Integer, Widget As QWidget");	COMMENT = "";
-	Sub "setColumnCount"___("Columns As Integer");	COMMENT = "";
-	Sub "setCurrentCell"___("Row As Integer, Column As Integer");	COMMENT = "";
-	Sub "setCurrentCell"___("Row As Integer, Column As Integer, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
-	Sub "setCurrentItem"___("Item As QTableWidgetItem");	COMMENT = "";
-	Sub "setCurrentItem"___("Item As QTableWidgetItem, QItemSelectionModel::SelectionFlags");	COMMENT = "";
-	Sub "setDefaultDropAction"___("DropAction As Qt::DropAction");	COMMENT = "";
-	Sub "setDragDropMode"___("Behavior As QTableWidget::DragDropMode");	COMMENT = "";
-	Sub "setDragDropOverwriteMode"___("Overwrite As Boolean");	COMMENT = "";
-	Sub "setDragEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setDropIndicatorShown"___("Enable As Boolean");	COMMENT = "";
-	Sub "setEditTriggers"___("Triggers As QTableWidget::EditTriggers");	COMMENT = "";
-	Sub "setHorizontalHeaderItem"___("Column As Integer, Item As QTableWidgetItem");	COMMENT = "";
-	Sub "setHorizontalHeaderLabels"___("Labels As List");	COMMENT = "";
-	//Sub "setHorizontalScrollMode"___("Mode As ScrollMode");	COMMENT = "";
-	Sub "setIconSize"___("Size As QSize");	COMMENT = "";
-	Sub "setItem"___("Row As Integer, Column As Integer, Item As QTableWidgetItem");	COMMENT = "";
-	//Sub "setRangeSelected"___("Range As QTableWidgetSelectionRange, Select As Boolean");	COMMENT = "";
-	Sub "setRowCount"___("Rows As Integer");	COMMENT = "";
-	Sub "setSelectionBehavior"___("Behavior As QAbstractItemView::SelectionBehavior");	COMMENT = "";
-	//Sub "setSelectionMode"___("Mode As QAbstractItemView::SelectionMode");	COMMENT = "";
-	//Sub "setSelectionModel"___("SelectionModel As QItemSelectionModel");	COMMENT = "";
-	Sub "setTabKeyNavigation"___("Enable As Boolean");	COMMENT = "";
-	Sub "setTextElideMode"___("Mode As Qt::TextElideMode");	COMMENT = "";
-	Sub "setVerticalHeaderItem"___("Row As Integer, Item As QTableWidgetItem");	COMMENT = "";
-	Sub "setVerticalHeaderLabels"___("Labels As List");	COMMENT = "";
-	Sub "setVerticalScrollMode"___("Mode As QTableWidget::ScrollMode");	COMMENT = "";
-	Function "showDropIndicator"___("") As "Boolean";	COMMENT = "";
-	//Function "sizeHintForColumn"___("Column As Integer") As "Integer";	COMMENT = "";
-	//Function "sizeHintForRow"___("Row As Integer") As "Integer";	COMMENT = "";
-	Sub "sortItems"___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
-	Function "tabKeyNavigation"___("") As "Boolean";	COMMENT = "";
-	Function "takeHorizontalHeaderItem"___("Column As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "takeItem"___("Row As Integer, Column As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "takeVerticalHeaderItem"___("Row As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "textElideMode"___("") As "Qt::TextElideMode";	COMMENT = "";
-	Function "verticalHeaderItem"___("Row As Integer") As "QTableWidgetItem";	COMMENT = "";
-	Function "verticalScrollMode"___("") As "QTableWidget::ScrollMode";	COMMENT = "";
-	Function "width"___("") As "Integer";	COMMENT = "";
-	Function "widthMM"___("") As "Integer";	COMMENT = "";
+	Function "alternatingRowColors" ___("") As "Boolean";	COMMENT = "";
+	Function "autoScrollMargin" ___("") As "Integer";	COMMENT = "";
+	Function "cellWidget" ___("Row As Integer, Column As Integer") As "QWidget";	COMMENT = "";
+	Sub "closePersistentEditor" ___("Item As QTableWidgetItem");	COMMENT = "";
+	Function "colorCount" ___("") As "Integer";	COMMENT = "";
+	Function "column" ___("Item As QTableWidgetItem") As "Integer";	COMMENT = "";
+	Function "columnCount" ___("") As "Integer";	COMMENT = "";
+	Function "currentColumn" ___("") As "Integer";	COMMENT = "";
+	//Function "currentIndex" ___("") As "QModelIndex";	COMMENT = "";
+	Function "currentItem" ___("") As "QTableWidgetItem";	COMMENT = "";
+	Function "currentRow" ___("") As "Integer";	COMMENT = "";
+	Function "defaultDropAction" ___("") As "Qt::DropAction";	COMMENT = "";
+	Function "depth" ___("") As "Integer";	COMMENT = "";
+	Function "dragDropMode" ___("") As "QTableWidget::DragDropMode";	COMMENT = "";
+	Function "dragDropOverwriteMode" ___("") As "Boolean";	COMMENT = "";
+	Function "dragEnabled" ___("") As "Boolean";	COMMENT = "";
+	Sub "editItem" ___("Item As QTableWidgetItem");	COMMENT = "";
+	Function "editTriggers" ___("") As "QTableWidget::EditTriggers";	COMMENT = "";
+	Function "findItems" ___("Text As String, Flags As Qt::MatchFlags") As "List";	COMMENT = "";
+	Function "hasAutoScroll" ___("") As "Boolean";	COMMENT = "";
+	Function "height" ___("") As "Integer";	COMMENT = "";
+	Function "heightMM" ___("") As "Integer";	COMMENT = "";
+	Function "horizontalHeaderItem" ___("Column As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "horizontalScrollMode" ___("") As "QTableWidget::ScrollMode";	COMMENT = "";
+	Function "iconSize" ___("") As "QSize";	COMMENT = "";
+	//Function "itemAt" ___("Point As QPoint") As "QModelIndex";	COMMENT = "";
+	//Function "indexWidget" ___("Index As QModelIndex") As "QWidget";	COMMENT = "";
+	Function "item" ___("Row As Integer, Column As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "itemAt" ___("Point As QPoint") As "QTableWidgetItem";	COMMENT = "";
+	Function "itemAt" ___("Ax As Integer, Ay As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Sub "removeCellWidget" ___("Row As Integer, Column As Integer");	COMMENT = "";
+	Function "row" ___("Item As QTableWidgetItem") As "Integer";	COMMENT = "";
+	Function "rowCount" ___("") As "Integer";	COMMENT = "";
+	Sub "scrollToItem" ___("Item As QTableWidgetItem, Hint As QTableWidget::ScrollHint");	COMMENT = "";
+	//Sub "scrollTo" ___("Index As QModelIndex, Hint As QTableWidget::ScrollHint");	COMMENT = "";
+	Function "selectedItems" ___("") As "List";	COMMENT = "";
+	//Function "selectedRanges" ___("") As "List";	COMMENT = "";
+	Function "selectionBehavior" ___("") As "QAbstractItemView::SelectionBehavior";	COMMENT = "";
+	Function "selectionMode" ___("") As "QAbstractItemView::SelectionMode";	COMMENT = "";
+	Function "selectionModel" ___("") As "QItemSelectionModel";	COMMENT = "";
+	Sub "setAlternatingRowColors" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAutoScroll" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setAutoScrollMargin" ___("Margin As Integer");	COMMENT = "";
+	Sub "setCellWidget" ___("Row As Integer, Column As Integer, Widget As QWidget");	COMMENT = "";
+	Sub "setColumnCount" ___("Columns As Integer");	COMMENT = "";
+	Sub "setCurrentCell" ___("Row As Integer, Column As Integer");	COMMENT = "";
+	Sub "setCurrentCell" ___("Row As Integer, Column As Integer, Command As QItemSelectionModel::SelectionFlags");	COMMENT = "";
+	Sub "setCurrentItem" ___("Item As QTableWidgetItem");	COMMENT = "";
+	Sub "setCurrentItem" ___("Item As QTableWidgetItem, QItemSelectionModel::SelectionFlags");	COMMENT = "";
+	Sub "setDefaultDropAction" ___("DropAction As Qt::DropAction");	COMMENT = "";
+	Sub "setDragDropMode" ___("Behavior As QTableWidget::DragDropMode");	COMMENT = "";
+	Sub "setDragDropOverwriteMode" ___("Overwrite As Boolean");	COMMENT = "";
+	Sub "setDragEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setDropIndicatorShown" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setEditTriggers" ___("Triggers As QTableWidget::EditTriggers");	COMMENT = "";
+	Sub "setHorizontalHeaderItem" ___("Column As Integer, Item As QTableWidgetItem");	COMMENT = "";
+	Sub "setHorizontalHeaderLabels" ___("Labels As List");	COMMENT = "";
+	//Sub "setHorizontalScrollMode" ___("Mode As ScrollMode");	COMMENT = "";
+	Sub "setIconSize" ___("Size As QSize");	COMMENT = "";
+	Sub "setItem" ___("Row As Integer, Column As Integer, Item As QTableWidgetItem");	COMMENT = "";
+	//Sub "setRangeSelected" ___("Range As QTableWidgetSelectionRange, Select As Boolean");	COMMENT = "";
+	Sub "setRowCount" ___("Rows As Integer");	COMMENT = "";
+	Sub "setSelectionBehavior" ___("Behavior As QAbstractItemView::SelectionBehavior");	COMMENT = "";
+	//Sub "setSelectionMode" ___("Mode As QAbstractItemView::SelectionMode");	COMMENT = "";
+	//Sub "setSelectionModel" ___("SelectionModel As QItemSelectionModel");	COMMENT = "";
+	Sub "setTabKeyNavigation" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setTextElideMode" ___("Mode As Qt::TextElideMode");	COMMENT = "";
+	Sub "setVerticalHeaderItem" ___("Row As Integer, Item As QTableWidgetItem");	COMMENT = "";
+	Sub "setVerticalHeaderLabels" ___("Labels As List");	COMMENT = "";
+	Sub "setVerticalScrollMode" ___("Mode As QTableWidget::ScrollMode");	COMMENT = "";
+	Function "showDropIndicator" ___("") As "Boolean";	COMMENT = "";
+	//Function "sizeHintForColumn" ___("Column As Integer") As "Integer";	COMMENT = "";
+	//Function "sizeHintForRow" ___("Row As Integer") As "Integer";	COMMENT = "";
+	Sub "sortItems" ___("Column As Integer, Order As Qt::SortOrder");	COMMENT = "";
+	Function "tabKeyNavigation" ___("") As "Boolean";	COMMENT = "";
+	Function "takeHorizontalHeaderItem" ___("Column As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "takeItem" ___("Row As Integer, Column As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "takeVerticalHeaderItem" ___("Row As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "textElideMode" ___("") As "Qt::TextElideMode";	COMMENT = "";
+	Function "verticalHeaderItem" ___("Row As Integer") As "QTableWidgetItem";	COMMENT = "";
+	Function "verticalScrollMode" ___("") As "QTableWidget::ScrollMode";	COMMENT = "";
+	Function "width" ___("") As "Integer";	COMMENT = "";
+	Function "widthMM" ___("") As "Integer";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "clearContents"___("");	COMMENT = "";
-	Slot "clearSelection"___("");	COMMENT = "";
-	//Slot "edit"___("Index As QModelIndex");	COMMENT = "";
-	Slot "insertColumn"___("Column As Integer");	COMMENT = "";
-	Slot "insertRow"___("Row As Integer");	COMMENT = "";
-	Slot "removeColumn"___("Column As Integer");	COMMENT = "";
-	Slot "removeRow"___("Row As Integer");	COMMENT = "";
-	Slot "reset"___("");	COMMENT = "";
-	Slot "scrollToBottom"___("");	COMMENT = "";
-	Slot "scrollToItem"___("Item As QTableWidgetItem, Hint As QAbstractItemView::ScrollHint");	COMMENT = "";
-	Slot "scrollToTop"___("");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	//Slot "update"___("Index As QModelIndex");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "clearContents" ___("");	COMMENT = "";
+	Slot "clearSelection" ___("");	COMMENT = "";
+	//Slot "edit" ___("Index As QModelIndex");	COMMENT = "";
+	Slot "insertColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "insertRow" ___("Row As Integer");	COMMENT = "";
+	Slot "removeColumn" ___("Column As Integer");	COMMENT = "";
+	Slot "removeRow" ___("Row As Integer");	COMMENT = "";
+	Slot "reset" ___("");	COMMENT = "";
+	Slot "scrollToBottom" ___("");	COMMENT = "";
+	Slot "scrollToItem" ___("Item As QTableWidgetItem, Hint As QAbstractItemView::ScrollHint");	COMMENT = "";
+	Slot "scrollToTop" ___("");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	//Slot "update" ___("Index As QModelIndex");	COMMENT = "";
 
-	Signal "cellActivated"___("Row As Integer, Column As Integer") Declare "void cellActivated(int row, int column)"	COMMENT = "";
-	Signal "cellChanged"___("Row As Integer, Column As Integer") Declare "void cellChanged(int row, int column)"	COMMENT = "";
-	Signal "cellClicked"___("Row As Integer, Column As Integer") Declare "void cellClicked(int row, int column)"	COMMENT = "";
-	Signal "cellDoubleClicked"___("Row As Integer, Column As Integer") Declare "void cellDoubleClicked(int row, int column)"	COMMENT = "";
-	Signal "cellEntered"___("Row As Integer, Column As Integer") Declare "void cellEntered(int row, int column)"	COMMENT = "";
-	Signal "cellPressed"___("Row As Integer, Column As Integer") Declare "void cellPressed(int row, int column)"	COMMENT = "";
-	Signal "currentCellChanged"___("CurrentRow As Integer, CurrentColumn As Integer, PreviousRow As Integer, PreviousColumn As Integer") Declare "void currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)"	COMMENT = "";
-	Signal "currentItemChanged"___("Current As QTableWidgetItem, Previous As QTableWidgetItem") Declare "void currentItemChanged(QTableWidgetItem * current, QTableWidgetItem * previous)"	COMMENT = "";
-	Signal "itemActivated"___("Item As QTableWidgetItem") Declare "void itemActivated(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemChanged"___("Item As QTableWidgetItem") Declare "void itemChanged(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemClicked"___("Item As QTableWidgetItem") Declare "void itemClicked(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemDoubleClicked"___("Item As QTableWidgetItem") Declare "void itemDoubleClicked(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemEntered"___("Item As QTableWidgetItem") Declare "void itemEntered(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemPressed"___("Item As QTableWidgetItem") Declare "void itemPressed(QTableWidgetItem * item)"	COMMENT = "";
-	Signal "itemSelectionChanged"___("") Declare "void itemSelectionChanged()"	COMMENT = "";
+	Signal "cellActivated" ___("Row As Integer, Column As Integer") Declare "void cellActivated(int row, int column)"	COMMENT = "";
+	Signal "cellChanged" ___("Row As Integer, Column As Integer") Declare "void cellChanged(int row, int column)"	COMMENT = "";
+	Signal "cellClicked" ___("Row As Integer, Column As Integer") Declare "void cellClicked(int row, int column)"	COMMENT = "";
+	Signal "cellDoubleClicked" ___("Row As Integer, Column As Integer") Declare "void cellDoubleClicked(int row, int column)"	COMMENT = "";
+	Signal "cellEntered" ___("Row As Integer, Column As Integer") Declare "void cellEntered(int row, int column)"	COMMENT = "";
+	Signal "cellPressed" ___("Row As Integer, Column As Integer") Declare "void cellPressed(int row, int column)"	COMMENT = "";
+	Signal "currentCellChanged" ___("CurrentRow As Integer, CurrentColumn As Integer, PreviousRow As Integer, PreviousColumn As Integer") Declare "void currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)"	COMMENT = "";
+	Signal "currentItemChanged" ___("Current As QTableWidgetItem, Previous As QTableWidgetItem") Declare "void currentItemChanged(QTableWidgetItem * current, QTableWidgetItem * previous)"	COMMENT = "";
+	Signal "itemActivated" ___("Item As QTableWidgetItem") Declare "void itemActivated(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemChanged" ___("Item As QTableWidgetItem") Declare "void itemChanged(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemClicked" ___("Item As QTableWidgetItem") Declare "void itemClicked(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemDoubleClicked" ___("Item As QTableWidgetItem") Declare "void itemDoubleClicked(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemEntered" ___("Item As QTableWidgetItem") Declare "void itemEntered(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemPressed" ___("Item As QTableWidgetItem") Declare "void itemPressed(QTableWidgetItem * item)"	COMMENT = "";
+	Signal "itemSelectionChanged" ___("") Declare "void itemSelectionChanged()"	COMMENT = "";
 
   
 
@@ -5928,24 +5928,24 @@ End_Class
 
 Class "QStringList" //SuperClass "QList<QString>"
 
-	Function "toList"___("") As "List";	COMMENT = "";
-  Function "at"___("Index As Integer") As "String";	COMMENT = "";
-  Function "length"___("") As "Integer";	COMMENT = "";
+	Function "toList" ___("") As "List";	COMMENT = "";
+  Function "at" ___("Index As Integer") As "String";	COMMENT = "";
+  Function "length" ___("") As "Integer";	COMMENT = "";
 
-  Function "contains"___("Str As String, Cs As Qt::CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "filter"___("Str As String, Cs As Qt::CaseSensitivity") As "QStringList";	COMMENT = "";
-	Function "filter"___("Rx As QRegExp") As "QStringList";	COMMENT = "";
-	Function "indexOf"___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
-	Function "indexOf"___("Value As String, From As Integer") As "Integer";	COMMENT = "";
-	Function "join"___("Separator As String") As "String";	COMMENT = "";
-	Function "lastIndexOf"___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
-	Function "lastIndexOf"___("Value As String, From As Integer") As "Integer";	COMMENT = "";
-	Function "removeDuplicates"___("") As "Integer";	COMMENT = "";
-	Function "replaceInStrings"___("Before As String, After As String, Cs As Qt::CaseSensitivity") As "QStringList";	COMMENT = "";
-	Function "replaceInStrings"___("Rx As QRegExp, After As String") As "QStringList";	COMMENT = "";
-	Sub "sort"___("");	COMMENT = "";
+  Function "contains" ___("Str As String, Cs As Qt::CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "filter" ___("Str As String, Cs As Qt::CaseSensitivity") As "QStringList";	COMMENT = "";
+	Function "filter" ___("Rx As QRegExp") As "QStringList";	COMMENT = "";
+	Function "indexOf" ___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
+	Function "indexOf" ___("Value As String, From As Integer") As "Integer";	COMMENT = "";
+	Function "join" ___("Separator As String") As "String";	COMMENT = "";
+	Function "lastIndexOf" ___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
+	Function "lastIndexOf" ___("Value As String, From As Integer") As "Integer";	COMMENT = "";
+	Function "removeDuplicates" ___("") As "Integer";	COMMENT = "";
+	Function "replaceInStrings" ___("Before As String, After As String, Cs As Qt::CaseSensitivity") As "QStringList";	COMMENT = "";
+	Function "replaceInStrings" ___("Rx As QRegExp, After As String") As "QStringList";	COMMENT = "";
+	Sub "sort" ___("");	COMMENT = "";
 
-  Sub "append"___("Str As String");	COMMENT = "";
+  Sub "append" ___("Str As String");	COMMENT = "";
 
 End_Class
 
@@ -5964,49 +5964,49 @@ Class "QTabWidget" SuperClass "QWidget"
 	Property "tabsClosable" As "Boolean";	COMMENT = "";
 	Property "usesScrollButtons" As "Boolean";	COMMENT = "";
 
-	Function "addTab"___("Page As QWidget, Label As String") As "Integer";	COMMENT = "";
-	Function "addTab"___("Page As QWidget, Icon As QIcon, Label As String") As "Integer";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";
-	Function "currentIndex"___("") As "Integer";	COMMENT = "";
-	Function "currentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "documentMode"___("") As "Boolean";	COMMENT = "";
-	Function "elideMode"___("") As "Qt::TextElideMode";	COMMENT = "";
-	Function "iconSize"___("") As "QSize";	COMMENT = "";
-	Function "indexOf"___("W As QWidget") As "Integer";	COMMENT = "";
-	Function "insertTab"___("Index As Integer, Page As QWidget, Label As String") As "Integer";	COMMENT = "";
-	Function "insertTab"___("Index As Integer, Page As QWidget, Icon As QIcon, Label As String") As "Integer";	COMMENT = "";
-	Function "isMovable"___("") As "Boolean";	COMMENT = "";
-	Function "isTabEnabled"___("Index As Integer") As "Boolean";	COMMENT = "";
-	Sub "removeTab"___("Index As Integer");	COMMENT = "";
-	Sub "setDocumentMode"___("Set As Boolean");	COMMENT = "";
-	Sub "setElideMode"___("Mode As Qt::TextElideMode");	COMMENT = "";
-	Sub "setIconSize"___("Size As QSize");	COMMENT = "";
-	Sub "setMovable"___("Movable As Boolean");	COMMENT = "";
-	Sub "setTabEnabled"___("Index As Integer, Enable As Boolean");	COMMENT = "";
-	Sub "setTabIcon"___("Index As Integer, Icon As QIcon");	COMMENT = "";
-	Sub "setTabPosition"___("Position As QTabWidget::TabPosition");	COMMENT = "";
-	Sub "setTabShape"___("Shape As QTabWidget::TabShape");	COMMENT = "";
-	Sub "setTabText"___("Index As Integer, Label As String");	COMMENT = "";
-	Sub "setTabToolTip"___("Index As Integer, Tip As String");	COMMENT = "";
-	Sub "setTabWhatsThis"___("Index As Integer, Text As String");	COMMENT = "";
-	Sub "setTabsClosable"___("Closeable As Boolean");	COMMENT = "";
-	Sub "setUsesScrollButtons"___("UseButtons As Boolean");	COMMENT = "";
-	Function "tabIcon"___("Index As Integer") As "QIcon";	COMMENT = "";
-	Function "tabPosition"___("") As "QTabWidget::TabPosition";	COMMENT = "";
-	Function "tabShape"___("") As "QTabWidget::TabShape";	COMMENT = "";
-	Function "tabText"___("Index As Integer") As "String";	COMMENT = "";
-	Function "tabToolTip"___("Index As Integer") As "String";	COMMENT = "";
-	Function "tabWhatsThis"___("Index As Integer") As "String";	COMMENT = "";
-	Function "tabsClosable"___("") As "Boolean";	COMMENT = "";
-	Function "usesScrollButtons"___("") As "Boolean";	COMMENT = "";
-	Function "widget"___("Index As Integer") As "QWidget";	COMMENT = "";
+	Function "addTab" ___("Page As QWidget, Label As String") As "Integer";	COMMENT = "";
+	Function "addTab" ___("Page As QWidget, Icon As QIcon, Label As String") As "Integer";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	Function "currentIndex" ___("") As "Integer";	COMMENT = "";
+	Function "currentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "documentMode" ___("") As "Boolean";	COMMENT = "";
+	Function "elideMode" ___("") As "Qt::TextElideMode";	COMMENT = "";
+	Function "iconSize" ___("") As "QSize";	COMMENT = "";
+	Function "indexOf" ___("W As QWidget") As "Integer";	COMMENT = "";
+	Function "insertTab" ___("Index As Integer, Page As QWidget, Label As String") As "Integer";	COMMENT = "";
+	Function "insertTab" ___("Index As Integer, Page As QWidget, Icon As QIcon, Label As String") As "Integer";	COMMENT = "";
+	Function "isMovable" ___("") As "Boolean";	COMMENT = "";
+	Function "isTabEnabled" ___("Index As Integer") As "Boolean";	COMMENT = "";
+	Sub "removeTab" ___("Index As Integer");	COMMENT = "";
+	Sub "setDocumentMode" ___("Set As Boolean");	COMMENT = "";
+	Sub "setElideMode" ___("Mode As Qt::TextElideMode");	COMMENT = "";
+	Sub "setIconSize" ___("Size As QSize");	COMMENT = "";
+	Sub "setMovable" ___("Movable As Boolean");	COMMENT = "";
+	Sub "setTabEnabled" ___("Index As Integer, Enable As Boolean");	COMMENT = "";
+	Sub "setTabIcon" ___("Index As Integer, Icon As QIcon");	COMMENT = "";
+	Sub "setTabPosition" ___("Position As QTabWidget::TabPosition");	COMMENT = "";
+	Sub "setTabShape" ___("Shape As QTabWidget::TabShape");	COMMENT = "";
+	Sub "setTabText" ___("Index As Integer, Label As String");	COMMENT = "";
+	Sub "setTabToolTip" ___("Index As Integer, Tip As String");	COMMENT = "";
+	Sub "setTabWhatsThis" ___("Index As Integer, Text As String");	COMMENT = "";
+	Sub "setTabsClosable" ___("Closeable As Boolean");	COMMENT = "";
+	Sub "setUsesScrollButtons" ___("UseButtons As Boolean");	COMMENT = "";
+	Function "tabIcon" ___("Index As Integer") As "QIcon";	COMMENT = "";
+	Function "tabPosition" ___("") As "QTabWidget::TabPosition";	COMMENT = "";
+	Function "tabShape" ___("") As "QTabWidget::TabShape";	COMMENT = "";
+	Function "tabText" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabToolTip" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabWhatsThis" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabsClosable" ___("") As "Boolean";	COMMENT = "";
+	Function "usesScrollButtons" ___("") As "Boolean";	COMMENT = "";
+	Function "widget" ___("Index As Integer") As "QWidget";	COMMENT = "";
 
-	Slot "setCurrentIndex"___("Index As Integer");	COMMENT = "";
-	Slot "setCurrentWidget"___("Widget As QWidget");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As Integer");	COMMENT = "";
+	Slot "setCurrentWidget" ___("Widget As QWidget");	COMMENT = "";
 
-	Signal "currentChanged"___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
-	Signal "tabCloseRequested"___("Index As Integer") Declare	"void tabCloseRequested(int index)"	COMMENT = "";
+	Signal "currentChanged" ___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
+	Signal "tabCloseRequested" ___("Index As Integer") Declare	"void tabCloseRequested(int index)"	COMMENT = "";
 
 End_Class
 
@@ -6026,36 +6026,36 @@ Class "QAbstractSlider" SuperClass "QWidget"
 	Property "tracking" As "Boolean";	COMMENT = "";
 	Property "value" As "Integer";	COMMENT = "";
 
-	Function "hasTracking"___("") As "Boolean";	COMMENT = "";
-	Function "invertedAppearance"___("") As "Boolean";	COMMENT = "";
-	Function "invertedControls"___("") As "Boolean";	COMMENT = "";
-	Function "isSliderDown"___("") As "Boolean";	COMMENT = "";
-	Function "maximum"___("") As "Integer";	COMMENT = "";
-	Function "minimum"___("") As "Integer";	COMMENT = "";
-	Function "orientation"___("") As "Qt::Orientation";	COMMENT = "";
-	Function "pageStep"___("") As "Integer";	COMMENT = "";
-	Sub "setInvertedAppearance"___("Inverted As Boolean");	COMMENT = "";
-	Sub "setInvertedControls"___("Inverted As Boolean");	COMMENT = "";
-	Sub "setMaximum"___("Maximum As Integer");	COMMENT = "";
-	Sub "setMinimum"___("Minimum As Integer");	COMMENT = "";
-	Sub "setPageStep"___("Step As Integer");	COMMENT = "";
-	Sub "setRange"___("Min As Integer, Max As Integer");	COMMENT = "";
-	Sub "setSingleStep"___("Step As Integer");	COMMENT = "";
-	Sub "setSliderDown"___("Down As Integer");	COMMENT = "";
-	Sub "setSliderPosition"___("Position As Integer");	COMMENT = "";
-	Sub "setTracking"___("Enable As Integer");	COMMENT = "";
-	Function "sliderPosition"___("") As "Integer";	COMMENT = "";
-	Function "value"___("") As "Integer";	COMMENT = "";
+	Function "hasTracking" ___("") As "Boolean";	COMMENT = "";
+	Function "invertedAppearance" ___("") As "Boolean";	COMMENT = "";
+	Function "invertedControls" ___("") As "Boolean";	COMMENT = "";
+	Function "isSliderDown" ___("") As "Boolean";	COMMENT = "";
+	Function "maximum" ___("") As "Integer";	COMMENT = "";
+	Function "minimum" ___("") As "Integer";	COMMENT = "";
+	Function "orientation" ___("") As "Qt::Orientation";	COMMENT = "";
+	Function "pageStep" ___("") As "Integer";	COMMENT = "";
+	Sub "setInvertedAppearance" ___("Inverted As Boolean");	COMMENT = "";
+	Sub "setInvertedControls" ___("Inverted As Boolean");	COMMENT = "";
+	Sub "setMaximum" ___("Maximum As Integer");	COMMENT = "";
+	Sub "setMinimum" ___("Minimum As Integer");	COMMENT = "";
+	Sub "setPageStep" ___("Step As Integer");	COMMENT = "";
+	Sub "setRange" ___("Min As Integer, Max As Integer");	COMMENT = "";
+	Sub "setSingleStep" ___("Step As Integer");	COMMENT = "";
+	Sub "setSliderDown" ___("Down As Integer");	COMMENT = "";
+	Sub "setSliderPosition" ___("Position As Integer");	COMMENT = "";
+	Sub "setTracking" ___("Enable As Integer");	COMMENT = "";
+	Function "sliderPosition" ___("") As "Integer";	COMMENT = "";
+	Function "value" ___("") As "Integer";	COMMENT = "";
 
-	Slot "setOrientation"___("Orientation As Qt::Orientation");	COMMENT = "";
-	Slot "setValue"___("Value As Integer");	COMMENT = "";
+	Slot "setOrientation" ___("Orientation As Qt::Orientation");	COMMENT = "";
+	Slot "setValue" ___("Value As Integer");	COMMENT = "";
 
-	Signal "actionTriggered"___("Action As Integer") Declare "void actionTriggered(int action)"	COMMENT = "";
-	Signal "rangeChanged"___("Min As Integer, Max As Integer") Declare "void rangeChanged(int min, int max)"	COMMENT = "";
-	Signal "sliderMoved"___("Value As Integer") Declare "void sliderMoved(int value)"	COMMENT = "";
-	Signal "sliderPressed"___("") Declare "void sliderPressed()"	COMMENT = "";
-	Signal "sliderReleased"___("") Declare "void sliderReleased()"	COMMENT = "";
-	Signal "valueChanged"___("Value As Integer") Declare "void valueChanged(int value)"	COMMENT = "";
+	Signal "actionTriggered" ___("Action As Integer") Declare "void actionTriggered(int action)"	COMMENT = "";
+	Signal "rangeChanged" ___("Min As Integer, Max As Integer") Declare "void rangeChanged(int min, int max)"	COMMENT = "";
+	Signal "sliderMoved" ___("Value As Integer") Declare "void sliderMoved(int value)"	COMMENT = "";
+	Signal "sliderPressed" ___("") Declare "void sliderPressed()"	COMMENT = "";
+	Signal "sliderReleased" ___("") Declare "void sliderReleased()"	COMMENT = "";
+	Signal "valueChanged" ___("Value As Integer") Declare "void valueChanged(int value)"	COMMENT = "";
 
 End_Class
 
@@ -6077,56 +6077,56 @@ Class "QComboBox" SuperClass "QWidget"
 	Property "modelColumn" As "Integer";	COMMENT = "";
 	Property "sizeAdjustPolicy" As "QComboBox::SizeAdjustPolicy";	COMMENT = "";
 
-	Sub "addItem"___("Text As String, UserData As QVariant");	COMMENT = "";
-	Sub "addItem"___("Icon As QIcon, Text As String, UserData As QVariant");	COMMENT = "";
-	Sub "addItems"___("Texts As QStringList");	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";
-	Function "currentIndex"___("") As "Integer";	COMMENT = "";
-	Function "currentText"___("") As "String";	COMMENT = "";
-	Function "duplicatesEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "hasFrame"___("") As "Boolean";	COMMENT = "";
-	Function "iconSize"___("") As "QSize";	COMMENT = "";
-	Sub "insertItem"___("Index As Integer, Text As String, UserData As QVariant");	COMMENT = "";
-	Sub "insertItem"___("Index As Integer, Icon As QIcon, Text As String, UserData As QVariant");	COMMENT = "";
-	Sub "insertItems"___("Index As Integer, List As QStringList");	COMMENT = "";
-	Function "insertPolicy"___("") As "QComboBox::InsertPolicy";	COMMENT = "";
-	Sub "insertSeparator"___("Index As Integer");	COMMENT = "";
-	Function "isEditable"___("") As "Boolean";	COMMENT = "";
-	Function "itemIcon"___("Index As Integer") As "QIcon";	COMMENT = "";
-	Function "itemText"___("Index As Integer") As "String";	COMMENT = "";
-	Function "lineEdit"___("") As "QLineEdit";	COMMENT = "";
-	Function "maxCount"___("") As "Integer";	COMMENT = "";
-	Function "maxVisibleItems"___("") As "Integer";	COMMENT = "";
-//	Function "minimumContentsLength "___("") As "Integer";	COMMENT = "";
-	Function "modelColumn"___("") As "Integer";	COMMENT = "";
-	Sub "removeItem"___("Index As Integer");	COMMENT = "";
-	Sub "setDuplicatesEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setEditable"___("Editable As Boolean");	COMMENT = "";
-	Sub "setFrame"___("Frame As Boolean");	COMMENT = "";
-	Sub "setIconSize"___("Size As QSize");	COMMENT = "";
-	Sub "setInsertPolicy"___("Policy As QComboBox::InsertPolicy");	COMMENT = "";
-	Sub "setItemIcon"___("Index As Integer, Icon As QIcon");	COMMENT = "";
-	Sub "setItemText"___("Index As Integer, Text As String");	COMMENT = "";
-	Sub "setLineEdit"___("Edit As QLineEdit");	COMMENT = "";
-	Sub "setMaxCount"___("Max As Integer");	COMMENT = "";
-	Sub "setMaxVisibleItems"___("MaxItems As Integer");	COMMENT = "";
-	Sub "setMinimumContentsLength"___("Characters As Integer");	COMMENT = "";
-	Sub "setModelColumn"___("VisibleColumn As Integer");	COMMENT = "";
-	Sub "setSizeAdjustPolicy"___("Policy As QComboBox::SizeAdjustPolicy");	COMMENT = "";
-	Function "sizeAdjustPolicy"___("") As "QComboBox::SizeAdjustPolicy";	COMMENT = "";
+	Sub "addItem" ___("Text As String, UserData As QVariant");	COMMENT = "";
+	Sub "addItem" ___("Icon As QIcon, Text As String, UserData As QVariant");	COMMENT = "";
+	Sub "addItems" ___("Texts As QStringList");	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	Function "currentIndex" ___("") As "Integer";	COMMENT = "";
+	Function "currentText" ___("") As "String";	COMMENT = "";
+	Function "duplicatesEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "hasFrame" ___("") As "Boolean";	COMMENT = "";
+	Function "iconSize" ___("") As "QSize";	COMMENT = "";
+	Sub "insertItem" ___("Index As Integer, Text As String, UserData As QVariant");	COMMENT = "";
+	Sub "insertItem" ___("Index As Integer, Icon As QIcon, Text As String, UserData As QVariant");	COMMENT = "";
+	Sub "insertItems" ___("Index As Integer, List As QStringList");	COMMENT = "";
+	Function "insertPolicy" ___("") As "QComboBox::InsertPolicy";	COMMENT = "";
+	Sub "insertSeparator" ___("Index As Integer");	COMMENT = "";
+	Function "isEditable" ___("") As "Boolean";	COMMENT = "";
+	Function "itemIcon" ___("Index As Integer") As "QIcon";	COMMENT = "";
+	Function "itemText" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "lineEdit" ___("") As "QLineEdit";	COMMENT = "";
+	Function "maxCount" ___("") As "Integer";	COMMENT = "";
+	Function "maxVisibleItems" ___("") As "Integer";	COMMENT = "";
+//	Function "minimumContentsLength " ___("") As "Integer";	COMMENT = "";
+	Function "modelColumn" ___("") As "Integer";	COMMENT = "";
+	Sub "removeItem" ___("Index As Integer");	COMMENT = "";
+	Sub "setDuplicatesEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setEditable" ___("Editable As Boolean");	COMMENT = "";
+	Sub "setFrame" ___("Frame As Boolean");	COMMENT = "";
+	Sub "setIconSize" ___("Size As QSize");	COMMENT = "";
+	Sub "setInsertPolicy" ___("Policy As QComboBox::InsertPolicy");	COMMENT = "";
+	Sub "setItemIcon" ___("Index As Integer, Icon As QIcon");	COMMENT = "";
+	Sub "setItemText" ___("Index As Integer, Text As String");	COMMENT = "";
+	Sub "setLineEdit" ___("Edit As QLineEdit");	COMMENT = "";
+	Sub "setMaxCount" ___("Max As Integer");	COMMENT = "";
+	Sub "setMaxVisibleItems" ___("MaxItems As Integer");	COMMENT = "";
+	Sub "setMinimumContentsLength" ___("Characters As Integer");	COMMENT = "";
+	Sub "setModelColumn" ___("VisibleColumn As Integer");	COMMENT = "";
+	Sub "setSizeAdjustPolicy" ___("Policy As QComboBox::SizeAdjustPolicy");	COMMENT = "";
+	Function "sizeAdjustPolicy" ___("") As "QComboBox::SizeAdjustPolicy";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "clearEditText"___("");	COMMENT = "";
-	Slot "setCurrentIndex"___("Index As Integer");	COMMENT = "";
-	Slot "setEditText"___("Text As String");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "clearEditText" ___("");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As Integer");	COMMENT = "";
+	Slot "setEditText" ___("Text As String");	COMMENT = "";
 
-	Signal "activated"___("Text As String") Declare "void activated(const QString & text)"	COMMENT = "";
-	Signal "activated2"___("Index As Integer") Declare "void activated(int index)"	COMMENT = "";
-	Signal "currentIndexChanged"___("Text As String") Declare "void currentIndexChanged(const QString & text)"	COMMENT = "";
-	Signal "currentIndexChanged2"___("Index As Integer") Declare "void currentIndexChanged(int index)"	COMMENT = "";
-	Signal "editTextChanged"___("Text As String") Declare "void editTextChanged(const QString & text)"	COMMENT = "";
-	Signal "highlighted"___("Text As String") Declare "void highlighted(const QString & text)"	COMMENT = "";
-	Signal "highlighted2"___("Index As Integer") Declare "void highlighted(int index)"	COMMENT = "";
+	Signal "activated" ___("Text As String") Declare "void activated(const QString & text)"	COMMENT = "";
+	Signal "activated2" ___("Index As Integer") Declare "void activated(int index)"	COMMENT = "";
+	Signal "currentIndexChanged" ___("Text As String") Declare "void currentIndexChanged(const QString & text)"	COMMENT = "";
+	Signal "currentIndexChanged2" ___("Index As Integer") Declare "void currentIndexChanged(int index)"	COMMENT = "";
+	Signal "editTextChanged" ___("Text As String") Declare "void editTextChanged(const QString & text)"	COMMENT = "";
+	Signal "highlighted" ___("Text As String") Declare "void highlighted(const QString & text)"	COMMENT = "";
+	Signal "highlighted2" ___("Index As Integer") Declare "void highlighted(int index)"	COMMENT = "";
 
 End_Class
 
@@ -6137,8 +6137,8 @@ Class "QCommandLinkButton" SuperClass "QPushButton"
 	Property "description" As "String";	COMMENT = "";
 	Property "flat" As "Boolean";	COMMENT = "";
 
-	Function "description"___("") As "String";	COMMENT = "";
-	Sub "setDescription"___("Description As String");	COMMENT = "";
+	Function "description" ___("") As "String";	COMMENT = "";
+	Sub "setDescription" ___("Description As String");	COMMENT = "";
 
 End_Class
 
@@ -6165,67 +6165,67 @@ Class "QLineEdit" SuperClass "QWidget"
 	Property "text" As "String";	COMMENT = "";
 	Property "undoAvailable" As "Boolean";	COMMENT = "";
 
-	Function "alignment"___("") As "Qt::Alignment";	COMMENT = "";
-	Sub "backspace"___("");	COMMENT = "";
-	Function "createStandardContextMenu"___("") As "QMenu";	COMMENT = "";
-	Sub "cursorBackward"___("Mark As Boolean, Steps As Integer");	COMMENT = "";
-	Sub "cursorForward"___("Mark As Boolean, Steps As Integer");	COMMENT = "";
-	Function "cursorMoveStyle"___("") As "Qt::CursorMoveStyle";	COMMENT = "";
-	Function "cursorPosition"___("") As "Integer";	COMMENT = "";
-	Function "cursorPositionAt"___("Pos As QPoint") As "Integer";	COMMENT = "";
-	Sub "cursorWordBackward"___("Mark As Boolean");	COMMENT = "";
-	Sub "cursorWordForward"___("Mark As Boolean");	COMMENT = "";
-	Sub "del"___("");	COMMENT = "";
-	Sub "deselect"___("");	COMMENT = "";
-	Function "displayText"___("") As "String";	COMMENT = "";
-	Function "dragEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "echoMode"___("") As "QLineEdit::EchoMode";	COMMENT = "";
-	Sub "end"___("Mark As Boolean");	COMMENT = "";
-	//Sub "getTextMargins"___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
-	Function "hasAcceptableInput"___("") As "Boolean";	COMMENT = "";
-	Function "hasFrame"___("") As "Boolean";	COMMENT = "";
-	Function "hasSelectedText"___("") As "Boolean";	COMMENT = "";
-	Sub "home"___("Mark As Boolean");	COMMENT = "";
-	Function "inputMask"___("") As "String";	COMMENT = "";
-	Sub "insert"___("NewText As String");	COMMENT = "";
-	Function "isModified"___("") As "Boolean";	COMMENT = "";
-	Function "isReadOnly"___("") As "Boolean";	COMMENT = "";
-	Function "isRedoAvailable"___("") As "Boolean";	COMMENT = "";
-	Function "isUndoAvailable"___("") As "Boolean";	COMMENT = "";
-	Function "maxLength"___("") As "Integer";	COMMENT = "";
-	Function "placeholderText"___("") As "String";	COMMENT = "";
-	Function "selectedText"___("") As "String";	COMMENT = "";
-	Function "selectionStart"___("") As "Integer";	COMMENT = "";
-	Sub "setAlignment"___("Flag As Qt::Alignment");	COMMENT = "";
-	Sub "setCursorMoveStyle"___("Style As Qt::CursorMoveStyle");	COMMENT = "";
-	Sub "setCursorPosition"___("Position As Integer");	COMMENT = "";
-	Sub "setDragEnabled"___("B As Boolean");	COMMENT = "";
-	Sub "setEchoMode"___("Mode As QLineEdit::EchoMode");	COMMENT = "";
-	Sub "setFrame"___("Frame As Boolean");	COMMENT = "";
-	Sub "setInputMask"___("InputMask As String");	COMMENT = "";
-	Sub "setMaxLength"___("Length As Integer");	COMMENT = "";
-	Sub "setModified"___("Modified As Boolean");	COMMENT = "";
-	Sub "setPlaceholderText"___("PlaceHolder As String");	COMMENT = "";
-	Sub "setReadOnly"___("Ro As Boolean");	COMMENT = "";
-	Sub "setSelection"___("Start As Integer, Length As Integer");	COMMENT = "";
-	Sub "setTextMargins"___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
+	Function "alignment" ___("") As "Qt::Alignment";	COMMENT = "";
+	Sub "backspace" ___("");	COMMENT = "";
+	Function "createStandardContextMenu" ___("") As "QMenu";	COMMENT = "";
+	Sub "cursorBackward" ___("Mark As Boolean, Steps As Integer");	COMMENT = "";
+	Sub "cursorForward" ___("Mark As Boolean, Steps As Integer");	COMMENT = "";
+	Function "cursorMoveStyle" ___("") As "Qt::CursorMoveStyle";	COMMENT = "";
+	Function "cursorPosition" ___("") As "Integer";	COMMENT = "";
+	Function "cursorPositionAt" ___("Pos As QPoint") As "Integer";	COMMENT = "";
+	Sub "cursorWordBackward" ___("Mark As Boolean");	COMMENT = "";
+	Sub "cursorWordForward" ___("Mark As Boolean");	COMMENT = "";
+	Sub "del" ___("");	COMMENT = "";
+	Sub "deselect" ___("");	COMMENT = "";
+	Function "displayText" ___("") As "String";	COMMENT = "";
+	Function "dragEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "echoMode" ___("") As "QLineEdit::EchoMode";	COMMENT = "";
+	Sub "end" ___("Mark As Boolean");	COMMENT = "";
+	//Sub "getTextMargins" ___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
+	Function "hasAcceptableInput" ___("") As "Boolean";	COMMENT = "";
+	Function "hasFrame" ___("") As "Boolean";	COMMENT = "";
+	Function "hasSelectedText" ___("") As "Boolean";	COMMENT = "";
+	Sub "home" ___("Mark As Boolean");	COMMENT = "";
+	Function "inputMask" ___("") As "String";	COMMENT = "";
+	Sub "insert" ___("NewText As String");	COMMENT = "";
+	Function "isModified" ___("") As "Boolean";	COMMENT = "";
+	Function "isReadOnly" ___("") As "Boolean";	COMMENT = "";
+	Function "isRedoAvailable" ___("") As "Boolean";	COMMENT = "";
+	Function "isUndoAvailable" ___("") As "Boolean";	COMMENT = "";
+	Function "maxLength" ___("") As "Integer";	COMMENT = "";
+	Function "placeholderText" ___("") As "String";	COMMENT = "";
+	Function "selectedText" ___("") As "String";	COMMENT = "";
+	Function "selectionStart" ___("") As "Integer";	COMMENT = "";
+	Sub "setAlignment" ___("Flag As Qt::Alignment");	COMMENT = "";
+	Sub "setCursorMoveStyle" ___("Style As Qt::CursorMoveStyle");	COMMENT = "";
+	Sub "setCursorPosition" ___("Position As Integer");	COMMENT = "";
+	Sub "setDragEnabled" ___("B As Boolean");	COMMENT = "";
+	Sub "setEchoMode" ___("Mode As QLineEdit::EchoMode");	COMMENT = "";
+	Sub "setFrame" ___("Frame As Boolean");	COMMENT = "";
+	Sub "setInputMask" ___("InputMask As String");	COMMENT = "";
+	Sub "setMaxLength" ___("Length As Integer");	COMMENT = "";
+	Sub "setModified" ___("Modified As Boolean");	COMMENT = "";
+	Sub "setPlaceholderText" ___("PlaceHolder As String");	COMMENT = "";
+	Sub "setReadOnly" ___("Ro As Boolean");	COMMENT = "";
+	Sub "setSelection" ___("Start As Integer, Length As Integer");	COMMENT = "";
+	Sub "setTextMargins" ___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "copy"___("");	COMMENT = "";
-	Slot "cut"___("");	COMMENT = "";
-	Slot "paste"___("");	COMMENT = "";
-	Slot "redo"___("");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	Slot "setText"___("Text As String");	COMMENT = "";
-	Slot "undo"___("");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "copy" ___("");	COMMENT = "";
+	Slot "cut" ___("");	COMMENT = "";
+	Slot "paste" ___("");	COMMENT = "";
+	Slot "redo" ___("");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	Slot "setText" ___("Text As String");	COMMENT = "";
+	Slot "undo" ___("");	COMMENT = "";
 
-	Signal "cursorPositionChanged"___("OldPosition As Integer, NewPosition As Integer") Declare "void cursorPositionChanged(int oldPosition, int newPosition)"	COMMENT = "";
-	Signal "editingFinished"___("") Declare "void editingFinished()"	COMMENT = "";
-	Signal "returnPressed"___("") Declare "void returnPressed()"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
-	Signal "textChanged"___("Text As String") Declare "void textChanged(const QString & text)"	COMMENT = "";
-	Signal "textEdited"___("Text As String") Declare "void textEdited(const QString & text)"	COMMENT = "";
+	Signal "cursorPositionChanged" ___("OldPosition As Integer, NewPosition As Integer") Declare "void cursorPositionChanged(int oldPosition, int newPosition)"	COMMENT = "";
+	Signal "editingFinished" ___("") Declare "void editingFinished()"	COMMENT = "";
+	Signal "returnPressed" ___("") Declare "void returnPressed()"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "textChanged" ___("Text As String") Declare "void textChanged(const QString & text)"	COMMENT = "";
+	Signal "textEdited" ___("Text As String") Declare "void textEdited(const QString & text)"	COMMENT = "";
 
 End_Class
 
@@ -6233,56 +6233,56 @@ End_Class
 
 Class "QTreeWidgetItem"
 
-	Sub "addChild"___("Child As QTreeWidgetItem");	COMMENT = "";
-	Function "background"___("Column As Integer") As "QBrush";	COMMENT = "";
-	Function "checkState"___("Column As Integer") As "Qt::CheckState";	COMMENT = "";
-	Function "child"___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
-	Function "childCount"___("") As "Integer";	COMMENT = "";
-	Function "childIndicatorPolicy"___("") As "QTreeWidgetItem::ChildIndicatorPolicy";	COMMENT = "";
-	Function "clone"___("") As "QTreeWidgetItem";	COMMENT = "";
-	Function "columnCount"___("") As "Integer";	COMMENT = "";
-	Function "flags"___("") As "Qt::ItemFlags";	COMMENT = "";
-	Function "font"___("Column As Integer") As "QFont";	COMMENT = "";
-	Function "foreground"___("Column As Integer") As "QBrush";	COMMENT = "";
-	Function "icon"___("Column As Integer") As "QIcon";	COMMENT = "";
-	Function "indexOfChild"___("Child As QTreeWidgetItem") As "Integer";	COMMENT = "";
-	Sub "insertChild"___("Index As Integer, Child As QTreeWidgetItem");	COMMENT = "";
-	Function "isDisabled"___("") As "Boolean";	COMMENT = "";
-	Function "isExpanded"___("") As "Boolean";	COMMENT = "";
-	Function "isFirstColumnSpanned"___("") As "Boolean";	COMMENT = "";
-	Function "isHidden"___("") As "Boolean";	COMMENT = "";
-	Function "isSelected "___("") As "Boolean";	COMMENT = "";
-	Function "parent"___("") As "QTreeWidgetItem";	COMMENT = "";
-	//Sub "read"___("In As QDataStream");	COMMENT = "";
-	Sub "removeChild"___("Child As QTreeWidgetItem");	COMMENT = "";
-	Sub "setBackground"___("Column As Integer, Brush As QBrush");	COMMENT = "";
-	Sub "setCheckState"___("Column As Integer, State As Qt::CheckState");	COMMENT = "";
-	Sub "setChildIndicatorPolicy"___("Policy As QTreeWidgetItem::ChildIndicatorPolicy");	COMMENT = "";
-	Sub "setDisabled"___("Disabled As Boolean");	COMMENT = "";
-	Sub "setExpanded"___("Expand As Boolean");	COMMENT = "";
-	Sub "setFirstColumnSpanned"___("Span As Boolean");	COMMENT = "";
-	Sub "setFlags"___("Flags As Qt::ItemFlags");	COMMENT = "";
-	Sub "setFont"___("Column As Integer, Font As QFont");	COMMENT = "";
-	Sub "setForeground"___("Column As Integer, Brush As QBrush");	COMMENT = "";
-	Sub "setHidden"___("Hide As Boolean");	COMMENT = "";
-	Sub "setIcon"___("Column As Integer, Icon As QIcon");	COMMENT = "";
-	Sub "setSelected"___("Select As Boolean");	COMMENT = "";
-	Sub "setSizeHint"___("Column As Integer, Size As QSize");	COMMENT = "";
-	Sub "setStatusTip"___("Column As Integer, StatusTip As String");	COMMENT = "";
-	Sub "setText"___("Column As Integer, Text As String");	COMMENT = "";
-	Sub "setTextAlignment"___("Column As Integer, Alignment As Integer");	COMMENT = "";
-	Sub "setToolTip"___("Column As Integer, ToolTip As String");	COMMENT = "";
-	Sub "setWhatsThis"___("Column As Integer, WhatThis As String");	COMMENT = "";
-	Function "sizeHint"___("Column As Integer") As "QSize";	COMMENT = "";
-	Function "statusTip"___("Column As Integer") As "String";	COMMENT = "";
-	Function "takeChild"___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
-	Function "text"___("Column As Integer") As "String";	COMMENT = "";
-	Function "textAlignment"___("Column As Integer") As "Integer";	COMMENT = "";
-	Function "toolTip"___("Column As Integer") As "String";	COMMENT = "";
-	Function "treeWidget"___("") As "QTreeWidget";	COMMENT = "";
-	Function "type"___("") As "Integer";	COMMENT = "";
-	Function "whatsThis"___("Column As Integer") As "String";	COMMENT = "";
-	//Sub "write"___("Out As QDataStream");	COMMENT = "";
+	Sub "addChild" ___("Child As QTreeWidgetItem");	COMMENT = "";
+	Function "background" ___("Column As Integer") As "QBrush";	COMMENT = "";
+	Function "checkState" ___("Column As Integer") As "Qt::CheckState";	COMMENT = "";
+	Function "child" ___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
+	Function "childCount" ___("") As "Integer";	COMMENT = "";
+	Function "childIndicatorPolicy" ___("") As "QTreeWidgetItem::ChildIndicatorPolicy";	COMMENT = "";
+	Function "clone" ___("") As "QTreeWidgetItem";	COMMENT = "";
+	Function "columnCount" ___("") As "Integer";	COMMENT = "";
+	Function "flags" ___("") As "Qt::ItemFlags";	COMMENT = "";
+	Function "font" ___("Column As Integer") As "QFont";	COMMENT = "";
+	Function "foreground" ___("Column As Integer") As "QBrush";	COMMENT = "";
+	Function "icon" ___("Column As Integer") As "QIcon";	COMMENT = "";
+	Function "indexOfChild" ___("Child As QTreeWidgetItem") As "Integer";	COMMENT = "";
+	Sub "insertChild" ___("Index As Integer, Child As QTreeWidgetItem");	COMMENT = "";
+	Function "isDisabled" ___("") As "Boolean";	COMMENT = "";
+	Function "isExpanded" ___("") As "Boolean";	COMMENT = "";
+	Function "isFirstColumnSpanned" ___("") As "Boolean";	COMMENT = "";
+	Function "isHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "isSelected " ___("") As "Boolean";	COMMENT = "";
+	Function "parent" ___("") As "QTreeWidgetItem";	COMMENT = "";
+	//Sub "read" ___("In As QDataStream");	COMMENT = "";
+	Sub "removeChild" ___("Child As QTreeWidgetItem");	COMMENT = "";
+	Sub "setBackground" ___("Column As Integer, Brush As QBrush");	COMMENT = "";
+	Sub "setCheckState" ___("Column As Integer, State As Qt::CheckState");	COMMENT = "";
+	Sub "setChildIndicatorPolicy" ___("Policy As QTreeWidgetItem::ChildIndicatorPolicy");	COMMENT = "";
+	Sub "setDisabled" ___("Disabled As Boolean");	COMMENT = "";
+	Sub "setExpanded" ___("Expand As Boolean");	COMMENT = "";
+	Sub "setFirstColumnSpanned" ___("Span As Boolean");	COMMENT = "";
+	Sub "setFlags" ___("Flags As Qt::ItemFlags");	COMMENT = "";
+	Sub "setFont" ___("Column As Integer, Font As QFont");	COMMENT = "";
+	Sub "setForeground" ___("Column As Integer, Brush As QBrush");	COMMENT = "";
+	Sub "setHidden" ___("Hide As Boolean");	COMMENT = "";
+	Sub "setIcon" ___("Column As Integer, Icon As QIcon");	COMMENT = "";
+	Sub "setSelected" ___("Select As Boolean");	COMMENT = "";
+	Sub "setSizeHint" ___("Column As Integer, Size As QSize");	COMMENT = "";
+	Sub "setStatusTip" ___("Column As Integer, StatusTip As String");	COMMENT = "";
+	Sub "setText" ___("Column As Integer, Text As String");	COMMENT = "";
+	Sub "setTextAlignment" ___("Column As Integer, Alignment As Integer");	COMMENT = "";
+	Sub "setToolTip" ___("Column As Integer, ToolTip As String");	COMMENT = "";
+	Sub "setWhatsThis" ___("Column As Integer, WhatThis As String");	COMMENT = "";
+	Function "sizeHint" ___("Column As Integer") As "QSize";	COMMENT = "";
+	Function "statusTip" ___("Column As Integer") As "String";	COMMENT = "";
+	Function "takeChild" ___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
+	Function "text" ___("Column As Integer") As "String";	COMMENT = "";
+	Function "textAlignment" ___("Column As Integer") As "Integer";	COMMENT = "";
+	Function "toolTip" ___("Column As Integer") As "String";	COMMENT = "";
+	Function "treeWidget" ___("") As "QTreeWidget";	COMMENT = "";
+	Function "type" ___("") As "Integer";	COMMENT = "";
+	Function "whatsThis" ___("Column As Integer") As "String";	COMMENT = "";
+	//Sub "write" ___("Out As QDataStream");	COMMENT = "";
 
 End_Class
 
@@ -6293,19 +6293,19 @@ Class "QStackedWidget" SuperClass "QFrame"
 	Property "count" As "Integer";	COMMENT = "";
 	Property "currentIndex" As "Integer";	COMMENT = "";
 
-	Function "addWidget"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";
-	Function "currentIndex"___("") As "Integer";	COMMENT = "";
-	Function "indexOf"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Function "insertWidget"___("Index As Integer, Widget As QWidget") As "Integer";	COMMENT = "";
-	Sub "removeWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "widget"___("Index As Integer") As "QWidget";	COMMENT = "";
+	Function "addWidget" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	Function "currentIndex" ___("") As "Integer";	COMMENT = "";
+	Function "indexOf" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Function "insertWidget" ___("Index As Integer, Widget As QWidget") As "Integer";	COMMENT = "";
+	Sub "removeWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "widget" ___("Index As Integer") As "QWidget";	COMMENT = "";
 	
-	Slot "setCurrentIndex"___("Index As Integer");	COMMENT = "";
-	Slot "setCurrentWidget"___("Widget As QWidget");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As Integer");	COMMENT = "";
+	Slot "setCurrentWidget" ___("Widget As QWidget");	COMMENT = "";
 
-	Signal "currentChanged"___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
-	Signal "widgetRemoved"___("Index As Integer") Declare "void widgetRemoved(int index)"	COMMENT = "";
+	Signal "currentChanged" ___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
+	Signal "widgetRemoved" ___("Index As Integer") Declare "void widgetRemoved(int index)"	COMMENT = "";
 
 End_Class
 
@@ -6321,40 +6321,40 @@ Class "QWebView" SuperClass "QWidget"
 	Property "url" As "QUrl";	COMMENT = "";
 	Property "zoomFactor" As "Float";	COMMENT = "";
 
-	Function "findText"___("SubString As String, Options As QWebPage::FindFlags") As "Boolean";	COMMENT = "";
-	Function "history"___("") As "QWebHistory";	COMMENT = "";
-	Function "icon"___("") As "QIcon";	COMMENT = "";
-	Function "isModified"___("") As "Boolean";	COMMENT = "";
-	Sub "load"___("Url As QUrl");	COMMENT = "";
-	Sub "load2"___("Request As QNetworkRequest, Operation As QNetworkAccessManager::Operation, Body As QByteArray");	COMMENT = "";
-	Function "page"___("") As "QWebPage";	COMMENT = "";
-	Sub "setPage"___("Page As QWebPage");	COMMENT = "";
-	Sub "setHtml"___("Html As String, BaseUrl As QUrl");	COMMENT = "";
-	Sub "setTextSizeMultiplier"___("Factor As Float");	COMMENT = "";
-	Sub "setUrl"___("Url As QUrl");	COMMENT = "";
-	Sub "setZoomFactor"___("Factor As Float");	COMMENT = "";
-	Function "settings"___("") As "QWebSettings";	COMMENT = "";
-	Function "textSizeMultiplier"___("") As "Float";	COMMENT = "";
-	Function "title"___("") As "String";	COMMENT = "";
-	Sub "triggerPageAction"___("Action As QWebPage::WebAction, Checked As Boolean");	COMMENT = "";
-	Function "url"___("") As "QUrl";	COMMENT = "";
-	Function "zoomFactor"___("") As "Float";	COMMENT = "";
+	Function "findText" ___("SubString As String, Options As QWebPage::FindFlags") As "Boolean";	COMMENT = "";
+	Function "history" ___("") As "QWebHistory";	COMMENT = "";
+	Function "icon" ___("") As "QIcon";	COMMENT = "";
+	Function "isModified" ___("") As "Boolean";	COMMENT = "";
+	Sub "load" ___("Url As QUrl");	COMMENT = "";
+	Sub "load2" ___("Request As QNetworkRequest, Operation As QNetworkAccessManager::Operation, Body As QByteArray");	COMMENT = "";
+	Function "page" ___("") As "QWebPage";	COMMENT = "";
+	Sub "setPage" ___("Page As QWebPage");	COMMENT = "";
+	Sub "setHtml" ___("Html As String, BaseUrl As QUrl");	COMMENT = "";
+	Sub "setTextSizeMultiplier" ___("Factor As Float");	COMMENT = "";
+	Sub "setUrl" ___("Url As QUrl");	COMMENT = "";
+	Sub "setZoomFactor" ___("Factor As Float");	COMMENT = "";
+	Function "settings" ___("") As "QWebSettings";	COMMENT = "";
+	Function "textSizeMultiplier" ___("") As "Float";	COMMENT = "";
+	Function "title" ___("") As "String";	COMMENT = "";
+	Sub "triggerPageAction" ___("Action As QWebPage::WebAction, Checked As Boolean");	COMMENT = "";
+	Function "url" ___("") As "QUrl";	COMMENT = "";
+	Function "zoomFactor" ___("") As "Float";	COMMENT = "";
 	
-	Slot "back"___("");	COMMENT = "";
-	Slot "forward"___("");	COMMENT = "";
-	Slot "print"___("Printer As QPrinter");	COMMENT = "";
-	Slot "reload"___("");	COMMENT = "";
-	Slot "stop"___("");	COMMENT = "";
+	Slot "back" ___("");	COMMENT = "";
+	Slot "forward" ___("");	COMMENT = "";
+	Slot "print" ___("Printer As QPrinter");	COMMENT = "";
+	Slot "reload" ___("");	COMMENT = "";
+	Slot "stop" ___("");	COMMENT = "";
 
-	Signal "iconChanged"___("") Declare "void iconChanged()"	COMMENT = "";
-	Signal "linkClicked"___("Url As QUrl") Declare "void linkClicked(const QUrl & url)"	COMMENT = "";
-	Signal "loadFinished"___("Ok As Boolean") Declare "void loadFinished(bool ok)"	COMMENT = "";
-	Signal "loadProgress"___("Progress As Integer") Declare "void loadProgress(int progress)"	COMMENT = "";
-	Signal "loadStarted"___("") Declare "void loadStarted()"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
-	Signal "statusBarMessage"___("Text As String") Declare "void statusBarMessage(const QString & text)"	COMMENT = "";
-	Signal "titleChanged"___("Title As String") Declare "void titleChanged(const QString & title)"	COMMENT = "";
-	Signal "urlChanged"___("Url As QUrl") Declare "void urlChanged(const QUrl & url)"	COMMENT = "";
+	Signal "iconChanged" ___("") Declare "void iconChanged()"	COMMENT = "";
+	Signal "linkClicked" ___("Url As QUrl") Declare "void linkClicked(const QUrl & url)"	COMMENT = "";
+	Signal "loadFinished" ___("Ok As Boolean") Declare "void loadFinished(bool ok)"	COMMENT = "";
+	Signal "loadProgress" ___("Progress As Integer") Declare "void loadProgress(int progress)"	COMMENT = "";
+	Signal "loadStarted" ___("") Declare "void loadStarted()"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "statusBarMessage" ___("Text As String") Declare "void statusBarMessage(const QString & text)"	COMMENT = "";
+	Signal "titleChanged" ___("Title As String") Declare "void titleChanged(const QString & title)"	COMMENT = "";
+	Signal "urlChanged" ___("Url As QUrl") Declare "void urlChanged(const QUrl & url)"	COMMENT = "";
 
 End_Class
 
@@ -6362,19 +6362,19 @@ End_Class
 
 Class "QWebSettings"
 
-	Function "defaultTextEncoding"___("") As "String";	COMMENT = "";
-	Function "fontFamily"___("Which As QWebSettings::FontFamily") As "String";	COMMENT = "";
-	Function "fontSize"___("Type As QWebSettings::FontSize") As "Integer";	COMMENT = "";
-	Function "localStoragePath"___("") As "String";	COMMENT = "";
+	Function "defaultTextEncoding" ___("") As "String";	COMMENT = "";
+	Function "fontFamily" ___("Which As QWebSettings::FontFamily") As "String";	COMMENT = "";
+	Function "fontSize" ___("Type As QWebSettings::FontSize") As "Integer";	COMMENT = "";
+	Function "localStoragePath" ___("") As "String";	COMMENT = "";
 
-	Sub "resetFontFamily"___("Which As QWebSettings::FontFamily");	COMMENT = "";
-	Sub "resetFontSize"___("Type As QWebSettings::FontSize");	COMMENT = "";
-	Sub "setAttribute"___("Attribute As QWebSettings::WebAttribute, On As Boolean");	COMMENT = "";
-	Sub "setDefaultTextEncoding"___("Encoding As String");	COMMENT = "";
-	Sub "setFontFamily"___("Which As QWebSettings::FontFamily, Family As String");	COMMENT = "";
-	Sub "setFontSize"___("Type As QWebSettings::FontSize, Size As Integer");	COMMENT = "";
-	Sub "setLocalStoragePath"___("Path As String");	COMMENT = "";
-	Function "testAttribute"___("Attribute As QWebSettings::WebAttribute") As "Boolean";	COMMENT = "";
+	Sub "resetFontFamily" ___("Which As QWebSettings::FontFamily");	COMMENT = "";
+	Sub "resetFontSize" ___("Type As QWebSettings::FontSize");	COMMENT = "";
+	Sub "setAttribute" ___("Attribute As QWebSettings::WebAttribute, On As Boolean");	COMMENT = "";
+	Sub "setDefaultTextEncoding" ___("Encoding As String");	COMMENT = "";
+	Sub "setFontFamily" ___("Which As QWebSettings::FontFamily, Family As String");	COMMENT = "";
+	Sub "setFontSize" ___("Type As QWebSettings::FontSize, Size As Integer");	COMMENT = "";
+	Sub "setLocalStoragePath" ___("Path As String");	COMMENT = "";
+	Function "testAttribute" ___("Attribute As QWebSettings::WebAttribute") As "Boolean";	COMMENT = "";
 
 End_Class
 
@@ -6398,90 +6398,90 @@ Class "QTextEdit" SuperClass "QAbstractScrollArea"
 	Property "undoRedoEnabled" As "Boolean";	COMMENT = "";
 	Property "wordWrapMode" As "QTextOption::WrapMode";	COMMENT = "";
 
-	Function "acceptRichText"___("") As "Boolean";	COMMENT = "";
-	Function "alignment"___("") As "Qt::Alignment";	COMMENT = "";
-	Function "anchorAt"___("Pos As QPoint") As "String";	COMMENT = "";
-	Function "autoFormatting"___("") As "QTextEdit::AutoFormatting";	COMMENT = "";
-	Function "canPaste"___("") As "Boolean";	COMMENT = "";
-	Function "createStandardContextMenu"___("") As "QMenu";	COMMENT = "";
-	Function "createStandardContextMenu2"___("Position As QPoint") As "QMenu";	COMMENT = "";
-	Function "currentFont"___("") As "QFont";	COMMENT = "";
-	Function "cursorForPosition"___("Pos As QPoint") As "QTextCursor";	COMMENT = "";
-	Function "cursorWidth"___("") As "Integer";	COMMENT = "";
-	Function "document"___("") As "QTextDocument";	COMMENT = "";
-	Function "documentTitle"___("") As "String";	COMMENT = "";
-	Sub "ensureCursorVisible"___("");	COMMENT = "";
-	Function "find"___("Exp As String, Options As QTextDocument::FindFlags") As "Boolean";	COMMENT = "";
-	Function "fontFamily"___("") As "String";	COMMENT = "";
-	Function "fontItalic"___("") As "Boolean";	COMMENT = "";
-	Function "fontPointSize"___("") As "Float";	COMMENT = "";
-	Function "fontUnderline"___("") As "Boolean";	COMMENT = "";
-	Function "fontWeight"___("") As "Integer";	COMMENT = "";
-	Function "isReadOnly"___("") As "Boolean";	COMMENT = "";
-	Function "isUndoRedoEnabled"___("") As "Boolean";	COMMENT = "";
-	Function "lineWrapColumnOrWidth"___("") As "Integer";	COMMENT = "";
-	Function "lineWrapMode"___("") As "QTextEdit::LineWrapMode";	COMMENT = "";
+	Function "acceptRichText" ___("") As "Boolean";	COMMENT = "";
+	Function "alignment" ___("") As "Qt::Alignment";	COMMENT = "";
+	Function "anchorAt" ___("Pos As QPoint") As "String";	COMMENT = "";
+	Function "autoFormatting" ___("") As "QTextEdit::AutoFormatting";	COMMENT = "";
+	Function "canPaste" ___("") As "Boolean";	COMMENT = "";
+	Function "createStandardContextMenu" ___("") As "QMenu";	COMMENT = "";
+	Function "createStandardContextMenu2" ___("Position As QPoint") As "QMenu";	COMMENT = "";
+	Function "currentFont" ___("") As "QFont";	COMMENT = "";
+	Function "cursorForPosition" ___("Pos As QPoint") As "QTextCursor";	COMMENT = "";
+	Function "cursorWidth" ___("") As "Integer";	COMMENT = "";
+	Function "document" ___("") As "QTextDocument";	COMMENT = "";
+	Function "documentTitle" ___("") As "String";	COMMENT = "";
+	Sub "ensureCursorVisible" ___("");	COMMENT = "";
+	Function "find" ___("Exp As String, Options As QTextDocument::FindFlags") As "Boolean";	COMMENT = "";
+	Function "fontFamily" ___("") As "String";	COMMENT = "";
+	Function "fontItalic" ___("") As "Boolean";	COMMENT = "";
+	Function "fontPointSize" ___("") As "Float";	COMMENT = "";
+	Function "fontUnderline" ___("") As "Boolean";	COMMENT = "";
+	Function "fontWeight" ___("") As "Integer";	COMMENT = "";
+	Function "isReadOnly" ___("") As "Boolean";	COMMENT = "";
+	Function "isUndoRedoEnabled" ___("") As "Boolean";	COMMENT = "";
+	Function "lineWrapColumnOrWidth" ___("") As "Integer";	COMMENT = "";
+	Function "lineWrapMode" ___("") As "QTextEdit::LineWrapMode";	COMMENT = "";
 
-	Sub "moveCursor"___("Operation As QTextCursor::MoveOperation, Mode As QTextCursor::MoveMode");	COMMENT = "";
-	Function "overwriteMode"___("") As "Boolean";	COMMENT = "";
-	Sub "print"___("Printer As QPrinter");	COMMENT = "";
-	Sub "setAcceptRichText"___("Accept As Boolean");	COMMENT = "";
-	Sub "setAutoFormatting"___("Features As QTextEdit::AutoFormatting");	COMMENT = "";
-	Sub "setCursorWidth"___("Width As Integer");	COMMENT = "";
-	Sub "setDocument"___("Document As QTextDocument");	COMMENT = "";
-	Sub "setDocumentTitle"___("Title As String");	COMMENT = "";
-	Sub "setLineWrapColumnOrWidth"___("W As Integer");	COMMENT = "";
-	Sub "setLineWrapMode"___("Mode As QTextEdit::LineWrapMode");	COMMENT = "";
-	Sub "setOverwriteMode"___("Overwrite As Boolean");	COMMENT = "";
-	Sub "setReadOnly"___("ReadOnly As Boolean");	COMMENT = "";
-	Sub "setTabChangesFocus"___("B As Boolean");	COMMENT = "";
-	Sub "setTabStopWidth"___("Width As Integer");	COMMENT = "";
-	Sub "setTextCursor"___("Cursor As QTextCursor");	COMMENT = "";
-	Sub "setTextInteractionFlags"___("Flags As Qt::TextInteractionFlags");	COMMENT = "";
-	Sub "setUndoRedoEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setWordWrapMode"___("Policy As QTextOption::WrapMode");	COMMENT = "";
-	Function "tabChangesFocus"___("") As "Boolean";	COMMENT = "";
-	Function "tabStopWidth"___("") As "Integer";	COMMENT = "";
-	Function "textBackgroundColor"___("") As "QColor";	COMMENT = "";
-	Function "textColor"___("") As "QColor";	COMMENT = "";
-	Function "textCursor"___("") As "QTextCursor";	COMMENT = "";
-	Function "textInteractionFlags"___("") As "Qt::TextInteractionFlags";	COMMENT = "";
-	Function "toHtml"___("") As "String";	COMMENT = "";
-	Function "toPlainText"___("") As "String";	COMMENT = "";
-	Function "wordWrapMode"___("") As "QTextOption::WrapMode";	COMMENT = "";
+	Sub "moveCursor" ___("Operation As QTextCursor::MoveOperation, Mode As QTextCursor::MoveMode");	COMMENT = "";
+	Function "overwriteMode" ___("") As "Boolean";	COMMENT = "";
+	Sub "print" ___("Printer As QPrinter");	COMMENT = "";
+	Sub "setAcceptRichText" ___("Accept As Boolean");	COMMENT = "";
+	Sub "setAutoFormatting" ___("Features As QTextEdit::AutoFormatting");	COMMENT = "";
+	Sub "setCursorWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "setDocument" ___("Document As QTextDocument");	COMMENT = "";
+	Sub "setDocumentTitle" ___("Title As String");	COMMENT = "";
+	Sub "setLineWrapColumnOrWidth" ___("W As Integer");	COMMENT = "";
+	Sub "setLineWrapMode" ___("Mode As QTextEdit::LineWrapMode");	COMMENT = "";
+	Sub "setOverwriteMode" ___("Overwrite As Boolean");	COMMENT = "";
+	Sub "setReadOnly" ___("ReadOnly As Boolean");	COMMENT = "";
+	Sub "setTabChangesFocus" ___("B As Boolean");	COMMENT = "";
+	Sub "setTabStopWidth" ___("Width As Integer");	COMMENT = "";
+	Sub "setTextCursor" ___("Cursor As QTextCursor");	COMMENT = "";
+	Sub "setTextInteractionFlags" ___("Flags As Qt::TextInteractionFlags");	COMMENT = "";
+	Sub "setUndoRedoEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setWordWrapMode" ___("Policy As QTextOption::WrapMode");	COMMENT = "";
+	Function "tabChangesFocus" ___("") As "Boolean";	COMMENT = "";
+	Function "tabStopWidth" ___("") As "Integer";	COMMENT = "";
+	Function "textBackgroundColor" ___("") As "QColor";	COMMENT = "";
+	Function "textColor" ___("") As "QColor";	COMMENT = "";
+	Function "textCursor" ___("") As "QTextCursor";	COMMENT = "";
+	Function "textInteractionFlags" ___("") As "Qt::TextInteractionFlags";	COMMENT = "";
+	Function "toHtml" ___("") As "String";	COMMENT = "";
+	Function "toPlainText" ___("") As "String";	COMMENT = "";
+	Function "wordWrapMode" ___("") As "QTextOption::WrapMode";	COMMENT = "";
 
-	Slot "append"___("Text As String");	COMMENT = "";
-	Slot "clear"___("");	COMMENT = "";
-	Slot "copy"___("");	COMMENT = "";
-	Slot "cut"___("");	COMMENT = "";
-	Slot "insertHtml"___("Text As String");	COMMENT = "";
-	Slot "insertPlainText"___("Text As String");	COMMENT = "";
-	Slot "paste"___("");	COMMENT = "";
-	Slot "redo"___("");	COMMENT = "";
-	Slot "scrollToAnchor"___("Name As String");	COMMENT = "";
-	Slot "selectAll"___("");	COMMENT = "";
-	Slot "setAlignment"___("A As Qt::Alignment");	COMMENT = "";
-	Slot "setCurrentFont"___("F As QFont");	COMMENT = "";
-	Slot "setFontFamily"___("FontFamily As String");	COMMENT = "";
-	Slot "setFontItalic"___("Italic As Boolean");	COMMENT = "";
-	Slot "setFontPointSize"___("S As Float");	COMMENT = "";
-	Slot "setFontUnderline"___("Underline As Boolean");	COMMENT = "";
-	Slot "setFontWeight"___("Weight As Integer");	COMMENT = "";
-	Slot "setHtml"___("Text As String");	COMMENT = "";
-	Slot "setPlainText"___("Text As String");	COMMENT = "";
-	Slot "setText"___("Text As String");	COMMENT = "";
-	Slot "setTextBackgroundColor"___("C As QColor");	COMMENT = "";
-	Slot "setTextColor"___("C As QColor");	COMMENT = "";
-	Slot "undo"___("");	COMMENT = "";
-	Slot "zoomIn"___("Range As Integer");	COMMENT = "";
-	Slot "zoomOut"___("Range As Integer");	COMMENT = "";
+	Slot "append" ___("Text As String");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "copy" ___("");	COMMENT = "";
+	Slot "cut" ___("");	COMMENT = "";
+	Slot "insertHtml" ___("Text As String");	COMMENT = "";
+	Slot "insertPlainText" ___("Text As String");	COMMENT = "";
+	Slot "paste" ___("");	COMMENT = "";
+	Slot "redo" ___("");	COMMENT = "";
+	Slot "scrollToAnchor" ___("Name As String");	COMMENT = "";
+	Slot "selectAll" ___("");	COMMENT = "";
+	Slot "setAlignment" ___("A As Qt::Alignment");	COMMENT = "";
+	Slot "setCurrentFont" ___("F As QFont");	COMMENT = "";
+	Slot "setFontFamily" ___("FontFamily As String");	COMMENT = "";
+	Slot "setFontItalic" ___("Italic As Boolean");	COMMENT = "";
+	Slot "setFontPointSize" ___("S As Float");	COMMENT = "";
+	Slot "setFontUnderline" ___("Underline As Boolean");	COMMENT = "";
+	Slot "setFontWeight" ___("Weight As Integer");	COMMENT = "";
+	Slot "setHtml" ___("Text As String");	COMMENT = "";
+	Slot "setPlainText" ___("Text As String");	COMMENT = "";
+	Slot "setText" ___("Text As String");	COMMENT = "";
+	Slot "setTextBackgroundColor" ___("C As QColor");	COMMENT = "";
+	Slot "setTextColor" ___("C As QColor");	COMMENT = "";
+	Slot "undo" ___("");	COMMENT = "";
+	Slot "zoomIn" ___("Range As Integer");	COMMENT = "";
+	Slot "zoomOut" ___("Range As Integer");	COMMENT = "";
 
-	Signal "copyAvailable"___("Yes As Boolean") Declare "void copyAvailable(bool yes)"	COMMENT = "";
-	Signal "cursorPositionChanged"___("") Declare "void cursorPositionChanged()"	COMMENT = "";
-	Signal "redoAvailable"___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
-	Signal "textChanged"___("") Declare "void textChanged()"	COMMENT = "";
-	Signal "undoAvailable"___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";
+	Signal "copyAvailable" ___("Yes As Boolean") Declare "void copyAvailable(bool yes)"	COMMENT = "";
+	Signal "cursorPositionChanged" ___("") Declare "void cursorPositionChanged()"	COMMENT = "";
+	Signal "redoAvailable" ___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "textChanged" ___("") Declare "void textChanged()"	COMMENT = "";
+	Signal "undoAvailable" ___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";
 
 End_Class
 
@@ -6500,15 +6500,15 @@ Class "QAbstractButton" SuperClass "QWidget"
   Property "shortcut" As "QKeySequence"; COMMENT = "";
   Property "text" As "String"; COMMENT = "";
 
-  Function "group"___("") As "QButtonGroup";  COMMENT = ""; 
-  Function "icon"___("") As "QIcon"; COMMENT = ""; 
+  Function "group" ___("") As "QButtonGroup";  COMMENT = "";
+  Function "icon" ___("") As "QIcon"; COMMENT = "";
 
-  Slot "animateClick"___("MiliSeconds As Integer");  COMMENT = "";
-  Slot "click"___("");  COMMENT = "";
-  Slot "toggle"___("");  COMMENT = "";
+  Slot "animateClick" ___("MiliSeconds As Integer");  COMMENT = "";
+  Slot "click" ___("");  COMMENT = "";
+  Slot "toggle" ___("");  COMMENT = "";
     
-  Signal "pressed"___("") Declare "void pressed()"  COMMENT = "";
-  Signal "released"___("") Declare "void released()"  COMMENT = "";
+  Signal "pressed" ___("") Declare "void pressed()"  COMMENT = "";
+  Signal "released" ___("") Declare "void released()"  COMMENT = "";
     
 End_Class
 
@@ -6524,24 +6524,24 @@ Class "QCalendarWidget" SuperClass "QWidget"
 	Property "navigationBarVisible" As "Boolean";	COMMENT = "";
 	Property "selectedDate" As "QDate";	COMMENT = "";
 
-    Function "monthShown"___("") As "Integer";	COMMENT = "";
-	Function "selectedDate"___("") As "QDate";	COMMENT = "";
-	Function "yearShown"___("") As "Integer";	COMMENT = "";
+    Function "monthShown" ___("") As "Integer";	COMMENT = "";
+	Function "selectedDate" ___("") As "QDate";	COMMENT = "";
+	Function "yearShown" ___("") As "Integer";	COMMENT = "";
 
-	Sub "setCurrentPage"___("Year As Integer, Month As Integer");	COMMENT = "";
-	Sub "setDateRange"___("Minimum As QDate, Maximum As QDate");	COMMENT = "";
-    Sub "setSelectedDate"___("Date As QDate"); COMMENT = "";
-	Sub "showNextMonth"___("");	COMMENT = "";
-	Sub "showNextYear"___("");	COMMENT = "";
-	Sub "showPreviousMonth"___("");	COMMENT = "";
-	Sub "showPreviousYear"___("");	COMMENT = "";
-	Sub "showSelectedDate"___("");	COMMENT = "";
-	Sub "showToday"___("");	COMMENT = "";
+	Sub "setCurrentPage" ___("Year As Integer, Month As Integer");	COMMENT = "";
+	Sub "setDateRange" ___("Minimum As QDate, Maximum As QDate");	COMMENT = "";
+    Sub "setSelectedDate" ___("Date As QDate"); COMMENT = "";
+	Sub "showNextMonth" ___("");	COMMENT = "";
+	Sub "showNextYear" ___("");	COMMENT = "";
+	Sub "showPreviousMonth" ___("");	COMMENT = "";
+	Sub "showPreviousYear" ___("");	COMMENT = "";
+	Sub "showSelectedDate" ___("");	COMMENT = "";
+	Sub "showToday" ___("");	COMMENT = "";
 
-	Signal "activated"___("Date As QDate") Declare "void activated(const QDate & date)"	COMMENT = "";
-	Signal "clicked"___("Date As QDate") Declare "void clicked(const QDate & date)"	COMMENT = "";
-	Signal "currentPageChanged"___("Year As Integer, Month As Integer") Declare "void currentPageChanged(int year, int month)"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "activated" ___("Date As QDate") Declare "void activated(const QDate & date)"	COMMENT = "";
+	Signal "clicked" ___("Date As QDate") Declare "void clicked(const QDate & date)"	COMMENT = "";
+	Signal "currentPageChanged" ___("Year As Integer, Month As Integer") Declare "void currentPageChanged(int year, int month)"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
 
 End_Class
 
@@ -6549,29 +6549,29 @@ End_Class
 
 Class "QChar"
 
-	Function "hasMirrored"___("") As "Boolean";	COMMENT = "";
-	Function "isDigit"___("") As "Boolean";	COMMENT = "";
-	Function "isHighSurrogate"___("") As "Boolean";	COMMENT = "";	
-    Function "isLetter"___("") As "Boolean";	COMMENT = "";
-	Function "isLetterOrNumber"___("") As "Boolean";	COMMENT = "";    
-	Function "isLowSurrogate"___("") As "Boolean";	COMMENT = "";	
-	Function "isLower"___("") As "Boolean";	COMMENT = "";
-	Function "isMark"___("") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isNumber"___("") As "Boolean";	COMMENT = "";
-	Function "isPrint"___("") As "Boolean";	COMMENT = "";
-	Function "isPunct"___("") As "Boolean";	COMMENT = "";
-	Function "isSpace"___("") As "Boolean";	COMMENT = "";
-	Function "isSymbol"___("") As "Boolean";	COMMENT = "";
-	Function "isTitleCase"___("") As "Boolean";	COMMENT = "";
-	Function "isUpper"___("") As "Boolean";	COMMENT = "";
-	Function "mirroredChar"___("") As "QChar";	COMMENT = "";
-	//Function "toLatin1"___("") As "String";	COMMENT = "";			'String? or char?
-	Function "toCaseFolded"___("") As "QChar";	COMMENT = "";
-	//Function "toLatin1"___("") As "String";	COMMENT = "";			'String? or char?
-	Function "toLower"___("") As "QChar";	COMMENT = "";
-	Function "toTitleCase"___("") As "QChar";	COMMENT = "";
-	Function "toUpper"___("") As "QChar";	COMMENT = "";
+	Function "hasMirrored" ___("") As "Boolean";	COMMENT = "";
+	Function "isDigit" ___("") As "Boolean";	COMMENT = "";
+	Function "isHighSurrogate" ___("") As "Boolean";	COMMENT = "";
+    Function "isLetter" ___("") As "Boolean";	COMMENT = "";
+	Function "isLetterOrNumber" ___("") As "Boolean";	COMMENT = "";
+	Function "isLowSurrogate" ___("") As "Boolean";	COMMENT = "";
+	Function "isLower" ___("") As "Boolean";	COMMENT = "";
+	Function "isMark" ___("") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isNumber" ___("") As "Boolean";	COMMENT = "";
+	Function "isPrint" ___("") As "Boolean";	COMMENT = "";
+	Function "isPunct" ___("") As "Boolean";	COMMENT = "";
+	Function "isSpace" ___("") As "Boolean";	COMMENT = "";
+	Function "isSymbol" ___("") As "Boolean";	COMMENT = "";
+	Function "isTitleCase" ___("") As "Boolean";	COMMENT = "";
+	Function "isUpper" ___("") As "Boolean";	COMMENT = "";
+	Function "mirroredChar" ___("") As "QChar";	COMMENT = "";
+	//Function "toLatin1" ___("") As "String";	COMMENT = "";			'String? or char?
+	Function "toCaseFolded" ___("") As "QChar";	COMMENT = "";
+	//Function "toLatin1" ___("") As "String";	COMMENT = "";			'String? or char?
+	Function "toLower" ___("") As "QChar";	COMMENT = "";
+	Function "toTitleCase" ___("") As "QChar";	COMMENT = "";
+	Function "toUpper" ___("") As "QChar";	COMMENT = "";
 
 End_Class
 
@@ -6582,10 +6582,10 @@ Class "QCheckBox" SuperClass "QAbstractButton"
 
 	Property "tristate" As "Boolean";	COMMENT = "";
 
-	Function "checkState"___("") As "Qt.CheckState";	COMMENT = "";
-	Function "setCheckState"___("State As Qt.CheckState") As "";	COMMENT = "";
+	Function "checkState" ___("") As "Qt.CheckState";	COMMENT = "";
+	Function "setCheckState" ___("State As Qt.CheckState") As "";	COMMENT = "";
 
-	Signal "stateChanged"___("State As Integer") Declare "void stateChanged(int state)"	COMMENT = "";
+	Signal "stateChanged" ___("State As Integer") Declare "void stateChanged(int state)"	COMMENT = "";
 
 End_Class
 
@@ -6594,23 +6594,23 @@ End_Class
 
 Class "QDate"
 
-	Function "addDays"___("NumberDays As Integer") As "QDate";	COMMENT = "";
-	Function "addMonths"___("NumberMonths As Integer") As "QDate";	COMMENT = "";
-	Function "addYears"___("NumberYears As Integer") As "QDate";	COMMENT = "";
-	Function "day"___("") As "Integer";	COMMENT = "";
-	Function "dayOfWeek"___("") As "Integer";	COMMENT = "";
-	Function "dayOfYear"___("") As "Integer";	COMMENT = "";
-	Function "daysInMonth"___("") As "Integer";	COMMENT = "";
-	Function "daysInYear"___("") As "Integer";	COMMENT = "";
-	Function "daysTo"___("Date As QDate") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "month"___("") As "Integer";	COMMENT = "";
-	Function "setDate"___("Year As Integer, Month As Integer, Day As Integer") As "Boolean";	COMMENT = "";
-	Function "toJulianDay"___("") As "Integer";	COMMENT = "";
-	Function "toString"___("Format As String") As "String";	COMMENT = "";
-	//Function "weekNumber"___("YearNumber As Integer") As "Integer";	COMMENT = "";		'not sure. Argument is a pointer to an integer
-	Function "year"___("") As "Integer";	COMMENT = "";
+	Function "addDays" ___("NumberDays As Integer") As "QDate";	COMMENT = "";
+	Function "addMonths" ___("NumberMonths As Integer") As "QDate";	COMMENT = "";
+	Function "addYears" ___("NumberYears As Integer") As "QDate";	COMMENT = "";
+	Function "day" ___("") As "Integer";	COMMENT = "";
+	Function "dayOfWeek" ___("") As "Integer";	COMMENT = "";
+	Function "dayOfYear" ___("") As "Integer";	COMMENT = "";
+	Function "daysInMonth" ___("") As "Integer";	COMMENT = "";
+	Function "daysInYear" ___("") As "Integer";	COMMENT = "";
+	Function "daysTo" ___("Date As QDate") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "month" ___("") As "Integer";	COMMENT = "";
+	Function "setDate" ___("Year As Integer, Month As Integer, Day As Integer") As "Boolean";	COMMENT = "";
+	Function "toJulianDay" ___("") As "Integer";	COMMENT = "";
+	Function "toString" ___("Format As String") As "String";	COMMENT = "";
+	//Function "weekNumber" ___("YearNumber As Integer") As "Integer";	COMMENT = "";		'not sure. Argument is a pointer to an integer
+	Function "year" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -6618,24 +6618,24 @@ End_Class
 
 Class "QDateTime"
 
-	Function "addDays"___("NumberDays As Integer") As "QDateTime";	COMMENT = "";
-	Function "addMSecs"___("Milliseconds As Integer") As "QDateTime";	COMMENT = "";
-	Function "addMonths"___("NumberMonths As Integer") As "QDateTime";	COMMENT = "";
-	Function "addSecs"___("NumberSeconds As Integer") As "QDateTime";	COMMENT = "";
-	Function "addYears"___("NumberYears As Integer") As "QDateTime";	COMMENT = "";
-	Function "date"___("") As "QDate";	COMMENT = "";
-	Function "daysTo"___("Other As QDateTime") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "msecsTo"___("Other As QDateTime") As "Integer";	COMMENT = "";
-	Function "secsTo"___("Other As QDateTime") As "Integer";	COMMENT = "";
-	Function "setDate"___("Date As QDate");	COMMENT = ""
-	Function "setMSecsSinceEpoch"___("Milliseconds As Integer");	COMMENT = "";
-	Function "setTime"___("Time As QTime");	COMMENT = "";
-	Function "time"___("") As "QTime";	COMMENT = "";
-	Function "toLocalTime"___("") As "QDateTime";	COMMENT = "";
-	Function "toMSecsSinceEpoch"___("") As "Integer";	COMMENT = "";
-	Function "toString"___("Format As String") As "String";	COMMENT = "";
+	Function "addDays" ___("NumberDays As Integer") As "QDateTime";	COMMENT = "";
+	Function "addMSecs" ___("Milliseconds As Integer") As "QDateTime";	COMMENT = "";
+	Function "addMonths" ___("NumberMonths As Integer") As "QDateTime";	COMMENT = "";
+	Function "addSecs" ___("NumberSeconds As Integer") As "QDateTime";	COMMENT = "";
+	Function "addYears" ___("NumberYears As Integer") As "QDateTime";	COMMENT = "";
+	Function "date" ___("") As "QDate";	COMMENT = "";
+	Function "daysTo" ___("Other As QDateTime") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "msecsTo" ___("Other As QDateTime") As "Integer";	COMMENT = "";
+	Function "secsTo" ___("Other As QDateTime") As "Integer";	COMMENT = "";
+	Function "setDate" ___("Date As QDate");	COMMENT = ""
+	Function "setMSecsSinceEpoch" ___("Milliseconds As Integer");	COMMENT = "";
+	Function "setTime" ___("Time As QTime");	COMMENT = "";
+	Function "time" ___("") As "QTime";	COMMENT = "";
+	Function "toLocalTime" ___("") As "QDateTime";	COMMENT = "";
+	Function "toMSecsSinceEpoch" ___("") As "Integer";	COMMENT = "";
+	Function "toString" ___("Format As String") As "String";	COMMENT = "";
 
 End_Class
 
@@ -6659,31 +6659,31 @@ Class "QDateTimeEdit" SuperClass "QAbstractSpinBox"
 	Property "sectionCount" As "Integer";	COMMENT = "";
 	Property "time" As "QTime";	COMMENT = "";
 
-	Function "calendarWidget"___("") As "QCalendarWidget";	COMMENT = "";
-	Function "clearMaximumDate"___("");	COMMENT = "";
-	Function "clearMaximumDateTime"___("");	COMMENT = "";
-	Function "clearMaximumTime"___("");	COMMENT = "";
-	Function "clearMinimumDate"___("");	COMMENT = "";
-	Function "clearMinimumDateTime"___("");	COMMENT = "";
-	Function "clearMinimumTime"___("");	COMMENT = "";
-	Function "sectionAt"___("Index As Integer") As "Integer";	COMMENT = "";
-	Function "sectionCount"___("") As "Integer";	COMMENT = "";
-	Function "sectionText"___("Section As QDateTimeEdit.Section") As "String";	COMMENT = "";
-	Sub "setCalendarPopup"___("Enable As Boolean");	COMMENT = "";
-	Sub "setCalendarWidget"___("CalendarWidget As QCalendarWidget");	COMMENT = "";
-	Sub "setDateRange"___("Minimum As QDate, Maximum As QDate");	COMMENT = "";
-	Sub "setDateTimeRange"___("Minimum As QDateTime, Maximum As QDateTime");	COMMENT = "";
-	Sub "setSelectedSection"___("Section As QDateTimeEdit.Section");	COMMENT = "";
-	Sub "setTimeRange"___("Minimum As QTime, Maximum As QTime");	COMMENT = "";
-	Function "time"___("") As "QTime";	COMMENT = "";
+	Function "calendarWidget" ___("") As "QCalendarWidget";	COMMENT = "";
+	Function "clearMaximumDate" ___("");	COMMENT = "";
+	Function "clearMaximumDateTime" ___("");	COMMENT = "";
+	Function "clearMaximumTime" ___("");	COMMENT = "";
+	Function "clearMinimumDate" ___("");	COMMENT = "";
+	Function "clearMinimumDateTime" ___("");	COMMENT = "";
+	Function "clearMinimumTime" ___("");	COMMENT = "";
+	Function "sectionAt" ___("Index As Integer") As "Integer";	COMMENT = "";
+	Function "sectionCount" ___("") As "Integer";	COMMENT = "";
+	Function "sectionText" ___("Section As QDateTimeEdit.Section") As "String";	COMMENT = "";
+	Sub "setCalendarPopup" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setCalendarWidget" ___("CalendarWidget As QCalendarWidget");	COMMENT = "";
+	Sub "setDateRange" ___("Minimum As QDate, Maximum As QDate");	COMMENT = "";
+	Sub "setDateTimeRange" ___("Minimum As QDateTime, Maximum As QDateTime");	COMMENT = "";
+	Sub "setSelectedSection" ___("Section As QDateTimeEdit.Section");	COMMENT = "";
+	Sub "setTimeRange" ___("Minimum As QTime, Maximum As QTime");	COMMENT = "";
+	Function "time" ___("") As "QTime";	COMMENT = "";
 
-	Slot "setDate"___("Date As QDate");	COMMENT = "";
-	Slot "setDateTime"___("DateTime As QDateTime");	COMMENT = "";
-	Slot "setTime"___("Time As QTime");	COMMENT = "";
+	Slot "setDate" ___("Date As QDate");	COMMENT = "";
+	Slot "setDateTime" ___("DateTime As QDateTime");	COMMENT = "";
+	Slot "setTime" ___("Time As QTime");	COMMENT = "";
 
-	Signal "dateChanged"___("Date As QDate") Declare "void dateChanged(const QDate & date)"	COMMENT = "";
-	Signal "dateTimeChanged"___("DateTime As QDateTime") Declare "void dateTimeChanged(const QDateTime & datetime)"	COMMENT = "";
-	Signal "timeChanged"___("Time As QTime") Declare "void timeChanged(const QTime & time)"	COMMENT = "";
+	Signal "dateChanged" ___("Date As QDate") Declare "void dateChanged(const QDate & date)"	COMMENT = "";
+	Signal "dateTimeChanged" ___("DateTime As QDateTime") Declare "void dateTimeChanged(const QDateTime & datetime)"	COMMENT = "";
+	Signal "timeChanged" ___("Time As QTime") Declare "void timeChanged(const QTime & time)"	COMMENT = "";
 
 End_Class
 
@@ -6691,48 +6691,48 @@ End_Class
 
 Class "QFileInfo"
 
-	Function "absoluteDir"___("") As "QDir";	COMMENT = "";
-	Function "absoluteFilePath"___("") As "String";	COMMENT = "";
-	Function "absolutePath"___("") As "String";	COMMENT = "";
-	Function "baseName"___("") As "String";	COMMENT = "";
-	Function "bundleName"___("") As "String";	COMMENT = "";
-	Function "caching"___("") As "Boolean";	COMMENT = "";
-	Function "canonicalFilePath"___("") As "String";	COMMENT = "";
-	Function "canonicalPath"___("") As "String";	COMMENT = "";
-	Function "completeBaseName"___("") As "String";	COMMENT = "";
-	Function "completeSuffix"___("") As "String";	COMMENT = "";
-	Function "created"___("") As "QDateTime";	COMMENT = "";
-	Function "dir"___("") As "QDir";	COMMENT = "";
-	Function "exists"___("") As "Boolean";	COMMENT = "";
-	Function "fileName"___("") As "String";	COMMENT = "";
-	Function "filePath"___("") As "String";	COMMENT = "";
-	Function "group"___("") As "String";	COMMENT = "";
-	Function "groupId"___("") As "Integer";	COMMENT = "";
-	Function "isAbsolute"___("") As "Boolean";	COMMENT = "";
-	Function "isBundle"___("") As "Boolean";	COMMENT = "";
-	Function "isDir"___("") As "Boolean";	COMMENT = "";
-	Function "isExecutable"___("") As "Boolean";	COMMENT = "";
-	Function "isFile"___("") As "Boolean";	COMMENT = "";
-	Function "isHidden"___("") As "Boolean";	COMMENT = "";
-	Function "isReadable"___("") As "Boolean";	COMMENT = "";
-	Function "isRelative"___("") As "Boolean";	COMMENT = "";
-	Function "isRoot"___("") As "Boolean";	COMMENT = "";
-	Function "isSymLink"___("") As "Boolean";	COMMENT = "";
-	Function "isWritable"___("") As "Boolean";	COMMENT = "";
-	Function "lastModified"___("") As "QDateTime";	COMMENT = "";
-	Function "lastRead"___("") As "QDateTime";	COMMENT = "";
-	Function "makeAbsolute"___("") As "Boolean";	COMMENT = "";
-	Function "owner"___("") As "String";	COMMENT = "";
-	Function "ownerId"___("") As "Integer";	COMMENT = "";
-	Function "path"___("") As "String";	COMMENT = "";
-	Function "permission"___("Permissions As QFile.Permissions") As "Boolean";	COMMENT = "";
-	Function "permissions"___("") As "QFile.Permissions";	COMMENT = "";
-	Sub "refresh"___("");	COMMENT = "";
-	Sub "setCaching"___("Enable As Boolean");	COMMENT = "";
-	Sub "setFile"___("File As String");	COMMENT = "";
-	Function "size"___("") As "Integer";	COMMENT = "";
-	Function "suffix"___("") As "String";	COMMENT = "";
-	Function "symLinkTarget"___("") As "String";	COMMENT = "";
+	Function "absoluteDir" ___("") As "QDir";	COMMENT = "";
+	Function "absoluteFilePath" ___("") As "String";	COMMENT = "";
+	Function "absolutePath" ___("") As "String";	COMMENT = "";
+	Function "baseName" ___("") As "String";	COMMENT = "";
+	Function "bundleName" ___("") As "String";	COMMENT = "";
+	Function "caching" ___("") As "Boolean";	COMMENT = "";
+	Function "canonicalFilePath" ___("") As "String";	COMMENT = "";
+	Function "canonicalPath" ___("") As "String";	COMMENT = "";
+	Function "completeBaseName" ___("") As "String";	COMMENT = "";
+	Function "completeSuffix" ___("") As "String";	COMMENT = "";
+	Function "created" ___("") As "QDateTime";	COMMENT = "";
+	Function "dir" ___("") As "QDir";	COMMENT = "";
+	Function "exists" ___("") As "Boolean";	COMMENT = "";
+	Function "fileName" ___("") As "String";	COMMENT = "";
+	Function "filePath" ___("") As "String";	COMMENT = "";
+	Function "group" ___("") As "String";	COMMENT = "";
+	Function "groupId" ___("") As "Integer";	COMMENT = "";
+	Function "isAbsolute" ___("") As "Boolean";	COMMENT = "";
+	Function "isBundle" ___("") As "Boolean";	COMMENT = "";
+	Function "isDir" ___("") As "Boolean";	COMMENT = "";
+	Function "isExecutable" ___("") As "Boolean";	COMMENT = "";
+	Function "isFile" ___("") As "Boolean";	COMMENT = "";
+	Function "isHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "isReadable" ___("") As "Boolean";	COMMENT = "";
+	Function "isRelative" ___("") As "Boolean";	COMMENT = "";
+	Function "isRoot" ___("") As "Boolean";	COMMENT = "";
+	Function "isSymLink" ___("") As "Boolean";	COMMENT = "";
+	Function "isWritable" ___("") As "Boolean";	COMMENT = "";
+	Function "lastModified" ___("") As "QDateTime";	COMMENT = "";
+	Function "lastRead" ___("") As "QDateTime";	COMMENT = "";
+	Function "makeAbsolute" ___("") As "Boolean";	COMMENT = "";
+	Function "owner" ___("") As "String";	COMMENT = "";
+	Function "ownerId" ___("") As "Integer";	COMMENT = "";
+	Function "path" ___("") As "String";	COMMENT = "";
+	Function "permission" ___("Permissions As QFile.Permissions") As "Boolean";	COMMENT = "";
+	Function "permissions" ___("") As "QFile.Permissions";	COMMENT = "";
+	Sub "refresh" ___("");	COMMENT = "";
+	Sub "setCaching" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setFile" ___("File As String");	COMMENT = "";
+	Function "size" ___("") As "Integer";	COMMENT = "";
+	Function "suffix" ___("") As "String";	COMMENT = "";
+	Function "symLinkTarget" ___("") As "String";	COMMENT = "";
 
 End_Class
 
@@ -6741,15 +6741,15 @@ End_Class
 
 Class "QFileSystemWatcher" SuperClass "QObject"
 
-	Sub "addPath"___("Path As String");	COMMENT = "";
-	Sub "addPaths"___("Paths As List");	COMMENT = "";
-	Function "directories"___("") As "List";	COMMENT = "";
-	Function "files"___("") As "List";	COMMENT = "";
-	Sub "removePath"___("Path As String");	COMMENT = "";
-	Sub "removePaths"___("Paths As List");	COMMENT = "";
+	Sub "addPath" ___("Path As String");	COMMENT = "";
+	Sub "addPaths" ___("Paths As List");	COMMENT = "";
+	Function "directories" ___("") As "List";	COMMENT = "";
+	Function "files" ___("") As "List";	COMMENT = "";
+	Sub "removePath" ___("Path As String");	COMMENT = "";
+	Sub "removePaths" ___("Paths As List");	COMMENT = "";
 
-	Signal "directoryChanged"___("Path As String") Declare "void directoryChanged(const QString & path)"	COMMENT = "";
-	Signal "fileChanged"___("Path As String") Declare "void fileChanged(const QString & path)"	COMMENT = "";
+	Signal "directoryChanged" ___("Path As String") Declare "void directoryChanged(const QString & path)"	COMMENT = "";
+	Signal "fileChanged" ___("Path As String") Declare "void fileChanged(const QString & path)"	COMMENT = "";
 
 End_Class
 
@@ -6770,27 +6770,27 @@ Class "QLabel" SuperClass "QFrame"
 	Property "textInteractionFlags" As "Qt.TextInteractionFlags";	COMMENT = "";
 	Property "wordWrap" As "Boolean";	COMMENT = "";
 	
-	Function "buddy"___("") As "QWidget";	COMMENT = "";
-	Function "hasScaledContents"___("") As "Boolean";	COMMENT = "";
-	Function "hasSelectedText"___("") As "Boolean";	COMMENT = "";
-	Function "movie"___("") As "QMovie";	COMMENT = "";
-	Function "picture"___("") As "QPicture";	COMMENT = "";
-	Function "pixmap"___("") As "QPixmap";	COMMENT = "";
-	Function "selectionStart"___("") As "Integer";	COMMENT = "";
-	Sub "setBuddy"___("Buddy As QWidget");	COMMENT = "";
-	Sub "setSelection"___("Start As Integer, Length As Integer");	COMMENT = "";
-	Function "wordWrap"___("") As "Boolean";	COMMENT = "";
+	Function "buddy" ___("") As "QWidget";	COMMENT = "";
+	Function "hasScaledContents" ___("") As "Boolean";	COMMENT = "";
+	Function "hasSelectedText" ___("") As "Boolean";	COMMENT = "";
+	Function "movie" ___("") As "QMovie";	COMMENT = "";
+	Function "picture" ___("") As "QPicture";	COMMENT = "";
+	Function "pixmap" ___("") As "QPixmap";	COMMENT = "";
+	Function "selectionStart" ___("") As "Integer";	COMMENT = "";
+	Sub "setBuddy" ___("Buddy As QWidget");	COMMENT = "";
+	Sub "setSelection" ___("Start As Integer, Length As Integer");	COMMENT = "";
+	Function "wordWrap" ___("") As "Boolean";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "setMovie"___("Movie As QMovie");	COMMENT = "";
-	Slot "setNum"___("Num As Integer");	COMMENT = "";
-	Slot "setNum"___("Num As Float");	COMMENT = "";
-	Slot "setPicture"___("Picture As QPicture");	COMMENT = "";
-	Slot "setPixmap"___("Pixmap As QPixmap");	COMMENT = "";
-	Slot "setText"___("Text As String");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "setMovie" ___("Movie As QMovie");	COMMENT = "";
+	Slot "setNum" ___("Num As Integer");	COMMENT = "";
+	Slot "setNum" ___("Num As Float");	COMMENT = "";
+	Slot "setPicture" ___("Picture As QPicture");	COMMENT = "";
+	Slot "setPixmap" ___("Pixmap As QPixmap");	COMMENT = "";
+	Slot "setText" ___("Text As String");	COMMENT = "";
 
-	Signal "linkActivated"___("Link As String") Declare "void linkActivated(const QString & link)"	COMMENT = "";
-	Signal "linkHovered"___("Link As String") Declare "void linkHovered(const QString & link)"	COMMENT = "";
+	Signal "linkActivated" ___("Link As String") Declare "void linkActivated(const QString & link)"	COMMENT = "";
+	Signal "linkHovered" ___("Link As String") Declare "void linkHovered(const QString & link)"	COMMENT = "";
 
 End_Class
 
@@ -6807,54 +6807,54 @@ Class "QMainWindow" SuperClass "QWidget"
 	Property "toolButtonStyle" As "Qt.ToolButtonStyle";	COMMENT = "";
 	Property "unifiedTitleAndToolBarOnMac" As "Boolean";	COMMENT = "";
 
-	Sub "addDockWidget"___("Area As Qt.DockWidgetArea, DockWidget As QDockWidget");	COMMENT = "";
-	Sub "addDockWidget2"___("Area As Qt.DockWidgetArea, DockWidget As QDockWidget, Orientation As Qt.Orientation");	COMMENT = "";
-	Sub "addToolBar"___("Area As Qt.ToolBarArea, ToolBar As QToolBar");	COMMENT = "";
-	Sub "addToolBar2"___("ToolBar As QToolBar");	COMMENT = "";
-	Function "addToolBar"___("Title As String") As "QToolBar";	COMMENT = "";
-	Sub "addToolBarBreak"___("Area As Qt.ToolBarArea");	COMMENT = "";
+	Sub "addDockWidget" ___("Area As Qt.DockWidgetArea, DockWidget As QDockWidget");	COMMENT = "";
+	Sub "addDockWidget2" ___("Area As Qt.DockWidgetArea, DockWidget As QDockWidget, Orientation As Qt.Orientation");	COMMENT = "";
+	Sub "addToolBar" ___("Area As Qt.ToolBarArea, ToolBar As QToolBar");	COMMENT = "";
+	Sub "addToolBar2" ___("ToolBar As QToolBar");	COMMENT = "";
+	Function "addToolBar" ___("Title As String") As "QToolBar";	COMMENT = "";
+	Sub "addToolBarBreak" ___("Area As Qt.ToolBarArea");	COMMENT = "";
 
-	Function "centralWidget"___("") As "QWidget";	COMMENT = "";
-	Function "corner"___("Corner As Qt.Corner") As "Qt.DockWidgetArea";	COMMENT = "";
+	Function "centralWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "corner" ___("Corner As Qt.Corner") As "Qt.DockWidgetArea";	COMMENT = "";
 
-	Event "createPopupMenu"___("") As "QMenu" Declare "void QMenu *createPopupMenu()";	COMMENT = "";
+	Event "createPopupMenu" ___("") As "QMenu" Declare "void QMenu *createPopupMenu()";	COMMENT = "";
 
-	Function "dockWidgetArea"___("DockWidget As QDockWidget") As "Qt.DockWidgetArea";	COMMENT = "";
-	Sub "insertToolBar"___("Before As QToolBar, ToolBar As QToolBar");	COMMENT = "";
-	Sub "insertToolBarBreak"___("Before As QToolBar");	COMMENT = "";
-	Function "menuBar"___("") As "QMenuBar";	COMMENT = "";
-	Function "menuWidget"___("") As "QWidget";	COMMENT = "";
+	Function "dockWidgetArea" ___("DockWidget As QDockWidget") As "Qt.DockWidgetArea";	COMMENT = "";
+	Sub "insertToolBar" ___("Before As QToolBar, ToolBar As QToolBar");	COMMENT = "";
+	Sub "insertToolBarBreak" ___("Before As QToolBar");	COMMENT = "";
+	Function "menuBar" ___("") As "QMenuBar";	COMMENT = "";
+	Function "menuWidget" ___("") As "QWidget";	COMMENT = "";
 
-	Sub "removeDockWidget"___("DockWidget As QDockWidget");	COMMENT = "";
-	Sub "removeToolBar"___("ToolBar As QToolBar");	COMMENT = "";
-	Sub "removeToolBarBreak"___("Before As QToolBar");	COMMENT = "";
-	Function "restoreDockWidget"___("DockWidget As QDockWidget") As "Boolean";	COMMENT = "";
+	Sub "removeDockWidget" ___("DockWidget As QDockWidget");	COMMENT = "";
+	Sub "removeToolBar" ___("ToolBar As QToolBar");	COMMENT = "";
+	Sub "removeToolBarBreak" ___("Before As QToolBar");	COMMENT = "";
+	Function "restoreDockWidget" ___("DockWidget As QDockWidget") As "Boolean";	COMMENT = "";
 
-	Function "restoreState"___("State As QByteArray, Version As Integer = 0") As "Boolean";	COMMENT = "";
-	Function "saveState"___("Version As Integer = 0") As "QByteArray";	COMMENT = "";
-	Sub "setCentralWidget"___("Widget As QWidget");	COMMENT = "";
-	Sub "setCorner"___("Corner As Qt.Corner, Area As Qt.DockWidgetArea");	COMMENT = "";
+	Function "restoreState" ___("State As QByteArray, Version As Integer = 0") As "Boolean";	COMMENT = "";
+	Function "saveState" ___("Version As Integer = 0") As "QByteArray";	COMMENT = "";
+	Sub "setCentralWidget" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setCorner" ___("Corner As Qt.Corner, Area As Qt.DockWidgetArea");	COMMENT = "";
 
-	Sub "setMenuBar"___("MenuBar As QMenuBar");	COMMENT = "";
-	Sub "setMenuWidget"___("MenuBar As QWidget");	COMMENT = "";
-	Sub "setStatusBar"___("StatusBar As QStatusBar");	COMMENT = "";
+	Sub "setMenuBar" ___("MenuBar As QMenuBar");	COMMENT = "";
+	Sub "setMenuWidget" ___("MenuBar As QWidget");	COMMENT = "";
+	Sub "setStatusBar" ___("StatusBar As QStatusBar");	COMMENT = "";
 
-	Sub "setTabPosition"___("Areas As Qt.DockWidgetAreas, TabPosition As QTabWidget.TabPosition");	COMMENT = "";
-	Sub "setTabShape"___("TabShape As QTabWidget.TabShape");	COMMENT = "";
-	Sub "splitDockWidget"___("First As QDockWidget, Second As QDockWidget, Orientation As Qt.Orientation");	COMMENT = "";
-	Function "statusBar"___("") As "QStatusBar";	COMMENT = "";
-	Function "tabPosition"___("Area As Qt.DockWidgetArea") As "QTabWiget.TabPosition";	COMMENT = "";
-	Function "tabShape"___("") As "QTabWidget.TabShape";	COMMENT = "";
-	Function "tabifiedDockWidgets"___("DockWidget As QDockWidget") As "List";	COMMENT = "";
-	Sub "tabifyDockWidget"___("First As QDockWidget, Second As QDockWidget");	COMMENT = "";
-	Function "toolBarArea"___("ToolBar As QToolBar") As "Qt.ToolBarArea";	COMMENT = "";
-	Function "toolBarBreak"___("ToolBar As QToolBar") As "Boolean";	COMMENT = "";
+	Sub "setTabPosition" ___("Areas As Qt.DockWidgetAreas, TabPosition As QTabWidget.TabPosition");	COMMENT = "";
+	Sub "setTabShape" ___("TabShape As QTabWidget.TabShape");	COMMENT = "";
+	Sub "splitDockWidget" ___("First As QDockWidget, Second As QDockWidget, Orientation As Qt.Orientation");	COMMENT = "";
+	Function "statusBar" ___("") As "QStatusBar";	COMMENT = "";
+	Function "tabPosition" ___("Area As Qt.DockWidgetArea") As "QTabWiget.TabPosition";	COMMENT = "";
+	Function "tabShape" ___("") As "QTabWidget.TabShape";	COMMENT = "";
+	Function "tabifiedDockWidgets" ___("DockWidget As QDockWidget") As "List";	COMMENT = "";
+	Sub "tabifyDockWidget" ___("First As QDockWidget, Second As QDockWidget");	COMMENT = "";
+	Function "toolBarArea" ___("ToolBar As QToolBar") As "Qt.ToolBarArea";	COMMENT = "";
+	Function "toolBarBreak" ___("ToolBar As QToolBar") As "Boolean";	COMMENT = "";
 
-	Slot "setAnimated"___("Enabled As Boolean");	COMMENT = "";
-	Slot "setDockNestingEnabled"___("Enabled As Boolean");	COMMENT = "";
+	Slot "setAnimated" ___("Enabled As Boolean");	COMMENT = "";
+	Slot "setDockNestingEnabled" ___("Enabled As Boolean");	COMMENT = "";
 
-	//Signal "iconSizeChanged"___("IconSize As QSize") Declare "void iconSizeChanged(const QSize & iconSize)"	COMMENT = "";
-	//Signal "toolButtonStyleChanged"___("ToolButtonStyle As Qt.ToolButtonStyle") Declare "void toolButtonStyleChanged(Qt.ToolButtonStyle toolButtonStyle)"	COMMENT = "";
+	//Signal "iconSizeChanged" ___("IconSize As QSize") Declare "void iconSizeChanged(const QSize & iconSize)"	COMMENT = "";
+	//Signal "toolButtonStyleChanged" ___("ToolButtonStyle As Qt.ToolButtonStyle") Declare "void toolButtonStyleChanged(Qt.ToolButtonStyle toolButtonStyle)"	COMMENT = "";
 
 End_Class
 
@@ -6870,22 +6870,22 @@ Class "QMdiArea" SuperClass "QAbstractScrollArea"
 	Property "tabShape" As "QTabWidget.TabShape";	COMMENT = "";
 	Property "viewMode" As "QMdiArea.ViewMode";	COMMENT = "";
 
-	Function "activeSubWindow"___("") As "QMdiSubWindow";	COMMENT = "";
-	Function "addSubWindow"___("Widget As QWidget, WindowFlags As Qt.WindowFlags") As "QMdiSubWindow";	COMMENT = "";
-	Sub "removeSubWindow"___("Widget As QWidget");	COMMENT = "";
-	Sub "setOption"___("Option As QMdiArea.AreaOption, On As Boolean");	COMMENT = "";
-	Function "subWindowList"___("Order As QMdiArea.WindowOrder") As "List";	COMMENT = "";
-	Function "testOption"___("Option As QMdiArea.AreaOption") As "Boolean";	COMMENT = "";
+	Function "activeSubWindow" ___("") As "QMdiSubWindow";	COMMENT = "";
+	Function "addSubWindow" ___("Widget As QWidget, WindowFlags As Qt.WindowFlags") As "QMdiSubWindow";	COMMENT = "";
+	Sub "removeSubWindow" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setOption" ___("Option As QMdiArea.AreaOption, On As Boolean");	COMMENT = "";
+	Function "subWindowList" ___("Order As QMdiArea.WindowOrder") As "List";	COMMENT = "";
+	Function "testOption" ___("Option As QMdiArea.AreaOption") As "Boolean";	COMMENT = "";
 
-	Slot "activateNextSubWindow"___("");	COMMENT = "";
-	Slot "activatePreviousSubWindow"___("");	COMMENT = "";
-	Slot "cascadeSubWindows"___("");	COMMENT = "";
-	Slot "closeActiveSubWindow"___("");	COMMENT = "";
-	Slot "closeAllSubWindows"___("");	COMMENT = "";
-	Slot "setActiveSubWindow"___("Window As QMdiSubWindow");	COMMENT = "";
-	Slot "tileSubWindows"___("");	COMMENT = "";
+	Slot "activateNextSubWindow" ___("");	COMMENT = "";
+	Slot "activatePreviousSubWindow" ___("");	COMMENT = "";
+	Slot "cascadeSubWindows" ___("");	COMMENT = "";
+	Slot "closeActiveSubWindow" ___("");	COMMENT = "";
+	Slot "closeAllSubWindows" ___("");	COMMENT = "";
+	Slot "setActiveSubWindow" ___("Window As QMdiSubWindow");	COMMENT = "";
+	Slot "tileSubWindows" ___("");	COMMENT = "";
 
-	Signal "subWindowActivated"___("Window As QMdiSubWindow") Declare "void subWindowActivated(QMdiSubWindow * window)"	COMMENT = "";
+	Signal "subWindowActivated" ___("Window As QMdiSubWindow") Declare "void subWindowActivated(QMdiSubWindow * window)"	COMMENT = "";
 
 End_Class
 
@@ -6907,38 +6907,38 @@ Class "QTabBar" SuperClass "QWidget"
 	Property "tabsClosable" As "Boolean";	COMMENT = "";
 	Property "usesScrollButtons" As "Boolean";	COMMENT = "";
 
-	Function "addTab"___("Text As String") As "Integer";	COMMENT = "";
-	Function "addTab"___("Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
-	Function "insertTab"___("Index As Integer, Text As String") As "Integer";	COMMENT = "";
-	Function "insertTab"___("Index As Integer, Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
-	Function "isTabEnabled"___("Index As Integer") As "Boolean";	COMMENT = "";
-	Sub "moveTab"___("FromTab As Integer, ToTab As Integer");	COMMENT = "";
-	Sub "removeTab"___("Index As Integer");	COMMENT = "";
-	Sub "setTabButton"___("Index As Integer, Position As QTabBar.ButtonPosition, Widget As QWidget");	COMMENT = "";
-	Sub "setTabData"___("Index As Integer, Data As QVariant");	COMMENT = "";
-	Sub "setTabEnabled"___("Index As Integer, Enabled As Boolean");	COMMENT = "";
-	Sub "setTabIcon"___("Index As Integer, Icon As QIcon");	COMMENT = "";
+	Function "addTab" ___("Text As String") As "Integer";	COMMENT = "";
+	Function "addTab" ___("Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
+	Function "insertTab" ___("Index As Integer, Text As String") As "Integer";	COMMENT = "";
+	Function "insertTab" ___("Index As Integer, Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
+	Function "isTabEnabled" ___("Index As Integer") As "Boolean";	COMMENT = "";
+	Sub "moveTab" ___("FromTab As Integer, ToTab As Integer");	COMMENT = "";
+	Sub "removeTab" ___("Index As Integer");	COMMENT = "";
+	Sub "setTabButton" ___("Index As Integer, Position As QTabBar.ButtonPosition, Widget As QWidget");	COMMENT = "";
+	Sub "setTabData" ___("Index As Integer, Data As QVariant");	COMMENT = "";
+	Sub "setTabEnabled" ___("Index As Integer, Enabled As Boolean");	COMMENT = "";
+	Sub "setTabIcon" ___("Index As Integer, Icon As QIcon");	COMMENT = "";
 
-	Sub "setTabText"___("Index As Integer, Text As String");	COMMENT = "";
-	Sub "setTabTextColor"___("Index As Integer, Color As QColor");	COMMENT = "";
-	Sub "setTabToolTip"___("Index As Integer, Tip As String");	COMMENT = "";
-	Sub "setTabWhatsThis"___("Index As Integer, Text As String");	COMMENT = "";
+	Sub "setTabText" ___("Index As Integer, Text As String");	COMMENT = "";
+	Sub "setTabTextColor" ___("Index As Integer, Color As QColor");	COMMENT = "";
+	Sub "setTabToolTip" ___("Index As Integer, Tip As String");	COMMENT = "";
+	Sub "setTabWhatsThis" ___("Index As Integer, Text As String");	COMMENT = "";
 
-	Function "tabAt"___("Position As QPoint") As "Integer";	COMMENT = "";
-	Function "tabButton"___("Index As Integer, Position As QTabBar.ButtonPosition") As "QWidget";	COMMENT = "";
-	Function "tabData"___("Index As Integer") As "QVariant";	COMMENT = "";
-	Function "tabIcon"___("Index As Integer") As "QIcon";	COMMENT = "";
-	Function "tabRect"___("Index As Integer") As "QRect";	COMMENT = "";
-	Function "tabText"___("Index As Integer") As "String";	COMMENT = "";
-	Function "tabTextColor"___("Index As Integer") As "QColor";	COMMENT = "";
-	Function "tabToolTip"___("Index As Integer") As "String";	COMMENT = "";
-	Function "tabWhatsThis"___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabAt" ___("Position As QPoint") As "Integer";	COMMENT = "";
+	Function "tabButton" ___("Index As Integer, Position As QTabBar.ButtonPosition") As "QWidget";	COMMENT = "";
+	Function "tabData" ___("Index As Integer") As "QVariant";	COMMENT = "";
+	Function "tabIcon" ___("Index As Integer") As "QIcon";	COMMENT = "";
+	Function "tabRect" ___("Index As Integer") As "QRect";	COMMENT = "";
+	Function "tabText" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabTextColor" ___("Index As Integer") As "QColor";	COMMENT = "";
+	Function "tabToolTip" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "tabWhatsThis" ___("Index As Integer") As "String";	COMMENT = "";
 
-	Slot "setCurrentIndex"___("Index As Integer");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As Integer");	COMMENT = "";
 
-	Signal "currentChanged"___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
-	Signal "tabCloseRequested"___("Index As Integer") Declare "void tabCloseRequest(int index)"	COMMENT = "";
-	Signal "tabMoved"___("From As Integer, ToTab As Integer") Declare "void tabMoved(int from, int to)"	COMMENT = "";
+	Signal "currentChanged" ___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
+	Signal "tabCloseRequested" ___("Index As Integer") Declare "void tabCloseRequest(int index)"	COMMENT = "";
+	Signal "tabMoved" ___("From As Integer, ToTab As Integer") Declare "void tabMoved(int from, int to)"	COMMENT = "";
 
 End_Class
 
@@ -6950,20 +6950,20 @@ Class "QMdiSubWindow" SuperClass "QWidget"
 	Property "keyboardPageStep" As "Integer";	COMMENT = "";
 	Property "keyboardSingleStep" As "Integer";	COMMENT = "";
 
-	Function "isShaded"___("") As "Boolean";	COMMENT = "";
-	Function "mdiArea"___("") As "QMdiArea";	COMMENT = "";
-	Sub "setOption"___("Option As QMdiSubWindow.SubWindowOption, On As Boolean");	COMMENT = "";
-	Sub "setSystemMenu"___("SystemMenu As QMenu");	COMMENT = "";	
-	Sub "setWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "systemMenu"___("") As "QMenu";	COMMENT = "";
-	Function "testOption"___("Option As QMdiSubWindow.SubWindowOption") As "Boolean";	COMMENT = "";
-	Function "widget"___("") As "QWidget";	COMMENT = "";
+	Function "isShaded" ___("") As "Boolean";	COMMENT = "";
+	Function "mdiArea" ___("") As "QMdiArea";	COMMENT = "";
+	Sub "setOption" ___("Option As QMdiSubWindow.SubWindowOption, On As Boolean");	COMMENT = "";
+	Sub "setSystemMenu" ___("SystemMenu As QMenu");	COMMENT = "";
+	Sub "setWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "systemMenu" ___("") As "QMenu";	COMMENT = "";
+	Function "testOption" ___("Option As QMdiSubWindow.SubWindowOption") As "Boolean";	COMMENT = "";
+	Function "widget" ___("") As "QWidget";	COMMENT = "";
 
-	Slot "showShaded"___("");	COMMENT = "";
-	Slot "showSystemMenu"___("");	COMMENT = "";
+	Slot "showShaded" ___("");	COMMENT = "";
+	Slot "showSystemMenu" ___("");	COMMENT = "";
 
-	Signal "aboutToActivate"___("") Declare "void aboutToActivate()"	COMMENT = "";
-	Signal "windowStateChanged"___("OldState As Qt.WindowStates, NewState As Qt.WindowStates") Declare "void 	windowStateChanged(Qt.WindowStates oldState, Qt.WindowStates newState)"	COMMENT = "";
+	Signal "aboutToActivate" ___("") Declare "void aboutToActivate()"	COMMENT = "";
+	Signal "windowStateChanged" ___("OldState As Qt.WindowStates, NewState As Qt.WindowStates") Declare "void 	windowStateChanged(Qt.WindowStates oldState, Qt.WindowStates newState)"	COMMENT = "";
 
 End_Class
 
@@ -6978,18 +6978,18 @@ Class "QLCDNumber" SuperClass "QFrame"
 	Property "smallDecimalPoint" As "Boolean";	COMMENT = "";
 	Property "value" As "Float";	COMMENT = "";
 
-	Function "checkOverflow"___("Number As Float") As "Boolean";	COMMENT = "";
-	Function "checkOverflow2"___("Number As Integer") As "Boolean";	COMMENT = "";
+	Function "checkOverflow" ___("Number As Float") As "Boolean";	COMMENT = "";
+	Function "checkOverflow2" ___("Number As Integer") As "Boolean";	COMMENT = "";
 	
-	Slot "display"___("Text As String");	COMMENT = "";
-	Slot "display2"___("Number As Float");	COMMENT = "";
-	Slot "setBinMode"___("");	COMMENT = "";
-	Slot "setDecMode"___("");	COMMENT = "";
-	Slot "setHexMode"___("");	COMMENT = "";
-	Slot "setOctMode"___("");	COMMENT = "";
-	Slot "setSmallDecimalPoint"___("Enable As Boolean");	COMMENT = "";
+	Slot "display" ___("Text As String");	COMMENT = "";
+	Slot "display2" ___("Number As Float");	COMMENT = "";
+	Slot "setBinMode" ___("");	COMMENT = "";
+	Slot "setDecMode" ___("");	COMMENT = "";
+	Slot "setHexMode" ___("");	COMMENT = "";
+	Slot "setOctMode" ___("");	COMMENT = "";
+	Slot "setSmallDecimalPoint" ___("Enable As Boolean");	COMMENT = "";
 
-	Signal "overflow"___("") Declare "void overflow()"	COMMENT = "";
+	Signal "overflow" ___("") Declare "void overflow()"	COMMENT = "";
 
 End_Class
 
@@ -6997,64 +6997,64 @@ End_Class
 
 Class "QImage" //SuperClass "QPaintDevice"
 
-	Function "allGray"___("") As "Boolean";	COMMENT = "";
-	Function "bitPlaneCount"___("") As "Integer";	COMMENT = "";
-	Function "byteCount"___("") As "Integer";	COMMENT = "";	
-	Function "bytesPerLine"___("") As "Integer";	COMMENT = "";	
-	Function "cacheKey"___("") As "Integer";	COMMENT = "";	
-	Function "color"___("I As Integer") As "QRgb";	COMMENT = "";
-	Function "colorCount"___("") As "Integer";	COMMENT = "";
+	Function "allGray" ___("") As "Boolean";	COMMENT = "";
+	Function "bitPlaneCount" ___("") As "Integer";	COMMENT = "";
+	Function "byteCount" ___("") As "Integer";	COMMENT = "";
+	Function "bytesPerLine" ___("") As "Integer";	COMMENT = "";
+	Function "cacheKey" ___("") As "Integer";	COMMENT = "";
+	Function "color" ___("I As Integer") As "QRgb";	COMMENT = "";
+	Function "colorCount" ___("") As "Integer";	COMMENT = "";
 
-	Function "convertToFormat"___("Format As QImage.Format, Flags As Qt.ImageConversionFlags") As "QImage";	COMMENT = "";
-	Function "copy"___("Rectangle As QRect") As "QImage";	COMMENT = "";
-	Function "copy"___("X As Integer, Y As Integer, Width As Integer, Height As Integer") As "QImage";	COMMENT = "";
-	Function "createAlphaMask"___("Flags As Qt.ImageConversionFlags") As "QImage";	COMMENT = "";
-	Function "createHeuristicMask"___("ClipTight As Boolean") As "QImage";	COMMENT = "";
-	Function "createMaskFromColor"___("Color As QRgb, Mode As Qt.MaskMode") As "QImage";	COMMENT = "";
+	Function "convertToFormat" ___("Format As QImage.Format, Flags As Qt.ImageConversionFlags") As "QImage";	COMMENT = "";
+	Function "copy" ___("Rectangle As QRect") As "QImage";	COMMENT = "";
+	Function "copy" ___("X As Integer, Y As Integer, Width As Integer, Height As Integer") As "QImage";	COMMENT = "";
+	Function "createAlphaMask" ___("Flags As Qt.ImageConversionFlags") As "QImage";	COMMENT = "";
+	Function "createHeuristicMask" ___("ClipTight As Boolean") As "QImage";	COMMENT = "";
+	Function "createMaskFromColor" ___("Color As QRgb, Mode As Qt.MaskMode") As "QImage";	COMMENT = "";
 	
-    Function "depth"___("") As "Integer";	COMMENT = "";
-	Function "dotsPerMeterX"___("") As "Integer";	COMMENT = "";
-	Function "dotsPerMeterY"___("") As "Integer";	COMMENT = "";
-	Sub "fill"___("PixelValue As Integer");	COMMENT = "";
-	Function "format"___("") As "Format As QImage.Format";	COMMENT = "";
-	Function "hasAlphaChannel"___("") As "Boolean";	COMMENT = "";
-	Function "height"___("") As "Integer";	COMMENT = "";
+    Function "depth" ___("") As "Integer";	COMMENT = "";
+	Function "dotsPerMeterX" ___("") As "Integer";	COMMENT = "";
+	Function "dotsPerMeterY" ___("") As "Integer";	COMMENT = "";
+	Sub "fill" ___("PixelValue As Integer");	COMMENT = "";
+	Function "format" ___("") As "Format As QImage.Format";	COMMENT = "";
+	Function "hasAlphaChannel" ___("") As "Boolean";	COMMENT = "";
+	Function "height" ___("") As "Integer";	COMMENT = "";
 
-	Sub "invertPixels"___("Mode As QImage.InvertMode");	COMMENT = "";
-	Function "isGrayscale"___("") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "load"___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
-	Function "loadFromData"___("Data As QByteArray, Format As String") As "Boolean";	COMMENT = "";
-	Function "mirrored"___("Horizontal As Boolean, Vertical As Boolean") As "QImage";	COMMENT = "";
-	Function "offset"___("") As "QPoint";	COMMENT = "";
-	Function "pixel"___("Position As QPoint") As "QRgb";	COMMENT = "";
-	Function "pixel"___("X As Integer, Y As Integer") As "QRgb";	COMMENT = "";
-	Function "pixelIndex"___("Position As QPoint") As "Integer";	COMMENT = "";
+	Sub "invertPixels" ___("Mode As QImage.InvertMode");	COMMENT = "";
+	Function "isGrayscale" ___("") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "load" ___("FileName As String, Format As String") As "Boolean";	COMMENT = "";
+	Function "loadFromData" ___("Data As QByteArray, Format As String") As "Boolean";	COMMENT = "";
+	Function "mirrored" ___("Horizontal As Boolean, Vertical As Boolean") As "QImage";	COMMENT = "";
+	Function "offset" ___("") As "QPoint";	COMMENT = "";
+	Function "pixel" ___("Position As QPoint") As "QRgb";	COMMENT = "";
+	Function "pixel" ___("X As Integer, Y As Integer") As "QRgb";	COMMENT = "";
+	Function "pixelIndex" ___("Position As QPoint") As "Integer";	COMMENT = "";
 	
-    Function "rect"___("") As "QRect";	COMMENT = "";
-	Function "rgbSwapped"___("") As "QImage";	COMMENT = "";
-	Function "save"___("FileName As String, Format As String, Quality As Integer") As "Boolean";	COMMENT = "";
-  Function "scaled"___("Size As QSize, AspectRatioMode As Qt.AspectRatioMode, TransformMode As Qt::TransformationMode") As "QImage";	COMMENT = "";
-  Function "scaled2"___("Width As Integer, Heigth As Integer, AspectRatioMode As Qt::AspectRatioMode, TransformMode As Qt.TransformationMode") As "QImage";	COMMENT = "";
-	Function "scaledToHeight"___("Height As Integer, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
-	Function "scaledToWidth"___("Width As Integer, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
+    Function "rect" ___("") As "QRect";	COMMENT = "";
+	Function "rgbSwapped" ___("") As "QImage";	COMMENT = "";
+	Function "save" ___("FileName As String, Format As String, Quality As Integer") As "Boolean";	COMMENT = "";
+  Function "scaled" ___("Size As QSize, AspectRatioMode As Qt.AspectRatioMode, TransformMode As Qt::TransformationMode") As "QImage";	COMMENT = "";
+  Function "scaled2" ___("Width As Integer, Heigth As Integer, AspectRatioMode As Qt::AspectRatioMode, TransformMode As Qt.TransformationMode") As "QImage";	COMMENT = "";
+	Function "scaledToHeight" ___("Height As Integer, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
+	Function "scaledToWidth" ___("Width As Integer, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
 
-	Sub "setColor"___("Index As Integer, ColorValue As QRgb");	COMMENT = "";
-	Sub "setColorCount"___("ColorCount As Integer");	COMMENT = "";
-	Sub "setDotsPerMeterX"___("X As Integer");	COMMENT = "";
-	Sub "setDotsPerMeterY"___("Y As Integer");	COMMENT = "";
-	Sub "setOffset"___("Offset As QPoint");	COMMENT = "";
-	Sub "setPixel"___("Position As QPoint, IndexOrRgb As Integer");	COMMENT = "";
-	Sub "setPixel2"___("X As Integer, Y As Integer, IndexOrRgb As Integer");	COMMENT = "";
-	Sub "setText"___("Key As String, Text As String");	COMMENT = "";
-	Function "size"___("") As "QSize";	COMMENT = "";
-	Function "text"___("Key As String") As "String";	COMMENT = "";
-	Function "textKeys"___("") As "List";	COMMENT = "";
-	Function "transformed"___("Matrix As QMatrix, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
-	Function "transformed2"___("Matrix As QTransform, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
-	Function "valid"___("Position As QPoint") As "Boolean";	COMMENT = "";
-	Function "valid2"___("X As Integer, Y As Integer") As "Boolean";	COMMENT = "";
-	Function "width"___("") As "Integer";	COMMENT = "";
+	Sub "setColor" ___("Index As Integer, ColorValue As QRgb");	COMMENT = "";
+	Sub "setColorCount" ___("ColorCount As Integer");	COMMENT = "";
+	Sub "setDotsPerMeterX" ___("X As Integer");	COMMENT = "";
+	Sub "setDotsPerMeterY" ___("Y As Integer");	COMMENT = "";
+	Sub "setOffset" ___("Offset As QPoint");	COMMENT = "";
+	Sub "setPixel" ___("Position As QPoint, IndexOrRgb As Integer");	COMMENT = "";
+	Sub "setPixel2" ___("X As Integer, Y As Integer, IndexOrRgb As Integer");	COMMENT = "";
+	Sub "setText" ___("Key As String, Text As String");	COMMENT = "";
+	Function "size" ___("") As "QSize";	COMMENT = "";
+	Function "text" ___("Key As String") As "String";	COMMENT = "";
+	Function "textKeys" ___("") As "List";	COMMENT = "";
+	Function "transformed" ___("Matrix As QMatrix, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
+	Function "transformed2" ___("Matrix As QTransform, Mode As Qt.TransformationMode") As "QImage";	COMMENT = "";
+	Function "valid" ___("Position As QPoint") As "Boolean";	COMMENT = "";
+	Function "valid2" ___("X As Integer, Y As Integer") As "Boolean";	COMMENT = "";
+	Function "width" ___("") As "Integer";	COMMENT = "";
 
 End_Class
 
@@ -7065,11 +7065,11 @@ Class "QScrollArea" SuperClass "QAbstractScrollArea"
 	Property "alignment" As "Qt.Alignment";	COMMENT = "";
 	Property "widgetResizable" As "Boolean";	COMMENT = "";
 
-	Sub "ensureVisible"___("X As Integer, Y As Integer, YMargin As Integer");	COMMENT = "";
-	Sub "ensureWidgetVisible"___("ChildWidget As QWidget, XMargin As Integer, YMargin As Integer");	COMMENT = "";	
-	Sub "setWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "takeWidget"___("") As "QWidget";	COMMENT = "";
-	Function "widget"___("") As "QWidget";	COMMENT = "";
+	Sub "ensureVisible" ___("X As Integer, Y As Integer, YMargin As Integer");	COMMENT = "";
+	Sub "ensureWidgetVisible" ___("ChildWidget As QWidget, XMargin As Integer, YMargin As Integer");	COMMENT = "";
+	Sub "setWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "takeWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "widget" ___("") As "QWidget";	COMMENT = "";
 
 End_Class
 
@@ -7077,22 +7077,22 @@ End_Class
 
 Class "QSignalMapper" SuperClass "QObject"
 
-	Function "mapping"___("theId As Integer") As "QObject";	COMMENT = "";
-	Function "mapping2"___("theId As String") As "QObject";	COMMENT = "";
-	Function "mapping3"___("theObject As QObject") As "QObject";	COMMENT = "";
-	Sub "removeMappings"___("Sender As QObject");	COMMENT = "";
-	Sub "setMapping"___("Sender As QObject, theId As Integer");	COMMENT = "";
-	Sub "setMapping2"___("Sender As QObject, Text As String");	COMMENT = "";
-	Sub "setMapping3"___("Sender As QObject, Widget As QWidget");	COMMENT = "";
-	Sub "setMapping4"___("Sender As QObject, theObject As QObject");	COMMENT = "";
+	Function "mapping" ___("theId As Integer") As "QObject";	COMMENT = "";
+	Function "mapping2" ___("theId As String") As "QObject";	COMMENT = "";
+	Function "mapping3" ___("theObject As QObject") As "QObject";	COMMENT = "";
+	Sub "removeMappings" ___("Sender As QObject");	COMMENT = "";
+	Sub "setMapping" ___("Sender As QObject, theId As Integer");	COMMENT = "";
+	Sub "setMapping2" ___("Sender As QObject, Text As String");	COMMENT = "";
+	Sub "setMapping3" ___("Sender As QObject, Widget As QWidget");	COMMENT = "";
+	Sub "setMapping4" ___("Sender As QObject, theObject As QObject");	COMMENT = "";
 
-	Slot "map"___("");	COMMENT = "";
-	Slot "map2"___("Sender As QObject");	COMMENT = "";
+	Slot "map" ___("");	COMMENT = "";
+	Slot "map2" ___("Sender As QObject");	COMMENT = "";
 
-	Signal "mapped"___("theId As Integer") Declare "void mapped(int i)"	COMMENT = "";
-	Signal "mapped2"___("Text As String") Declare "void mapped(const QString & text)"	COMMENT = "";
-	Signal "mapped3"___("Widget As QWidget") Declare "void mapped(QWidget * widget)"	COMMENT = "";
-	Signal "mapped4"___("theObject As QObject") Declare "void mapped(QObject * object)"	COMMENT = "";
+	Signal "mapped" ___("theId As Integer") Declare "void mapped(int i)"	COMMENT = "";
+	Signal "mapped2" ___("Text As String") Declare "void mapped(const QString & text)"	COMMENT = "";
+	Signal "mapped3" ___("Widget As QWidget") Declare "void mapped(QWidget * widget)"	COMMENT = "";
+	Signal "mapped4" ___("theObject As QObject") Declare "void mapped(QObject * object)"	COMMENT = "";
 
 End_Class
 
@@ -7109,15 +7109,15 @@ End_Class
 
 Class "QElapsedTimer"
 
-	Function "elapsed"___("") As "Integer";	COMMENT = "";
-	Function "hasExpired"___("Timeout As Integer") As "Boolean";	COMMENT = "";
-	Sub "invalidate"___("");	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "msecsSinceReference"___("") As "Integer";	COMMENT = "";
-	Function "msecsTo"___("Other As QElapsedTimer") As "Integer";	COMMENT = "";
-	Function "restart"___("") As "Integer";	COMMENT = "";
-	Function "secsTo"___("Other As QElapsedTimer") As "Integer";	COMMENT = "";
-	Sub "start"___("");	COMMENT = "";
+	Function "elapsed" ___("") As "Integer";	COMMENT = "";
+	Function "hasExpired" ___("Timeout As Integer") As "Boolean";	COMMENT = "";
+	Sub "invalidate" ___("");	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "msecsSinceReference" ___("") As "Integer";	COMMENT = "";
+	Function "msecsTo" ___("Other As QElapsedTimer") As "Integer";	COMMENT = "";
+	Function "restart" ___("") As "Integer";	COMMENT = "";
+	Function "secsTo" ___("Other As QElapsedTimer") As "Integer";	COMMENT = "";
+	Sub "start" ___("");	COMMENT = "";
 
 End_Class
 
@@ -7133,13 +7133,13 @@ Class "QSpinBox" SuperClass "QAbstractSpinBox"
 	Property "suffix" As "String";	COMMENT = "";
 	Property "value" As "Integer";	COMMENT = "";	
 
-	Sub "setRange"___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
-	Function "value"___("") As "Integer";	COMMENT = "";
+	Sub "setRange" ___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
+	Function "value" ___("") As "Integer";	COMMENT = "";
 
-	Slot "setValue"___("Val As Integer");	COMMENT = "";
+	Slot "setValue" ___("Val As Integer");	COMMENT = "";
 
-	Signal "valueChanged"___("Value As Integer") Declare "void valueChanged(int i)"	COMMENT = "";
-	Signal "valueChanged2"___("Text As String") Declare "void	valueChanged(const QString & text)"	COMMENT = "";
+	Signal "valueChanged" ___("Value As Integer") Declare "void valueChanged(int i)"	COMMENT = "";
+	Signal "valueChanged2" ___("Text As String") Declare "void	valueChanged(const QString & text)"	COMMENT = "";
 
 End_Class
 
@@ -7147,15 +7147,15 @@ End_Class
 
 Class "QSplashScreen" SuperClass "QWidget"
 
-	Sub "finish"___("MainWin As QWidget");	COMMENT = "";
-	Function "pixmap"___("") As "QPixmap";	COMMENT = "";
-	Sub "repaint"___("");	COMMENT = "";
-	Sub "setPixmap"___("Pixmap As QPixmap");	COMMENT = "";
+	Sub "finish" ___("MainWin As QWidget");	COMMENT = "";
+	Function "pixmap" ___("") As "QPixmap";	COMMENT = "";
+	Sub "repaint" ___("");	COMMENT = "";
+	Sub "setPixmap" ___("Pixmap As QPixmap");	COMMENT = "";
 
-	Slot "clearMessage"___("");	COMMENT = "";
-	Slot "showMessage"___("Message As String, Alignment As Integer, Color As QColor");	COMMENT = "";
+	Slot "clearMessage" ___("");	COMMENT = "";
+	Slot "showMessage" ___("Message As String, Alignment As Integer, Color As QColor");	COMMENT = "";
 
-	Signal "messageChanged"___("Message As String") Declare "void messageChanged(const QString & message)"	COMMENT = "";
+	Signal "messageChanged" ___("Message As String") Declare "void messageChanged(const QString & message)"	COMMENT = "";
 
 End_Class
 
@@ -7168,23 +7168,23 @@ Class "QSplitter" SuperClass "QFrame"
 	Property "opaqueResize" As "Boolean";	COMMENT = "";
 	Property "orientation" As "Qt.Orientation";	COMMENT = "";
 
-	Sub "addWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "count"___("") As "Integer";	COMMENT = "";
-	//Sub "getRange"___("Index As Integer, Min As Integer, Max As Integer");	COMMENT = "";
-	Function "handle"___("Index As Integer") As "QSplitterHandle";	COMMENT = "";
-	Function "indexOf"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Sub "insertWidget"___("Index As Integer, Widget As QWidget");	COMMENT = "";
-	Function "isCollapsible"___("Index As Integer") As "Boolean";	COMMENT = "";
-	Sub "refresh"___("");	COMMENT = "";
-	Function "restoreState"___("State As QByteArray") As "Boolean";	COMMENT = "";
-	Function "saveState"___("") As "QByteArray";	COMMENT = "";
-	Sub "setCollapsible"___("Index As Integer, Collapse As Boolean");	COMMENT = "";
-	Sub "setSizes"___("list As List");	COMMENT = "";
-	Sub "setStretchFactor"___("Index As Integer, Stretch As Integer");	COMMENT = "";
-	Function "sizes"___("") As "List";	COMMENT = "";
-	Function "widget"___("Index As Integer") As "QWidget";	COMMENT = "";
+	Sub "addWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "count" ___("") As "Integer";	COMMENT = "";
+	//Sub "getRange" ___("Index As Integer, Min As Integer, Max As Integer");	COMMENT = "";
+	Function "handle" ___("Index As Integer") As "QSplitterHandle";	COMMENT = "";
+	Function "indexOf" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Sub "insertWidget" ___("Index As Integer, Widget As QWidget");	COMMENT = "";
+	Function "isCollapsible" ___("Index As Integer") As "Boolean";	COMMENT = "";
+	Sub "refresh" ___("");	COMMENT = "";
+	Function "restoreState" ___("State As QByteArray") As "Boolean";	COMMENT = "";
+	Function "saveState" ___("") As "QByteArray";	COMMENT = "";
+	Sub "setCollapsible" ___("Index As Integer, Collapse As Boolean");	COMMENT = "";
+	Sub "setSizes" ___("list As List");	COMMENT = "";
+	Sub "setStretchFactor" ___("Index As Integer, Stretch As Integer");	COMMENT = "";
+	Function "sizes" ___("") As "List";	COMMENT = "";
+	Function "widget" ___("Index As Integer") As "QWidget";	COMMENT = "";
 
-	Signal "splitterMoved"___("Pos As Integer, Index As Integer") Declare "void splitterMoved(int pos, int index)"	COMMENT = "";
+	Signal "splitterMoved" ___("Pos As Integer, Index As Integer") Declare "void splitterMoved(int pos, int index)"	COMMENT = "";
 
 End_Class
 
@@ -7201,51 +7201,51 @@ Class "QWebPage" SuperClass "QObject"
 	Property "selectedText" As "String";	COMMENT = "";
 	Property "viewportSize" As "QSize";	COMMENT = "";
 
-	Function "bytesReceived"___("") As "Integer";	COMMENT = "";
+	Function "bytesReceived" ___("") As "Integer";	COMMENT = "";
 	
-	Event "createStandardContextMenu"___("") As "QMenu" Declare "QMenu *createStandardContextMenu ()"	COMMENT = "";
+	Event "createStandardContextMenu" ___("") As "QMenu" Declare "QMenu *createStandardContextMenu ()"	COMMENT = "";
 	
-	Function "currentFrame"___("") As "QWebFrame";	COMMENT = "";
-	Function "findText"___("SubString As String, Options As QWebPage.FindFlags") As "Boolean";	COMMENT = "";
-	Function "focusNextPrevChild"___("Next As Boolean") As "Boolean";	COMMENT = "";
-	Function "frameAt"___("Pos As QPoint") As "QWebFrame";	COMMENT = "";
-	Function "history"___("") As "QWebHistory";	COMMENT = "";
-	Function "mainFrame"___("") As "QWebFrame";	COMMENT = "";
-	Sub "setView"___("View As QWidget");	COMMENT = "";
-	Sub "setViewportSize"___("Size As QSize");	COMMENT = "";
-	Function "settings"___("") As "QWebSettings";	COMMENT = "";
-	Function "swallowContextMenuEvent"___("Event As QContextMenuEvent") As "Boolean";	COMMENT = "";
-	Function "totalBytes"___("") As "Integer";	COMMENT = "";
-	Sub "updatePositionDependentActions"___("Pos As QPoint");	COMMENT = "";
-	Function "view"___("") As "QWidget";	COMMENT = "";
+	Function "currentFrame" ___("") As "QWebFrame";	COMMENT = "";
+	Function "findText" ___("SubString As String, Options As QWebPage.FindFlags") As "Boolean";	COMMENT = "";
+	Function "focusNextPrevChild" ___("Next As Boolean") As "Boolean";	COMMENT = "";
+	Function "frameAt" ___("Pos As QPoint") As "QWebFrame";	COMMENT = "";
+	Function "history" ___("") As "QWebHistory";	COMMENT = "";
+	Function "mainFrame" ___("") As "QWebFrame";	COMMENT = "";
+	Sub "setView" ___("View As QWidget");	COMMENT = "";
+	Sub "setViewportSize" ___("Size As QSize");	COMMENT = "";
+	Function "settings" ___("") As "QWebSettings";	COMMENT = "";
+	Function "swallowContextMenuEvent" ___("Event As QContextMenuEvent") As "Boolean";	COMMENT = "";
+	Function "totalBytes" ___("") As "Integer";	COMMENT = "";
+	Sub "updatePositionDependentActions" ___("Pos As QPoint");	COMMENT = "";
+	Function "view" ___("") As "QWidget";	COMMENT = "";
 
-	Slot "shouldInterruptJavaScript"___("") As "Boolean";	COMMENT = "";
+	Slot "shouldInterruptJavaScript" ___("") As "Boolean";	COMMENT = "";
 
-	Signal "contentsChanged"___("") Declare "void contentsChanged()"	COMMENT = "";
-	Signal "databaseQuotaExceeded"___("Frame As QWebFrame, DataBaseName As String") Declare "void databaseQuotaExceeded(QWebFrame * frame, QString databaseName)"	COMMENT = "";
-	Signal "downloadRequested"___("Resquest As QNetworkRequest") Declare "void downloadRequested(const QNetworkRequest & request)"	COMMENT = "";
-	Signal "frameCreated"___("Frame As QWebFrame") Declare "void frameCreated(QWebFrame * frame)"	COMMENT = "";
-	Signal "geometryChangeRequested"___("Geom As QRect") Declare "void geometryChangeRequested(const QRect & geom)"	COMMENT = "";
+	Signal "contentsChanged" ___("") Declare "void contentsChanged()"	COMMENT = "";
+	Signal "databaseQuotaExceeded" ___("Frame As QWebFrame, DataBaseName As String") Declare "void databaseQuotaExceeded(QWebFrame * frame, QString databaseName)"	COMMENT = "";
+	Signal "downloadRequested" ___("Resquest As QNetworkRequest") Declare "void downloadRequested(const QNetworkRequest & request)"	COMMENT = "";
+	Signal "frameCreated" ___("Frame As QWebFrame") Declare "void frameCreated(QWebFrame * frame)"	COMMENT = "";
+	Signal "geometryChangeRequested" ___("Geom As QRect") Declare "void geometryChangeRequested(const QRect & geom)"	COMMENT = "";
 	
-	Signal "linkClicked"___("Url As QUrl") Declare "void linkClicked(const QUrl & url)"	COMMENT = "";
-	Signal "linkHovered"___("Link As String, Title As String, TextContent As String") Declare "void linkHovered(const QString & link, const QString & title, const QString & textContent)"	COMMENT = "";
-	Signal "loadFinished"___("Ok As Boolean") Declare "void loadFinished(bool ok)"	COMMENT = "";
-	Signal "loadProgress"___("Progress As Integer") Declare "void loadProgress(int progress)"	COMMENT = "";
-	Signal "loadStarted"___("") Declare "void loadStarted()"	COMMENT = "";
-	Signal "menuBarVisibilityChangeRequested"___("Visible As Boolean") Declare "void menuBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
+	Signal "linkClicked" ___("Url As QUrl") Declare "void linkClicked(const QUrl & url)"	COMMENT = "";
+	Signal "linkHovered" ___("Link As String, Title As String, TextContent As String") Declare "void linkHovered(const QString & link, const QString & title, const QString & textContent)"	COMMENT = "";
+	Signal "loadFinished" ___("Ok As Boolean") Declare "void loadFinished(bool ok)"	COMMENT = "";
+	Signal "loadProgress" ___("Progress As Integer") Declare "void loadProgress(int progress)"	COMMENT = "";
+	Signal "loadStarted" ___("") Declare "void loadStarted()"	COMMENT = "";
+	Signal "menuBarVisibilityChangeRequested" ___("Visible As Boolean") Declare "void menuBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
 	
-	Signal "microFocusChanged"___("") Declare "void microFocusChanged()"	COMMENT = "";
-	Signal "printRequested"___("Frame As QWebFrame") Declare "void printRequested(QWebFrame * frame)"	COMMENT = "";
-	Signal "repaintRequested"___("DirtyRect As QRect") Declare "void repaintRequested(const QRect & dirtyRect)"	COMMENT = "";
-	Signal "restoreFrameStateRequested"___("Frame As QWebFrame") Declare "void restoreFrameStateRequested(QWebFrame * frame)"	COMMENT = "";
-	Signal "saveFrameStateRequested"___("Frame As QWebFrame, Item As QWebHistoryItem") Declare "void saveFrameStateRequested(QWebFrame * frame, QWebHistoryItem * item)"	COMMENT = "";
-	Signal "scrollRequested"___("Dx As Integer, Dy As Integer, RectToScroll As QRect") Declare "void scrollRequested(int dx, int dy, const QRect & rectToScroll)"	COMMENT = "";
-	Signal "selectionChanged"___("") Declare "void selectionChanged()"	COMMENT = "";
-	Signal "statusBarMessage"___("Text As String") Declare "void statusBarMessage(const QString & text)"	COMMENT = "";
-	Signal "statusBarVisibilityChangeRequested"___("Visible As Boolean") Declare "void statusBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
-	Signal "toolBarVisibilityChangeRequested"___("Visible As Boolean") Declare "void toolBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
-	Signal "unsupportedContent"___("Reply As QNetworkReply") Declare "void unsupportedContent(QNetworkReply * reply)"	COMMENT = "";
-	Signal "windowCloseRequested"___("") Declare "void windowCloseRequested()"	COMMENT = "";
+	Signal "microFocusChanged" ___("") Declare "void microFocusChanged()"	COMMENT = "";
+	Signal "printRequested" ___("Frame As QWebFrame") Declare "void printRequested(QWebFrame * frame)"	COMMENT = "";
+	Signal "repaintRequested" ___("DirtyRect As QRect") Declare "void repaintRequested(const QRect & dirtyRect)"	COMMENT = "";
+	Signal "restoreFrameStateRequested" ___("Frame As QWebFrame") Declare "void restoreFrameStateRequested(QWebFrame * frame)"	COMMENT = "";
+	Signal "saveFrameStateRequested" ___("Frame As QWebFrame, Item As QWebHistoryItem") Declare "void saveFrameStateRequested(QWebFrame * frame, QWebHistoryItem * item)"	COMMENT = "";
+	Signal "scrollRequested" ___("Dx As Integer, Dy As Integer, RectToScroll As QRect") Declare "void scrollRequested(int dx, int dy, const QRect & rectToScroll)"	COMMENT = "";
+	Signal "selectionChanged" ___("") Declare "void selectionChanged()"	COMMENT = "";
+	Signal "statusBarMessage" ___("Text As String") Declare "void statusBarMessage(const QString & text)"	COMMENT = "";
+	Signal "statusBarVisibilityChangeRequested" ___("Visible As Boolean") Declare "void statusBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
+	Signal "toolBarVisibilityChangeRequested" ___("Visible As Boolean") Declare "void toolBarVisibilityChangeRequested(bool visible)"	COMMENT = "";
+	Signal "unsupportedContent" ___("Reply As QNetworkReply") Declare "void unsupportedContent(QNetworkReply * reply)"	COMMENT = "";
+	Signal "windowCloseRequested" ___("") Declare "void windowCloseRequested()"	COMMENT = "";
 
 End_Class
 
@@ -7259,10 +7259,10 @@ Class "QGroupBox" SuperClass "QWidget"
 	Property "flat" As "Boolean";	COMMENT = "";
 	Property "title" As "String";	COMMENT = "";
 
-	Slot "setChecked"___("Checked As Boolean");	COMMENT = "";
+	Slot "setChecked" ___("Checked As Boolean");	COMMENT = "";
 
-	Signal "clicked"___("Checked As Boolean") Declare "void clicked(bool checked = false)"	COMMENT = "";
-	Signal "toggled"___("On As Boolean") Declare "void toggled(bool on)"	COMMENT = "";
+	Signal "clicked" ___("Checked As Boolean") Declare "void clicked(bool checked = false)"	COMMENT = "";
+	Signal "toggled" ___("On As Boolean") Declare "void toggled(bool on)"	COMMENT = "";
 
 End_Class
 
@@ -7271,16 +7271,16 @@ End_Class
 
 Class "QHostInfo"
 
-	//BN Function "addresses"___("") As "List";	COMMENT = "";
-	Function "error"___("") As "QHostInfo.HostInfoError";	COMMENT = "";
-	Function "errorString"___("") As "String";	COMMENT = "";
-	Function "hostName"___("") As "String";	COMMENT = "";
-	Function "lookupId"___("") As "Integer";	COMMENT = "";
-	//BN Sub "setAddresses"___("Addresses As List");	COMMENT = "";
-	Sub "setError"___("Error As QHostInfo.HostInfoError");	COMMENT = "";
-	Sub "setErrorString"___("Str As String");	COMMENT = "";
-	Sub "setHostName"___("HostName As String");	COMMENT = "";
-	Sub "setLookupId"___("Id As Integer");	COMMENT = "";
+	//BN Function "addresses" ___("") As "List";	COMMENT = "";
+	Function "error" ___("") As "QHostInfo.HostInfoError";	COMMENT = "";
+	Function "errorString" ___("") As "String";	COMMENT = "";
+	Function "hostName" ___("") As "String";	COMMENT = "";
+	Function "lookupId" ___("") As "Integer";	COMMENT = "";
+	//BN Sub "setAddresses" ___("Addresses As List");	COMMENT = "";
+	Sub "setError" ___("Error As QHostInfo.HostInfoError");	COMMENT = "";
+	Sub "setErrorString" ___("Str As String");	COMMENT = "";
+	Sub "setHostName" ___("HostName As String");	COMMENT = "";
+	Sub "setLookupId" ___("Id As Integer");	COMMENT = "";
 
 End_Class
 
@@ -7292,50 +7292,50 @@ Class "QListWidget" SuperClass "QListView"
 	Property "currentRow" As "Integer";	COMMENT = "";
 	Property "sortingEnabled" As "Boolean";	COMMENT = "";
 
-	Sub "addItem"___("theLabel As String");	COMMENT = "";
-	Sub "addItem2"___("Item As QListWidgetItem");	COMMENT = "";
-	Sub "addItems"___("Labels As List");	COMMENT = "";
-	Sub "closePersistentEditor"___("Item As QListWidgetItem");	COMMENT = "";
-	Function "currentItem"___("") As "QListWidgetItem";	COMMENT = "";
+	Sub "addItem" ___("theLabel As String");	COMMENT = "";
+	Sub "addItem2" ___("Item As QListWidgetItem");	COMMENT = "";
+	Sub "addItems" ___("Labels As List");	COMMENT = "";
+	Sub "closePersistentEditor" ___("Item As QListWidgetItem");	COMMENT = "";
+	Function "currentItem" ___("") As "QListWidgetItem";	COMMENT = "";
 
-	Sub "editItem"___("Item As QListWidgetItem");	COMMENT = "";
-	Function "findItems"___("Text As String, Flags As Qt.MatchFlags") As "List";	COMMENT = "";
-	Sub "insertItem"___("Row As Integer, Item As QListWidgetItem");	COMMENT = "";
-	Sub "insertItem2"___("Row As Integer, theLabel As String");	COMMENT = "";
-	Sub "insertItems"___("Row As Integer, Labels As List");	COMMENT = "";
+	Sub "editItem" ___("Item As QListWidgetItem");	COMMENT = "";
+	Function "findItems" ___("Text As String, Flags As Qt.MatchFlags") As "List";	COMMENT = "";
+	Sub "insertItem" ___("Row As Integer, Item As QListWidgetItem");	COMMENT = "";
+	Sub "insertItem2" ___("Row As Integer, theLabel As String");	COMMENT = "";
+	Sub "insertItems" ___("Row As Integer, Labels As List");	COMMENT = "";
 
-	Function "item"___("Row As Integer") As "QListWidgetItem";	COMMENT = "";
-	Function "itemAt"___("P As QPoint") As "QListWidgetItem";	COMMENT = "";
-	Function "itemAt2"___("X As Integer, Y As Integer") As "QListWidgetItem";	COMMENT = "";
-	Function "itemWidget"___("Item As QListWidgetItem") As "QWidget";	COMMENT = "";
+	Function "item" ___("Row As Integer") As "QListWidgetItem";	COMMENT = "";
+	Function "itemAt" ___("P As QPoint") As "QListWidgetItem";	COMMENT = "";
+	Function "itemAt2" ___("X As Integer, Y As Integer") As "QListWidgetItem";	COMMENT = "";
+	Function "itemWidget" ___("Item As QListWidgetItem") As "QWidget";	COMMENT = "";
 
-	Sub "openPersistentEditor"___("Item As QListWidgetItem");	COMMENT = "";
-	Sub "removeItemWidget"___("Item As QListWidgetItem");	COMMENT = "";
-	Function "row"___("Item As QListWidgetItem") As "Integer";	COMMENT = "";
-	Function "selectedItems"___("") As "List";	COMMENT = "";
+	Sub "openPersistentEditor" ___("Item As QListWidgetItem");	COMMENT = "";
+	Sub "removeItemWidget" ___("Item As QListWidgetItem");	COMMENT = "";
+	Function "row" ___("Item As QListWidgetItem") As "Integer";	COMMENT = "";
+	Function "selectedItems" ___("") As "List";	COMMENT = "";
 
-	Sub "setCurrentItem"___("Item As QListWidgetItem");	COMMENT = "";
-	Sub "setCurrentItem2"___("Item As QListWidgetItem, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
-	Sub "setCurrentRow"___("Row As Integer, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
+	Sub "setCurrentItem" ___("Item As QListWidgetItem");	COMMENT = "";
+	Sub "setCurrentItem2" ___("Item As QListWidgetItem, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
+	Sub "setCurrentRow" ___("Row As Integer, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
 
-	Sub "setItemWidget"___("Item As QListWidgetItem, Widget As QWidget");	COMMENT = "";
-	Sub "sortItems"___("Order As Qt.SortOrder");	COMMENT = "";
-	Function "takeItem"___("Row As Integer") As "QListWidgetItem";	COMMENT = "";
-	Function "visualItemRect"___("Item As QListWidgetItem") As "QRect";	COMMENT = "";
+	Sub "setItemWidget" ___("Item As QListWidgetItem, Widget As QWidget");	COMMENT = "";
+	Sub "sortItems" ___("Order As Qt.SortOrder");	COMMENT = "";
+	Function "takeItem" ___("Row As Integer") As "QListWidgetItem";	COMMENT = "";
+	Function "visualItemRect" ___("Item As QListWidgetItem") As "QRect";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "scrollToItem"___("Item As QListWidgetItem, Hint As QAbstractItemView.ScrollHint");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "scrollToItem" ___("Item As QListWidgetItem, Hint As QAbstractItemView.ScrollHint");	COMMENT = "";
 
-	Signal "currentItemChanged"___("Current As QListWidgetItem, Previous As QListWidgetItem") Declare "void currentItemChanged(QListWidgetItem * current, QListWidgetItem * previous)"	COMMENT = "";
-	Signal "currentRowChanged"___("CurrentRow As Integer") Declare "void currentRowChanged(int currentRow)"	COMMENT = "";
-	Signal "currentTextChanged"___("CurrentText As String") Declare "void currentTextChanged(const QString & currentText)"	COMMENT = "";
-	Signal "itemActivated"___("Item As QListWidgetItem") Declare "void itemActivated(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemChanged"___("Item As QListWidgetItem") Declare "void itemChanged(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemClicked"___("Item As QListWidgetItem") Declare "void itemClicked(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemDoubleClicked"___("Item As QListWidgetItem") Declare "void itemDoubleClicked(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemEntered"___("Item As QListWidgetItem") Declare "void itemEntered(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemPressed"___("Item As QListWidgetItem") Declare "void itemPressed(QListWidgetItem * item)"	COMMENT = "";
-	Signal "itemSelectionChanged"___("") Declare "void itemSelectionChanged()"	COMMENT = "";
+	Signal "currentItemChanged" ___("Current As QListWidgetItem, Previous As QListWidgetItem") Declare "void currentItemChanged(QListWidgetItem * current, QListWidgetItem * previous)"	COMMENT = "";
+	Signal "currentRowChanged" ___("CurrentRow As Integer") Declare "void currentRowChanged(int currentRow)"	COMMENT = "";
+	Signal "currentTextChanged" ___("CurrentText As String") Declare "void currentTextChanged(const QString & currentText)"	COMMENT = "";
+	Signal "itemActivated" ___("Item As QListWidgetItem") Declare "void itemActivated(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemChanged" ___("Item As QListWidgetItem") Declare "void itemChanged(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemClicked" ___("Item As QListWidgetItem") Declare "void itemClicked(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemDoubleClicked" ___("Item As QListWidgetItem") Declare "void itemDoubleClicked(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemEntered" ___("Item As QListWidgetItem") Declare "void itemEntered(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemPressed" ___("Item As QListWidgetItem") Declare "void itemPressed(QListWidgetItem * item)"	COMMENT = "";
+	Signal "itemSelectionChanged" ___("") Declare "void itemSelectionChanged()"	COMMENT = "";
 
 End_Class
 
@@ -7344,40 +7344,40 @@ End_Class
 
 Class "QListWidgetItem"
 
-	Function "background"___("") As "QBrush";	COMMENT = "";
-	Function "checkState"___("") As "Qt.CheckState";	COMMENT = "";
-	Function "data"___("Role As Integer") As "QVariant";	COMMENT = "";
-	Function "flags"___("") As "Qt.ItemFlags";	COMMENT = "";
-	Function "font"___("") As "QFont";	COMMENT = "";
-	Function "foreground"___("") As "QBrush";	COMMENT = "";
-	Function "icon"___("") As "QIcon";	COMMENT = "";
-	Function "isHidden"___("") As "Boolean";	COMMENT = "";
-	Function "isSelected"___("") As "Boolean";	COMMENT = "";
-	Function "listWidget"___("") As "QListWidget";	COMMENT = "";
-//	Sub "read"___("In As QDataStream");	COMMENT = "";
-	Sub "setBackground"___("Brush As QBrush");	COMMENT = "";
-	Sub "setCheckState"___("State As Qt.CheckState");	COMMENT = "";
-	Sub "setData"___("Role As Integer, Value As QVariant");	COMMENT = "";
-	Sub "setFlags"___("Flags As Qt.ItemFlags");	COMMENT = "";
-	Sub "setFont "___("Font As QFont");	COMMENT = "";
-	Sub "setForeground"___("Brush As QBrush");	COMMENT = "";
-	Sub "setHidden"___("Hide As Boolean");	COMMENT = "";
-	Sub "setIcon"___("Icon As QIcon");	COMMENT = "";
-	Sub "setSelected"___("Select As Boolean");	COMMENT = "";
-	Sub "setSizeHint"___("Size As QSize");	COMMENT = "";
-	Sub "setStatusTip"___("StatusTip As String");	COMMENT = "";
-	Sub "setText"___("Text As String");	COMMENT = "";
-	Sub "setTextAlignment"___("Alignment As Integer");	COMMENT = "";
-	Sub "setToolTip"___("Tooltip As String");	COMMENT = "";
-	Sub "setWhatsThis"___("WhatsThis As String");	COMMENT = "";
-	Function "sizeHint"___("") As "QSize";	COMMENT = "";
-	Function "statusTip"___("") As "String";	COMMENT = "";
-	Function "text"___("") As "String";	COMMENT = "";
-	Function "textAlignment"___("") As "Integer";	COMMENT = "";
-	Function "toolTip"___("") As "String";	COMMENT = "";
-	Function "type"___("") As "Integer";	COMMENT = "";
-	Function "whatsThis"___("") As "String";	COMMENT = "";
-//	Sub "write"___("Out As QDataStream");	COMMENT = "";
+	Function "background" ___("") As "QBrush";	COMMENT = "";
+	Function "checkState" ___("") As "Qt.CheckState";	COMMENT = "";
+	Function "data" ___("Role As Integer") As "QVariant";	COMMENT = "";
+	Function "flags" ___("") As "Qt.ItemFlags";	COMMENT = "";
+	Function "font" ___("") As "QFont";	COMMENT = "";
+	Function "foreground" ___("") As "QBrush";	COMMENT = "";
+	Function "icon" ___("") As "QIcon";	COMMENT = "";
+	Function "isHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "isSelected" ___("") As "Boolean";	COMMENT = "";
+	Function "listWidget" ___("") As "QListWidget";	COMMENT = "";
+//	Sub "read" ___("In As QDataStream");	COMMENT = "";
+	Sub "setBackground" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setCheckState" ___("State As Qt.CheckState");	COMMENT = "";
+	Sub "setData" ___("Role As Integer, Value As QVariant");	COMMENT = "";
+	Sub "setFlags" ___("Flags As Qt.ItemFlags");	COMMENT = "";
+	Sub "setFont " ___("Font As QFont");	COMMENT = "";
+	Sub "setForeground" ___("Brush As QBrush");	COMMENT = "";
+	Sub "setHidden" ___("Hide As Boolean");	COMMENT = "";
+	Sub "setIcon" ___("Icon As QIcon");	COMMENT = "";
+	Sub "setSelected" ___("Select As Boolean");	COMMENT = "";
+	Sub "setSizeHint" ___("Size As QSize");	COMMENT = "";
+	Sub "setStatusTip" ___("StatusTip As String");	COMMENT = "";
+	Sub "setText" ___("Text As String");	COMMENT = "";
+	Sub "setTextAlignment" ___("Alignment As Integer");	COMMENT = "";
+	Sub "setToolTip" ___("Tooltip As String");	COMMENT = "";
+	Sub "setWhatsThis" ___("WhatsThis As String");	COMMENT = "";
+	Function "sizeHint" ___("") As "QSize";	COMMENT = "";
+	Function "statusTip" ___("") As "String";	COMMENT = "";
+	Function "text" ___("") As "String";	COMMENT = "";
+	Function "textAlignment" ___("") As "Integer";	COMMENT = "";
+	Function "toolTip" ___("") As "String";	COMMENT = "";
+	Function "type" ___("") As "Integer";	COMMENT = "";
+	Function "whatsThis" ___("") As "String";	COMMENT = "";
+//	Sub "write" ___("Out As QDataStream");	COMMENT = "";
 
 End_Class
 
@@ -7390,38 +7390,38 @@ Class "QMovie" SuperClass "QObject"
 	Property "cacheMode" As "QMovie.CacheMode";	COMMENT = "";
 	Property "speed" As "Integer";	COMMENT = "";
 
-	Function "backgroundColor"___("") As "QColor";	COMMENT = "";
-	Function "currentFrameNumber"___("") As "Integer";	COMMENT = "";
-	Function "currentImage"___("") As "QImage";	COMMENT = "";
-	Function "currentPixmap"___("") As "QPixmap";	COMMENT = "";
-	Function "fileName"___("") As "String";	COMMENT = "";
-	Function "format"___("") As "QByteArray";	COMMENT = "";
-	Function "frameCount"___("") As "Integer";	COMMENT = "";
-	Function "frameRect"___("") As "QRect";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "jumpToFrame"___("FrameNumber As Integer") As "Boolean";	COMMENT = "";
-	Function "loopCount"___("") As "Integer";	COMMENT = "";
-	Function "nextFrameDelay"___("") As "Integer";	COMMENT = "";
-	Function "scaledSize"___("") As "QSize";	COMMENT = "";
-	Sub "setBackgroundColor"___("Color As QColor");	COMMENT = "";
-	Sub "setFileName"___("FileName As String");	COMMENT = "";
-	Sub "setFormat"___("Format As QByteArray");	COMMENT = "";
-	Sub "setScaledSize"___("Size As QSize");	COMMENT = "";
-	Function "state"___("") As "QMovie.MovieState";	COMMENT = "";
+	Function "backgroundColor" ___("") As "QColor";	COMMENT = "";
+	Function "currentFrameNumber" ___("") As "Integer";	COMMENT = "";
+	Function "currentImage" ___("") As "QImage";	COMMENT = "";
+	Function "currentPixmap" ___("") As "QPixmap";	COMMENT = "";
+	Function "fileName" ___("") As "String";	COMMENT = "";
+	Function "format" ___("") As "QByteArray";	COMMENT = "";
+	Function "frameCount" ___("") As "Integer";	COMMENT = "";
+	Function "frameRect" ___("") As "QRect";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "jumpToFrame" ___("FrameNumber As Integer") As "Boolean";	COMMENT = "";
+	Function "loopCount" ___("") As "Integer";	COMMENT = "";
+	Function "nextFrameDelay" ___("") As "Integer";	COMMENT = "";
+	Function "scaledSize" ___("") As "QSize";	COMMENT = "";
+	Sub "setBackgroundColor" ___("Color As QColor");	COMMENT = "";
+	Sub "setFileName" ___("FileName As String");	COMMENT = "";
+	Sub "setFormat" ___("Format As QByteArray");	COMMENT = "";
+	Sub "setScaledSize" ___("Size As QSize");	COMMENT = "";
+	Function "state" ___("") As "QMovie.MovieState";	COMMENT = "";
 
-	Slot "jumpToNextFrame"___("") As "Boolean";	COMMENT = "";
-	Slot "setPaused"___("Paused As Boolean");	COMMENT = "";
-	Slot "setSpeed"___("PercentSpeed As Integer");	COMMENT = "";
-	Slot "start"___("");	COMMENT = "";
-	Slot "stop"___("");	COMMENT = "";
+	Slot "jumpToNextFrame" ___("") As "Boolean";	COMMENT = "";
+	Slot "setPaused" ___("Paused As Boolean");	COMMENT = "";
+	Slot "setSpeed" ___("PercentSpeed As Integer");	COMMENT = "";
+	Slot "start" ___("");	COMMENT = "";
+	Slot "stop" ___("");	COMMENT = "";
 
-	Signal "error"___("Error As QImageReader.ImageReaderError") Declare "void error(QImageReader.ImageReaderError error)"	COMMENT = "";
-	Signal "finished"___("") Declare "void finished()"	COMMENT = "";
-	Signal "frameChanged"___("FrameNumber As Integer") Declare "void frameChanged(int frameNumber)"	COMMENT = "";
-	Signal "resized"___("Size As QSize") Declare "void resized(const QSize & size)"	COMMENT = "";
-	Signal "started"___("") Declare "void started()"	COMMENT = "";
-	Signal "stateChanged"___("State As QMovie.MovieState") Declare "void stateChanged(QMovie.MovieState state)"	COMMENT = "";
-	Signal "updated"___("Rect As QRect") Declare "void updated(const QRect & rect)"	COMMENT = "";
+	Signal "error" ___("Error As QImageReader.ImageReaderError") Declare "void error(QImageReader.ImageReaderError error)"	COMMENT = "";
+	Signal "finished" ___("") Declare "void finished()"	COMMENT = "";
+	Signal "frameChanged" ___("FrameNumber As Integer") Declare "void frameChanged(int frameNumber)"	COMMENT = "";
+	Signal "resized" ___("Size As QSize") Declare "void resized(const QSize & size)"	COMMENT = "";
+	Signal "started" ___("") Declare "void started()"	COMMENT = "";
+	Signal "stateChanged" ___("State As QMovie.MovieState") Declare "void stateChanged(QMovie.MovieState state)"	COMMENT = "";
+	Signal "updated" ___("Rect As QRect") Declare "void updated(const QRect & rect)"	COMMENT = "";
 
 End_Class
 
@@ -7441,14 +7441,14 @@ Class "QProgressBar" SuperClass "QWidget"
 	Property "textVisible" As "Boolean";	COMMENT = "";
 	Property "value" As "Integer";	COMMENT = "";
 
-	Slot "reset"___("");	COMMENT = "";
-	Slot "setMaximum"___("Maximum As Integer");	COMMENT = "";
-	Slot "setMinimum"___("Minimum As Integer");	COMMENT = "";
-	Slot "setOrientation"___("Qt.Orientation");	COMMENT = "";
-	Slot "setRange"___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
-	Slot "setValue"___("Value As Integer");	COMMENT = "";
+	Slot "reset" ___("");	COMMENT = "";
+	Slot "setMaximum" ___("Maximum As Integer");	COMMENT = "";
+	Slot "setMinimum" ___("Minimum As Integer");	COMMENT = "";
+	Slot "setOrientation" ___("Qt.Orientation");	COMMENT = "";
+	Slot "setRange" ___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
+	Slot "setValue" ___("Value As Integer");	COMMENT = "";
 
-	Signal "valueChanged"___("Value As Integer") Declare "void valueChanged(int value)"	COMMENT = "";
+	Signal "valueChanged" ___("Value As Integer") Declare "void valueChanged(int value)"	COMMENT = "";
 
 End_Class
 
@@ -7462,10 +7462,10 @@ Class "QPushButton" SuperClass "QAbstractButton"
 	Property "default" As "Boolean";	COMMENT = "";
 	Property "flat" As "Boolean";	COMMENT = "";
 
-	Function "menu"___("") As "QMenu";	COMMENT = "";
-	Sub "setMenu"___("Menu As QMenu");	COMMENT = "";
+	Function "menu" ___("") As "QMenu";	COMMENT = "";
+	Sub "setMenu" ___("Menu As QMenu");	COMMENT = "";
 
-	Slot "showMenu"___("");	COMMENT = "";
+	Slot "showMenu" ___("");	COMMENT = "";
 
 End_Class 
 
@@ -7476,19 +7476,19 @@ Class "QSyntaxHighlighter" SuperClass "QObject"
 
 	//Property "currentBlockState" As "Integer";	COMMENT = "";
 
-	Function "document"___("") As "QTextDocument";	COMMENT = "";
-	Sub "setDocument"___("Doc As QTextDocument");	COMMENT = "";
+	Function "document" ___("") As "QTextDocument";	COMMENT = "";
+	Sub "setDocument" ___("Doc As QTextDocument");	COMMENT = "";
 
-  //Function "previousBlockState"___("") As "Integer";	COMMENT = "";
+  //Function "previousBlockState" ___("") As "Integer";	COMMENT = "";
 
-	Slot "rehighlight"___("");	COMMENT = "";
-	Slot "rehighlightBlock"___("Block As QTextBlock");	COMMENT = "";
+	Slot "rehighlight" ___("");	COMMENT = "";
+	Slot "rehighlightBlock" ___("Block As QTextBlock");	COMMENT = "";
 
-  Event "highlightBlock"___("text As String") Declare "void 	highlightBlock ( const QString & text )"   COMMENT = "";
+  Event "highlightBlock" ___("text As String") Declare "void 	highlightBlock ( const QString & text )"   COMMENT = "";
 
-	//Sub "setFormat"___("start As Integer, count As Integer, color As QColor");	COMMENT = "";
-	//Sub "setFormat2"___("start As Integer, count As Integer, font As QFont");	COMMENT = "";
-	//Sub "setFormat3"___("start As Integer, count As Integer, format As QTextCharFormat");	COMMENT = "";
+	//Sub "setFormat" ___("start As Integer, count As Integer, color As QColor");	COMMENT = "";
+	//Sub "setFormat2" ___("start As Integer, count As Integer, font As QFont");	COMMENT = "";
+	//Sub "setFormat3" ___("start As Integer, count As Integer, format As QTextCharFormat");	COMMENT = "";
 
 End_Class
 
@@ -7501,8 +7501,8 @@ Class "QDial" SuperClass "QAbstractSlider"
 	Property "notchesVisible" As "Boolean";	COMMENT = "";
 	Property "wrapping" As "Boolean";	COMMENT = "";
 
-	Slot "setNotchesVisible"___("Visible As Boolean");	COMMENT = "";
-	Slot "setWrapping"___("On As Boolean");	COMMENT = "";
+	Slot "setNotchesVisible" ___("Visible As Boolean");	COMMENT = "";
+	Slot "setWrapping" ___("On As Boolean");	COMMENT = "";
 
 End_Class
 
@@ -7511,47 +7511,47 @@ End_Class
 
 Class "QProcess" //SuperClass "QIODevice"
 
-	Sub "closeReadChannel"___("Channel As QProcess.ProcessChannel");	COMMENT = "";
-	Sub "closeWriteChannel"___("");	COMMENT = "";
-	Function "error"___("") As "QProcess.ProcessError";	COMMENT = "";
-	Function "exitCode"___("") As "Integer";	COMMENT = "";
-	Function "exitStatus"___("") As "QProcess.ExitStatus";	COMMENT = "";
-	//Function "nativeArguments"___("") As "String";	COMMENT = "";
-	Function "pid"___("") As "Integer";	COMMENT = "";
+	Sub "closeReadChannel" ___("Channel As QProcess.ProcessChannel");	COMMENT = "";
+	Sub "closeWriteChannel" ___("");	COMMENT = "";
+	Function "error" ___("") As "QProcess.ProcessError";	COMMENT = "";
+	Function "exitCode" ___("") As "Integer";	COMMENT = "";
+	Function "exitStatus" ___("") As "QProcess.ExitStatus";	COMMENT = "";
+	//Function "nativeArguments" ___("") As "String";	COMMENT = "";
+	Function "pid" ___("") As "Integer";	COMMENT = "";
 
-	Function "processChannelMode"___("") As "QProcess.ProcessChannelMode";	COMMENT = "";
-	Function "processEnvironment"___("") As "QProcessEnvironment";	COMMENT = "";
-	Function "readAllStandardError"___("") As "QByteArray";	COMMENT = "";
-	Function "readAllStandardOutput"___("") As "QByteArray";	COMMENT = "";
-	Function "readChannel"___("") As "QProcess.ProcessChannel";	COMMENT = "";
+	Function "processChannelMode" ___("") As "QProcess.ProcessChannelMode";	COMMENT = "";
+	Function "processEnvironment" ___("") As "QProcessEnvironment";	COMMENT = "";
+	Function "readAllStandardError" ___("") As "QByteArray";	COMMENT = "";
+	Function "readAllStandardOutput" ___("") As "QByteArray";	COMMENT = "";
+	Function "readChannel" ___("") As "QProcess.ProcessChannel";	COMMENT = "";
 
-	//Sub "setNativeArguments"___("Arguments As String");	COMMENT = "";
-	Sub "setProcessChannelMode"___("Mode As QProcess.ProcessChannelMode");	COMMENT = "";
-	Sub "setProcessEnvironment"___("Environment As QProcessEnvironment");	COMMENT = "";
+	//Sub "setNativeArguments" ___("Arguments As String");	COMMENT = "";
+	Sub "setProcessChannelMode" ___("Mode As QProcess.ProcessChannelMode");	COMMENT = "";
+	Sub "setProcessEnvironment" ___("Environment As QProcessEnvironment");	COMMENT = "";
 
-	Sub "setReadChannel"___("Channel As QProcess.ProcessChannel");	COMMENT = "";
-	Sub "setStandardErrorFile"___("FileName As String, Mode As QIODevice.OpenMode");	COMMENT = "";
-	Sub "setStandardInputFile"___("FileName As String");	COMMENT = "";
-	Sub "setStandardOutputFile"___("FileName As String, Mode As QIODevice.OpenMode");	COMMENT = "";
-	Sub "setStandardOutputProcess"___("Destination As QProcess");	COMMENT = "";
-	Sub "setWorkingDirectory"___("theDir As String");	COMMENT = "";
-	Sub "start"___("Program As String, Arguments As QStringList");	COMMENT = "";
-//	Sub "start"___("Program As String, Arguments As List, Mode As QIODevice.OpenMode");	COMMENT = "";
-//	Sub "start"___("Program As String, Mode As QIODevice.OpenMode");	COMMENT = "";
-	Function "state"___("") As "QProcess.ProcessState";	COMMENT = "";
-	Function "waitForFinished"___("Msecs As Integer") As "Boolean";	COMMENT = "";
-	Function "waitForStarted"___("Msecs As Integer") As "Boolean";	COMMENT = "";
-	Function "workingDirectory"___("") As "String";	COMMENT = "";
+	Sub "setReadChannel" ___("Channel As QProcess.ProcessChannel");	COMMENT = "";
+	Sub "setStandardErrorFile" ___("FileName As String, Mode As QIODevice.OpenMode");	COMMENT = "";
+	Sub "setStandardInputFile" ___("FileName As String");	COMMENT = "";
+	Sub "setStandardOutputFile" ___("FileName As String, Mode As QIODevice.OpenMode");	COMMENT = "";
+	Sub "setStandardOutputProcess" ___("Destination As QProcess");	COMMENT = "";
+	Sub "setWorkingDirectory" ___("theDir As String");	COMMENT = "";
+	Sub "start" ___("Program As String, Arguments As QStringList");	COMMENT = "";
+//	Sub "start" ___("Program As String, Arguments As List, Mode As QIODevice.OpenMode");	COMMENT = "";
+//	Sub "start" ___("Program As String, Mode As QIODevice.OpenMode");	COMMENT = "";
+	Function "state" ___("") As "QProcess.ProcessState";	COMMENT = "";
+	Function "waitForFinished" ___("Msecs As Integer") As "Boolean";	COMMENT = "";
+	Function "waitForStarted" ___("Msecs As Integer") As "Boolean";	COMMENT = "";
+	Function "workingDirectory" ___("") As "String";	COMMENT = "";
 	
-	Slot "kill"___("");	COMMENT = "";
-	Slot "terminate"___("");	COMMENT = "";
+	Slot "kill" ___("");	COMMENT = "";
+	Slot "terminate" ___("");	COMMENT = "";
 
-	Signal "error"___("Error As QProcess.ProcessError") Declare "void error(QProcess.ProcessError error)"	COMMENT = "";
-	Signal "finished"___("") Declare "void finished(int exitCode, QProcess.ExitStatus exitStatus)"	COMMENT = "";
-	Signal "readyReadStandardError"___("") Declare "void readyReadStandardError()"	COMMENT = "";
-	Signal "readyReadStandardOutput"___("") Declare "void readyReadStandardOutput()"	COMMENT = "";
-	Signal "started"___("") Declare "void started()"	COMMENT = "";
-	Signal "stateChanged"___("") Declare "void stateChanged(QProcess.ProcessState newState)"	COMMENT = "";
+	Signal "error" ___("Error As QProcess.ProcessError") Declare "void error(QProcess.ProcessError error)"	COMMENT = "";
+	Signal "finished" ___("") Declare "void finished(int exitCode, QProcess.ExitStatus exitStatus)"	COMMENT = "";
+	Signal "readyReadStandardError" ___("") Declare "void readyReadStandardError()"	COMMENT = "";
+	Signal "readyReadStandardOutput" ___("") Declare "void readyReadStandardOutput()"	COMMENT = "";
+	Signal "started" ___("") Declare "void started()"	COMMENT = "";
+	Signal "stateChanged" ___("") Declare "void stateChanged(QProcess.ProcessState newState)"	COMMENT = "";
 
 End_Class
 
@@ -7559,8 +7559,8 @@ End_Class
 
 Class "QSvgWidget" SuperClass "QWidget"
 
-	Slot "load"___("File As String");	COMMENT = "";
-	Slot "load"___("Contents As QByteArray");	COMMENT = "";
+	Slot "load" ___("File As String");	COMMENT = "";
+	Slot "load" ___("Contents As QByteArray");	COMMENT = "";
 
 End_Class
 
@@ -7572,13 +7572,13 @@ Class "QTimer" SuperClass "QObject"
 	Property "interval" As "Integer";	COMMENT = "";
 	Property "singleShot" As "Boolean";	COMMENT = "";
 
-	Function "timerId"___("") As "Integer";
+	Function "timerId" ___("") As "Integer";
 
-	Slot "start"___("");	COMMENT = "";
-	Slot "start2"___("Msec As Integer");	COMMENT = "";
-	Slot "stop"___("");	COMMENT = "";
+	Slot "start" ___("");	COMMENT = "";
+	Slot "start2" ___("Msec As Integer");	COMMENT = "";
+	Slot "stop" ___("");	COMMENT = "";
 
-	Signal "timeout"___("") Declare "void timeout()"	COMMENT = "";
+	Signal "timeout" ___("") Declare "void timeout()"	COMMENT = "";
 
 End_Class
 
@@ -7595,36 +7595,36 @@ Class "QToolBar" SuperClass "QWidget"
 	Property "orientation" As "Qt.Orientation";	COMMENT = "";
 	Property "toolButtonStyle" As "Qt.ToolButtonStyle";	COMMENT = "";
 
-	Function "actionAt"___("P As QPoint") As "QAction";	COMMENT = "";
-	Function "actionAt2"___("X As Integer, Y As Integer") As "QAction";	COMMENT = "";
+	Function "actionAt" ___("P As QPoint") As "QAction";	COMMENT = "";
+	Function "actionAt2" ___("X As Integer, Y As Integer") As "QAction";	COMMENT = "";
 
-	Sub "addAction"___("Action As QAction");	COMMENT = "";
-	Function "addAction2"___("Text As String") As "QAction";	COMMENT = "";
-	Function "addAction3"___("Icon As QIcon, Text As String") As "QAction";	COMMENT = "";
-	Function "addAction4"___("Text As String, Receiver As QObject, Member As String") As "QAction";	COMMENT = "";
-	Function "addAction5"___("Icon As QIcon, Text As String, Receiver As QObject, Member As String") As "QAction";	COMMENT = "";
+	Sub "addAction" ___("Action As QAction");	COMMENT = "";
+	Function "addAction2" ___("Text As String") As "QAction";	COMMENT = "";
+	Function "addAction3" ___("Icon As QIcon, Text As String") As "QAction";	COMMENT = "";
+	Function "addAction4" ___("Text As String, Receiver As QObject, Member As String") As "QAction";	COMMENT = "";
+	Function "addAction5" ___("Icon As QIcon, Text As String, Receiver As QObject, Member As String") As "QAction";	COMMENT = "";
 
-	Function "addSeparator"___("") As "QAction";	COMMENT = "";
-	Function "addWidget"___("Widget As QWidget") As "QAction";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
+	Function "addSeparator" ___("") As "QAction";	COMMENT = "";
+	Function "addWidget" ___("Widget As QWidget") As "QAction";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
 
-	Function "insertSeparator"___("Before As QAction") As "QAction";	COMMENT = "";
-	Function "insertWidget"___("Before As QAction, Widget As QWidget") As "QAction";	COMMENT = "";
-	Function "isAreaAllowed"___("Area As Qt.ToolBarArea") As "Boolean";	COMMENT = "";
-	Function "toggleViewAction"___("") As "QAction";	COMMENT = "";
-	Function "widgetForAction"___("Action As QAction") As "QWidget";	COMMENT = "";
+	Function "insertSeparator" ___("Before As QAction") As "QAction";	COMMENT = "";
+	Function "insertWidget" ___("Before As QAction, Widget As QWidget") As "QAction";	COMMENT = "";
+	Function "isAreaAllowed" ___("Area As Qt.ToolBarArea") As "Boolean";	COMMENT = "";
+	Function "toggleViewAction" ___("") As "QAction";	COMMENT = "";
+	Function "widgetForAction" ___("Action As QAction") As "QWidget";	COMMENT = "";
 
-	Slot "setIconSize"___("IconSize As QSize");	COMMENT = "";
-	Slot "setToolButtonStyle"___("ToolButtonStyle As Qt.ToolButtonStyle");	COMMENT = "";
+	Slot "setIconSize" ___("IconSize As QSize");	COMMENT = "";
+	Slot "setToolButtonStyle" ___("ToolButtonStyle As Qt.ToolButtonStyle");	COMMENT = "";
 
-	Signal "actionTriggered"___("Action As QAction") Declare "void actionTriggered(QAction * action)"	COMMENT = "";
-	Signal "allowedAreasChanged"___("AllowedAreas As Qt.ToolBarAreas") Declare "void allowedAreasChanged(Qt.ToolBarAreas allowedAreas)"	COMMENT = "";
-	Signal "iconSizeChanged"___("IconSize As QSize") Declare "void iconSizeChanged(const QSize & iconSize)"	COMMENT = "";
-	Signal "movableChanged"___("Movable As Boolean") Declare "void movableChanged(bool movable)"	COMMENT = "";
-	Signal "orientationChanged"___("Orientation As Qt.Orientation") Declare "void orientationChanged(Qt.Orientation orientation)"	COMMENT = "";
-	Signal "toolButtonStyleChanged"___("ToolButtonStyle As Qt.ToolButtonStyle") Declare "void toolButtonStyleChanged(Qt.ToolButtonStyle toolButtonStyle)"	COMMENT = "";
-	Signal "topLevelChanged"___("TopLevel As Boolean") Declare "void topLevelChanged(bool topLevel)"	COMMENT = "";
-	Signal "visibilityChanged"___("Visible As Boolean") Declare "void visibilityChanged(bool visible)"	COMMENT = "";
+	Signal "actionTriggered" ___("Action As QAction") Declare "void actionTriggered(QAction * action)"	COMMENT = "";
+	Signal "allowedAreasChanged" ___("AllowedAreas As Qt.ToolBarAreas") Declare "void allowedAreasChanged(Qt.ToolBarAreas allowedAreas)"	COMMENT = "";
+	Signal "iconSizeChanged" ___("IconSize As QSize") Declare "void iconSizeChanged(const QSize & iconSize)"	COMMENT = "";
+	Signal "movableChanged" ___("Movable As Boolean") Declare "void movableChanged(bool movable)"	COMMENT = "";
+	Signal "orientationChanged" ___("Orientation As Qt.Orientation") Declare "void orientationChanged(Qt.Orientation orientation)"	COMMENT = "";
+	Signal "toolButtonStyleChanged" ___("ToolButtonStyle As Qt.ToolButtonStyle") Declare "void toolButtonStyleChanged(Qt.ToolButtonStyle toolButtonStyle)"	COMMENT = "";
+	Signal "topLevelChanged" ___("TopLevel As Boolean") Declare "void topLevelChanged(bool topLevel)"	COMMENT = "";
+	Signal "visibilityChanged" ___("Visible As Boolean") Declare "void visibilityChanged(bool visible)"	COMMENT = "";
 
 End_Class
 
@@ -7638,15 +7638,15 @@ Class "QToolButton" SuperClass "QAbstractButton"
 	Property "popupMode" As "QToolButton.ToolButtonPopupMode";	COMMENT = "";
 	Property "toolButtonStyle" As "Qt.ToolButtonStyle";	COMMENT = "";
 
-	Function "defaultAction"___("") As "QAction";	COMMENT = "";
-	Function "menu"___("") As "QMenu";	COMMENT = "";
-	Sub "setMenu"___("Menu As QMenu");	COMMENT = "";
+	Function "defaultAction" ___("") As "QAction";	COMMENT = "";
+	Function "menu" ___("") As "QMenu";	COMMENT = "";
+	Sub "setMenu" ___("Menu As QMenu");	COMMENT = "";
 
-	Slot "setDefaultAction"___("Action As QAction");	COMMENT = "";
-	Slot "setToolButtonStyle"___("Style As Qt.ToolButtonStyle");	COMMENT = "";
-	//BN Slot "showMenu"___("");	COMMENT = "";
+	Slot "setDefaultAction" ___("Action As QAction");	COMMENT = "";
+	Slot "setToolButtonStyle" ___("Style As Qt.ToolButtonStyle");	COMMENT = "";
+	//BN Slot "showMenu" ___("");	COMMENT = "";
 
-	Signal "triggered"___("Action As QAction") Declare "void triggered(QAction * action)"	COMMENT = "";
+	Signal "triggered" ___("Action As QAction") Declare "void triggered(QAction * action)"	COMMENT = "";
 
 End_Class
 
@@ -7714,195 +7714,195 @@ Class "QWidget" SuperClass "QObject"
 	Property "x" As "Integer";	COMMENT = "";
 	Property "y" As "Integer";	COMMENT = "";
 
-	Function "actions"___("") As "List";	COMMENT = "";
-	Sub "activateWindow"___("");	COMMENT = "";
-	Sub "addAction"___("Action As QAction");	COMMENT = "";
-	Sub "addActions"___("Actions As List");	COMMENT = "";
-	Sub "adjustSize"___("");	COMMENT = "";
-	Function "backgroundRole"___("") As "QPalette.ColorRole";	COMMENT = "";
+	Function "actions" ___("") As "List";	COMMENT = "";
+	Sub "activateWindow" ___("");	COMMENT = "";
+	Sub "addAction" ___("Action As QAction");	COMMENT = "";
+	Sub "addActions" ___("Actions As List");	COMMENT = "";
+	Sub "adjustSize" ___("");	COMMENT = "";
+	Function "backgroundRole" ___("") As "QPalette.ColorRole";	COMMENT = "";
 
-	Function "childAt"___("X As Integer, Y As Integer") As "QWidget";	COMMENT = "";
-	Function "childAt2"___("P As QPoint") As "QWidget";	COMMENT = "";
-	Sub "clearFocus"___("");	COMMENT = "";
-	Sub "clearMask"___("");	COMMENT = "";
-	Function "contentsMargins"___("") As "QMargins";	COMMENT = "";
-	Function "contentsRect"___("") As "QRect";	COMMENT = "";
-	Sub "ensurePolished"___("");	COMMENT = "";
-	Function "focusProxy"___("") As "QWidget";	COMMENT = "";
-	Function "focusWidget"___("") As "QWidget";	COMMENT = "";
-	Function "fontInfo"___("") As "QFontInfo";	COMMENT = "";
-	Function "fontMetrics"___("") As "QFontMetrics";	COMMENT = "";
-	Function "foregroundRole"___("") As "QPalette.ColorRole";	COMMENT = "";
+	Function "childAt" ___("X As Integer, Y As Integer") As "QWidget";	COMMENT = "";
+	Function "childAt2" ___("P As QPoint") As "QWidget";	COMMENT = "";
+	Sub "clearFocus" ___("");	COMMENT = "";
+	Sub "clearMask" ___("");	COMMENT = "";
+	Function "contentsMargins" ___("") As "QMargins";	COMMENT = "";
+	Function "contentsRect" ___("") As "QRect";	COMMENT = "";
+	Sub "ensurePolished" ___("");	COMMENT = "";
+	Function "focusProxy" ___("") As "QWidget";	COMMENT = "";
+	Function "focusWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "fontInfo" ___("") As "QFontInfo";	COMMENT = "";
+	Function "fontMetrics" ___("") As "QFontMetrics";	COMMENT = "";
+	Function "foregroundRole" ___("") As "QPalette.ColorRole";	COMMENT = "";
 
-	Sub "grabGesture"___("Gesture As Qt.GestureType, Flags As Qt.GestureFlags");	COMMENT = "";
-	Sub "grabKeyboard"___("");	COMMENT = "";
-	Sub "grabMouse"___("");	COMMENT = "";
-	Sub "grabMouse2"___("Cursor As QCursor");	COMMENT = "";
+	Sub "grabGesture" ___("Gesture As Qt.GestureType, Flags As Qt.GestureFlags");	COMMENT = "";
+	Sub "grabKeyboard" ___("");	COMMENT = "";
+	Sub "grabMouse" ___("");	COMMENT = "";
+	Sub "grabMouse2" ___("Cursor As QCursor");	COMMENT = "";
 	
-  Function "grabShortcut"___("Key As QKeySequence, Context As Qt.ShortcutContext") As "Integer";	COMMENT = "";
-	Function "hasFocus"___("") As "Boolean";	COMMENT = "";
-	Function "hasMouseTracking"___("") As "Boolean";	COMMENT = "";
-	Function "heightForWidth"___("W As Integer") As "Integer";	COMMENT = "";
+  Function "grabShortcut" ___("Key As QKeySequence, Context As Qt.ShortcutContext") As "Integer";	COMMENT = "";
+	Function "hasFocus" ___("") As "Boolean";	COMMENT = "";
+	Function "hasMouseTracking" ___("") As "Boolean";	COMMENT = "";
+	Function "heightForWidth" ___("W As Integer") As "Integer";	COMMENT = "";
 
-	Sub "insertAction"___("Before As QAction, Action As QAction");	COMMENT = "";
-	Sub "insertActions"___("Before As QAction, Actions As List");	COMMENT = "";
-	Function "isAncestorOf"___("Child As QWidget") As "Boolean";	COMMENT = "";
-	Function "isEnabledTo"___("Ancestor As QWidget") As "Boolean";	COMMENT = "";
-	Function "isHidden"___("") As "Boolean";	COMMENT = "";
-	Function "isVisibleTo"___("Ancestor As QWidget") As "Boolean";	COMMENT = "";
-	Function "isWindow"___("") As "Boolean";	COMMENT = "";
-	Function "isWindowModified"___("") As "Boolean";	COMMENT = "";
+	Sub "insertAction" ___("Before As QAction, Action As QAction");	COMMENT = "";
+	Sub "insertActions" ___("Before As QAction, Actions As List");	COMMENT = "";
+	Function "isAncestorOf" ___("Child As QWidget") As "Boolean";	COMMENT = "";
+	Function "isEnabledTo" ___("Ancestor As QWidget") As "Boolean";	COMMENT = "";
+	Function "isHidden" ___("") As "Boolean";	COMMENT = "";
+	Function "isVisibleTo" ___("Ancestor As QWidget") As "Boolean";	COMMENT = "";
+	Function "isWindow" ___("") As "Boolean";	COMMENT = "";
+	Function "isWindowModified" ___("") As "Boolean";	COMMENT = "";
 
-	Function "layout"___("") As "QLayout";	COMMENT = "";
-	Function "mapFrom"___("Parent As QWidget, Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mapFromGlobal"___("Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mapFromParent"___("Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mapTo"___("Parent As QWidget, Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mapToGlobal"___("Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mapToParent"___("Pos As QPoint") As "QPoint";	COMMENT = "";
-	Function "mask"___("") As "QRegion";	COMMENT = "";
-	Sub "move"___("Point As QPoint");	COMMENT = "";
-	Sub "move2"___("X As Integer, Y As Integer");	COMMENT = "";
-	Function "nativeParentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "nextInFocusChain"___("") As "QWidget";	COMMENT = "";
-	Function "normalGeometry"___("") As "QRect";	COMMENT = "";
-	Sub "overrideWindowFlags"___("Flags As Qt.WindowFlags");	COMMENT = "";
+	Function "layout" ___("") As "QLayout";	COMMENT = "";
+	Function "mapFrom" ___("Parent As QWidget, Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mapFromGlobal" ___("Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mapFromParent" ___("Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mapTo" ___("Parent As QWidget, Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mapToGlobal" ___("Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mapToParent" ___("Pos As QPoint") As "QPoint";	COMMENT = "";
+	Function "mask" ___("") As "QRegion";	COMMENT = "";
+	Sub "move" ___("Point As QPoint");	COMMENT = "";
+	Sub "move2" ___("X As Integer, Y As Integer");	COMMENT = "";
+	Function "nativeParentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "nextInFocusChain" ___("") As "QWidget";	COMMENT = "";
+	Function "normalGeometry" ___("") As "QRect";	COMMENT = "";
+	Sub "overrideWindowFlags" ___("Flags As Qt.WindowFlags");	COMMENT = "";
 
-	Function "palette"___("") As "QPalette";	COMMENT = "";
-	Function "parentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "pos"___("") As "QPoint";	COMMENT = "";
-	Function "previousInFocusChain"___("") As "QWidget";	COMMENT = "";
-	Function "rect"___("") As "QRect";	COMMENT = "";
-	Sub "releaseKeyboard"___("");	COMMENT = "";
-	Sub "releaseMouse"___("");	COMMENT = "";
-	Sub "releaseShortcut"___("Id As Integer");	COMMENT = "";
-	Sub "removeAction"___("Action As QAction");	COMMENT = "";
-	Sub "repaint"___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
-	Sub "repaint2"___("Rect As QRect");	COMMENT = "";
-	Sub "repaint3"___("Rgn As QRegion");	COMMENT = "";
-	Sub "resize"___("NewSize As QSize");	COMMENT = "";
-	Sub "resize2"___("W As Integer, H As Integer");	COMMENT = "";
+	Function "palette" ___("") As "QPalette";	COMMENT = "";
+	Function "parentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "pos" ___("") As "QPoint";	COMMENT = "";
+	Function "previousInFocusChain" ___("") As "QWidget";	COMMENT = "";
+	Function "rect" ___("") As "QRect";	COMMENT = "";
+	Sub "releaseKeyboard" ___("");	COMMENT = "";
+	Sub "releaseMouse" ___("");	COMMENT = "";
+	Sub "releaseShortcut" ___("Id As Integer");	COMMENT = "";
+	Sub "removeAction" ___("Action As QAction");	COMMENT = "";
+	Sub "repaint" ___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
+	Sub "repaint2" ___("Rect As QRect");	COMMENT = "";
+	Sub "repaint3" ___("Rgn As QRegion");	COMMENT = "";
+	Sub "resize" ___("NewSize As QSize");	COMMENT = "";
+	Sub "resize2" ___("W As Integer, H As Integer");	COMMENT = "";
 
-	Function "restoreGeometry"___("Geometry As QByteArray") As "Boolean";	COMMENT = "";
-	Function "saveGeometry"___("") As "QByteArray";	COMMENT = "";
-	Sub "scroll"___("Dx As Integer, Dy As Integer");	COMMENT = "";
-	Sub "scroll2"___("Dx As Integer, Dy As Integer, R As QRect");	COMMENT = "";
+	Function "restoreGeometry" ___("Geometry As QByteArray") As "Boolean";	COMMENT = "";
+	Function "saveGeometry" ___("") As "QByteArray";	COMMENT = "";
+	Sub "scroll" ___("Dx As Integer, Dy As Integer");	COMMENT = "";
+	Sub "scroll2" ___("Dx As Integer, Dy As Integer, R As QRect");	COMMENT = "";
 
-	Sub "setAttribute"___("Attribute As Qt.WidgetAttribute, On As Boolean");	COMMENT = "";
-	Sub "setBackgroundRole"___("Role As QPalette.ColorRole");	COMMENT = "";
-	Sub "setBaseSize"___("BaseW As Integer, BaseH As Integer");	COMMENT = "";
-	Sub "setContentsMargins"___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
-	Sub "setContentsMargins2"___("Margins As QMargins");	COMMENT = "";
-	Sub "setContextMenuPolicy"___("Policy As Qt.ContextMenuPolicy");	COMMENT = "";
-	//Sub "setEditFocus"___("Enable As Boolean");	COMMENT = "";
-	Sub "setFixedHeight"___("H As Integer");	COMMENT = "";
-	Sub "setFixedSize"___("S As QSize");	COMMENT = "";
-	Sub "setFixedSize2"___("W As Integer, H As Integer");	COMMENT = "";
-	Sub "setFixedWidth"___("W As Integer");	COMMENT = "";
+	Sub "setAttribute" ___("Attribute As Qt.WidgetAttribute, On As Boolean");	COMMENT = "";
+	Sub "setBackgroundRole" ___("Role As QPalette.ColorRole");	COMMENT = "";
+	Sub "setBaseSize" ___("BaseW As Integer, BaseH As Integer");	COMMENT = "";
+	Sub "setContentsMargins" ___("Left As Integer, Top As Integer, Right As Integer, Bottom As Integer");	COMMENT = "";
+	Sub "setContentsMargins2" ___("Margins As QMargins");	COMMENT = "";
+	Sub "setContextMenuPolicy" ___("Policy As Qt.ContextMenuPolicy");	COMMENT = "";
+	//Sub "setEditFocus" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setFixedHeight" ___("H As Integer");	COMMENT = "";
+	Sub "setFixedSize" ___("S As QSize");	COMMENT = "";
+	Sub "setFixedSize2" ___("W As Integer, H As Integer");	COMMENT = "";
+	Sub "setFixedWidth" ___("W As Integer");	COMMENT = "";
 
-	Sub "setFocus"___("Reason As Qt.FocusReason");	COMMENT = "";
-	Sub "setFocusPolicy"___("Policy As Qt.FocusPolicy");	COMMENT = "";
-	Sub "setFocusProxy"___("W As QWidget");	COMMENT = "";
-	Sub "setForegroundRole"___("Role As QPalette.ColorRole");	COMMENT = "";
-	Sub "setGeometry"___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
+	Sub "setFocus" ___("Reason As Qt.FocusReason");	COMMENT = "";
+	Sub "setFocusPolicy" ___("Policy As Qt.FocusPolicy");	COMMENT = "";
+	Sub "setFocusProxy" ___("W As QWidget");	COMMENT = "";
+	Sub "setForegroundRole" ___("Role As QPalette.ColorRole");	COMMENT = "";
+	Sub "setGeometry" ___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
 
-	Sub "setLayout"___("Layout As QLayout");	COMMENT = "";
-	Sub "setLayoutDirection"___("Direction As Qt.LayoutDirection");	COMMENT = "";
-	Sub "setLocale"___("Locale As QLocale");	COMMENT = "";
-	Sub "setMask"___("Bitmap As QBitmap");	COMMENT = "";
-	Sub "setMask2"___("Region As QRegion");	COMMENT = "";
+	Sub "setLayout" ___("Layout As QLayout");	COMMENT = "";
+	Sub "setLayoutDirection" ___("Direction As Qt.LayoutDirection");	COMMENT = "";
+	Sub "setLocale" ___("Locale As QLocale");	COMMENT = "";
+	Sub "setMask" ___("Bitmap As QBitmap");	COMMENT = "";
+	Sub "setMask2" ___("Region As QRegion");	COMMENT = "";
 
-	Sub "setMaximumSize"___("MaxW As Integer, MaxH As Integer");	COMMENT = "";
-	Sub "setMaximumWidth"___("MaxW As Integer");	COMMENT = "";
-	Sub "setMinimumSize"___("MinW As Integer, MinH As Integer");	COMMENT = "";
-	Sub "setMinimumWidth"___("MinW As Integer");	COMMENT = "";
-	Sub "setParent"___("Parent As QWidget");	COMMENT = "";
-	Sub "setParent2"___("Parent As QWidget, Flags As Qt.WindowFlags");	COMMENT = "";
-	Sub "setShortcutAutoRepeat"___("Id As Integer, Enable As Boolean");	COMMENT = "";
-	Sub "setShortcutEnabled"___("Id As Integer, Enable As Boolean");	COMMENT = "";
-	Sub "setSizeIncrement"___("W As Integer, H As Integer");	COMMENT = "";
-	Sub "setSizePolicy"___("Horizontal As QSizePolicy.Policy, Vertical As QSizePolicy.Policy");	COMMENT = "";
+	Sub "setMaximumSize" ___("MaxW As Integer, MaxH As Integer");	COMMENT = "";
+	Sub "setMaximumWidth" ___("MaxW As Integer");	COMMENT = "";
+	Sub "setMinimumSize" ___("MinW As Integer, MinH As Integer");	COMMENT = "";
+	Sub "setMinimumWidth" ___("MinW As Integer");	COMMENT = "";
+	Sub "setParent" ___("Parent As QWidget");	COMMENT = "";
+	Sub "setParent2" ___("Parent As QWidget, Flags As Qt.WindowFlags");	COMMENT = "";
+	Sub "setShortcutAutoRepeat" ___("Id As Integer, Enable As Boolean");	COMMENT = "";
+	Sub "setShortcutEnabled" ___("Id As Integer, Enable As Boolean");	COMMENT = "";
+	Sub "setSizeIncrement" ___("W As Integer, H As Integer");	COMMENT = "";
+	Sub "setSizePolicy" ___("Horizontal As QSizePolicy.Policy, Vertical As QSizePolicy.Policy");	COMMENT = "";
 	
-        Sub "setWindowModality"___("WindowModality As Qt.WindowModality");	COMMENT = "";
-	Sub "setWindowRole"___("Role As String");	COMMENT = "";
-	Sub "setWindowState"___("WindowState As Qt.WindowStates");	COMMENT = "";
-	//Sub "setWindowSurface"___("Surface As QWindowSurface");	COMMENT = "";
-	//Sub "setupUi"___("Widget As QWidget");	COMMENT = "";
-	Function "size"___("") As "QSize";	COMMENT = "";
-	Function "sizePolicy"___("") As "QSizePolicy";	COMMENT = "";
-	Function "style"___("") As "QStyle";	COMMENT = "";
-	Function "testAttribute"___("Attribute As Qt.WidgetAttribute") As "Boolean";	COMMENT = "";
-	Function "toolTip"___("") As "String";	COMMENT = "";
-	Function "underMouse"___("") As "Boolean";	COMMENT = "";
-	Sub "ungrabGesture"___("Gesture As Qt.GestureType");	COMMENT = "";
-	Sub "unsetCursor"___("");	COMMENT = "";
-	Sub "unsetLayoutDirection"___("");	COMMENT = "";
-	Sub "unsetLocale"___("");	COMMENT = "";
-	Sub "update"___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
-	Sub "update2"___("Rect As QRect");	COMMENT = "";
-	Sub "update3"___("Rgn As QRegion");	COMMENT = "";
-	Sub "updateGeometry"___("");	COMMENT = "";
+        Sub "setWindowModality" ___("WindowModality As Qt.WindowModality");	COMMENT = "";
+	Sub "setWindowRole" ___("Role As String");	COMMENT = "";
+	Sub "setWindowState" ___("WindowState As Qt.WindowStates");	COMMENT = "";
+	//Sub "setWindowSurface" ___("Surface As QWindowSurface");	COMMENT = "";
+	//Sub "setupUi" ___("Widget As QWidget");	COMMENT = "";
+	Function "size" ___("") As "QSize";	COMMENT = "";
+	Function "sizePolicy" ___("") As "QSizePolicy";	COMMENT = "";
+	Function "style" ___("") As "QStyle";	COMMENT = "";
+	Function "testAttribute" ___("Attribute As Qt.WidgetAttribute") As "Boolean";	COMMENT = "";
+	Function "toolTip" ___("") As "String";	COMMENT = "";
+	Function "underMouse" ___("") As "Boolean";	COMMENT = "";
+	Sub "ungrabGesture" ___("Gesture As Qt.GestureType");	COMMENT = "";
+	Sub "unsetCursor" ___("");	COMMENT = "";
+	Sub "unsetLayoutDirection" ___("");	COMMENT = "";
+	Sub "unsetLocale" ___("");	COMMENT = "";
+	Sub "update" ___("X As Integer, Y As Integer, W As Integer, H As Integer");	COMMENT = "";
+	Sub "update2" ___("Rect As QRect");	COMMENT = "";
+	Sub "update3" ___("Rgn As QRegion");	COMMENT = "";
+	Sub "updateGeometry" ___("");	COMMENT = "";
 
-	Function "visibleRegion"___("") As "QRegion";	COMMENT = "";
-	Function "window"___("") As "QWidget";	COMMENT = "";
-	Function "windowRole"___("") As "String";	COMMENT = "";
-	Function "windowState"___("") As "Qt.WindowStates";	COMMENT = "";
-	//Function "windowSurface"___("") As "QWindowSurface";	COMMENT = "";
-	Function "windowTitle"___("") As "QString";	COMMENT = "";
-	Function "windowType"___("") As "Qt.WindowType";	COMMENT = "";
+	Function "visibleRegion" ___("") As "QRegion";	COMMENT = "";
+	Function "window" ___("") As "QWidget";	COMMENT = "";
+	Function "windowRole" ___("") As "String";	COMMENT = "";
+	Function "windowState" ___("") As "Qt.WindowStates";	COMMENT = "";
+	//Function "windowSurface" ___("") As "QWindowSurface";	COMMENT = "";
+	Function "windowTitle" ___("") As "QString";	COMMENT = "";
+	Function "windowType" ___("") As "Qt.WindowType";	COMMENT = "";
 
-	Slot "close"___("") As "Boolean";	COMMENT = "";
-	Slot "hide"___("");	COMMENT = "";
-	Slot "lower"___("");	COMMENT = "";
-	Slot "raise"___("");	COMMENT = "";
-	Slot "repaint"___("");	COMMENT = "";
-	Slot "setDisabled"___("Disable As Boolean");	COMMENT = "";
-	Slot "setEnabled"___("Enable As Boolean");	COMMENT = "";
-	Slot "setFocus"___("");	COMMENT = "";
-	Slot "setHidden"___("Hidden As Boolean");	COMMENT = "";
-	Slot "setStyleSheet"___("StyleSheet As String");	COMMENT = "";
-	Slot "setVisible"___("Visible As Boolean");	COMMENT = "";
-	Slot "setWindowModified"___("Modified As Boolean");	COMMENT = "";
-	Slot "setWindowTitle"___("Title As String");	COMMENT = "";
-	Slot "show"___("");	COMMENT = "";
-	Slot "showFullScreen"___("");	COMMENT = "";
-	Slot "showMaximized"___("");	COMMENT = "";
-	Slot "showMinimized"___("");	COMMENT = "";
-	Slot "showNormal"___("");	COMMENT = "";
-	Slot "update"___("");	COMMENT = "";
+	Slot "close" ___("") As "Boolean";	COMMENT = "";
+	Slot "hide" ___("");	COMMENT = "";
+	Slot "lower" ___("");	COMMENT = "";
+	Slot "raise" ___("");	COMMENT = "";
+	Slot "repaint" ___("");	COMMENT = "";
+	Slot "setDisabled" ___("Disable As Boolean");	COMMENT = "";
+	Slot "setEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Slot "setFocus" ___("");	COMMENT = "";
+	Slot "setHidden" ___("Hidden As Boolean");	COMMENT = "";
+	Slot "setStyleSheet" ___("StyleSheet As String");	COMMENT = "";
+	Slot "setVisible" ___("Visible As Boolean");	COMMENT = "";
+	Slot "setWindowModified" ___("Modified As Boolean");	COMMENT = "";
+	Slot "setWindowTitle" ___("Title As String");	COMMENT = "";
+	Slot "show" ___("");	COMMENT = "";
+	Slot "showFullScreen" ___("");	COMMENT = "";
+	Slot "showMaximized" ___("");	COMMENT = "";
+	Slot "showMinimized" ___("");	COMMENT = "";
+	Slot "showNormal" ___("");	COMMENT = "";
+	Slot "update" ___("");	COMMENT = "";
 
-	Signal "customContextMenuRequested"___("Pos As QPoint") Declare "void customContextMenuRequested(const QPoint & pos)"	COMMENT = "";
+	Signal "customContextMenuRequested" ___("Pos As QPoint") Declare "void customContextMenuRequested(const QPoint & pos)"	COMMENT = "";
 
-	Event "actionEvent"___("Event As QActionEvent"); Declare "void actionEvent(QActionEvent * event)"	COMMENT = "";
-	Event "changeEvent"___("Event As QEvent"); Declare "void changeEvent(QEvent * event)"	COMMENT = "";
-	Event "closeEvent"___("Event As QCloseEvent"); Declare "void closeEvent(QCloseEvent * event)"	COMMENT = "";
-	Event "contextMenuEvent"___("Event As QContextMenuEvent"); Declare "void contextMenuEvent(QContextMenuEvent * event)"	COMMENT = "";
-	Event "dragEnterEvent"___("Event As QDragEnterEvent"); Declare "void dragEnterEvent(QDragEnterEvent * event)"	COMMENT = "";
-	Event "dragLeaveEvent"___("Event As QDragLeaveEvent"); Declare "void dragLeaveEvent(QDragLeaveEvent * event)"	COMMENT = "";
-	Event "dragMoveEvent"___("Event As QDragMoveEvent"); Declare "void dragMoveEvent(QDragMoveEvent * event)"	COMMENT = "";
-	Event "dropEvent"___("Event As QDropEvent"); Declare "void dropEvent(QDropEvent * event)"	COMMENT = "";
-	Event "enterEvent"___("Event As QEvent"); Declare "void enterEvent(QEvent * event)"	COMMENT = "";
-	Event "focusInEvent"___("Event As QFocusEvent"); Declare "void focusInEvent(QFocusEvent * event)"	COMMENT = "";
-	Event "focusNextChild"___("") As "Boolean"; Declare "bool focusNextChild()"	COMMENT = "";
+	Event "actionEvent" ___("Event As QActionEvent"); Declare "void actionEvent(QActionEvent * event)"	COMMENT = "";
+	Event "changeEvent" ___("Event As QEvent"); Declare "void changeEvent(QEvent * event)"	COMMENT = "";
+	Event "closeEvent" ___("Event As QCloseEvent"); Declare "void closeEvent(QCloseEvent * event)"	COMMENT = "";
+	Event "contextMenuEvent" ___("Event As QContextMenuEvent"); Declare "void contextMenuEvent(QContextMenuEvent * event)"	COMMENT = "";
+	Event "dragEnterEvent" ___("Event As QDragEnterEvent"); Declare "void dragEnterEvent(QDragEnterEvent * event)"	COMMENT = "";
+	Event "dragLeaveEvent" ___("Event As QDragLeaveEvent"); Declare "void dragLeaveEvent(QDragLeaveEvent * event)"	COMMENT = "";
+	Event "dragMoveEvent" ___("Event As QDragMoveEvent"); Declare "void dragMoveEvent(QDragMoveEvent * event)"	COMMENT = "";
+	Event "dropEvent" ___("Event As QDropEvent"); Declare "void dropEvent(QDropEvent * event)"	COMMENT = "";
+	Event "enterEvent" ___("Event As QEvent"); Declare "void enterEvent(QEvent * event)"	COMMENT = "";
+	Event "focusInEvent" ___("Event As QFocusEvent"); Declare "void focusInEvent(QFocusEvent * event)"	COMMENT = "";
+	Event "focusNextChild" ___("") As "Boolean"; Declare "bool focusNextChild()"	COMMENT = "";
 	
-  Event "focusNextPrevChild"___("Next As Boolean") As "Boolean"; Declare "bool focusNextPrevChild(bool next)"	COMMENT = "";
-	Event "focusOutEvent"___("Event As QFocusEvent"); Declare "void focusOutEvent(QFocusEvent * event)"	COMMENT = "";
-	Event "focusPreviousChild"___("") As "Boolean"; Declare "bool focusPreviousChild()"	COMMENT = "";
-	Event "hideEvent"___("Event As QHideEvent"); Declare "void hideEvent(QHideEvent * event)"	COMMENT = "";
-	Event "inputMethodEvent"___("Event As QInputMethodEvent"); Declare "void inputMethodEvent(QInputMethodEvent * event)"	COMMENT = "";
-	Event "keyPressEvent"___("Event As QKeyEvent"); Declare "void keyPressEvent(QKeyEvent * event)"	COMMENT = "";
-	Event "keyReleaseEvent"___("Event As QKeyEvent"); Declare "void keyReleaseEvent(QKeyEvent * event)"	COMMENT = "";
-	Event "leaveEvent"___("Event As QEvent"); Declare "void leaveEvent(QEvent * event)"	COMMENT = "";
-	Event "mouseDoubleClickEvent"___("Event As QMouseEvent"); Declare "void mouseDoubleClickEvent(QMouseEvent * event)"	COMMENT = "";
-	Event "mouseMoveEvent"___("Event As QMouseEvent"); Declare "void mouseMoveEvent(QMouseEvent * event)"	COMMENT = "";
-	Event "mousePressEvent"___("Event As QMouseEvent"); Declare "void mousePressEvent(QMouseEvent * event)"	COMMENT = "";
-	Event "mouseReleaseEvent"___("Event As QMouseEvent"); Declare "void mouseReleaseEvent(QMouseEvent * event)"	COMMENT = "";
-	Event "moveEvent"___("Event As QMoveEvent"); Declare "void moveEvent(QMoveEvent * event)"	COMMENT = "";
-	Event "paintEvent"___("Event As QPaintEvent"); Declare "void paintEvent(QPaintEvent * event)"	COMMENT = "";
-	Event "resizeEvent"___("Event As QResizeEvent"); Declare "void resizeEvent(QResizeEvent * event)"	COMMENT = "";
-	Event "showEvent"___("Event As QShowEvent"); Declare "void showEvent(QShowEvent * event)"	COMMENT = "";
-	Event "tabletEvent"___("Event As QTabletEvent"); Declare "void tabletEvent(QTabletEvent * event)"	COMMENT = "";
-	Event "wheelEvent"___("Event As QWheelEvent"); Declare "void wheelEvent(QWheelEvent * event)"	COMMENT = "";
+  Event "focusNextPrevChild" ___("Next As Boolean") As "Boolean"; Declare "bool focusNextPrevChild(bool next)"	COMMENT = "";
+	Event "focusOutEvent" ___("Event As QFocusEvent"); Declare "void focusOutEvent(QFocusEvent * event)"	COMMENT = "";
+	Event "focusPreviousChild" ___("") As "Boolean"; Declare "bool focusPreviousChild()"	COMMENT = "";
+	Event "hideEvent" ___("Event As QHideEvent"); Declare "void hideEvent(QHideEvent * event)"	COMMENT = "";
+	Event "inputMethodEvent" ___("Event As QInputMethodEvent"); Declare "void inputMethodEvent(QInputMethodEvent * event)"	COMMENT = "";
+	Event "keyPressEvent" ___("Event As QKeyEvent"); Declare "void keyPressEvent(QKeyEvent * event)"	COMMENT = "";
+	Event "keyReleaseEvent" ___("Event As QKeyEvent"); Declare "void keyReleaseEvent(QKeyEvent * event)"	COMMENT = "";
+	Event "leaveEvent" ___("Event As QEvent"); Declare "void leaveEvent(QEvent * event)"	COMMENT = "";
+	Event "mouseDoubleClickEvent" ___("Event As QMouseEvent"); Declare "void mouseDoubleClickEvent(QMouseEvent * event)"	COMMENT = "";
+	Event "mouseMoveEvent" ___("Event As QMouseEvent"); Declare "void mouseMoveEvent(QMouseEvent * event)"	COMMENT = "";
+	Event "mousePressEvent" ___("Event As QMouseEvent"); Declare "void mousePressEvent(QMouseEvent * event)"	COMMENT = "";
+	Event "mouseReleaseEvent" ___("Event As QMouseEvent"); Declare "void mouseReleaseEvent(QMouseEvent * event)"	COMMENT = "";
+	Event "moveEvent" ___("Event As QMoveEvent"); Declare "void moveEvent(QMoveEvent * event)"	COMMENT = "";
+	Event "paintEvent" ___("Event As QPaintEvent"); Declare "void paintEvent(QPaintEvent * event)"	COMMENT = "";
+	Event "resizeEvent" ___("Event As QResizeEvent"); Declare "void resizeEvent(QResizeEvent * event)"	COMMENT = "";
+	Event "showEvent" ___("Event As QShowEvent"); Declare "void showEvent(QShowEvent * event)"	COMMENT = "";
+	Event "tabletEvent" ___("Event As QTabletEvent"); Declare "void tabletEvent(QTabletEvent * event)"	COMMENT = "";
+	Event "wheelEvent" ___("Event As QWheelEvent"); Declare "void wheelEvent(QWheelEvent * event)"	COMMENT = "";
 
 End_Class
 
@@ -7910,99 +7910,99 @@ End_Class
 
 Class "QString"
 
-	Function "append"___("Str As String") As "String";	COMMENT = "";
-	Function "append2"___("Ch As QChar") As "String";	COMMENT = "";
-	Function "arg"___("A As String, FieldWidth As Integer, FillChar As QChar") As "String";	COMMENT = "";
-	Function "arg2"___("A As Integer, FieldWidth As Integer, Base As Integer, FillChar As QChar") As "String";	COMMENT = "";
-	Function "arg3"___("A As QChar, FieldWidth As Integer, FillChar As QChar") As "String";	COMMENT = "";
-	Function "arg4"___("A As Float, FieldWidth As Integer, Format As String, Precision As Integer, FillChar As QChar") As "String";	COMMENT = "";
-	Function "at"___("Position As Integer") As "QChar";	COMMENT = "";
-	Function "capacity"___("") As "Integer";	COMMENT = "";
-	Sub "chop"___("N As Integer");	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "compare"___("Other As String") As "Integer";	COMMENT = "";
-	Function "compare2"___("Other As String, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "contains"___("Str As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "contains2"___("Ch As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "contains3 "___("Rx As QRegExp") As "Boolean";	COMMENT = "";
+	Function "append" ___("Str As String") As "String";	COMMENT = "";
+	Function "append2" ___("Ch As QChar") As "String";	COMMENT = "";
+	Function "arg" ___("A As String, FieldWidth As Integer, FillChar As QChar") As "String";	COMMENT = "";
+	Function "arg2" ___("A As Integer, FieldWidth As Integer, Base As Integer, FillChar As QChar") As "String";	COMMENT = "";
+	Function "arg3" ___("A As QChar, FieldWidth As Integer, FillChar As QChar") As "String";	COMMENT = "";
+	Function "arg4" ___("A As Float, FieldWidth As Integer, Format As String, Precision As Integer, FillChar As QChar") As "String";	COMMENT = "";
+	Function "at" ___("Position As Integer") As "QChar";	COMMENT = "";
+	Function "capacity" ___("") As "Integer";	COMMENT = "";
+	Sub "chop" ___("N As Integer");	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "compare" ___("Other As String") As "Integer";	COMMENT = "";
+	Function "compare2" ___("Other As String, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "contains" ___("Str As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "contains2" ___("Ch As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "contains3 " ___("Rx As QRegExp") As "Boolean";	COMMENT = "";
 
-	Function "count"___("Str As String, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "count2"___("Ch As QChar, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "count3"___("Rx As QRegExp") As "Integer";	COMMENT = "";
-	Function "count4"___("") As "Integer";	COMMENT = "";
-	Function "endsWith"___("S As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "endsWith2"___("C As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "fill"___("Ch As QChar, Size As Integer") As "String";	COMMENT = "";
+	Function "count" ___("Str As String, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "count2" ___("Ch As QChar, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "count3" ___("Rx As QRegExp") As "Integer";	COMMENT = "";
+	Function "count4" ___("") As "Integer";	COMMENT = "";
+	Function "endsWith" ___("S As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "endsWith2" ___("C As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "fill" ___("Ch As QChar, Size As Integer") As "String";	COMMENT = "";
 
-	Function "indexOf"___("Str As String, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "indexOf2"___("Ch As QChar, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "indexOf3"___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
-	Function "insert"___("Position As Integer, Str As String") As "String";	COMMENT = "";
-	Function "insert2"___("Position As Integer, Ch As QChar") As "String";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isRightToLeft"___("") As "Boolean";	COMMENT = "";
-	Function "lastIndexOf"___("Str As String, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "lastIndexOf2"___("Ch As QChar, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
-	Function "lastIndexOf3"___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
-	Function "left"___("N As Integer") As "String";	COMMENT = "";
-	Function "leftJustified"___("Width As Integer, Fill As QChar, Truncate As Boolean") As "String";	COMMENT = "";
-	Function "length"___("") As "Integer";	COMMENT = "";
-	Function "localeAwareCompare"___("Other As String") As "Integer";	COMMENT = "";
-	Function "mid"___("Position As Integer, N As Integer") As "String";	COMMENT = "";
-	Function "normalized"___("Mode As QString.NormalizationForm") As "String";	COMMENT = "";
-	Function "normalized2"___("Mode As QString.NormalizationForm, Version As QChar.UnicodeVersion") As "String";	COMMENT = "";
-	Function "prepend"___("Str As String") As "String";	COMMENT = "";
-	Function "prepend2"___("Ch As QChar") As "String";	COMMENT = "";
+	Function "indexOf" ___("Str As String, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "indexOf2" ___("Ch As QChar, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "indexOf3" ___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
+	Function "insert" ___("Position As Integer, Str As String") As "String";	COMMENT = "";
+	Function "insert2" ___("Position As Integer, Ch As QChar") As "String";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isRightToLeft" ___("") As "Boolean";	COMMENT = "";
+	Function "lastIndexOf" ___("Str As String, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "lastIndexOf2" ___("Ch As QChar, From As Integer, Cs As Qt.CaseSensitivity") As "Integer";	COMMENT = "";
+	Function "lastIndexOf3" ___("Rx As QRegExp, From As Integer") As "Integer";	COMMENT = "";
+	Function "left" ___("N As Integer") As "String";	COMMENT = "";
+	Function "leftJustified" ___("Width As Integer, Fill As QChar, Truncate As Boolean") As "String";	COMMENT = "";
+	Function "length" ___("") As "Integer";	COMMENT = "";
+	Function "localeAwareCompare" ___("Other As String") As "Integer";	COMMENT = "";
+	Function "mid" ___("Position As Integer, N As Integer") As "String";	COMMENT = "";
+	Function "normalized" ___("Mode As QString.NormalizationForm") As "String";	COMMENT = "";
+	Function "normalized2" ___("Mode As QString.NormalizationForm, Version As QChar.UnicodeVersion") As "String";	COMMENT = "";
+	Function "prepend" ___("Str As String") As "String";	COMMENT = "";
+	Function "prepend2" ___("Ch As QChar") As "String";	COMMENT = "";
 
-	Sub "push_back"___("Other As String");	COMMENT = "";
-	Sub "push_back2"___("Ch As QChar");	COMMENT = "";
-	Sub "push_front"___("Other As String");	COMMENT = "";
-	Sub "push_front2"___("Ch As QChar");	COMMENT = "";
-	Function "remove"___("Position As Integer, N As Integer") As "String";	COMMENT = "";
-	Function "remove2"___("Ch As QChar, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
-	Function "remove3"___("Str As String, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
-	Function "remove4"___("Rx As QRegExp") As "String";	COMMENT = "";
-	Function "repeated"___("Times As Integer") As "String";	COMMENT = "";
+	Sub "push_back" ___("Other As String");	COMMENT = "";
+	Sub "push_back2" ___("Ch As QChar");	COMMENT = "";
+	Sub "push_front" ___("Other As String");	COMMENT = "";
+	Sub "push_front2" ___("Ch As QChar");	COMMENT = "";
+	Function "remove" ___("Position As Integer, N As Integer") As "String";	COMMENT = "";
+	Function "remove2" ___("Ch As QChar, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
+	Function "remove3" ___("Str As String, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
+	Function "remove4" ___("Rx As QRegExp") As "String";	COMMENT = "";
+	Function "repeated" ___("Times As Integer") As "String";	COMMENT = "";
 
-	Function "replace"___("Position As Integer, N As Integer, After As String") As "String";	COMMENT = "";
-	Function "replace2"___("Position As Integer, N As Integer, After As QChar") As "String";	COMMENT = "";
-	Function "replace3"___("Before As String, After As String, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
-	Function "replace4"___("Before As QChar, After As String, Qt.CaseSensitivity") As "String";	COMMENT = "";
-	Function "replace5"___("Before As QChar, After As QChar, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
-	Function "replace6"___("Rx As QRegExp, After As String") As "String";	COMMENT = "";
+	Function "replace" ___("Position As Integer, N As Integer, After As String") As "String";	COMMENT = "";
+	Function "replace2" ___("Position As Integer, N As Integer, After As QChar") As "String";	COMMENT = "";
+	Function "replace3" ___("Before As String, After As String, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
+	Function "replace4" ___("Before As QChar, After As String, Qt.CaseSensitivity") As "String";	COMMENT = "";
+	Function "replace5" ___("Before As QChar, After As QChar, Cs As Qt.CaseSensitivity") As "String";	COMMENT = "";
+	Function "replace6" ___("Rx As QRegExp, After As String") As "String";	COMMENT = "";
 
-	Sub "reserve"___("Size As Integer");	COMMENT = "";
-	Sub "resize"___("Size As Integer");	COMMENT = "";
-	Function "right"___("N As Integer") As "String";	COMMENT = "";
-	Function "rightJustified"___("Width As Integer, Fill As QChar, Truncate As Boolean") As "String";	COMMENT = "";
-	//Function "rightRef"___("N As Integer") As "QStringRef";	COMMENT = "";
-	Function "section"___("Sep As QChar, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
-	Function "section2"___("Sep As String, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
-	Function "section3"___("Reg As QRegExp, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
-	Function "setNum"___("N As Integer, Base As Integer") As "String";	COMMENT = "";
-	Function "setNum2"___("N As Float, Format As String, Precision As Integer") As "String";	COMMENT = "";
-	Function "simplified"___("") As "String";	COMMENT = "";
-	Function "size"___("") As "Integer";	COMMENT = "";
-	Function "split"___("Sep As String, Behavior As QString.SplitBehavior, Cs As Qt.CaseSensitivity") As "QStringList";	COMMENT = "";
-	Function "split2"___("Sep As QChar, Behavior As QString.SplitBehavior, Cs As Qt.CaseSensitivity") As "QStringList";	COMMENT = "";
-	Function "split3"___("Rx As QRegExp, Behavior As QString.SplitBehavior") As "QStringList";	COMMENT = "";
-	Sub "squeeze"___("");	COMMENT = "";
-	Function "startsWith"___("S As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
-	Function "startsWith2"___("C As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Sub "reserve" ___("Size As Integer");	COMMENT = "";
+	Sub "resize" ___("Size As Integer");	COMMENT = "";
+	Function "right" ___("N As Integer") As "String";	COMMENT = "";
+	Function "rightJustified" ___("Width As Integer, Fill As QChar, Truncate As Boolean") As "String";	COMMENT = "";
+	//Function "rightRef" ___("N As Integer") As "QStringRef";	COMMENT = "";
+	Function "section" ___("Sep As QChar, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
+	Function "section2" ___("Sep As String, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
+	Function "section3" ___("Reg As QRegExp, Start As Integer, End As Integer, Flags As QString.SectionFlags") As "String";	COMMENT = "";
+	Function "setNum" ___("N As Integer, Base As Integer") As "String";	COMMENT = "";
+	Function "setNum2" ___("N As Float, Format As String, Precision As Integer") As "String";	COMMENT = "";
+	Function "simplified" ___("") As "String";	COMMENT = "";
+	Function "size" ___("") As "Integer";	COMMENT = "";
+	Function "split" ___("Sep As String, Behavior As QString.SplitBehavior, Cs As Qt.CaseSensitivity") As "QStringList";	COMMENT = "";
+	Function "split2" ___("Sep As QChar, Behavior As QString.SplitBehavior, Cs As Qt.CaseSensitivity") As "QStringList";	COMMENT = "";
+	Function "split3" ___("Rx As QRegExp, Behavior As QString.SplitBehavior") As "QStringList";	COMMENT = "";
+	Sub "squeeze" ___("");	COMMENT = "";
+	Function "startsWith" ___("S As String, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
+	Function "startsWith2" ___("C As QChar, Cs As Qt.CaseSensitivity") As "Boolean";	COMMENT = "";
 
-	Function "toLatin1"___("") As "QByteArray";	COMMENT = "";
-	Function "toCaseFolded"___("") As "String";	COMMENT = "";
-	Function "toDouble"___("Ok As Boolean") As "Float";	COMMENT = "";
-	Function "toInt"___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
-	Function "toLatin1"___("") As "QByteArray";	COMMENT = "";
-	Function "toLocal8Bit"___("") As "QByteArray";	COMMENT = "";
-	Function "toLongLong"___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
-	Function "toLower"___("") As "String";	COMMENT = "";
-	Function "toUpper"___("") As "String";	COMMENT = "";
-	Function "toUtf8"___("") As "QByteArray";	COMMENT = "";
-	Function "trimmed"___("") As "String";	COMMENT = "";
-	Sub "truncate"___("Position As Integer");	COMMENT = "";
+	Function "toLatin1" ___("") As "QByteArray";	COMMENT = "";
+	Function "toCaseFolded" ___("") As "String";	COMMENT = "";
+	Function "toDouble" ___("Ok As Boolean") As "Float";	COMMENT = "";
+	Function "toInt" ___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
+	Function "toLatin1" ___("") As "QByteArray";	COMMENT = "";
+	Function "toLocal8Bit" ___("") As "QByteArray";	COMMENT = "";
+	Function "toLongLong" ___("Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
+	Function "toLower" ___("") As "String";	COMMENT = "";
+	Function "toUpper" ___("") As "String";	COMMENT = "";
+	Function "toUtf8" ___("") As "QByteArray";	COMMENT = "";
+	Function "trimmed" ___("") As "String";	COMMENT = "";
+	Sub "truncate" ___("Position As Integer");	COMMENT = "";
 
 End_Class
 
@@ -8013,59 +8013,59 @@ Class "QTreeWidget" SuperClass "QTreeView"
 	Property "columnCount" As "Integer";	COMMENT = "";
 	Property "topLevelItemCount" As "Integer";	COMMENT = "";
 
-	Sub "addTopLevelItem"___("Item As QTreeWidgetItem");	COMMENT = "";
-	Sub "addTopLevelItems"___("Items As List");	COMMENT = "";
-	Sub "closePersistentEditor"___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
-	Function "currentColumn"___("") As "Integer";	COMMENT = "";
-	Function "currentItem"___("") As "QTreeWidgetItem";	COMMENT = "";
+	Sub "addTopLevelItem" ___("Item As QTreeWidgetItem");	COMMENT = "";
+	Sub "addTopLevelItems" ___("Items As List");	COMMENT = "";
+	Sub "closePersistentEditor" ___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
+	Function "currentColumn" ___("") As "Integer";	COMMENT = "";
+	Function "currentItem" ___("") As "QTreeWidgetItem";	COMMENT = "";
 
-	Sub "editItem"___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
-	Function "findItems"___("Text As String, Flags As Qt.MatchFlags, Column As Integer") As "List";	COMMENT = "";
-	Function "headerItem"___("") As "QTreeWidgetItem";	COMMENT = "";
-	Function "indexOfTopLevelItem"___("Item As QTreeWidgetItem") As "Integer";	COMMENT = "";
-	Sub "insertTopLevelItem"___("Index As Integer, Item As QTreeWidgetItem");	COMMENT = "";
-	Sub "insertTopLevelItems"___("Index As Integer, Items As List");	COMMENT = "";
-	Function "invisibleRootItem"___("") As "QTreeWidgetItem";	COMMENT = "";
-	Function "isFirstItemColumnSpanned"___("Item As QTreeWidgetItem") As "Boolean";	COMMENT = "";
-	Function "itemAbove"___("Item As QTreeWidgetItem") As "QTreeWidgetItem";	COMMENT = "";
-	Function "itemAt"___("P As QPoint") As "QTreeWidgetItem";	COMMENT = "";
-	Function "itemAt2"___("X As Integer, Y As Integer") As "QTreeWidgetItem";	COMMENT = "";
-	Function "itemBelow"___("Item As QTreeWidgetItem") As "QTreeWidgetItem";	COMMENT = "";
-	Function "itemWidget"___("Item As QTreeWidgetItem, Column As Integer") As "QWidget";	COMMENT = "";
-	Sub "openPersistentEditor"___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
-	Sub "removeItemWidget "___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
-	Function "selectedItems"___("") As "List";	COMMENT = "";
+	Sub "editItem" ___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
+	Function "findItems" ___("Text As String, Flags As Qt.MatchFlags, Column As Integer") As "List";	COMMENT = "";
+	Function "headerItem" ___("") As "QTreeWidgetItem";	COMMENT = "";
+	Function "indexOfTopLevelItem" ___("Item As QTreeWidgetItem") As "Integer";	COMMENT = "";
+	Sub "insertTopLevelItem" ___("Index As Integer, Item As QTreeWidgetItem");	COMMENT = "";
+	Sub "insertTopLevelItems" ___("Index As Integer, Items As List");	COMMENT = "";
+	Function "invisibleRootItem" ___("") As "QTreeWidgetItem";	COMMENT = "";
+	Function "isFirstItemColumnSpanned" ___("Item As QTreeWidgetItem") As "Boolean";	COMMENT = "";
+	Function "itemAbove" ___("Item As QTreeWidgetItem") As "QTreeWidgetItem";	COMMENT = "";
+	Function "itemAt" ___("P As QPoint") As "QTreeWidgetItem";	COMMENT = "";
+	Function "itemAt2" ___("X As Integer, Y As Integer") As "QTreeWidgetItem";	COMMENT = "";
+	Function "itemBelow" ___("Item As QTreeWidgetItem") As "QTreeWidgetItem";	COMMENT = "";
+	Function "itemWidget" ___("Item As QTreeWidgetItem, Column As Integer") As "QWidget";	COMMENT = "";
+	Sub "openPersistentEditor" ___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
+	Sub "removeItemWidget " ___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
+	Function "selectedItems" ___("") As "List";	COMMENT = "";
 
-	Sub "setCurrentItem"___("Item As QTreeWidgetItem");	COMMENT = "";
-	Sub "setCurrentItem2"___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
-	Sub "setCurrentItem3"___("Item As QTreeWidgetItem, Column As Integer, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
-	Sub "setFirstItemColumnSpanned"___("Item As QTreeWidgetItem, Span As Boolean");	COMMENT = "";
-	Sub "setHeaderItem"___("Item As QTreeWidgetItem");	COMMENT = "";
-	Sub "setHeaderLabel"___("Label As String");	COMMENT = "";
-	Sub "setHeaderLabels"___("Labels As List");	COMMENT = "";
-	Sub "setItemWidget"___("Iteam As QTreeWidgetItem, Column As Integer, Widget As QWidget");	COMMENT = "";
-	Function "sortColumn"___("") As "Integer";	COMMENT = "";
+	Sub "setCurrentItem" ___("Item As QTreeWidgetItem");	COMMENT = "";
+	Sub "setCurrentItem2" ___("Item As QTreeWidgetItem, Column As Integer");	COMMENT = "";
+	Sub "setCurrentItem3" ___("Item As QTreeWidgetItem, Column As Integer, Command As QItemSelectionModel.SelectionFlags");	COMMENT = "";
+	Sub "setFirstItemColumnSpanned" ___("Item As QTreeWidgetItem, Span As Boolean");	COMMENT = "";
+	Sub "setHeaderItem" ___("Item As QTreeWidgetItem");	COMMENT = "";
+	Sub "setHeaderLabel" ___("Label As String");	COMMENT = "";
+	Sub "setHeaderLabels" ___("Labels As List");	COMMENT = "";
+	Sub "setItemWidget" ___("Iteam As QTreeWidgetItem, Column As Integer, Widget As QWidget");	COMMENT = "";
+	Function "sortColumn" ___("") As "Integer";	COMMENT = "";
 
-	Sub "sortItems"___("Column As Integer, Order As Qt.SortOrder");	COMMENT = "";
-	Function "takeTopLevelItem"___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
-	Function "topLevelItem"___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
-	Function "visualItemRect"___("Item As QTreeWidgetItem") As "QRect";	COMMENT = "";
+	Sub "sortItems" ___("Column As Integer, Order As Qt.SortOrder");	COMMENT = "";
+	Function "takeTopLevelItem" ___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
+	Function "topLevelItem" ___("Index As Integer") As "QTreeWidgetItem";	COMMENT = "";
+	Function "visualItemRect" ___("Item As QTreeWidgetItem") As "QRect";	COMMENT = "";
 
-	Slot "clear"___("");	COMMENT = "";
-	Slot "collapseItem"___("Item As QTreeWidgetItem");	COMMENT = "";
-	Slot "expandItem"___("Item As QTreeWidgetItem");	COMMENT = "";
-	Slot "scrollToItem"___("Item As QTreeWidgetItem, Hint As QAbstractItemView.ScrollHint");	COMMENT = "";
+	Slot "clear" ___("");	COMMENT = "";
+	Slot "collapseItem" ___("Item As QTreeWidgetItem");	COMMENT = "";
+	Slot "expandItem" ___("Item As QTreeWidgetItem");	COMMENT = "";
+	Slot "scrollToItem" ___("Item As QTreeWidgetItem, Hint As QAbstractItemView.ScrollHint");	COMMENT = "";
 
-	//Signal "currentItemChanged2"___("Current As QTreeWidgetItem, Previous As QTreeWidgetItem") Declare "void currentItemChanged(QTreeWidgetItem * current, QTreeWidgetItem * previous)"	COMMENT = "";	
-	//Signal "itemActivated2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemActivated(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-	//Signal "itemChanged2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemChanged(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-	//Signal "itemClicked2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemClicked(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-	//Signal "itemCollapsed2"___("Item As QTreeWidgetItem") Declare "void itemCollapsed(QTreeWidgetItem * item)"	COMMENT = "";	
-//	Signal "itemDoubleClicked2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemDoubleClicked(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-//	Signal "itemEntered2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemEntered(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-//	Signal "itemExpanded2"___("Item As QTreeWidgetItem") Declare "void itemExpanded(QTreeWidgetItem * item)"	COMMENT = "";	
-//	Signal "itemPressed2"___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemPressed(QTreeWidgetItem * item, int column)"	COMMENT = "";	
-//	Signal "itemSelectionChanged"___("") Declare "void itemSelectionChanged()"	COMMENT = "";	
+	//Signal "currentItemChanged2" ___("Current As QTreeWidgetItem, Previous As QTreeWidgetItem") Declare "void currentItemChanged(QTreeWidgetItem * current, QTreeWidgetItem * previous)"	COMMENT = "";
+	//Signal "itemActivated2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemActivated(QTreeWidgetItem * item, int column)"	COMMENT = "";
+	//Signal "itemChanged2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemChanged(QTreeWidgetItem * item, int column)"	COMMENT = "";
+	//Signal "itemClicked2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemClicked(QTreeWidgetItem * item, int column)"	COMMENT = "";
+	//Signal "itemCollapsed2" ___("Item As QTreeWidgetItem") Declare "void itemCollapsed(QTreeWidgetItem * item)"	COMMENT = "";
+//	Signal "itemDoubleClicked2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemDoubleClicked(QTreeWidgetItem * item, int column)"	COMMENT = "";
+//	Signal "itemEntered2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemEntered(QTreeWidgetItem * item, int column)"	COMMENT = "";
+//	Signal "itemExpanded2" ___("Item As QTreeWidgetItem") Declare "void itemExpanded(QTreeWidgetItem * item)"	COMMENT = "";
+//	Signal "itemPressed2" ___("Item As QTreeWidgetItem, Column As Integer") Declare "void itemPressed(QTreeWidgetItem * item, int column)"	COMMENT = "";
+//	Signal "itemSelectionChanged" ___("") Declare "void itemSelectionChanged()"	COMMENT = "";
 
 End_Class
 
@@ -8073,61 +8073,61 @@ End_Class
 
 Class "QLocale"
 
-	Function "amText"___("") As "String";	COMMENT = "";
-	Function "bcp47Name"___("") As "String";	COMMENT = "";
-	Function "country"___("") As "QLocale.Country";	COMMENT = "";
-	Function "createSeparatedList"___("ItemList As List") As "String";	COMMENT = "";
-	Function "currencySymbol"___("Format As QLocale.CurrencySymbolFormat") As "String";	COMMENT = "";
-	Function "dateFormat"___("Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "dateTimeFormat"___("Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "dayName"___("Day As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "decimalPoint"___("") As "QChar";	COMMENT = "";
-	Function "exponential"___("") As "QChar";	COMMENT = "";
-	Function "firstDayOfWeek"___("") As "Qt.DayOfWeek";	COMMENT = "";
-	Function "groupSeparator"___("") As "QChar";	COMMENT = "";
-	Function "language"___("") As "QLocale.Language";	COMMENT = "";
-	Function "measurementSystem"___("") As "QLocale.MeasurementSystem";	COMMENT = "";
-	Function "monthName"___("Month As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "name"___("") As "String";	COMMENT = "";
-	Function "nativeCountryName"___("") As "String";	COMMENT = "";
-	Function "nativeLanguageName"___("") As "String";	COMMENT = "";
-	Function "negativeSign"___("") As "QChar";	COMMENT = "";
+	Function "amText" ___("") As "String";	COMMENT = "";
+	Function "bcp47Name" ___("") As "String";	COMMENT = "";
+	Function "country" ___("") As "QLocale.Country";	COMMENT = "";
+	Function "createSeparatedList" ___("ItemList As List") As "String";	COMMENT = "";
+	Function "currencySymbol" ___("Format As QLocale.CurrencySymbolFormat") As "String";	COMMENT = "";
+	Function "dateFormat" ___("Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "dateTimeFormat" ___("Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "dayName" ___("Day As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "decimalPoint" ___("") As "QChar";	COMMENT = "";
+	Function "exponential" ___("") As "QChar";	COMMENT = "";
+	Function "firstDayOfWeek" ___("") As "Qt.DayOfWeek";	COMMENT = "";
+	Function "groupSeparator" ___("") As "QChar";	COMMENT = "";
+	Function "language" ___("") As "QLocale.Language";	COMMENT = "";
+	Function "measurementSystem" ___("") As "QLocale.MeasurementSystem";	COMMENT = "";
+	Function "monthName" ___("Month As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "name" ___("") As "String";	COMMENT = "";
+	Function "nativeCountryName" ___("") As "String";	COMMENT = "";
+	Function "nativeLanguageName" ___("") As "String";	COMMENT = "";
+	Function "negativeSign" ___("") As "QChar";	COMMENT = "";
 
-	Function "numberOptions"___("") As "QLocale.NumberOptions";	COMMENT = "";
-	Function "percent"___("") As "QChar";	COMMENT = "";
-	Function "pmText"___("") As "String";	COMMENT = "";
-	Function "positiveSign"___("") As "QChar";	COMMENT = "";
-	Function "quoteString"___("Str As String, Style As QLocale.QuotationStyle") As "String";	COMMENT = "";
-	Function "script"___("") As "QLocale.Script";	COMMENT = "";
-	Sub "setNumberOptions"___("Options As QLocale.NumberOptions");	COMMENT = "";
-	Function "standaloneDayName"___("Day As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "standaloneMonthName"___("Month As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "textDirection"___("") As "Qt.LayoutDirection";	COMMENT = "";
-	Function "timeFormat"___("Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "toCurrencyString"___("Value As Integer, Symbol As String") As "String";	COMMENT = "";
-	Function "toCurrencyString2"___("Value As Float, Symbol As String") As "String";	COMMENT = "";
-	Function "toDate"___("DateString As String, Format As QLocale.FormatType") As "QDate";	COMMENT = "";
-	Function "toDate2"___("DateString As String, Format As String") As "QDate";	COMMENT = "";
-	Function "toDateTime"___("DateString As String, Format As QLocale.FormatType") As "QDateTime";	COMMENT = "";
-	Function "toDateTime2"___("DateString As String, Format As String") As "QDateTime";	COMMENT = "";
-	Function "toDouble"___("S As String, Ok As Boolean") As "Float";	COMMENT = "";
-	Function "toLongLong"___("S As String, Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
-	Function "toLower"___("Str As String") As "String";	COMMENT = "";
+	Function "numberOptions" ___("") As "QLocale.NumberOptions";	COMMENT = "";
+	Function "percent" ___("") As "QChar";	COMMENT = "";
+	Function "pmText" ___("") As "String";	COMMENT = "";
+	Function "positiveSign" ___("") As "QChar";	COMMENT = "";
+	Function "quoteString" ___("Str As String, Style As QLocale.QuotationStyle") As "String";	COMMENT = "";
+	Function "script" ___("") As "QLocale.Script";	COMMENT = "";
+	Sub "setNumberOptions" ___("Options As QLocale.NumberOptions");	COMMENT = "";
+	Function "standaloneDayName" ___("Day As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "standaloneMonthName" ___("Month As Integer, Type As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "textDirection" ___("") As "Qt.LayoutDirection";	COMMENT = "";
+	Function "timeFormat" ___("Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "toCurrencyString" ___("Value As Integer, Symbol As String") As "String";	COMMENT = "";
+	Function "toCurrencyString2" ___("Value As Float, Symbol As String") As "String";	COMMENT = "";
+	Function "toDate" ___("DateString As String, Format As QLocale.FormatType") As "QDate";	COMMENT = "";
+	Function "toDate2" ___("DateString As String, Format As String") As "QDate";	COMMENT = "";
+	Function "toDateTime" ___("DateString As String, Format As QLocale.FormatType") As "QDateTime";	COMMENT = "";
+	Function "toDateTime2" ___("DateString As String, Format As String") As "QDateTime";	COMMENT = "";
+	Function "toDouble" ___("S As String, Ok As Boolean") As "Float";	COMMENT = "";
+	Function "toLongLong" ___("S As String, Ok As Boolean, Base As Integer") As "Integer";	COMMENT = "";
+	Function "toLower" ___("Str As String") As "String";	COMMENT = "";
 
-	Function "toString"___("I As Integer") As "String";	COMMENT = "";
-	Function "toString2"___("Date As QDate, Format As String") As "String";	COMMENT = "";
-	Function "toString3"___("Date As QDate, Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "toString4"___("Time As QTime, Format As String") As "String";	COMMENT = "";
-	Function "toString5"___("Time As QTime, Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "toString6"___("DateTime As QDateTime, Format As QLocale.FormatType") As "String";	COMMENT = "";
-	Function "toString7"___("DateTime As QDateTime, Format As String") As "String";	COMMENT = "";
-	Function "toString8"___("I As Double, F As String, Prec As Integer") As "String";	COMMENT = "";
-	Function "toTime"___("TimeString As String, Format As QLocale.FormatType") As "QTime";	COMMENT = "";
-	Function "toTime"___("TimeString As String, Format As String") As "String";	COMMENT = "";
-	Function "toUpper"___("Str As String") As "String";	COMMENT = "";
-	Function "uiLanguages"___("") As "List";	COMMENT = "";
-	Function "weekdays"___("") As "List";	COMMENT = "";
-	Function "zeroDigit"___("") As "QChar";	COMMENT = "";
+	Function "toString" ___("I As Integer") As "String";	COMMENT = "";
+	Function "toString2" ___("Date As QDate, Format As String") As "String";	COMMENT = "";
+	Function "toString3" ___("Date As QDate, Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "toString4" ___("Time As QTime, Format As String") As "String";	COMMENT = "";
+	Function "toString5" ___("Time As QTime, Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "toString6" ___("DateTime As QDateTime, Format As QLocale.FormatType") As "String";	COMMENT = "";
+	Function "toString7" ___("DateTime As QDateTime, Format As String") As "String";	COMMENT = "";
+	Function "toString8" ___("I As Double, F As String, Prec As Integer") As "String";	COMMENT = "";
+	Function "toTime" ___("TimeString As String, Format As QLocale.FormatType") As "QTime";	COMMENT = "";
+	Function "toTime" ___("TimeString As String, Format As String") As "String";	COMMENT = "";
+	Function "toUpper" ___("Str As String") As "String";	COMMENT = "";
+	Function "uiLanguages" ___("") As "List";	COMMENT = "";
+	Function "weekdays" ___("") As "List";	COMMENT = "";
+	Function "zeroDigit" ___("") As "QChar";	COMMENT = "";
 
 End_Class
 
@@ -8135,14 +8135,14 @@ End_Class
 
 Class "QProcessEnvironment"
 
-	Sub "clear"___("");	COMMENT = "";
-	Function "contains"___("Name As String") As "Boolean";	COMMENT = "";
-	Sub "insert"___("Name As String, Value As String");	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "keys"___("") As "List";	COMMENT = "";
-	Sub "remove"___("Name As String");	COMMENT = "";
-	Function "toStringList"___("") As "QStringList";	COMMENT = "";
-	Function "value"___("Name As String, DefaultValue As String") As "String";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "contains" ___("Name As String") As "Boolean";	COMMENT = "";
+	Sub "insert" ___("Name As String, Value As String");	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "keys" ___("") As "List";	COMMENT = "";
+	Sub "remove" ___("Name As String");	COMMENT = "";
+	Function "toStringList" ___("") As "QStringList";	COMMENT = "";
+	Function "value" ___("Name As String, DefaultValue As String") As "String";	COMMENT = "";
 
 End_Class
 
@@ -8159,22 +8159,22 @@ Class "QProgressDialog" SuperClass "QDialog"
 	Property "value" As "Integer";	COMMENT = "";
 	Property "wasCanceled" As "Boolean";	COMMENT = "";
 
-	Sub "open"___("Receiver As QObject, Member As String");	COMMENT = "";
-	Sub "setBar"___("Bar As QProgressBar");	COMMENT = "";
-	Sub "setCancelButton"___("CancelButton As QPushButton");	COMMENT = "";
-	Sub "setLabel"___("Label As QLabel");	COMMENT = "";
+	Sub "open" ___("Receiver As QObject, Member As String");	COMMENT = "";
+	Sub "setBar" ___("Bar As QProgressBar");	COMMENT = "";
+	Sub "setCancelButton" ___("CancelButton As QPushButton");	COMMENT = "";
+	Sub "setLabel" ___("Label As QLabel");	COMMENT = "";
 
-	Slot "cancel"___("");	COMMENT = "";
-	Slot "reset"___("");	COMMENT = "";
-	Slot "setCancelButtonText"___("CancelButtonText As String");	COMMENT = "";
-	Slot "setLabelText"___("Text As String");	COMMENT = "";
-	Slot "setMaximum"___("Maximum As Integer");	COMMENT = "";
-	Slot "setMinimum"___("Minimum As Integer");	COMMENT = "";
-	Slot "setMinimumDuration"___("Ms As Integer");	COMMENT = "";
-	Slot "setRange"___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
-	Slot "setValue"___("Progress As Integer");	COMMENT = "";
+	Slot "cancel" ___("");	COMMENT = "";
+	Slot "reset" ___("");	COMMENT = "";
+	Slot "setCancelButtonText" ___("CancelButtonText As String");	COMMENT = "";
+	Slot "setLabelText" ___("Text As String");	COMMENT = "";
+	Slot "setMaximum" ___("Maximum As Integer");	COMMENT = "";
+	Slot "setMinimum" ___("Minimum As Integer");	COMMENT = "";
+	Slot "setMinimumDuration" ___("Ms As Integer");	COMMENT = "";
+	Slot "setRange" ___("Minimum As Integer, Maximum As Integer");	COMMENT = "";
+	Slot "setValue" ___("Progress As Integer");	COMMENT = "";
 
-	Signal "canceled"___("") Declare "void canceled()"	COMMENT = "";
+	Signal "canceled" ___("") Declare "void canceled()"	COMMENT = "";
 
 End_Class
 
@@ -8182,21 +8182,21 @@ End_Class
 
 Class "QTime"
 
-	Function "addMSecs"___("Ms As Integer") As "QTime";	COMMENT = "";
-	Function "addSecs"___("S As Integer") As "QTime";	COMMENT = "";
-	Function "elapsed"___("") As "Integer";	COMMENT = "";
-	Function "hour"___("") As "Integer";	COMMENT = "";
-	Function "isNull"___("") As "Boolean";	COMMENT = "";
-	Function "isValid"___("") As "Boolean";	COMMENT = "";
-	Function "minute"___("") As "Integer";	COMMENT = "";
-	Function "msec"___("") As "Integer";	COMMENT = "";
-	Function "msecsTo"___("T As QTime") As "Integer";	COMMENT = "";
-	Function "restart"___("") As "Integer";	COMMENT = "";
-	Function "second"___("") As "Integer";	COMMENT = "";
-	Function "secsTo"___("T As QTime") As "Integer";	COMMENT = "";
-	Function "setHMS"___("H As Integer, M As Integer, S As Integer, Ms As Integer") As "Boolean";	COMMENT = "";
-	Sub "start"___("");	COMMENT = "";
-	Function "toString"___("Format As String") As "String";	COMMENT = "";
+	Function "addMSecs" ___("Ms As Integer") As "QTime";	COMMENT = "";
+	Function "addSecs" ___("S As Integer") As "QTime";	COMMENT = "";
+	Function "elapsed" ___("") As "Integer";	COMMENT = "";
+	Function "hour" ___("") As "Integer";	COMMENT = "";
+	Function "isNull" ___("") As "Boolean";	COMMENT = "";
+	Function "isValid" ___("") As "Boolean";	COMMENT = "";
+	Function "minute" ___("") As "Integer";	COMMENT = "";
+	Function "msec" ___("") As "Integer";	COMMENT = "";
+	Function "msecsTo" ___("T As QTime") As "Integer";	COMMENT = "";
+	Function "restart" ___("") As "Integer";	COMMENT = "";
+	Function "second" ___("") As "Integer";	COMMENT = "";
+	Function "secsTo" ___("T As QTime") As "Integer";	COMMENT = "";
+	Function "setHMS" ___("H As Integer, M As Integer, S As Integer, Ms As Integer") As "Boolean";	COMMENT = "";
+	Sub "start" ___("");	COMMENT = "";
+	Function "toString" ___("Format As String") As "String";	COMMENT = "";
 
 End_Class
 
@@ -8209,19 +8209,19 @@ Class "QDockWidget" SuperClass "QWidget"
 	Property "floating" As "Boolean";	COMMENT = "";
 	Property "windowTitle" As "String";	COMMENT = "";
 
-	Function "isAreaAllowed"___("Area As Qt.DockWidgetArea") As "Boolean";	COMMENT = "";
-	Sub "setFeatures"___("Features As QDockWidget.DockWidgetFeatures");	COMMENT = "";
-	Sub "setTitleBarWidget"___("Widget As QWidget");	COMMENT = "";
-	Sub "setWidget"___("Widget As QWidget");	COMMENT = "";
-	Function "titleBarWidget"___("") As "QWidget";	COMMENT = "";
-	Function "toggleViewAction"___("") As "QAction";	COMMENT = "";
-	Function "widget"___("") As "QWidget";	COMMENT = "";
+	Function "isAreaAllowed" ___("Area As Qt.DockWidgetArea") As "Boolean";	COMMENT = "";
+	Sub "setFeatures" ___("Features As QDockWidget.DockWidgetFeatures");	COMMENT = "";
+	Sub "setTitleBarWidget" ___("Widget As QWidget");	COMMENT = "";
+	Sub "setWidget" ___("Widget As QWidget");	COMMENT = "";
+	Function "titleBarWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "toggleViewAction" ___("") As "QAction";	COMMENT = "";
+	Function "widget" ___("") As "QWidget";	COMMENT = "";
 
-	Signal "allowedAreasChanged"___("AllowedAreas As Qt.DockWidgetAreas") Declare "void allowedAreasChanged(Qt.DockWidgetAreas allowedAreas)"	COMMENT = "";
-	Signal "dockLocationChanged"___("Area As Qt.DockWidgetArea") Declare "void dockLocationChanged(Qt.DockWidgetArea area)"	COMMENT = "";
-	Signal "featuresChanged"___("Features As QDockWidget.DockWidgetFeatures") Declare "void featuresChanged(QDockWidget.DockWidgetFeatures features)"	COMMENT = "";
-	Signal "topLevelChanged"___("TopLevel As Boolean") Declare "void topLevelChanged(bool topLevel)"	COMMENT = "";
-	Signal "visibilityChanged"___("Visible As Boolean") Declare "void visibilityChanged(bool visible)"	COMMENT = "";
+	Signal "allowedAreasChanged" ___("AllowedAreas As Qt.DockWidgetAreas") Declare "void allowedAreasChanged(Qt.DockWidgetAreas allowedAreas)"	COMMENT = "";
+	Signal "dockLocationChanged" ___("Area As Qt.DockWidgetArea") Declare "void dockLocationChanged(Qt.DockWidgetArea area)"	COMMENT = "";
+	Signal "featuresChanged" ___("Features As QDockWidget.DockWidgetFeatures") Declare "void featuresChanged(QDockWidget.DockWidgetFeatures features)"	COMMENT = "";
+	Signal "topLevelChanged" ___("TopLevel As Boolean") Declare "void topLevelChanged(bool topLevel)"	COMMENT = "";
+	Signal "visibilityChanged" ___("Visible As Boolean") Declare "void visibilityChanged(bool visible)"	COMMENT = "";
 
 End_Class
 
@@ -8231,17 +8231,17 @@ Class "QStatusBar" SuperClass "QWidget"
 
 	Property "sizeGripEnabled" As "Boolean";	COMMENT = "";
 
-	Sub "addPermanentWidget"___("Widget As QWidget, Stretch As Integer");	COMMENT = "";
-	Sub "addWidget"___("Widget As QWidget, Stretch As Integer");	COMMENT = "";
-	Function "currentMessage"___("") As "String";	COMMENT = "";
-	Function "insertPermanentWidget"___("Index As Integer, Widget As QWidget, Stretch As Integer") As "Integer";	COMMENT = "";
-	Function "insertWidget"___("Index As Integer, Widget As QWidget, Stretch As Integer") As "Integer";	COMMENT = "";
-	Sub "removeWidget"___("Widget As QWidget");	COMMENT = "";
+	Sub "addPermanentWidget" ___("Widget As QWidget, Stretch As Integer");	COMMENT = "";
+	Sub "addWidget" ___("Widget As QWidget, Stretch As Integer");	COMMENT = "";
+	Function "currentMessage" ___("") As "String";	COMMENT = "";
+	Function "insertPermanentWidget" ___("Index As Integer, Widget As QWidget, Stretch As Integer") As "Integer";	COMMENT = "";
+	Function "insertWidget" ___("Index As Integer, Widget As QWidget, Stretch As Integer") As "Integer";	COMMENT = "";
+	Sub "removeWidget" ___("Widget As QWidget");	COMMENT = "";
 
-	Slot "clearMessage"___("");	COMMENT = "";
-	Slot "showMessage"___("Message As String, Timeout As Integer");	COMMENT = "";
+	Slot "clearMessage" ___("");	COMMENT = "";
+	Slot "showMessage" ___("Message As String, Timeout As Integer");	COMMENT = "";
 
-	Signal "messageChanged"___("Message As String") Declare "void messageChanged(const QString & message)"	COMMENT = "";
+	Signal "messageChanged" ___("Message As String") Declare "void messageChanged(const QString & message)"	COMMENT = "";
 
 End_Class
 
@@ -8249,24 +8249,24 @@ End_Class
 
 Class "QThread" SuperClass "QObject"
 
-	Sub "exit"___("ReturnCode As Integer");	COMMENT = "";
-	Function "isFinished"___("") As "Boolean";	COMMENT = "";
-	Function "isRunning"___("") As "Boolean";	COMMENT = "";
-	Function "priority"___("") As "QThread.Priority";	COMMENT = "";
-	Sub "setPriority"___("Priority As QThread.Priority");	COMMENT = "";
-	Sub "setStackSize"___("StackSize As Integer");	COMMENT = "";
-	Function "stackSize"___("") As "Integer";	COMMENT = "";
-	Function "wait"___("Time As Integer") As "Boolean";	COMMENT = "";
+	Sub "exit" ___("ReturnCode As Integer");	COMMENT = "";
+	Function "isFinished" ___("") As "Boolean";	COMMENT = "";
+	Function "isRunning" ___("") As "Boolean";	COMMENT = "";
+	Function "priority" ___("") As "QThread.Priority";	COMMENT = "";
+	Sub "setPriority" ___("Priority As QThread.Priority");	COMMENT = "";
+	Sub "setStackSize" ___("StackSize As Integer");	COMMENT = "";
+	Function "stackSize" ___("") As "Integer";	COMMENT = "";
+	Function "wait" ___("Time As Integer") As "Boolean";	COMMENT = "";
 
-	Slot "quit"___("");	COMMENT = "";
-	Slot "start"___("Priority As QThread.Priority");	COMMENT = "";
-	Slot "terminate"___("");	COMMENT = "";
+	Slot "quit" ___("");	COMMENT = "";
+	Slot "start" ___("Priority As QThread.Priority");	COMMENT = "";
+	Slot "terminate" ___("");	COMMENT = "";
 
-  Event "run"___("") As "void run()";	COMMENT = "";
+  Event "run" ___("") As "void run()";	COMMENT = "";
 
-	Signal "finished"___("") Declare "void finished()"	COMMENT = "";
-	Signal "started"___("") Declare "void started()"	COMMENT = "";
-	Signal "terminated"___("") Declare "void terminated()"	COMMENT = "";
+	Signal "finished" ___("") Declare "void finished()"	COMMENT = "";
+	Signal "started" ___("") Declare "void started()"	COMMENT = "";
+	Signal "terminated" ___("") Declare "void terminated()"	COMMENT = "";
 
 End_Class
 
@@ -8277,27 +8277,27 @@ Class "QToolBox" SuperClass "QFrame"
 	Property "count" As "Integer";	COMMENT = "";
 	Property "currentIndex" As "Integer";	COMMENT = "";
 
-	Function "addItem"___("Widget As QWidget, IconSet As QIcon, Text As String") As "Integer";	COMMENT = "";
-	Function "addItem2"___("W As QWidget, Text As String") As "Integer";	COMMENT = "";
-	Function "currentWidget"___("") As "QWidget";	COMMENT = "";
-	Function "indexOf"___("Widget As QWidget") As "Integer";	COMMENT = "";
-	Function "insertItem"___("Index As Integer, Widget As QWidget, Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
-	Function "insertItem2"___("Index As Integer, Widget As QWidget, Text As String") As "Integer";	COMMENT = "";
-	Function "isItemEnabled"___("Index As Integer") As "Boolean";	COMMENT = "";
-	Function "itemIcon"___("Index As Integer") As "QIcon";	COMMENT = "";
-	Function "itemText"___("Index As Integer") As "String";	COMMENT = "";
-	Function "itemToolTip"___("Index As Integer") As "String";	COMMENT = "";
-	Sub "removeItem"___("Index As Integer");	COMMENT = "";
-	Sub "setItemEnabled"___("Index As Integer, Enabled As Boolean");	COMMENT = "";
-	Sub "setItemIcon"___("Index As Integer, Icon As QIcon");	COMMENT = "";
-	Sub "setItemText"___("Index As Integer, Text As String");	COMMENT = "";
-	Sub "setItemToolTip"___("Index As Integer, ToolTip As String");	COMMENT = "";
-	Function "widget"___("Index As Integer") As "QWidget";	COMMENT = "";
+	Function "addItem" ___("Widget As QWidget, IconSet As QIcon, Text As String") As "Integer";	COMMENT = "";
+	Function "addItem2" ___("W As QWidget, Text As String") As "Integer";	COMMENT = "";
+	Function "currentWidget" ___("") As "QWidget";	COMMENT = "";
+	Function "indexOf" ___("Widget As QWidget") As "Integer";	COMMENT = "";
+	Function "insertItem" ___("Index As Integer, Widget As QWidget, Icon As QIcon, Text As String") As "Integer";	COMMENT = "";
+	Function "insertItem2" ___("Index As Integer, Widget As QWidget, Text As String") As "Integer";	COMMENT = "";
+	Function "isItemEnabled" ___("Index As Integer") As "Boolean";	COMMENT = "";
+	Function "itemIcon" ___("Index As Integer") As "QIcon";	COMMENT = "";
+	Function "itemText" ___("Index As Integer") As "String";	COMMENT = "";
+	Function "itemToolTip" ___("Index As Integer") As "String";	COMMENT = "";
+	Sub "removeItem" ___("Index As Integer");	COMMENT = "";
+	Sub "setItemEnabled" ___("Index As Integer, Enabled As Boolean");	COMMENT = "";
+	Sub "setItemIcon" ___("Index As Integer, Icon As QIcon");	COMMENT = "";
+	Sub "setItemText" ___("Index As Integer, Text As String");	COMMENT = "";
+	Sub "setItemToolTip" ___("Index As Integer, ToolTip As String");	COMMENT = "";
+	Function "widget" ___("Index As Integer") As "QWidget";	COMMENT = "";
 
-	Slot "setCurrentIndex"___("Index As Integer");	COMMENT = "";
-	Slot "setCurrentWidget"___("Widget As QWidget");	COMMENT = "";
+	Slot "setCurrentIndex" ___("Index As Integer");	COMMENT = "";
+	Slot "setCurrentWidget" ___("Widget As QWidget");	COMMENT = "";
 
-	Signal "currentChanged"___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
+	Signal "currentChanged" ___("Index As Integer") Declare "void currentChanged(int index)"	COMMENT = "";
 
 End_Class
 
@@ -8319,71 +8319,71 @@ Class "QTextDocument" SuperClass "QObject"
 	Property "undoRedoEnabled" As "Boolean";	COMMENT = "";
 	Property "useDesignMetrics" As "Boolean";	COMMENT = "";
 
-	Sub "addResource"___("theType As Integer, Name As QUrl, Resource As QVariant");	COMMENT = "";
-	Sub "adjustSize"___("");	COMMENT = "";
-	Function "availableRedoSteps"___("") As "Integer";	COMMENT = "";
-	Function "availableUndoSteps"___("") As "Integer";	COMMENT = "";
-	Function "begin"___("") As "QTextBlock";	COMMENT = "";
-	Function "characterAt"___("Pos As Integer") As "QChar";	COMMENT = "";
-	Function "characterCount"___("") As "Integer";	COMMENT = "";
-	Sub "clear"___("");	COMMENT = "";
-	Function "defaultCursorMoveStyle"___("") As "Qt::CursorMoveStyle";	COMMENT = "";
+	Sub "addResource" ___("theType As Integer, Name As QUrl, Resource As QVariant");	COMMENT = "";
+	Sub "adjustSize" ___("");	COMMENT = "";
+	Function "availableRedoSteps" ___("") As "Integer";	COMMENT = "";
+	Function "availableUndoSteps" ___("") As "Integer";	COMMENT = "";
+	Function "begin" ___("") As "QTextBlock";	COMMENT = "";
+	Function "characterAt" ___("Pos As Integer") As "QChar";	COMMENT = "";
+	Function "characterCount" ___("") As "Integer";	COMMENT = "";
+	Sub "clear" ___("");	COMMENT = "";
+	Function "defaultCursorMoveStyle" ___("") As "Qt::CursorMoveStyle";	COMMENT = "";
 
-	Function "documentLayout"___("") As "QAbstractTextDocumentLayout";	COMMENT = "";
-	//Sub "drawContents"___("P as QPainter, Rect As QRectF");	COMMENT = "";
-	Function "end"___("") As "QTextBlock";	COMMENT = "";
-	Function "find"___("SubString As String, Cursor As QTextCursor, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
-	Function "find2"___("Expr As QRegExp, Cursor As QTextCursor, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
-	Function "find3"___("SubString As String, Position As Integer, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
-	Function "find4"___("Expr As QRegExp, Position As Integer, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
+	Function "documentLayout" ___("") As "QAbstractTextDocumentLayout";	COMMENT = "";
+	//Sub "drawContents" ___("P as QPainter, Rect As QRectF");	COMMENT = "";
+	Function "end" ___("") As "QTextBlock";	COMMENT = "";
+	Function "find" ___("SubString As String, Cursor As QTextCursor, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
+	Function "find2" ___("Expr As QRegExp, Cursor As QTextCursor, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
+	Function "find3" ___("SubString As String, Position As Integer, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
+	Function "find4" ___("Expr As QRegExp, Position As Integer, Options As QTextDocument::FindFlags") As "QTextCursor";	COMMENT = "";
 	
-  Function "findBlock"___("Pos As Integer") As "QTextBlock";	COMMENT = "";
-	Function "findBlockByLineNumber"___("LineNumber As Integer") As "QTextBlock";	COMMENT = "";
-	Function "findBlockByNumber"___("BlockNumber As Integer") As "QTextBlock";	COMMENT = "";
-	Function "firstBlock"___("") As "QTextBlock";	COMMENT = "";
-	Function "idealWidth"___("") As "Float";	COMMENT = "";
-	Function "isEmpty"___("") As "Boolean";	COMMENT = "";
-	Function "isRedoAvailable"___("") As "Boolean";	COMMENT = "";
-	Function "isUndoAvailable"___("") As "Boolean";	COMMENT = "";
+  Function "findBlock" ___("Pos As Integer") As "QTextBlock";	COMMENT = "";
+	Function "findBlockByLineNumber" ___("LineNumber As Integer") As "QTextBlock";	COMMENT = "";
+	Function "findBlockByNumber" ___("BlockNumber As Integer") As "QTextBlock";	COMMENT = "";
+	Function "firstBlock" ___("") As "QTextBlock";	COMMENT = "";
+	Function "idealWidth" ___("") As "Float";	COMMENT = "";
+	Function "isEmpty" ___("") As "Boolean";	COMMENT = "";
+	Function "isRedoAvailable" ___("") As "Boolean";	COMMENT = "";
+	Function "isUndoAvailable" ___("") As "Boolean";	COMMENT = "";
 
-	Function "lastBlock"___("") As "QTextBlock";	COMMENT = "";
-	Function "lineCount"___("") As "Integer";	COMMENT = "";
-	Sub "markContentsDirty"___("Position As Integer, Length As Integer");	COMMENT = "";
-	Function "metaInformation"___("Info As QTextDocument::MetaInformation") As "String";	COMMENT = "";
-	Function "object"___("ObjectIndex As Integer") As "QTextObject";	COMMENT = "";
-	Function "objectForFormat"___("Format As QTextFormat") As "QTextObject";	COMMENT = "";
-	Function "pageCount"___("") As "Integer";	COMMENT = "";
+	Function "lastBlock" ___("") As "QTextBlock";	COMMENT = "";
+	Function "lineCount" ___("") As "Integer";	COMMENT = "";
+	Sub "markContentsDirty" ___("Position As Integer, Length As Integer");	COMMENT = "";
+	Function "metaInformation" ___("Info As QTextDocument::MetaInformation") As "String";	COMMENT = "";
+	Function "object" ___("ObjectIndex As Integer") As "QTextObject";	COMMENT = "";
+	Function "objectForFormat" ___("Format As QTextFormat") As "QTextObject";	COMMENT = "";
+	Function "pageCount" ___("") As "Integer";	COMMENT = "";
 
-	Sub "print"___("Printer As QPrinter");	COMMENT = "";
-	Sub "redo"___("Cursor As QTextCursor");	COMMENT = "";
-	Function "resource"___("Type As Integer, Name As QUrl") As "QVariant";	COMMENT = "";
-	Function "revision"___("") As "Integer";	COMMENT = "";
-	Function "rootFrame"___("") As "QTextFrame";	COMMENT = "";
-	Sub "setDefaultCursorMoveStyle"___("Style As Qt::CursorMoveStyle");	COMMENT = "";
-	Sub "setDocumentLayout"___("Layout As QAbstractTextDocumentLayout");	COMMENT = "";
-	Sub "setHtml"___("Html As String");	COMMENT = "";
-	Sub "setMetaInformation"___("Info As QTextDocument::MetaInformation, S As String");	COMMENT = "";
-	Sub "setPlainText"___("Text As String");	COMMENT = "";
-	Sub "setTextWidth"___("Width As Float");	COMMENT = "";
-	Sub "setUndoRedoEnabled"___("Enable As Boolean");	COMMENT = "";
-	Sub "setUseDesignMetrics"___("B As Boolean");	COMMENT = "";
-	Function "toHtml"___("Encoding As QByteArray") As "String";	COMMENT = "";
-	Function "toPlainText"___("") As "String";	COMMENT = "";
-	Sub "undo"___("Cursor As QTextCursor");	COMMENT = "";
+	Sub "print" ___("Printer As QPrinter");	COMMENT = "";
+	Sub "redo" ___("Cursor As QTextCursor");	COMMENT = "";
+	Function "resource" ___("Type As Integer, Name As QUrl") As "QVariant";	COMMENT = "";
+	Function "revision" ___("") As "Integer";	COMMENT = "";
+	Function "rootFrame" ___("") As "QTextFrame";	COMMENT = "";
+	Sub "setDefaultCursorMoveStyle" ___("Style As Qt::CursorMoveStyle");	COMMENT = "";
+	Sub "setDocumentLayout" ___("Layout As QAbstractTextDocumentLayout");	COMMENT = "";
+	Sub "setHtml" ___("Html As String");	COMMENT = "";
+	Sub "setMetaInformation" ___("Info As QTextDocument::MetaInformation, S As String");	COMMENT = "";
+	Sub "setPlainText" ___("Text As String");	COMMENT = "";
+	Sub "setTextWidth" ___("Width As Float");	COMMENT = "";
+	Sub "setUndoRedoEnabled" ___("Enable As Boolean");	COMMENT = "";
+	Sub "setUseDesignMetrics" ___("B As Boolean");	COMMENT = "";
+	Function "toHtml" ___("Encoding As QByteArray") As "String";	COMMENT = "";
+	Function "toPlainText" ___("") As "String";	COMMENT = "";
+	Sub "undo" ___("Cursor As QTextCursor");	COMMENT = "";
 
-	Slot "redo"___("");	COMMENT = "";
-	Slot "setModified"___("Modified As Boolean");	COMMENT = "";
-	Slot "undo"___("");	COMMENT = "";
+	Slot "redo" ___("");	COMMENT = "";
+	Slot "setModified" ___("Modified As Boolean");	COMMENT = "";
+	Slot "undo" ___("");	COMMENT = "";
 
-	Signal "blockCountChanged"___("NewBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"	COMMENT = "";
-	Signal "contentsChange"___("Position As Integer, CharsRemoved As Integer, CharsAdded As Integer") Declare "void contentsChange(int position, int charsRemoved, int charsAdded)"	COMMENT = "";
-	Signal "contentsChanged"___("") Declare "void contentsChanged()"	COMMENT = "";
-	Signal "cursorPositionChanged"___("Cursor As QTextCursor") Declare "void cursorPositionChanged(const QTextCursor & cursor)"	COMMENT = "";
-	Signal "documentLayoutChanged"___("") Declare "void documentLayoutChanged()"	COMMENT = "";
-	Signal "modificationChanged"___("Changed As Boolean") Declare "void modificationChanged(bool changed)"	COMMENT = "";
-	Signal "redoAvailable"___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
-	Signal "undoAvailable"___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";
-	Signal "undoCommandAdded"___("") Declare "void undoCommandAdded()"	COMMENT = "";
+	Signal "blockCountChanged" ___("NewBlockCount As Integer") Declare "void blockCountChanged(int newBlockCount)"	COMMENT = "";
+	Signal "contentsChange" ___("Position As Integer, CharsRemoved As Integer, CharsAdded As Integer") Declare "void contentsChange(int position, int charsRemoved, int charsAdded)"	COMMENT = "";
+	Signal "contentsChanged" ___("") Declare "void contentsChanged()"	COMMENT = "";
+	Signal "cursorPositionChanged" ___("Cursor As QTextCursor") Declare "void cursorPositionChanged(const QTextCursor & cursor)"	COMMENT = "";
+	Signal "documentLayoutChanged" ___("") Declare "void documentLayoutChanged()"	COMMENT = "";
+	Signal "modificationChanged" ___("Changed As Boolean") Declare "void modificationChanged(bool changed)"	COMMENT = "";
+	Signal "redoAvailable" ___("Available As Boolean") Declare "void redoAvailable(bool available)"	COMMENT = "";
+	Signal "undoAvailable" ___("Available As Boolean") Declare "void undoAvailable(bool available)"	COMMENT = "";
+	Signal "undoCommandAdded" ___("") Declare "void undoCommandAdded()"	COMMENT = "";
 
 End_Class
 
@@ -8685,7 +8685,7 @@ bool Parser::parseBuiltinClassOrControlOrObject_PropertyOrProcedure(_expressions
 #undef End_Class
 #undef SEEALSO
 #undef EXAMPLE
-#undef ___
+#undef  ___
 #undef As
 #undef Alias
 
@@ -8701,7 +8701,7 @@ bool Parser::parseBuiltinClassOrControlOrObject_PropertyOrProcedure(_expressions
 
 #define Const ll.clear();l=
 #define _ ;r=
-#define ___ ;v=
+#define  ___ ;v=
 #define As ;sType=
 
 
@@ -8720,232 +8720,232 @@ void Parser::CreateListOfConstants()
 
     
 
-    Const "Qt.CaseInsensitive"___        (Qt::CaseInsensitive) As "Integer";          COMMENT = "";
-    Const "Qt.CaseSensitive"___          (Qt::CaseSensitive) As "Integer";          COMMENT = "";
+    Const "Qt.CaseInsensitive" ___        (Qt::CaseInsensitive) As "Integer";          COMMENT = "";
+    Const "Qt.CaseSensitive" ___          (Qt::CaseSensitive) As "Integer";          COMMENT = "";
 
-    Const "CaseSensitive"___          (true) As "Boolean";                            COMMENT = "";
-    Const "CaseInsensitive"___        (false) As "Boolean";                           COMMENT = "";
+    Const "CaseSensitive" ___          (true) As "Boolean";                            COMMENT = "";
+    Const "CaseInsensitive" ___        (false) As "Boolean";                           COMMENT = "";
     
-    Const "SectionDefault"___        (QString::SectionDefault) As "Integer";          COMMENT = "";
-    Const "SectionSkipEmpty"___        (QString::SectionSkipEmpty) As "Integer";          COMMENT = "";
-    Const "SectionIncludeLeadingSep"___        (QString::SectionIncludeLeadingSep) As "Integer";          COMMENT = "";
-    Const "SectionIncludeTrailingSep"___        (QString::SectionIncludeTrailingSep) As "Integer";          COMMENT = "";
-    Const "SectionCaseInsensitiveSeps"___        (QString::SectionCaseInsensitiveSeps) As "Integer";          COMMENT = "";
+    Const "SectionDefault" ___        (QString::SectionDefault) As "Integer";          COMMENT = "";
+    Const "SectionSkipEmpty" ___        (QString::SectionSkipEmpty) As "Integer";          COMMENT = "";
+    Const "SectionIncludeLeadingSep" ___        (QString::SectionIncludeLeadingSep) As "Integer";          COMMENT = "";
+    Const "SectionIncludeTrailingSep" ___        (QString::SectionIncludeTrailingSep) As "Integer";          COMMENT = "";
+    Const "SectionCaseInsensitiveSeps" ___        (QString::SectionCaseInsensitiveSeps) As "Integer";          COMMENT = "";
 
-    Const "vbCr"___        ("\"\\r\"") As "String";          COMMENT = "";
-    Const "vbLf"___        ("\"\\n\"") As "String";          COMMENT = "";
-    Const "vbCrLf"___        ("\"\\r\\n\"") As "String";          COMMENT = "";
+    Const "vbCr" ___        ("\"\\r\"") As "String";          COMMENT = "";
+    Const "vbLf" ___        ("\"\\n\"") As "String";          COMMENT = "";
+    Const "vbCrLf" ___        ("\"\\r\\n\"") As "String";          COMMENT = "";
     
-    Const "vbOKOnly"___        (0) As "Integer";          COMMENT = "";
-    Const "vbOKCancel"___        (1) As "Integer";          COMMENT = "";
-    Const "vbAbortRetryIgnore"___        (2) As "Integer";          COMMENT = "";
-    Const "vbYesNoCancel"___        (3) As "Integer";          COMMENT = "";
-    Const "vbYesNo"___        (4) As "Integer";          COMMENT = "";
-    Const "vbRetryCancel"___        (5) As "Integer";          COMMENT = "";
-    Const "vbCritical"___        (16) As "Integer";          COMMENT = "";
-    Const "vbQuestion"___        (32) As "Integer";          COMMENT = "";
-    Const "vbExclamation"___        (48) As "Integer";          COMMENT = "";
-    Const "vbInformation"___        (64) As "Integer";          COMMENT = "";
-    Const "vbDefaultButton1"___        (0) As "Integer";          COMMENT = "";
-    Const "vbDefaultButton2"___        (256) As "Integer";          COMMENT = "";
-    Const "vbDefaultButton3"___        (512) As "Integer";          COMMENT = "";
+    Const "vbOKOnly" ___        (0) As "Integer";          COMMENT = "";
+    Const "vbOKCancel" ___        (1) As "Integer";          COMMENT = "";
+    Const "vbAbortRetryIgnore" ___        (2) As "Integer";          COMMENT = "";
+    Const "vbYesNoCancel" ___        (3) As "Integer";          COMMENT = "";
+    Const "vbYesNo" ___        (4) As "Integer";          COMMENT = "";
+    Const "vbRetryCancel" ___        (5) As "Integer";          COMMENT = "";
+    Const "vbCritical" ___        (16) As "Integer";          COMMENT = "";
+    Const "vbQuestion" ___        (32) As "Integer";          COMMENT = "";
+    Const "vbExclamation" ___        (48) As "Integer";          COMMENT = "";
+    Const "vbInformation" ___        (64) As "Integer";          COMMENT = "";
+    Const "vbDefaultButton1" ___        (0) As "Integer";          COMMENT = "";
+    Const "vbDefaultButton2" ___        (256) As "Integer";          COMMENT = "";
+    Const "vbDefaultButton3" ___        (512) As "Integer";          COMMENT = "";
 
-    Const "vbOK"___        (1) As "Integer";          COMMENT = "";
-    Const "vbCancel"___        (2) As "Integer";          COMMENT = "";
-    Const "vbAbort"___        (3) As "Integer";          COMMENT = "";
-    Const "vbRetry"___        (4) As "Integer";          COMMENT = "";
-    Const "vbIgnore"___        (5) As "Integer";          COMMENT = "";
-    Const "vbYes"___        (6) As "Integer";          COMMENT = "";
-    Const "vbNo"___        (7) As "Integer";          COMMENT = "";
+    Const "vbOK" ___        (1) As "Integer";          COMMENT = "";
+    Const "vbCancel" ___        (2) As "Integer";          COMMENT = "";
+    Const "vbAbort" ___        (3) As "Integer";          COMMENT = "";
+    Const "vbRetry" ___        (4) As "Integer";          COMMENT = "";
+    Const "vbIgnore" ___        (5) As "Integer";          COMMENT = "";
+    Const "vbYes" ___        (6) As "Integer";          COMMENT = "";
+    Const "vbNo" ___        (7) As "Integer";          COMMENT = "";
 
   //  TODO2 Type "Dir.Filter" oder As Const "..."
 
-    Const "Dir"_"NoSort"___    (QDir::NoSort) As "Integer";                    COMMENT = "";
-    Const "Dir"_"Name"___             (QDir::Name) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Time"___             (QDir::Time) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Size"___             (QDir::Size) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Type"___             (QDir::Type) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Unsorted"___             (QDir::Unsorted) As "Integer";                      COMMENT = "";
-    Const "Dir"_"DirsFirst"___             (QDir::DirsFirst) As "Integer";                      COMMENT = "";
-    Const "Dir"_"DirsLast"___             (QDir::DirsLast) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Reversed"___             (QDir::Reversed) As "Integer";                      COMMENT = "";
-    Const "Dir"_"IgnoreCase"___             (QDir::IgnoreCase) As "Integer";                      COMMENT = "";
-    Const "Dir"_"LocaleAware"___             (QDir::LocaleAware) As "Integer";                      COMMENT = "";
+    Const "Dir" _"NoSort" ___    (QDir::NoSort) As "Integer";                    COMMENT = "";
+    Const "Dir" _"Name" ___             (QDir::Name) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Time" ___             (QDir::Time) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Size" ___             (QDir::Size) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Type" ___             (QDir::Type) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Unsorted" ___             (QDir::Unsorted) As "Integer";                      COMMENT = "";
+    Const "Dir" _"DirsFirst" ___             (QDir::DirsFirst) As "Integer";                      COMMENT = "";
+    Const "Dir" _"DirsLast" ___             (QDir::DirsLast) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Reversed" ___             (QDir::Reversed) As "Integer";                      COMMENT = "";
+    Const "Dir" _"IgnoreCase" ___             (QDir::IgnoreCase) As "Integer";                      COMMENT = "";
+    Const "Dir" _"LocaleAware" ___             (QDir::LocaleAware) As "Integer";                      COMMENT = "";
 
    
 
-    Const "Dir"_"NoFilter"___             (QDir::NoFilter) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Dirs"___             (QDir::Dirs) As "Integer";                      COMMENT = "";
-    Const "Dir"_"AllDirs"___             (QDir::AllDirs) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Files"___             (QDir::Files) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Drives"___             (QDir::Drives) As "Integer";                      COMMENT = "";
-    Const "Dir"_"NoSymLinks"___             (QDir::NoSymLinks) As "Integer";                      COMMENT = "";
-    Const "Dir"_"NoDotAndDotDot"___             (QDir::NoDotAndDotDot) As "Integer";                      COMMENT = "";
-    Const "Dir"_"AllEntries"___             (QDir::AllEntries) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Readable"___             (QDir::Readable) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Writable"___             (QDir::Writable) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Executable"___             (QDir::Executable) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Modified"___             (QDir::Modified) As "Integer";                      COMMENT = "";
-    Const "Dir"_"Hidden"___             (QDir::Hidden) As "Integer";                      COMMENT = "";
-    Const "Dir"_"System"___             (QDir::System) As "Integer";                      COMMENT = "";
-    Const "Dir"_"CaseSensitive"___             (QDir::CaseSensitive) As "Integer";                      COMMENT = "";
+    Const "Dir" _"NoFilter" ___             (QDir::NoFilter) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Dirs" ___             (QDir::Dirs) As "Integer";                      COMMENT = "";
+    Const "Dir" _"AllDirs" ___             (QDir::AllDirs) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Files" ___             (QDir::Files) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Drives" ___             (QDir::Drives) As "Integer";                      COMMENT = "";
+    Const "Dir" _"NoSymLinks" ___             (QDir::NoSymLinks) As "Integer";                      COMMENT = "";
+    Const "Dir" _"NoDotAndDotDot" ___             (QDir::NoDotAndDotDot) As "Integer";                      COMMENT = "";
+    Const "Dir" _"AllEntries" ___             (QDir::AllEntries) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Readable" ___             (QDir::Readable) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Writable" ___             (QDir::Writable) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Executable" ___             (QDir::Executable) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Modified" ___             (QDir::Modified) As "Integer";                      COMMENT = "";
+    Const "Dir" _"Hidden" ___             (QDir::Hidden) As "Integer";                      COMMENT = "";
+    Const "Dir" _"System" ___             (QDir::System) As "Integer";                      COMMENT = "";
+    Const "Dir" _"CaseSensitive" ___             (QDir::CaseSensitive) As "Integer";                      COMMENT = "";
 
-    Const "QTableWidget"_"MatchExactly"___             (Qt::MatchExactly) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchFixedString"___             (Qt::MatchFixedString) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchContains"___             (Qt::MatchContains) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchStartsWith"___             (Qt::MatchStartsWith) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchEndsWith"___             (Qt::MatchEndsWith) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchCaseSensitive"___             (Qt::MatchCaseSensitive) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchRegExp"___             (Qt::MatchRegExp) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchWildcard"___             (Qt::MatchWildcard) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchWrap"___             (Qt::MatchWrap) As "Integer";                      COMMENT = "";
-    Const "QTableWidget"_"MatchRecursive"___             (Qt::MatchRecursive) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchExactly" ___             (Qt::MatchExactly) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchFixedString" ___             (Qt::MatchFixedString) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchContains" ___             (Qt::MatchContains) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchStartsWith" ___             (Qt::MatchStartsWith) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchEndsWith" ___             (Qt::MatchEndsWith) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchCaseSensitive" ___             (Qt::MatchCaseSensitive) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchRegExp" ___             (Qt::MatchRegExp) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchWildcard" ___             (Qt::MatchWildcard) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchWrap" ___             (Qt::MatchWrap) As "Integer";                      COMMENT = "";
+    Const "QTableWidget" _"MatchRecursive" ___             (Qt::MatchRecursive) As "Integer";                      COMMENT = "";
 
-    Const "InputDialog"_"Normal"___             (QLineEdit::Normal) As "Integer";                      COMMENT = "";
-    Const "InputDialog"_"NoEcho"___             (QLineEdit::NoEcho) As "Integer";                      COMMENT = "";
-    Const "InputDialog"_"Password"___             (QLineEdit::Password) As "Integer";                      COMMENT = "";
-    Const "InputDialog"_"PasswordEchoOnEdit"___             (QLineEdit::PasswordEchoOnEdit) As "Integer";                      COMMENT = "";
+    Const "InputDialog" _"Normal" ___             (QLineEdit::Normal) As "Integer";                      COMMENT = "";
+    Const "InputDialog" _"NoEcho" ___             (QLineEdit::NoEcho) As "Integer";                      COMMENT = "";
+    Const "InputDialog" _"Password" ___             (QLineEdit::Password) As "Integer";                      COMMENT = "";
+    Const "InputDialog" _"PasswordEchoOnEdit" ___             (QLineEdit::PasswordEchoOnEdit) As "Integer";                      COMMENT = "";
 
-    Const "QDialog"_"Accepted"___             (QDialog::Accepted) As "Integer";                      COMMENT = "";
-    Const "QDialog"_"Rejected"___             (QDialog::Rejected) As "Integer";                      COMMENT = "";
+    Const "QDialog" _"Accepted" ___             (QDialog::Accepted) As "Integer";                      COMMENT = "";
+    Const "QDialog" _"Rejected" ___             (QDialog::Rejected) As "Integer";                      COMMENT = "";
 
-    Const "QMdiArea"_"SubWindowView"___             (QMdiArea::SubWindowView) As "Integer";                      COMMENT = "";
-    Const "QMdiArea"_"TabbedView"___             (QMdiArea::TabbedView) As "Integer";                      COMMENT = "";
+    Const "QMdiArea" _"SubWindowView" ___             (QMdiArea::SubWindowView) As "Integer";                      COMMENT = "";
+    Const "QMdiArea" _"TabbedView" ___             (QMdiArea::TabbedView) As "Integer";                      COMMENT = "";
 
-    Const "Flags"_"NoItemFlags"___             (Qt::NoItemFlags) As "Integer";                      COMMENT = "It does not have any properties set.";
-    Const "Flags"_"ItemIsSelectable"___             (Qt::ItemIsSelectable) As "Integer";                      COMMENT = "It can be selected.";
-    Const "Flags"_"ItemIsEditable"___             (Qt::ItemIsEditable) As "Integer";                      COMMENT = "It can be edited.";
-    Const "Flags"_"ItemIsDragEnabled"___             (Qt::ItemIsDragEnabled) As "Integer";                      COMMENT = "It can be dragged.";
-    Const "Flags"_"ItemIsDropEnabled"___             (Qt::ItemIsDropEnabled) As "Integer";                      COMMENT = "It can be used as a drop target.";
-    Const "Flags"_"ItemIsUserCheckable"___             (Qt::ItemIsUserCheckable) As "Integer";                      COMMENT = "It can be checked or unchecked by the user.";
-    Const "Flags"_"ItemIsEnabled"___             (Qt::ItemIsEnabled) As "Integer";                      COMMENT = "The user can interact with the item.";
-    Const "Flags"_"ItemIsTristate"___             (Qt::ItemIsTristate) As "Integer";                      COMMENT = "The item is checkable with three separate states.";
+    Const "Flags" _"NoItemFlags" ___             (Qt::NoItemFlags) As "Integer";                      COMMENT = "It does not have any properties set.";
+    Const "Flags" _"ItemIsSelectable" ___             (Qt::ItemIsSelectable) As "Integer";                      COMMENT = "It can be selected.";
+    Const "Flags" _"ItemIsEditable" ___             (Qt::ItemIsEditable) As "Integer";                      COMMENT = "It can be edited.";
+    Const "Flags" _"ItemIsDragEnabled" ___             (Qt::ItemIsDragEnabled) As "Integer";                      COMMENT = "It can be dragged.";
+    Const "Flags" _"ItemIsDropEnabled" ___             (Qt::ItemIsDropEnabled) As "Integer";                      COMMENT = "It can be used as a drop target.";
+    Const "Flags" _"ItemIsUserCheckable" ___             (Qt::ItemIsUserCheckable) As "Integer";                      COMMENT = "It can be checked or unchecked by the user.";
+    Const "Flags" _"ItemIsEnabled" ___             (Qt::ItemIsEnabled) As "Integer";                      COMMENT = "The user can interact with the item.";
+    Const "Flags" _"ItemIsTristate" ___             (Qt::ItemIsTristate) As "Integer";                      COMMENT = "The item is checkable with three separate states.";
 
-    Const "EchoMode"_"Normal"___             (QLineEdit::Normal) As "Integer";                      COMMENT = "";
-    Const "EchoMode"_"NoEcho"___             (QLineEdit::NoEcho) As "Integer";                      COMMENT = "";
-    Const "EchoMode"_"Password"___             (QLineEdit::Password) As "Integer";                      COMMENT = "";
-    Const "EchoMode"_"PasswordEchoOnEdit"___             (QLineEdit::PasswordEchoOnEdit) As "Integer";                      COMMENT = "";
+    Const "EchoMode" _"Normal" ___             (QLineEdit::Normal) As "Integer";                      COMMENT = "";
+    Const "EchoMode" _"NoEcho" ___             (QLineEdit::NoEcho) As "Integer";                      COMMENT = "";
+    Const "EchoMode" _"Password" ___             (QLineEdit::Password) As "Integer";                      COMMENT = "";
+    Const "EchoMode" _"PasswordEchoOnEdit" ___             (QLineEdit::PasswordEchoOnEdit) As "Integer";                      COMMENT = "";
 
-    Const "CheckState"_"Unchecked"___             (Qt::Unchecked) As "Integer";                      COMMENT = "The item is unchecked.";
-    Const "CheckState"_"PartiallyChecked"___             (Qt::PartiallyChecked) As "Integer";                      COMMENT = "The item is partially checked. Items in hierarchical models may be partially checked if some, but not all, of their children are checked.";
-    Const "CheckState"_"Checked"___             (Qt::Checked) As "Integer";                      COMMENT = "The item is checked.";
+    Const "CheckState" _"Unchecked" ___             (Qt::Unchecked) As "Integer";                      COMMENT = "The item is unchecked.";
+    Const "CheckState" _"PartiallyChecked" ___             (Qt::PartiallyChecked) As "Integer";                      COMMENT = "The item is partially checked. Items in hierarchical models may be partially checked if some, but not all, of their children are checked.";
+    Const "CheckState" _"Checked" ___             (Qt::Checked) As "Integer";                      COMMENT = "The item is checked.";
 
-    Const "MatchFlags"_"MatchExactly"___             (Qt::MatchExactly) As "Integer";                      COMMENT = "Performs QVariant-based matching.";
-    Const "MatchFlags"_"MatchFixedString"___             (Qt::MatchFixedString) As "Integer";                      COMMENT = "Performs string-based matching. String-based comparisons are case-insensitive unless the MatchCaseSensitive flag is also specified.";
-    Const "MatchFlags"_"MatchContains"___             (Qt::MatchContains) As "Integer";                      COMMENT = "The search term is contained in the item.";
-    Const "MatchFlags"_"MatchStartsWith"___             (Qt::MatchStartsWith) As "Integer";                      COMMENT = "The search term matches the start of the item.";
-    Const "MatchFlags"_"MatchEndsWith"___             (Qt::MatchEndsWith) As "Integer";                      COMMENT = "The search term matches the end of the item.";
-    Const "MatchFlags"_"MatchCaseSensitive"___             (Qt::MatchCaseSensitive) As "Integer";                      COMMENT = "The search is case sensitive.";
-    Const "MatchFlags"_"MatchRegExp"___             (Qt::MatchRegExp) As "Integer";                      COMMENT = "Performs string-based matching using a regular expression as the search term.";
-    Const "MatchFlags"_"MatchWildcard"___             (Qt::MatchWildcard) As "Integer";                      COMMENT = "Performs string-based matching using a string with wildcards as the search term.";
-    Const "MatchFlags"_"MatchWrap"___             (Qt::MatchWrap) As "Integer";                      COMMENT = "Perform a search that wraps around, so that when the search reaches the last item in the model, it begins again at the first item and continues until all items have been examined.";
-    Const "MatchFlags"_"MatchRecursive"___             (Qt::MatchRecursive) As "Integer";                      COMMENT = "Searches the entire hierarchy.";
+    Const "MatchFlags" _"MatchExactly" ___             (Qt::MatchExactly) As "Integer";                      COMMENT = "Performs QVariant-based matching.";
+    Const "MatchFlags" _"MatchFixedString" ___             (Qt::MatchFixedString) As "Integer";                      COMMENT = "Performs string-based matching. String-based comparisons are case-insensitive unless the MatchCaseSensitive flag is also specified.";
+    Const "MatchFlags" _"MatchContains" ___             (Qt::MatchContains) As "Integer";                      COMMENT = "The search term is contained in the item.";
+    Const "MatchFlags" _"MatchStartsWith" ___             (Qt::MatchStartsWith) As "Integer";                      COMMENT = "The search term matches the start of the item.";
+    Const "MatchFlags" _"MatchEndsWith" ___             (Qt::MatchEndsWith) As "Integer";                      COMMENT = "The search term matches the end of the item.";
+    Const "MatchFlags" _"MatchCaseSensitive" ___             (Qt::MatchCaseSensitive) As "Integer";                      COMMENT = "The search is case sensitive.";
+    Const "MatchFlags" _"MatchRegExp" ___             (Qt::MatchRegExp) As "Integer";                      COMMENT = "Performs string-based matching using a regular expression as the search term.";
+    Const "MatchFlags" _"MatchWildcard" ___             (Qt::MatchWildcard) As "Integer";                      COMMENT = "Performs string-based matching using a string with wildcards as the search term.";
+    Const "MatchFlags" _"MatchWrap" ___             (Qt::MatchWrap) As "Integer";                      COMMENT = "Perform a search that wraps around, so that when the search reaches the last item in the model, it begins again at the first item and continues until all items have been examined.";
+    Const "MatchFlags" _"MatchRecursive" ___             (Qt::MatchRecursive) As "Integer";                      COMMENT = "Searches the entire hierarchy.";
 
-    Const "TextAlignment"_"AlignLeft"___             (Qt::AlignLeft) As "Integer";                      COMMENT = "Aligns with the left edge.";
-    Const "TextAlignment"_"AlignRight"___             (Qt::AlignRight) As "Integer";                      COMMENT = "Aligns with the right edge.";
-    Const "TextAlignment"_"AlignHCenter"___             (Qt::AlignHCenter) As "Integer";                      COMMENT = "Centers horizontally in the available space.";
-    Const "TextAlignment"_"AlignJustify"___             (Qt::AlignJustify) As "Integer";                      COMMENT = "Justifies the text in the available space.";
-    Const "TextAlignment"_"AlignTop"___             (Qt::AlignTop) As "Integer";                      COMMENT = "Aligns with the top.";
-    Const "TextAlignment"_"AlignBottom"___             (Qt::AlignBottom) As "Integer";                      COMMENT = "Aligns with the bottom.";
-    Const "TextAlignment"_"AlignVCenter"___             (Qt::AlignVCenter) As "Integer";                      COMMENT = "Centers vertically in the available space.";
-    Const "TextAlignment"_"AlignCenter"___             (Qt::AlignCenter) As "Integer";                      COMMENT = "Centers in both dimensions.";
-    Const "TextAlignment"_"AlignAbsolute"___             (Qt::AlignAbsolute) As "Integer";                      COMMENT = "";
-    Const "TextAlignment"_"AlignLeading"___             (Qt::AlignLeading) As "Integer";                      COMMENT = "Synonym for AlignLeft.";
-    Const "TextAlignment"_"AlignHorizontal_Mask"___             (Qt::AlignHorizontal_Mask) As "Integer";                      COMMENT = "Combined.";
-    Const "TextAlignment"_"AlignVertical_Mask"___             (Qt::AlignVertical_Mask) As "Integer";                      COMMENT = "Combined.";
-    Const "TextAlignment"_"AlignTrailing"___             (Qt::AlignTrailing) As "Integer";                      COMMENT = "Synonym for AlignRight.";
+    Const "TextAlignment" _"AlignLeft" ___             (Qt::AlignLeft) As "Integer";                      COMMENT = "Aligns with the left edge.";
+    Const "TextAlignment" _"AlignRight" ___             (Qt::AlignRight) As "Integer";                      COMMENT = "Aligns with the right edge.";
+    Const "TextAlignment" _"AlignHCenter" ___             (Qt::AlignHCenter) As "Integer";                      COMMENT = "Centers horizontally in the available space.";
+    Const "TextAlignment" _"AlignJustify" ___             (Qt::AlignJustify) As "Integer";                      COMMENT = "Justifies the text in the available space.";
+    Const "TextAlignment" _"AlignTop" ___             (Qt::AlignTop) As "Integer";                      COMMENT = "Aligns with the top.";
+    Const "TextAlignment" _"AlignBottom" ___             (Qt::AlignBottom) As "Integer";                      COMMENT = "Aligns with the bottom.";
+    Const "TextAlignment" _"AlignVCenter" ___             (Qt::AlignVCenter) As "Integer";                      COMMENT = "Centers vertically in the available space.";
+    Const "TextAlignment" _"AlignCenter" ___             (Qt::AlignCenter) As "Integer";                      COMMENT = "Centers in both dimensions.";
+    Const "TextAlignment" _"AlignAbsolute" ___             (Qt::AlignAbsolute) As "Integer";                      COMMENT = "";
+    Const "TextAlignment" _"AlignLeading" ___             (Qt::AlignLeading) As "Integer";                      COMMENT = "Synonym for AlignLeft.";
+    Const "TextAlignment" _"AlignHorizontal_Mask" ___             (Qt::AlignHorizontal_Mask) As "Integer";                      COMMENT = "Combined.";
+    Const "TextAlignment" _"AlignVertical_Mask" ___             (Qt::AlignVertical_Mask) As "Integer";                      COMMENT = "Combined.";
+    Const "TextAlignment" _"AlignTrailing" ___             (Qt::AlignTrailing) As "Integer";                      COMMENT = "Synonym for AlignRight.";
 
-    Const "Alignment"_"AlignLeft"___             (Qt::AlignLeft) As "Integer";                      COMMENT = "Aligns with the left edge.";
-    Const "Alignment"_"AlignRight"___             (Qt::AlignRight) As "Integer";                      COMMENT = "Aligns with the right edge.";
-    Const "Alignment"_"AlignHCenter"___             (Qt::AlignHCenter) As "Integer";                      COMMENT = "Centers horizontally in the available space.";
-    Const "Alignment"_"AlignJustify"___             (Qt::AlignJustify) As "Integer";                      COMMENT = "Justifies the text in the available space.";
-    Const "Alignment"_"AlignTop"___             (Qt::AlignTop) As "Integer";                      COMMENT = "Aligns with the top.";
-    Const "Alignment"_"AlignBottom"___             (Qt::AlignBottom) As "Integer";                      COMMENT = "Aligns with the bottom.";
-    Const "Alignment"_"AlignVCenter"___             (Qt::AlignVCenter) As "Integer";                      COMMENT = "Centers vertically in the available space.";
-    Const "Alignment"_"AlignCenter"___             (Qt::AlignCenter) As "Integer";                      COMMENT = "Centers in both dimensions.";
-    Const "Alignment"_"AlignAbsolute"___             (Qt::AlignAbsolute) As "Integer";                      COMMENT = "";
-    Const "Alignment"_"AlignLeading"___             (Qt::AlignLeading) As "Integer";                      COMMENT = "Synonym for AlignLeft.";
-    Const "Alignment"_"AlignHorizontal_Mask"___             (Qt::AlignHorizontal_Mask) As "Integer";                      COMMENT = "Combined.";
-    Const "Alignment"_"AlignVertical_Mask"___             (Qt::AlignVertical_Mask) As "Integer";                      COMMENT = "Combined.";
-    Const "Alignment"_"AlignTrailing"___             (Qt::AlignTrailing) As "Integer";                      COMMENT = "Synonym for AlignRight.";
+    Const "Alignment" _"AlignLeft" ___             (Qt::AlignLeft) As "Integer";                      COMMENT = "Aligns with the left edge.";
+    Const "Alignment" _"AlignRight" ___             (Qt::AlignRight) As "Integer";                      COMMENT = "Aligns with the right edge.";
+    Const "Alignment" _"AlignHCenter" ___             (Qt::AlignHCenter) As "Integer";                      COMMENT = "Centers horizontally in the available space.";
+    Const "Alignment" _"AlignJustify" ___             (Qt::AlignJustify) As "Integer";                      COMMENT = "Justifies the text in the available space.";
+    Const "Alignment" _"AlignTop" ___             (Qt::AlignTop) As "Integer";                      COMMENT = "Aligns with the top.";
+    Const "Alignment" _"AlignBottom" ___             (Qt::AlignBottom) As "Integer";                      COMMENT = "Aligns with the bottom.";
+    Const "Alignment" _"AlignVCenter" ___             (Qt::AlignVCenter) As "Integer";                      COMMENT = "Centers vertically in the available space.";
+    Const "Alignment" _"AlignCenter" ___             (Qt::AlignCenter) As "Integer";                      COMMENT = "Centers in both dimensions.";
+    Const "Alignment" _"AlignAbsolute" ___             (Qt::AlignAbsolute) As "Integer";                      COMMENT = "";
+    Const "Alignment" _"AlignLeading" ___             (Qt::AlignLeading) As "Integer";                      COMMENT = "Synonym for AlignLeft.";
+    Const "Alignment" _"AlignHorizontal_Mask" ___             (Qt::AlignHorizontal_Mask) As "Integer";                      COMMENT = "Combined.";
+    Const "Alignment" _"AlignVertical_Mask" ___             (Qt::AlignVertical_Mask) As "Integer";                      COMMENT = "Combined.";
+    Const "Alignment" _"AlignTrailing" ___             (Qt::AlignTrailing) As "Integer";                      COMMENT = "Synonym for AlignRight.";
 
-    Const "TextInteractionFlags"_"NoTextInteraction"___             (Qt::NoTextInteraction) As "Integer";                      COMMENT = "No interaction with the text is possible.";
-    Const "TextInteractionFlags"_"TextSelectableByMouse"___             (Qt::TextSelectableByMouse) As "Integer";                      COMMENT = "Text can be selected with the mouse and copied to the clipboard using a context menu or standard keyboard shortcuts.";
-    Const "TextInteractionFlags"_"TextSelectableByKeyboard"___             (Qt::TextSelectableByKeyboard) As "Integer";                      COMMENT = "Text can be selected with the cursor keys on the keyboard. A text cursor is shown.";
-    Const "TextInteractionFlags"_"LinksAccessibleByMouse"___             (Qt::LinksAccessibleByMouse) As "Integer";                      COMMENT = "Links can be highlighted and activated with the mouse.";
-    Const "TextInteractionFlags"_"LinksAccessibleByKeyboard"___             (Qt::LinksAccessibleByKeyboard) As "Integer";                      COMMENT = "Links can be focused using tab and activated with enter.";
-    Const "TextInteractionFlags"_"TextEditable"___             (Qt::TextEditable) As "Integer";                      COMMENT = "The text is fully editable.";
-    Const "TextInteractionFlags"_"TextEditorInteraction"___             (Qt::TextEditorInteraction) As "Integer";                      COMMENT = "Combined.";
-    Const "TextInteractionFlags"_"TextBrowserInteraction"___             (Qt::TextBrowserInteraction) As "Integer";                      COMMENT = "Combined.";
+    Const "TextInteractionFlags" _"NoTextInteraction" ___             (Qt::NoTextInteraction) As "Integer";                      COMMENT = "No interaction with the text is possible.";
+    Const "TextInteractionFlags" _"TextSelectableByMouse" ___             (Qt::TextSelectableByMouse) As "Integer";                      COMMENT = "Text can be selected with the mouse and copied to the clipboard using a context menu or standard keyboard shortcuts.";
+    Const "TextInteractionFlags" _"TextSelectableByKeyboard" ___             (Qt::TextSelectableByKeyboard) As "Integer";                      COMMENT = "Text can be selected with the cursor keys on the keyboard. A text cursor is shown.";
+    Const "TextInteractionFlags" _"LinksAccessibleByMouse" ___             (Qt::LinksAccessibleByMouse) As "Integer";                      COMMENT = "Links can be highlighted and activated with the mouse.";
+    Const "TextInteractionFlags" _"LinksAccessibleByKeyboard" ___             (Qt::LinksAccessibleByKeyboard) As "Integer";                      COMMENT = "Links can be focused using tab and activated with enter.";
+    Const "TextInteractionFlags" _"TextEditable" ___             (Qt::TextEditable) As "Integer";                      COMMENT = "The text is fully editable.";
+    Const "TextInteractionFlags" _"TextEditorInteraction" ___             (Qt::TextEditorInteraction) As "Integer";                      COMMENT = "Combined.";
+    Const "TextInteractionFlags" _"TextBrowserInteraction" ___             (Qt::TextBrowserInteraction) As "Integer";                      COMMENT = "Combined.";
 
-    Const "SystemTrayIcon"_"Unknown"___             (QSystemTrayIcon::Unknown) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"Context"___             (QSystemTrayIcon::Context) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"DoubleClick"___             (QSystemTrayIcon::DoubleClick) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"Trigger"___             (QSystemTrayIcon::Trigger) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"MiddleClick"___             (QSystemTrayIcon::MiddleClick) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Unknown" ___             (QSystemTrayIcon::Unknown) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Context" ___             (QSystemTrayIcon::Context) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"DoubleClick" ___             (QSystemTrayIcon::DoubleClick) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Trigger" ___             (QSystemTrayIcon::Trigger) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"MiddleClick" ___             (QSystemTrayIcon::MiddleClick) As "Integer";                      COMMENT = "";
 
-    Const "SystemTrayIcon"_"NoIcon"___             (QSystemTrayIcon::NoIcon) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"Information"___             (QSystemTrayIcon::Information) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"Warning"___             (QSystemTrayIcon::Warning) As "Integer";                      COMMENT = "";
-    Const "SystemTrayIcon"_"Critical"___             (QSystemTrayIcon::Critical) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"NoIcon" ___             (QSystemTrayIcon::NoIcon) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Information" ___             (QSystemTrayIcon::Information) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Warning" ___             (QSystemTrayIcon::Warning) As "Integer";                      COMMENT = "";
+    Const "SystemTrayIcon" _"Critical" ___             (QSystemTrayIcon::Critical) As "Integer";                      COMMENT = "";
 
-    Const "MessageBox"_"Sheet"___             (999999) As "Integer";                      COMMENT = ""; 
-    Const "MessageBox"_"NoIcon"___             (QMessageBox::NoIcon) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Question"___             (QMessageBox::Question) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Information"___             (QMessageBox::Information) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Warning"___             (QMessageBox::Warning) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Critical"___             (QMessageBox::Critical) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Sheet" ___             (999999) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"NoIcon" ___             (QMessageBox::NoIcon) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Question" ___             (QMessageBox::Question) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Information" ___             (QMessageBox::Information) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Warning" ___             (QMessageBox::Warning) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Critical" ___             (QMessageBox::Critical) As "Integer";                      COMMENT = "";
 
-    Const "MessageBox"_"Ok"___             (QMessageBox::Ok) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Open"___             (QMessageBox::Open) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Save"___             (QMessageBox::Save) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Cancel"___             (QMessageBox::Cancel) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Close"___             (QMessageBox::Close) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Discard"___             (QMessageBox::Discard) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Apply"___             (QMessageBox::Apply) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Reset"___             (QMessageBox::Reset) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"RestoreDefaults"___             (QMessageBox::RestoreDefaults) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Help"___             (QMessageBox::Help) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"SaveAll"___             (QMessageBox::SaveAll) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Yes"___             (QMessageBox::Yes) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"YesToAll"___             (QMessageBox::YesToAll) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"No"___             (QMessageBox::No) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"NoToAll"___             (QMessageBox::NoToAll) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Abort"___             (QMessageBox::Abort) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Retry"___             (QMessageBox::Retry) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"Ignore"___             (QMessageBox::Ignore) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Ok" ___             (QMessageBox::Ok) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Open" ___             (QMessageBox::Open) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Save" ___             (QMessageBox::Save) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Cancel" ___             (QMessageBox::Cancel) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Close" ___             (QMessageBox::Close) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Discard" ___             (QMessageBox::Discard) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Apply" ___             (QMessageBox::Apply) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Reset" ___             (QMessageBox::Reset) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"RestoreDefaults" ___             (QMessageBox::RestoreDefaults) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Help" ___             (QMessageBox::Help) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"SaveAll" ___             (QMessageBox::SaveAll) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Yes" ___             (QMessageBox::Yes) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"YesToAll" ___             (QMessageBox::YesToAll) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"No" ___             (QMessageBox::No) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"NoToAll" ___             (QMessageBox::NoToAll) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Abort" ___             (QMessageBox::Abort) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Retry" ___             (QMessageBox::Retry) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"Ignore" ___             (QMessageBox::Ignore) As "Integer";                      COMMENT = "";
 
-    Const "MessageBox"_"NoButton"___             (QMessageBox::NoButton) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"InvalidRole"___             (QMessageBox::InvalidRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"AcceptRole"___             (QMessageBox::AcceptRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"RejectRole"___             (QMessageBox::RejectRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"DestructiveRole"___             (QMessageBox::DestructiveRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"ActionRole"___             (QMessageBox::ActionRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"HelpRole"___             (QMessageBox::HelpRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"YesRole"___             (QMessageBox::YesRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"NoRole"___             (QMessageBox::NoRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"ApplyRole"___             (QMessageBox::ApplyRole) As "Integer";                      COMMENT = "";
-    Const "MessageBox"_"ResetRole"___             (QMessageBox::ResetRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"NoButton" ___             (QMessageBox::NoButton) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"InvalidRole" ___             (QMessageBox::InvalidRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"AcceptRole" ___             (QMessageBox::AcceptRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"RejectRole" ___             (QMessageBox::RejectRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"DestructiveRole" ___             (QMessageBox::DestructiveRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"ActionRole" ___             (QMessageBox::ActionRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"HelpRole" ___             (QMessageBox::HelpRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"YesRole" ___             (QMessageBox::YesRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"NoRole" ___             (QMessageBox::NoRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"ApplyRole" ___             (QMessageBox::ApplyRole) As "Integer";                      COMMENT = "";
+    Const "MessageBox" _"ResetRole" ___             (QMessageBox::ResetRole) As "Integer";                      COMMENT = "";
 
-    Const "MsgBox"_"Ok"___             (QMessageBox::Ok) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Open"___             (QMessageBox::Open) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Save"___             (QMessageBox::Save) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Cancel"___             (QMessageBox::Cancel) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Close"___             (QMessageBox::Close) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Discard"___             (QMessageBox::Discard) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Apply"___             (QMessageBox::Apply) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Reset"___             (QMessageBox::Reset) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"RestoreDefaults"___             (QMessageBox::RestoreDefaults) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Help"___             (QMessageBox::Help) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"SaveAll"___             (QMessageBox::SaveAll) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Yes"___             (QMessageBox::Yes) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"YesToAll"___             (QMessageBox::YesToAll) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"No"___             (QMessageBox::No) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"NoToAll"___             (QMessageBox::NoToAll) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Abort"___             (QMessageBox::Abort) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Retry"___             (QMessageBox::Retry) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"Ignore"___             (QMessageBox::Ignore) As "Integer";                      COMMENT = "";
-    Const "MsgBox"_"NoButton"___             (QMessageBox::NoButton) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Ok" ___             (QMessageBox::Ok) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Open" ___             (QMessageBox::Open) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Save" ___             (QMessageBox::Save) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Cancel" ___             (QMessageBox::Cancel) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Close" ___             (QMessageBox::Close) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Discard" ___             (QMessageBox::Discard) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Apply" ___             (QMessageBox::Apply) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Reset" ___             (QMessageBox::Reset) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"RestoreDefaults" ___             (QMessageBox::RestoreDefaults) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Help" ___             (QMessageBox::Help) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"SaveAll" ___             (QMessageBox::SaveAll) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Yes" ___             (QMessageBox::Yes) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"YesToAll" ___             (QMessageBox::YesToAll) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"No" ___             (QMessageBox::No) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"NoToAll" ___             (QMessageBox::NoToAll) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Abort" ___             (QMessageBox::Abort) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Retry" ___             (QMessageBox::Retry) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"Ignore" ___             (QMessageBox::Ignore) As "Integer";                      COMMENT = "";
+    Const "MsgBox" _"NoButton" ___             (QMessageBox::NoButton) As "Integer";                      COMMENT = "";
 
 
 
@@ -9034,7 +9034,7 @@ bool Parser::parseBuiltinConstant(_expressions & ReturnExpression)
 #undef COMMENT
 #undef Const
 #undef _
-#undef ___
+#undef  ___
 #undef As
 
 
@@ -9080,7 +9080,7 @@ bool Parser::parseBuiltinConstant(_expressions & ReturnExpression)
 #define Signal ;bSignal=true;sType="";SUBFUNCTION=
 #define Delegate ;bDelegate=true;sType="";SUBFUNCTION=
 
-#define ___ ;l<<Parser::SubFunction
+#define  ___ ;l<<Parser::SubFunction
 #define As ;sType=
 #define Alias ;lAlias<<
 
@@ -9153,7 +9153,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9165,7 +9165,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9178,7 +9178,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9190,7 +9190,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9201,13 +9201,13 @@ void Parser::CreateListOfControls()
       Property "Interval" As "Integer";    COMMENT = "";
       Property "Enabled" As "Boolean";    COMMENT = "";
 
-      Sub      "Start"___("");  COMMENT = "";
-      Sub      "Stop"___("");  COMMENT = "";
-      Function "IsRunning"___("") As "Boolean";  COMMENT = "";
+      Sub      "Start" ___("");  COMMENT = "";
+      Sub      "Stop" ___("");  COMMENT = "";
+      Function "IsRunning" ___("") As "Boolean";  COMMENT = "";
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9218,21 +9218,21 @@ void Parser::CreateListOfControls()
       Property "Port" As "Integer";    COMMENT = "";
       Property "Host" As "String";    COMMENT = "";
 
-      Function "Open"___("") As "Boolean";  COMMENT = "";
-      Function "ReadData"___("") As "String";  COMMENT = "";
-      Sub      "Close"___("");  COMMENT = "";
-      Function "LastError"___("") As "String";  COMMENT = "";
-      Function "LastErrorText"___("") As "String";  COMMENT = "";
-      Function "WriteData"___("theData As String") As "Boolean";  COMMENT = "";
-      Function "Bind"___("Host As String, Port As Integer") As "Boolean";  COMMENT = "";
+      Function "Open" ___("") As "Boolean";  COMMENT = "";
+      Function "ReadData" ___("") As "String";  COMMENT = "";
+      Sub      "Close" ___("");  COMMENT = "";
+      Function "LastError" ___("") As "String";  COMMENT = "";
+      Function "LastErrorText" ___("") As "String";  COMMENT = "";
+      Function "WriteData" ___("theData As String") As "Boolean";  COMMENT = "";
+      Function "Bind" ___("Host As String, Port As Integer") As "Boolean";  COMMENT = "";
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
-      Signal "Error"___("") Declare "void Error()"   COMMENT = "";
-      Signal "Open"___("") Declare "void Open()"   COMMENT = "";
-      Signal "Close"___("") Declare "void Close()"   COMMENT = "";
+      Signal "Error" ___("") Declare "void Error()"   COMMENT = "";
+      Signal "Open" ___("") Declare "void Open()"   COMMENT = "";
+      Signal "Close" ___("") Declare "void Close()"   COMMENT = "";
 
     End_Control
 
@@ -9244,7 +9244,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9254,7 +9254,7 @@ void Parser::CreateListOfControls()
   
       #include "Control.h" // Control signals
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9266,7 +9266,7 @@ void Parser::CreateListOfControls()
 
       #include "Control.h" 
 
-      Signal "Event"___("") Declare "void Event()"   COMMENT = "";
+      Signal "Event" ___("") Declare "void Event()"   COMMENT = "";
 
     End_Control
 
@@ -9324,7 +9324,7 @@ void Parser::CreateListOfControls()
 #undef End_Control
 #undef SEEALSO
 #undef EXAMPLE
-#undef ___
+#undef  ___
 #undef As
 #undef Alias
 
@@ -10235,7 +10235,7 @@ if (b){
 #define Signal ;bSignal=true;sType="";SUBFUNCTION=
 #define Delegate ;bDelegate=true;sType="";SUBFUNCTION=
 
-#define ___ ;l<<Parser::SubFunction
+#define  ___ ;l<<Parser::SubFunction
 #define As ;sType=
 #define Alias ;lAlias<<
 
@@ -10283,9 +10283,9 @@ void Parser::CreateListOfObjects()
 
     Object "OS"
 
-      Function "IsMac"___("") As "Boolean";   COMMENT = "";
-      Function "IsWindows"___("") As "Boolean";   COMMENT = "";
-      Function "IsLinux"___("") As "Boolean";   COMMENT = "";
+      Function "IsMac" ___("") As "Boolean";   COMMENT = "";
+      Function "IsWindows" ___("") As "Boolean";   COMMENT = "";
+      Function "IsLinux" ___("") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10293,12 +10293,12 @@ void Parser::CreateListOfObjects()
 
     Object "Debug" // this functions are fake functions and are handled by the parser 
   
-      Function "Line"___("") As "String";   COMMENT = "";
-      Function "ClassName"___("") As "String";   COMMENT = "";
-      Function "SuperClassName"___("") As "String";   COMMENT = "";
-      Function "File"___("") As "String";   COMMENT = "";
-      Function "Scope"___("") As "String";   COMMENT = "";
-      Function "Info"___("") As "String";   COMMENT = "";
+      Function "Line" ___("") As "String";   COMMENT = "";
+      Function "ClassName" ___("") As "String";   COMMENT = "";
+      Function "SuperClassName" ___("") As "String";   COMMENT = "";
+      Function "File" ___("") As "String";   COMMENT = "";
+      Function "Scope" ___("") As "String";   COMMENT = "";
+      Function "Info" ___("") As "String";   COMMENT = "";
 
     End_Object
 
@@ -10306,37 +10306,37 @@ void Parser::CreateListOfObjects()
 
     Object "File"
   
-      Function "Size"___("FileName As String") As "Integer";   COMMENT = "";
-      Function "Truncate"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "Create"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "Remove"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "Exists"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "DateTimeCreated"___("FileName As String") As "String";   COMMENT = "";
-      Function "DateTimeUpdated"___("FileName As String") As "String";   COMMENT = "";
-      Function "DateTimeRead"___("FileName As String") As "String";   COMMENT = "";
-      Function "Owner"___("FileName As String") As "String";   COMMENT = "";
-      Function "Group"___("FileName As String") As "String";   COMMENT = "";
-      Function "IsHidden"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "IsFile"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "IsDir"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "IsRelative"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "IsSymLink"___("FileName As String") As "Boolean";   COMMENT = "";
-      Function "WithNativeSeparators"___("FileName As String") As "String";   COMMENT = "";
-      Function "WithoutNativeSeparators"___("FileName As String") As "String";   COMMENT = "";
-      Function "SymLinkTarget"___("FileName As String") As "String";   COMMENT = "";
+      Function "Size" ___("FileName As String") As "Integer";   COMMENT = "";
+      Function "Truncate" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "Create" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "Remove" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "Exists" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "DateTimeCreated" ___("FileName As String") As "String";   COMMENT = "";
+      Function "DateTimeUpdated" ___("FileName As String") As "String";   COMMENT = "";
+      Function "DateTimeRead" ___("FileName As String") As "String";   COMMENT = "";
+      Function "Owner" ___("FileName As String") As "String";   COMMENT = "";
+      Function "Group" ___("FileName As String") As "String";   COMMENT = "";
+      Function "IsHidden" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "IsFile" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "IsDir" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "IsRelative" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "IsSymLink" ___("FileName As String") As "Boolean";   COMMENT = "";
+      Function "WithNativeSeparators" ___("FileName As String") As "String";   COMMENT = "";
+      Function "WithoutNativeSeparators" ___("FileName As String") As "String";   COMMENT = "";
+      Function "SymLinkTarget" ___("FileName As String") As "String";   COMMENT = "";
 
-      Function "Resize"___("FileName As String, NewSize As Integer") As "Boolean";   COMMENT = "";
-      Function "Link"___("SourceFileName As String, DestinationFileName As String") As "Boolean";   COMMENT = "";
-      Function "IsReadable"___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
-      Function "IsWritable"___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
-      Function "IsExecutable"___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "Resize" ___("FileName As String, NewSize As Integer") As "Boolean";   COMMENT = "";
+      Function "Link" ___("SourceFileName As String, DestinationFileName As String") As "Boolean";   COMMENT = "";
+      Function "IsReadable" ___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "IsWritable" ___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "IsExecutable" ___("FileName As String, Who As String") As "Boolean";   COMMENT = "";
 
-      Function "Copy"___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
-      Function "Move"___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
-      Function "Rename"___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
+      Function "Copy" ___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
+      Function "Move" ___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
+      Function "Rename" ___("SourceFileName As String, DestinationFileName As String, Overwrite As Boolean = True") As "Boolean";   COMMENT = "";
 
-      Function "ReadString"___("FileName As String, Codec As String, AutoDetectUnicode As Boolean = True, GenerateByteOrderMark As Boolean = True") As "String";   COMMENT = "";
-      Function "WriteString"___("Text As String, FileName As String, Append As Boolean = False, Codec As String = \"UTF-8\", AutoDetectUnicode As Boolean = True, GenerateByteOrderMark As Boolean = True") As "Boolean";   COMMENT = "";
+      Function "ReadString" ___("FileName As String, Codec As String, AutoDetectUnicode As Boolean = True, GenerateByteOrderMark As Boolean = True") As "String";   COMMENT = "";
+      Function "WriteString" ___("Text As String, FileName As String, Append As Boolean = False, Codec As String = \"UTF-8\", AutoDetectUnicode As Boolean = True, GenerateByteOrderMark As Boolean = True") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10344,24 +10344,24 @@ void Parser::CreateListOfObjects()
 
     Object "Preferences"
   
-      Sub      "RemoveAll"___("");   COMMENT = "";
-      Function "Ids"___("") As "List";   COMMENT = "";
+      Sub      "RemoveAll" ___("");   COMMENT = "";
+      Function "Ids" ___("") As "List";   COMMENT = "";
 
-      Function "Exists"___("PreferenceId As String") As "Boolean";   COMMENT = "";
-      Function "Remove"___("PreferenceId As String") As "Boolean";   COMMENT = "";
-      Function "Boolean"___("PreferenceId As String") As "Boolean";   COMMENT = "";
-      Function "Integer"___("PreferenceId As String") As "Integer";   COMMENT = "";
-      Function "String"___("PreferenceId As String") As "String";   COMMENT = "";
-      Function "QStringList"___("PreferenceId As String") As "QStringList";   COMMENT = "";
-      Function "Float"___("PreferenceId As String") As "String";   COMMENT = "";
-      Function "QByteArray"___("PreferenceId As String") As "QByteArray";   COMMENT = "";
+      Function "Exists" ___("PreferenceId As String") As "Boolean";   COMMENT = "";
+      Function "Remove" ___("PreferenceId As String") As "Boolean";   COMMENT = "";
+      Function "Boolean" ___("PreferenceId As String") As "Boolean";   COMMENT = "";
+      Function "Integer" ___("PreferenceId As String") As "Integer";   COMMENT = "";
+      Function "String" ___("PreferenceId As String") As "String";   COMMENT = "";
+      Function "QStringList" ___("PreferenceId As String") As "QStringList";   COMMENT = "";
+      Function "Float" ___("PreferenceId As String") As "String";   COMMENT = "";
+      Function "QByteArray" ___("PreferenceId As String") As "QByteArray";   COMMENT = "";
 
-      Sub      "SetBoolean"___("PreferenceId As String, Value As Boolean");   COMMENT = "";
-      Sub      "SetInteger"___("PreferenceId As String, Value As Integer");   COMMENT = "";
-      Sub      "SetString"___("PreferenceId As String, Value As String");   COMMENT = "";
-      Sub      "SetQStringList"___("PreferenceId As String, Value As QStringList");   COMMENT = "";
-      Sub      "SetFloat"___("PreferenceId As String, Value As Float");   COMMENT = "";
-      Sub      "SetQByteArray"___("PreferenceId As String, Value As QByteArray");   COMMENT = "";
+      Sub      "SetBoolean" ___("PreferenceId As String, Value As Boolean");   COMMENT = "";
+      Sub      "SetInteger" ___("PreferenceId As String, Value As Integer");   COMMENT = "";
+      Sub      "SetString" ___("PreferenceId As String, Value As String");   COMMENT = "";
+      Sub      "SetQStringList" ___("PreferenceId As String, Value As QStringList");   COMMENT = "";
+      Sub      "SetFloat" ___("PreferenceId As String, Value As Float");   COMMENT = "";
+      Sub      "SetQByteArray" ___("PreferenceId As String, Value As QByteArray");   COMMENT = "";
 
     End_Object
 
@@ -10369,25 +10369,25 @@ void Parser::CreateListOfObjects()
 
     Object "CMath"
   
-      Function "sin"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "cos"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "tan"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "asin"___("Argument As Float") As "Float";   COMMENT = "Result is in [-pi/2,pi/2]";
-      Function "acos"___("Argument As Float") As "Float";   COMMENT = "Result is in [0,pi]";
-      Function "atan"___("Argument As Float") As "Float";   COMMENT = "Result is in [-pi/2,pi/2]";
-      Function "atan2"___("x As Float, y As Float") As "Float";   COMMENT = "Determines the arc tangent of y/x in [-pi,pi] using the sign of both arguments to determine the quadrant";
-      Function "sinh"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "cosh"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "tanh"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "exp"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "log"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "log10"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "sqrt"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "ceil"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "floor"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "fabs"___("Argument As Float") As "Float";   COMMENT = "";
-      Function "fmod"___("x As Float, y As Float") As "Float";   COMMENT = "";
-      Function "pow"___("x As Float, y As Float") As "Float";   COMMENT = "Returns x raised to the power of y";
+      Function "sin" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "cos" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "tan" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "asin" ___("Argument As Float") As "Float";   COMMENT = "Result is in [-pi/2,pi/2]";
+      Function "acos" ___("Argument As Float") As "Float";   COMMENT = "Result is in [0,pi]";
+      Function "atan" ___("Argument As Float") As "Float";   COMMENT = "Result is in [-pi/2,pi/2]";
+      Function "atan2" ___("x As Float, y As Float") As "Float";   COMMENT = "Determines the arc tangent of y/x in [-pi,pi] using the sign of both arguments to determine the quadrant";
+      Function "sinh" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "cosh" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "tanh" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "exp" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "log" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "log10" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "sqrt" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "ceil" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "floor" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "fabs" ___("Argument As Float") As "Float";   COMMENT = "";
+      Function "fmod" ___("x As Float, y As Float") As "Float";   COMMENT = "";
+      Function "pow" ___("x As Float, y As Float") As "Float";   COMMENT = "Returns x raised to the power of y";
 
     End_Object
 
@@ -10395,47 +10395,47 @@ void Parser::CreateListOfObjects()
 
     Object "Dir"
   
-      Function "RootPath"___("") As "String";   COMMENT = "";
-      Function "TempPath"___("") As "String";   COMMENT = "";
-      Function "ApplicationsPath"___("") As "String";   COMMENT = "";
-      Function "HomePath"___("") As "String";   COMMENT = "";
-      Function "DesktopPath"___("") As "String";   COMMENT = "";
-      Function "Create"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "RecursiveCreate"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "Remove"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "RecursiveRemove"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "Exists"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "List"___("Path As String") As "List";   COMMENT = "";
+      Function "RootPath" ___("") As "String";   COMMENT = "";
+      Function "TempPath" ___("") As "String";   COMMENT = "";
+      Function "ApplicationsPath" ___("") As "String";   COMMENT = "";
+      Function "HomePath" ___("") As "String";   COMMENT = "";
+      Function "DesktopPath" ___("") As "String";   COMMENT = "";
+      Function "Create" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "RecursiveCreate" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "Remove" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "RecursiveRemove" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "Exists" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "List" ___("Path As String") As "List";   COMMENT = "";
 
-      Function "FindFile"___("Path As String, NameFilter As List, Filter As Integer = Dir.NoFilter, Sorting As Integer = Dir.NoSort") As "List";   COMMENT = "";
-      Function "RecursiveFindFile"___("Path As String, NameFilter As List, Filter As Integer = Dir.NoFilter, Sorting As Integer = Dir.NoSort") As "List";   COMMENT = "";
-      Function "RecursiveList"___("Path As String") As "List";   COMMENT = "";
-      Function "Copy"___("SourcePath As String, DestinationPath As String") As "List";   COMMENT = "";
-      Function "Move"___("SourcePath As String, DestinationPath As String") As "List";   COMMENT = "";
+      Function "FindFile" ___("Path As String, NameFilter As List, Filter As Integer = Dir.NoFilter, Sorting As Integer = Dir.NoSort") As "List";   COMMENT = "";
+      Function "RecursiveFindFile" ___("Path As String, NameFilter As List, Filter As Integer = Dir.NoFilter, Sorting As Integer = Dir.NoSort") As "List";   COMMENT = "";
+      Function "RecursiveList" ___("Path As String") As "List";   COMMENT = "";
+      Function "Copy" ___("SourcePath As String, DestinationPath As String") As "List";   COMMENT = "";
+      Function "Move" ___("SourcePath As String, DestinationPath As String") As "List";   COMMENT = "";
 
-      Function "DateTimeCreated"___("Path As String") As "String";   COMMENT = "";
-      Function "DateTimeUpdated"___("Path As String") As "String";   COMMENT = "";
-      Function "DateTimeRead"___("Path As String") As "String";   COMMENT = "";
-      Function "Owner"___("Path As String") As "String";   COMMENT = "";
-      Function "Group"___("Path As String") As "String";   COMMENT = "";
+      Function "DateTimeCreated" ___("Path As String") As "String";   COMMENT = "";
+      Function "DateTimeUpdated" ___("Path As String") As "String";   COMMENT = "";
+      Function "DateTimeRead" ___("Path As String") As "String";   COMMENT = "";
+      Function "Owner" ___("Path As String") As "String";   COMMENT = "";
+      Function "Group" ___("Path As String") As "String";   COMMENT = "";
 
-      Function "IsReadable"___("Path As String, Who As String") As "Boolean";   COMMENT = "";
-      Function "IsWritable"___("Path As String, Who As String") As "Boolean";   COMMENT = "";
-      Function "IsExecutable"___("Path As String, Who As String") As "Boolean";   COMMENT = "";
-      Function "IsHidden"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "IsDir"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "Drives"___("") As "List";   COMMENT = "";
+      Function "IsReadable" ___("Path As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "IsWritable" ___("Path As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "IsExecutable" ___("Path As String, Who As String") As "Boolean";   COMMENT = "";
+      Function "IsHidden" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "IsDir" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "Drives" ___("") As "List";   COMMENT = "";
 
-      Function "WithNativeSeparators"___("Path As String") As "String";   COMMENT = "";
-      Function "WithoutNativeSeparators"___("Path As String") As "String";   COMMENT = "";
-      Function "BundleName"___("Path As String") As "String";   COMMENT = "";
-      Function "BundleName"___("Path As String") As "String";   COMMENT = "";
-      Function "SymLinkTarget"___("Path As String") As "String";   COMMENT = "";
+      Function "WithNativeSeparators" ___("Path As String") As "String";   COMMENT = "";
+      Function "WithoutNativeSeparators" ___("Path As String") As "String";   COMMENT = "";
+      Function "BundleName" ___("Path As String") As "String";   COMMENT = "";
+      Function "BundleName" ___("Path As String") As "String";   COMMENT = "";
+      Function "SymLinkTarget" ___("Path As String") As "String";   COMMENT = "";
 
-      Function "IsRoot"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "IsRelative"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "IsSymLink"___("Path As String") As "Boolean";   COMMENT = "";
-      Function "IsBundle"___("Path As String") As "Boolean";   COMMENT = "";
+      Function "IsRoot" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "IsRelative" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "IsSymLink" ___("Path As String") As "Boolean";   COMMENT = "";
+      Function "IsBundle" ___("Path As String") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10443,39 +10443,39 @@ void Parser::CreateListOfObjects()
 
     Object "Database" SuperClass "QObject"
   
-      Function "MySQL"___("") As "String";   COMMENT = "";
-      Function "PostgreSQL"___("") As "String";   COMMENT = "";
-      Function "SQLite"___("") As "String";   COMMENT = "";
+      Function "MySQL" ___("") As "String";   COMMENT = "";
+      Function "PostgreSQL" ___("") As "String";   COMMENT = "";
+      Function "SQLite" ___("") As "String";   COMMENT = "";
 
-      Function "LocalHost"___("") As "String";   COMMENT = "";
-      Function "DefaultPort"___("") As "String";   COMMENT = "";
-      Function "DefaultOptions"___("") As "String";   COMMENT = "";
-      Function "SetCurrentDatabase"___("Name As String") As "Boolean";   COMMENT = "";
-      Function "CurrentDatabase"___("") As "String";   COMMENT = "";
+      Function "LocalHost" ___("") As "String";   COMMENT = "";
+      Function "DefaultPort" ___("") As "String";   COMMENT = "";
+      Function "DefaultOptions" ___("") As "String";   COMMENT = "";
+      Function "SetCurrentDatabase" ___("Name As String") As "Boolean";   COMMENT = "";
+      Function "CurrentDatabase" ___("") As "String";   COMMENT = "";
 
-      Function "Exists"___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
-      Function "Create"___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
-      Function "TestConnection"___("Driver As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "String";   COMMENT = "";
-      Function "Empty"___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
-      Function "Drop"___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
+      Function "Exists" ___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
+      Function "Create" ___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
+      Function "TestConnection" ___("Driver As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "String";   COMMENT = "";
+      Function "Empty" ___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
+      Function "Drop" ___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
 
-      Function "OpenSQLite"___("Name As String") As "Boolean";   COMMENT = "";
+      Function "OpenSQLite" ___("Name As String") As "Boolean";   COMMENT = "";
 
-      Function "Open"___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
-      Function "Close"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "IsOpen"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "Open" ___("Driver As String, Name As String, User As String, Password As String, Host As String = Database.LocalHost, Options As String = Database.DefaultOptions, Port As String = Database.DefaultPort") As "Boolean";   COMMENT = "";
+      Function "Close" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "IsOpen" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
 
-      Function "LastSQLError"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "LastSQLCommands"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "LastSQLCommandFailed"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "LastSQLError" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "LastSQLCommands" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "LastSQLCommandFailed" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
 
-      Function "IsTransactionSupported"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "Transaction"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "Commit"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
-      Function "Rollback"___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "IsTransactionSupported" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "Transaction" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "Commit" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
+      Function "Rollback" ___("Name As String = \"\"") As "Boolean";   COMMENT = "";
 
-      Function "Tables"___("Name As String = \"\"") As "List";   COMMENT = "";
-      Function "Drivers"___() As "List";   COMMENT = "";
+      Function "Tables" ___("Name As String = \"\"") As "List";   COMMENT = "";
+      Function "Drivers" ___() As "List";   COMMENT = "";
 
     End_Object
 
@@ -10483,32 +10483,32 @@ void Parser::CreateListOfObjects()
 
     Object "Table" SuperClass "QObject"
   
-      Function "Exists"___("Table As String") As "Boolean";   COMMENT = "";
-      Function "Exists2"___("Database As String, Table As String") As "Boolean";   COMMENT = "";
+      Function "Exists" ___("Table As String") As "Boolean";   COMMENT = "";
+      Function "Exists2" ___("Database As String, Table As String") As "Boolean";   COMMENT = "";
 
-      Function "Create"___("Table As String, Fields As Dictionary") As "Boolean";   COMMENT = "";
-      Function "Create2"___("Database As String, Table As String, Fields As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Create" ___("Table As String, Fields As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Create2" ___("Database As String, Table As String, Fields As Dictionary") As "Boolean";   COMMENT = "";
 
-      Function "Empty"___("Table As String") As "Boolean";   COMMENT = "";
-      Function "Empty2"___("Database As String, Table As String") As "Boolean";   COMMENT = "";
+      Function "Empty" ___("Table As String") As "Boolean";   COMMENT = "";
+      Function "Empty2" ___("Database As String, Table As String") As "Boolean";   COMMENT = "";
 
-      Function "Drop"___("Table As String") As "Boolean";   COMMENT = "";
-      Function "Drop2"___("Database As String, Table As String") As "Boolean";   COMMENT = "";
+      Function "Drop" ___("Table As String") As "Boolean";   COMMENT = "";
+      Function "Drop2" ___("Database As String, Table As String") As "Boolean";   COMMENT = "";
 
-      Function "Delete"___("Table As String, Where As Dictionary") As "Boolean";   COMMENT = "";
-      Function "Delete2"___("Database As String, Table As String, Where As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Delete" ___("Table As String, Where As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Delete2" ___("Database As String, Table As String, Where As Dictionary") As "Boolean";   COMMENT = "";
 
-      Function "Update"___("Table As String, Update As Dictionary, Where As Dictionary") As "Boolean";   COMMENT = "";
-      Function "Update2"___("Database As String, Table As String, Update As Dictionary, Where As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Update" ___("Table As String, Update As Dictionary, Where As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Update2" ___("Database As String, Table As String, Update As Dictionary, Where As Dictionary") As "Boolean";   COMMENT = "";
 
-      Function "Insert"___("Table As String, Insert As Dictionary") As "Boolean";   COMMENT = "";
-      Function "Insert2"___("Database As String, Table As String, Insert As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Insert" ___("Table As String, Insert As Dictionary") As "Boolean";   COMMENT = "";
+      Function "Insert2" ___("Database As String, Table As String, Insert As Dictionary") As "Boolean";   COMMENT = "";
 
-      Function "FieldNames"___("Table As String") As "List";   COMMENT = "";
-      Function "FieldNames2"___("Database As String, Table As String") As "List";   COMMENT = "";
+      Function "FieldNames" ___("Table As String") As "List";   COMMENT = "";
+      Function "FieldNames2" ___("Database As String, Table As String") As "List";   COMMENT = "";
 
-      Function "PrimaryKeyName"___("Table As String") As "String";   COMMENT = "";
-      Function "PrimaryKeyName2"___("Database As String, Table As String") As "String";   COMMENT = "";
+      Function "PrimaryKeyName" ___("Table As String") As "String";   COMMENT = "";
+      Function "PrimaryKeyName2" ___("Database As String, Table As String") As "String";   COMMENT = "";
 
     End_Object
 
@@ -10516,27 +10516,27 @@ void Parser::CreateListOfObjects()
 
     Object "Records" SuperClass "QObject"
   
-      Function "Open"___("TableOrSql As String") As "String";   COMMENT = "";
-      Function "Open2"___("Database As String, TableOrSql As String") As "String";   COMMENT = "";
-      Function "Open3"___("DTable As String, Where As Dictionary") As "String";   COMMENT = "";
-      Function "Open4"___("Database As String, Table As String, Where As Dictionary") As "String";   COMMENT = "";
-      Function "Open5"___("Table As String, Where As Dictionary, OrderBy As Dictionary") As "String";   COMMENT = "";
-      Function "Open6"___("Database As String, Table As String, Where As Dictionary, OrderBy As Dictionary") As "String";   COMMENT = "";
+      Function "Open" ___("TableOrSql As String") As "String";   COMMENT = "";
+      Function "Open2" ___("Database As String, TableOrSql As String") As "String";   COMMENT = "";
+      Function "Open3" ___("DTable As String, Where As Dictionary") As "String";   COMMENT = "";
+      Function "Open4" ___("Database As String, Table As String, Where As Dictionary") As "String";   COMMENT = "";
+      Function "Open5" ___("Table As String, Where As Dictionary, OrderBy As Dictionary") As "String";   COMMENT = "";
+      Function "Open6" ___("Database As String, Table As String, Where As Dictionary, OrderBy As Dictionary") As "String";   COMMENT = "";
 
-      Function "Close"___("RecordsId As String") As "Boolean";   COMMENT = "";
-      Function "Requery"___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "Close" ___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "Requery" ___("RecordsId As String") As "Boolean";   COMMENT = "";
 
-      Function "First"___("RecordsId As String") As "Boolean";   COMMENT = "";
-      Function "Next"___("RecordsId As String") As "Boolean";   COMMENT = "";
-      Function "Previous"___("RecordsId As String") As "Boolean";   COMMENT = "";
-      Function "Last"___("RecordsId As String") As "Boolean";   COMMENT = "";
-      Function "GoTo"___("RecordsId As String, Position As Integer") As "Boolean";   COMMENT = "";
+      Function "First" ___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "Next" ___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "Previous" ___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "Last" ___("RecordsId As String") As "Boolean";   COMMENT = "";
+      Function "GoTo" ___("RecordsId As String, Position As Integer") As "Boolean";   COMMENT = "";
 
-      Function "Length"___("RecordsId As String") As "Integer";   COMMENT = "";
-      Function "Position"___("RecordsId As String") As "Integer";   COMMENT = "";
+      Function "Length" ___("RecordsId As String") As "Integer";   COMMENT = "";
+      Function "Position" ___("RecordsId As String") As "Integer";   COMMENT = "";
 
-      Function "FieldNames"___("RecordsId As String") As "List";   COMMENT = "";
-      Function "Value"___("RecordsId As String, Field As String") As "id";   COMMENT = "";
+      Function "FieldNames" ___("RecordsId As String") As "List";   COMMENT = "";
+      Function "Value" ___("RecordsId As String, Field As String") As "id";   COMMENT = "";
 
     End_Object
 
@@ -10544,11 +10544,11 @@ void Parser::CreateListOfObjects()
 
     Object "Query" SuperClass "QObject"
   
-      Function "Run"___("QueryNameOrSql As String") As "Boolean";   COMMENT = "";
-      Function "Run2"___("Database As String, QueryNameOrSql As String") As "Boolean";   COMMENT = "";
+      Function "Run" ___("QueryNameOrSql As String") As "Boolean";   COMMENT = "";
+      Function "Run2" ___("Database As String, QueryNameOrSql As String") As "Boolean";   COMMENT = "";
 
-      Function "Command"___("Command As String") As "Dictionary";   COMMENT = "";
-      Function "Command2"___("Database As String, Command As String") As "Dictionary";   COMMENT = "";
+      Function "Command" ___("Command As String") As "Dictionary";   COMMENT = "";
+      Function "Command2" ___("Database As String, Command As String") As "Dictionary";   COMMENT = "";
 
     End_Object
 
@@ -10556,7 +10556,7 @@ void Parser::CreateListOfObjects()
 
     Object "Desktop"
   
-      Function "DesktopLocation"___("") As "String";   COMMENT = "";
+      Function "DesktopLocation" ___("") As "String";   COMMENT = "";
 
     End_Object
 
@@ -10580,10 +10580,10 @@ void Parser::CreateListOfObjects()
 
     Object "StatusBar" SuperClass "QWidget"
   
-      Sub      "ClearMessage"___("");   COMMENT = "";
-      Sub      "ShowMessage"___("Message As String");   COMMENT = "";
-      Sub      "ShowMessage2"___("Message As String, TimeOutInMilliSeconds As Integer");   COMMENT = "";
-      Sub      "AddPermanentWidget"___("Widget As QWidget");   COMMENT = "";
+      Sub      "ClearMessage" ___("");   COMMENT = "";
+      Sub      "ShowMessage" ___("Message As String");   COMMENT = "";
+      Sub      "ShowMessage2" ___("Message As String, TimeOutInMilliSeconds As Integer");   COMMENT = "";
+      Sub      "AddPermanentWidget" ___("Widget As QWidget");   COMMENT = "";
 
     End_Object
 
@@ -10591,8 +10591,8 @@ void Parser::CreateListOfObjects()
 
     Object "Sounds" SuperClass "QObject"
   
-      Function "Play"___("SoundId As String") As "Boolean";   COMMENT = "";
-      Function "Load"___("SoundId As String, FileName As String") As "Boolean";   COMMENT = "";
+      Function "Play" ___("SoundId As String") As "Boolean";   COMMENT = "";
+      Function "Load" ___("SoundId As String, FileName As String") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10600,7 +10600,7 @@ void Parser::CreateListOfObjects()
 
     Object "Pixmaps" SuperClass "QObject"
   
-      Function "Load"___("PixmapId As String, FileName As String") As "Boolean";   COMMENT = "";
+      Function "Load" ___("PixmapId As String, FileName As String") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10608,26 +10608,26 @@ void Parser::CreateListOfObjects()
 
     Object "Colors" SuperClass "QObject" // TODO
   
-      Function "White"___("") As "String = \"Color.White\"";   COMMENT = "";
-      Function "Black"___("") As "String = \"Color.Black\"";   COMMENT = "";
-      Function "Red"___("") As "String = \"Color.Red\"";   COMMENT = "";
-      Function "DarkRed"___("") As "String = \"Color.DarkRed\"";   COMMENT = "";
-      Function "Green"___("") As "String = \"Color.Green\"";   COMMENT = "";
-      Function "DarkGreen"___("") As "String = \"Color.DarkGreen\"";   COMMENT = "";
-      Function "Blue"___("") As "String = \"Color.Blue\"";   COMMENT = "";
-      Function "DarkBlue"___("") As "String = \"Color.DarkBlue\"";   COMMENT = "";
-      Function "Cyan"___("") As "String = \"Color.Cyan\"";   COMMENT = "";
-      Function "DarkCyan"___("") As "String = \"Color.DarkCyan\"";   COMMENT = "";
-      Function "Magenta"___("") As "String = \"Color.Magenta\"";   COMMENT = "";
-      Function "DarkMagenta"___("") As "String = \"Color.DarkMagenta\"";   COMMENT = "";
-      Function "Yellow"___("") As "String = \"Color.Yellow\"";   COMMENT = "";
-      Function "DarkYellow"___("") As "String = \"Color.DarkYellow\"";   COMMENT = "";
-      Function "Gray"___("") As "String = \"Color.Gray\"";   COMMENT = "";
-      Function "DarkGray"___("") As "String = \"Color.DarkGray\"";   COMMENT = "";
-      Function "LightGray"___("") As "String = \"Color.LightGray\"";   COMMENT = "";
-      Function "Color0"___("") As "String = \"Color.Color0\"";   COMMENT = "";
-      Function "Color1"___("") As "String = \"Color.Color1\"";   COMMENT = "";
-      Function "Transparent"___("") As "String = \"Color.Transparent\"";   COMMENT = "";
+      Function "White" ___("") As "String = \"Color.White\"";   COMMENT = "";
+      Function "Black" ___("") As "String = \"Color.Black\"";   COMMENT = "";
+      Function "Red" ___("") As "String = \"Color.Red\"";   COMMENT = "";
+      Function "DarkRed" ___("") As "String = \"Color.DarkRed\"";   COMMENT = "";
+      Function "Green" ___("") As "String = \"Color.Green\"";   COMMENT = "";
+      Function "DarkGreen" ___("") As "String = \"Color.DarkGreen\"";   COMMENT = "";
+      Function "Blue" ___("") As "String = \"Color.Blue\"";   COMMENT = "";
+      Function "DarkBlue" ___("") As "String = \"Color.DarkBlue\"";   COMMENT = "";
+      Function "Cyan" ___("") As "String = \"Color.Cyan\"";   COMMENT = "";
+      Function "DarkCyan" ___("") As "String = \"Color.DarkCyan\"";   COMMENT = "";
+      Function "Magenta" ___("") As "String = \"Color.Magenta\"";   COMMENT = "";
+      Function "DarkMagenta" ___("") As "String = \"Color.DarkMagenta\"";   COMMENT = "";
+      Function "Yellow" ___("") As "String = \"Color.Yellow\"";   COMMENT = "";
+      Function "DarkYellow" ___("") As "String = \"Color.DarkYellow\"";   COMMENT = "";
+      Function "Gray" ___("") As "String = \"Color.Gray\"";   COMMENT = "";
+      Function "DarkGray" ___("") As "String = \"Color.DarkGray\"";   COMMENT = "";
+      Function "LightGray" ___("") As "String = \"Color.LightGray\"";   COMMENT = "";
+      Function "Color0" ___("") As "String = \"Color.Color0\"";   COMMENT = "";
+      Function "Color1" ___("") As "String = \"Color.Color1\"";   COMMENT = "";
+      Function "Transparent" ___("") As "String = \"Color.Transparent\"";   COMMENT = "";
 
     End_Object
 
@@ -10635,7 +10635,7 @@ void Parser::CreateListOfObjects()
 
     Object "Fonts" SuperClass "QObject"
   
-      Function "Set"___("FontId As String, Name As String, Size As Integer, Italic As Boolean, Bold As Boolean, Underline As Boolean") As "Boolean";   COMMENT = "";
+      Function "Set" ___("FontId As String, Name As String, Size As Integer, Italic As Boolean, Bold As Boolean, Underline As Boolean") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10643,7 +10643,7 @@ void Parser::CreateListOfObjects()
 
     Object "ToolBar" SuperClass "QWidget"
   
-      Sub "AddPermanentWidget"___("Widget As QWidget, BeforeAction As QAction");   COMMENT = "";
+      Sub "AddPermanentWidget" ___("Widget As QWidget, BeforeAction As QAction");   COMMENT = "";
 
     End_Object
 
@@ -10656,20 +10656,20 @@ void Parser::CreateListOfObjects()
       Property "ToolTip" As "String";    COMMENT = "";
       Property "Visible" As "Boolean";    COMMENT = "";
 
-      Function "IsSystemTrayAvailable"___("") As "Boolean";   COMMENT = "";
-      Function "IsMessageBoxSupported"___("") As "Boolean";   COMMENT = "";
+      Function "IsSystemTrayAvailable" ___("") As "Boolean";   COMMENT = "";
+      Function "IsMessageBoxSupported" ___("") As "Boolean";   COMMENT = "";
 
-      Sub "Show"___("");   COMMENT = "";
-      Sub "Hide"___("");   COMMENT = "";
-      Sub "ShowOrHide"___("");   COMMENT = "";
+      Sub "Show" ___("");   COMMENT = "";
+      Sub "Hide" ___("");   COMMENT = "";
+      Sub "ShowOrHide" ___("");   COMMENT = "";
 
-      Sub "MessageBox"___("Text As String");   COMMENT = "";
-      Sub "MessageBox2"___("Text As String, Title As String");   COMMENT = "";
-      Sub "MessageBox3"___("Text As String, Title As String, MessageBoxIcon As Integer");   COMMENT = "";
-      Sub "MessageBox4"___("Text As String, Title As String, MessageBoxIcon As Integer, TimeOut As Integer");   COMMENT = "";
+      Sub "MessageBox" ___("Text As String");   COMMENT = "";
+      Sub "MessageBox2" ___("Text As String, Title As String");   COMMENT = "";
+      Sub "MessageBox3" ___("Text As String, Title As String, MessageBoxIcon As Integer");   COMMENT = "";
+      Sub "MessageBox4" ___("Text As String, Title As String, MessageBoxIcon As Integer, TimeOut As Integer");   COMMENT = "";
 
-      Signal "activated"___("Text As String") Declare "void activated(QSystemTrayIcon::ActivationReason reason)"   COMMENT = "";
-      Signal "messageClicked"___("") Declare "void messageClicked()"   COMMENT = "";
+      Signal "activated" ___("Text As String") Declare "void activated(QSystemTrayIcon::ActivationReason reason)"   COMMENT = "";
+      Signal "messageClicked" ___("") Declare "void messageClicked()"   COMMENT = "";
 
     End_Object
 
@@ -10683,14 +10683,14 @@ void Parser::CreateListOfObjects()
 
     Object "OpenFileDialog" SuperClass "QObject"
   
-      Function "GetFile"___("") As "String";   COMMENT = "";
-      Function "GetFiles"___("") As "List";   COMMENT = "";
+      Function "GetFile" ___("") As "String";   COMMENT = "";
+      Function "GetFiles" ___("") As "List";   COMMENT = "";
 
-      Function "GetDirectory"___("") As "String";   COMMENT = "";
-      Function "GetDirectory2"___("WindowTitle As String, Directory As String") As "String";   COMMENT = "";
+      Function "GetDirectory" ___("") As "String";   COMMENT = "";
+      Function "GetDirectory2" ___("WindowTitle As String, Directory As String") As "String";   COMMENT = "";
 
-      Function "GetFile2"___("WindowTitle As String, Directory As String, Filter As String") As "String";   COMMENT = "";
-      Function "GetFiles2"___("WindowTitle As String, Directory As String, Filter As String") As "List";   COMMENT = "";
+      Function "GetFile2" ___("WindowTitle As String, Directory As String, Filter As String") As "String";   COMMENT = "";
+      Function "GetFiles2" ___("WindowTitle As String, Directory As String, Filter As String") As "List";   COMMENT = "";
 
     End_Object
 
@@ -10698,12 +10698,12 @@ void Parser::CreateListOfObjects()
 
     Object "SaveFileDialog" SuperClass "QObject"
   
-      Function "GetFile"___("") As "String";   COMMENT = "";
-      Function "GetDirectory"___("") As "String";   COMMENT = "";
+      Function "GetFile" ___("") As "String";   COMMENT = "";
+      Function "GetDirectory" ___("") As "String";   COMMENT = "";
 
-      Function "GetDirectory2"___("WindowTitle As String, Directory As String") As "String";   COMMENT = "";
+      Function "GetDirectory2" ___("WindowTitle As String, Directory As String") As "String";   COMMENT = "";
 
-      Function "GetFile2"___("WindowTitle As String, Directory As String, Filter As String") As "String";   COMMENT = "";
+      Function "GetFile2" ___("WindowTitle As String, Directory As String, Filter As String") As "String";   COMMENT = "";
 
     End_Object
 
@@ -10711,14 +10711,14 @@ void Parser::CreateListOfObjects()
 
     Object "ColorDialog" SuperClass "QObject"
   
-      Function "GetColor"___("") As "Boolean";   COMMENT = "";
+      Function "GetColor" ___("") As "Boolean";   COMMENT = "";
 
-      Function "Red"___("") As "Integer";   COMMENT = "";
-      Function "Green"___("") As "Integer";   COMMENT = "";
-      Function "Blue"___("") As "Integer";   COMMENT = "";
-      Function "Alpha"___("") As "Integer";   COMMENT = "";
+      Function "Red" ___("") As "Integer";   COMMENT = "";
+      Function "Green" ___("") As "Integer";   COMMENT = "";
+      Function "Blue" ___("") As "Integer";   COMMENT = "";
+      Function "Alpha" ___("") As "Integer";   COMMENT = "";
 
-      Function "GetColor2"___("Red As Integer, Green As Integer, Blue As Integer, Alpha As Integer") As "Boolean";   COMMENT = "";
+      Function "GetColor2" ___("Red As Integer, Green As Integer, Blue As Integer, Alpha As Integer") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10726,15 +10726,15 @@ void Parser::CreateListOfObjects()
 
     Object "FontDialog" SuperClass "QObject"
   
-      Function "GetFont"___("") As "Boolean";   COMMENT = "";
+      Function "GetFont" ___("") As "Boolean";   COMMENT = "";
 
-      Function "Name"___("") As "String";   COMMENT = "";
-      Function "Size"___("") As "Integer";   COMMENT = "";
-      Function "Bold"___("") As "Boolean";   COMMENT = "";
-      Function "Italic"___("") As "Boolean";   COMMENT = "";
-      Function "Underline"___("") As "Boolean";   COMMENT = "";
+      Function "Name" ___("") As "String";   COMMENT = "";
+      Function "Size" ___("") As "Integer";   COMMENT = "";
+      Function "Bold" ___("") As "Boolean";   COMMENT = "";
+      Function "Italic" ___("") As "Boolean";   COMMENT = "";
+      Function "Underline" ___("") As "Boolean";   COMMENT = "";
 
-      Function "GetFont2"___("Name As String, Size As Integer, Bold As Boolean, Italic As Boolean, Underline As Boolean") As "Boolean";   COMMENT = "";
+      Function "GetFont2" ___("Name As String, Size As Integer, Bold As Boolean, Italic As Boolean, Underline As Boolean") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10749,11 +10749,11 @@ void Parser::CreateListOfObjects()
       Property "Maximum" As "Integer";    COMMENT = "";
       Property "Wait" As "Integer";    COMMENT = "";
 
-      Sub "Hide"___("");   COMMENT = "";
-      Sub "Show"___("");   COMMENT = "";
-      Function "Canceled"___("") As "Boolean";   COMMENT = "";
+      Sub "Hide" ___("");   COMMENT = "";
+      Sub "Show" ___("");   COMMENT = "";
+      Function "Canceled" ___("") As "Boolean";   COMMENT = "";
 
-      Function "Show2"___("WindowTitle As String, CancelText As String") As "Boolean";   COMMENT = "";
+      Function "Show2" ___("WindowTitle As String, CancelText As String") As "Boolean";   COMMENT = "";
 
     End_Object
 
@@ -10761,10 +10761,10 @@ void Parser::CreateListOfObjects()
 
     Object "InputDialog" SuperClass "QObject"
 
-      Function "Ok"___("") As "Boolean";   COMMENT = "";
-      Function "GetString"___("WindowTitle As String, Text As String = \"\", Value As String = \"\", EchoMode As Integer = InputDialog.Normal") As "String";   COMMENT = "";
-      Function "GetFloat"___("WindowTitle As String, Text As String = \"\", Value As Float = 0, Minimum As Float = -2147483647, Maximum As Float = 2147483647, Decimals As Integer = 1") As "Float";   COMMENT = "";
-      Function "GetInteger"___("WindowTitle As String, Text As String = \"\", Value As Integer = 0, Minimum As Integer = -2147483647, Maximum As Integer = 2147483647, Step As Integer = 1") As "Integer";   COMMENT = "";
+      Function "Ok" ___("") As "Boolean";   COMMENT = "";
+      Function "GetString" ___("WindowTitle As String, Text As String = \"\", Value As String = \"\", EchoMode As Integer = InputDialog.Normal") As "String";   COMMENT = "";
+      Function "GetFloat" ___("WindowTitle As String, Text As String = \"\", Value As Float = 0, Minimum As Float = -2147483647, Maximum As Float = 2147483647, Decimals As Integer = 1") As "Float";   COMMENT = "";
+      Function "GetInteger" ___("WindowTitle As String, Text As String = \"\", Value As Integer = 0, Minimum As Integer = -2147483647, Maximum As Integer = 2147483647, Step As Integer = 1") As "Integer";   COMMENT = "";
 
     End_Object
 
@@ -10772,10 +10772,10 @@ void Parser::CreateListOfObjects()
 
     Object "MessageBox" SuperClass "QObject"
 
-      Function "Critical"___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
-      Function "Information"___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
-      Function "Question"___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
-      Function "Warning"___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
+      Function "Critical" ___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
+      Function "Information" ___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
+      Function "Question" ___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
+      Function "Warning" ___("WindowTitle As String, Text As String = \"\", Buttons As Integer = MessageBox.Ok, DefaultButton As Integer = MessageBox.NoButton") As "Integer";   COMMENT = "";
 
     End_Object
 
@@ -10802,7 +10802,7 @@ void Parser::CreateListOfObjects()
 #undef End_Object
 #undef SEEALSO
 #undef EXAMPLE
-#undef ___
+#undef  ___
 #undef As
 #undef Alias
 
@@ -11210,7 +11210,7 @@ QString ARG(QStringList l){
 #define FakeSub sType="";sAliasRealname=SUBFUNCTION=
 #define Function ;sAliasRealname=SUBFUNCTION=
 #define Sub sType="";sAliasRealname=SUBFUNCTION=
-#define ___ ;l<<SubFunction
+#define  ___ ;l<<SubFunction
 #define As ;sType=
 #define Alias ;lAlias<<
 
@@ -11234,7 +11234,7 @@ void Parser::AddFunction(QString _sName, QString _sArguments, QString _sType, QS
   QString sAliasRealname;
 
   if (bAppend == false){
-    Function _sName ___(_sArguments) As _sType;
+    Function _sName  ___(_sArguments) As _sType;
 
       GROUP   = sGroup;
       SEEALSO = sSeeAlso;
@@ -11285,7 +11285,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
 
-    Function "Oct"___("EXPRESSION") As "String";
+    Function "Oct" ___("EXPRESSION") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11297,7 +11297,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddressOf"___("Variable") As "Integer";
+    Function "AddressOf" ___("Variable") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11308,7 +11308,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "StrComp"___("STRINGEXPRESSION, STRINGEXPRESSION [, ComparisionMode As Integer]") As "Integer";
+    Function "StrComp" ___("STRINGEXPRESSION, STRINGEXPRESSION [, ComparisionMode As Integer]") As "Integer";
 
       GROUP =   "String";
       SEEALSO = "";      
@@ -11324,7 +11324,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "LOF"___("[#]FILENNO") As "Integer";
+    FakeFunction "LOF" ___("[#]FILENNO") As "Integer";
 
       GROUP =   "File";
       SEEALSO = "";      
@@ -11336,7 +11336,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "MessageBox"___("Icon As Integer, Title As String, Text As String, InformativeText As String, DetailedText As String, {StandardButton As Integer | List(Text As String, Role As Integer), ...}") As "Integer";
+    FakeFunction "MessageBox" ___("Icon As Integer, Title As String, Text As String, InformativeText As String, DetailedText As String, {StandardButton As Integer | List(Text As String, Role As Integer), ...}") As "Integer";
 
       GROUP =   "ui";
       SEEALSO = "InputBox";
@@ -11348,7 +11348,7 @@ void Parser::CreateListOfSubsFunctions()
 		
     
 
-    Function "IsError"___("Expression") As "Boolean";
+    Function "IsError" ___("Expression") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11360,7 +11360,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Sub "Peek"___("");
+    Sub "Peek" ___("");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11372,7 +11372,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Sub "Poke"___("");
+    Sub "Poke" ___("");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11384,7 +11384,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Function "IsLeapYear"___("Expression") As "Boolean";
+    Function "IsLeapYear" ___("Expression") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11396,7 +11396,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsMissing"___("Expression") As "Boolean";
+    Function "IsMissing" ___("Expression") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11408,19 +11408,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsNumeric"___("Expression") As "Boolean";
-
-      GROUP =   "";
-      SEEALSO = "";      
-      COMMENT = "Very old basic command. Not supported yet.";
-      EXAMPLE = "";
-	  OLDBASIC
-
-    End_Function
-	
-    
-
-    Function "IsObject"___("Expression") As "Boolean";
+    Function "IsNumeric" ___("Expression") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11432,19 +11420,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Function "IsVariant"___("Expression") As "Boolean";
-
-      GROUP =   "";
-      SEEALSO = "";      
-      COMMENT = "Very old basic command. Not supported yet.";
-      EXAMPLE = "";
-	  OLDBASIC
-
-    End_Function
-
-    
-
-    Function "Sgn"___("Expression") As "Integer";
+    Function "IsObject" ___("Expression") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11456,7 +11432,31 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Seek"___("#FileNo, RecordPosition As Integer");
+    Function "IsVariant" ___("Expression") As "Boolean";
+
+      GROUP =   "";
+      SEEALSO = "";      
+      COMMENT = "Very old basic command. Not supported yet.";
+      EXAMPLE = "";
+	  OLDBASIC
+
+    End_Function
+
+    
+
+    Function "Sgn" ___("Expression") As "Integer";
+
+      GROUP =   "";
+      SEEALSO = "";      
+      COMMENT = "Very old basic command. Not supported yet.";
+      EXAMPLE = "";
+	  OLDBASIC
+
+    End_Function
+	
+    
+
+    FakeSub "Seek" ___("#FileNo, RecordPosition As Integer");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11468,7 +11468,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "VarType"___("VARIABLE") As "Integer"; 
+    FakeFunction "VarType" ___("VARIABLE") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11480,7 +11480,7 @@ void Parser::CreateListOfSubsFunctions()
 	
 	 
 
-    FakeFunction "TypeName"___("VARIABLE") As "String"; 
+    FakeFunction "TypeName" ___("VARIABLE") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11492,7 +11492,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Tab"___("Integer") As "String"; 
+    FakeFunction "Tab" ___("Integer") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11504,7 +11504,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Spc"___("Integer") As "String"; 
+    FakeFunction "Spc" ___("Integer") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11516,7 +11516,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "RmDir"___("String");
+    FakeSub "RmDir" ___("String");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11528,7 +11528,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "ChDir"___("String");
+    FakeSub "ChDir" ___("String");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11540,7 +11540,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "MkDir"___("String");
+    FakeSub "MkDir" ___("String");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11552,7 +11552,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "ChDrive"___("String");
+    FakeSub "ChDrive" ___("String");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11564,7 +11564,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Write"___("[#]FileNo As Integer, EXPRESSION, EXPRESSION?");
+    FakeSub "Write" ___("[#]FileNo As Integer, EXPRESSION, EXPRESSION?");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11576,7 +11576,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Line Input"___("[#]FilenNo As Integer, VARIABLENAME");
+    FakeSub "Line Input" ___("[#]FilenNo As Integer, VARIABLENAME");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11588,7 +11588,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Loc"___("[#]FileNo As Integer"); As "Integer";
+    FakeFunction "Loc" ___("[#]FileNo As Integer"); As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11600,7 +11600,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Circle"___("ARGUMENTS");
+    FakeSub "Circle" ___("ARGUMENTS");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11612,7 +11612,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "CurDir"___("[Drive As String]") As "String";
+    FakeFunction "CurDir" ___("[Drive As String]") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11624,7 +11624,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Erl"___("") As "Integer";
+    FakeFunction "Erl" ___("") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11636,7 +11636,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Err"___("") As "Integer";
+    FakeFunction "Err" ___("") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11648,7 +11648,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "FileDateTime"___("FileName As String") As "DateTime";
+    FakeFunction "FileDateTime" ___("FileName As String") As "DateTime";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11660,7 +11660,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "FileLen"___("FileName As String") As "Integer";
+    FakeFunction "FileLen" ___("FileName As String") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11672,7 +11672,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Error"___("EXPRESSION") As "String";
+    FakeFunction "Error" ___("EXPRESSION") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11684,7 +11684,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "FileAttr"___("[#]FileNo As Integer, ReturnType As Integer") As "Integer";
+    FakeFunction "FileAttr" ___("[#]FileNo As Integer, ReturnType As Integer") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11696,7 +11696,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "CVErr"___("EXPRESSION") As "id";
+    FakeFunction "CVErr" ___("EXPRESSION") As "id";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11708,7 +11708,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Command"___("") As "String";
+    FakeFunction "Command" ___("") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11720,7 +11720,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Files"___("");
+    FakeSub "Files" ___("");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11732,7 +11732,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Reset"___("");
+    FakeSub "Reset" ___("");
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11744,7 +11744,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "RGB"___("Red As Integer, Green As Integer, Blue As Integer") As "Integer";
+    FakeFunction "RGB" ___("Red As Integer, Green As Integer, Blue As Integer") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11756,7 +11756,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Get"___("[#]FileNo As Integer[, RecordNo As Integer], Variable As AnyType") As "Boolean";
+    FakeFunction "Get" ___("[#]FileNo As Integer[, RecordNo As Integer], Variable As AnyType") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11768,7 +11768,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Put"___("[#]FileNo As Integer[, RecordNo As Integer], Variable As AnyType") As "Boolean";
+    FakeFunction "Put" ___("[#]FileNo As Integer[, RecordNo As Integer], Variable As AnyType") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11780,7 +11780,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "GetAttr"___("Path As String") As "Integer";
+    FakeFunction "GetAttr" ___("Path As String") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11792,7 +11792,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Inkey"___("") As "String";
+    FakeFunction "Inkey" ___("") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11804,7 +11804,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeSub "Input"___("[;][STRINGEXPRESSION{;,}] VARIABLENAME[,VARIABLENAME?]") As "String";
+    FakeSub "Input" ___("[;][STRINGEXPRESSION{;,}] VARIABLENAME[,VARIABLENAME?]") As "String";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11816,7 +11816,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Fre"___("EXPRESSION") As "Integer";
+    FakeFunction "Fre" ___("EXPRESSION") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11828,7 +11828,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Array"___("ARGUMENTS") As "List";
+    FakeFunction "Array" ___("ARGUMENTS") As "List";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11840,7 +11840,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Function "SizeOf"___("Variable") As "Integer";
+    Function "SizeOf" ___("Variable") As "Integer";
 
       GROUP =   "";
       SEEALSO = "";      
@@ -11851,7 +11851,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Switch"___("EXPRESSION, RETURNEXPRESSION[, EXPRESSION, RETURNEXPRESSION, ? ]") As "id";
+    FakeFunction "Switch" ___("EXPRESSION, RETURNEXPRESSION[, EXPRESSION, RETURNEXPRESSION, ? ]") As "id";
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -11869,7 +11869,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    FakeFunction "Choose"___("Index, Select - 1 [, Select - 2, ? [, Select - n]]") As "id";
+    FakeFunction "Choose" ___("Index, Select - 1 [, Select - 2, ? [, Select - n]]") As "id";
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -11889,7 +11889,7 @@ void Parser::CreateListOfSubsFunctions()
 	
     
 
-    Function "PSQL"___("SQL As String") As "id";
+    Function "PSQL" ___("SQL As String") As "id";
 
       GROUP =   "SQL";
       SEEALSO = "PSQLConnect";      
@@ -11900,7 +11900,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "PSQLConnect"___("Name As String, User As String, Password As String [, Host As String [, ConnectOptions As String [, Port As Integer]]]") As "id";
+    Function "PSQLConnect" ___("Name As String, User As String, Password As String [, Host As String [, ConnectOptions As String [, Port As Integer]]]") As "id";
 
       GROUP =   "SQL";
       SEEALSO = "PSQL";      
@@ -11911,7 +11911,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeSub "Open"___("FILENAME For [Input|Output|Append|Binary|Random] Access [Read|Write|Read Write] As [#]FILENO [LEN = RECORDLEN]");
+    FakeSub "Open" ___("FILENAME For [Input|Output|Append|Binary|Random] Access [Read|Write|Read Write] As [#]FILENO [LEN = RECORDLEN]");
 
       GROUP =   "File";
       SEEALSO = "Close";      
@@ -11923,7 +11923,7 @@ void Parser::CreateListOfSubsFunctions()
   
     
 
-    FakeSub "Close"___("[ [#]FILENO ] {[ , [#]FILENO ]}");
+    FakeSub "Close" ___("[ [#]FILENO ] {[ , [#]FILENO ]}");
 
       GROUP =   "File";
       SEEALSO = "Open, Reset";      
@@ -11945,7 +11945,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeSub "Line"___("Input [#]FILENNO, VARIABLENAME");
+    FakeSub "Line" ___("Input [#]FILENNO, VARIABLENAME");
 
       GROUP =   "File";
       SEEALSO = "";      
@@ -11968,7 +11968,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "EOF"___("[#]FILENNO") As "Boolean";
+    FakeFunction "EOF" ___("[#]FILENNO") As "Boolean";
 
       GROUP =   "File";
       SEEALSO = "";      
@@ -11990,7 +11990,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FreeFile"___("[Range As Integer]") As "Integer";
+    Function "FreeFile" ___("[Range As Integer]") As "Integer";
 
       GROUP =   "File";
       SEEALSO = "";      
@@ -12014,7 +12014,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "PSQLDisconnect"___("");
+    Sub "PSQLDisconnect" ___("");
 
       GROUP =   "SQL";
       SEEALSO = "PSQL";      
@@ -12025,7 +12025,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "MySQL"___("SQL As String") As "id";
+    Function "MySQL" ___("SQL As String") As "id";
 
       GROUP =   "SQL";
       SEEALSO = "MySQLConnect";      
@@ -12036,7 +12036,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "MySQLConnect"___("Name As String, User As String, Password As String [, Host As String [, ConnectOptions As String [, Port As Integer]]]") As "id";
+    Function "MySQLConnect" ___("Name As String, User As String, Password As String [, Host As String [, ConnectOptions As String [, Port As Integer]]]") As "id";
 
       GROUP =   "SQL";
       SEEALSO = "MySQL";      
@@ -12047,7 +12047,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "MySQLDisconnect"___("");
+    Sub "MySQLDisconnect" ___("");
 
       GROUP =   "SQL";
       SEEALSO = "MySQL";      
@@ -12058,7 +12058,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "MD5"___("Argument As String") As "Integer";
+    Function "MD5" ___("Argument As String") As "Integer";
 
       GROUP =   "SQL";
       SEEALSO = "";      
@@ -12069,7 +12069,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "PSQLLastInsertId"___("Table As String") As "Integer";
+    Function "PSQLLastInsertId" ___("Table As String") As "Integer";
 
       GROUP =   "SQL";
       SEEALSO = "PSQL";      
@@ -12080,7 +12080,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "MySQLLastInsertId"___("") As "Integer";
+    Function "MySQLLastInsertId" ___("") As "Integer";
 
       GROUP =   "SQL";
       SEEALSO = "PSQL";      
@@ -12091,7 +12091,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SQLiteLastInsertId"___("") As "Integer";
+    Function "SQLiteLastInsertId" ___("") As "Integer";
 
       GROUP =   "SQL";
       SEEALSO = "PSQL";      
@@ -12102,7 +12102,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SQLite"___("SQL As String, FilePath As String = \"default.sdb\"") As "id";
+    Function "SQLite" ___("SQL As String, FilePath As String = \"default.sdb\"") As "id";
 
       GROUP =   "SQL";
       SEEALSO = "";      
@@ -12113,7 +12113,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ReconnectSignals"___("Argument As id");
+    Sub "ReconnectSignals" ___("Argument As id");
 
       GROUP =   "";
       SEEALSO = "MySQL";      
@@ -12133,7 +12133,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsDecimal"___("Argument As id") As "Boolean" Alias "IsCurrency";
+    Function "IsDecimal" ___("Argument As id") As "Boolean" Alias "IsCurrency";
 
       GROUP =   "Conversion";
       SEEALSO = "";
@@ -12151,7 +12151,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsDateTime"___("Argument As id") As "Boolean" Alias "IsDate";
+    Function "IsDateTime" ___("Argument As id") As "Boolean" Alias "IsDate";
 	
 
       GROUP =   "Conversion";
@@ -12163,7 +12163,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "BLOB"___("Argument As id") As "String";
+    FakeFunction "BLOB" ___("Argument As id") As "String";
 
       GROUP =   "SQL";
       SEEALSO = "";
@@ -12174,7 +12174,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "BOOLEAN"___("Argument As id") As "String";
+    FakeFunction "BOOLEAN" ___("Argument As id") As "String";
 
       GROUP =   "SQL";
       SEEALSO = "";
@@ -12185,7 +12185,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "INTEGER"___("Argument As id") As "String";
+    FakeFunction "INTEGER" ___("Argument As id") As "String";
 
       GROUP =   "SQL";
       SEEALSO = "";
@@ -12196,7 +12196,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "FLOAT"___("Argument As id") As "String";
+    FakeFunction "FLOAT" ___("Argument As id") As "String";
 
       GROUP =   "SQL";
       SEEALSO = "";
@@ -12207,7 +12207,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "TEXT"___("Argument As id") As "String";
+    FakeFunction "TEXT" ___("Argument As id") As "String";
 
       GROUP =   "SQL";
       SEEALSO = "";
@@ -12219,7 +12219,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ExecAfterMSec"___("MilliSeconds As Integer, SignalProcedureName As String, CallInObject As QObject = Me") Alias "Call";
+    Sub "ExecAfterMSec" ___("MilliSeconds As Integer, SignalProcedureName As String, CallInObject As QObject = Me") Alias "Call";
 
       SEEALSO = "Random";
       COMMENT = "The given signal is raised after the given milli seconds. If there is no such signal, nothing happens.";
@@ -12239,7 +12239,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Wait"___("MilliSeconds As Integer");
+    Sub "Wait" ___("MilliSeconds As Integer");
 
       GROUP =   "";
       SEEALSO = "Sleep";
@@ -12251,7 +12251,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "LoadUI"___("uiName As String") As "QWidget";
+    Function "LoadUI" ___("uiName As String") As "QWidget";
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -12262,7 +12262,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "OpenTextWindow"___("Text As String");
+    Sub "OpenTextWindow" ___("Text As String");
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -12273,7 +12273,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "OpenHtmlWindow"___("Text As String");
+    Sub "OpenHtmlWindow" ___("Text As String");
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -12284,7 +12284,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "OpenWebWindow"___("Text As String");
+    Sub "OpenWebWindow" ___("Text As String");
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -12295,7 +12295,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "SetFocusMDI"___("Widget As QWidget");
+    Sub "SetFocusMDI" ___("Widget As QWidget");
 
       GROUP =   "ui";
       SEEALSO = "";
@@ -12306,7 +12306,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ListMDI"___("") As "List";
+    Function "ListMDI" ___("") As "List";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12317,7 +12317,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FocusMDI"___("") As "QWidget";
+    Function "FocusMDI" ___("") As "QWidget";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12328,7 +12328,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "SetFocusWindow"___("Widget As QWidget");
+    Sub "SetFocusWindow" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12339,7 +12339,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "SetFocus"___("Widget As QWidget");
+    Sub "SetFocus" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12350,7 +12350,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FocusWindow"___("") As "QWidget";
+    Function "FocusWindow" ___("") As "QWidget";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12361,7 +12361,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Focus"___("") As "QWidget";
+    Function "Focus" ___("") As "QWidget";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12372,7 +12372,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Hide"___("Widget As QWidget");
+    Sub "Hide" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12383,7 +12383,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ShowScreen"___("");
+    Sub "ShowScreen" ___("");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12394,7 +12394,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "HideScreen"___("");
+    Sub "HideScreen" ___("");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12405,7 +12405,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "CLS"___("");
+    Sub "CLS" ___("");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12431,7 +12431,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "PrintScreen"___("PrintDialog As Boolean");
+    Sub "PrintScreen" ___("PrintDialog As Boolean");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12443,7 +12443,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeSub "Line"___("[(x1 As Integer, y1 As Integer)] - (x2 As Integer, y2 As Integer) [, Color As Integer] ]");
+    FakeSub "Line" ___("[(x1 As Integer, y1 As Integer)] - (x2 As Integer, y2 As Integer) [, Color As Integer] ]");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12464,7 +12464,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeSub "PSet"___("x As Integer, y As Integer [, Color As Integer] ]");
+    FakeSub "PSet" ___("x As Integer, y As Integer [, Color As Integer] ]");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12485,7 +12485,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "CSRLin"___("") As "Integer";
+    Function "CSRLin" ___("") As "Integer";
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12511,7 +12511,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Pos"___("") As "Integer";
+    Function "Pos" ___("") As "Integer";
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12534,7 +12534,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Color"___("[ForeColor As Integer], [BackColor As Integer]");
+    Sub "Color" ___("[ForeColor As Integer], [BackColor As Integer]");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12552,7 +12552,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Locate"___("[Y As Integer] [, X As Integer]");
+    Sub "Locate" ___("[Y As Integer] [, X As Integer]");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12578,7 +12578,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeSub "Print"___("Text As id");
+    FakeSub "Print" ___("Text As id");
 
       GROUP =  "Screen";
       SEEALSO = "";
@@ -12598,7 +12598,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Show"___("Widget As QWidget");
+    Sub "Show" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12609,7 +12609,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ShowNormal"___("Widget As QWidget");
+    Sub "ShowNormal" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12620,7 +12620,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ShowMaximized"___("Widget As QWidget");
+    Sub "ShowMaximized" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12631,7 +12631,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ShowMinimized"___("Widget As QWidget");
+    Sub "ShowMinimized" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12642,7 +12642,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "ShowOrHide"___("Widget As QWidget");
+    Sub "ShowOrHide" ___("Widget As QWidget");
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12653,7 +12653,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "CloseWidget"___("Widget As QWidget") As "Boolean";
+    Function "CloseWidget" ___("Widget As QWidget") As "Boolean";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12664,140 +12664,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "UnloadUI"___("uiWidget As QWidget") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-
-    
-
-    Function "OpenWindow"___("uiName As String") As "QWidget";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenDialog"___("uiName As String") As "Integer";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenToolWindow"___("uiName As String") As "QWidget";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenMDI"___("uiName As String") As "QWidget";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenSDI"___("uiName As String") As "QWidget";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenDockWidget"___("uiName As String") As "QWidget";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "CloseWindow"___("uiName As String") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "CloseDockWidget"___("uiName As String") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "CloseToolWindow"___("uiName As String") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "CloseMDI"___("Widget As QWidget") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "CloseAllMDI"___("") As "Boolean";
-
-      GROUP =  "ui";
-      SEEALSO = "";
-      COMMENT = "";
-      EXAMPLE = "";
-
-    End_Function
-
-    
-
-    Function "OpenEmail"___("SenderEmail As String, Subject As String, Body As String") As "Boolean";
+    Function "UnloadUI" ___("uiWidget As QWidget") As "Boolean";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -12809,7 +12676,140 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "UBound"___("theArray As id, DimensionToLookFor As Integer = -1") As "Integer";
+    Function "OpenWindow" ___("uiName As String") As "QWidget";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenDialog" ___("uiName As String") As "Integer";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenToolWindow" ___("uiName As String") As "QWidget";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenMDI" ___("uiName As String") As "QWidget";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenSDI" ___("uiName As String") As "QWidget";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenDockWidget" ___("uiName As String") As "QWidget";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "CloseWindow" ___("uiName As String") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "CloseDockWidget" ___("uiName As String") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "CloseToolWindow" ___("uiName As String") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "CloseMDI" ___("Widget As QWidget") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "CloseAllMDI" ___("") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+    
+
+    Function "OpenEmail" ___("SenderEmail As String, Subject As String, Body As String") As "Boolean";
+
+      GROUP =  "ui";
+      SEEALSO = "";
+      COMMENT = "";
+      EXAMPLE = "";
+
+    End_Function
+
+
+    
+
+    Function "UBound" ___("theArray As id, DimensionToLookFor As Integer = -1") As "Integer";
 
       GROUP =  "Array";
       SEEALSO = "";
@@ -12820,7 +12820,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "LBound"___("theArray As id, DimensionToLookFor As Integer = -1") As "Integer";
+    Function "LBound" ___("theArray As id, DimensionToLookFor As Integer = -1") As "Integer";
 
       GROUP =  "Array";
       SEEALSO = "";
@@ -12831,7 +12831,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "LeftJustified"___("Argument As String, Width As Integer, Fill As String = \" \", Truncate As Boolean = False") As "String";
+    Function "LeftJustified" ___("Argument As String, Width As Integer, Fill As String = \" \", Truncate As Boolean = False") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12842,7 +12842,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "RightJustified"___("Argument As String, Width As Integer, Fill As String = \" \", Truncate As Boolean = False") As "String";
+    Function "RightJustified" ___("Argument As String, Width As Integer, Fill As String = \" \", Truncate As Boolean = False") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12853,7 +12853,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ReadList"___("FilePathOrURL As String") As "List";
+    Function "ReadList" ___("FilePathOrURL As String") As "List";
 
       GROUP =  "List";
       SEEALSO = "";
@@ -12864,7 +12864,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "WriteList"___("Argument As List, FilePathOrURL As String") As "Boolean";
+    Function "WriteList" ___("Argument As List, FilePathOrURL As String") As "Boolean";
 
       GROUP =  "List";
       SEEALSO = "";
@@ -12876,7 +12876,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ReadRegistry"___("RegistryPath As String, RegistryKey As String") As "String";
+    Function "ReadRegistry" ___("RegistryPath As String, RegistryKey As String") As "String";
 
       GROUP =  "";
       SEEALSO = "";
@@ -12887,7 +12887,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ReadLines"___("FilePathOrURL As String [, Encoding As String]") As "List";
+    Function "ReadLines" ___("FilePathOrURL As String [, Encoding As String]") As "List";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12898,7 +12898,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "WriteLines"___("theLines As QStringList, FileName As String [, Encoding As String]") As "List";
+    Function "WriteLines" ___("theLines As QStringList, FileName As String [, Encoding As String]") As "List";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -12909,7 +12909,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ReadCString"___("FilePathOrURL As String") As "String";
+    Function "ReadCString" ___("FilePathOrURL As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12920,7 +12920,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "WriteCString"___("Argument As String, FilePathOrURL As String") As "Boolean";
+    Function "WriteCString" ___("Argument As String, FilePathOrURL As String") As "Boolean";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12931,7 +12931,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "LTrim"___("Argument As String") As "String";
+    Function "LTrim" ___("Argument As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12951,7 +12951,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "RTrim"___("Argument As String") As "String";
+    Function "RTrim" ___("Argument As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -12967,7 +12967,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Drives"___("") As "List";
+    Function "Drives" ___("") As "List";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -12978,7 +12978,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Decimal"___("Expression As id, Locale As Boolean = False") As "Decimal" Alias "CDec" Alias "CCur";
+    Function "Decimal" ___("Expression As id, Locale As Boolean = False") As "Decimal" Alias "CDec" Alias "CCur";
 
       GROUP =  "Conversion";
       SEEALSO = "";
@@ -12993,7 +12993,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DateTime"___("Expression As id, Locale As Boolean = False") As "DateTime" Alias "CDate";
+    Function "DateTime" ___("Expression As id, Locale As Boolean = False") As "DateTime" Alias "CDate";
 
       GROUP =  "Conversion";
       SEEALSO = "";
@@ -13004,7 +13004,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "InputBox"___("Prompt As String [, Title As String] [, Default As String]") As "String";
+    Function "InputBox" ___("Prompt As String [, Title As String] [, Default As String]") As "String";
 
       GROUP =  "ui";
       SEEALSO = "";
@@ -13026,7 +13026,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Quit"___("");
+    Sub "Quit" ___("");
 
       GROUP =  "";
       SEEALSO = "";
@@ -13037,7 +13037,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "Beep"___("");
+    Sub "Beep" ___("");
 
       GROUP =  "";
       SEEALSO = "";
@@ -13048,7 +13048,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Date"___("") As "String";
+    Function "Date" ___("") As "String";
 
       GROUP =  "DateTime";
       SEEALSO = "Time";
@@ -13059,7 +13059,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Time"___("") As "String";
+    Function "Time" ___("") As "String";
 
       GROUP =  "DateTime";
       SEEALSO = "Date";
@@ -13070,7 +13070,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Now"___("") As "DateTime";
+    Function "Now" ___("") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13084,7 +13084,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "TimeValue"___("String") As "DateTime";
+    Function "TimeValue" ___("String") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13099,7 +13099,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "TimeSerial"___("Hour As Integer, Minute As Integer, Second As Integer") As "DateTime";
+    Function "TimeSerial" ___("Hour As Integer, Minute As Integer, Second As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13114,7 +13114,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FormatDateTime"___("DateTime, Format As String = \"yyyy-MM-dd hh:mm:ss\"") As "String";
+    Function "FormatDateTime" ___("DateTime, Format As String = \"yyyy-MM-dd hh:mm:ss\"") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -13125,7 +13125,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DateValue"___("String") As "DateTime";
+    Function "DateValue" ___("String") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13141,7 +13141,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DateSerial"___("Year As Integer, Month As Integer, Day As Integer") As "DateTime";
+    Function "DateSerial" ___("Year As Integer, Month As Integer, Day As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13157,7 +13157,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DatePart"___("DateTime, Interval As String") As "Integer";
+    Function "DatePart" ___("DateTime, Interval As String") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "DateAdd DatePart DateSerial DateValue";
@@ -13188,7 +13188,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DateDiff"___("DateTime, DateTime, Interval As String") As "Integer";
+    Function "DateDiff" ___("DateTime, DateTime, Interval As String") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "DateAdd DatePart DateSerial DateValue";
@@ -13210,7 +13210,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DateAdd"___("DateTimeToChange As DateTime, Interval As String, Number As Integer") As "DateTime";
+    Function "DateAdd" ___("DateTimeToChange As DateTime, Interval As String, Number As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "DatePart DateSerial DateValue";
@@ -13244,7 +13244,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DiffSeconds"___("DateTime, DateTime") As "Integer";
+    Function "DiffSeconds" ___("DateTime, DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13255,7 +13255,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DiffDays"___("DateTime, DateTime") As "Integer";
+    Function "DiffDays" ___("DateTime, DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13266,7 +13266,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "WeekNumber"___("DateTime") As "Integer";
+    Function "WeekNumber" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13277,7 +13277,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "MonthName"___("DateTime, LongMonthName As Boolean = True") As "String";
+    Function "MonthName" ___("DateTime, LongMonthName As Boolean = True") As "String";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13294,7 +13294,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DaysInYear"___("DateTime") As "Integer";
+    Function "DaysInYear" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13305,7 +13305,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DaysInMonth"___("DateTime") As "Integer";
+    Function "DaysInMonth" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13316,7 +13316,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DayOfYear"___("DateTime") As "Integer";
+    Function "DayOfYear" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13327,7 +13327,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DayOfWeek"___("DateTime") As "Integer";
+    Function "DayOfWeek" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13338,7 +13338,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "DayName"___("DateTime, LongDayName As Boolean = True") As "String" Alias "WeekdayName";
+    Function "DayName" ___("DateTime, LongDayName As Boolean = True") As "String" Alias "WeekdayName";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13349,7 +13349,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Second"___("DateTime") As "Integer";
+    Function "Second" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13360,7 +13360,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Minute"___("DateTime") As "Integer";
+    Function "Minute" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13371,7 +13371,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Hour"___("DateTime") As "Integer";
+    Function "Hour" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13382,7 +13382,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Month"___("DateTime") As "Integer";
+    Function "Month" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13393,7 +13393,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Year"___("DateTime") As "Integer";
+    Function "Year" ___("DateTime") As "Integer";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13404,7 +13404,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Day"___("DateTime") As "Integer" Alias "Weekday";
+    Function "Day" ___("DateTime") As "Integer" Alias "Weekday";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13421,7 +13421,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsDateTimeValid"___("DateTime") As "Boolean";
+    Function "IsDateTimeValid" ___("DateTime") As "Boolean";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13432,7 +13432,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsDateValid"___("DateTime") As "Boolean";
+    Function "IsDateValid" ___("DateTime") As "Boolean";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13443,7 +13443,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsTimeValid"___("DateTime") As "Boolean";
+    Function "IsTimeValid" ___("DateTime") As "Boolean";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13454,7 +13454,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubYears"___("DateTime, Years As Integer") As "DateTime";
+    Function "SubYears" ___("DateTime, Years As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13465,7 +13465,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubSeconds"___("DateTime, Seconds As Integer") As "DateTime";
+    Function "SubSeconds" ___("DateTime, Seconds As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13476,7 +13476,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubMonths"___("DateTime, Months As Integer") As "DateTime";
+    Function "SubMonths" ___("DateTime, Months As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13487,7 +13487,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubMinutes"___("DateTime, Minutes As Integer") As "DateTime";
+    Function "SubMinutes" ___("DateTime, Minutes As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13498,7 +13498,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubHours"___("DateTime, Hours As Integer") As "DateTime";
+    Function "SubHours" ___("DateTime, Hours As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13509,7 +13509,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "SubDays"___("DateTime, Days As Integer") As "DateTime";
+    Function "SubDays" ___("DateTime, Days As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13520,7 +13520,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddYears"___("DateTime, Years As Integer") As "DateTime";
+    Function "AddYears" ___("DateTime, Years As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13531,7 +13531,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddSeconds"___("DateTime, Seconds As Integer") As "DateTime";
+    Function "AddSeconds" ___("DateTime, Seconds As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13542,7 +13542,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddMonths"___("DateTime, Months As Integer") As "DateTime";
+    Function "AddMonths" ___("DateTime, Months As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13553,7 +13553,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddMinutes"___("DateTime, Minutes As Integer") As "DateTime";
+    Function "AddMinutes" ___("DateTime, Minutes As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13564,7 +13564,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddHours"___("DateTime, Hours As Integer") As "DateTime";
+    Function "AddHours" ___("DateTime, Hours As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13575,7 +13575,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "AddDays"___("DateTime, Days As Integer") As "DateTime";
+    Function "AddDays" ___("DateTime, Days As Integer") As "DateTime";
 
       GROUP =  "DateTime";
       SEEALSO = "";
@@ -13586,7 +13586,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Sub "DoEvents"___("[MaxTime As Integer]");
+    Sub "DoEvents" ___("[MaxTime As Integer]");
 
       GROUP =   "";
       SEEALSO = "";
@@ -13597,7 +13597,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    FakeFunction "MsgBox"___("[Title As id,] Message As id [, Buttons As Integer] VB6 compatibility mode: Prompt As String [, VBButtons As Integer [, Title As String]]") As "Integer"; Alias "Alert";
+    FakeFunction "MsgBox" ___("[Title As id,] Message As id [, Buttons As Integer] VB6 compatibility mode: Prompt As String [, VBButtons As Integer [, Title As String]]") As "Integer"; Alias "Alert";
 
       GROUP =  "ui";
       SEEALSO = "InputBox";
@@ -13658,7 +13658,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Section"___("Argument As String, Separator As String, Start As Integer, End As Integer = -1, SectionFlags As Integer = SectionDefault") As "String";
+    Function "Section" ___("Argument As String, Separator As String, Start As Integer, End As Integer = -1, SectionFlags As Integer = SectionDefault") As "String";
 
       GROUP =  "String";
       SEEALSO = "";
@@ -13669,7 +13669,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "Launch"___("FilePath As String, Arguments As List, WorkingDirectory As String = \"\", Wait As Boolean = False") As "Integer";
+            Function "Launch" ___("FilePath As String, Arguments As List, WorkingDirectory As String = \"\", Wait As Boolean = False") As "Integer";
 
               GROUP =   "File";
               SEEALSO = "Run";
@@ -13680,7 +13680,7 @@ void Parser::CreateListOfSubsFunctions()
 
                     
 
-                    Function "Split"___("Argument As String, Separator As String, CaseSensitive As Boolean = True") As "List";
+                    Function "Split" ___("Argument As String, Separator As String, CaseSensitive As Boolean = True") As "List";
 
                       GROUP =  "String";
                       SEEALSO = "";
@@ -13692,7 +13692,7 @@ void Parser::CreateListOfSubsFunctions()
 
                             
 
-                            Function "Run"___("FilePath As String, Arguments As List") As "String";
+                            Function "Run" ___("FilePath As String, Arguments As List") As "String";
 
                               GROUP =   "File";
                               SEEALSO = "Launch";
@@ -13704,7 +13704,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                     
 
-                                    Function "ReadString"___("FilePathOrURL As String [, Encoding As String]") As "String";
+                                    Function "ReadString" ___("FilePathOrURL As String [, Encoding As String]") As "String";
 
                                       GROUP =  "String";
                                       SEEALSO = "";
@@ -13715,7 +13715,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                     
 
-                                    Function "WriteString"___("Argument As String, FilePathOrURL As String [, Encoding As String]") As "Boolean";
+                                    Function "WriteString" ___("Argument As String, FilePathOrURL As String [, Encoding As String]") As "Boolean";
 
                                       GROUP =  "String";
                                       SEEALSO = "";
@@ -13726,7 +13726,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                             
 
-                                            Function "Join"___("Argument As List, Separator As String") As "String";
+                                            Function "Join" ___("Argument As List, Separator As String") As "String";
 
                                               GROUP =  "String";
                                               SEEALSO = "";
@@ -13738,7 +13738,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                                     
 
-                                                    FakeSub "stdout"___("Argument As id [, ...]") Alias "Log";
+                                                    FakeSub "stdout" ___("Argument As id [, ...]") Alias "Log";
 
                                                       GROUP =   "";
                                                       SEEALSO = "MsgBox";
@@ -13749,7 +13749,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                                     
 
-                                                    FakeSub "stderr"___("Argument As id [, ...]");
+                                                    FakeSub "stderr" ___("Argument As id [, ...]");
 
                                                       GROUP =   "";
                                                       SEEALSO = "MsgBox";
@@ -13761,7 +13761,7 @@ void Parser::CreateListOfSubsFunctions()
 
                                                             
 
-                                                            Function "IsNull"___("Expression As id") As "Boolean";
+                                                            Function "IsNull" ___("Expression As id") As "Boolean";
 
                                                               GROUP =   "id";
                                                               SEEALSO = "";
@@ -13779,7 +13779,7 @@ void Parser::CreateListOfSubsFunctions()
                                                             End_Function
     
 
-    Function "Left"___("Argument As String, Position As Integer") As "String"; //Alias "test" Alias "test2";
+    Function "Left" ___("Argument As String, Position As Integer") As "String"; //Alias "test" Alias "test2";
 
       GROUP   = "String";
       SEEALSO = "Right, Mid";
@@ -13795,7 +13795,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsEqualObject"___("Argument As id, 2ndArgument As id") As "Boolean";
+    Function "IsEqualObject" ___("Argument As id, 2ndArgument As id") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "IsEqualClass, IsEqualValue";
@@ -13806,7 +13806,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsEqualClass"___("Argument As id, 2ndArgument As id") As "Boolean";
+    Function "IsEqualClass" ___("Argument As id, 2ndArgument As id") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "IsEqualObject, IsEqualValue";
@@ -13817,7 +13817,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsEqualValue"___("Argument As id, 2ndArgument As id") As "Boolean";
+    Function "IsEqualValue" ___("Argument As id, 2ndArgument As id") As "Boolean";
 
       GROUP =   "";
       SEEALSO = "IsEqualClass, IsEqualObject";
@@ -13828,7 +13828,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ClassName"___("Expression As id") As "String";
+    Function "ClassName" ___("Expression As id") As "String";
 
       GROUP =   "id";
       SEEALSO = "";
@@ -13843,7 +13843,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FileName"___("Argument As String") As "String";
+    Function "FileName" ___("Argument As String") As "String";
 
       GROUP =   "String";
       SEEALSO = "";      
@@ -13854,7 +13854,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "FileExtension"___("Argument As String") As "String";
+            Function "FileExtension" ___("Argument As String") As "String";
 
               GROUP =   "String";
               SEEALSO = "";
@@ -13865,7 +13865,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "FilePath"___("Argument As String") As "String";
+            Function "FilePath" ___("Argument As String") As "String";
 
               GROUP =   "String";
               SEEALSO = "";
@@ -13878,7 +13878,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
 
-    Function "PlaySound"___("FileName As String") As "String";
+    Function "PlaySound" ___("FileName As String") As "String";
 
       GROUP =   "";
       SEEALSO = "PlayMovie";      
@@ -13889,7 +13889,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "PlayMovie"___("FileName As String") As "String";
+    Function "PlayMovie" ___("FileName As String") As "String";
 
       GROUP =   "";
       SEEALSO = "PlaySound";      
@@ -13900,7 +13900,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "FileBaseName"___("Argument As String") As "String";
+    Function "FileBaseName" ___("Argument As String") As "String";
 
       GROUP =   "String";
       SEEALSO = "";      
@@ -13912,7 +13912,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsDir"___("Argument As String") As "Boolean";
+    Function "IsDir" ___("Argument As String") As "Boolean";
 
       GROUP =   "File";
       SEEALSO = "IsFile";      
@@ -13923,7 +13923,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsList"___("Argument As id") As "Boolean";
+    Function "IsList" ___("Argument As id") As "Boolean";
 
       GROUP =   "Conversion";
       SEEALSO = "";      
@@ -13941,7 +13941,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsBoolean"___("Argument As id") As "Boolean";
+    Function "IsBoolean" ___("Argument As id") As "Boolean";
 
       GROUP =   "Conversion";
       SEEALSO = "";      
@@ -13958,7 +13958,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsInteger"___("Argument As id") As "Boolean" Alias "IsByte" Alias "IsShort" Alias "IsInt8" Alias "IsInt16" Alias "IsInt32" Alias "IsInt64";
+    Function "IsInteger" ___("Argument As id") As "Boolean" Alias "IsByte" Alias "IsShort" Alias "IsInt8" Alias "IsInt16" Alias "IsInt32" Alias "IsInt64";
 
       GROUP =   "Conversion";
       SEEALSO = "";      
@@ -13981,7 +13981,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "IsFloat"___("Argument As id") As "Boolean" Alias "IsSingle" Alias "IsDouble";
+    Function "IsFloat" ___("Argument As id") As "Boolean" Alias "IsSingle" Alias "IsDouble";
 
       GROUP =   "Conversion";
       SEEALSO = "";      
@@ -14000,7 +14000,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "IsString"___("Argument As id") As "Boolean";
+    Function "IsString" ___("Argument As id") As "Boolean";
 
       GROUP =   "Conversion";
       SEEALSO = "";      
@@ -14020,7 +14020,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
       
-    Sub "Randomize"___("");
+    Sub "Randomize" ___("");
 
       GROUP =   "Math";
       SEEALSO = "Random";      
@@ -14033,7 +14033,7 @@ void Parser::CreateListOfSubsFunctions()
 
             // ----------------------------------------------------------------------------------------------------------------------------
 
-            Function "Shell"___("Command As String") As "Integer";
+            Function "Shell" ___("Command As String") As "Integer";
 
               GROUP =   "File";
               SEEALSO = "Run";
@@ -14044,7 +14044,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "OpenURL"___("PathOrURL As String") As "Boolean";
+            Function "OpenURL" ___("PathOrURL As String") As "Boolean";
 
               GROUP =  "ui";
               SEEALSO = "";
@@ -14058,7 +14058,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Random"___("[Argument As Float]") As "Float" Alias "RND";
+    Function "Random" ___("[Argument As Float]") As "Float" Alias "RND";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14077,7 +14077,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "BitClr"___("Value As Integer, Position As Integer") As "Integer";
+    Function "BitClr" ___("Value As Integer, Position As Integer") As "Integer";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14088,7 +14088,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "BitSet"___("Value As Integer, Position As Integer") As "Integer";
+    Function "BitSet" ___("Value As Integer, Position As Integer") As "Integer";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14099,7 +14099,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "BitTst"___("Value As Integer, Position As Integer") As "Integer";
+    Function "BitTst" ___("Value As Integer, Position As Integer") As "Integer";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14110,7 +14110,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Abs"___("Argument As Float") As "Float";
+    Function "Abs" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Atn";      
@@ -14121,7 +14121,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Atn"___("Argument As Float") As "Float";
+    Function "Atn" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Atn";      
@@ -14132,7 +14132,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Cos"___("Argument As Float") As "Float";
+    Function "Cos" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14151,7 +14151,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Sin"___("Argument As Float") As "Float";
+    Function "Sin" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14170,7 +14170,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Exp"___("Argument As Float") As "Float";
+    Function "Exp" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Log10";      
@@ -14191,7 +14191,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
         
-    Function "Ln"___("Argument As Float") As "Float";
+    Function "Ln" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Log10";      
@@ -14208,7 +14208,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Log10"___("Argument As Float") As "Float";
+    Function "Log10" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Ln";      
@@ -14219,7 +14219,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Fix"___("Argument As Float") As "Integer";
+    Function "Fix" ___("Argument As Float") As "Integer";
 
       GROUP =  "Math";
       SEEALSO = "Int, CInt, CLng";      
@@ -14234,7 +14234,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Int"___("Argument As Float") As "Float";
+    Function "Int" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Fix CInt";      
@@ -14255,7 +14255,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Sqr"___("Argument As Float") As "Float";
+    Function "Sqr" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Fix CInt";      
@@ -14270,7 +14270,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Tan"___("Argument As Float") As "Float";
+    Function "Tan" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14281,7 +14281,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Min"___("Value1 As Float, Value2 As Float") As "Float";
+    Function "Min" ___("Value1 As Float, Value2 As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Max";      
@@ -14292,7 +14292,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Max"___("Value1 As Float, Value2 As Float") As "Float";
+    Function "Max" ___("Value1 As Float, Value2 As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "Min";      
@@ -14307,7 +14307,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Fact"___("Argument As Float") As "Float";
+    Function "Fact" ___("Argument As Float") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14332,7 +14332,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Round"___("Argument As Float, Precision As Integer") As "Float";
+    Function "Round" ___("Argument As Float, Precision As Integer") As "Float";
 
       GROUP =  "Math";
       SEEALSO = "";      
@@ -14356,7 +14356,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Nz"___("Argument As id, ReturnValue As id = \"\"") As "String";
+    Function "Nz" ___("Argument As id, ReturnValue As id = \"\"") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14367,7 +14367,7 @@ void Parser::CreateListOfSubsFunctions()
 "  Return Null  \n" 
 "End Function\n"
 "\n"
-"MsgBox(\"'_\" + Nz(test()) + \"_'\" ' --> \"\")\n"
+"MsgBox(\"'_\" + Nz(test()) + \" _'\" ' --> \"\")\n"
 ""
 "";
     End_Function
@@ -14375,7 +14375,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "Space"___("Count As Integer, FillWith As String = \" \"") As "String";
+            Function "Space" ___("Count As Integer, FillWith As String = \" \"") As "String";
 
               GROUP =  "String";
               SEEALSO = "";
@@ -14399,7 +14399,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
     
-    Function "Truncate"___("Argument As String, Position As Integer") As "String";
+    Function "Truncate" ___("Argument As String, Position As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14410,7 +14410,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "IsEmpty"___("Argument As String") As "Boolean";
+            Function "IsEmpty" ___("Argument As String") As "Boolean";
 
               GROUP =  "String";
               SEEALSO = "";
@@ -14421,7 +14421,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "ReadArray"___("FilePathOrURL As String") As "Array";
+    Function "ReadArray" ___("FilePathOrURL As String") As "Array";
 
       GROUP =  "Array";
       SEEALSO = "";
@@ -14432,7 +14432,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "WriteArray"___("Argument As Array, FilePathOrURL As String") As "Boolean";
+    Function "WriteArray" ___("Argument As Array, FilePathOrURL As String") As "Boolean";
 
       GROUP =  "Array";
       SEEALSO = "";
@@ -14443,7 +14443,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "ReadDictionary"___("FilePathOrURL As String") As "Dictionary";
+    Function "ReadDictionary" ___("FilePathOrURL As String") As "Dictionary";
 
       GROUP =  "Dictionary";
       SEEALSO = "";      
@@ -14454,7 +14454,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "WriteDictionary"___("Argument As Dictionary, FilePathOrURL As String") As "Boolean";
+    Function "WriteDictionary" ___("Argument As Dictionary, FilePathOrURL As String") As "Boolean";
 
       GROUP =  "Dictionary";
       SEEALSO = "";      
@@ -14466,7 +14466,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Len"___("Argument As String") As "Integer" Alias "Length";
+    Function "Len" ___("Argument As String") As "Integer" Alias "Length";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14477,7 +14477,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Reversed"___("Argument As String") As "String";
+    Function "Reversed" ___("Argument As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14488,7 +14488,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "At"___("Argument As String, Index As Integer") As "String";
+    Function "At" ___("Argument As String, Index As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14499,7 +14499,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Unicode"___("Argument As String [, Index As Integer]") As "Integer" Alias "Asc";
+    Function "Unicode" ___("Argument As String [, Index As Integer]") As "Integer" Alias "Asc";
 
       GROUP =  "String";
       SEEALSO = "Chr";      
@@ -14512,7 +14512,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
 
-    FakeFunction "File"___("FilePath As String") As "Boolean";
+    FakeFunction "File" ___("FilePath As String") As "Boolean";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14523,7 +14523,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Dir"___("FilePath As String [, Create As Boolean]") As "Boolean";
+    Function "Dir" ___("FilePath As String [, Create As Boolean]") As "Boolean";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14534,7 +14534,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Copy"___("SourceFilePath As String, DestinationFilePath As String") As "Boolean";
+    Function "Copy" ___("SourceFilePath As String, DestinationFilePath As String") As "Boolean";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14545,7 +14545,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "CopyDir"___("SourceFilePath As String, DestinationFilePath As String") As "Boolean";
+    Function "CopyDir" ___("SourceFilePath As String, DestinationFilePath As String") As "Boolean";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14556,7 +14556,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Move"___("SourceFilePath As String, DestinationFilePath As String") As "Boolean" Alias "Rename" Alias "Name";
+    Function "Move" ___("SourceFilePath As String, DestinationFilePath As String") As "Boolean" Alias "Rename" Alias "Name";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14567,7 +14567,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
 
-    Function "Delete"___("FilePath As String") As "Boolean" Alias "Kill";
+    Function "Delete" ___("FilePath As String") As "Boolean" Alias "Kill";
 
       GROUP =  "File";
       SEEALSO = "";
@@ -14578,7 +14578,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Float"___("Expression As id, Locale As Boolean = False") As "Float" Alias "CDbl" Alias "CSng";
+    Function "Float" ___("Expression As id, Locale As Boolean = False") As "Float" Alias "CDbl" Alias "CSng";
 
       GROUP =  "Conversion";
       SEEALSO = "CSng, CInt, CLng";      
@@ -14589,7 +14589,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Boolean"___("Expression As id, Locale As Boolean = False") As "Boolean" Alias "CBool";
+    Function "Boolean" ___("Expression As id, Locale As Boolean = False") As "Boolean" Alias "CBool";
 
       GROUP =  "Conversion";
       SEEALSO = "";      
@@ -14600,7 +14600,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "String"___("Expression As id, Locale As Boolean = False") As "String" Alias "Str";
+    Function "String" ___("Expression As id, Locale As Boolean = False") As "String" Alias "Str";
 
       GROUP =  "Conversion";
       SEEALSO = "";      
@@ -14615,7 +14615,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "QStringList"___("Expression As id, Locale As Boolean = False") As "QStringList";
+    Function "QStringList" ___("Expression As id, Locale As Boolean = False") As "QStringList";
 
       GROUP =  "Conversion";
       SEEALSO = "";      
@@ -14627,7 +14627,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Integer"___("Expression As id, Locale As Boolean = False") As "Integer" Alias "CByte" Alias "CInt" Alias "CLng" Alias "CShort";
+    Function "Integer" ___("Expression As id, Locale As Boolean = False") As "Integer" Alias "CByte" Alias "CInt" Alias "CLng" Alias "CShort";
 
       GROUP =  "Conversion";
       SEEALSO = "";      
@@ -14638,7 +14638,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    FakeFunction "Mid"___("Argument As String, Index As Integer, Length As Integer = -1") As "String";
+    FakeFunction "Mid" ___("Argument As String, Index As Integer, Length As Integer = -1") As "String";
 
       GROUP =  "String";
       SEEALSO = "Trim , InStr";      
@@ -14658,7 +14658,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "StrReverse"___("Argument As String") As "String";
+    Function "StrReverse" ___("Argument As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14675,7 +14675,7 @@ void Parser::CreateListOfSubsFunctions()
 // nur tempror?r q7b only
 
 
-    Function "Fill"___("Argument As String, Character As String, Length As Integer = -1") As "String";
+    Function "Fill" ___("Argument As String, Character As String, Length As Integer = -1") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14686,7 +14686,7 @@ void Parser::CreateListOfSubsFunctions()
     
     
     
-    Function "Insert"___("Argument As String, Position As Integer, StringToInsert As String") As "String";
+    Function "Insert" ___("Argument As String, Position As Integer, StringToInsert As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14697,7 +14697,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
 
-            Function "Simplified"___("Argument As String") As "String";
+            Function "Simplified" ___("Argument As String") As "String";
 
               GROUP =  "String";
               SEEALSO = "";
@@ -14707,7 +14707,7 @@ void Parser::CreateListOfSubsFunctions()
             End_Function
             
     
-    Function "Right"___("Argument As String, Position As Integer") As "String";
+    Function "Right" ___("Argument As String, Position As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14726,7 +14726,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Trim"___("Argument As String") As "String" Alias "Trimmed";
+    Function "Trim" ___("Argument As String") As "String" Alias "Trimmed";
 
       GROUP =  "String";
       SEEALSO = "LTrim , RTrim";      
@@ -14747,7 +14747,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "InStr"___("Argument As String, Search As String, Index As Integer = 0, CaseSensitive As Boolean = True") As "Integer" Alias "IndexOf";
+    Function "InStr" ___("Argument As String, Search As String, Index As Integer = 0, CaseSensitive As Boolean = True") As "Integer" Alias "IndexOf";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14765,7 +14765,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "InStrRev"___("Argument As String, Search As String, Index As Integer = -1, CaseSensitive As Boolean = True") As "Integer" Alias "LastIndexOf";
+    Function "InStrRev" ___("Argument As String, Search As String, Index As Integer = -1, CaseSensitive As Boolean = True") As "Integer" Alias "LastIndexOf";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14785,7 +14785,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Contains"___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
+    Function "Contains" ___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14796,7 +14796,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Append"___("Argument As String, Append As String") As "String";
+    Function "Append" ___("Argument As String, Append As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14807,7 +14807,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Prepend"___("Argument As String, Prepend As String") As "String";
+    Function "Prepend" ___("Argument As String, Prepend As String") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14818,7 +14818,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "LCase"___("Argument As String") As "String" Alias "Lower";
+    Function "LCase" ___("Argument As String") As "String" Alias "Lower";
 
       GROUP =  "String";
       SEEALSO = "UCase";      
@@ -14838,7 +14838,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "UCase"___("Argument As String") As "String" Alias "Upper";
+    Function "UCase" ___("Argument As String") As "String" Alias "Upper";
 
       GROUP =  "String";
       SEEALSO = "UCase";      
@@ -14858,7 +14858,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Compare"___("Argument As String, Compare As String, CaseSensitive As Boolean = True") As "Integer";
+    Function "Compare" ___("Argument As String, Compare As String, CaseSensitive As Boolean = True") As "Integer";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14870,7 +14870,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Replace"___("Argument As String, Search As String, Replace As String, CaseSensitive As Boolean = True") As "String";
+    Function "Replace" ___("Argument As String, Search As String, Replace As String, CaseSensitive As Boolean = True") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14891,7 +14891,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
     
-    Function "Remove"___("Argument As String, Position As Integer, Length As Integer") As "String";
+    Function "Remove" ___("Argument As String, Position As Integer, Length As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14902,7 +14902,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
     
-    Function "Count"___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Integer";
+    Function "Count" ___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Integer";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14913,7 +14913,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "StartsWith"___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
+    Function "StartsWith" ___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14924,7 +14924,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "EndsWith"___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
+    Function "EndsWith" ___("Argument As String, Search As String, CaseSensitive As Boolean = True") As "Boolean";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14938,7 +14938,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
     
-    Function "Bin"___("Argument As Integer") As "String";
+    Function "Bin" ___("Argument As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14953,7 +14953,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
     
-    FakeFunction "Concat"___("Argument As id [, ...]") As "String";
+    FakeFunction "Concat" ___("Argument As id [, ...]") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -14964,7 +14964,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Character"___("Argument As Integer") As "String" Alias "Chr";
+    Function "Character" ___("Argument As Integer") As "String" Alias "Chr";
 
       GROUP =  "String";
       SEEALSO = "Asc";      
@@ -14978,7 +14978,7 @@ void Parser::CreateListOfSubsFunctions()
 
     // ----------------------------------------------------------------------------------------------------------------------------
     
-    Function "Value"___("Argument As String") As "Integer" Alias "Val";
+    Function "Value" ___("Argument As String") As "Integer" Alias "Val";
 
       GROUP =  "String";
       SEEALSO = "Str";      
@@ -14994,7 +14994,7 @@ void Parser::CreateListOfSubsFunctions()
 
             
     
-    Function "Hex"___("Argument As Integer") As "String";
+    Function "Hex" ___("Argument As Integer") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -15030,7 +15030,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "Format"___("Argument As id, Locale As Boolean = False") As "String";
+    Function "Format" ___("Argument As id, Locale As Boolean = False") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -15041,7 +15041,7 @@ void Parser::CreateListOfSubsFunctions()
 
     
     
-    Function "FormatFloat"___("Argument As Float, Locale As Boolean = False, DecimalPlaceLength As Integer = 2") As "String";
+    Function "FormatFloat" ___("Argument As Float, Locale As Boolean = False, DecimalPlaceLength As Integer = 2") As "String";
 
       GROUP =  "String";
       SEEALSO = "";      
@@ -15606,7 +15606,7 @@ screenline:
             if (!parseExpressionid(Expression3)){ error(""); return false; }
             if (!parseTerm(")")){ error(""); _END_ }
                         
-             ReturnExpression.Statements << Compiler::pushBuiltinSubFunction("__MSGBOX", ReturnExpression.bReturn, Expression.Statements, Expression2.Statements, Expression3.Statements, Compiler::pushBoolean(Me.bVB6MsgBox));
+             ReturnExpression.Statements << Compiler::pushBuiltinSubFunction(" __MSGBOX", ReturnExpression.bReturn, Expression.Statements, Expression2.Statements, Expression3.Statements, Compiler::pushBoolean(Me.bVB6MsgBox));
              if (!ReturnExpression.bReturn) ReturnExpression.Statements << Compiler::push(";");
 
           } else {
@@ -15622,7 +15622,7 @@ screenline:
           
           
 
-          ReturnExpression.Statements << Compiler::pushBuiltinSubFunction("_MSGBOX", ReturnExpression.bReturn, Expression.Statements);
+          ReturnExpression.Statements << Compiler::pushBuiltinSubFunction(" _MSGBOX", ReturnExpression.bReturn, Expression.Statements);
           if (!ReturnExpression.bReturn) ReturnExpression.Statements << Compiler::push(";");
 
          
@@ -15903,7 +15903,7 @@ void Parser::CreateListOfInitFunctions()
 #undef FakeSub
 #undef Function
 #undef Sub
-#undef ___
+#undef  ___
 #undef As
 #undef Alias
 
@@ -16013,7 +16013,7 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
   QString s;
   if (CONFIG["VM"] == "true" && AllStatements->size() > 0){
     bVM = true;
-    //s += "_bytecodes Q7BV;\n";
+    //s += " _bytecodes Q7BV;\n";
   }
 
 
@@ -16122,7 +16122,7 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
         if (bVM){
           s += " Q7BV << \"Object\"; Q7BV << \"" + Object + "\";";
         } else {
-          s += PREFIX + Object + "_Object()";
+          s += PREFIX + Object + " _Object()";
         }        
 
       } else {
@@ -16164,7 +16164,7 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
         if (bVM){
           s += sStatements;
         } else {
-          s += PREFIX + Object + "_Class(" + sStatements + ")";
+          s += PREFIX + Object + " _Class(" + sStatements + ")";
         }        
 
       } else {
@@ -16460,7 +16460,7 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
 
           QString s3;
           if (!Parser::existsUDFType(sType)){
-            s3 = PREFIX + "_" + sType.toUpper();
+            s3 = PREFIX + " _" + sType.toUpper();
           }
 
           s += PREFIX + QString("ASSIGNMENT(%1%2, %3%4)").arg(s1).arg(sIdentifier).arg(s2).arg(s3 + "(" + sExpression + ")");
@@ -16626,7 +16626,7 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
         if (bVM){
           labels_VM[sIdentifier] = s.length();
         } else {
-          s += QString("_%1:;\n").arg(sIdentifier); 
+          s += QString(" _%1:;\n").arg(sIdentifier);
         }
         
       } else {
@@ -16816,11 +16816,11 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
             s += decode(Expression, false, s2ndOutput);     
             n++;
           }          
-          s += " Q7BV << \"BuiltinClassPropertyOrProcedure\"; Q7BV << \"" + PREFIX + sClass.toUpper() + "_" + sProperty.toUpper() + "\"; Q7BV << " + (bReturn ? "true" : "false") + "; Q7BV << " + QString("%1").arg(n) + "; "; 
+          s += " Q7BV << \"BuiltinClassPropertyOrProcedure\"; Q7BV << \"" + PREFIX + sClass.toUpper() + " _" + sProperty.toUpper() + "\"; Q7BV << " + (bReturn ? "true" : "false") + "; Q7BV << " + QString("%1").arg(n) + "; ";
 
         } else {
 
-          s += PREFIX + sClass.toUpper() + "_" + sProperty.toUpper() + "(";
+          s += PREFIX + sClass.toUpper() + " _" + sProperty.toUpper() + "(";
 
           s += sObject;
 
@@ -16868,11 +16868,11 @@ QString Compiler::decode(_statements & _AllStatements, bool bFirst, QString *s2n
             s += decode(Expression, false, s2ndOutput);     
             n++;
           }
-          s += " Q7BV << \"BuiltinClassPropertyOrProcedure\"; Q7BV << \"" + PREFIX + sClass.toUpper() + "_" + sProcedure.toUpper() + "\"; Q7BV << " + (bReturn ? "true" : "false") + "; Q7BV << " + QString("%1").arg(n) + "; "; 
+          s += " Q7BV << \"BuiltinClassPropertyOrProcedure\"; Q7BV << \"" + PREFIX + sClass.toUpper() + " _" + sProcedure.toUpper() + "\"; Q7BV << " + (bReturn ? "true" : "false") + "; Q7BV << " + QString("%1").arg(n) + "; ";
 
         } else {
 
-          s += PREFIX + sClass.toUpper() + "_" + sProcedure.toUpper();
+          s += PREFIX + sClass.toUpper() + " _" + sProcedure.toUpper();
           s += "(";
           
           s += sObject;
@@ -17046,7 +17046,7 @@ QString sType;
               s += DEFAULTNAME + QString(" %1").arg(sIdentifier);
 
               if (!sExpression.isEmpty()){
-                s += "; " + PREFIX + "ASSIGNMENT(&" + sIdentifier + ", &(" + PREFIX + "_" + sType.toUpper() + "(" + sExpression + ")))";
+                s += "; " + PREFIX + "ASSIGNMENT(&" + sIdentifier + ", &(" + PREFIX + " _" + sType.toUpper() + "(" + sExpression + ")))";
               }
             }
 
@@ -17618,7 +17618,7 @@ QString Compiler::decode_function(_statements & AllStatements, QString sSubFunct
   if (CONFIG["VM"] == "true" && AllStatements.size() > 0){
     //s += "QList<Q7B> global_vars;\n";
 
-    s += "_bytecodes Q7BV;\n";
+    s += " _bytecodes Q7BV;\n";
 
     s += decode(AllStatements);
 
@@ -17670,8 +17670,8 @@ bool Compiler::compile(QString sFileName)
 
   sClassInit += "  setObjectName(\"" + sClass + "\");\n"; 
 
-  h += "#ifndef " + PREFIX + sClass.toLower() + "_h\n";
-  h += "#define " + PREFIX + sClass.toLower() + "_h\n\n";
+  h += "#ifndef " + PREFIX + sClass.toLower() + " _h\n";
+  h += "#define " + PREFIX + sClass.toLower() + " _h\n\n";
 
   h += "#include \"Q7BRuntime.h\"\n\n";
 
@@ -17703,7 +17703,7 @@ bool Compiler::compile(QString sFileName)
     h += "}\n\n";
   }
 
-  h += "\nclass " + sClass + ";\nextern " + sClass + " *Q7B_" + sClass + "_Class(Q7B o);\nextern Q7B Q7B_" + sClass + "_Object();\nextern " + sClass + " *q7b_" + sClass + "_Object;\nextern Q7B q7b_" + sClass + "_Object_Q7B;\nextern bool q7b_" + sClass + "_Object_Finalized;\nextern bool q7b_" + sClass + "_Object_Init;\n\n";
+  h += "\nclass " + sClass + ";\nextern " + sClass + " *Q7B_" + sClass + " _Class(Q7B o);\nextern Q7B Q7B_" + sClass + " _Object();\nextern " + sClass + " *q7b_" + sClass + " _Object;\nextern Q7B q7b_" + sClass + " _Object_Q7B;\nextern bool q7b_" + sClass + " _Object_Finalized;\nextern bool q7b_" + sClass + " _Object_Init;\n\n";
 
   if (sSuperClass == "FormClass"){
     h += "#define FormClass Q7B_FormClass\n";
@@ -17815,9 +17815,9 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
         sUDFClassCast_h += "extern Q7B Q7B__" + sClass2.toUpper() + "(Q7B o);\n";
 
         if (Parser::Me.DeclareClasses.contains(sClass2)){
-          sUDFClassCast_h += "extern " + sClass2 + " *Q7B_" + sClass2 + "_Class(Q7B o);\n";
-  //        sUDFClassCast_c += sClass2 + " *Q7B_" + sClass2 + "_Class(Q7B o){ QMessageBox::information(0, \"aa\", \"aa\"); ((" + sClass2 + " *) (o->ref))->setRange(0, 10);QMessageBox::information(0, \"bb\", \"bb\"); return (" + sClass2 + " *) (o->ref); }\n";
-          sUDFClassCast_c += sClass2 + " *Q7B_" + sClass2 + "_Class(Q7B o){ return (" + sClass2 + " *) (o->ref); }\n";
+          sUDFClassCast_h += "extern " + sClass2 + " *Q7B_" + sClass2 + " _Class(Q7B o);\n";
+  //        sUDFClassCast_c += sClass2 + " *Q7B_" + sClass2 + " _Class(Q7B o){ QMessageBox::information(0, \"aa\", \"aa\"); ((" + sClass2 + " *) (o->ref))->setRange(0, 10);QMessageBox::information(0, \"bb\", \"bb\"); return (" + sClass2 + " *) (o->ref); }\n";
+          sUDFClassCast_c += sClass2 + " *Q7B_" + sClass2 + " _Class(Q7B o){ return (" + sClass2 + " *) (o->ref); }\n";
            
         }
       }
@@ -17878,7 +17878,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
   for (int q = 0; q < ll.size(); q++){
     QString sClass2 = ll.at(q);
     if (Me.sReferences[sClass2].contains(s)){
-      c += "\nextern " + sClass2 + " *Q7B_" + sClass2 + "_Class(Q7B o);\nextern Q7B Q7B_" + sClass2 + "_Object();\n";
+      c += "\nextern " + sClass2 + " *Q7B_" + sClass2 + " _Class(Q7B o);\nextern Q7B Q7B_" + sClass2 + " _Object();\n";
     }
 
   }
@@ -17913,33 +17913,33 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
   }
 
   QString sSharedSingleInit;
-  sSharedSingleInit += "  if (q7b_" + sClass + "_Object_Init){ q7b_" + sClass + "_Object_Init = false; ";
+  sSharedSingleInit += "  if (q7b_" + sClass + " _Object_Init){ q7b_" + sClass + " _Object_Init = false; ";
   
-  sSharedSingleInit += "q7b_" + sClass + "_Object_Q7B = q7b_this = Q7B(new Q7B_id(typeid(" + sClass + ").name(), this)); } else q7b_this = Q7B(new Q7B_id(typeid(" + sClass + ").name(), this)); \n";
+  sSharedSingleInit += "q7b_" + sClass + " _Object_Q7B = q7b_this = Q7B(new Q7B_id(typeid(" + sClass + ").name(), this)); } else q7b_this = Q7B(new Q7B_id(typeid(" + sClass + ").name(), this)); \n";
  
 
   
-  c += sClass + " *Q7B_" + sClass + "_Class(Q7B o){ return " + sClass + "::ClassPointer(o); }\n";
+  c += sClass + " *Q7B_" + sClass + " _Class(Q7B o){ return " + sClass + "::ClassPointer(o); }\n";
 
   if (sClass == "Application"){
-    c += "Q7B Q7B_" + sClass + "_Object(){ return " + sClass + "::SingleTonObject(0, 0); }\n";
+    c += "Q7B Q7B_" + sClass + " _Object(){ return " + sClass + "::SingleTonObject(0, 0); }\n";
   } else {
-    c += "Q7B Q7B_" + sClass + "_Object(){ return " + sClass + "::SingleTonObject(); }\n";
+    c += "Q7B Q7B_" + sClass + " _Object(){ return " + sClass + "::SingleTonObject(); }\n";
   }
 
   for (int q = 0; q < Me.sReferences[sClass].size(); q++){
     QString sClass2 = Me.sReferences[sClass].at(q);
 
     if (sClass2 != sClass){
-      c += "extern " + sClass + " *Q7B_" + sClass + "_Class(Q7B o);\n";
-      c += "extern Q7B Q7B_" + sClass + "_Object();\n";
+      c += "extern " + sClass + " *Q7B_" + sClass + " _Class(Q7B o);\n";
+      c += "extern Q7B Q7B_" + sClass + " _Object();\n";
     }   
   }
 
-  c += sClass + " *q7b_" + sClass + "_Object = 0;\n";
-  c += "Q7B q7b_" + sClass + "_Object_Q7B;\n";
-  c += "bool q7b_" + sClass + "_Object_Finalized = false;\n";
-  c += "bool q7b_" + sClass + "_Object_Init = false;\n\n";
+  c += sClass + " *q7b_" + sClass + " _Object = 0;\n";
+  c += "Q7B q7b_" + sClass + " _Object_Q7B;\n";
+  c += "bool q7b_" + sClass + " _Object_Finalized = false;\n";
+  c += "bool q7b_" + sClass + " _Object_Init = false;\n\n";
 
 
   QString sClassInit2 = decode(ClassStatements, true, &h_variablesconstants, &c_globalvariablesconstants);
@@ -18045,7 +18045,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
       c += "{\n";
 
       if (sClass != "MainWindow"){
-        c += "  if (this == q7b_" + sClass + "_Object){ q7b_" + sClass + "_Object = 0; q7b_" + sClass + "_Object_Q7B = Q7B_IDNIL(); }\n";
+        c += "  if (this == q7b_" + sClass + " _Object){ q7b_" + sClass + " _Object = 0; q7b_" + sClass + " _Object_Q7B = Q7B_IDNIL(); }\n";
       }
 
       if (b_UI_File) c += "  delete ui;\n";
@@ -18061,7 +18061,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
     if (b_UI_File && !Parser::Me.SubsFunctions[sClass].contains("CloseEvent") && sClass != "MainWindow"){
       c += "void " + sClass + "::closeEvent(QCloseEvent *e)\n";
       c += "{\n";      
-      c += "  if (e->isAccepted() && this == q7b_" + sClass + "_Object){ q7b_" + sClass + "_Object = 0; q7b_" + sClass + "_Object_Q7B = Q7B_IDNIL(); }\n";
+      c += "  if (e->isAccepted() && this == q7b_" + sClass + " _Object){ q7b_" + sClass + " _Object = 0; q7b_" + sClass + " _Object_Q7B = Q7B_IDNIL(); }\n";
       c += "}\n\n";
 
       h += "void closeEvent(QCloseEvent *e);\n";
@@ -18115,7 +18115,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
     QString m;
 
     if (sClass != "MainWindow"){
-      m += "  if (this == q7b_" + sClass + "_Object){ q7b_" + sClass + "_Object = 0; q7b_" + sClass + "_Object_Q7B = Q7B_IDNIL(); }\n";
+      m += "  if (this == q7b_" + sClass + " _Object){ q7b_" + sClass + " _Object = 0; q7b_" + sClass + " _Object_Q7B = Q7B_IDNIL(); }\n";
     }
 
     if (b_UI_File) m += "  delete ui;\n";
@@ -18126,7 +18126,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
 
   if (b_UI_File && Parser::Me.SubsFunctions[sClass].contains("CloseEvent") && sClass != "MainWindow"){ 
     QString m;
-    m += "  if (((QCloseEvent *) (e->ref))->isAccepted() && this == q7b_" + sClass + "_Object){ q7b_" + sClass + "_Object = 0; q7b_" + sClass + "_Object_Q7B = Q7B_IDNIL(); }\n";
+    m += "  if (((QCloseEvent *) (e->ref))->isAccepted() && this == q7b_" + sClass + " _Object){ q7b_" + sClass + " _Object = 0; q7b_" + sClass + " _Object_Q7B = Q7B_IDNIL(); }\n";
 
     Parser::Me.SubsFunctions[sClass]["CloseEvent"].Statements = Parser::Me.SubsFunctions[sClass]["CloseEvent"].Statements + Compiler::pushCode(m);
   }
@@ -18330,7 +18330,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
 
                    if (sf.sSubFunctionIBActionActionSignalEventDelegateSlot == "Signal"){
                      z += "void on_";
-                     if (!sOutletName.isEmpty()) z += sOutletName + "_";
+                     if (!sOutletName.isEmpty()) z += sOutletName + " _";
                      z += sDeclare.mid(sDeclare.indexOf(" ") + 1) + "\n{\n";
                    } else {
                      z += sDeclare + "\n{\n";
@@ -18338,7 +18338,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
 
                    if (sf.sSubFunctionIBActionActionSignalEventDelegateSlot == "Signal"){
                      z += "  this->" + SLOTESCAPE + "on_";
-                     if (!sOutletName.isEmpty()) z += sOutletName + "_";
+                     if (!sOutletName.isEmpty()) z += sOutletName + " _";
                      z += sSignalName + "(";
                    } else {
                      z += "  this->" + SLOTESCAPE + sSignalName + "(";
@@ -18415,9 +18415,9 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
   h += "\npublic:\nstatic void SingleTonInit(" + sClass + "*me)\n";
 
   h += "{\n";
-  h += "q7b_" + sClass + "_Object = me;\n";
-  h += "q7b_" + sClass + "_Object_Q7B = me->q7b_this;\n";
-  h += "q7b_" + sClass + "_Object_Init = true;\n";
+  h += "q7b_" + sClass + " _Object = me;\n";
+  h += "q7b_" + sClass + " _Object_Q7B = me->q7b_this;\n";
+  h += "q7b_" + sClass + " _Object_Init = true;\n";
   h += "me->Init();\n";  
   h += "}\n";  
 
@@ -18434,7 +18434,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
   } else {
     h += "SingleTonObjectPointer();\n";
   }
-  h += "return q7b_" + sClass + "_Object_Q7B;\n";
+  h += "return q7b_" + sClass + " _Object_Q7B;\n";
   h += "}\n";  
 
   if (sClass == "Application"){
@@ -18445,30 +18445,30 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
 
   h += "{\n";
 
-  h += "if (q7b_" + sClass + "_Object_Finalized) return 0;\n";
-  h += "if (q7b_" + sClass + "_Object == 0){\n";
+  h += "if (q7b_" + sClass + " _Object_Finalized) return 0;\n";
+  h += "if (q7b_" + sClass + " _Object == 0){\n";
 
-  h += "q7b_" + sClass + "_Object_Init = true;\n";
+  h += "q7b_" + sClass + " _Object_Init = true;\n";
 
   if (bQtDesignerClass){
     h += "if (q7b_ui.contains(\"" + sClass + "\")){\n";
-    h += "  q7b_" + sClass + "_Object = (" + sClass + " *) (QWidget *) q7b_ui[\"" + sClass + "\"]->ref; \n";
+    h += "  q7b_" + sClass + " _Object = (" + sClass + " *) (QWidget *) q7b_ui[\"" + sClass + "\"]->ref; \n";
 
-    h += "} else {\n  q7b_" + sClass + "_Object = new " + sClass + "(q7b_" + sClass + "_Object_Q7B, 0); q7b_" + sClass + "_Object->Init();\n}\n";    
+    h += "} else {\n  q7b_" + sClass + " _Object = new " + sClass + "(q7b_" + sClass + " _Object_Q7B, 0); q7b_" + sClass + " _Object->Init();\n}\n";
 
   } else {
     //h += "QMessageBox::information(0, \"a\", \"a\");\n";  
     if (sClass == "Application"){
-      h += "q7b_" + sClass + "_Object = new " + sClass + "(q7b_" + sClass + "_Object_Q7B, argc, argv);\n";    
-      h += "q7b_" + sClass + "_Object->Init();\n";    
+      h += "q7b_" + sClass + " _Object = new " + sClass + "(q7b_" + sClass + " _Object_Q7B, argc, argv);\n";
+      h += "q7b_" + sClass + " _Object->Init();\n";
     } else {
-      h += "q7b_" + sClass + "_Object = new " + sClass + "(q7b_" + sClass + "_Object_Q7B);\n";    
-      h += "q7b_" + sClass + "_Object->Init();\n";    
+      h += "q7b_" + sClass + " _Object = new " + sClass + "(q7b_" + sClass + " _Object_Q7B);\n";
+      h += "q7b_" + sClass + " _Object->Init();\n";
     }
   }  
 
   h += "}\n";
-  h += "return q7b_" + sClass + "_Object;\n";
+  h += "return q7b_" + sClass + " _Object;\n";
   h += "}\n";
 
   h += "\n\nstatic " + sClass + "* ClassPointer(Q7B o)\n";
@@ -18571,7 +18571,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
          else if (qwert == "Global") ;
          else if (qwert == "Application") ;
          else if (qwert == "SystemTrayIcon") ;
-         else sGlobal += "if (q7b_" + qwert + "_Object){ " + qwert + " *q7b_o" + qwert + " = " + qwert + "::SingleTonObjectPointer(); if (q7b_o" + qwert + "){ q7b_" + qwert + "_Object_Finalized = true; delete q7b_o" + qwert + "; q7b_" + qwert + "_Object = 0; q7b_" + qwert + "_Object_Q7B->ref = 0; }}\n";
+         else sGlobal += "if (q7b_" + qwert + " _Object){ " + qwert + " *q7b_o" + qwert + " = " + qwert + "::SingleTonObjectPointer(); if (q7b_o" + qwert + "){ q7b_" + qwert + " _Object_Finalized = true; delete q7b_o" + qwert + "; q7b_" + qwert + " _Object = 0; q7b_" + qwert + " _Object_Q7B->ref = 0; }}\n";
       }
 
       sGlobal += "\n"; 
@@ -18583,7 +18583,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
 
     if (CONFIG["SINGLEFILEPROJECT"] == "true" || sApplicationClass.isEmpty()){ // CONFIG["APPLICATIONFILE"] == "false" as well      
     } else {
-      sGlobal += sApplicationClass + " *q7b_o" + sApplicationClass + " = " + sApplicationClass + "::q7b_Object(); if (q7b_o" + sApplicationClass + "){ q7b_" + sApplicationClass + "_Object_Finalized = true; delete q7b_o" + sApplicationClass + "; q7b_" + sApplicationClass + "_Object = 0;  q7b_" + sApplicationClass + "_Object_Q7B->ref = 0; }\n";
+      sGlobal += sApplicationClass + " *q7b_o" + sApplicationClass + " = " + sApplicationClass + "::q7b_Object(); if (q7b_o" + sApplicationClass + "){ q7b_" + sApplicationClass + " _Object_Finalized = true; delete q7b_o" + sApplicationClass + "; q7b_" + sApplicationClass + " _Object = 0;  q7b_" + sApplicationClass + " _Object_Q7B->ref = 0; }\n";
     }
 
     if (CONFIG["SINGLEFILEPROJECT"] != "true"){
@@ -18817,7 +18817,7 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
     for (int q = 0; q < ll.size(); q++){
       QString sClass = ll.at(q);
 
-      sVM_ClassSingleTone += "if (sClass == \"" + sClass + "\") return Q7B_" + sClass + "_Object();\n";
+      sVM_ClassSingleTone += "if (sClass == \"" + sClass + "\") return Q7B_" + sClass + " _Object();\n";
 
       {
         QMap<QString, _subfunction> SubsFunctions = Parser::Me.SubsFunctions[sClass];
@@ -18957,8 +18957,8 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
       _type Type = Types.at(i);  
 
       QString sName = Type.sName;
-      if (Type.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type.sFileName) + "_" + sName;
-      sName = "q7b_type_" + sName + "_init";
+      if (Type.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type.sFileName) + " _" + sName;
+      sName = "q7b_type_" + sName + " _init";
 
       sGlobal += "\nvoid Global::" + sName + "(const Q7B *v)\n{\n";      
       h += "static void " + sName + "(const Q7B *v);\n";
@@ -19007,8 +19007,8 @@ h += "\nextern Q7B Q7B_CMath_Object();\n";
         }
         
         QString sName = sType;
-        if (Type2.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type2.sFileName) + "_" + sName;
-        sName = "q7b_type_" + sName + "_init";
+        if (Type2.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type2.sFileName) + " _" + sName;
+        sName = "q7b_type_" + sName + " _init";
 
         _array aa = Type.Arrays.at(q);
         if (b == false || aa.isValid()){
@@ -19294,7 +19294,7 @@ QString Parser::getSignalOutletName(const QString & ss)
 
 
   if (ss.startsWith("on_")){
-    int n = ss.lastIndexOf("_");
+    int n = ss.lastIndexOf(" _");
     if (n >= 0){
       s = ss.mid(3, n - 3);
     }
@@ -19310,9 +19310,9 @@ QString Parser::getSignalSignalName(const QString & ss)
 
 
 
-  if (ss.count("_") < 2) return "";
+  if (ss.count(" _") < 2) return "";
 
-  int n = ss.lastIndexOf("_");
+  int n = ss.lastIndexOf(" _");
   if (n >= 0){
     s = ss.mid(n + 1);
   }
@@ -19713,7 +19713,7 @@ bool Parser::removeDirectory(QDir aDir, bool bFollowLinks)
 
     }
    
-     // QMessageBox::information(0, "___err", aDir.absolutePath ());
+     // QMessageBox::information(0, " ___err", aDir.absolutePath ());
    
 
     return(has_err);
@@ -20114,7 +20114,7 @@ QString link(QString s, QString ss = "", QString onClick = "")
 
 QString linkQt(QString s, QString ss)
 {
-  return "<a href=\"" + s + "\" class=\"qt\" target=\"_parent\">" + ss + "</a>";
+  return "<a href=\"" + s + "\" class=\"qt\" target=\" _parent\">" + ss + "</a>";
 }
 
 QString linkTypeClass(QString s)
@@ -20479,7 +20479,7 @@ QString getClassBody(QString sCategory, QMap<QString, QString> & theClass, QMap<
               sProperty3 = (bEnum ? "(" + c._RETURN + ") " : "") + "Q7B_ID" + sType + "(theProperty)";
             }            
           }
-          QString sHeader = (sReturn == "void" || i > 0 ? "void " : "Q7B ") + QString("Q7B_") + sClass.toUpper() + "_" + sKey.toUpper() + "(";
+          QString sHeader = (sReturn == "void" || i > 0 ? "void " : "Q7B ") + QString("Q7B_") + sClass.toUpper() + " _" + sKey.toUpper() + "(";
 
           sHeader += "Q7B self" + sProperty1;
 
@@ -21790,7 +21790,7 @@ void Parser::createRuntimeFiles()
       //sKey2 = sKey2.replace("<", ""); 
       //sKey2 = sKey2.replace(">", ""); 
 
-      QString sHeader = "Q7B Q7B_" + sKey.toUpper() + "_INIT(QObject *parent, const char *objectName)";
+      QString sHeader = "Q7B Q7B_" + sKey.toUpper() + " _INIT(QObject *parent, const char *objectName)";
       {
         bool b = true;
                 
@@ -23047,7 +23047,7 @@ bool Parser::parseClass(QString sFileName)
             }
 
             
-            if (sName.startsWith("_")){ error("Name of procedure must not start with '_'"); return false; }
+            if (sName.startsWith(" _")){ error("Name of procedure must not start with '_'"); return false; }
 
           if (Me.SubsFunctions[getClassName(Me.sFileName)].contains(sName)){
             Me.SubFunction = Me.SubsFunctions[getClassName(Me.sFileName)][sName];
@@ -25772,12 +25772,12 @@ bool Parser::autoInitForType(_statements & ReturnStatements, QString sVariable, 
     } else if (Me.classes.contains(sClass) || Me.controls.contains(sClass)){
 
         //sClass = sClass.replace("<", "").replace(">", ""); // template data type
-        ReturnStatements << Compiler::pushCode("Q7B_" + sClass.toUpper() + "_INIT(this, \"" + Me.sVarNameForOnAction + "\")");          
+        ReturnStatements << Compiler::pushCode("Q7B_" + sClass.toUpper() + " _INIT(this, \"" + Me.sVarNameForOnAction + "\")");
         *bParseBrackets = true;
      
       
     //  if (sClass == "QProgressBar"){
-       // ReturnStatements << Compiler::pushCode("Q7B_" + sClass.toUpper() + "_INIT(0, \"" + Me.sVarNameForOnAction + "\")");          
+       // ReturnStatements << Compiler::pushCode("Q7B_" + sClass.toUpper() + " _INIT(0, \"" + Me.sVarNameForOnAction + "\")");
       
         
       
@@ -25882,7 +25882,7 @@ bool Parser::typeArrayInit(_statements & ReturnStatements, QString sVariable, _t
   }
   if (!Type.sName.isEmpty() && b == false){
     QString sName = Type.sName;
-    if (Type.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type.sFileName) + "_" + sName;
+    if (Type.sPublicPrivateGlobal != "Global") sName = Parser::getClassName(Type.sFileName) + " _" + sName;
 
     if (Array.bEmpty == false ){
 
@@ -25912,7 +25912,7 @@ bool Parser::typeArrayInit(_statements & ReturnStatements, QString sVariable, _t
           dd += QString("Q7B_ID(%1)").arg(-1);
         }
 
-        s += aa + "Global::q7b_type_" + sName + "_init(q7b_array_at(" + sVariable + bb + dd + "));" + cc;
+        s += aa + "Global::q7b_type_" + sName + " _init(q7b_array_at(" + sVariable + bb + dd + "));" + cc;
 
        
       } else {
@@ -25927,7 +25927,7 @@ bool Parser::typeArrayInit(_statements & ReturnStatements, QString sVariable, _t
   if (!sVariable.contains("q7b_type->at") && (b || !Array.isValid())){
           s += sVariable + " = Q7B_ID(); "; 
         }
-        s += "Global::q7b_type_" + sName + "_init(&" + sVariable + "); ";
+        s += "Global::q7b_type_" + sName + " _init(&" + sVariable + "); ";
       }  
 
     }
@@ -28140,7 +28140,7 @@ case '^':
 
 break;
 case '_':
-{ if (!bString1 && !bString2 && !bIdentifier){ int pp = p; while(p + 1 < len && isWhitespace(s, ++p, len)); if (s.at(p) == '\''){ while(p + 1 < len && s.at(++p) != '\n'); } if (s.at(p) == '\n'){ p++; nCurrentLine++; tokens.append("K_"); continue; } else { p = pp; } } } //  v = "_"; l = 0; goto identifier; }
+{ if (!bString1 && !bString2 && !bIdentifier){ int pp = p; while(p + 1 < len && isWhitespace(s, ++p, len)); if (s.at(p) == '\''){ while(p + 1 < len && s.at(++p) != '\n'); } if (s.at(p) == '\n'){ p++; nCurrentLine++; tokens.append("K_"); continue; } else { p = pp; } } } //  v = " _"; l = 0; goto identifier; }
 
 break;
 case '|':

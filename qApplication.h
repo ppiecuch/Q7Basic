@@ -27,28 +27,28 @@ Property "ApplicationVersion" As "String";    COMMENT = "";
 Property "OrganizationDomain" As "String";    COMMENT = "";
 Property "OrganizationName" As "String";    COMMENT = "";
 
-Sub      "Quit"___("");   COMMENT = "";
-Sub      "CursorSetWait"___("");   COMMENT = "";
-Sub      "CursorUnsetWait"___("");   COMMENT = "";
+Sub      "Quit" ___("");   COMMENT = "";
+Sub      "CursorSetWait" ___("");   COMMENT = "";
+Sub      "CursorUnsetWait" ___("");   COMMENT = "";
 
-Function "ClipboardText"___("") As "String";   COMMENT = "";
-Function "QtVersion"___("") As "String";   COMMENT = "";
-Function "OperatingSystemName"___("") As "String";   COMMENT = "";
+Function "ClipboardText" ___("") As "String";   COMMENT = "";
+Function "QtVersion" ___("") As "String";   COMMENT = "";
+Function "OperatingSystemName" ___("") As "String";   COMMENT = "";
 
-Sub      "CloseAllWindows"___("");   COMMENT = "";
+Sub      "CloseAllWindows" ___("");   COMMENT = "";
 
-Function "IsRightToLeftLayoutDirection"___("") As "Boolean";   COMMENT = "";
-Function "FocusWindow"___("") As "QWidget";   COMMENT = "";
-Function "Focus"___("") As "QWidget";   COMMENT = "";
+Function "IsRightToLeftLayoutDirection" ___("") As "Boolean";   COMMENT = "";
+Function "FocusWindow" ___("") As "QWidget";   COMMENT = "";
+Function "Focus" ___("") As "QWidget";   COMMENT = "";
 
-Sub      "AboutQt"___("");   COMMENT = "";
+Sub      "AboutQt" ___("");   COMMENT = "";
 
-Sub      "SetDefaultWindowIcon"___("Argument As QIcon");   COMMENT = "";
-Sub      "SetQuitOnLastWindowClosed"___("Argument As Boolean");   COMMENT = "";
-Sub      "SetRightToLeftLayoutDirection"___("Argument As Boolean");   COMMENT = "";
-Sub      "SetClipboardText"___("Argument As String");   COMMENT = "";
+Sub      "SetDefaultWindowIcon" ___("Argument As QIcon");   COMMENT = "";
+Sub      "SetQuitOnLastWindowClosed" ___("Argument As Boolean");   COMMENT = "";
+Sub      "SetRightToLeftLayoutDirection" ___("Argument As Boolean");   COMMENT = "";
+Sub      "SetClipboardText" ___("Argument As String");   COMMENT = "";
 
-Sub      "PrintHtml"___("Html As String");   COMMENT = "";
-Sub      "PrintHtmlAsPdf"___("Html As String, PDFFilePath As String");   COMMENT = "";
+Sub      "PrintHtml" ___("Html As String");   COMMENT = "";
+Sub      "PrintHtmlAsPdf" ___("Html As String, PDFFilePath As String");   COMMENT = "";
 
-Signal "lastWindowClosed"___("") Declare "void lastWindowClosed()"   COMMENT = "";
+Signal "lastWindowClosed" ___("") Declare "void lastWindowClosed()"   COMMENT = "";

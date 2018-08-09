@@ -4,7 +4,6 @@ QT += widgets
 
 TEMPLATE = app
 TARGET = Q7BCompiler
-INCLUDEPATH += .
 
 CONFIG += console
 CONFIG -= app_bundle
